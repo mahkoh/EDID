@@ -316,21 +316,24 @@ Checksum: 0x11  Unused space in Extension Block: 6 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 6 and the first DTD are not identical. Is this intended?
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Audio latency < Video latency (0 ms < 72 ms). This is discouraged for devices without HDMI output.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Interlaced audio latency < Interlaced video latency (0 ms < 108 ms). This is discouraged for devices without HDMI output.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #3: DTD is identical to VIC 63, which is not present in the CTA Ext Block.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 3, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Audio latency < Video latency (0 ms < 72 ms). This is discouraged for devices without HDMI output.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Interlaced audio latency < Interlaced video latency (0 ms < 108 ms). This is discouraged for devices without HDMI output.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Detailed Timing Descriptor #5: DTD is identical to VIC 63, which is not present in the CTA Ext Block.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, Base EDID:
   Unknown Extension Block.
@@ -368,10 +371,10 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 22.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Colorimetry Data Block: Only one instance of this Data Block is allowed.
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
   YCbCr 4:2:0 Capability Map Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.

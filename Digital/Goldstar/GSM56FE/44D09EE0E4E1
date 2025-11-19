@@ -64,7 +64,11 @@ Checksum: 0x8c
 Warnings:
 
 Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 477x269 mm, but based on the picture AR it should be 477x317 mm.
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 16.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.829 - 75.029 Hz (Monitor: 56.000 - 75.000 Hz)
 
 Failures:
 
@@ -74,8 +78,5 @@ Block 0, Base EDID:
     Horizontal Frontporch/Sync Width 48/32
     Vertical Active/Blanking 1279/31
     Vertical Frontporch/Sync Width 13/0
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.829 - 75.029 Hz (Monitor: 56.000 - 75.000 Hz)
 
 EDID conformity: FAIL

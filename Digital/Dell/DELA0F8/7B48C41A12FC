@@ -52,7 +52,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync  10 Vback   18 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 30-144 Hz V, 66-166 kHz H, max dotclock 460 MHz
+      Monitor ranges (Range Limits Only): 30-144 Hz V, 66-166 kHz H, max dotclock 460 MHz
     Display Product Name: 'Dell AW3418HW'
   Extension blocks: 1
 Checksum: 0x41

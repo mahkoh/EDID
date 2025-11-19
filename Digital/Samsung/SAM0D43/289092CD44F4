@@ -147,8 +147,8 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
+    LS/RS - Left/Right Surround
     BL/BR - Back Left/Right
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 3.1.0.0
     Supports_AI
@@ -201,6 +201,8 @@ Block 1, CTA-861 Extension Block:
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #3: Dubious image size (16x9 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #4: Dubious image size (16x9 mm is smaller than 100x100 mm).
 
 Failures:
 

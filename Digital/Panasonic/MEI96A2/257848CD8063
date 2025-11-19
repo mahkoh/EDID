@@ -41,7 +41,7 @@ Block 0, Base EDID:
                  Hfront   50 Hsync  40 Hback  110 Hpol P
                  Vfront    4 Vsync   4 Vback  430 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 46-62 Hz V, 93-94 kHz H, max dotclock 240 MHz
+      Monitor ranges (Range Limits Only): 46-62 Hz V, 93-94 kHz H, max dotclock 240 MHz
     Display Product Name: 'VVX14T092N00'
 Checksum: 0x20
 

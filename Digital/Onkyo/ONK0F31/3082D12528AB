@@ -125,8 +125,8 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
+    LS/RS - Left/Right Surround
     BL/BR - Back Left/Right
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 2.3.0.0
     Supports_AI
@@ -152,17 +152,17 @@ Checksum: 0x85  Unused space in Extension Block: 6 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #6: Image size is 531x299 mm, but based on the picture AR it should be 531x424 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.029 Hz (Monitor: 56.000 - 75.000 Hz)
+    Horizontal Freq: 28.125 - 79.976 kHz (Monitor: 30.000 - 81.000 kHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 75.029 Hz (Monitor: 56.000 - 75.000 Hz)
-    Horizontal Freq: 28.125 - 79.976 kHz (Monitor: 30.000 - 81.000 kHz)
 
 EDID conformity: FAIL

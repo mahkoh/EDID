@@ -138,6 +138,10 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #3: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #4: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #5: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #6: Dubious image size (160x90 mm is smaller than 100x100 mm).
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

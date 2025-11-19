@@ -122,9 +122,17 @@ Warnings:
 
 Block 0, Base EDID:
   Standard Timings: Standard Timing 1080x607 has a dubious odd vertical resolution.
+  Detailed Timing Descriptor #1: Image size is 580x360 mm, but based on the picture AR it should be 580x326 mm.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #2: Image size is 822x468 mm, but based on the picture AR it should be 822x657 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.062 Hz (Monitor: 56.000 - 76.000 Hz)
+    Horizontal Freq: 28.125 - 79.976 kHz (Monitor: 30.000 - 83.000 kHz)
 
 Failures:
 
@@ -139,9 +147,6 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #6: Mismatch of image size 708x398 mm vs display size 520x320 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 75.062 Hz (Monitor: 56.000 - 76.000 Hz)
-    Horizontal Freq: 28.125 - 79.976 kHz (Monitor: 30.000 - 83.000 kHz)
   Base EDID: The DTD max image size is 822x468mm, which is larger than the display size 520.0x320.0mm.
   CTA-861: Native progressive timings are a mix of several resolutions.
 

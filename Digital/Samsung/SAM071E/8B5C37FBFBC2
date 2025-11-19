@@ -208,7 +208,15 @@ Checksum: 0x4c  Unused space in Extension Block: 9 bytes
 
 Warnings:
 
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #6: Image size is 509x286 mm, but based on the picture AR it should be 509x407 mm.
+  Detailed Timing Descriptor #7: Image size is 509x286 mm, but based on the picture AR it should be 509x339 mm.
+Block 3, CTA-861 Extension Block:
+  Detailed Timing Descriptor #11: Image size is 509x286 mm, but based on the picture AR it should be 509x407 mm.
+  Detailed Timing Descriptor #12: Image size is 509x286 mm, but based on the picture AR it should be 509x339 mm.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 79.976 kHz (Monitor: 31.000 - 81.000 kHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -229,10 +237,7 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 18.
   Video Data Block: Duplicate VIC 3.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 28.125 - 79.976 kHz (Monitor: 31.000 - 81.000 kHz)
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
 

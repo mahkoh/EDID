@@ -46,7 +46,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6865, 0.3076
     Green: 0.2587, 0.6699
@@ -71,7 +71,7 @@ Block 0, Base EDID:
                  Hfront  144 Hsync 800 Hback  416 Hpol P
                  Vfront    3 Vsync  10 Vback   39 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-144 Hz V, 225-225 kHz H, max dotclock 800 MHz
+      Monitor ranges (Range Limits Only): 48-144 Hz V, 225-225 kHz H, max dotclock 800 MHz
     Display Product Name: 'LG ULTRAGEAR'
     Display Product Serial Number: ...
   Extension blocks: 2
@@ -119,7 +119,8 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 97 (408.759 cd/m^2)
     Desired content min luminance: 61 (0.234 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.5
+    Version: 2
+    Feature Caps: 0x05
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
@@ -153,6 +154,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
@@ -168,7 +170,5 @@ Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-EDID:
-  DisplayID: Missing DisplayID Product Identification Data Block.
 
 EDID conformity: FAIL

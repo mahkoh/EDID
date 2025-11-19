@@ -112,19 +112,25 @@ Checksum: 0x30  Unused space in Extension Block: 74 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 3 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-
-Failures:
-
-Block 0, Base EDID:
-  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x22.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 30.000 - 60.317 Hz (Monitor: 40.000 - 61.000 Hz)
     Horizontal Freq: 22.500 - 67.500 kHz (Monitor: 84.000 - 84.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+  Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x22.
+EDID:
   Base EDID: The DTD max image size is 344x195mm, but the display size is not specified anywhere.
   CTA-861: Native progressive timings are a mix of several resolutions.
 

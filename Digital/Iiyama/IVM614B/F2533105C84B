@@ -130,7 +130,8 @@ Block 1, CTA-861 Extension Block:
     Maximum TMDS Character Rate: 400 MHz
     SCDC Present
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -227,7 +228,8 @@ Block 3, CTA-861 Extension Block:
     Maximum TMDS Character Rate: 400 MHz
     SCDC Present
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -279,8 +281,9 @@ Block 1, CTA-861 Extension Block:
 Block 3, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 183.153 kHz (Monitor: 30.000 - 184.000 kHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -309,8 +312,6 @@ Block 3, CTA-861 Extension Block:
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
   Video Capability Data Block: Only one instance of this Data Block is allowed.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 183.153 kHz (Monitor: 30.000 - 184.000 kHz)
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
 

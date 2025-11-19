@@ -57,6 +57,12 @@ Checksum: 0x7d
 
 ----------------
 
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 81.966 Hz (Monitor: 50.000 - 76.000 Hz)
+
 Failures:
 
 Block 0, Base EDID:
@@ -70,8 +76,5 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: 0 or negative horizontal back porch.
   Detailed Timing Descriptor #1: 0 or negative vertical back porch.
   Display Product Name: Non-space after newline.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 56.250 - 81.966 Hz (Monitor: 50.000 - 76.000 Hz)
 
 EDID conformity: FAIL

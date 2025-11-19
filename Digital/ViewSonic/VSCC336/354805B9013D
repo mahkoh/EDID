@@ -37,7 +37,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6845, 0.3095
     Green: 0.2597, 0.6845
@@ -74,7 +74,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   54 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 40-60 Hz V, 160-160 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 40-60 Hz V, 160-160 kHz H, max dotclock 600 MHz
     Display Product Name: 'VX3211-4K'
   Extension blocks: 1
 Checksum: 0xd6
@@ -149,7 +149,11 @@ Checksum: 0x73  Unused space in Extension Block: 25 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

@@ -50,7 +50,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 24-60 Hz V, 30-140 kHz H, max dotclock 300 MHz
+      Monitor ranges (Range Limits Only): 24-60 Hz V, 30-140 kHz H, max dotclock 300 MHz
     Display Product Name: 'XG2703-GS'
   Extension blocks: 1
 Checksum: 0xf1
@@ -85,14 +85,17 @@ Checksum: 0xc1  Unused space in Extension Block: 101 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:
 
 Block 0, Base EDID:
   Display Product Serial Number: ...
-  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
+  Display Range Limits: 'Range Limits Only' is not allowed for EDID < 1.4.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:

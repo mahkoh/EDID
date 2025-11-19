@@ -57,7 +57,7 @@ Block 0, Base EDID:
     Display Product Serial Number: ...
     Display Product Name: 'RTK HDR'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 56-70 Hz V, 30-83 kHz H, max dotclock 170 MHz
+      Monitor ranges (Range Limits Only): 56-70 Hz V, 30-83 kHz H, max dotclock 170 MHz
   Extension blocks: 1
 Checksum: 0xaf
 
@@ -114,7 +114,10 @@ Checksum: 0x0e  Unused space in Extension Block: 57 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 477x268 mm, but based on the picture AR it should be 477x298 mm.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 5 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.

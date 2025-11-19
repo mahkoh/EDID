@@ -77,7 +77,9 @@ Checksum: 0xc7
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x51.
+  Display Product Serial Number: ...
 
 Failures:
 

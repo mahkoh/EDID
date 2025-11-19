@@ -96,7 +96,16 @@ Checksum: 0x59  Unused space in Extension Block: 84 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (160x90 mm is smaller than 100x100 mm).
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: Dubious image size (160x90 mm is smaller than 100x100 mm).
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 70.082 Hz (Monitor: 58.000 - 62.000 Hz)
+    Horizontal Freq: 15.625 - 67.500 kHz (Monitor: 30.000 - 83.000 kHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -105,13 +114,9 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
   Detailed Timing Descriptor #1: Mismatch of image size 160x90 mm vs display size 1600x900 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 160x90 mm vs display size 1600x900 mm.
-  Display Product Name: One or more trailing spaces.
+  Display Product Name: No newline, but one or more trailing spaces.
 Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #3: Mismatch of image size 160x90 mm vs display size 1600x900 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 70.082 Hz (Monitor: 58.000 - 62.000 Hz)
-    Horizontal Freq: 15.625 - 67.500 kHz (Monitor: 30.000 - 83.000 kHz)
 
 EDID conformity: FAIL

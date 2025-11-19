@@ -54,7 +54,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6718, 0.3115
     Green: 0.2763, 0.6542
@@ -89,7 +89,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    2 Vsync   5 Vback   34 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-165 Hz V, 250-250 kHz H, max dotclock 660 MHz
+      Monitor ranges (Range Limits Only): 48-165 Hz V, 250-250 kHz H, max dotclock 660 MHz
     Display Product Name: 'XWU-CBA'
   Extension blocks: 1
 Checksum: 0xdc
@@ -131,7 +131,8 @@ Block 1, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 600 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
@@ -213,7 +214,8 @@ Block 3, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 600 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
@@ -249,7 +251,10 @@ Checksum: 0x9e  Unused space in Extension Block: 28 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
@@ -296,6 +301,7 @@ Block 3, CTA-861 Extension Block:
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
 EDID:
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  CTA-861: The maximum HDMI TMDS clock is 600000 kHz, but one or more video timings go up to 640000 kHz.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

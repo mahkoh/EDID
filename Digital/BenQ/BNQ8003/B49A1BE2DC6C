@@ -156,16 +156,13 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 21 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
-EDID:
-  CTA-861: Multiple native progressive timings are defined.
-
-Failures:
-
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 15.625 - 102.960 kHz (Monitor: 15.000 - 102.000 kHz)
     Maximum Clock: 181.210 MHz (Monitor: 170.000 MHz)
+  CTA-861: Multiple native progressive timings are defined.
 
-EDID conformity: FAIL
+EDID conformity: PASS

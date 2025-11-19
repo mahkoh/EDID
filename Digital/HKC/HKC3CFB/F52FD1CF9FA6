@@ -75,8 +75,8 @@ Failures:
 
 Block 0, Base EDID:
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
-  Alphanumeric Data String: One or more trailing spaces.
-  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces before newline.
+  Alphanumeric Data String: No newline, but one or more trailing spaces.
 Block 1, Base EDID:
   Unknown Extension Block.
 EDID:

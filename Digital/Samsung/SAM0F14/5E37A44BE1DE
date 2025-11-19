@@ -29,7 +29,7 @@ Block 0, Base EDID:
     Made in: week 1 of 2018
   Basic Display Parameters & Features:
     Digital display
-    Maximum image size: 89 cm x 50 cm
+    Maximum image size: 445 cm x 250 cm (HDMI VSDB indicates 5 cm units)
     Gamma: 2.20
     RGB color display
     First detailed timing is the preferred timing
@@ -154,7 +154,6 @@ Block 1, CTA-861 Extension Block:
     Extended HDMI video details:
       3D present
       Base EDID image size is in units of 5 cm
-        Recalculated image size: 445 cm x 250 cm
       HDMI VICs:
          Unknown (HDMI VIC 255)
          Unknown (HDMI VIC 255)
@@ -204,14 +203,20 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Progressive and Interlaced latency values are identical, no need for both.
   Unknown CTA-861 Data Block (extended tag 0xff, length 30).
+  Detailed Timing Descriptor #3: Image size is 4095x4095 mm, but based on the picture AR it should be 4095x8190 mm.
   Detailed Timing Descriptor #3: The use of non-zero borders in a DTD is not recommended.
+  Detailed Timing Descriptor #4: Image size is 4095x4095 mm, but based on the picture AR it should be 4095x8190 mm.
   Detailed Timing Descriptor #4: The use of non-zero borders in a DTD is not recommended.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 10.418 - 75.062 Hz (Monitor: 24.000 - 75.000 Hz)
+    Maximum Clock: 655.350 MHz (Monitor: 600.000 MHz)
 
 Failures:
 
 Block 0, Base EDID:
-  Detailed Timing Descriptor #1: Mismatch of image size 1872x1053 mm vs display size 890x500 mm.
-  Detailed Timing Descriptor #2: Mismatch of image size 1872x1053 mm vs display size 890x500 mm.
+  Detailed Timing Descriptor #1: Mismatch of image size 1872x1053 mm vs display size 4450x2500 mm.
+  Detailed Timing Descriptor #2: Mismatch of image size 1872x1053 mm vs display size 4450x2500 mm.
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Unknown HDMI VIC 255.
@@ -243,9 +248,6 @@ Block 1, CTA-861 Extension Block:
   Padding: Contains non-zero bytes.
   Invalid checksum 0xff (should be 0x2a).
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 10.418 - 75.062 Hz (Monitor: 24.000 - 75.000 Hz)
-    Maximum Clock: 655.350 MHz (Monitor: 600.000 MHz)
-  Base EDID: The DTD max image size is 4095x4095mm, which is larger than the display size 890.0x500.0mm.
+  Base EDID: The DTD max image size is 4095x4095mm, which is larger than the display size 4450.0x2500.0mm.
 
 EDID conformity: FAIL

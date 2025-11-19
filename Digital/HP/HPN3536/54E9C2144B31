@@ -60,7 +60,7 @@ Block 0, Base EDID:
                  Hfront   24 Hsync  16 Hback   40 Hpol P
                  Vfront    3 Vsync   5 Vback   54 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 29-60 Hz V, 28-135 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 29-60 Hz V, 28-135 kHz H, max dotclock 600 MHz
     Display Product Name: 'HP Z27'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -113,6 +113,8 @@ Checksum: 0xb9  Unused space in Extension Block: 61 bytes
 
 Warnings:
 
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 97 and the first DTD are not identical. Is this intended?
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 29.981 - 70.082 Hz (Monitor: 29.000 - 60.000 Hz)

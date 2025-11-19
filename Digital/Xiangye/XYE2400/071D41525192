@@ -145,7 +145,8 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 105 (486.099 cd/m^2)
     Desired content min luminance: 78 (0.455 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -240,7 +241,8 @@ Block 3, CTA-861 Extension Block:
     Desired content max frame-average luminance: 105 (486.099 cd/m^2)
     Desired content min luminance: 78 (0.455 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -263,24 +265,33 @@ Checksum: 0x1d  Unused space in Extension Block: 20 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
+  Detailed Timing Descriptor #2: Image size is 518x324 mm, but based on the picture AR it should be 518x291 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 3, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Detailed Timing Descriptor #4: Image size is 518x324 mm, but based on the picture AR it should be 518x291 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.001 Hz (Monitor: 40.000 - 75.000 Hz)
+    Horizontal Freq: 15.625 - 111.077 kHz (Monitor: 30.000 - 135.000 kHz)
 
 Failures:
 
 Block 0, Base EDID:
-  Detailed Timing Descriptor #1: Mismatch of image size 531x299 mm vs display size 520x320 mm.
   Display Product Serial Number: ...
+  Detailed Timing Descriptor #1: Mismatch of image size 531x299 mm vs display size 520x320 mm.
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI Forum VSDB did not immediately follow the HDMI VSDB.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI Forum VSDB rate < HDMI VSDB rate.
   Detailed Timing Descriptor #3: Mismatch of image size 598x336 mm vs display size 520x320 mm.
 Block 2, Base EDID:
   Unknown Extension Block.
@@ -309,11 +320,9 @@ Block 3, CTA-861 Extension Block:
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI Forum VSDB did not immediately follow the HDMI VSDB.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI Forum VSDB rate < HDMI VSDB rate.
   Detailed Timing Descriptor #5: Mismatch of image size 598x336 mm vs display size 520x320 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 75.001 Hz (Monitor: 40.000 - 75.000 Hz)
-    Horizontal Freq: 15.625 - 111.077 kHz (Monitor: 30.000 - 135.000 kHz)
   Base EDID: The DTD max image size is 598x336mm, which is larger than the display size 520.0x320.0mm.
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.

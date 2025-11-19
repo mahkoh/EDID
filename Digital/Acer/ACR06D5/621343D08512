@@ -138,21 +138,25 @@ Checksum: 0x46  Unused space in Extension Block: 45 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 31 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   YCbCr 4:2:0 Video Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 16.
+  Detailed Timing Descriptor #2: Image size is 1196x336 mm, but based on the picture AR it should be 1196x672 mm.
+  Detailed Timing Descriptor #3: Image size is 1196x336 mm, but based on the picture AR it should be 1196x672 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-
-Failures:
-
-Block 1, CTA-861 Extension Block:
-  YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 31 is also a regular VIC.
-  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 120.000 Hz (Monitor: 48.000 - 68.000 Hz)
     Horizontal Freq: 28.125 - 135.000 kHz (Monitor: 54.000 - 160.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
+  YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 31 is also a regular VIC.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

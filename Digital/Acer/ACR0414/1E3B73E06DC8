@@ -70,7 +70,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 56-145 Hz V, 31-223 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 56-145 Hz V, 31-223 kHz H, max dotclock 600 MHz
     Display Product Name: 'XG270HU'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -141,22 +141,25 @@ Checksum: 0x9f  Unused space in Extension Block: 6 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 16.
+  Detailed Timing Descriptor #4: Image size is 598x336 mm, but based on the picture AR it should be 598x252 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-
-Failures:
-
-Block 0, Base EDID:
-  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
-  Display Product Serial Number: ...
-Block 1, CTA-861 Extension Block:
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 144.006 Hz (Monitor: 56.000 - 145.000 Hz)
     Horizontal Freq: 15.625 - 222.201 kHz (Monitor: 31.000 - 223.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: 'Range Limits Only' is not allowed for EDID < 1.4.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

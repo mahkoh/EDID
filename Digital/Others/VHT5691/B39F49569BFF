@@ -55,12 +55,17 @@ Block 0, Base EDID:
                  Hfront  128 Hsync 192 Hback   64 Hpol N
                  Vfront    7 Vsync  20 Vback    3 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 55-76 Hz V, 30-80 kHz H, max dotclock 150 MHz
+      Monitor ranges (Range Limits Only): 55-76 Hz V, 30-80 kHz H, max dotclock 150 MHz
     Display Product Serial Number: ...
     Display Product Name: 'G150        '
 Checksum: 0xb0
 
 ----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 
 Failures:
 
@@ -68,7 +73,7 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 340x210 mm vs display size 350x200 mm.
   Display Range Limits: Byte 11 is 0x30 instead of 0x0a.
   Display Range Limits: Bytes 12-17 must be 0x20.
-  Display Product Name: One or more trailing spaces.
+  Display Product Name: One or more trailing spaces before newline.
 EDID:
   Base EDID: The DTD max image size is 340x210mm, which is larger than the display size 350.0x200.0mm.
 

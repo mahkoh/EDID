@@ -72,7 +72,7 @@ Block 0, Base EDID:
     DPMS levels: Standby Suspend Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6552, 0.3242
     Green: 0.2089, 0.7138
@@ -100,7 +100,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront   54 Vsync   8 Vback   20 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-165 Hz V, 243-243 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 48-165 Hz V, 243-243 kHz H, max dotclock 600 MHz
     Display Product Name: 'M27Q'
     Display Product Serial Number: ...
   Extension blocks: 2
@@ -144,7 +144,8 @@ Block 1, CTA-861 Extension Block:
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 170 Hz
     Flags 1.x: 0x00
@@ -248,7 +249,8 @@ Block 4, CTA-861 Extension Block:
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 170 Hz
     Flags 1.x: 0x00
@@ -304,14 +306,16 @@ Checksum: 0x90  Unused space in Extension Block: 75 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 2 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 4, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 50.000 - 169.831 Hz (Monitor: 48.000 - 165.000 Hz)
@@ -351,11 +355,10 @@ Block 4, CTA-861 Extension Block:
   Detailed Timing Descriptor #5: Mismatch of image size 596x335 mm vs display size 700x390 mm.
   Detailed Timing Descriptor #6: Mismatch of image size 596x335 mm vs display size 700x390 mm.
   Detailed Timing Descriptor #7: Mismatch of image size 596x335 mm vs display size 700x390 mm.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
+  CTA-861: The maximum HDMI TMDS clock is 600000 kHz, but one or more video timings go up to 683670 kHz.
   CTA-861: Native progressive timings are a mix of several resolutions.
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

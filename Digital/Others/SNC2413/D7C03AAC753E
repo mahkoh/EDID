@@ -119,7 +119,8 @@ Block 1, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 225 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0xed (MCCS)
@@ -194,7 +195,8 @@ Block 3, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 225 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0xed (MCCS)
@@ -229,13 +231,19 @@ Checksum: 0x29  Unused space in Extension Block: 18 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is identical to VIC 16, which is not present in the CTA Ext Block.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 4 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
   Detailed Timing Descriptor #4: DTD is similar but not identical to DMT 0x27.
 Block 3, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Detailed Timing Descriptor #7: DTD is similar but not identical to DMT 0x27.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 22.500 - 83.927 kHz (Monitor: 30.000 - 85.000 kHz)
 
 Failures:
 
@@ -256,10 +264,7 @@ Block 3, CTA-861 Extension Block:
   Colorimetry Data Block: Only one instance of this Data Block is allowed.
   YCbCr 4:2:0 Capability Map Data Block: Only one instance of this Data Block is allowed.
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 22.500 - 83.927 kHz (Monitor: 30.000 - 85.000 kHz)
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
 

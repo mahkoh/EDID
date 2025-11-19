@@ -73,6 +73,14 @@ Checksum: 0x96
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.790 - 70.082 Hz (Monitor: 50.000 - 60.000 Hz)
+
 Failures:
 
 Block 0, Base EDID:
@@ -80,8 +88,6 @@ Block 0, Base EDID:
 Block 1, Base EDID:
   Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 59.790 - 70.082 Hz (Monitor: 50.000 - 60.000 Hz)
   Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

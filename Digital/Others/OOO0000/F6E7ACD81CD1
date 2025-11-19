@@ -105,7 +105,8 @@ Block 1, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 225 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 76 Hz
     Flags 1.x: 0xed (MCCS)
@@ -142,9 +143,12 @@ Checksum: 0x59  Unused space in Extension Block: 24 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Detailed Timing Descriptor #4: DTD is similar but not identical to DMT 0x17.
+  Detailed Timing Descriptor #4: Image size is 368x207 mm, but based on the picture AR it should be 368x220 mm.
   Detailed Timing Descriptor #5: DTD is similar but not identical to DMT 0x51.
 EDID:
   CTA-861: Multiple native progressive timings are defined.

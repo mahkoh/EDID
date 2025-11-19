@@ -52,7 +52,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   54 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 30-60 Hz V, 52-133 kHz H, max dotclock 540 MHz
+      Monitor ranges (Range Limits Only): 30-60 Hz V, 52-133 kHz H, max dotclock 540 MHz
     Display Product Name: 'ROG PG27AQ'
   Extension blocks: 1
 Checksum: 0xc0

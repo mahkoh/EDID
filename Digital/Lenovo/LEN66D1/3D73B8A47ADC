@@ -103,7 +103,8 @@ Block 1, CTA-861 Extension Block:
     Source physical address: 1.0.0.0
     Maximum TMDS clock: 300 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -124,6 +125,8 @@ Checksum: 0x99  Unused space in Extension Block: 34 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #4: Image size is 527x296 mm, but based on the picture AR it should be 527x395 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:

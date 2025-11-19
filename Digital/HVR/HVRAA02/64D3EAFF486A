@@ -50,7 +50,7 @@ Block 0, Base EDID:
                  Vfront   10 Vsync  12 Vback    2 Vpol N
     Display Product Name: 'VIVE Pro'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 23-255 Hz V, 15-255 kHz H, max dotclock 500 MHz
+      Monitor ranges (Range Limits Only): 23-255 Hz V, 15-255 kHz H, max dotclock 500 MHz
   Extension blocks: 1
 Checksum: 0xc5
 
@@ -75,6 +75,8 @@ Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Dubious maximum image size (12x7 is smaller than 10x10 cm).
+  Detailed Timing Descriptor #1: Dubious image size (119x66 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (119x66 mm is smaller than 100x100 mm).
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.

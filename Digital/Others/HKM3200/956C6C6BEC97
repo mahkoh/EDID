@@ -111,7 +111,8 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 89 (343.724 cd/m^2)
     Desired content min luminance: 8 (0.004 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -138,10 +139,17 @@ Checksum: 0x2b  Unused space in Extension Block: 5 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
   Unknown CTA-861 Data Block (tag 0x00, length 0).
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.250 - 135.000 kHz (Monitor: 30.000 - 134.000 kHz)
 
 Failures:
 
@@ -155,8 +163,5 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #3: Mismatch of image size vs display size: image size is not set, but display size is.
   Detailed Timing Descriptor #4: Mismatch of image size vs display size: image size is not set, but display size is.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 31.250 - 135.000 kHz (Monitor: 30.000 - 134.000 kHz)
 
 EDID conformity: FAIL

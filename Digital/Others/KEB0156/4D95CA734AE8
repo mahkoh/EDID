@@ -60,7 +60,7 @@ Block 0, Base EDID:
     Display Product Name: 'demo'
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 59-61 Hz V, 28-110 kHz H, max dotclock 250 MHz
+      Monitor ranges (Range Limits Only): 59-61 Hz V, 28-110 kHz H, max dotclock 250 MHz
   Extension blocks: 1
 Checksum: 0x90
 
@@ -102,7 +102,8 @@ Block 1, CTA-861 Extension Block:
     SCDC Present
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.9
+    Version: 1
+    Feature Caps: 0x09
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -137,21 +138,27 @@ Checksum: 0xce  Unused space in Extension Block: 42 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Image size is 300x260 mm, but based on the picture AR it should be 300x168 mm.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 3 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Detailed Timing Descriptor #2: Image size is 300x260 mm, but based on the picture AR it should be 300x168 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 25.000 - 60.317 Hz (Monitor: 59.000 - 61.000 Hz)
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
+  Display Range Limits: 'Range Limits Only' is not allowed for EDID < 1.4.
 Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 16.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Max TMDS rate is > 0 and <= 340 or > 600.
   YCbCr 4:2:0 Capability Map Data Block: Max index 19 > 9 (#SVDs).
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 25.000 - 60.317 Hz (Monitor: 59.000 - 61.000 Hz)
 
 EDID conformity: FAIL

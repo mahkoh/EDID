@@ -243,15 +243,21 @@ Checksum: 0x57  Unused space in Extension Block: 12 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 97 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #4: Image size is 697x392 mm, but based on the picture AR it should be 697x367 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 3, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Detailed Timing Descriptor #7: Image size is 697x392 mm, but based on the picture AR it should be 697x367 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 23.997 - 75.029 Hz (Monitor: 49.000 - 86.000 Hz)
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, Base EDID:
   Unknown Extension Block.
@@ -281,11 +287,9 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 21.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   YCbCr 4:2:0 Capability Map Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 23.997 - 75.029 Hz (Monitor: 49.000 - 86.000 Hz)
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
 

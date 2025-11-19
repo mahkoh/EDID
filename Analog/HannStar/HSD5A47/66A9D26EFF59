@@ -94,6 +94,10 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x2f.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 82.278 kHz (Monitor: 24.000 - 71.000 kHz)
+    Maximum Clock: 156.000 MHz (Monitor: 140.000 MHz)
 
 Failures:
 
@@ -102,9 +106,6 @@ Block 0, Base EDID:
 Block 1, Base EDID:
   Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 31.466 - 82.278 kHz (Monitor: 24.000 - 71.000 kHz)
-    Maximum Clock: 156.000 MHz (Monitor: 140.000 MHz)
   Base EDID: The DTD max image size is 408x255mm, which is larger than the display size 370.0x230.0mm.
   Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 

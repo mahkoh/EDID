@@ -83,7 +83,7 @@ Block 0, Base EDID:
     Display Product Serial Number: ...
     Display Product Name: 'DELL U2715H'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 56-86 Hz V, 30-113 kHz H, max dotclock 300 MHz
+      Monitor ranges (Range Limits Only): 56-86 Hz V, 30-113 kHz H, max dotclock 300 MHz
   Extension blocks: 1
 Checksum: 0x4b
 
@@ -207,9 +207,11 @@ Checksum: 0xfe  Unused space in Extension Block: 9 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #5: Image size is 597x336 mm, but based on the picture AR it should be 597x398 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 3, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Detailed Timing Descriptor #10: Image size is 597x336 mm, but based on the picture AR it should be 597x398 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 75.029 Hz (Monitor: 56.000 - 86.000 Hz)
@@ -240,7 +242,6 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 33.
   Video Data Block: Duplicate VIC 34.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
 

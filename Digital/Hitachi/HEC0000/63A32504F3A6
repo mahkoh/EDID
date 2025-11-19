@@ -162,8 +162,8 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency
     Supports 10b 12b 444: Not supported
-    Target Min PQ v2: 200 (0.05768953 cd/m^2)
-    Target Max PQ v2: 2510 (285 cd/m^2)
+    Target Min PQ v2: 200 (0.05689653 cd/m^2)
+    Target Max PQ v2: 2510 (275 cd/m^2)
     Unique Rx, Ry: 0.62890625, 0.33203125
     Unique Gx, Gy: 0.30078125, 0.61718750
     Unique Bx, By: 0.15234375, 0.03906250
@@ -258,8 +258,8 @@ Block 3, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency
     Supports 10b 12b 444: Not supported
-    Target Min PQ v2: 200 (0.05768953 cd/m^2)
-    Target Max PQ v2: 2510 (285 cd/m^2)
+    Target Min PQ v2: 200 (0.05689653 cd/m^2)
+    Target Max PQ v2: 2510 (275 cd/m^2)
     Unique Rx, Ry: 0.62890625, 0.33203125
     Unique Gx, Gy: 0.30078125, 0.61718750
     Unique Bx, By: 0.15234375, 0.03906250
@@ -278,7 +278,6 @@ Block 1, CTA-861 Extension Block:
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 Block 3, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 

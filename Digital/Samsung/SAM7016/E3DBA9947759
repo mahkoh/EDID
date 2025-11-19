@@ -164,6 +164,9 @@ Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Vendor-Specific Video Data Block, OUI 00-00-00: Unknown OUI 00-00-00.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 88.786 kHz (Monitor: 15.000 - 81.000 kHz)
 
 Failures:
 
@@ -174,8 +177,6 @@ Block 1, CTA-861 Extension Block:
   YCbCr 4:2:0 Capability Map Data Block: Empty Capability Map.
   Detailed Timing Descriptor #3: Mismatch of image size 1872x1053 mm vs display size 950x540 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 88.786 kHz (Monitor: 15.000 - 81.000 kHz)
   Base EDID: The DTD max image size is 1872x1053mm, which is larger than the display size 950.0x540.0mm.
 
 EDID conformity: FAIL

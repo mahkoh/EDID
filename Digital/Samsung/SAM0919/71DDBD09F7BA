@@ -120,6 +120,8 @@ Checksum: 0xf8  Unused space in Extension Block: 46 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #4: Image size is 510x287 mm, but based on the picture AR it should be 510x408 mm.
+  Detailed Timing Descriptor #5: Image size is 510x287 mm, but based on the picture AR it should be 510x340 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   CTA-861: Multiple native progressive timings are defined.

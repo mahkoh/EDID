@@ -64,7 +64,9 @@ Checksum: 0xa8
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x17.
+  Detailed Timing Descriptor #2: Image size is 368x207 mm, but based on the picture AR it should be 368x220 mm.
   Detailed Timing Descriptor #3: DTD is similar but not identical to DMT 0x27.
 
 Failures:
@@ -73,6 +75,6 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 368x207 mm vs display size 480x270 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 368x207 mm vs display size 480x270 mm.
   Detailed Timing Descriptor #3: Mismatch of image size 452x254 mm vs display size 480x270 mm.
-  Display Product Name: Non-printable character.
+  Display Product Name: NUL byte at position 0.
 
 EDID conformity: FAIL

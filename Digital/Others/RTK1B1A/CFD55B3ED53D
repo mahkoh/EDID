@@ -115,7 +115,8 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 105 (486.099 cd/m^2)
     Desired content min luminance: 79 (0.467 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 61 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -130,9 +131,25 @@ Checksum: 0x96  Unused space in Extension Block: 19 bytes
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 609x355 mm, but based on the picture AR it should be 609x342 mm.
+  Display Product Serial Number: ...
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 4 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
+  Detailed Timing Descriptor #2: DTD is identical to VIC 16, which is not present in the CTA Ext Block.
+  Detailed Timing Descriptor #2: Image size is 609x355 mm, but based on the picture AR it should be 609x342 mm.
+  Detailed Timing Descriptor #3: Image size is 609x355 mm, but based on the picture AR it should be 609x342 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 60.317 Hz (Monitor: 40.000 - 61.000 Hz)
+
 Failures:
 
 Block 0, Base EDID:
+  Display Product Serial Number: ...
   Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x22.
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
@@ -140,8 +157,6 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 60.317 Hz (Monitor: 40.000 - 61.000 Hz)
   Base EDID: The DTD max image size is 609x355mm, but the display size is not specified anywhere.
 
 EDID conformity: FAIL

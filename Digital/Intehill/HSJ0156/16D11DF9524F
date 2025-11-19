@@ -36,7 +36,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6376, 0.3339
     Green: 0.3066, 0.6279
@@ -71,7 +71,7 @@ Block 0, Base EDID:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-76 Hz V, 90-90 kHz H, max dotclock 180 MHz
+      Monitor ranges (Range Limits Only): 48-76 Hz V, 90-90 kHz H, max dotclock 180 MHz
     Display Product Name: 'HS156PE'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -133,8 +133,10 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 79.976 kHz (Monitor: 90.000 - 90.000 kHz)

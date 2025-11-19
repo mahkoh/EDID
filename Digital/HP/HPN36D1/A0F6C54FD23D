@@ -59,7 +59,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 50-60 Hz V, 30-90 kHz H, max dotclock 250 MHz
+      Monitor ranges (Range Limits Only): 50-60 Hz V, 30-90 kHz H, max dotclock 250 MHz
     Display Product Name: 'HP Z27u G3'
     Display Product Serial Number: ...
 Checksum: 0x90

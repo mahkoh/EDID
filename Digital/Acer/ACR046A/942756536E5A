@@ -120,8 +120,15 @@ Checksum: 0xae  Unused space in Extension Block: 22 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 5 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #4: Image size is 527x296 mm, but based on the picture AR it should be 527x351 mm.
+  Detailed Timing Descriptor #5: Image size is 527x296 mm, but based on the picture AR it should be 527x395 mm.
   Detailed Timing Descriptor #5: The use of non-zero borders in a DTD is not recommended.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.000 Hz (Monitor: 56.000 - 75.000 Hz)
+    Horizontal Freq: 27.000 - 67.500 kHz (Monitor: 31.000 - 75.000 kHz)
 
 Failures:
 
@@ -134,9 +141,5 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #4: Mismatch of image size 527x296 mm vs display size 600x340 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 527x296 mm vs display size 600x340 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 75.000 Hz (Monitor: 56.000 - 75.000 Hz)
-    Horizontal Freq: 27.000 - 67.500 kHz (Monitor: 31.000 - 75.000 kHz)
 
 EDID conformity: FAIL

@@ -113,7 +113,8 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 97 (408.759 cd/m^2)
     Desired content min luminance: 84 (0.444 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0xe6 (MCCS)

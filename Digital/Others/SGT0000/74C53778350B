@@ -35,7 +35,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6630, 0.3281
     Green: 0.2714, 0.5957
@@ -62,7 +62,7 @@ Block 0, Base EDID:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-144 Hz V, 180-180 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 48-144 Hz V, 180-180 kHz H, max dotclock 600 MHz
     Display Product Name: 'DP'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -137,6 +137,8 @@ Checksum: 0x3a  Unused space in Extension Block: 22 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
   Unknown CTA-861 Data Block (tag 0x00, length 0).
   Video Capability Data Block: IT scan behavior is expected to support underscanned.

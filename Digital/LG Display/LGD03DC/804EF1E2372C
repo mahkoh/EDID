@@ -39,7 +39,7 @@ Block 0, Base EDID:
     DTD 2:  1366x768    39.991439 Hz 683:384   47.510 kHz     72.500000 MHz (277 mm x 156 mm)
                  Hfront   32 Hsync  32 Hback   96 Hpol P
                  Vfront    2 Vsync   4 Vback  414 Vpol N
-    Alphanumeric Data String: 'FM9FF'
+    Alphanumeric Data String: 'FM9FF.125WH2'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 94 00 00 00 00 01 01 0a 20 20 '....A1........  '
 Checksum: 0x91
 
@@ -48,11 +48,7 @@ Checksum: 0x91
 Warnings:
 
 Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x80 at position 5, can cause problems.
   Missing Display Product Name.
 
-Failures:
-
-Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
-
-EDID conformity: FAIL
+EDID conformity: PASS

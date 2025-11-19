@@ -115,7 +115,8 @@ Block 1, CTA-861 Extension Block:
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 100 Hz
     Flags 1.x: 0xed (MCCS)
@@ -153,16 +154,21 @@ Checksum: 0x16  Unused space in Extension Block: 6 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #4: Image size is 797x334 mm, but based on the picture AR it should be 797x667 mm.
+  Detailed Timing Descriptor #5: Image size is 797x334 mm, but based on the picture AR it should be 797x448 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 100.000 Hz (Monitor: 48.000 - 100.000 Hz)
+    Horizontal Freq: 27.000 - 148.088 kHz (Monitor: 72.000 - 214.000 kHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 100.000 Hz (Monitor: 48.000 - 100.000 Hz)
-    Horizontal Freq: 27.000 - 148.088 kHz (Monitor: 72.000 - 214.000 kHz)
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

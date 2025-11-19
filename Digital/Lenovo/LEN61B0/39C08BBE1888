@@ -64,7 +64,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   23 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 23-80 Hz V, 30-160 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 23-80 Hz V, 30-160 kHz H, max dotclock 600 MHz
     Display Product Name: 'LEN P27u-10'
   Extension blocks: 1
 Checksum: 0x3f
@@ -118,6 +118,11 @@ Checksum: 0x75  Unused space in Extension Block: 57 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #4: Image size is 597x336 mm, but based on the picture AR it should be 597x373 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 135.000 kHz (Monitor: 30.000 - 160.000 kHz)

@@ -107,7 +107,8 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0x00
@@ -164,7 +165,8 @@ Block 3, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0x00
@@ -189,10 +191,13 @@ Checksum: 0x96  Unused space in Extension Block: 20 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #5: Image size is 527x296 mm, but based on the picture AR it should be 527x351 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 3, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Detailed Timing Descriptor #9: Image size is 527x296 mm, but based on the picture AR it should be 527x351 mm.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 83.894 kHz (Monitor: 31.000 - 84.000 kHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -220,10 +225,7 @@ Block 3, CTA-861 Extension Block:
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
   Speaker Allocation Data Block: Audio information is present, but bit 6 of Byte 3 of the CTA-861 Extension header indicates no Basic Audio support.
   Detailed Timing Descriptor #7: Mismatch of image size 800x450 mm vs display size 530x300 mm.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 28.125 - 83.894 kHz (Monitor: 31.000 - 84.000 kHz)
   Base EDID: The DTD max image size is 800x450mm, which is larger than the display size 530.0x300.0mm.
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.

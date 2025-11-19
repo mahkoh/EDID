@@ -143,7 +143,8 @@ Block 1, CTA-861 Extension Block:
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xec (MCCS)
@@ -244,7 +245,8 @@ Block 3, CTA-861 Extension Block:
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xec (MCCS)
@@ -289,14 +291,21 @@ Checksum: 0x33  Unused space in Extension Block: 12 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 93 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
 Block 3, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 143.853 Hz (Monitor: 48.000 - 144.000 Hz)
+    Horizontal Freq: 27.000 - 182.996 kHz (Monitor: 30.000 - 243.000 kHz)
 
 Failures:
 
@@ -305,6 +314,7 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 597x336 mm vs display size 700x390 mm.
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
 Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
   Detailed Timing Descriptor #2: Mismatch of image size 597x336 mm vs display size 700x390 mm.
   Detailed Timing Descriptor #3: Mismatch of image size 597x336 mm vs display size 700x390 mm.
@@ -328,6 +338,7 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 18.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Colorimetry Data Block: Only one instance of this Data Block is allowed.
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
   YCbCr 4:2:0 Capability Map Data Block: Only one instance of this Data Block is allowed.
@@ -336,9 +347,6 @@ Block 3, CTA-861 Extension Block:
   Detailed Timing Descriptor #4: Mismatch of image size 597x336 mm vs display size 700x390 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 597x336 mm vs display size 700x390 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 143.853 Hz (Monitor: 48.000 - 144.000 Hz)
-    Horizontal Freq: 27.000 - 182.996 kHz (Monitor: 30.000 - 243.000 kHz)
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
   CTA-861: Native progressive timings are a mix of several resolutions.

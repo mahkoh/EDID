@@ -54,7 +54,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6396, 0.3300
     Green: 0.2998, 0.5996
@@ -75,7 +75,7 @@ Block 0, Base EDID:
     Display Product Serial Number: ...
     Display Product Name: 'Display'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-60 Hz V, 100-100 kHz H, max dotclock 200 MHz
+      Monitor ranges (Range Limits Only): 48-60 Hz V, 100-100 kHz H, max dotclock 200 MHz
   Extension blocks: 1
 Checksum: 0xda
 
@@ -187,8 +187,11 @@ Checksum: 0x36  Unused space in Extension Block: 78 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
@@ -197,7 +200,6 @@ Block 3, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.468 - 67.500 kHz (Monitor: 100.000 - 100.000 kHz)

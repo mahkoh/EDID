@@ -70,7 +70,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6787, 0.3183
     Green: 0.2646, 0.7001
@@ -83,7 +83,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback  151 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 60-240 Hz V, 422-422 kHz H, max dotclock 1150 MHz
+      Monitor ranges (Range Limits Only): 60-240 Hz V, 422-422 kHz H, max dotclock 1150 MHz
     Alphanumeric Data String: 'BOE CQ'
     Display Product Name: 'NE160QDM-NM4'
   Extension blocks: 2
@@ -122,6 +122,7 @@ Block 2, DisplayID Extension Block:
     Descriptor #1:
       Native Panel Range
       Fixed Average V-Total and Adaptive V-Total
+      Supports Seamless Transition
       'Max Single Frame Duration Increase' field value without jitter impact
       'Max Single Frame Duration Decrease' field value without jitter impact
       Max Duration Increase: 0.00 ms
@@ -130,7 +131,8 @@ Block 2, DisplayID Extension Block:
       Max Refresh Rate: 240 Hz
   CTA-861 DisplayID Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.11
+    Version: 3
+    Feature Caps: 0x0b
     Minimum Refresh Rate: 60 Hz
     Maximum Refresh Rate: 240 Hz
     Flags 1.x: 0x00
@@ -186,6 +188,7 @@ Block 5, DisplayID Extension Block:
     Descriptor #1:
       Native Panel Range
       Fixed Average V-Total and Adaptive V-Total
+      Supports Seamless Transition
       'Max Single Frame Duration Increase' field value without jitter impact
       'Max Single Frame Duration Decrease' field value without jitter impact
       Max Duration Increase: 0.00 ms
@@ -194,7 +197,8 @@ Block 5, DisplayID Extension Block:
       Max Refresh Rate: 240 Hz
   CTA-861 DisplayID Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.11
+    Version: 3
+    Feature Caps: 0x0b
     Minimum Refresh Rate: 60 Hz
     Maximum Refresh Rate: 240 Hz
     Flags 1.x: 0x00
@@ -231,14 +235,10 @@ Block 3, Base EDID:
 Block 4, CTA-861 Extension Block:
   Colorimetry Data Block: Only one instance of this Data Block is allowed.
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 5, DisplayID Extension Block:
   Product Type should be 0 in extension block.
 EDID:
   Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: Missing DisplayID Display Parameters Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
 
 EDID conformity: FAIL

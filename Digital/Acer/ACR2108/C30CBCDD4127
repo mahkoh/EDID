@@ -135,7 +135,9 @@ Checksum: 0x14  Unused space in Extension Block: 14 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 6 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #2: Image size is 531x398 mm, but based on the picture AR it should be 531x354 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:

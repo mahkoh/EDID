@@ -209,7 +209,19 @@ Checksum: 0x2f  Unused space in Extension Block: 35 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
+  Detailed Timing Descriptor #5: Image size is 1600x900 mm, but based on the picture AR it should be 1600x450 mm.
+Block 3, CTA-861 Extension Block:
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
+  Detailed Timing Descriptor #8: Image size is 1600x900 mm, but based on the picture AR it should be 1600x450 mm.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 70.082 Hz (Monitor: 58.000 - 62.000 Hz)
+    Horizontal Freq: 15.625 - 67.500 kHz (Monitor: 30.000 - 136.000 kHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -237,11 +249,7 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 33.
   Video Data Block: Duplicate VIC 34.
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 70.082 Hz (Monitor: 58.000 - 62.000 Hz)
-    Horizontal Freq: 15.625 - 67.500 kHz (Monitor: 30.000 - 136.000 kHz)
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
 

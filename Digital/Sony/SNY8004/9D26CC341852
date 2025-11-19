@@ -113,7 +113,7 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 3.0.0.0
     Supports_AI
@@ -139,8 +139,8 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Low-Latency
     Supports 10b 12b 444: Not supported
-    Target Min PQ v2: 20 (0.00064354 cd/m^2)
-    Target Max PQ v2: 3160 (1252 cd/m^2)
+    Target Min PQ v2: 20 (0.00063665 cd/m^2)
+    Target Max PQ v2: 3160 (1199 cd/m^2)
     Unique Rx, Ry: 0.67968750, 0.31640625
     Unique Gx, Gy: 0.26171875, 0.68750000
     Unique Bx, By: 0.14843750, 0.05859375
@@ -182,14 +182,13 @@ Checksum: 0x48  Unused space in Extension Block: 20 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
-  Video Data Block: VIC 93 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 93 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-
-Failures:
-
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 75.000 Hz (Monitor: 48.000 - 62.000 Hz)
 
-EDID conformity: FAIL
+EDID conformity: PASS

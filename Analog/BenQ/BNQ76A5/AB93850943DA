@@ -69,6 +69,8 @@ Checksum: 0x58
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Image size is 376x301 mm, but based on the picture AR it should be 376x205 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 141.822 MHz (Monitor: 140.000 MHz)

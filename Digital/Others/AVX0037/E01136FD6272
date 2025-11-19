@@ -131,9 +131,18 @@ Checksum: 0x5f  Unused space in Extension Block: 6 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 1550x850 mm, but based on the picture AR it should be 1550x871 mm.
+  Detailed Timing Descriptor #2: Image size is 1550x850 mm, but based on the picture AR it should be 1550x871 mm.
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block, OUI 00-00-00: Unknown OUI 00-00-00.
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
+  Detailed Timing Descriptor #3: Image size is 1550x850 mm, but based on the picture AR it should be 1550x653 mm.
+  Detailed Timing Descriptor #4: Image size is 1550x850 mm, but based on the picture AR it should be 1550x871 mm.
+  Detailed Timing Descriptor #5: Image size is 1550x850 mm, but based on the picture AR it should be 1550x871 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 27.000 - 150.000 kHz (Monitor: 30.000 - 510.000 kHz)
 
 Failures:
 
@@ -157,8 +166,6 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #4: Mismatch of image size 1550x850 mm vs display size 900x510 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 1550x850 mm vs display size 900x510 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 27.000 - 150.000 kHz (Monitor: 30.000 - 510.000 kHz)
   Base EDID: The DTD max image size is 1550x850mm, which is larger than the display size 900.0x510.0mm.
 
 EDID conformity: FAIL

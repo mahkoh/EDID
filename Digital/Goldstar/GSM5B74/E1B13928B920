@@ -127,6 +127,5 @@ Block 2, DisplayID Extension Block:
   Product Type should be 0 in extension block.
 EDID:
   DisplayID: Missing DisplayID Product Identification Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
 
 EDID conformity: FAIL

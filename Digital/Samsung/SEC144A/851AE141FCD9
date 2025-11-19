@@ -69,7 +69,7 @@ Block 1, CTA-861 Extension Block:
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (Microsoft), OUI CA-12-5C:
     Version: 1
-    Display Product Primary Use Case: 7 (Virtual reality headset)
+    Display Product Primary Use Case: Virtual reality headset
     Container ID: 2527107b-19a4-48d3-9489-0c3b53ffeadb
   Detailed Timing Descriptors:
     DTD 4:  2880x1600   90.002370 Hz   9:5    146.164 kHz    449.600000 MHz (2880 mm x 1600 mm)
@@ -94,7 +94,7 @@ Block 1, CTA-861 Extension Block:
 Failures:
 
 Block 0, Base EDID:
-  Display Product Name: One or more trailing spaces.
+  Display Product Name: One or more trailing spaces before newline.
   Missing Display Range Limits Descriptor.
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).

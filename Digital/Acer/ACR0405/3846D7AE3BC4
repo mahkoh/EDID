@@ -81,7 +81,7 @@ Block 0, Base EDID:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 24-144 Hz V, 30-160 kHz H, max dotclock 330 MHz
+      Monitor ranges (Range Limits Only): 24-144 Hz V, 30-160 kHz H, max dotclock 330 MHz
     Display Product Serial Number: ...
     Display Product Name: 'Acer XB270H'
   Extension blocks: 1
@@ -191,13 +191,12 @@ Checksum: 0x2d  Unused space in Extension Block: 46 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Detailed Timing Descriptor #4: DTD is similar but not identical to VIC 64.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 Block 3, CTA-861 Extension Block:
   Detailed Timing Descriptor #7: DTD is similar but not identical to VIC 64.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 27.000 - 158.112 kHz (Monitor: 30.000 - 160.000 kHz)
@@ -225,7 +224,6 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 34.
   Video Data Block: Duplicate VIC 64.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
 

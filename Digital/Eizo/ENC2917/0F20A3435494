@@ -80,12 +80,15 @@ Checksum: 0x52
 
 ----------------
 
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.810 - 70.082 Hz (Monitor: 29.000 - 61.000 Hz)
+
 Failures:
 
 Block 1, Base EDID:
   Unknown Extension Block.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 59.810 - 70.082 Hz (Monitor: 29.000 - 61.000 Hz)
 
 EDID conformity: FAIL

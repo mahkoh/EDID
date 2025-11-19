@@ -68,6 +68,13 @@ Checksum: 0x83
 
 ----------------
 
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 156.419 - 156.419 kHz (Monitor: 16.000 - 16.000 kHz)
+    Maximum Clock: 283.120 MHz (Monitor: 70.000 MHz)
+
 Failures:
 
 Block 0, Base EDID:
@@ -78,9 +85,6 @@ Block 0, Base EDID:
 Block 1, Base EDID:
   Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 156.419 - 156.419 kHz (Monitor: 16.000 - 16.000 kHz)
-    Maximum Clock: 283.120 MHz (Monitor: 70.000 MHz)
   Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

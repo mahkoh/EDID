@@ -182,8 +182,8 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 75 cd/m^2
     Interface: Standard + Low-Latency
     Supports 10b 12b 444: Not supported
-    Target Min PQ v2: 180 (0.04555910 cd/m^2)
-    Target Max PQ v2: 2835 (601 cd/m^2)
+    Target Min PQ v2: 180 (0.04494425 cd/m^2)
+    Target Max PQ v2: 2835 (578 cd/m^2)
     Unique Rx, Ry: 0.67968750, 0.30859375
     Unique Gx, Gy: 0.24609375, 0.65625000
     Unique Bx, By: 0.14843750, 0.05859375
@@ -197,6 +197,8 @@ Block 1, CTA-861 Extension Block:
     Center speaker zone present
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
+    Full Frame Peak Luminance Index: 0
+    Peak Luminance Index: 0
   InfoFrame Data Block:
     VSIFs: 0
     Source Product Description InfoFrame (3)
@@ -308,8 +310,8 @@ Block 3, CTA-861 Extension Block:
     Backlt Min Luma: 75 cd/m^2
     Interface: Standard + Low-Latency
     Supports 10b 12b 444: Not supported
-    Target Min PQ v2: 180 (0.04555910 cd/m^2)
-    Target Max PQ v2: 2835 (601 cd/m^2)
+    Target Min PQ v2: 180 (0.04494425 cd/m^2)
+    Target Max PQ v2: 2835 (578 cd/m^2)
     Unique Rx, Ry: 0.67968750, 0.30859375
     Unique Gx, Gy: 0.24609375, 0.65625000
     Unique Bx, By: 0.14843750, 0.05859375
@@ -323,6 +325,8 @@ Block 3, CTA-861 Extension Block:
     Center speaker zone present
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
+    Full Frame Peak Luminance Index: 0
+    Peak Luminance Index: 0
   InfoFrame Data Block:
     VSIFs: 0
     Source Product Description InfoFrame (3)

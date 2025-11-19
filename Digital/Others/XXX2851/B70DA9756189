@@ -150,18 +150,18 @@ Checksum: 0x90  Unused space in Extension Block: 14 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 95 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 60.317 Hz (Monitor: 50.000 - 75.000 Hz)
+    Horizontal Freq: 27.000 - 75.000 kHz (Monitor: 30.000 - 80.000 kHz)
   CTA-861: Multiple native progressive timings are defined.
   CTA-861: Native progressive resolution of 1920x1080 is smaller than the max preferred progressive resolution 3840x2160.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 60.317 Hz (Monitor: 50.000 - 75.000 Hz)
-    Horizontal Freq: 27.000 - 75.000 kHz (Monitor: 30.000 - 80.000 kHz)
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
 
 EDID conformity: FAIL

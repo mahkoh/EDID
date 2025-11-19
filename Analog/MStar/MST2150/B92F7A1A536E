@@ -72,6 +72,8 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x39.
+  Detailed Timing Descriptor #2: Image size is 436x245 mm, but based on the picture AR it should be 436x272 mm.
+  Detailed Timing Descriptor #3: Image size is 436x245 mm, but based on the picture AR it should be 436x272 mm.
 
 Failures:
 
@@ -79,7 +81,7 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 436x245 mm vs display size 480x270 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 436x245 mm vs display size 480x270 mm.
   Detailed Timing Descriptor #3: Mismatch of image size 436x245 mm vs display size 480x270 mm.
-  Display Product Name: Non-printable character.
+  Display Product Name: NUL byte at position 0.
   Missing Display Range Limits Descriptor.
 
 EDID conformity: FAIL

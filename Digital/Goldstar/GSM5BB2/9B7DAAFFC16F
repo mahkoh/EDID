@@ -37,7 +37,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6562, 0.3359
     Green: 0.2978, 0.6083
@@ -66,7 +66,7 @@ Block 0, Base EDID:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 60-144 Hz V, 200-200 kHz H, max dotclock 420 MHz
+      Monitor ranges (Range Limits Only): 60-144 Hz V, 200-200 kHz H, max dotclock 420 MHz
     Display Product Name: 'LG ULTRAGEAR'
   Extension blocks: 1
 Checksum: 0xa1
@@ -97,7 +97,8 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 83 (301.833 cd/m^2)
     Desired content min luminance: 80 (0.297 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.5
+    Version: 2
+    Feature Caps: 0x05
     Minimum Refresh Rate: 60 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
@@ -122,8 +123,11 @@ Checksum: 0xbe  Unused space in Extension Block: 40 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: DTD is identical to VIC 16, which is not present in the CTA Ext Block.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Detailed Timing Descriptor #5: DTD is identical to VIC 4, which is not present in the CTA Ext Block.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.468 - 166.586 kHz (Monitor: 200.000 - 200.000 kHz)

@@ -140,7 +140,8 @@ Block 1, CTA-861 Extension Block:
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports Auto Low-Latency Mode
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -176,8 +177,14 @@ Checksum: 0xbe  Unused space in Extension Block: 1 byte
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Detailed Timing Descriptor #3: Image size is 941x529 mm, but based on the picture AR it should be 941x1058 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 120.000 Hz (Monitor: 50.000 - 120.000 Hz)
+    Horizontal Freq: 28.125 - 182.996 kHz (Monitor: 30.000 - 135.000 kHz)
 
 Failures:
 
@@ -185,10 +192,8 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Unknown HDMI VIC 0.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 120.000 Hz (Monitor: 50.000 - 120.000 Hz)
-    Horizontal Freq: 28.125 - 182.996 kHz (Monitor: 30.000 - 135.000 kHz)
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

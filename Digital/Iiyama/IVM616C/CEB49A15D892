@@ -114,7 +114,8 @@ Block 1, CTA-861 Extension Block:
     Maximum TMDS Character Rate: 400 MHz
     SCDC Present
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -165,15 +166,14 @@ Block 1, CTA-861 Extension Block:
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 165.003 Hz (Monitor: 56.000 - 165.000 Hz)
+    Horizontal Freq: 15.625 - 183.153 kHz (Monitor: 31.000 - 184.000 kHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 165.003 Hz (Monitor: 56.000 - 165.000 Hz)
-    Horizontal Freq: 15.625 - 183.153 kHz (Monitor: 31.000 - 184.000 kHz)
 
 EDID conformity: FAIL

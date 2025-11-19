@@ -113,7 +113,8 @@ Block 1, CTA-861 Extension Block:
     SCDC Read Request Capable
     Supports scrambling for <= 340 Mcsc
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0xed (MCCS)
@@ -154,8 +155,11 @@ Checksum: 0x27  Unused space in Extension Block: 6 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
+  Detailed Timing Descriptor #3: Image size is 797x333 mm, but based on the picture AR it should be 797x448 mm.
+  Detailed Timing Descriptor #4: Image size is 797x336 mm, but based on the picture AR it should be 797x667 mm.
 
 Failures:
 

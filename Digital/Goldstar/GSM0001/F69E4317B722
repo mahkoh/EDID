@@ -116,7 +116,7 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 2.1.0.0
     Supports_AI
@@ -165,8 +165,15 @@ Checksum: 0x64  Unused space in Extension Block: 15 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
+  Detailed Timing Descriptor #3: Dubious image size (16x9 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #4: Dubious image size (16x9 mm is smaller than 100x100 mm).
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 135.000 kHz)
 
 Failures:
 
@@ -175,8 +182,5 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #3: Mismatch of image size 16x9 mm vs display size 1600x900 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 16x9 mm vs display size 1600x900 mm.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 135.000 kHz)
 
 EDID conformity: FAIL

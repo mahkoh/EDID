@@ -73,6 +73,9 @@ Checksum: 0xd2
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Image size is 310x230 mm, but based on the picture AR it should be 310x248 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 234.000 MHz (Monitor: 230.000 MHz)

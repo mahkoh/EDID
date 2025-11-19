@@ -188,15 +188,24 @@ Checksum: 0x65  Unused space in Extension Block: 25 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 7 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #2: Image size is 408x255 mm, but based on the picture AR it should be 408x229 mm.
+  Detailed Timing Descriptor #4: Image size is 531x299 mm, but based on the picture AR it should be 531x354 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 3, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Detailed Timing Descriptor #5: Image size is 408x255 mm, but based on the picture AR it should be 408x229 mm.
+  Detailed Timing Descriptor #7: Image size is 531x299 mm, but based on the picture AR it should be 531x354 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 24.000 - 83.000 kHz)
 
 Failures:
 
 Block 0, Base EDID:
-  Vendor & Product Identification: The year 2048 is more than one year in the future.
+  Vendor & Product Identification: The year is more than one year in the future.
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
   Audio Data Block: Bit F27 must be 0.
@@ -223,10 +232,7 @@ Block 3, CTA-861 Extension Block:
   Dummy Descriptor: Dummy block filled with garbage.
   Detailed Timing Descriptor #6: Invalid detailed timing descriptor ordering.
   Detailed Timing Descriptor #7: Invalid detailed timing descriptor ordering.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 24.000 - 83.000 kHz)
   Base EDID: The DTD max image size is 531x299mm, but the display size is not specified anywhere.
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.

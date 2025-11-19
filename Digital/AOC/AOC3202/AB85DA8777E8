@@ -125,7 +125,8 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block, OUI 00-00-00:
     01 78 80 00                                     '.x..'
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 0 Hz
     Maximum Refresh Rate: 240 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -191,7 +192,8 @@ Block 3, CTA-861 Extension Block:
   Vendor-Specific Data Block, OUI 00-00-00:
     01 78 80 00                                     '.x..'
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 0 Hz
     Maximum Refresh Rate: 240 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -221,8 +223,6 @@ Block 1, CTA-861 Extension Block:
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 Block 3, CTA-861 Extension Block:
   Vendor-Specific Data Block, OUI 00-00-00: Unknown OUI 00-00-00.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 
@@ -240,7 +240,6 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 1.
   Video Data Block: Duplicate VIC 63.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.

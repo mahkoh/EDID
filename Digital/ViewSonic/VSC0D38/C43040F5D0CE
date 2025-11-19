@@ -37,7 +37,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6523, 0.3369
     Green: 0.3212, 0.6250
@@ -73,7 +73,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync  10 Vback   28 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-75 Hz V, 150-150 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 48-75 Hz V, 150-150 kHz H, max dotclock 600 MHz
     Display Product Name: 'VG3448'
   Extension blocks: 1
 Checksum: 0x76
@@ -139,8 +139,11 @@ Checksum: 0x54  Unused space in Extension Block: 12 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
-  Video Data Block: VIC 1 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

@@ -143,6 +143,7 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Detailed Timing Descriptor #7: DTD is similar but not identical to VIC 17.
+  Detailed Timing Descriptor #7: Image size is 885x498 mm, but based on the picture AR it should be 885x708 mm.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

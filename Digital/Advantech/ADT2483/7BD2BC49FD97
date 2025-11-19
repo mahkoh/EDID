@@ -118,7 +118,16 @@ Checksum: 0x41  Unused space in Extension Block: 7 bytes
 
 Warnings:
 
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 5 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #2: Image size is 240x190 mm, but based on the picture AR it should be 240x80 mm.
+  Detailed Timing Descriptor #3: Image size is 240x190 mm, but based on the picture AR it should be 240x160 mm.
+  Detailed Timing Descriptor #4: Image size is 240x190 mm, but based on the picture AR it should be 240x135 mm.
+  Detailed Timing Descriptor #5: Image size is 240x190 mm, but based on the picture AR it should be 240x135 mm.
+  Detailed Timing Descriptor #6: Image size is 190x190 mm, but based on the picture AR it should be 190x106 mm.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 30.000 - 94.000 kHz)
   CTA-861: Native interlaced resolution of 1440x480 is smaller than the max preferred interlaced resolution 1920x1080.
 
 Failures:
@@ -137,8 +146,6 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #6: Mismatch of image size 190x190 mm vs display size 930x520 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 30.000 - 94.000 kHz)
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

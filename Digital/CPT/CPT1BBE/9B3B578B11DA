@@ -37,16 +37,21 @@ Block 0, Base EDID:
     DTD 2:  1024x600    60.000000 Hz 128:75    37.500 kHz     45.000000 MHz (223 mm x 125 mm)
                  Hfront   48 Hsync  32 Hback   96 Hpol P
                  Vfront    3 Vsync   6 Vback   16 Vpol N
-    Alphanumeric Data String: 'J024T'
+    Alphanumeric Data String: 'J024T.101NB1 '
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 01 01 0a 20 20 '..............  '
 Checksum: 0x2a
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x80 at position 5, can cause problems.
+
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: No newline, but one or more trailing spaces.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 

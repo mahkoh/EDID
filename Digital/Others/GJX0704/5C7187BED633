@@ -74,7 +74,7 @@ Failures:
 
 Block 0, Base EDID:
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
-  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: NUL byte at position 10.
 Block 1, Base EDID:
   Unknown Extension Block.
 EDID:

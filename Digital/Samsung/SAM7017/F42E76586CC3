@@ -111,9 +111,9 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
     BC - Back Center
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
+    BL/BR - Back Left/Right
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
   Detailed Timing Descriptors:
@@ -135,10 +135,20 @@ Checksum: 0x9f  Unused space in Extension Block: 11 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Image size is 708x398 mm, but based on the picture AR it should be 708x472 mm.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Detailed Timing Descriptor #3: Dubious image size (16x9 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #4: Dubious image size (16x9 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #5: Dubious image size (16x9 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #6: Dubious image size (16x9 mm is smaller than 100x100 mm).
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.000 Hz (Monitor: 49.000 - 61.000 Hz)
+    Horizontal Freq: 31.250 - 67.500 kHz (Monitor: 15.000 - 46.000 kHz)
+    Maximum Clock: 148.500 MHz (Monitor: 80.000 MHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -152,10 +162,5 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #5: Mismatch of image size 16x9 mm vs display size 1290x720 mm.
   Detailed Timing Descriptor #6: Mismatch of image size 16x9 mm vs display size 1290x720 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 75.000 Hz (Monitor: 49.000 - 61.000 Hz)
-    Horizontal Freq: 31.250 - 67.500 kHz (Monitor: 15.000 - 46.000 kHz)
-    Maximum Clock: 148.500 MHz (Monitor: 80.000 MHz)
 
 EDID conformity: FAIL

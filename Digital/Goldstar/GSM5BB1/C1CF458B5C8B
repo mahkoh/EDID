@@ -127,7 +127,8 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 83 (301.833 cd/m^2)
     Desired content min luminance: 80 (0.297 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.5
+    Version: 2
+    Feature Caps: 0x05
     Minimum Refresh Rate: 60 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
@@ -151,17 +152,19 @@ Checksum: 0x2b  Unused space in Extension Block: 1 byte
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 143.981 Hz (Monitor: 60.000 - 144.000 Hz)
+    Maximum Clock: 594.000 MHz (Monitor: 420.000 MHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 143.981 Hz (Monitor: 60.000 - 144.000 Hz)
-    Maximum Clock: 594.000 MHz (Monitor: 420.000 MHz)
 
 EDID conformity: FAIL

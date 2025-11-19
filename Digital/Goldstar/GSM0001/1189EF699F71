@@ -121,7 +121,21 @@ Checksum: 0x65  Unused space in Extension Block: 5 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Basic Display Parameters & Features: Dubious maximum image size (16x9 is smaller than 10x10 cm).
+  Detailed Timing Descriptor #1: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (160x90 mm is smaller than 100x100 mm).
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #3: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #4: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #5: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #6: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #7: Dubious image size (160x90 mm is smaller than 100x100 mm).
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 70.082 Hz (Monitor: 58.000 - 62.000 Hz)
+    Horizontal Freq: 15.625 - 67.500 kHz (Monitor: 31.000 - 70.000 kHz)
 
 Failures:
 
@@ -130,9 +144,6 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 70.082 Hz (Monitor: 58.000 - 62.000 Hz)
-    Horizontal Freq: 15.625 - 67.500 kHz (Monitor: 31.000 - 70.000 kHz)
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

@@ -142,6 +142,8 @@ Block 1, DisplayID Extension Block:
   CTA-861 DisplayID Data Block: Unexpected revision (3 != 0).
 Block 3, DisplayID Extension Block:
   CTA-861 DisplayID Data Block: Unexpected revision (3 != 0).
+EDID:
+  No Native Video Resolution was defined.
 
 Failures:
 
@@ -160,6 +162,5 @@ Block 3, DisplayID Extension Block:
 EDID:
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
-  DisplayID: Missing DisplayID Product Identification Data Block.
 
 EDID conformity: FAIL

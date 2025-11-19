@@ -54,7 +54,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6337, 0.3505
     Green: 0.3271, 0.6093
@@ -82,7 +82,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback  160 Hpol P
                  Vfront    3 Vsync   5 Vback   52 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-75 Hz V, 115-115 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 48-75 Hz V, 115-115 kHz H, max dotclock 600 MHz
     Display Product Name: 'EM3FPAC32BC'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -111,7 +111,8 @@ Block 1, CTA-861 Extension Block:
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0x00
@@ -163,7 +164,8 @@ Block 3, CTA-861 Extension Block:
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0x00
@@ -183,6 +185,13 @@ Checksum: 0xbb  Unused space in Extension Block: 46 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
+Block 3, CTA-861 Extension Block:
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.466 - 111.073 kHz (Monitor: 115.000 - 115.000 kHz)
@@ -202,7 +211,6 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 4.
   Video Data Block: Duplicate VIC 16.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   CTA-861: Native progressive timings are a mix of several resolutions.

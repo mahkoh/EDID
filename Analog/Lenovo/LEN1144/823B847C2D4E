@@ -90,7 +90,10 @@ Checksum: 0x78 (should be 0x70)  Unused space in Extension Block: 87 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Image size is 518x324 mm, but based on the picture AR it should be 518x291 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:

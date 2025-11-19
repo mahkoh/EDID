@@ -124,7 +124,8 @@ Block 1, CTA-861 Extension Block:
         HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
         HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0xed (MCCS)
@@ -162,15 +163,13 @@ Checksum: 0x11  Unused space in Extension Block: 10 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-EDID:
-  CTA-861: Multiple native progressive timings are defined.
-
-Failures:
-
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 120.003 Hz (Monitor: 48.000 - 120.000 Hz)
     Maximum Clock: 297.000 MHz (Monitor: 290.000 MHz)
+  CTA-861: Multiple native progressive timings are defined.
 
-EDID conformity: FAIL
+EDID conformity: PASS

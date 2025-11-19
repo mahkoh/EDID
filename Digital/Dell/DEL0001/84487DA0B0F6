@@ -52,6 +52,15 @@ Checksum: 0x0a
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+  Display Product Serial Number: ...
+EDID:
+  No Native Video Resolution was defined.
+  Base EDID: Multiple Display Product Serial Numbers are specified, is that intended?
+
 Failures:
 
 Block 0, Base EDID:

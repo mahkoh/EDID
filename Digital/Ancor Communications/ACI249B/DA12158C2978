@@ -125,6 +125,7 @@ Checksum: 0xf4  Unused space in Extension Block: 21 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 4.
   Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 4.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.

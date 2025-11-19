@@ -61,7 +61,8 @@ Block 1, CTA-861 Extension Block:
   Revision: 3
   Native detailed modes: 0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 30 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0x00

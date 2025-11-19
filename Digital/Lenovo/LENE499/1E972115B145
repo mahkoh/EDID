@@ -41,7 +41,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   79 Vpol N
     Display Product Name: 'LEN-A570-A-C'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-100 Hz V, 73-150 kHz H, max dotclock 420 MHz
+      Monitor ranges (Range Limits Only): 48-100 Hz V, 73-150 kHz H, max dotclock 420 MHz
     Alphanumeric Data String: 'MV270QHM-NX0'
 Checksum: 0x72
 
@@ -49,6 +49,8 @@ Checksum: 0x72
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 152.660 - 152.660 kHz (Monitor: 73.000 - 150.000 kHz)

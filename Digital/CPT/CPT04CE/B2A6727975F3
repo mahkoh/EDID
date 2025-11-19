@@ -44,8 +44,8 @@ Checksum: 0xbf
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: One or more trailing spaces.
-  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: No newline, but one or more trailing spaces.
+  Alphanumeric Data String: No newline, but one or more trailing spaces.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 

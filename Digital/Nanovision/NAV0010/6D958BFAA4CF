@@ -46,15 +46,18 @@ Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Dubious maximum image size (8x5 is smaller than 10x10 cm).
+  Detailed Timing Descriptor #1: Dubious image size (152x91 mm is smaller than 100x100 mm).
+EDID:
+  No Native Video Resolution was defined.
 
 Failures:
 
 Block 0, Base EDID:
+  Display Product Serial Number: ...
   Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
   Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
   Detailed Timing Descriptor #1: Mismatch of image size 152x91 mm vs display size 80x50 mm.
   Display Product Name: Non-space after newline.
-  Display Product Serial Number: ...
 EDID:
   Base EDID: The DTD max image size is 152x91mm, which is larger than the display size 80.0x50.0mm.
 

@@ -115,9 +115,13 @@ Checksum: 0x4d  Unused space in Extension Block: 73 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 83.894 kHz (Monitor: 30.000 - 83.000 kHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -126,8 +130,5 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 83.894 kHz (Monitor: 30.000 - 83.000 kHz)
 
 EDID conformity: FAIL

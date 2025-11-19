@@ -75,7 +75,7 @@ Block 0, Base EDID:
     Display Product Serial Number: ...
     Display Product Name: 'DELL U4021QW'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 24-86 Hz V, 25-140 kHz H, max dotclock 730 MHz
+      Monitor ranges (Range Limits Only): 24-86 Hz V, 25-140 kHz H, max dotclock 730 MHz
   Extension blocks: 2
 Checksum: 0x94
 
@@ -153,6 +153,11 @@ Checksum: 0x90
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #2: Image size is 929x392 mm, but based on the picture AR it should be 929x522 mm.
+  Detailed Timing Descriptor #3: Image size is 929x392 mm, but based on the picture AR it should be 929x522 mm.
+  Detailed Timing Descriptor #4: Image size is 929x392 mm, but based on the picture AR it should be 929x522 mm.
+  Detailed Timing Descriptor #5: Image size is 929x392 mm, but based on the picture AR it should be 929x522 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
@@ -162,7 +167,5 @@ Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   CTA-861: Mismatch between CTA-861 and DisplayID native progressive resolution.
-  DisplayID: Missing DisplayID Product Identification Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
 
 EDID conformity: FAIL

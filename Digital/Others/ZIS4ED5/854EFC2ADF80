@@ -52,7 +52,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   37 Vpol P
     Display Product Name: 'ZWS 28" 240HZ'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 30-480 Hz V, 132-280 kHz H, max dotclock 560 MHz
+      Monitor ranges (Range Limits Only): 30-480 Hz V, 132-280 kHz H, max dotclock 560 MHz
   Extension blocks: 1
 Checksum: 0x42
 

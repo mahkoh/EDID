@@ -153,7 +153,8 @@ Block 2, CTA-861 Extension Block:
     DSC Max Fixed Rate Link: 3 and 6 Gbps per lane on 3 lanes, 6, 8 and 10 Gbps on 4 lanes
     Maximum number of bytes in a line of chunks: 6144
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.15
+    Version: 2
+    Feature Caps: 0x0f
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
@@ -209,16 +210,16 @@ Warnings:
 Block 2, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 30.000 - 144.000 Hz (Monitor: 48.000 - 144.000 Hz)
 
 Failures:
 
 Block 2, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 3, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 30.000 - 144.000 Hz (Monitor: 48.000 - 144.000 Hz)
-  DisplayID: Missing DisplayID Product Identification Data Block.
 
 EDID conformity: FAIL

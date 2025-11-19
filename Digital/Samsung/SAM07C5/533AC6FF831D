@@ -152,9 +152,9 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
     BC - Back Center
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
+    BL/BR - Back Left/Right
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: No Data
@@ -276,9 +276,9 @@ Block 3, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
     BC - Back Center
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
+    BL/BR - Back Left/Right
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: No Data
@@ -332,10 +332,21 @@ Checksum: 0xaa  Unused space in Extension Block: 16 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (160x90 mm is smaller than 100x100 mm).
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #3: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #4: Dubious image size (160x90 mm is smaller than 100x100 mm).
 Block 3, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #5: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #6: Dubious image size (160x90 mm is smaller than 100x100 mm).
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 162.000 MHz (Monitor: 150.000 MHz)
 
 Failures:
 
@@ -368,8 +379,6 @@ Block 3, CTA-861 Extension Block:
   Detailed Timing Descriptor #5: Mismatch of image size 160x90 mm vs display size 890x500 mm.
   Detailed Timing Descriptor #6: Mismatch of image size 160x90 mm vs display size 890x500 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Maximum Clock: 162.000 MHz (Monitor: 150.000 MHz)
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
   CTA-861: Native progressive timings are a mix of several resolutions.

@@ -40,7 +40,7 @@ Block 0, Base EDID:
     DTD 2:  3840x2160   47.997300 Hz  16:9    106.650 kHz    426.600000 MHz (385 mm x 215 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol N
                  Vfront    3 Vsync   5 Vback   54 Vpol N
-    Alphanumeric Data String: 'CK7T7'
+    Alphanumeric Data String: 'CK7T7.LQ173D1'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 03 28 00 12 00 00 0b 01 0a 20 20 '....A.(.......  '
 Checksum: 0x74
 
@@ -49,12 +49,12 @@ Checksum: 0x74
 Warnings:
 
 Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x81 at position 5, can cause problems.
   Missing Display Product Name.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Alphanumeric Data String: Non-printable character.
 
 EDID conformity: FAIL

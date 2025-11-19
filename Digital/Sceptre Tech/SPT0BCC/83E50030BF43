@@ -106,7 +106,8 @@ Block 1, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 330 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0xed (MCCS)
@@ -144,8 +145,18 @@ Checksum: 0xd0  Unused space in Extension Block: 33 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 63 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #3: Image size is 690x291 mm, but based on the picture AR it should be 690x582 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 120.000 Hz (Monitor: 48.000 - 75.000 Hz)
+    Horizontal Freq: 28.125 - 135.000 kHz (Monitor: 54.000 - 85.000 kHz)
+    Maximum Clock: 297.000 MHz (Monitor: 250.000 MHz)
 
 Failures:
 
@@ -154,10 +165,6 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 120.000 Hz (Monitor: 48.000 - 75.000 Hz)
-    Horizontal Freq: 28.125 - 135.000 kHz (Monitor: 54.000 - 85.000 kHz)
-    Maximum Clock: 297.000 MHz (Monitor: 250.000 MHz)
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

@@ -133,7 +133,10 @@ Checksum: 0x3f
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 4 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #6: Image size is 698x393 mm, but based on the picture AR it should be 698x558 mm.
+  Detailed Timing Descriptor #7: Image size is 698x393 mm, but based on the picture AR it should be 698x465 mm.
 
 Failures:
 

@@ -88,6 +88,15 @@ Checksum: 0xd8
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #2: Image size is 518x324 mm, but based on the picture AR it should be 518x291 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 30.000 - 75.000 kHz)
+
 Failures:
 
 Block 0, Base EDID:
@@ -96,8 +105,6 @@ Block 0, Base EDID:
 Block 1, Base EDID:
   Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 30.000 - 75.000 kHz)
   Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

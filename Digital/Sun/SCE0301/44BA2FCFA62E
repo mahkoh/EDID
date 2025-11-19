@@ -140,12 +140,9 @@ Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-
-Failures:
-
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 60.317 Hz (Monitor: 58.000 - 62.000 Hz)
     Horizontal Freq: 15.625 - 67.500 kHz (Monitor: 30.000 - 80.000 kHz)
 
-EDID conformity: FAIL
+EDID conformity: PASS

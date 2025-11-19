@@ -103,7 +103,8 @@ Block 1, CTA-861 Extension Block:
     BT2020YCC
     BT2020RGB
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.14
+    Version: 2
+    Feature Caps: 0x0e
     Minimum Refresh Rate: 0 Hz
     Maximum Refresh Rate: 0 Hz
     Flags 1.x: 0x00
@@ -140,13 +141,14 @@ Warnings:
 Block 0, Base EDID:
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:

@@ -190,8 +190,8 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency
     Supports 10b 12b 444: Not supported
-    Target Min PQ v2: 160 (0.03516709 cd/m^2)
-    Target Max PQ v2: 2380 (211 cd/m^2)
+    Target Min PQ v2: 160 (0.03470167 cd/m^2)
+    Target Max PQ v2: 2380 (203 cd/m^2)
     Unique Rx, Ry: 0.63281250, 0.35156250
     Unique Gx, Gy: 0.31640625, 0.61328125
     Unique Bx, By: 0.14453125, 0.05859375
@@ -325,8 +325,8 @@ Block 3, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency
     Supports 10b 12b 444: Not supported
-    Target Min PQ v2: 160 (0.03516709 cd/m^2)
-    Target Max PQ v2: 2380 (211 cd/m^2)
+    Target Min PQ v2: 160 (0.03470167 cd/m^2)
+    Target Max PQ v2: 2380 (203 cd/m^2)
     Unique Rx, Ry: 0.63281250, 0.35156250
     Unique Gx, Gy: 0.31640625, 0.61328125
     Unique Bx, By: 0.14453125, 0.05859375
@@ -346,11 +346,15 @@ Checksum: 0xee  Unused space in Extension Block: 5 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #3: Image size is 1600x900 mm, but based on the picture AR it should be 1600x1800 mm.
 Block 3, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #4: Image size is 1600x900 mm, but based on the picture AR it should be 1600x1800 mm.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
   CTA-861: Native progressive resolution of 1920x1080 is smaller than the max preferred progressive resolution 3840x2160.
@@ -360,6 +364,8 @@ Failures:
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #1: Mismatch of image size 1360x760 mm vs display size 1600x900 mm.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
 Block 2, Base EDID:
   Unknown Extension Block.
 Block 3, CTA-861 Extension Block:
@@ -384,6 +390,7 @@ Block 3, CTA-861 Extension Block:
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
   Video Capability Data Block: Only one instance of this Data Block is allowed.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Colorimetry Data Block: Only one instance of this Data Block is allowed.
   YCbCr 4:2:0 Capability Map Data Block: Only one instance of this Data Block is allowed.
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.

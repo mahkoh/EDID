@@ -128,17 +128,19 @@ Checksum: 0x67  Unused space in Extension Block: 19 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 27.000 - 88.786 kHz (Monitor: 30.000 - 90.000 kHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
-  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 27.000 - 88.786 kHz (Monitor: 30.000 - 90.000 kHz)
 
 EDID conformity: FAIL

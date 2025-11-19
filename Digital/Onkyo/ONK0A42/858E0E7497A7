@@ -113,8 +113,8 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
+    LS/RS - Left/Right Surround
     BL/BR - Back Left/Right
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.2.0.0
     Supports_AI
@@ -155,6 +155,8 @@ Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Progressive and Interlaced latency values are identical, no need for both.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #4: Image size is 698x392 mm, but based on the picture AR it should be 698x465 mm.
+  Detailed Timing Descriptor #5: Image size is 523x392 mm, but based on the picture AR it should be 523x348 mm.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

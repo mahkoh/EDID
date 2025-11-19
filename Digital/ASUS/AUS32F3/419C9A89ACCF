@@ -121,7 +121,8 @@ Block 1, CTA-861 Extension Block:
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports Auto Low-Latency Mode
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.3
+    Version: 2
+    Feature Caps: 0x03
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -161,7 +162,9 @@ Checksum: 0x42  Unused space in Extension Block: 12 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #3: Image size is 708x399 mm, but based on the picture AR it should be 708x796 mm.
 
 Failures:
 

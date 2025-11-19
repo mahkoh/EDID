@@ -146,6 +146,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Unknown CTA-861 Data Block (tag 0x00, length 0).
   Unknown CTA-861 Data Block (tag 0x00, length 0).
   Unknown CTA-861 Data Block (tag 0x00, length 0).
@@ -159,6 +160,10 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 60.317 Hz (Monitor: 40.000 - 60.000 Hz)
+    Horizontal Freq: 27.000 - 135.000 kHz (Monitor: 30.000 - 135.000 kHz)
+    Maximum Clock: 594.000 MHz (Monitor: 300.000 MHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -166,9 +171,6 @@ Failures:
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 60.317 Hz (Monitor: 40.000 - 60.000 Hz)
-    Horizontal Freq: 27.000 - 135.000 kHz (Monitor: 30.000 - 135.000 kHz)
-    Maximum Clock: 594.000 MHz (Monitor: 300.000 MHz)
+  CTA-861: The maximum HDMI TMDS clock is 300000 kHz, but one or more video timings go up to 594000 kHz.
 
 EDID conformity: FAIL

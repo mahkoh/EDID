@@ -124,7 +124,7 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
@@ -199,7 +199,7 @@ Block 3, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
@@ -227,14 +227,19 @@ Warnings:
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 16.
+  Detailed Timing Descriptor #5: Image size is 597x336 mm, but based on the picture AR it should be 597x398 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 3, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Detailed Timing Descriptor #6: DTD is similar but not identical to VIC 16.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Detailed Timing Descriptor #9: Image size is 597x336 mm, but based on the picture AR it should be 597x398 mm.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.029 Hz (Monitor: 56.000 - 76.000 Hz)
+    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 30.000 - 81.000 kHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -262,11 +267,7 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 32.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
   Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 75.029 Hz (Monitor: 56.000 - 76.000 Hz)
-    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 30.000 - 81.000 kHz)
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
 

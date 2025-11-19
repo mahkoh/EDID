@@ -169,9 +169,11 @@ Checksum: 0x2d  Unused space in Extension Block: 67 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Image size is 673x284 mm, but based on the picture AR it should be 673x378 mm.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 89 and the first DTD are not identical. Is this intended?
 Block 3, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
 EDID:
@@ -182,7 +184,7 @@ Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, Base EDID:
@@ -200,7 +202,6 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 93.
   Video Data Block: Duplicate VIC 94.
   Video Data Block: Duplicate VIC 95.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   CTA-861: Native progressive timings are a mix of several resolutions.

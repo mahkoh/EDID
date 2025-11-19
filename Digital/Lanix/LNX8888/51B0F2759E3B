@@ -120,6 +120,10 @@ Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.025 Hz (Monitor: 59.000 - 61.000 Hz)
+    Horizontal Freq: 18.000 - 79.976 kHz (Monitor: 15.000 - 46.000 kHz)
 
 Failures:
 
@@ -127,9 +131,6 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 75.025 Hz (Monitor: 59.000 - 61.000 Hz)
-    Horizontal Freq: 18.000 - 79.976 kHz (Monitor: 15.000 - 46.000 kHz)
   Base EDID: The DTD max image size is 360x225mm, but the display size is not specified anywhere.
 
 EDID conformity: FAIL

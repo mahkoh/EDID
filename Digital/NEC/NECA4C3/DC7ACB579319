@@ -86,16 +86,25 @@ Checksum: 0x84  Unused space in Extension Block: 15 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: DTD is identical to VIC 4, which is not present in the CTA Ext Block.
+  Detailed Timing Descriptor #2: DTD is identical to VIC 5, which is not present in the CTA Ext Block.
 Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: Image size is 921x518 mm, but based on the picture AR it should be 921x614 mm.
+  Detailed Timing Descriptor #4: Image size is 921x518 mm, but based on the picture AR it should be 921x736 mm.
+  Detailed Timing Descriptor #5: Image size is 921x518 mm, but based on the picture AR it should be 921x307 mm.
+  Detailed Timing Descriptor #6: Image size is 921x518 mm, but based on the picture AR it should be 921x368 mm.
+  Detailed Timing Descriptor #7: DTD is identical to VIC 20, which is not present in the CTA Ext Block.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 45.000 kHz (Monitor: 24.000 - 91.000 kHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 45.000 kHz (Monitor: 24.000 - 91.000 kHz)
 
 EDID conformity: FAIL

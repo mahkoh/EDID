@@ -157,6 +157,8 @@ Block 1, CTA-861 Extension Block:
     VIC 102:  4096x2160   60.000000 Hz 256:135  135.000 kHz    594.000000 MHz
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
+    Full Frame Peak Luminance Index: 0
+    Peak Luminance Index: 0
   Detailed Timing Descriptors:
     DTD 3:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (1872 mm x 1053 mm)
                  Hfront  528 Hsync  44 Hback  148 Hpol P

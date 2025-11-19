@@ -94,12 +94,16 @@ Checksum: 0x5c
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Image size is 400x270 mm, but based on the picture AR it should be 400x250 mm.
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x17.
+  Detailed Timing Descriptor #2: Image size is 400x270 mm, but based on the picture AR it should be 400x240 mm.
+  Detailed Timing Descriptor #3: Image size is 400x270 mm, but based on the picture AR it should be 400x224 mm.
 
 Failures:
 
 Block 0, Base EDID:
-  Vendor & Product Identification: The year 2048 is more than one year in the future.
+  Vendor & Product Identification: The year is more than one year in the future.
   Missing Display Range Limits Descriptor.
 Block 1, Base EDID:
   Unknown Extension Block.

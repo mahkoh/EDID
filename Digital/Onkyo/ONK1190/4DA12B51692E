@@ -134,8 +134,8 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
+    LS/RS - Left/Right Surround
     BL/BR - Back Left/Right
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 3.5.0.0
     Supports_AI
@@ -194,8 +194,8 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Low-Latency
     Supports 10b 12b 444: Not supported
-    Target Min PQ v2: 20 (0.00064354 cd/m^2)
-    Target Max PQ v2: 3095 (1082 cd/m^2)
+    Target Min PQ v2: 20 (0.00063665 cd/m^2)
+    Target Max PQ v2: 3095 (1037 cd/m^2)
     Unique Rx, Ry: 0.67968750, 0.31640625
     Unique Gx, Gy: 0.26171875, 0.68750000
     Unique Bx, By: 0.14843750, 0.05859375
@@ -209,4 +209,9 @@ Block 1, CTA-861 Extension Block:
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
-EDID conformity: PASS
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
+
+EDID conformity: FAIL

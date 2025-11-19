@@ -69,12 +69,14 @@ Block 1, CTA-861 Extension Block:
   8-byte timing descriptors: 17
   Basic audio support
   Native detailed modes: 0
-Checksum: 0x6e  Unused space in Extension Block: 4294967281 bytes
+Checksum: 0x6e
 
 ----------------
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is identical to VIC 16, which is not present in the CTA Ext Block.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
@@ -85,7 +87,7 @@ Failures:
 Block 1, CTA-861 Extension Block:
   Deprecated CTA-861 Extension revision 2.
   8-byte descriptors were never used.
-  Padding: Contains non-zero bytes.
+  Offset 142 is larger than EDID block size-1 (127).
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

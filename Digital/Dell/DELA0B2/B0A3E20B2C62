@@ -183,9 +183,11 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-Block 3, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.029 Hz (Monitor: 56.000 - 76.000 Hz)
+    Horizontal Freq: 28.125 - 79.976 kHz (Monitor: 30.000 - 83.000 kHz)
+    Maximum Clock: 162.000 MHz (Monitor: 160.000 MHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -212,12 +214,9 @@ Block 3, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
   Detailed Timing Descriptor #3: Mismatch of image size 708x398 mm vs display size 530x300 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 75.029 Hz (Monitor: 56.000 - 76.000 Hz)
-    Horizontal Freq: 28.125 - 79.976 kHz (Monitor: 30.000 - 83.000 kHz)
-    Maximum Clock: 162.000 MHz (Monitor: 160.000 MHz)
   Base EDID: The DTD max image size is 708x398mm, which is larger than the display size 530.0x300.0mm.
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: The maximum HDMI TMDS clock is 150000 kHz, but one or more video timings go up to 162000 kHz.
 
 EDID conformity: FAIL

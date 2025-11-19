@@ -129,7 +129,8 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 105 (486.099 cd/m^2)
     Desired content min luminance: 79 (0.467 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 61 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -150,10 +151,21 @@ Checksum: 0x42  Unused space in Extension Block: 5 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Image size is 609x355 mm, but based on the picture AR it should be 609x342 mm.
+  Detailed Timing Descriptor #2: Image size is 609x355 mm, but based on the picture AR it should be 609x342 mm.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 4 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Detailed Timing Descriptor #3: Image size is 609x355 mm, but based on the picture AR it should be 609x342 mm.
+  Detailed Timing Descriptor #4: DTD is identical to VIC 16, which is not present in the CTA Ext Block.
+  Detailed Timing Descriptor #4: Image size is 609x355 mm, but based on the picture AR it should be 609x342 mm.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 60.317 Hz (Monitor: 40.000 - 61.000 Hz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -166,11 +178,10 @@ Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.
   YCbCr 4:2:0 Capability Map Data Block: Max index 20 > 17 (#SVDs).
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Detailed Timing Descriptor #3: Mismatch of image size 609x355 mm vs display size 530x290 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 609x355 mm vs display size 530x290 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 60.317 Hz (Monitor: 40.000 - 61.000 Hz)
   Base EDID: The DTD max image size is 609x355mm, which is larger than the display size 530.0x290.0mm.
 
 EDID conformity: FAIL

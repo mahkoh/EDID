@@ -129,7 +129,8 @@ Block 1, CTA-861 Extension Block:
     Maximum TMDS clock: 330 MHz
     Extended HDMI video details:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -199,7 +200,8 @@ Block 3, CTA-861 Extension Block:
     Maximum TMDS clock: 330 MHz
     Extended HDMI video details:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -227,9 +229,15 @@ Checksum: 0x43  Unused space in Extension Block: 2 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #5: Image size is 521x293 mm, but based on the picture AR it should be 521x347 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 Block 3, CTA-861 Extension Block:
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+  Detailed Timing Descriptor #9: Image size is 521x293 mm, but based on the picture AR it should be 521x347 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.734 - 183.153 kHz (Monitor: 30.000 - 180.000 kHz)
+    Maximum Clock: 380.960 MHz (Monitor: 340.000 MHz)
 
 Failures:
 
@@ -254,11 +262,7 @@ Block 3, CTA-861 Extension Block:
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI Forum VSDB did not immediately follow the HDMI VSDB.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.734 - 183.153 kHz (Monitor: 30.000 - 180.000 kHz)
-    Maximum Clock: 380.960 MHz (Monitor: 340.000 MHz)
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
 

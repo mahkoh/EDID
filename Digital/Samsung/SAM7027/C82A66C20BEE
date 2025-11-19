@@ -142,11 +142,15 @@ Checksum: 0xbc  Unused space in Extension Block: 46 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 26.000 - 81.000 kHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -158,8 +162,6 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #2: Mismatch of image size 1074x604 mm vs display size 700x390 mm.
   Detailed Timing Descriptor #3: Mismatch of image size 1074x604 mm vs display size 700x390 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 26.000 - 81.000 kHz)
   Base EDID: The DTD max image size is 1074x604mm, which is larger than the display size 700.0x390.0mm.
 
 EDID conformity: FAIL

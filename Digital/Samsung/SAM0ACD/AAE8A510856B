@@ -134,9 +134,12 @@ Checksum: 0xc2  Unused space in Extension Block: 18 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #5: Image size is 885x498 mm, but based on the picture AR it should be 885x590 mm.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

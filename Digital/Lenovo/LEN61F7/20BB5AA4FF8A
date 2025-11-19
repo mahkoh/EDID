@@ -53,7 +53,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6396, 0.3300
     Green: 0.2998, 0.5996
@@ -208,11 +208,13 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 20.
+  Detailed Timing Descriptor #5: Image size is 527x296 mm, but based on the picture AR it should be 527x421 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 Block 3, CTA-861 Extension Block:
   Detailed Timing Descriptor #8: DTD is similar but not identical to VIC 20.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+  Detailed Timing Descriptor #10: Image size is 527x296 mm, but based on the picture AR it should be 527x421 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 79.976 kHz (Monitor: 30.000 - 83.000 kHz)
@@ -237,7 +239,6 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 18.
   Video Data Block: Duplicate VIC 19.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
 

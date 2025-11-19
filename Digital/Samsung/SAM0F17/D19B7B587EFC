@@ -166,6 +166,8 @@ Block 1, CTA-861 Extension Block:
       Static metadata type 1
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
+    Full Frame Peak Luminance Index: 0
+    Peak Luminance Index: 0
   Detailed Timing Descriptors:
     DTD 3:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (1872 mm x 1053 mm)
                  Hfront  528 Hsync  44 Hback  148 Hpol P
@@ -263,6 +265,8 @@ Block 3, CTA-861 Extension Block:
       Static metadata type 1
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
+    Full Frame Peak Luminance Index: 0
+    Peak Luminance Index: 0
   Detailed Timing Descriptors:
     DTD 5:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz (1872 mm x 1053 mm)
                  Hfront  528 Hsync  44 Hback  148 Hpol P
@@ -277,8 +281,10 @@ Checksum: 0xc6  Unused space in Extension Block: 20 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is identical to VIC 95, which is not present in the CTA Ext Block.
 Block 1, CTA-861 Extension Block:
-  Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 Block 3, CTA-861 Extension Block:
@@ -291,9 +297,9 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 1872x1053 mm vs display size 950x540 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 1872x1053 mm vs display size 950x540 mm.
 Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
   Detailed Timing Descriptor #3: Mismatch of image size 1872x1053 mm vs display size 950x540 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 1872x1053 mm vs display size 950x540 mm.
-  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
 Block 2, Base EDID:
   Unknown Extension Block.
 Block 3, CTA-861 Extension Block:
@@ -318,6 +324,7 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 17.
   Video Data Block: Duplicate VIC 21.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
   Video Capability Data Block: Only one instance of this Data Block is allowed.
   Colorimetry Data Block: Only one instance of this Data Block is allowed.
   YCbCr 4:2:0 Video Data Block: Duplicate YCbCr 4:2:0 VIC 96.
@@ -327,7 +334,6 @@ Block 3, CTA-861 Extension Block:
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
   Detailed Timing Descriptor #5: Mismatch of image size 1872x1053 mm vs display size 950x540 mm.
   Detailed Timing Descriptor #6: Mismatch of image size 1872x1053 mm vs display size 950x540 mm.
-  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
 EDID:
   Base EDID: The DTD max image size is 1872x1053mm, which is larger than the display size 950.0x540.0mm.
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).

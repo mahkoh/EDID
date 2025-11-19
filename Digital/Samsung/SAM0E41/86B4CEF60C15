@@ -36,7 +36,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6796, 0.3144
     Green: 0.2753, 0.6621
@@ -71,7 +71,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   69 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 70-144 Hz V, 168-168 kHz H, max dotclock 350 MHz
+      Monitor ranges (Range Limits Only): 70-144 Hz V, 168-168 kHz H, max dotclock 350 MHz
     Display Product Name: 'C27FG7x'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -103,7 +103,8 @@ Block 1, CTA-861 Extension Block:
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.3
+    Version: 2
+    Feature Caps: 0x03
     Minimum Refresh Rate: 70 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
@@ -129,6 +130,7 @@ Checksum: 0x6b  Unused space in Extension Block: 38 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:

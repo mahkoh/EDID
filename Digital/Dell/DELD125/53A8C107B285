@@ -136,7 +136,8 @@ Block 1, CTA-861 Extension Block:
     SCDC Present
     Supports scrambling for <= 340 Mcsc
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -219,7 +220,8 @@ Block 3, CTA-861 Extension Block:
     SCDC Present
     Supports scrambling for <= 340 Mcsc
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -244,14 +246,22 @@ Checksum: 0x98  Unused space in Extension Block: 9 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #3: Image size is 797x334 mm, but based on the picture AR it should be 797x448 mm.
+  Detailed Timing Descriptor #4: Image size is 797x334 mm, but based on the picture AR it should be 797x448 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 Block 3, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+  Detailed Timing Descriptor #6: Image size is 797x334 mm, but based on the picture AR it should be 797x448 mm.
+  Detailed Timing Descriptor #7: Image size is 797x334 mm, but based on the picture AR it should be 797x448 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 182.996 kHz (Monitor: 29.000 - 200.000 kHz)
 
 Failures:
 
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, Base EDID:
@@ -280,10 +290,7 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 97.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 182.996 kHz (Monitor: 29.000 - 200.000 kHz)
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
 

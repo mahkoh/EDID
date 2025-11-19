@@ -59,7 +59,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 50-60 Hz V, 30-90 kHz H, max dotclock 250 MHz
+      Monitor ranges (Range Limits Only): 50-60 Hz V, 30-90 kHz H, max dotclock 250 MHz
     Display Product Name: 'HP Z24nq'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -107,6 +107,11 @@ Block 1, CTA-861 Extension Block:
 Checksum: 0xc6  Unused space in Extension Block: 33 bytes
 
 ----------------
+
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
 
 Failures:
 

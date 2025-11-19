@@ -220,6 +220,8 @@ Checksum: 0xc1  Unused space in Extension Block: 17 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
@@ -253,7 +255,6 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 6.
   Video Data Block: Duplicate VIC 1.
   Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: The DTD max image size is 698x392mm, but the display size is not specified anywhere.
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).

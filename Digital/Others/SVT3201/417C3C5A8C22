@@ -102,7 +102,13 @@ Checksum: 0xab  Unused space in Extension Block: 45 bytes
 
 Warnings:
 
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
+  Detailed Timing Descriptor #3: Image size is 531x398 mm, but based on the picture AR it should be 531x354 mm.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 45.000 kHz (Monitor: 30.000 - 46.000 kHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -115,8 +121,6 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #5: Mismatch of image size 708x398 mm vs display size 690x410 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 28.125 - 45.000 kHz (Monitor: 30.000 - 46.000 kHz)
   Base EDID: The DTD max image size is 708x398mm, which is larger than the display size 690.0x410.0mm.
 
 EDID conformity: FAIL

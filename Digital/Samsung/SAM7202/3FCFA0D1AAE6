@@ -139,7 +139,7 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)
@@ -201,9 +201,12 @@ Block 1, CTA-861 Extension Block:
     VIC 218:  4096x2160  100.000000 Hz 256:135  225.000 kHz   1188.000000 MHz
     VIC 219:  4096x2160  120.000000 Hz 256:135  270.000 kHz   1188.000000 MHz
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
-    Application Version: 105
+    Application Version: 1
+    Full Frame Peak Luminance Index: 2
+    Peak Luminance Index: 6
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.11
+    Version: 2
+    Feature Caps: 0x0b
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0x00

@@ -180,9 +180,9 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
     BC - Back Center
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
+    BL/BR - Back Left/Right
   Detailed Timing Descriptors:
     DTD 3:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (1600 mm x 900 mm)
                  Hfront   64 Hsync 112 Hback  256 Hpol P
@@ -191,14 +191,22 @@ Checksum: 0x7c  Unused space in Extension Block: 4 bytes
 
 ----------------
 
-Failures:
+Warnings:
 
 Block 0, Base EDID:
-  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 70.082 Hz (Monitor: 58.000 - 121.000 Hz)
     Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 121.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
+EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

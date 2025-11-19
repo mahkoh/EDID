@@ -35,7 +35,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6396, 0.3300
     Green: 0.2998, 0.5996
@@ -48,7 +48,7 @@ Block 0, Base EDID:
                  Hfront   43 Hsync  32 Hback   85 Hpol N
                  Vfront   23 Vsync   5 Vback   32 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-300 Hz V, 342-342 kHz H, max dotclock 720 MHz
+      Monitor ranges (Range Limits Only): 48-300 Hz V, 342-342 kHz H, max dotclock 720 MHz
     Dummy Descriptor:
     Display Product Name: 'TL156VDXP0101'
   Extension blocks: 1
@@ -81,7 +81,5 @@ Block 0, Base EDID:
   Dummy Descriptor: Dummy block filled with garbage.
 Block 1, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-EDID:
-  DisplayID: Missing DisplayID Product Identification Data Block.
 
 EDID conformity: FAIL

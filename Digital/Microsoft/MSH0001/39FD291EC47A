@@ -86,7 +86,7 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.2.0.0
     Maximum TMDS clock: 150 MHz

@@ -38,11 +38,16 @@ Block 0, Base EDID:
                  Vfront   28 Vsync   5 Vback   71 Vpol P
     Empty Descriptor
     Display Range Limits:
-      Monitor ranges (Bare Limits): 59-61 Hz V, 100-103 kHz H, max dotclock 290 MHz
+      Monitor ranges (Range Limits Only): 59-61 Hz V, 100-103 kHz H, max dotclock 290 MHz
     Display Product Name: 'VVX10T025J00'
 Checksum: 0x3b
 
 ----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 223x125 mm, but based on the picture AR it should be 223x139 mm.
 
 Failures:
 

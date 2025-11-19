@@ -147,9 +147,9 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
     BC - Back Center
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
+    BL/BR - Back Left/Right
   Detailed Timing Descriptors:
     DTD 3:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz (800 mm x 450 mm)
                  Hfront  176 Hsync  88 Hback  296 Hpol P

@@ -117,7 +117,8 @@ Block 1, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 225 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 45 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0x00
@@ -192,7 +193,8 @@ Block 3, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 225 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 45 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0x00
@@ -226,14 +228,18 @@ Checksum: 0x8d  Unused space in Extension Block: 42 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 2.
+  Detailed Timing Descriptor #3: Image size is 597x336 mm, but based on the picture AR it should be 597x398 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 3, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 2.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Detailed Timing Descriptor #5: Image size is 597x336 mm, but based on the picture AR it should be 597x398 mm.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 
@@ -259,7 +265,6 @@ Block 3, CTA-861 Extension Block:
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
   Detailed Timing Descriptor #4: Mismatch of image size 597x336 mm vs display size 530x300 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 597x336 mm vs display size 530x300 mm.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: The DTD max image size is 597x336mm, which is larger than the display size 530.0x300.0mm.
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).

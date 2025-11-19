@@ -127,10 +127,18 @@ Checksum: 0x1c  Unused space in Extension Block: 15 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #2: Image size is 698x393 mm, but based on the picture AR it should be 698x558 mm.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
+  Detailed Timing Descriptor #4: Image size is 524x393 mm, but based on the picture AR it should be 524x419 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.029 Hz (Monitor: 49.000 - 76.000 Hz)
+    Maximum Clock: 148.500 MHz (Monitor: 140.000 MHz)
 
 Failures:
 
@@ -138,9 +146,5 @@ Block 0, Base EDID:
   Vendor & Product Identification: EDID 1.3 does not support week 0xff.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 75.029 Hz (Monitor: 49.000 - 76.000 Hz)
-    Maximum Clock: 148.500 MHz (Monitor: 140.000 MHz)
 
 EDID conformity: FAIL

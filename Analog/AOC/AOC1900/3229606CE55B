@@ -66,6 +66,8 @@ Checksum: 0x4c
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Dubious image size (34x19 mm is smaller than 100x100 mm).
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 29.190 - 60.022 kHz (Monitor: 30.000 - 81.000 kHz)

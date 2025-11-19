@@ -67,7 +67,7 @@ Block 1, CTA-861 Extension Block:
     SCDC Present
   Vendor-Specific Data Block (Microsoft), OUI CA-12-5C:
     Version: 1
-    Display Product Primary Use Case: 7 (Virtual reality headset)
+    Display Product Primary Use Case: Virtual reality headset
     Container ID: 218f2df6-f423-571b-a98e-b9c0bd998c04
   Detailed Timing Descriptors:
     DTD 3:  2880x1440   90.000180 Hz   2:1    135.270 kHz    400.400000 MHz (60 mm x 50 mm)
@@ -84,8 +84,12 @@ Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Dubious maximum image size (6x5 is smaller than 10x10 cm).
+  Detailed Timing Descriptor #1: Dubious image size (60x50 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (60x50 mm is smaller than 100x100 mm).
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Detailed Timing Descriptor #3: Dubious image size (60x50 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #4: Dubious image size (60x50 mm is smaller than 100x100 mm).
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

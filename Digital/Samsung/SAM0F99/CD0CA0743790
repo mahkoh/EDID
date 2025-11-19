@@ -334,11 +334,15 @@ Checksum: 0x90
 Warnings:
 
 Block 2, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #2: Image size is 1193x336 mm, but based on the picture AR it should be 1193x671 mm.
+  Detailed Timing Descriptor #3: Image size is 1193x336 mm, but based on the picture AR it should be 1193x503 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 6, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Detailed Timing Descriptor #4: Image size is 1193x336 mm, but based on the picture AR it should be 1193x671 mm.
+  Detailed Timing Descriptor #5: Image size is 1193x336 mm, but based on the picture AR it should be 1193x503 mm.
 
 Failures:
 
@@ -348,6 +352,7 @@ Block 1, Block Map Extension Block:
   Block 6 tag mismatch: expected 0x02, but got 0x00.
   Block 7 tag mismatch: expected 0x70, but got 0x00.
 Block 2, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 3, DisplayID Extension Block:
   DisplayID Base Block has no product type.
@@ -373,12 +378,11 @@ Block 6, CTA-861 Extension Block:
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
   Colorimetry Data Block: Only one instance of this Data Block is allowed.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
   YCbCr 4:2:0 Capability Map Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: EDID specified 3 extension block(s), but found 7 extension block(s).
   CTA-861: Native progressive timings are a mix of several resolutions.
-  DisplayID: Missing DisplayID Product Identification Data Block.
 
 EDID conformity: FAIL

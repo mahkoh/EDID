@@ -90,6 +90,7 @@ Failures:
 
 Block 1, CTA-861 Extension Block:
   Non-zero byte 3.
+  Padding: Contains non-zero bytes.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

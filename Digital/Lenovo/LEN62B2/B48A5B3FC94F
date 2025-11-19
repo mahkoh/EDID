@@ -70,7 +70,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-75 Hz V, 30-114 kHz H, max dotclock 300 MHz
+      Monitor ranges (Range Limits Only): 48-75 Hz V, 30-114 kHz H, max dotclock 300 MHz
     Display Product Name: 'P24h-2L'
   Extension blocks: 1
 Checksum: 0x13
@@ -120,6 +120,8 @@ Checksum: 0x37  Unused space in Extension Block: 45 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #4: Image size is 527x296 mm, but based on the picture AR it should be 527x395 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:

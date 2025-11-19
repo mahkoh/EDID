@@ -72,7 +72,7 @@ Block 0, Base EDID:
     DPMS levels: Standby Suspend Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6767, 0.3085
     Green: 0.2773, 0.6552
@@ -110,7 +110,7 @@ Block 0, Base EDID:
                  Hfront  108 Hsync  72 Hback  180 Hpol P
                  Vfront    8 Vsync  10 Vback   72 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-144 Hz V, 255-255 kHz H, max dotclock 640 MHz
+      Monitor ranges (Range Limits Only): 48-144 Hz V, 255-255 kHz H, max dotclock 640 MHz
     Display Product Name: 'M32UC'
     Display Product Serial Number: ...
   Extension blocks: 2
@@ -144,7 +144,8 @@ Block 1, CTA-861 Extension Block:
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.7
+    Version: 2
+    Feature Caps: 0x07
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
@@ -245,7 +246,8 @@ Block 4, CTA-861 Extension Block:
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.7
+    Version: 2
+    Feature Caps: 0x07
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
@@ -308,15 +310,17 @@ Checksum: 0x90
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 3 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 4, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 30.000 - 143.999 Hz (Monitor: 48.000 - 144.000 Hz)
@@ -353,14 +357,11 @@ Block 4, CTA-861 Extension Block:
   YCbCr 4:2:0 Video Data Block: Duplicate YCbCr 4:2:0 VIC 118.
   YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 118 is also a regular VIC.
   YCbCr 4:2:0 Capability Map Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 5, DisplayID Extension Block:
   Product Type should be 0 in extension block.
 EDID:
   Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: Missing DisplayID Display Parameters Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

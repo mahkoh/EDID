@@ -59,13 +59,16 @@ Checksum: 0x30
 
 ----------------
 
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 87.850 Hz (Monitor: 57.000 - 76.000 Hz)
+
 Failures:
 
 Block 0, Base EDID:
   Standard Timings: Missing preferred timing.
   Dummy Descriptor: Dummy block filled with garbage.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 56.250 - 87.850 Hz (Monitor: 57.000 - 76.000 Hz)
 
 EDID conformity: FAIL

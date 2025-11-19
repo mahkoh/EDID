@@ -157,15 +157,18 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency + Low-Latency-HDMI
     Supports 10b 12b 444: 10 bit
-    Target Min PQ v2: 180 (0.04555910 cd/m^2)
-    Target Max PQ v2: 2575 (332 cd/m^2)
+    Target Min PQ v2: 180 (0.04494425 cd/m^2)
+    Target Max PQ v2: 2575 (320 cd/m^2)
     Unique Rx, Ry: 0.69140625, 0.29687500
     Unique Gx, Gy: 0.20703125, 0.70703125
     Unique Bx, By: 0.14843750, 0.04687500
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
+    Full Frame Peak Luminance Index: 0
+    Peak Luminance Index: 0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0x00
@@ -201,6 +204,8 @@ Checksum: 0x3f
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
@@ -212,6 +217,7 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 941x529 mm vs display size 1210x680 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 941x529 mm vs display size 1210x680 mm.
 Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: VRRmax < 100.
 
 EDID conformity: FAIL

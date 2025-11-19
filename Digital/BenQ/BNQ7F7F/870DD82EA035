@@ -67,7 +67,7 @@ Block 0, Base EDID:
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 40-144 Hz V, 30-167 kHz H, max dotclock 350 MHz
+      Monitor ranges (Range Limits Only): 40-144 Hz V, 30-167 kHz H, max dotclock 350 MHz
     Display Product Name: 'ZOWIE XL LCD'
   Extension blocks: 1
 Checksum: 0x18
@@ -135,6 +135,9 @@ Checksum: 0x3f  Unused space in Extension Block: 3 bytes
 
 Warnings:
 
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #5: Image size is 531x299 mm, but based on the picture AR it should be 531x424 mm.
+  Detailed Timing Descriptor #6: Image size is 531x299 mm, but based on the picture AR it should be 531x398 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 143.981 Hz (Monitor: 40.000 - 144.000 Hz)

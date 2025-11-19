@@ -123,7 +123,8 @@ Block 1, CTA-861 Extension Block:
     Source physical address: 1.0.0.0
     Supports_AI
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0xed (MCCS)
@@ -175,7 +176,8 @@ Block 3, CTA-861 Extension Block:
     Source physical address: 1.0.0.0
     Supports_AI
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0xed (MCCS)
@@ -192,11 +194,14 @@ Warnings:
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x17.
+  Detailed Timing Descriptor #2: Image size is 368x207 mm, but based on the picture AR it should be 368x220 mm.
   Detailed Timing Descriptor #3: DTD is similar but not identical to DMT 0x51.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #4: Dubious image size (160x90 mm is smaller than 100x100 mm).
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 Block 3, CTA-861 Extension Block:
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+  Detailed Timing Descriptor #5: Dubious image size (160x90 mm is smaller than 100x100 mm).
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 
@@ -223,7 +228,6 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 18.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
   Detailed Timing Descriptor #5: Mismatch of image size 160x90 mm vs display size 530x290 mm.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: The DTD max image size is 530x300mm, which is larger than the display size 530.0x290.0mm.
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).

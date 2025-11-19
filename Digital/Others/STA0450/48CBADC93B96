@@ -49,8 +49,8 @@ Block 0, Base EDID:
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
-  Display Product Name: Non-printable character.
-  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: NUL byte at position 0.
+  Display Product Name: NUL byte at position 9.
+  Alphanumeric Data String: NUL byte at position 0.
 
 EDID conformity: FAIL

@@ -68,6 +68,15 @@ Checksum: 0xe1
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.189 - 104.250 kHz (Monitor: 30.000 - 81.000 kHz)
+    Maximum Clock: 253.536 MHz (Monitor: 150.000 MHz)
+
 Failures:
 
 Block 0, Base EDID:
@@ -75,9 +84,5 @@ Block 0, Base EDID:
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0118.
   Detailed Timing Descriptor #1: Mismatch of image size 885x498 mm vs display size 1040x590 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 886x498 mm vs display size 1040x590 mm.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.189 - 104.250 kHz (Monitor: 30.000 - 81.000 kHz)
-    Maximum Clock: 253.536 MHz (Monitor: 150.000 MHz)
 
 EDID conformity: FAIL

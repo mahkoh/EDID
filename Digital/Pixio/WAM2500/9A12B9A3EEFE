@@ -128,7 +128,8 @@ Block 1, CTA-861 Extension Block:
     Maximum TMDS Character Rate: 600 MHz
     SCDC Present
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 240 Hz
     Flags 1.x: 0xed (MCCS)
@@ -211,7 +212,8 @@ Block 3, CTA-861 Extension Block:
     Maximum TMDS Character Rate: 600 MHz
     SCDC Present
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 240 Hz
     Flags 1.x: 0xed (MCCS)
@@ -248,7 +250,12 @@ Checksum: 0xb2  Unused space in Extension Block: 14 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Image size is 560x300 mm, but based on the picture AR it should be 560x315 mm.
+  Detailed Timing Descriptor #2: Image size is 540x340 mm, but based on the picture AR it should be 540x303 mm.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 3 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 Block 3, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
@@ -285,7 +292,6 @@ Block 3, CTA-861 Extension Block:
   Detailed Timing Descriptor #6: Mismatch of image size 598x336 mm vs display size 560x300 mm.
   Detailed Timing Descriptor #7: Mismatch of image size 700x400 mm vs display size 560x300 mm.
   Detailed Timing Descriptor #8: Mismatch of image size 700x400 mm vs display size 560x300 mm.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: The DTD max image size is 700x400mm, which is larger than the display size 560.0x300.0mm.
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).

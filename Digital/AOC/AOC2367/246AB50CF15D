@@ -157,15 +157,17 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #2: Image size is 509x286 mm, but based on the picture AR it should be 509x339 mm.
+  Detailed Timing Descriptor #4: Image size is 509x286 mm, but based on the picture AR it should be 509x407 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.029 Hz (Monitor: 50.000 - 76.000 Hz)
+    Horizontal Freq: 27.000 - 79.976 kHz (Monitor: 30.000 - 83.000 kHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 75.029 Hz (Monitor: 50.000 - 76.000 Hz)
-    Horizontal Freq: 27.000 - 79.976 kHz (Monitor: 30.000 - 83.000 kHz)
 
 EDID conformity: FAIL

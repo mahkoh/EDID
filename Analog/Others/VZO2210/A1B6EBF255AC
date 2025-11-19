@@ -58,11 +58,11 @@ Checksum: 0x6a
 
 ----------------
 
-Failures:
+Warnings:
 
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.466 - 65.290 kHz (Monitor: 31.000 - 61.000 kHz)
     Maximum Clock: 146.250 MHz (Monitor: 110.000 MHz)
 
-EDID conformity: FAIL
+EDID conformity: PASS

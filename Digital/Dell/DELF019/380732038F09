@@ -105,9 +105,13 @@ Checksum: 0xba  Unused space in Extension Block: 32 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 4.
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 4.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.029 Hz (Monitor: 56.000 - 76.000 Hz)
 
 Failures:
 
@@ -118,8 +122,6 @@ Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 19.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 75.029 Hz (Monitor: 56.000 - 76.000 Hz)
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

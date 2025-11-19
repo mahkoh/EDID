@@ -161,17 +161,25 @@ Checksum: 0x07  Unused space in Extension Block: 5 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
-  Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
+  Detailed Timing Descriptor #3: Image size is 595x335 mm, but based on the picture AR it should be 595x669 mm.
+  Detailed Timing Descriptor #4: Image size is 595x335 mm, but based on the picture AR it should be 595x669 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 177.665 kHz (Monitor: 15.000 - 138.000 kHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   YCbCr 4:2:0 Capability Map Data Block: VIC 97 is also a YCbCr 4:2:0-only VIC.
   YCbCr 4:2:0 Capability Map Data Block: VIC 95 is also a YCbCr 4:2:0-only VIC.
   YCbCr 4:2:0 Capability Map Data Block: VIC 94 is also a YCbCr 4:2:0-only VIC.
@@ -180,8 +188,5 @@ Block 1, CTA-861 Extension Block:
   YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 95 is also a regular VIC.
   YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 94 is also a regular VIC.
   YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 93 is also a regular VIC.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 177.665 kHz (Monitor: 15.000 - 138.000 kHz)
 
 EDID conformity: FAIL

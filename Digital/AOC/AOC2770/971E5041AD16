@@ -59,7 +59,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 50-76 Hz V, 30-99 kHz H, max dotclock 300 MHz
+      Monitor ranges (Range Limits Only): 50-76 Hz V, 30-99 kHz H, max dotclock 300 MHz
     Display Product Name: 'Q2770'
     Display Product Serial Number: ...
   Extension blocks: 1

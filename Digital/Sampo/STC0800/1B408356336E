@@ -54,6 +54,8 @@ Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+EDID:
+  No Native Video Resolution was defined.
 
 Failures:
 

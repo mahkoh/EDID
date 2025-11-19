@@ -35,7 +35,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6396, 0.3349
     Green: 0.3056, 0.6191
@@ -68,7 +68,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   27 Vpol N
     Display Product Name: 'SUW49C'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-120 Hz V, 136-136 kHz H, max dotclock 630 MHz
+      Monitor ranges (Range Limits Only): 48-120 Hz V, 136-136 kHz H, max dotclock 630 MHz
   Extension blocks: 1
 Checksum: 0x99
 
@@ -134,7 +134,10 @@ Checksum: 0x48  Unused space in Extension Block: 33 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #4: Image size is 1196x336 mm, but based on the picture AR it should be 1196x672 mm.
+  Detailed Timing Descriptor #5: Image size is 1196x336 mm, but based on the picture AR it should be 1196x504 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 143.999 Hz (Monitor: 48.000 - 120.000 Hz)

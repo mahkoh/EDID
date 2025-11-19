@@ -55,7 +55,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6787, 0.3095
     Green: 0.2763, 0.6542
@@ -86,7 +86,7 @@ Block 0, Base EDID:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-144 Hz V, 223-223 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 48-144 Hz V, 223-223 kHz H, max dotclock 600 MHz
     Display Product Name: 'Q2711SH'
   Extension blocks: 1
 Checksum: 0x1d
@@ -222,6 +222,10 @@ Checksum: 0x65  Unused space in Extension Block: 38 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 3 and the first DTD are not identical. Is this intended?
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 15.625 - 214.558 kHz (Monitor: 223.000 - 223.000 kHz)
@@ -251,7 +255,6 @@ Block 3, CTA-861 Extension Block:
   Colorimetry Data Block: Only one instance of this Data Block is allowed.
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
   Detailed Timing Descriptor #8: Mismatch of image size 544x303 mm vs display size 600x330 mm.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   CTA-861: Native progressive timings are a mix of several resolutions.

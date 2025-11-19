@@ -132,8 +132,8 @@ Block 1, CTA-861 Extension Block:
       Supported sample sizes (bits): 24 20 16
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
-    TpBC - Top Back Center
-    TpSiL/TpSiR - Top Side Left/Right
+    TpBC - Top Back Center (Deprecated, use the RCDB)
+    TpSiL/TpSiR - Top Side Left/Right (Deprecated, use the RCDB)
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
   Detailed Timing Descriptors:
@@ -203,8 +203,8 @@ Block 3, CTA-861 Extension Block:
       Supported sample sizes (bits): 24 20 16
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
-    TpBC - Top Back Center
-    TpSiL/TpSiR - Top Side Left/Right
+    TpBC - Top Back Center (Deprecated, use the RCDB)
+    TpSiL/TpSiR - Top Side Left/Right (Deprecated, use the RCDB)
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
   Detailed Timing Descriptors:
@@ -227,10 +227,15 @@ Checksum: 0x90 (should be 0xf0)  Unused space in Extension Block: 15 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Speaker Allocation Data Block: Specifies deprecated speakers.
+  Detailed Timing Descriptor #5: Image size is 477x268 mm, but based on the picture AR it should be 477x318 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 3, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Speaker Allocation Data Block: Specifies deprecated speakers.
+  Detailed Timing Descriptor #9: Image size is 477x268 mm, but based on the picture AR it should be 477x318 mm.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 
@@ -266,7 +271,6 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 30.
   Video Data Block: Duplicate VIC 1.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
   Invalid checksum 0x90 (should be 0xf0).
 EDID:
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).

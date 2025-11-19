@@ -153,7 +153,7 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)
@@ -215,6 +215,8 @@ Block 1, CTA-861 Extension Block:
     VIC 219:  4096x2160  120.000000 Hz 256:135  270.000 kHz   1188.000000 MHz
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
+    Full Frame Peak Luminance Index: 0
+    Peak Luminance Index: 0
   Detailed Timing Descriptors:
     DTD 3:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (1872 mm x 1053 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
@@ -294,7 +296,7 @@ Block 3, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)
@@ -356,6 +358,8 @@ Block 3, CTA-861 Extension Block:
     VIC 219:  4096x2160  120.000000 Hz 256:135  270.000 kHz   1188.000000 MHz
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
+    Full Frame Peak Luminance Index: 0
+    Peak Luminance Index: 0
   Detailed Timing Descriptors:
     DTD 4:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (1872 mm x 1053 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P

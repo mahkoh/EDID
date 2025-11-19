@@ -63,7 +63,7 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
   Alphanumeric Data String: Empty string.
 
 EDID conformity: FAIL

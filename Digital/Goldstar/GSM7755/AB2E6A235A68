@@ -147,7 +147,8 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 82 (295.365 cd/m^2)
     Desired content min luminance: 94 (0.401 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 85 Hz
     Flags 1.x: 0x00
@@ -244,7 +245,8 @@ Block 3, CTA-861 Extension Block:
     Desired content max frame-average luminance: 82 (295.365 cd/m^2)
     Desired content min luminance: 94 (0.401 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 85 Hz
     Flags 1.x: 0x00
@@ -263,6 +265,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 97 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
@@ -270,8 +273,11 @@ Block 3, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 84.979 Hz (Monitor: 48.000 - 85.000 Hz)
+    Horizontal Freq: 27.000 - 135.000 kHz (Monitor: 30.000 - 132.000 kHz)
+    Maximum Clock: 594.000 MHz (Monitor: 490.000 MHz)
   CTA-861: Multiple native progressive timings are defined.
   CTA-861: Native progressive resolution of 3440x1440 is smaller than the max preferred progressive resolution 3840x2160.
 
@@ -280,6 +286,7 @@ Failures:
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
 Block 2, Base EDID:
   Unknown Extension Block.
@@ -301,16 +308,13 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 3.
   Video Data Block: Duplicate VIC 1.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   YCbCr 4:2:0 Capability Map Data Block: Only one instance of this Data Block is allowed.
   Video Capability Data Block: Only one instance of this Data Block is allowed.
   Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
   Colorimetry Data Block: Only one instance of this Data Block is allowed.
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 84.979 Hz (Monitor: 48.000 - 85.000 Hz)
-    Horizontal Freq: 27.000 - 135.000 kHz (Monitor: 30.000 - 132.000 kHz)
-    Maximum Clock: 594.000 MHz (Monitor: 490.000 MHz)
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
 

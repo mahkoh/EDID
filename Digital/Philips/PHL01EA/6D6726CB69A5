@@ -167,6 +167,8 @@ Block 1, CTA-861 Extension Block:
       Static metadata type 1
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
+    Full Frame Peak Luminance Index: 0
+    Peak Luminance Index: 0
   Vendor-Specific Video Data Block (Dolby), OUI 00-D0-46:
     Version: 2 (12 bytes)
     Supports global dimming
@@ -174,8 +176,8 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency + Low-Latency-HDMI
     Supports 10b 12b 444: 10 bit
-    Target Min PQ v2: 200 (0.05768953 cd/m^2)
-    Target Max PQ v2: 2575 (332 cd/m^2)
+    Target Min PQ v2: 200 (0.05689653 cd/m^2)
+    Target Max PQ v2: 2575 (320 cd/m^2)
     Unique Rx, Ry: 0.64453125, 0.32421875
     Unique Gx, Gy: 0.29687500, 0.59375000
     Unique Bx, By: 0.15234375, 0.05078125
@@ -190,17 +192,21 @@ Checksum: 0x43  Unused space in Extension Block: 12 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 97 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-EDID:
-  CTA-861: Native progressive resolution of 1920x1080 is smaller than the max preferred progressive resolution 3840x2160.
-
-Failures:
-
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 60.317 Hz (Monitor: 48.000 - 62.000 Hz)
     Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 15.000 - 70.000 kHz)
+  CTA-861: Native progressive resolution of 1920x1080 is smaller than the max preferred progressive resolution 3840x2160.
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
 
 EDID conformity: FAIL

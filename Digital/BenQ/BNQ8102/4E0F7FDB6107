@@ -120,6 +120,8 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 75.000 kHz (Monitor: 31.000 - 75.000 kHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -127,8 +129,5 @@ Failures:
 Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 21.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 75.000 kHz (Monitor: 31.000 - 75.000 kHz)
 
 EDID conformity: FAIL

@@ -67,12 +67,15 @@ Checksum: 0xd8
 
 ----------------
 
-Failures:
+Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #2: Image size is 1102x620 mm, but based on the picture AR it should be 1102x661 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 56.250 - 85.061 Hz (Monitor: 55.000 - 61.000 Hz)
     Horizontal Freq: 31.466 - 68.681 kHz (Monitor: 24.000 - 65.000 kHz)
     Maximum Clock: 121.750 MHz (Monitor: 120.000 MHz)
 
-EDID conformity: FAIL
+EDID conformity: PASS

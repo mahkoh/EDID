@@ -68,6 +68,11 @@ Checksum: 0x41
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+
 Failures:
 
 Block 0, Base EDID:
@@ -78,6 +83,6 @@ Block 0, Base EDID:
     Vertical Active/Blanking 900/34
     Vertical Frontporch/Sync Width 0/0
   Detailed Timing Descriptor #1: Mismatch of image size 410x256 mm vs display size 430x270 mm.
-  Display Product Name: Non-printable character.
+  Display Product Name: 0xff byte at position 11.
 
 EDID conformity: FAIL

@@ -129,7 +129,8 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 89 (343.724 cd/m^2)
     Desired content min luminance: 40 (0.098 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 240 Hz
     Flags 1.x: 0x00
@@ -147,10 +148,17 @@ Checksum: 0x01  Unused space in Extension Block: 5 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 600x303 mm, but based on the picture AR it should be 600x337 mm.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #4: Image size is 597x336 mm, but based on the picture AR it should be 597x447 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 239.841 Hz (Monitor: 48.000 - 240.000 Hz)
 
 Failures:
 
@@ -159,11 +167,9 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 531x298 mm vs display size 610x360 mm.
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Detailed Timing Descriptor #3: Mismatch of image size 597x336 mm vs display size 610x360 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 597x336 mm vs display size 610x360 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 239.841 Hz (Monitor: 48.000 - 240.000 Hz)
 
 EDID conformity: FAIL

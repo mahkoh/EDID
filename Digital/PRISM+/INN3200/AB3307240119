@@ -128,16 +128,16 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #6: Image size is 698x393 mm, but based on the picture AR it should be 698x465 mm.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 70.082 Hz (Monitor: 49.000 - 72.000 Hz)
+    Horizontal Freq: 15.625 - 67.500 kHz (Monitor: 30.000 - 83.000 kHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 70.082 Hz (Monitor: 49.000 - 72.000 Hz)
-    Horizontal Freq: 15.625 - 67.500 kHz (Monitor: 30.000 - 83.000 kHz)
 
 EDID conformity: FAIL

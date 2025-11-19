@@ -84,7 +84,7 @@ Block 0, Base EDID:
     Display Product Serial Number: ...
     Display Product Name: 'DELL U3219Q'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 49-86 Hz V, 10-137 kHz H, max dotclock 540 MHz
+      Monitor ranges (Range Limits Only): 49-86 Hz V, 10-137 kHz H, max dotclock 540 MHz
   Extension blocks: 1
 Checksum: 0xc8
 
@@ -208,9 +208,11 @@ Checksum: 0x9b  Unused space in Extension Block: 8 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #6: Image size is 697x392 mm, but based on the picture AR it should be 697x367 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 3, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Detailed Timing Descriptor #11: Image size is 697x392 mm, but based on the picture AR it should be 697x367 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 23.997 - 75.029 Hz (Monitor: 49.000 - 86.000 Hz)
@@ -241,7 +243,6 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 6.
   Video Data Block: Duplicate VIC 1.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
 

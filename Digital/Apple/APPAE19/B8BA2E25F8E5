@@ -157,15 +157,20 @@ Checksum: 0x1c  Unused space in Extension Block: 36 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: Image size is 3381x2816 mm, but based on the picture AR it should be 3381x9525 mm.
   Detailed Timing Descriptor #3: The use of non-zero borders in a DTD is not recommended.
+  Detailed Timing Descriptor #4: Image size is 3381x2816 mm, but based on the picture AR it should be 3381x106933 mm.
   Detailed Timing Descriptor #4: The use of non-zero borders in a DTD is not recommended.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 Block 3, CTA-861 Extension Block:
+  Detailed Timing Descriptor #6: Image size is 3381x2816 mm, but based on the picture AR it should be 3381x9525 mm.
   Detailed Timing Descriptor #6: The use of non-zero borders in a DTD is not recommended.
+  Detailed Timing Descriptor #7: Image size is 3381x2816 mm, but based on the picture AR it should be 3381x106933 mm.
   Detailed Timing Descriptor #7: The use of non-zero borders in a DTD is not recommended.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  No Native Video Resolution was defined.
+    Hint: set 'Native detailed modes' to a non-0 value, or add a Native Video Resolution Data Block.
 
 Failures:
 
@@ -224,8 +229,6 @@ Block 3, CTA-861 Extension Block:
   Detailed Timing Descriptor #8: 0 or negative horizontal back porch.
   Detailed Timing Descriptor #8: 0 or negative vertical back porch.
   Detailed Timing Descriptor #8: Mismatch of image size vs display size: image size is not set, but display size is.
-  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: The DTD max image size is 3381x2816mm, which is larger than the display size 480.0x270.0mm.
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).

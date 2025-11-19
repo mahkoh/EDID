@@ -147,8 +147,8 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency
     Supports 10b 12b 444: Not supported
-    Target Min PQ v2: 160 (0.03516709 cd/m^2)
-    Target Max PQ v2: 2510 (285 cd/m^2)
+    Target Min PQ v2: 160 (0.03470167 cd/m^2)
+    Target Max PQ v2: 2510 (275 cd/m^2)
     Unique Rx, Ry: 0.67578125, 0.30078125
     Unique Gx, Gy: 0.23046875, 0.69921875
     Unique Bx, By: 0.15234375, 0.04687500
@@ -164,6 +164,8 @@ Checksum: 0x4b  Unused space in Extension Block: 45 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.

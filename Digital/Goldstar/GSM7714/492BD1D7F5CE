@@ -139,19 +139,26 @@ Checksum: 0x87  Unused space in Extension Block: 18 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Image size is 798x334 mm, but based on the picture AR it should be 798x448 mm.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #4: Image size is 798x334 mm, but based on the picture AR it should be 798x448 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-
-Failures:
-
-Block 1, CTA-861 Extension Block:
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Max TMDS rate is > 0 and <= 340 or > 600.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 100.000 Hz (Monitor: 56.000 - 75.000 Hz)
     Horizontal Freq: 31.250 - 225.000 kHz (Monitor: 30.000 - 90.000 kHz)
     Maximum Clock: 1188.000 MHz (Monitor: 250.000 MHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Max TMDS rate is > 0 and <= 340 or > 600.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
+  CTA-861: The maximum HDMI TMDS clock is 300000 kHz, but one or more video timings go up to 1188000 kHz.
 
 EDID conformity: FAIL

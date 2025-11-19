@@ -37,7 +37,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6816, 0.3085
     Green: 0.2666, 0.6699
@@ -73,7 +73,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback  120 Hpol P
                  Vfront    3 Vsync   5 Vback   27 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 72-144 Hz V, 162-162 kHz H, max dotclock 640 MHz
+      Monitor ranges (Range Limits Only): 72-144 Hz V, 162-162 kHz H, max dotclock 640 MHz
     Display Product Name: 'EI491CR'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -119,7 +119,8 @@ Block 1, CTA-861 Extension Block:
     BT2020YCC
     BT2020RGB
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.23
+    Version: 1
+    Feature Caps: 0x17
     Minimum Refresh Rate: 72 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
@@ -158,9 +159,11 @@ Checksum: 0xba  Unused space in Extension Block: 12 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 63 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
   Vendor-Specific Video Data Block, OUI 04-03-02: Unknown OUI 04-03-02.
+  Detailed Timing Descriptor #3: Image size is 1196x336 mm, but based on the picture AR it should be 1196x672 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

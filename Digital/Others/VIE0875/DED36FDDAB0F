@@ -35,7 +35,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6630, 0.3281
     Green: 0.2714, 0.5957
@@ -63,7 +63,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync  10 Vback   19 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 49-165 Hz V, 180-180 kHz H, max dotclock 450 MHz
+      Monitor ranges (Range Limits Only): 49-165 Hz V, 180-180 kHz H, max dotclock 450 MHz
     Display Product Name: 'DP'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -113,7 +113,10 @@ Checksum: 0x28  Unused space in Extension Block: 64 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -123,8 +126,8 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
-  Detailed Timing Descriptor #1: Mismatch of image size 698x393 mm vs display size 860x490 mm.
   Display Product Serial Number: ...
+  Detailed Timing Descriptor #1: Mismatch of image size 698x393 mm vs display size 860x490 mm.
 Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #2: Mismatch of image size 698x393 mm vs display size 860x490 mm.
   Detailed Timing Descriptor #3: Mismatch of image size 698x393 mm vs display size 860x490 mm.

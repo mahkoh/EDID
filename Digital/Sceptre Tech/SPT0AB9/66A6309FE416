@@ -124,7 +124,8 @@ Block 1, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 330 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0xed (MCCS)
@@ -211,7 +212,8 @@ Block 3, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 330 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0xed (MCCS)
@@ -252,10 +254,17 @@ Checksum: 0x6c  Unused space in Extension Block: 13 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #3: Image size is 697x392 mm, but based on the picture AR it should be 697x784 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 3, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Detailed Timing Descriptor #6: Image size is 697x392 mm, but based on the picture AR it should be 697x784 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 135.000 kHz (Monitor: 71.000 - 214.000 kHz)
 
 Failures:
 
@@ -288,10 +297,7 @@ Block 3, CTA-861 Extension Block:
   Detailed Timing Descriptor #5: Mismatch of image size 697x392 mm vs display size 600x330 mm.
   Detailed Timing Descriptor #6: Mismatch of image size 697x392 mm vs display size 600x330 mm.
   Detailed Timing Descriptor #7: Mismatch of image size 697x392 mm vs display size 600x330 mm.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 28.125 - 135.000 kHz (Monitor: 71.000 - 214.000 kHz)
   Base EDID: The DTD max image size is 697x392mm, which is larger than the display size 600.0x330.0mm.
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.

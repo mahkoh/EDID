@@ -63,6 +63,12 @@ Checksum: 0xda
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 304x228 mm, but based on the picture AR it should be 304x170 mm.
+  Display Product Serial Number: ...
+
 Failures:
 
 Block 0, Base EDID:

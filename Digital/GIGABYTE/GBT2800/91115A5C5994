@@ -152,7 +152,8 @@ Block 1, CTA-861 Extension Block:
     DSC Max Fixed Rate Link: 3 and 6 Gbps per lane on 3 lanes, 6 Gbps on 4 lanes
     Maximum number of bytes in a line of chunks: 13312
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.11
+    Version: 2
+    Feature Caps: 0x0b
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xec (MCCS)
@@ -285,7 +286,8 @@ Block 4, CTA-861 Extension Block:
     DSC Max Fixed Rate Link: 3 and 6 Gbps per lane on 3 lanes, 6 Gbps on 4 lanes
     Maximum number of bytes in a line of chunks: 13312
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.11
+    Version: 2
+    Feature Caps: 0x0b
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xec (MCCS)
@@ -352,6 +354,8 @@ Checksum: 0x90
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
@@ -359,7 +363,11 @@ Block 1, CTA-861 Extension Block:
 Block 4, CTA-861 Extension Block:
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 144.000 Hz (Monitor: 48.000 - 144.000 Hz)
+    Horizontal Freq: 27.000 - 319.823 kHz (Monitor: 30.000 - 135.000 kHz)
+    Maximum Clock: 1253.710 MHz (Monitor: 600.000 MHz)
 
 Failures:
 
@@ -367,6 +375,7 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #1: Mismatch of image size 697x392 mm vs display size 630x360 mm.
 Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   YCbCr 4:2:0 Capability Map Data Block: VIC 97 is also a YCbCr 4:2:0-only VIC.
   YCbCr 4:2:0 Capability Map Data Block: VIC 118 is also a YCbCr 4:2:0-only VIC.
   YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 97 is also a regular VIC.
@@ -392,6 +401,7 @@ Block 4, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 32.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Colorimetry Data Block: Only one instance of this Data Block is allowed.
   YCbCr 4:2:0 Capability Map Data Block: Only one instance of this Data Block is allowed.
   YCbCr 4:2:0 Capability Map Data Block: VIC 97 is also a YCbCr 4:2:0-only VIC.
@@ -406,15 +416,10 @@ Block 4, CTA-861 Extension Block:
   Detailed Timing Descriptor #4: Mismatch of image size 697x392 mm vs display size 630x360 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 697x392 mm vs display size 630x360 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 144.000 Hz (Monitor: 48.000 - 144.000 Hz)
-    Horizontal Freq: 27.000 - 319.823 kHz (Monitor: 30.000 - 135.000 kHz)
-    Maximum Clock: 1253.710 MHz (Monitor: 600.000 MHz)
   Base EDID: The DTD max image size is 697x392mm, which is larger than the display size 630.0x360.0mm.
   Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
   CTA-861: Native progressive timings are a mix of several resolutions.
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

@@ -109,7 +109,8 @@ Block 1, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 340 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.17
+    Version: 2
+    Feature Caps: 0x11
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -138,8 +139,12 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 47.
+  Detailed Timing Descriptor #5: Image size is 559x335 mm, but based on the picture AR it should be 559x314 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 159.818 kHz (Monitor: 30.000 - 160.000 kHz)
+    Maximum Clock: 368.759 MHz (Monitor: 360.000 MHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -147,8 +152,6 @@ Failures:
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 28.125 - 159.818 kHz (Monitor: 30.000 - 160.000 kHz)
-    Maximum Clock: 368.759 MHz (Monitor: 360.000 MHz)
+  CTA-861: The maximum HDMI TMDS clock is 340000 kHz, but one or more video timings go up to 368759 kHz.
 
 EDID conformity: FAIL

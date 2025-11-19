@@ -126,7 +126,6 @@ Block 2, Base EDID:
   Unknown Extension Block.
 EDID:
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

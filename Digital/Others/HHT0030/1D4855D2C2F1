@@ -162,9 +162,20 @@ Checksum: 0x96  Unused space in Extension Block: 15 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #2: Image size is 944x398 mm, but based on the picture AR it should be 944x531 mm.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 4 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
+  Detailed Timing Descriptor #3: Image size is 708x398 mm, but based on the picture AR it should be 708x472 mm.
+  Detailed Timing Descriptor #4: Image size is 708x398 mm, but based on the picture AR it should be 708x236 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.062 Hz (Monitor: 50.000 - 75.000 Hz)
+    Horizontal Freq: 9.375 - 135.000 kHz (Monitor: 30.000 - 80.000 kHz)
+    Maximum Clock: 594.000 MHz (Monitor: 100.000 MHz)
 
 Failures:
 
@@ -176,14 +187,11 @@ Block 0, Base EDID:
   Display Range Limits: Byte 11 is 0x20 instead of 0x0a.
 Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 4.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Detailed Timing Descriptor #3: Mismatch of image size 708x398 mm vs display size 1150x650 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 708x398 mm vs display size 1150x650 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 75.062 Hz (Monitor: 50.000 - 75.000 Hz)
-    Horizontal Freq: 9.375 - 135.000 kHz (Monitor: 30.000 - 80.000 kHz)
-    Maximum Clock: 594.000 MHz (Monitor: 100.000 MHz)
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

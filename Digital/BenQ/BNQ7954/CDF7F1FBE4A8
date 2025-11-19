@@ -36,7 +36,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6826, 0.3095
     Green: 0.2685, 0.6767
@@ -66,7 +66,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   54 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 40-60 Hz V, 135-135 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 40-60 Hz V, 135-135 kHz H, max dotclock 600 MHz
     Display Product Name: 'BenQ EW3280U'
   Extension blocks: 1
 Checksum: 0x76
@@ -145,7 +145,10 @@ Checksum: 0x96  Unused space in Extension Block: 39 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 97 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
@@ -157,5 +160,7 @@ Failures:
 
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
+EDID:
+  CTA-861: The maximum HDMI TMDS clock is 340000 kHz, but one or more video timings go up to 594000 kHz.
 
 EDID conformity: FAIL

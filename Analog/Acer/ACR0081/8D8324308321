@@ -67,10 +67,10 @@ Checksum: 0x34
 
 ----------------
 
-Failures:
+Warnings:
 
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 47.000 - 70.000 kHz)
 
-EDID conformity: FAIL
+EDID conformity: PASS

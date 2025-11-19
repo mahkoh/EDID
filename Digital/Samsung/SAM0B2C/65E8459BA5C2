@@ -142,6 +142,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #7: Image size is 1124x627 mm, but based on the picture AR it should be 1124x899 mm.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

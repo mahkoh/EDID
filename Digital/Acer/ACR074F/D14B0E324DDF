@@ -112,7 +112,8 @@ Block 1, CTA-861 Extension Block:
     Maximum TMDS Character Rate: 600 MHz
     SCDC Present
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -135,17 +136,18 @@ Checksum: 0xee  Unused space in Extension Block: 32 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-
-Failures:
-
-Block 1, CTA-861 Extension Block:
-  YCbCr 4:2:0 Capability Map Data Block: Max index 16 > 12 (#SVDs).
-  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 25.000 - 164.990 Hz (Monitor: 30.000 - 165.000 Hz)
     Horizontal Freq: 15.734 - 183.139 kHz (Monitor: 30.000 - 185.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
+  YCbCr 4:2:0 Capability Map Data Block: Max index 16 > 12 (#SVDs).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

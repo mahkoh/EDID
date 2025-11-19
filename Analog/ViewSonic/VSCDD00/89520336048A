@@ -86,13 +86,17 @@ Checksum: 0x29
 
 ----------------
 
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 24.900 - 79.976 kHz (Monitor: 30.000 - 82.000 kHz)
+
 Failures:
 
 Block 1, Base EDID:
   Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 24.900 - 79.976 kHz (Monitor: 30.000 - 82.000 kHz)
   Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

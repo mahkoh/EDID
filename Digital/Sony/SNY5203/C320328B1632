@@ -104,8 +104,15 @@ Checksum: 0x4b  Unused space in Extension Block: 58 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #4: Image size is 553x311 mm, but based on the picture AR it should be 553x368 mm.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 60.000 Hz (Monitor: 56.000 - 86.000 Hz)
+    Horizontal Freq: 27.000 - 67.500 kHz (Monitor: 30.000 - 113.000 kHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -114,9 +121,5 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 60.000 Hz (Monitor: 56.000 - 86.000 Hz)
-    Horizontal Freq: 27.000 - 67.500 kHz (Monitor: 30.000 - 113.000 kHz)
 
 EDID conformity: FAIL

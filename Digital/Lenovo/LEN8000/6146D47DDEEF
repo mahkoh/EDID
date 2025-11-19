@@ -48,13 +48,15 @@ Checksum: 0x71
 Warnings:
 
 Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 440x230 mm, but based on the picture AR it should be 440x247 mm.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
+  Display Product Serial Number: ...
 
 Failures:
 
 Block 0, Base EDID:
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 
 EDID conformity: FAIL

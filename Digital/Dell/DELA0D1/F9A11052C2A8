@@ -52,7 +52,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 30-144 Hz V, 34-222 kHz H, max dotclock 590 MHz
+      Monitor ranges (Range Limits Only): 30-144 Hz V, 34-222 kHz H, max dotclock 590 MHz
     Display Product Name: 'Dell S2716DG'
   Extension blocks: 1
 Checksum: 0x13

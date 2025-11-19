@@ -154,9 +154,12 @@ Warnings:
 Block 0, Base EDID:
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x51.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 32 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 60.317 Hz (Monitor: 56.000 - 70.000 Hz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -170,8 +173,6 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #3: Mismatch of image size 1209x680 mm vs display size 950x540 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 1209x680 mm vs display size 950x540 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 60.317 Hz (Monitor: 56.000 - 70.000 Hz)
   Base EDID: The DTD max image size is 1209x680mm, which is larger than the display size 950.0x540.0mm.
 
 EDID conformity: FAIL

@@ -122,6 +122,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 95.
   Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 16.
   Detailed Timing Descriptor #6: DTD is similar but not identical to VIC 31.

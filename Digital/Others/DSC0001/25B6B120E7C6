@@ -44,6 +44,11 @@ Checksum: 0x18
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 621x341 mm, but based on the picture AR it should be 621x465 mm.
+
 Failures:
 
 Block 0, Base EDID:

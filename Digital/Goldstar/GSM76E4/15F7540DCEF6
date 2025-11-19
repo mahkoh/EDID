@@ -37,7 +37,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6513, 0.3320
     Green: 0.3066, 0.6308
@@ -69,7 +69,7 @@ Block 0, Base EDID:
                  Hfront  144 Hsync  96 Hback  200 Hpol P
                  Vfront    8 Vsync   4 Vback   24 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 55-75 Hz V, 90-90 kHz H, max dotclock 430 MHz
+      Monitor ranges (Range Limits Only): 55-75 Hz V, 90-90 kHz H, max dotclock 430 MHz
     Display Product Name: 'LG ULTRAWIDE'
   Extension blocks: 1
 Checksum: 0x09
@@ -120,6 +120,9 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #5: Image size is 800x335 mm, but based on the picture AR it should be 800x450 mm.
+  Detailed Timing Descriptor #6: Image size is 800x335 mm, but based on the picture AR it should be 800x533 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 29.993 - 75.062 Hz (Monitor: 55.000 - 75.000 Hz)

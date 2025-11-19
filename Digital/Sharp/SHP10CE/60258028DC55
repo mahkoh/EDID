@@ -137,22 +137,18 @@ Checksum: 0x31  Unused space in Extension Block: 3 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+  Detailed Timing Descriptor #1: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (160x90 mm is smaller than 100x100 mm).
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #3: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #4: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #5: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #6: Dubious image size (160x90 mm is smaller than 100x100 mm).
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 
-Failures:
-
-Block 0, Base EDID:
-  Detailed Timing Descriptor #1: Mismatch of image size 160x90 mm vs display size 1330x750 mm.
-  Detailed Timing Descriptor #2: Mismatch of image size 160x90 mm vs display size 1330x750 mm.
-Block 1, CTA-861 Extension Block:
-  Detailed Timing Descriptor #3: Mismatch of image size 160x90 mm vs display size 1330x750 mm.
-  Detailed Timing Descriptor #4: Mismatch of image size 160x90 mm vs display size 1330x750 mm.
-  Detailed Timing Descriptor #5: Mismatch of image size 160x90 mm vs display size 1330x750 mm.
-  Detailed Timing Descriptor #6: Mismatch of image size 160x90 mm vs display size 1330x750 mm.
-
-EDID conformity: FAIL
+EDID conformity: PASS

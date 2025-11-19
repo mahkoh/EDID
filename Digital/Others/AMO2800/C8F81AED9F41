@@ -119,7 +119,8 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 105 (486.099 cd/m^2)
     Desired content min luminance: 0 (0.000 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -142,11 +143,19 @@ Checksum: 0xf8  Unused space in Extension Block: 23 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 4 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 144.000 Hz (Monitor: 40.000 - 145.000 Hz)
+    Horizontal Freq: 27.000 - 211.103 kHz (Monitor: 31.000 - 215.000 kHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -161,9 +170,6 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #3: Mismatch of image size 697x392 mm vs display size 620x350 mm.
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 144.000 Hz (Monitor: 40.000 - 145.000 Hz)
-    Horizontal Freq: 27.000 - 211.103 kHz (Monitor: 31.000 - 215.000 kHz)
   Base EDID: The DTD max image size is 697x392mm, which is larger than the display size 620.0x350.0mm.
 
 EDID conformity: FAIL

@@ -52,7 +52,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync  10 Vback   28 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 30-100 Hz V, 73-151 kHz H, max dotclock 540 MHz
+      Monitor ranges (Range Limits Only): 30-100 Hz V, 73-151 kHz H, max dotclock 540 MHz
     Display Product Name: 'AG352UCG'
   Extension blocks: 1
 Checksum: 0x02

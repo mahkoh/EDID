@@ -35,7 +35,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6474, 0.3320
     Green: 0.2236, 0.7207
@@ -71,7 +71,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback  100 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-144 Hz V, 75-225 kHz H, max dotclock 800 MHz
+      Monitor ranges (Range Limits Only): 48-144 Hz V, 75-225 kHz H, max dotclock 800 MHz
     Display Product Name: 'M27-QHD-165'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -116,7 +116,8 @@ Block 1, CTA-861 Extension Block:
     BT2020RGB
     Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.23
+    Version: 2
+    Feature Caps: 0x17
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xed (MCCS)
@@ -154,8 +155,13 @@ Checksum: 0x26  Unused space in Extension Block: 3 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #3: Image size is 597x336 mm, but based on the picture AR it should be 597x671 mm.
   Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 97.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

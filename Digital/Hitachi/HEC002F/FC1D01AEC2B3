@@ -155,8 +155,8 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency + Low-Latency-HDMI
     Supports 10b 12b 444: 10 bit
-    Target Min PQ v2: 60 (0.00478965 cd/m^2)
-    Target Max PQ v2: 2315 (181 cd/m^2)
+    Target Min PQ v2: 60 (0.00473386 cd/m^2)
+    Target Max PQ v2: 2315 (175 cd/m^2)
     Unique Rx, Ry: 0.65234375, 0.33593750
     Unique Gx, Gy: 0.30859375, 0.62500000
     Unique Bx, By: 0.15234375, 0.05078125
@@ -171,6 +171,8 @@ Checksum: 0xd6  Unused space in Extension Block: 22 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.

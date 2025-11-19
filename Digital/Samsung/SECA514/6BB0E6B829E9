@@ -139,6 +139,8 @@ Checksum: 0xbd  Unused space in Extension Block: 13 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

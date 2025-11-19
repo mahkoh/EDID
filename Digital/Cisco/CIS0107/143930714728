@@ -71,7 +71,7 @@ Block 0, Base EDID:
                  Hfront  176 Hsync  88 Hback  296 Hpol P
                  Vfront    8 Vsync  10 Vback   72 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 30-60 Hz V, 21-135 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 30-60 Hz V, 21-135 kHz H, max dotclock 600 MHz
     Display Product Name: 'CS-DESKPRO-1'
     Display Product Serial Number: ...
   Extension blocks: 1

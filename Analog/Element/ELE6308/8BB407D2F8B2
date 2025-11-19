@@ -60,13 +60,14 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x51.
+  Detailed Timing Descriptor #2: Image size is 1365x768 mm, but based on the picture AR it should be 1365x819 mm.
 
 Failures:
 
 Block 0, Base EDID:
+  Display Product Serial Number: ...
   Detailed Timing Descriptor #1: Mismatch of image size 1366x768 mm vs display size 700x390 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 1365x768 mm vs display size 700x390 mm.
-  Display Product Serial Number: ...
   Missing Display Range Limits Descriptor.
 EDID:
   Base EDID: The DTD max image size is 1366x768mm, which is larger than the display size 700.0x390.0mm.

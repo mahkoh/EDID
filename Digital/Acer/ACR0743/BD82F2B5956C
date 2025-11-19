@@ -98,6 +98,8 @@ Checksum: 0x7d  Unused space in Extension Block: 105 bytes
 
 Warnings:
 
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

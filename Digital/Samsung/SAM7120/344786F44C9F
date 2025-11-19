@@ -100,15 +100,17 @@ Checksum: 0xf9  Unused space in Extension Block: 54 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Video Data Block: VIC 22 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 22 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #3: Image size is 410x230 mm, but based on the picture AR it should be 410x328 mm.
+  Detailed Timing Descriptor #4: Image size is 410x230 mm, but based on the picture AR it should be 410x273 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 60.022 kHz (Monitor: 30.000 - 85.000 kHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 60.022 kHz (Monitor: 30.000 - 85.000 kHz)
 
 EDID conformity: FAIL

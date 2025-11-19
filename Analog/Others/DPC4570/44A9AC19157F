@@ -76,6 +76,10 @@ Warnings:
 
 Block 0, Base EDID:
   EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+  Detailed Timing Descriptor #1: Image size is 266x200 mm, but based on the picture AR it should be 266x212 mm.
+  Detailed Timing Descriptor #2: Image size is 266x200 mm, but based on the picture AR it should be 266x147 mm.
+  Detailed Timing Descriptor #3: Image size is 266x200 mm, but based on the picture AR it should be 266x166 mm.
+  Detailed Timing Descriptor #4: Image size is 266x200 mm, but based on the picture AR it should be 266x145 mm.
 
 Failures:
 

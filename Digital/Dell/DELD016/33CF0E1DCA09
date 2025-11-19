@@ -132,10 +132,10 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 3, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 148.500 MHz (Monitor: 140.000 MHz)
@@ -154,7 +154,6 @@ Block 2, Base EDID:
 Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 16.
   Detailed Timing Descriptor #3: Mismatch of image size 621x341 mm vs display size 470x300 mm.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: The DTD max image size is 621x341mm, which is larger than the display size 470.0x300.0mm.
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).

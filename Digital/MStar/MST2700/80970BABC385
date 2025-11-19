@@ -128,7 +128,12 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x17.
+  Detailed Timing Descriptor #2: Image size is 597x336 mm, but based on the picture AR it should be 597x358 mm.
   Detailed Timing Descriptor #3: DTD is similar but not identical to DMT 0x27.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
+  Detailed Timing Descriptor #7: Image size is 510x287 mm, but based on the picture AR it should be 510x340 mm.
 
 Failures:
 

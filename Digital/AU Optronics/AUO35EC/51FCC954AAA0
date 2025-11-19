@@ -74,7 +74,7 @@ Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #2: Pixelclock < 10 MHz, assuming invalid data 0xdf 0x00.
-  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces before newline.
 Block 1, Base EDID:
   Unknown Extension Block.
 EDID:

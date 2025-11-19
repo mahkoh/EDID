@@ -126,17 +126,23 @@ Warnings:
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
+  Display Product Serial Number: ...
   Missing Display Product Name.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
+  Detailed Timing Descriptor #5: Image size is 510x287 mm, but based on the picture AR it should be 510x340 mm.
 EDID:
+  Base EDID: Multiple Display Product Serial Numbers are specified, is that intended?
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 0, Base EDID:
+  Display Product Serial Number: ...
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #1: Mismatch of image size 597x336 mm vs display size 480x270 mm.
-  Display Product Serial Number: ...
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
   Detailed Timing Descriptor #2: Mismatch of image size 510x287 mm vs display size 480x270 mm.

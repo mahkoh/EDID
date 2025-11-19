@@ -81,7 +81,7 @@ Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: NUL byte at position 5.
   Detailed Timing Descriptor #3: 0 values in the video timing:
     Horizontal Active/Blanking 0/0
     Horizontal Frontporch/Sync Width 30/0

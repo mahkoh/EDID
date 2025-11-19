@@ -63,7 +63,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-62 Hz V, 160-160 kHz H, max dotclock 360 MHz
+      Monitor ranges (Range Limits Only): 48-62 Hz V, 160-160 kHz H, max dotclock 360 MHz
     Display Product Name: 'MLC-3403'
   Extension blocks: 1
 Checksum: 0x5a
@@ -106,7 +106,8 @@ Block 1, CTA-861 Extension Block:
     Maximum TMDS clock: 330 MHz
     Extended HDMI video details:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 62 Hz
     Flags 1.x: 0xed (MCCS)
@@ -118,18 +119,25 @@ Checksum: 0x57  Unused space in Extension Block: 63 bytes
 
 ----------------
 
-Failures:
+Warnings:
 
-Block 0, Base EDID:
-  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
 Block 1, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 16.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #3: Image size is 798x342 mm, but based on the picture AR it should be 798x668 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 49.998 - 75.029 Hz (Monitor: 48.000 - 62.000 Hz)
     Horizontal Freq: 28.125 - 89.399 kHz (Monitor: 160.000 - 160.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: 'Range Limits Only' is not allowed for EDID < 1.4.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: Duplicate VIC 16.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

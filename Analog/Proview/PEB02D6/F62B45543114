@@ -61,10 +61,12 @@ Checksum: 0xa2
 
 ----------------
 
-Failures:
+Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.466 - 60.022 kHz (Monitor: 36.000 - 57.000 kHz)
 
-EDID conformity: FAIL
+EDID conformity: PASS

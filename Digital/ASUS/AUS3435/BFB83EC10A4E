@@ -72,7 +72,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6650, 0.3134
     Green: 0.2753, 0.6367
@@ -106,7 +106,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync  10 Vback   28 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-165 Hz V, 224-224 kHz H, max dotclock 810 MHz
+      Monitor ranges (Range Limits Only): 48-165 Hz V, 224-224 kHz H, max dotclock 810 MHz
     Display Product Name: 'ASUS VG34V'
   Extension blocks: 2
 Checksum: 0x04
@@ -154,7 +154,8 @@ Block 1, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 600 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
@@ -266,7 +267,8 @@ Block 4, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 600 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
@@ -326,15 +328,19 @@ Checksum: 0x90
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 97 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #3: Image size is 797x334 mm, but based on the picture AR it should be 797x448 mm.
+  Detailed Timing Descriptor #4: Image size is 797x334 mm, but based on the picture AR it should be 797x667 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 4, CTA-861 Extension Block:
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Detailed Timing Descriptor #6: Image size is 797x334 mm, but based on the picture AR it should be 797x448 mm.
+  Detailed Timing Descriptor #7: Image size is 797x334 mm, but based on the picture AR it should be 797x667 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 244.363 kHz (Monitor: 224.000 - 224.000 kHz)
@@ -375,7 +381,7 @@ Block 4, CTA-861 Extension Block:
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
 EDID:
   Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
+  CTA-861: The maximum HDMI TMDS clock is 600000 kHz, but one or more video timings go up to 879710 kHz.
   CTA-861: Native progressive timings are a mix of several resolutions.
-  DisplayID: Missing DisplayID Product Identification Data Block.
 
 EDID conformity: FAIL

@@ -51,8 +51,8 @@ Block 0, Base EDID:
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
-  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: NUL byte at position 12.
+  Alphanumeric Data String: NUL byte at position 12.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 

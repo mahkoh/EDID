@@ -25,7 +25,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6445, 0.3300
     Green: 0.2998, 0.5996
@@ -40,7 +40,7 @@ Block 0, Base EDID:
     DTD 2:  3000x2000   47.999114 Hz   3:2     98.734 kHz    312.000000 MHz (274 mm x 183 mm)
                  Hfront  120 Hsync  16 Hback   24 Hpol P
                  Vfront   20 Vsync  10 Vback   27 Vpol N
-    Alphanumeric Data String: 'JDI     '
+    Alphanumeric Data String: 'JDI     ...RX'
     Alphanumeric Data String: 'LPM130M364C  '
 Checksum: 0x27
 
@@ -49,13 +49,15 @@ Checksum: 0x27
 Warnings:
 
 Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0xa9 at position 8, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 9, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x07 at position 10, can cause problems.
   Missing Display Product Name.
 
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
-  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: No newline, but one or more trailing spaces.
   Missing Display Range Limits Descriptor.
 
 EDID conformity: FAIL

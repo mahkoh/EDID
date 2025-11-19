@@ -150,7 +150,8 @@ Block 1, CTA-861 Extension Block:
     VRRmin: 40 Hz
     VRRmax: 60 Hz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0x00
@@ -168,13 +169,15 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency + Low-Latency-HDMI
     Supports 10b 12b 444: 10 bit
-    Target Min PQ v2: 160 (0.03516709 cd/m^2)
-    Target Max PQ v2: 2575 (332 cd/m^2)
+    Target Min PQ v2: 160 (0.03470167 cd/m^2)
+    Target Max PQ v2: 2575 (320 cd/m^2)
     Unique Rx, Ry: 0.67578125, 0.30468750
     Unique Gx, Gy: 0.24218750, 0.66406250
     Unique Bx, By: 0.15234375, 0.05078125
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
+    Full Frame Peak Luminance Index: 0
+    Peak Luminance Index: 0
   Colorimetry Data Block:
     xvYCC601
     xvYCC709

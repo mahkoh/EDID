@@ -154,10 +154,22 @@ Checksum: 0x86  Unused space in Extension Block: 33 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Image size is 474x296 mm, but based on the picture AR it should be 474x266 mm.
+  Detailed Timing Descriptor #3: Image size is 474x296 mm, but based on the picture AR it should be 474x266 mm.
+  Detailed Timing Descriptor #4: Image size is 474x296 mm, but based on the picture AR it should be 474x284 mm.
+  Detailed Timing Descriptor #6: Image size is 474x296 mm, but based on the picture AR it should be 474x267 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 3, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Detailed Timing Descriptor #7: Image size is 474x296 mm, but based on the picture AR it should be 474x266 mm.
+  Detailed Timing Descriptor #8: Image size is 474x296 mm, but based on the picture AR it should be 474x266 mm.
+  Detailed Timing Descriptor #9: Image size is 474x296 mm, but based on the picture AR it should be 474x284 mm.
+  Detailed Timing Descriptor #11: Image size is 474x296 mm, but based on the picture AR it should be 474x267 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 82.306 kHz (Monitor: 30.000 - 81.000 kHz)
 
 Failures:
 
@@ -167,11 +179,7 @@ Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, Base EDID:
   Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 31.466 - 82.306 kHz (Monitor: 30.000 - 81.000 kHz)
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
 

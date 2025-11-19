@@ -39,7 +39,7 @@ Block 0, Base EDID:
     DTD 2:  1366x768    48.000327 Hz 683:384   38.736 kHz     56.400000 MHz (344 mm x 193 mm)
                  Hfront   48 Hsync  32 Hback   10 Hpol P
                  Vfront    5 Vsync   5 Vback   29 Vpol N
-    Alphanumeric Data String: '8CTNG'
+    Alphanumeric Data String: '8CTNG.156AT'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 94 01 10 00 00 02 01 0a 20 20 '....A!........  '
 Checksum: 0x27
 
@@ -48,11 +48,7 @@ Checksum: 0x27
 Warnings:
 
 Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x80 at position 5, can cause problems.
   Missing Display Product Name.
 
-Failures:
-
-Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
-
-EDID conformity: FAIL
+EDID conformity: PASS

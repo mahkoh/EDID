@@ -132,8 +132,11 @@ Checksum: 0xbe  Unused space in Extension Block: 9 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 19 and the first DTD are not identical. Is this intended?
   Detailed Timing Descriptor #6: DTD is similar but not identical to VIC 17.
+  Detailed Timing Descriptor #6: Image size is 531x299 mm, but based on the picture AR it should be 531x424 mm.
   Detailed Timing Descriptor #7: DTD is similar but not identical to VIC 2.
+  Detailed Timing Descriptor #7: Image size is 531x299 mm, but based on the picture AR it should be 531x354 mm.
 
 Failures:
 

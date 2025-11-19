@@ -119,6 +119,8 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #5: Image size is 949x543 mm, but based on the picture AR it should be 949x759 mm.
+  Detailed Timing Descriptor #6: Image size is 949x543 mm, but based on the picture AR it should be 949x632 mm.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

@@ -59,6 +59,11 @@ Checksum: 0xca
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Dubious image size (34x19 mm is smaller than 100x100 mm).
+
 Failures:
 
 Block 0, Base EDID:

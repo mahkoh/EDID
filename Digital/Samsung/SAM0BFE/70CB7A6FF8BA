@@ -107,17 +107,22 @@ Checksum: 0x19  Unused space in Extension Block: 45 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 797x333 mm, but based on the picture AR it should be 797x448 mm.
+  Detailed Timing Descriptor #2: Image size is 797x333 mm, but based on the picture AR it should be 797x597 mm.
 Block 1, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #3: Image size is 797x333 mm, but based on the picture AR it should be 797x448 mm.
+  Detailed Timing Descriptor #4: Image size is 797x333 mm, but based on the picture AR it should be 797x531 mm.
+  Detailed Timing Descriptor #5: Image size is 797x333 mm, but based on the picture AR it should be 797x637 mm.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.000 Hz (Monitor: 50.000 - 60.000 Hz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 75.000 Hz (Monitor: 50.000 - 60.000 Hz)
 
 EDID conformity: FAIL

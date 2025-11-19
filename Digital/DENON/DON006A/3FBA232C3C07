@@ -152,9 +152,9 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
     BC - Back Center
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
+    BL/BR - Back Left/Right
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 2.6.0.0
     Supports_AI
@@ -296,9 +296,9 @@ Block 3, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
     BC - Back Center
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
+    BL/BR - Back Left/Right
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 2.6.0.0
     Supports_AI
@@ -357,6 +357,19 @@ Checksum: 0x10  Unused space in Extension Block: 2 bytes
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: DTD is identical to VIC 97, which is not present in the CTA Ext Block.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 93 and the first DTD are not identical. Is this intended?
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 120.000 Hz (Monitor: 58.000 - 121.000 Hz)
+    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 136.000 kHz)
+  CTA-861: DTD pixelclock indicates HDMI 2.x support, VICs indicate HDMI 1.x.
+
 Failures:
 
 Block 0, Base EDID:
@@ -398,10 +411,8 @@ Block 3, CTA-861 Extension Block:
   Video Capability Data Block: Only one instance of this Data Block is allowed.
   Detailed Timing Descriptor #4: Mismatch of image size 708x398 mm vs display size 1600x900 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 120.000 Hz (Monitor: 58.000 - 121.000 Hz)
-    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 136.000 kHz)
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  CTA-861: The maximum HDMI TMDS clock is 300000 kHz, but one or more video timings go up to 594000 kHz.
 
 EDID conformity: FAIL

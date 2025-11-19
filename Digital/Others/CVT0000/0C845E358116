@@ -221,9 +221,17 @@ Checksum: 0x78  Unused space in Extension Block: 3 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 31 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #2: Image size is 344x194 mm, but based on the picture AR it should be 344x229 mm.
 Block 3, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #7: Image size is 344x194 mm, but based on the picture AR it should be 344x229 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.062 Hz (Monitor: 56.000 - 75.000 Hz)
+    Horizontal Freq: 28.125 - 79.976 kHz (Monitor: 30.000 - 61.000 kHz)
+    Maximum Clock: 148.500 MHz (Monitor: 80.000 MHz)
 
 Failures:
 
@@ -245,10 +253,6 @@ Block 3, CTA-861 Extension Block:
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
   Video Capability Data Block: Only one instance of this Data Block is allowed.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 75.062 Hz (Monitor: 56.000 - 75.000 Hz)
-    Horizontal Freq: 28.125 - 79.976 kHz (Monitor: 30.000 - 61.000 kHz)
-    Maximum Clock: 148.500 MHz (Monitor: 80.000 MHz)
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
   CTA-861: Native progressive timings are a mix of several resolutions.

@@ -36,7 +36,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6552, 0.3320
     Green: 0.2763, 0.5966
@@ -73,7 +73,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback  200 Hpol P
                  Vfront    3 Vsync   5 Vback   37 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 90-120 Hz V, 150-150 kHz H, max dotclock 360 MHz
+      Monitor ranges (Range Limits Only): 90-120 Hz V, 150-150 kHz H, max dotclock 360 MHz
     Display Product Name: 'Optix G24C'
   Extension blocks: 1
 Checksum: 0x05
@@ -142,9 +142,12 @@ Checksum: 0x6e  Unused space in Extension Block: 6 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 63.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Unknown CTA-861 Data Block (tag 0x00, length 0).
   Unknown CTA-861 Data Block (tag 0x00, length 0).
   Unknown CTA-861 Data Block (tag 0x00, length 0).
@@ -155,6 +158,8 @@ Block 1, CTA-861 Extension Block:
   Unknown CTA-861 Data Block (tag 0x00, length 0).
   Unknown CTA-861 Data Block (tag 0x00, length 0).
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 63.
+  Detailed Timing Descriptor #4: Image size is 521x293 mm, but based on the picture AR it should be 521x325 mm.
+  Detailed Timing Descriptor #5: Image size is 521x293 mm, but based on the picture AR it should be 521x325 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -170,6 +175,7 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
+  CTA-861: The maximum HDMI TMDS clock is 340000 kHz, but one or more video timings go up to 368759 kHz.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

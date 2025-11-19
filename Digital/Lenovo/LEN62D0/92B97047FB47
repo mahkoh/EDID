@@ -88,7 +88,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-75 Hz V, 30-114 kHz H, max dotclock 300 MHz
+      Monitor ranges (Range Limits Only): 48-75 Hz V, 30-114 kHz H, max dotclock 300 MHz
     Display Product Name: 'E27q-20'
   Extension blocks: 1
 Checksum: 0x79
@@ -191,9 +191,11 @@ Checksum: 0x7d  Unused space in Extension Block: 45 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #4: Image size is 597x336 mm, but based on the picture AR it should be 597x447 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 3, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Detailed Timing Descriptor #7: Image size is 597x336 mm, but based on the picture AR it should be 597x447 mm.
 
 Failures:
 
@@ -216,7 +218,6 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 31.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
 

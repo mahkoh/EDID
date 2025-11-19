@@ -56,7 +56,7 @@ Block 0, Base EDID:
     Display Product Serial Number: ...
     Display Product Name: 'ARZOPA'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
+      Monitor ranges (Range Limits Only): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
   Extension blocks: 1
 Checksum: 0xd6
 
@@ -118,7 +118,8 @@ Block 1, CTA-861 Extension Block:
     IT scan behavior: IT video formats not supported
     CE scan behavior: CE video formats not supported
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 46 Hz
     Maximum Refresh Rate: 61 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -136,7 +137,11 @@ Checksum: 0x64  Unused space in Extension Block: 34 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 4 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.

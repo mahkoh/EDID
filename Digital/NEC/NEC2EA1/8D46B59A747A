@@ -152,6 +152,17 @@ Checksum: 0x22  Unused space in Extension Block: 32 bytes
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+Block 1, Video Timing Extension Block:
+  Detailed Timing Descriptor #1: Image size is 527x296 mm, but based on the picture AR it should be 527x351 mm.
+  Detailed Timing Descriptor #1: Image size is 527x296 mm, but based on the picture AR it should be 527x421 mm.
+Block 3, Video Timing Extension Block:
+  Detailed Timing Descriptor #1: Image size is 527x296 mm, but based on the picture AR it should be 527x351 mm.
+  Detailed Timing Descriptor #1: Image size is 527x296 mm, but based on the picture AR it should be 527x421 mm.
+
 Failures:
 
 Block 2, Base EDID:

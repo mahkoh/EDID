@@ -195,13 +195,20 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 16.
+  Detailed Timing Descriptor #5: Image size is 531x398 mm, but based on the picture AR it should be 531x354 mm.
 Block 3, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Detailed Timing Descriptor #6: DTD is similar but not identical to VIC 16.
+  Detailed Timing Descriptor #9: Image size is 531x398 mm, but based on the picture AR it should be 531x354 mm.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.029 Hz (Monitor: 50.000 - 75.000 Hz)
+    Horizontal Freq: 15.734 - 67.500 kHz (Monitor: 30.000 - 70.000 kHz)
+    Maximum Clock: 148.500 MHz (Monitor: 110.000 MHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -226,12 +233,7 @@ Block 3, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 15.
   Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
   Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 75.029 Hz (Monitor: 50.000 - 75.000 Hz)
-    Horizontal Freq: 15.734 - 67.500 kHz (Monitor: 30.000 - 70.000 kHz)
-    Maximum Clock: 148.500 MHz (Monitor: 110.000 MHz)
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
 

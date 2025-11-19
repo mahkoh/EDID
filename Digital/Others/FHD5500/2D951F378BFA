@@ -203,15 +203,22 @@ Checksum: 0xc2  Unused space in Extension Block: 7 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Detailed Timing Descriptor #1: Image size is 641x401 mm, but based on the picture AR it should be 641x360 mm.
   Standard Timing Identifications: Standard Timing 392x245 has a dubious odd vertical resolution.
   Standard Timing Identifications: Standard Timing 328x205 has a dubious odd vertical resolution.
   Standard Timing Identifications: Standard Timing 504x315 has a dubious odd vertical resolution.
   Standard Timing Identifications: Standard Timing 504x315 has a dubious odd vertical resolution.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 5 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #2: Image size is 708x398 mm, but based on the picture AR it should be 708x1633 mm.
+  Detailed Timing Descriptor #5: Image size is 708x398 mm, but based on the picture AR it should be 708x566 mm.
 Block 3, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Detailed Timing Descriptor #7: Image size is 708x398 mm, but based on the picture AR it should be 708x1633 mm.
+  Detailed Timing Descriptor #10: Image size is 708x398 mm, but based on the picture AR it should be 708x566 mm.
 EDID:
   CTA-861: Multiple native interlaced timings are defined.
 
@@ -258,7 +265,6 @@ Block 3, CTA-861 Extension Block:
   Detailed Timing Descriptor #9: Mismatch of image size 708x398 mm vs display size 480x300 mm.
   Detailed Timing Descriptor #10: Mismatch of image size 708x398 mm vs display size 480x300 mm.
   Detailed Timing Descriptor #11: Mismatch of image size 708x398 mm vs display size 480x300 mm.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: The DTD max image size is 708x401mm, which is larger than the display size 480.0x300.0mm.
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).

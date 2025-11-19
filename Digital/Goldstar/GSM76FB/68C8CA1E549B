@@ -109,17 +109,18 @@ Checksum: 0x72  Unused space in Extension Block: 96 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 29.993 - 100.000 Hz (Monitor: 56.000 - 75.000 Hz)
+    Horizontal Freq: 28.125 - 225.000 kHz (Monitor: 30.000 - 125.000 kHz)
+    Maximum Clock: 1188.000 MHz (Monitor: 540.000 MHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Padding: Contains non-zero bytes.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 29.993 - 100.000 Hz (Monitor: 56.000 - 75.000 Hz)
-    Horizontal Freq: 28.125 - 225.000 kHz (Monitor: 30.000 - 125.000 kHz)
-    Maximum Clock: 1188.000 MHz (Monitor: 540.000 MHz)
 
 EDID conformity: FAIL

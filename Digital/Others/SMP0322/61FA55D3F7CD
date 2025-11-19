@@ -36,7 +36,7 @@ Block 0, Base EDID:
     DPMS levels: Standby Suspend Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6367, 0.3349
     Green: 0.3320, 0.6230
@@ -144,11 +144,15 @@ Checksum: 0x5a  Unused space in Extension Block: 21 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Unknown CTA-861 Data Block (tag 0x00, length 3).
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 31.
+  Detailed Timing Descriptor #3: Image size is 1209x680 mm, but based on the picture AR it should be 1209x725 mm.
+  Detailed Timing Descriptor #4: Image size is 1209x680 mm, but based on the picture AR it should be 1209x1360 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
@@ -163,11 +167,11 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 1209x680 mm vs display size 480x270 mm.
 Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 18.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
   Detailed Timing Descriptor #2: Mismatch of image size 1209x680 mm vs display size 480x270 mm.
   Detailed Timing Descriptor #3: Mismatch of image size 1209x680 mm vs display size 480x270 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 1209x680 mm vs display size 480x270 mm.
-  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: The DTD max image size is 1209x680mm, which is larger than the display size 480.0x270.0mm.

@@ -61,6 +61,10 @@ Warnings:
 
 Block 0, Base EDID:
   EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+  Detailed Timing Descriptor #1: Image size is 304x228 mm, but based on the picture AR it should be 304x166 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 78.853 Hz (Monitor: 56.000 - 75.000 Hz)
 
 Failures:
 
@@ -71,8 +75,5 @@ Block 0, Base EDID:
     Vertical Active/Blanking 350/49
     Vertical Frontporch/Sync Width 59/2
   Detailed Timing Descriptor #1: 0 or negative vertical back porch.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 59.940 - 78.853 Hz (Monitor: 56.000 - 75.000 Hz)
 
 EDID conformity: FAIL

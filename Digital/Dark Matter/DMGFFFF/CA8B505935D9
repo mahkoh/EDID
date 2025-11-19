@@ -44,7 +44,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.7021, 0.2880
     Green: 0.2324, 0.6835
@@ -80,7 +80,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   54 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-120 Hz V, 72-178 kHz H, max dotclock 1070 MHz
+      Monitor ranges (Range Limits Only): 48-120 Hz V, 72-178 kHz H, max dotclock 1070 MHz
     Display Product Name: '43305'
     Display Product Serial Number: ...
   Extension blocks: 2
@@ -123,7 +123,8 @@ Block 1, CTA-861 Extension Block:
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.17
+    Version: 2
+    Feature Caps: 0x11
     Minimum Refresh Rate: 90 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0x00
@@ -177,8 +178,15 @@ Checksum: 0x90
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 1194x336 mm, but based on the picture AR it should be 1194x671 mm.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #2: Image size is 1194x336 mm, but based on the picture AR it should be 1194x671 mm.
+  Detailed Timing Descriptor #3: Image size is 1194x336 mm, but based on the picture AR it should be 1194x671 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 120.000 Hz (Monitor: 48.000 - 120.000 Hz)
@@ -192,6 +200,5 @@ Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.
 EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
-  DisplayID: Missing DisplayID Product Identification Data Block.
 
 EDID conformity: FAIL

@@ -114,6 +114,7 @@ Checksum: 0x9f  Unused space in Extension Block: 63 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:

@@ -52,7 +52,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync  10 Vback   18 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 30-200 Hz V, 66-220 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 30-200 Hz V, 66-220 kHz H, max dotclock 600 MHz
     Display Product Name: 'Z35'
   Extension blocks: 1
 Checksum: 0x26

@@ -98,7 +98,8 @@ Block 1, CTA-861 Extension Block:
     Maximum TMDS clock: 225 MHz
   Colorimetry Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -112,6 +113,9 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 84.600 kHz (Monitor: 30.000 - 81.000 kHz)
+    Maximum Clock: 220.637 MHz (Monitor: 170.000 MHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -119,9 +123,5 @@ Failures:
 Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 4.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 84.600 kHz (Monitor: 30.000 - 81.000 kHz)
-    Maximum Clock: 220.637 MHz (Monitor: 170.000 MHz)
 
 EDID conformity: FAIL

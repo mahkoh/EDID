@@ -118,10 +118,21 @@ Checksum: 0xbe  Unused space in Extension Block: 4 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 5 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #3: Image size is 518x324 mm, but based on the picture AR it should be 518x291 mm.
+  Detailed Timing Descriptor #4: Image size is 518x324 mm, but based on the picture AR it should be 518x291 mm.
+  Detailed Timing Descriptor #5: Image size is 518x324 mm, but based on the picture AR it should be 518x291 mm.
+  Detailed Timing Descriptor #6: Image size is 518x324 mm, but based on the picture AR it should be 518x291 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.062 Hz (Monitor: 56.000 - 76.000 Hz)
+    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 31.000 - 92.000 kHz)
+    Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
 
 Failures:
 
@@ -129,10 +140,5 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 75.062 Hz (Monitor: 56.000 - 76.000 Hz)
-    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 31.000 - 92.000 kHz)
-    Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
 
 EDID conformity: FAIL

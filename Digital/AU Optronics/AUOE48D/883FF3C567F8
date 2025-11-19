@@ -25,7 +25,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.5751, 0.3457
     Green: 0.3466, 0.5722
@@ -39,7 +39,7 @@ Block 0, Base EDID:
                  Vfront   10 Vsync  10 Vback   26 Vpol N
     Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
     Display Range Limits:
-      Monitor ranges (Bare Limits): 40-60 Hz V, 68-68 kHz H, max dotclock 140 MHz
+      Monitor ranges (Range Limits Only): 40-60 Hz V, 68-68 kHz H, max dotclock 140 MHz
     Alphanumeric Data String: 'B156HAN02.1 '
 Checksum: 0xc7
 
@@ -56,6 +56,6 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces before newline.
 
 EDID conformity: FAIL

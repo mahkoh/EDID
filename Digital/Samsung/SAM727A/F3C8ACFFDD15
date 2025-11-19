@@ -122,7 +122,8 @@ Block 1, CTA-861 Extension Block:
     Maximum TMDS Character Rate: 570 MHz
     SCDC Present
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 240 Hz
     Flags 1.x: 0x00
@@ -197,7 +198,8 @@ Block 3, CTA-861 Extension Block:
     Maximum TMDS Character Rate: 570 MHz
     SCDC Present
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 240 Hz
     Flags 1.x: 0x00
@@ -229,10 +231,11 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #3: Image size is 609x355 mm, but based on the picture AR it should be 609x342 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 Block 3, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+  Detailed Timing Descriptor #5: Image size is 609x355 mm, but based on the picture AR it should be 609x342 mm.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 
@@ -253,7 +256,6 @@ Block 3, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
   Detailed Timing Descriptor #5: Mismatch of image size 609x355 mm vs display size 600x340 mm.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: The DTD max image size is 609x355mm, which is larger than the display size 600.0x340.0mm.
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).

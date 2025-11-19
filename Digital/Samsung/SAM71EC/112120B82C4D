@@ -148,7 +148,8 @@ Block 1, CTA-861 Extension Block:
     DSC Max Fixed Rate Link: 3 and 6 Gbps per lane on 3 lanes, 6, 8 and 10 Gbps on 4 lanes
     Maximum number of bytes in a line of chunks: 6144
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.15
+    Version: 2
+    Feature Caps: 0x0f
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0x00
@@ -171,7 +172,9 @@ Block 1, CTA-861 Extension Block:
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
     VIC 118:  3840x2160  120.000000 Hz  16:9    270.000 kHz   1188.000000 MHz
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
-    Application Version: 121
+    Application Version: 1
+    Full Frame Peak Luminance Index: 2
+    Peak Luminance Index: 7
   Detailed Timing Descriptors:
     DTD 2:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (697 mm x 392 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
@@ -262,7 +265,8 @@ Block 3, CTA-861 Extension Block:
     DSC Max Fixed Rate Link: 3 and 6 Gbps per lane on 3 lanes, 6, 8 and 10 Gbps on 4 lanes
     Maximum number of bytes in a line of chunks: 6144
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.15
+    Version: 2
+    Feature Caps: 0x0f
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0x00
@@ -285,7 +289,9 @@ Block 3, CTA-861 Extension Block:
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
     VIC 118:  3840x2160  120.000000 Hz  16:9    270.000 kHz   1188.000000 MHz
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
-    Application Version: 121
+    Application Version: 1
+    Full Frame Peak Luminance Index: 2
+    Peak Luminance Index: 7
   Detailed Timing Descriptors:
     DTD 4:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (697 mm x 392 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
@@ -307,7 +313,6 @@ Block 1, CTA-861 Extension Block:
 Block 3, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:
 

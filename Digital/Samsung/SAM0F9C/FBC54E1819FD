@@ -136,9 +136,13 @@ Checksum: 0x79  Unused space in Extension Block: 9 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
-  Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #2: Image size is 1193x336 mm, but based on the picture AR it should be 1193x671 mm.
+  Detailed Timing Descriptor #5: Image size is 1193x336 mm, but based on the picture AR it should be 1193x503 mm.
 
 Failures:
 

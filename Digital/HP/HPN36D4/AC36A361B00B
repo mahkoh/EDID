@@ -78,7 +78,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   54 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 29-60 Hz V, 28-135 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 29-60 Hz V, 28-135 kHz H, max dotclock 600 MHz
     Display Product Name: 'HP Z27k G3'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -184,9 +184,12 @@ Checksum: 0xed  Unused space in Extension Block: 36 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 97 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #4: Image size is 597x336 mm, but based on the picture AR it should be 597x373 mm.
 Block 3, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #8: Image size is 597x336 mm, but based on the picture AR it should be 597x373 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 29.981 - 70.082 Hz (Monitor: 29.000 - 60.000 Hz)

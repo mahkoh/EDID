@@ -315,6 +315,7 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 800x450 mm vs display size 950x540 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 800x450 mm vs display size 950x540 mm.
 Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Detailed Timing Descriptor #3: Mismatch of image size 800x450 mm vs display size 950x540 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 800x450 mm vs display size 950x540 mm.
 Block 2, Base EDID:
@@ -340,6 +341,7 @@ Block 3, CTA-861 Extension Block:
   Video Capability Data Block: Only one instance of this Data Block is allowed.
   Colorimetry Data Block: Only one instance of this Data Block is allowed.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
   YCbCr 4:2:0 Capability Map Data Block: Only one instance of this Data Block is allowed.
   Detailed Timing Descriptor #5: Mismatch of image size 800x450 mm vs display size 950x540 mm.

@@ -54,7 +54,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6777, 0.3085
     Green: 0.2021, 0.6894
@@ -88,7 +88,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-100 Hz V, 162-162 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 48-100 Hz V, 162-162 kHz H, max dotclock 600 MHz
     Display Product Name: 'WC34DX9019'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -206,10 +206,19 @@ Checksum: 0x99  Unused space in Extension Block: 34 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 16.
+  Detailed Timing Descriptor #3: Image size is 797x333 mm, but based on the picture AR it should be 797x448 mm.
+  Detailed Timing Descriptor #4: Image size is 797x333 mm, but based on the picture AR it should be 797x448 mm.
 Block 3, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Detailed Timing Descriptor #6: Dubious image size (122x68 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #7: Dubious image size (122x68 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #8: Dubious image size (122x68 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #9: Dubious image size (122x68 mm is smaller than 100x100 mm).
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 148.097 kHz (Monitor: 162.000 - 162.000 kHz)
@@ -234,7 +243,6 @@ Block 3, CTA-861 Extension Block:
   Detailed Timing Descriptor #7: Mismatch of image size 122x68 mm vs display size 790x330 mm.
   Detailed Timing Descriptor #8: Mismatch of image size 122x68 mm vs display size 790x330 mm.
   Detailed Timing Descriptor #9: Mismatch of image size 122x68 mm vs display size 790x330 mm.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
   CTA-861: Native progressive timings are a mix of several resolutions.

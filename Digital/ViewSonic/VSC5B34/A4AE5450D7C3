@@ -72,7 +72,7 @@ Block 0, Base EDID:
                  Hfront   47 Hsync  32 Hback   81 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 50-75 Hz V, 24-160 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 50-75 Hz V, 24-160 kHz H, max dotclock 600 MHz
     Display Product Name: 'VX4380 SERIES'
   Extension blocks: 1
 Checksum: 0x34
@@ -146,18 +146,28 @@ Checksum: 0x1a  Unused space in Extension Block: 19 bytes
 
 ----------------
 
-Failures:
+Warnings:
 
 Block 0, Base EDID:
-  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #3: Image size is 941x529 mm, but based on the picture AR it should be 941x1058 mm.
+  Detailed Timing Descriptor #4: Image size is 941x529 mm, but based on the picture AR it should be 941x264 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 75.062 Hz (Monitor: 50.000 - 75.000 Hz)
     Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 24.000 - 160.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: 'Range Limits Only' is not allowed for EDID < 1.4.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

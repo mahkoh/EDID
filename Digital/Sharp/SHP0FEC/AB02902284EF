@@ -129,6 +129,8 @@ Block 1, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Video latency < Audio latency (50 ms < 68 ms). This is discouraged for devices without HDMI output.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Interlaced audio latency < Interlaced video latency (68 ms < 84 ms). This is discouraged for devices without HDMI output.
+  Detailed Timing Descriptor #5: Image size is 615x460 mm, but based on the picture AR it should be 615x410 mm.
+  Detailed Timing Descriptor #6: Image size is 615x460 mm, but based on the picture AR it should be 615x205 mm.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

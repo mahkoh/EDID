@@ -37,7 +37,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6621, 0.3378
     Green: 0.2929, 0.6416
@@ -55,7 +55,7 @@ Block 0, Base EDID:
                  Hfront   56 Hsync  32 Hback   88 Hpol P
                  Vfront    3 Vsync  10 Vback   57 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-100 Hz V, 151-151 kHz H, max dotclock 550 MHz
+      Monitor ranges (Range Limits Only): 48-100 Hz V, 151-151 kHz H, max dotclock 550 MHz
     Display Product Name: 'LG HDR WQHD'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -100,7 +100,8 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 83 (301.833 cd/m^2)
     Desired content min luminance: 93 (0.401 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 100 Hz
     Flags 1.x: 0x00
@@ -122,6 +123,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.

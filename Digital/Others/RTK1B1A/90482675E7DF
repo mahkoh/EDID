@@ -129,7 +129,8 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 105 (486.099 cd/m^2)
     Desired content min luminance: 79 (0.467 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 61 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -144,9 +145,15 @@ Checksum: 0x76  Unused space in Extension Block: 37 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 16.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 30.000 - 120.000 Hz (Monitor: 40.000 - 61.000 Hz)
+    Horizontal Freq: 31.468 - 138.839 kHz (Monitor: 30.000 - 135.000 kHz)
 
 Failures:
 
@@ -156,11 +163,8 @@ Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.
   YCbCr 4:2:0 Capability Map Data Block: Max index 20 > 10 (#SVDs).
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
-  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 30.000 - 120.000 Hz (Monitor: 40.000 - 61.000 Hz)
-    Horizontal Freq: 31.468 - 138.839 kHz (Monitor: 30.000 - 135.000 kHz)
   Base EDID: The DTD max image size is 344x195mm, but the display size is not specified anywhere.
   CTA-861: Native progressive timings are a mix of several resolutions.
 

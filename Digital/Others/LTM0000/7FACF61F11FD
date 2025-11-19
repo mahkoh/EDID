@@ -103,6 +103,9 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Detailed Timing Descriptor #3: Dubious image size (16x9 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #4: Dubious image size (16x9 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #5: Dubious image size (16x9 mm is smaller than 100x100 mm).
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

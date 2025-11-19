@@ -111,8 +111,11 @@ Checksum: 0x9d  Unused space in Extension Block: 28 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #4: Image size is 509x286 mm, but based on the picture AR it should be 509x339 mm.
+  Detailed Timing Descriptor #5: Image size is 509x286 mm, but based on the picture AR it should be 509x381 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
@@ -121,7 +124,7 @@ Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.

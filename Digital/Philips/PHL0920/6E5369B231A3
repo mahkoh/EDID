@@ -101,6 +101,11 @@ Checksum: 0x03  Unused space in Extension Block: 33 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: DTD is identical to VIC 16, which is not present in the CTA Ext Block.
+  Detailed Timing Descriptor #4: DTD is identical to VIC 4, which is not present in the CTA Ext Block.
+  Detailed Timing Descriptor #5: Image size is 698x393 mm, but based on the picture AR it should be 698x465 mm.
+  Detailed Timing Descriptor #6: Image size is 698x393 mm, but based on the picture AR it should be 698x558 mm.
+  Detailed Timing Descriptor #7: Image size is 698x393 mm, but based on the picture AR it should be 698x785 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:

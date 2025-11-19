@@ -66,15 +66,20 @@ Checksum: 0x9f
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 85.024 Hz (Monitor: 48.000 - 77.000 Hz)
+    Maximum Clock: 157.500 MHz (Monitor: 140.000 MHz)
+
 Failures:
 
 Block 0, Base EDID:
   Display Range Limits: Unknown range class (0x31).
   Display Range Limits: Byte 11 is 0x30 instead of 0x0a.
   Display Range Limits: Bytes 12-17 must be 0x20.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 56.250 - 85.024 Hz (Monitor: 48.000 - 77.000 Hz)
-    Maximum Clock: 157.500 MHz (Monitor: 140.000 MHz)
 
 EDID conformity: FAIL

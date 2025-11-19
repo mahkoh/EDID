@@ -109,9 +109,18 @@ Checksum: 0xc6  Unused space in Extension Block: 55 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is identical to VIC 97, which is not present in the CTA Ext Block.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 60.000 Hz (Monitor: 58.000 - 121.000 Hz)
+    Horizontal Freq: 28.125 - 135.000 kHz (Monitor: 30.000 - 136.000 kHz)
+  CTA-861: DTD pixelclock indicates HDMI 2.x support, VICs indicate HDMI 1.x.
 
 Failures:
 
@@ -120,11 +129,9 @@ Block 0, Base EDID:
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
   Detailed Timing Descriptor #2: Mismatch of image size 698x392 mm vs display size 1150x650 mm.
-  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 60.000 Hz (Monitor: 58.000 - 121.000 Hz)
-    Horizontal Freq: 28.125 - 135.000 kHz (Monitor: 30.000 - 136.000 kHz)
+  CTA-861: The maximum HDMI TMDS clock is 300000 kHz, but one or more video timings go up to 594000 kHz.
 
 EDID conformity: FAIL

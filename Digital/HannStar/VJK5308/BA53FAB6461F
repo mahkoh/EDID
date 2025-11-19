@@ -71,6 +71,7 @@ Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Dubious maximum image size (15x8 is smaller than 10x10 cm).
+  Detailed Timing Descriptor #1: Dubious image size (154x84 mm is smaller than 100x100 mm).
 
 Failures:
 

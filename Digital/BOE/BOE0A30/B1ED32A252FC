@@ -53,7 +53,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6289, 0.3300
     Green: 0.3007, 0.6064
@@ -66,7 +66,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback  140 Hpol P
                  Vfront    3 Vsync   6 Vback   51 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 40-60 Hz V, 76-76 kHz H, max dotclock 160 MHz
+      Monitor ranges (Range Limits Only): 40-60 Hz V, 76-76 kHz H, max dotclock 160 MHz
     Alphanumeric Data String: 'BOE CQ'
     Alphanumeric Data String: 'NE160WUM-N62'
   Extension blocks: 1
@@ -78,7 +78,8 @@ Block 1, CTA-861 Extension Block:
   Revision: 3
   Native detailed modes: 0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0x00
@@ -103,7 +104,8 @@ Block 3, CTA-861 Extension Block:
   Revision: 3
   Native detailed modes: 0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0x00
@@ -133,9 +135,6 @@ Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, Base EDID:
   Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
 

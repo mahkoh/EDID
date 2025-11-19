@@ -59,6 +59,9 @@ Checksum: 0x35
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
+  Supports YCbCr 4:4:4
+  Supports YCbCr 4:2:2
+  Native detailed modes: 0
 Checksum: 0x1c
 
 ----------------
@@ -67,7 +70,11 @@ Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Dubious maximum image size (9x15 is smaller than 10x10 cm).
+  Detailed Timing Descriptor #1: Dubious image size (94x151 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (94x151 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #3: Dubious image size (94x151 mm is smaller than 100x100 mm).
 Block 1, CTA-861 Extension Block:
+  IT Video Formats are overscanned by default, but normally this should be underscanned.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
@@ -76,6 +83,7 @@ Block 0, Base EDID:
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 Block 1, CTA-861 Extension Block:
+  Padding: Contains non-zero bytes.
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 

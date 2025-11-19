@@ -56,7 +56,7 @@ Block 0, Base EDID:
     Display Product Serial Number: ...
     Display Product Name: 'Z1'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
+      Monitor ranges (Range Limits Only): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
   Extension blocks: 1
 Checksum: 0x80
 
@@ -131,7 +131,11 @@ Checksum: 0x42  Unused space in Extension Block: 43 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 4 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.

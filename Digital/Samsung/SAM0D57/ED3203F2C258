@@ -119,6 +119,7 @@ Checksum: 0xc7  Unused space in Extension Block: 46 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: Image size is 532x304 mm, but based on the picture AR it should be 532x354 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:

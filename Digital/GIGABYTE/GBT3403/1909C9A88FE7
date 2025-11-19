@@ -113,7 +113,8 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block, OUI 00-00-00:
     01 78 80 00                                     '.x..'
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.7
+    Version: 2
+    Feature Caps: 0x07
     Minimum Refresh Rate: 0 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0xed (MCCS)
@@ -146,9 +147,13 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Detailed Timing Descriptor #1: Image size is 797x334 mm, but based on the picture AR it should be 797x448 mm.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Vendor-Specific Data Block, OUI 00-00-00: Unknown OUI 00-00-00.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #4: Image size is 797x334 mm, but based on the picture AR it should be 797x667 mm.
+  Detailed Timing Descriptor #5: Image size is 797x334 mm, but based on the picture AR it should be 797x448 mm.
 
 Failures:
 

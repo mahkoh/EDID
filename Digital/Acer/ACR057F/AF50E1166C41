@@ -110,7 +110,11 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #2: Dubious image size (16x9 mm is smaller than 100x100 mm).
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.000 Hz (Monitor: 56.000 - 75.000 Hz)
 
 Failures:
 
@@ -121,8 +125,6 @@ Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
   Detailed Timing Descriptor #2: Mismatch of image size 16x9 mm vs display size 530x300 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 75.000 Hz (Monitor: 56.000 - 75.000 Hz)
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

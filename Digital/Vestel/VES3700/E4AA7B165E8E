@@ -173,8 +173,8 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency + Low-Latency-HDMI
     Supports 10b 12b 444: Not supported
-    Target Min PQ v2: 160 (0.03516709 cd/m^2)
-    Target Max PQ v2: 2575 (332 cd/m^2)
+    Target Min PQ v2: 160 (0.03470167 cd/m^2)
+    Target Max PQ v2: 2575 (320 cd/m^2)
     Unique Rx, Ry: 0.63281250, 0.32812500
     Unique Gx, Gy: 0.30078125, 0.60546875
     Unique Bx, By: 0.15234375, 0.05078125
@@ -189,7 +189,12 @@ Checksum: 0xf6  Unused space in Extension Block: 19 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 31 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.062 Hz (Monitor: 48.000 - 62.000 Hz)
+    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 15.000 - 70.000 kHz)
 
 Failures:
 
@@ -199,9 +204,6 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #3: Mismatch of image size 1280x720 mm vs display size 940x540 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 75.062 Hz (Monitor: 48.000 - 62.000 Hz)
-    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 15.000 - 70.000 kHz)
   Base EDID: The DTD max image size is 1872x1053mm, which is larger than the display size 940.0x540.0mm.
   CTA-861: Native progressive timings are a mix of several resolutions.
 

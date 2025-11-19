@@ -73,7 +73,11 @@ Checksum: 0x16
 Warnings:
 
 Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Dubious image size (93x53 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (16x9 mm is smaller than 100x100 mm).
   Detailed Timing Descriptor #3: DTD is similar but not identical to DMT 0x39.
+  Detailed Timing Descriptor #3: Image size is 436x245 mm, but based on the picture AR it should be 436x272 mm.
+  Detailed Timing Descriptor #4: Dubious image size (170x96 mm is smaller than 100x100 mm).
 
 Failures:
 

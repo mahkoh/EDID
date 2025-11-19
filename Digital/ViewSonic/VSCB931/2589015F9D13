@@ -37,7 +37,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6406, 0.3378
     Green: 0.3154, 0.6289
@@ -75,7 +75,7 @@ Block 0, Base EDID:
                  Hfront    8 Hsync  32 Hback   40 Hpol P
                  Vfront   25 Vsync   8 Vback    6 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-76 Hz V, 83-83 kHz H, max dotclock 170 MHz
+      Monitor ranges (Range Limits Only): 48-76 Hz V, 83-83 kHz H, max dotclock 170 MHz
     Display Product Name: 'VX2457'
   Extension blocks: 1
 Checksum: 0x2e
@@ -138,6 +138,10 @@ Checksum: 0xc6  Unused space in Extension Block: 21 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #6: Image size is 521x293 mm, but based on the picture AR it should be 521x347 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 15.625 - 83.840 kHz (Monitor: 83.000 - 83.000 kHz)

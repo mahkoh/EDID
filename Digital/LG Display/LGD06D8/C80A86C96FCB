@@ -26,7 +26,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6396, 0.3300
     Green: 0.2998, 0.6201
@@ -39,7 +39,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   81 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 60-165 Hz V, 193-193 kHz H, max dotclock 410 MHz
+      Monitor ranges (Range Limits Only): 60-165 Hz V, 193-193 kHz H, max dotclock 410 MHz
     Alphanumeric Data String: 'LG Display'
     Alphanumeric Data String: 'LP156WFG-SPT3'
 Checksum: 0x35

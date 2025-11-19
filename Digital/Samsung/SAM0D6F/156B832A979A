@@ -103,15 +103,18 @@ Checksum: 0xb8  Unused space in Extension Block: 97 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 607x345 mm, but based on the picture AR it should be 607x682 mm.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Image size is 607x345 mm, but based on the picture AR it should be 607x682 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 

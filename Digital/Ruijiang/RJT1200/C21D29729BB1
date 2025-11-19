@@ -176,11 +176,16 @@ Checksum: 0x17  Unused space in Extension Block: 5 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Video Data Block: VIC 1 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Detailed Timing Descriptor #3: DTD is similar but not identical to DMT 0x17.
   Detailed Timing Descriptor #5: The use of non-zero borders in a DTD is not recommended.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.029 Hz (Monitor: 49.000 - 76.000 Hz)
+    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 30.000 - 82.000 kHz)
+    Maximum Clock: 193.250 MHz (Monitor: 180.000 MHz)
   CTA-861: Native progressive resolution of 1280x720 is smaller than the max preferred progressive resolution 1920x1080.
 
 Failures:
@@ -203,10 +208,5 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #5: Mismatch of image size 960x540 mm vs display size 1920x1080 mm.
   Detailed Timing Descriptor #6: Mismatch of image size 960x540 mm vs display size 1920x1080 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 75.029 Hz (Monitor: 49.000 - 76.000 Hz)
-    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 30.000 - 82.000 kHz)
-    Maximum Clock: 193.250 MHz (Monitor: 180.000 MHz)
 
 EDID conformity: FAIL

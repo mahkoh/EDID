@@ -54,4 +54,9 @@ Checksum: 0xa1
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+
 EDID conformity: PASS

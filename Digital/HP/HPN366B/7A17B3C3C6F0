@@ -58,7 +58,7 @@ Block 0, Base EDID:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-75 Hz V, 30-86 kHz H, max dotclock 180 MHz
+      Monitor ranges (Range Limits Only): 48-75 Hz V, 30-86 kHz H, max dotclock 180 MHz
     Display Product Name: 'HP 24mh'
     Display Product Serial Number: ...
   Extension blocks: 1

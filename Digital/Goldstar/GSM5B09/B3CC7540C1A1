@@ -37,7 +37,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6523, 0.3349
     Green: 0.3046, 0.6367
@@ -62,7 +62,7 @@ Block 0, Base EDID:
                  Hfront    8 Hsync 144 Hback    8 Hpol P
                  Vfront   54 Vsync   5 Vback    3 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 40-61 Hz V, 135-135 kHz H, max dotclock 560 MHz
+      Monitor ranges (Range Limits Only): 40-61 Hz V, 135-135 kHz H, max dotclock 560 MHz
     Display Product Name: 'LG Ultra HD'
   Extension blocks: 1
 Checksum: 0xce
@@ -99,6 +99,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 30.000 - 60.317 Hz (Monitor: 40.000 - 61.000 Hz)

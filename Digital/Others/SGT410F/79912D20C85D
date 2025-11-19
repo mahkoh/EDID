@@ -36,7 +36,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6611, 0.3320
     Green: 0.3037, 0.6113
@@ -63,7 +63,7 @@ Block 0, Base EDID:
     Display Product Serial Number: ...
     Display Product Name: 'DP'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-75 Hz V, 111-111 kHz H, max dotclock 360 MHz
+      Monitor ranges (Range Limits Only): 48-75 Hz V, 111-111 kHz H, max dotclock 360 MHz
   Extension blocks: 1
 Checksum: 0x3e
 
@@ -123,6 +123,8 @@ Checksum: 0x15  Unused space in Extension Block: 72 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.

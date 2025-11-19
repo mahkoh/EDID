@@ -59,6 +59,8 @@ Checksum: 0xbc
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Image size is 580x360 mm, but based on the picture AR it should be 580x326 mm.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 
 Failures:
@@ -66,7 +68,7 @@ Failures:
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #1: Mismatch of image size 580x360 mm vs display size 510x290 mm.
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
   Base EDID: The DTD max image size is 580x360mm, which is larger than the display size 510.0x290.0mm.
 

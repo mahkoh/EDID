@@ -62,12 +62,13 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x23.
+  Detailed Timing Descriptor #1: Dubious image size (32x32 mm is smaller than 100x100 mm).
 
 Failures:
 
 Block 0, Base EDID:
-  Display Product Name: Non-space after newline.
   Display Product Serial Number: ...
+  Display Product Name: Non-space after newline.
 EDID:
   Base EDID: The DTD max image size is 32x32mm, but the display size is not specified anywhere.
 

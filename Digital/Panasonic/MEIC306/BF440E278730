@@ -94,9 +94,13 @@ Checksum: 0x26  Unused space in Extension Block: 43 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #3: Image size is 698x392 mm, but based on the picture AR it should be 698x465 mm.
+  Detailed Timing Descriptor #4: Image size is 523x392 mm, but based on the picture AR it should be 523x348 mm.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

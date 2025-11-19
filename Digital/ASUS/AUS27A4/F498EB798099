@@ -88,7 +88,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   54 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 24-120 Hz V, 52-268 kHz H, max dotclock 1060 MHz
+      Monitor ranges (Range Limits Only): 24-120 Hz V, 52-268 kHz H, max dotclock 1060 MHz
     Display Product Name: 'ROG PG27U'
   Extension blocks: 2
 Checksum: 0x9a
@@ -278,7 +278,6 @@ Block 4, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.468 - 268.558 kHz (Monitor: 52.000 - 268.000 kHz)
@@ -298,7 +297,6 @@ Block 5, DisplayID Extension Block:
   Product Type should be 0 in extension block.
 EDID:
   Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: Missing DisplayID Display Parameters Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 

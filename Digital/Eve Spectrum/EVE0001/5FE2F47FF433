@@ -128,11 +128,12 @@ Block 1, CTA-861 Extension Block:
     Supports UHD VIC
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
-    Supports media rates below VRRmin (CinemaVRR)
+    Supports media rates below VRRmin (CinemaVRR, deprecated)
     VRRmin: 48 Hz
     VRRmax: 144 Hz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.11
+    Version: 2
+    Feature Caps: 0x0b
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -205,14 +206,21 @@ Checksum: 0x90
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 97.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 118 and the first DTD are not identical. Is this intended?
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: CinemaVRR is deprecated and must be cleared.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 97.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 144.000 Hz (Monitor: 40.000 - 144.000 Hz)
+    Horizontal Freq: 15.625 - 319.927 kHz (Monitor: 30.000 - 510.000 kHz)
+    Maximum Clock: 1279.710 MHz (Monitor: 600.000 MHz)
   CTA-861: Multiple native progressive timings are defined.
 
 Failures:
@@ -222,11 +230,6 @@ Block 1, CTA-861 Extension Block:
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 144.000 Hz (Monitor: 40.000 - 144.000 Hz)
-    Horizontal Freq: 15.625 - 319.927 kHz (Monitor: 30.000 - 510.000 kHz)
-    Maximum Clock: 1279.710 MHz (Monitor: 600.000 MHz)
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
-  DisplayID: Missing DisplayID Product Identification Data Block.
 
 EDID conformity: FAIL

@@ -128,6 +128,8 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #5: Image size is 1154x866 mm, but based on the picture AR it should be 1154x769 mm.
+  Detailed Timing Descriptor #6: Image size is 1154x866 mm, but based on the picture AR it should be 1154x384 mm.
 EDID:
   CTA-861: Multiple native progressive timings are defined.
 

@@ -141,7 +141,11 @@ Checksum: 0x1d  Unused space in Extension Block: 7 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Image size is 708x398 mm, but based on the picture AR it should be 708x414 mm.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 4 and the first DTD are not identical. Is this intended?
   Unknown CTA-861 Data Block (tag 0x00, length 2).
   Unknown CTA-861 Data Block (tag 0x00, length 3).
 EDID:

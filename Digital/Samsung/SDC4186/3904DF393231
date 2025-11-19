@@ -52,7 +52,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6796, 0.3203
     Green: 0.2373, 0.7226
@@ -65,7 +65,7 @@ Block 0, Base EDID:
                  Hfront   32 Hsync   8 Hback   60 Hpol P
                  Vfront    8 Vsync   8 Vback    8 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-120 Hz V, 218-218 kHz H, max dotclock 660 MHz
+      Monitor ranges (Range Limits Only): 48-120 Hz V, 218-218 kHz H, max dotclock 660 MHz
     Empty Descriptor
     Alphanumeric Data String: 'ATNA40CU02-0 '
   Extension blocks: 1
@@ -88,7 +88,8 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 96 (400.000 cd/m^2)
     Desired content min luminance: 7 (0.004 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.3
+    Version: 3
+    Feature Caps: 0x03
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0x00
@@ -129,7 +130,8 @@ Block 3, CTA-861 Extension Block:
     Desired content max frame-average luminance: 96 (400.000 cd/m^2)
     Desired content min luminance: 7 (0.004 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.3
+    Version: 3
+    Feature Caps: 0x03
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0x00
@@ -163,7 +165,7 @@ Block 0, Base EDID:
   Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
   Display Range Limits: Bytes 12-17 must be 0x20.
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
-  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: No newline, but one or more trailing spaces.
 Block 1, CTA-861 Extension Block:
   Offset is 30, but should be 34.
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
@@ -174,8 +176,6 @@ Block 3, CTA-861 Extension Block:
   Colorimetry Data Block: Only one instance of this Data Block is allowed.
   HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
   Offset is 30, but should be 34.
-  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
 

@@ -63,7 +63,12 @@ Checksum: 0x4c
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+  Detailed Timing Descriptor #1: Image size is 338x270 mm, but based on the picture AR it should be 338x190 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 135.000 MHz (Monitor: 90.000 MHz)
 
 Failures:
 
@@ -71,8 +76,6 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 338x270 mm vs display size 410x260 mm.
   Display Product Name: Non-space after newline.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Maximum Clock: 135.000 MHz (Monitor: 90.000 MHz)
   Base EDID: The DTD max image size is 338x270mm, which is larger than the display size 410.0x260.0mm.
 
 EDID conformity: FAIL

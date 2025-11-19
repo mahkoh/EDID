@@ -45,7 +45,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6855, 0.3056
     Green: 0.2001, 0.7109
@@ -62,7 +62,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   54 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 1-144 Hz V, 255-255 kHz H, max dotclock 1270 MHz
+      Monitor ranges (Range Limits Only): 1-144 Hz V, 255-255 kHz H, max dotclock 1270 MHz
     Display Product Name: 'Acer X27 P'
   Extension blocks: 2
 Checksum: 0xe4
@@ -166,7 +166,6 @@ EDID:
 Failures:
 
 EDID:
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: Missing DisplayID Display Parameters Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 

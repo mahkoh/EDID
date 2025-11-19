@@ -75,6 +75,8 @@ Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Dubious maximum image size (5x21 is smaller than 10x10 cm).
+  Detailed Timing Descriptor #1: Dubious image size (54x218 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (54x218 mm is smaller than 100x100 mm).
   Standard Timing Identifications: Standard Timing 328x205 has a dubious odd vertical resolution.
   Standard Timing Identifications: Standard Timing 504x315 has a dubious odd vertical resolution.
   Standard Timing Identifications: Standard Timing 504x315 has a dubious odd vertical resolution.
@@ -99,7 +101,7 @@ Block 0, Base EDID:
     Vertical Frontporch/Sync Width 1/3
   Standard Timing Identifications: 0 or negative horizontal front porch.
   Standard Timing Identifications: Use 0x0101 as the invalid Standard Timings code, not 0x0020.
-  Display Product Name: One or more trailing spaces.
+  Display Product Name: No newline, but one or more trailing spaces.
   Missing Display Range Limits Descriptor.
 Block 1, Base EDID:
   Unknown Extension Block.

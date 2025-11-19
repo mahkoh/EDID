@@ -45,7 +45,7 @@ Failures:
 
 Block 0, Base EDID:
   Alphanumeric Data String: Non-space after newline.
-  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces before newline.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 
