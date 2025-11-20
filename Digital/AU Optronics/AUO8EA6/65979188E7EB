@@ -146,9 +146,11 @@ Block 2, DisplayID Extension Block:
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x60
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 141 (1060.189 cd/m^2)
     Minimum luminance: 16 (0.042 cd/m^2)
-    Unknown: 0x8d 0x10
   Checksum: 0x07
 Checksum: 0x90
 
@@ -221,9 +223,11 @@ Block 5, DisplayID Extension Block:
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x60
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 141 (1060.189 cd/m^2)
     Minimum luminance: 16 (0.042 cd/m^2)
-    Unknown: 0x8d 0x10
   Checksum: 0x07
 Checksum: 0x90
 

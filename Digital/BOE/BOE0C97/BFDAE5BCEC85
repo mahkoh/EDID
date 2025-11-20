@@ -84,14 +84,11 @@ Block 1, DisplayID Extension Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
     Feature Caps: 0x41
-      Replay Supported
+      FreeSync Panel Replay Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 99 (426.856 cd/m^2)
-    Minimum luminance: 74 (0.359 cd/m^2)
-    Unknown: 0x63 0x4a
   Checksum: 0x87
 Checksum: 0x90
 
@@ -117,14 +114,11 @@ Block 3, DisplayID Extension Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
     Feature Caps: 0x41
-      Replay Supported
+      FreeSync Panel Replay Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 99 (426.856 cd/m^2)
-    Minimum luminance: 74 (0.359 cd/m^2)
-    Unknown: 0x63 0x4a
   Checksum: 0x87
 Checksum: 0x90
 

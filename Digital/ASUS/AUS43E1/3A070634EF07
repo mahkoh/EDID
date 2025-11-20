@@ -164,7 +164,6 @@ Block 1, CTA-861 Extension Block:
     Flags 2.x: 0x03
     Maximum luminance: 116 (616.884 cd/m^2)
     Minimum luminance: 40 (0.152 cd/m^2)
-    Unknown: 0x08 0x2e
   Colorimetry Data Block:
     BT2020cYCC
     BT2020YCC
@@ -269,7 +268,6 @@ Block 4, CTA-861 Extension Block:
     Flags 2.x: 0x03
     Maximum luminance: 116 (616.884 cd/m^2)
     Minimum luminance: 40 (0.152 cd/m^2)
-    Unknown: 0x08 0x2e
   Colorimetry Data Block:
     BT2020cYCC
     BT2020YCC

@@ -168,10 +168,6 @@ Block 2, DisplayID Extension Block:
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x04
-    Maximum luminance: 83 (301.833 cd/m^2)
-    Minimum luminance: 255 (3.018 cd/m^2)
-    Maximum luminance (without local dimming): 83 (301.833 cd/m^2)
-    Minimum luminance (without local dimming): 255 (3.018 cd/m^2)
   Unknown CTA-861 Data Block (tag 0x00, length 0):
   Unknown CTA-861 Data Block (tag 0x00, length 0):
   Checksum: 0x3f
@@ -268,10 +264,6 @@ Block 5, DisplayID Extension Block:
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x04
-    Maximum luminance: 83 (301.833 cd/m^2)
-    Minimum luminance: 255 (3.018 cd/m^2)
-    Maximum luminance (without local dimming): 83 (301.833 cd/m^2)
-    Minimum luminance (without local dimming): 255 (3.018 cd/m^2)
   Unknown CTA-861 Data Block (tag 0x00, length 0):
   Unknown CTA-861 Data Block (tag 0x00, length 0):
   Checksum: 0x3f

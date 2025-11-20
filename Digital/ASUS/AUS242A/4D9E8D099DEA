@@ -132,9 +132,6 @@ Block 1, CTA-861 Extension Block:
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Detailed Timing Descriptors:
     DTD 2:  1920x1080  159.842342 Hz  16:9    177.425 kHz    354.850000 MHz (521 mm x 293 mm)
                  Hfront    8 Hsync  32 Hback   40 Hpol P
@@ -201,9 +198,6 @@ Block 3, CTA-861 Extension Block:
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Detailed Timing Descriptors:
     DTD 5:  1920x1080  159.842342 Hz  16:9    177.425 kHz    354.850000 MHz (521 mm x 293 mm)
                  Hfront    8 Hsync  32 Hback   40 Hpol P

@@ -137,9 +137,6 @@ Block 1, CTA-861 Extension Block:
     Maximum Refresh Rate: 240 Hz
     Flags 1.x: 0xe6 (MCCS)
     Flags 2.x: 0x00
-    Maximum luminance: 115 (603.666 cd/m^2)
-    Minimum luminance: 88 (0.719 cd/m^2)
-    Unknown: 0x00 0x00
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
     VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
@@ -212,9 +209,6 @@ Block 3, CTA-861 Extension Block:
     Maximum Refresh Rate: 240 Hz
     Flags 1.x: 0xe6 (MCCS)
     Flags 2.x: 0x00
-    Maximum luminance: 115 (603.666 cd/m^2)
-    Minimum luminance: 88 (0.719 cd/m^2)
-    Unknown: 0x00 0x00
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
     VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz

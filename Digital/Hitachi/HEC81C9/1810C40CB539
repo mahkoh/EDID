@@ -216,11 +216,6 @@ Block 1, CTA-861 Extension Block:
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
-    Flags 2.x: 0x04
-    Maximum luminance: 97 (408.759 cd/m^2)
-    Minimum luminance: 33 (0.068 cd/m^2)
-    Maximum luminance (without local dimming): 97 (408.759 cd/m^2)
-    Minimum luminance (without local dimming): 33 (0.068 cd/m^2)
 Checksum: 0xa4  Unused space in Extension Block: 2 bytes
 
 ----------------
@@ -375,11 +370,6 @@ Block 3, CTA-861 Extension Block:
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
-    Flags 2.x: 0x04
-    Maximum luminance: 97 (408.759 cd/m^2)
-    Minimum luminance: 33 (0.068 cd/m^2)
-    Maximum luminance (without local dimming): 97 (408.759 cd/m^2)
-    Minimum luminance (without local dimming): 33 (0.068 cd/m^2)
 Checksum: 0xa4  Unused space in Extension Block: 2 bytes
 
 ----------------

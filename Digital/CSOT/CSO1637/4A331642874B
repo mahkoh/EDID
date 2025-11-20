@@ -147,9 +147,12 @@ Block 2, DisplayID Extension Block:
     Maximum Refresh Rate: 240 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x20
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      BT.2020 Gamut Supported
+      Display is Mini LED
     Maximum luminance: 106 (496.743 cd/m^2)
     Minimum luminance: 72 (0.396 cd/m^2)
-    Unknown: 0x6a 0x48
   Checksum: 0x9c
 Checksum: 0x90
 
@@ -222,9 +225,12 @@ Block 5, DisplayID Extension Block:
     Maximum Refresh Rate: 240 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x20
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      BT.2020 Gamut Supported
+      Display is Mini LED
     Maximum luminance: 106 (496.743 cd/m^2)
     Minimum luminance: 72 (0.396 cd/m^2)
-    Unknown: 0x6a 0x48
   Checksum: 0x9c
 Checksum: 0x90
 

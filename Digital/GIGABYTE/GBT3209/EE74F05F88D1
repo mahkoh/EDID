@@ -146,14 +146,19 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
     Feature Caps: 0x07
+      Global Backlight Control Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x0f
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      Gamma 2.2 EOTF Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 103 (465.490 cd/m^2)
     Minimum luminance: 53 (0.201 cd/m^2)
-    Maximum luminance (without local dimming): 103 (465.490 cd/m^2)
-    Minimum luminance (without local dimming): 53 (0.201 cd/m^2)
+    Maximum luminance (minimum backlight): 103 (465.490 cd/m^2)
+    Minimum luminance (minimum backlight): 53 (0.201 cd/m^2)
   Colorimetry Data Block:
     BT2020YCC
     BT2020RGB
@@ -248,14 +253,19 @@ Block 4, CTA-861 Extension Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
     Feature Caps: 0x07
+      Global Backlight Control Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x0f
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      Gamma 2.2 EOTF Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 103 (465.490 cd/m^2)
     Minimum luminance: 53 (0.201 cd/m^2)
-    Maximum luminance (without local dimming): 103 (465.490 cd/m^2)
-    Minimum luminance (without local dimming): 53 (0.201 cd/m^2)
+    Maximum luminance (minimum backlight): 103 (465.490 cd/m^2)
+    Minimum luminance (minimum backlight): 53 (0.201 cd/m^2)
   Colorimetry Data Block:
     BT2020YCC
     BT2020RGB

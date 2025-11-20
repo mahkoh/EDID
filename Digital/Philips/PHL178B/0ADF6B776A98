@@ -207,7 +207,6 @@ Block 1, CTA-861 Extension Block:
     Flags 2.x: 0x00
     Maximum luminance: 0 (50.000 cd/m^2)
     Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
 Checksum: 0x9c  Unused space in Extension Block: 5 bytes
 
 ----------------
@@ -356,7 +355,6 @@ Block 3, CTA-861 Extension Block:
     Flags 2.x: 0x00
     Maximum luminance: 0 (50.000 cd/m^2)
     Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
 Checksum: 0x9c  Unused space in Extension Block: 5 bytes
 
 ----------------

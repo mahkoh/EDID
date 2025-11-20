@@ -131,10 +131,6 @@ Block 1, CTA-861 Extension Block:
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x04
-    Maximum luminance: 97 (408.759 cd/m^2)
-    Minimum luminance: 79 (0.392 cd/m^2)
-    Maximum luminance (without local dimming): 97 (408.759 cd/m^2)
-    Minimum luminance (without local dimming): 79 (0.392 cd/m^2)
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)
@@ -231,10 +227,6 @@ Block 3, CTA-861 Extension Block:
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x04
-    Maximum luminance: 97 (408.759 cd/m^2)
-    Minimum luminance: 79 (0.392 cd/m^2)
-    Maximum luminance (without local dimming): 97 (408.759 cd/m^2)
-    Minimum luminance (without local dimming): 79 (0.392 cd/m^2)
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: Selectable (via AVI Q)

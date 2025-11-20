@@ -157,10 +157,6 @@ Block 1, CTA-861 Extension Block:
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x04
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Maximum luminance (without local dimming): 0 (50.000 cd/m^2)
-    Minimum luminance (without local dimming): 0 (0.000 cd/m^2)
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
   Colorimetry Data Block:
@@ -265,10 +261,6 @@ Block 4, CTA-861 Extension Block:
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x04
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Maximum luminance (without local dimming): 0 (50.000 cd/m^2)
-    Minimum luminance (without local dimming): 0 (0.000 cd/m^2)
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
   Colorimetry Data Block:

@@ -157,10 +157,12 @@ Block 1, CTA-861 Extension Block:
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0xe6 (MCCS)
     Flags 2.x: 0x06
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      Gamma 2.2 EOTF Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 117 (630.392 cd/m^2)
     Minimum luminance: 44 (0.188 cd/m^2)
-    Maximum luminance (without local dimming): 117 (630.392 cd/m^2)
-    Minimum luminance (without local dimming): 44 (0.188 cd/m^2)
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
@@ -278,10 +280,12 @@ Block 3, CTA-861 Extension Block:
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0xe6 (MCCS)
     Flags 2.x: 0x06
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      Gamma 2.2 EOTF Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 117 (630.392 cd/m^2)
     Minimum luminance: 44 (0.188 cd/m^2)
-    Maximum luminance (without local dimming): 117 (630.392 cd/m^2)
-    Minimum luminance (without local dimming): 44 (0.188 cd/m^2)
   Colorimetry Data Block:
     xvYCC601
     xvYCC709

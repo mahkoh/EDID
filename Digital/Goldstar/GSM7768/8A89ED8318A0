@@ -112,14 +112,11 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
     Feature Caps: 0x05
+      Global Backlight Control Supported
     Minimum Refresh Rate: 148 Hz
     Maximum Refresh Rate: 160 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x04
-    Maximum luminance: 83 (301.833 cd/m^2)
-    Minimum luminance: 46 (0.098 cd/m^2)
-    Maximum luminance (without local dimming): 83 (301.833 cd/m^2)
-    Minimum luminance (without local dimming): 46 (0.098 cd/m^2)
   Detailed Timing Descriptors:
     DTD 2:  3440x1440   59.987347 Hz  43:18    88.841 kHz    321.250000 MHz (800 mm x 334 mm)
                  Hfront   48 Hsync  32 Hback   96 Hpol P

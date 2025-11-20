@@ -143,12 +143,14 @@ Block 1, CTA-861 Extension Block:
     Version: 3
     Feature Caps: 0x03
     Minimum Refresh Rate: 48 Hz
-    Maximum Refresh Rate: 240 Hz
+    Maximum Refresh Rate: 360 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0xa0
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 103 (465.490 cd/m^2)
     Minimum luminance: 2 (0.000 cd/m^2)
-    Unknown: 0x4f 0x03
   Video Capability Data Block:
     YCbCr quantization: Selectable (via AVI YQ)
     RGB quantization: Selectable (via AVI Q)
@@ -236,12 +238,14 @@ Block 4, CTA-861 Extension Block:
     Version: 3
     Feature Caps: 0x03
     Minimum Refresh Rate: 48 Hz
-    Maximum Refresh Rate: 240 Hz
+    Maximum Refresh Rate: 360 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0xa0
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 103 (465.490 cd/m^2)
     Minimum luminance: 2 (0.000 cd/m^2)
-    Unknown: 0x4f 0x03
   Video Capability Data Block:
     YCbCr quantization: Selectable (via AVI YQ)
     RGB quantization: Selectable (via AVI Q)

@@ -125,6 +125,7 @@ Block 1, CTA-861 Extension Block:
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0xed (MCCS)
+    Data block is truncated (length = 6)
   Video Capability Data Block:
     YCbCr quantization: Selectable (via AVI YQ)
     RGB quantization: Selectable (via AVI Q)
@@ -187,6 +188,7 @@ Block 3, CTA-861 Extension Block:
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0xed (MCCS)
+    Data block is truncated (length = 6)
   Video Capability Data Block:
     YCbCr quantization: Selectable (via AVI YQ)
     RGB quantization: Selectable (via AVI Q)

@@ -153,10 +153,12 @@ Block 1, CTA-861 Extension Block:
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x0f
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      Gamma 2.2 EOTF Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 112 (565.685 cd/m^2)
     Minimum luminance: 24 (0.050 cd/m^2)
-    Maximum luminance (without local dimming): 93 (374.834 cd/m^2)
-    Minimum luminance (without local dimming): 30 (0.052 cd/m^2)
   Detailed Timing Descriptors:
     DTD 3:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (697 mm x 392 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
@@ -237,10 +239,12 @@ Block 3, CTA-861 Extension Block:
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x0f
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      Gamma 2.2 EOTF Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 112 (565.685 cd/m^2)
     Minimum luminance: 24 (0.050 cd/m^2)
-    Maximum luminance (without local dimming): 93 (374.834 cd/m^2)
-    Minimum luminance (without local dimming): 30 (0.052 cd/m^2)
   Detailed Timing Descriptors:
     DTD 6:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (697 mm x 392 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P

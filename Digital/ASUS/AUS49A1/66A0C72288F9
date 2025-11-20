@@ -137,7 +137,6 @@ Block 1, CTA-861 Extension Block:
     Flags 2.x: 0x03
     Maximum luminance: 98 (417.710 cd/m^2)
     Minimum luminance: 52 (0.174 cd/m^2)
-    Unknown: 0x08 0x2f
   Colorimetry Data Block:
     xvYCC601
     xvYCC709

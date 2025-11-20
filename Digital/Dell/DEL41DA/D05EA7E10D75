@@ -139,10 +139,6 @@ Block 1, CTA-861 Extension Block:
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xe6 (MCCS)
     Flags 2.x: 0x0f
-    Maximum luminance: 98 (417.710 cd/m^2)
-    Minimum luminance: 61 (0.239 cd/m^2)
-    Maximum luminance (without local dimming): 98 (417.710 cd/m^2)
-    Minimum luminance (without local dimming): 61 (0.239 cd/m^2)
   Colorimetry Data Block:
     BT2020YCC
     BT2020RGB
@@ -236,10 +232,6 @@ Block 3, CTA-861 Extension Block:
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xe6 (MCCS)
     Flags 2.x: 0x0f
-    Maximum luminance: 98 (417.710 cd/m^2)
-    Minimum luminance: 61 (0.239 cd/m^2)
-    Maximum luminance (without local dimming): 98 (417.710 cd/m^2)
-    Minimum luminance (without local dimming): 61 (0.239 cd/m^2)
   Colorimetry Data Block:
     BT2020YCC
     BT2020RGB

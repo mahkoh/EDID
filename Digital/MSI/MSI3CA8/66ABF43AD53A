@@ -131,9 +131,6 @@ Block 1, CTA-861 Extension Block:
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xec (MCCS)
     Flags 2.x: 0x00
-    Maximum luminance: 97 (408.759 cd/m^2)
-    Minimum luminance: 76 (0.363 cd/m^2)
-    Unknown: 0x61 0x4c
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
@@ -218,9 +215,6 @@ Block 3, CTA-861 Extension Block:
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xec (MCCS)
     Flags 2.x: 0x00
-    Maximum luminance: 97 (408.759 cd/m^2)
-    Minimum luminance: 76 (0.363 cd/m^2)
-    Unknown: 0x61 0x4c
   Colorimetry Data Block:
     xvYCC601
     xvYCC709

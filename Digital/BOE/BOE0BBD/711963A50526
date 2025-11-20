@@ -96,9 +96,6 @@ Block 1, CTA-861 Extension Block:
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Audio Data Block:
 Checksum: 0x7b  Unused space in Extension Block: 96 bytes
 
@@ -138,9 +135,6 @@ Block 3, CTA-861 Extension Block:
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Audio Data Block:
 Checksum: 0x7b  Unused space in Extension Block: 96 bytes
 

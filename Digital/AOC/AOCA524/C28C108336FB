@@ -166,13 +166,18 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
     Feature Caps: 0x0b
+      Local Dimming Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x60
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 145 (1156.145 cd/m^2)
     Minimum luminance: 10 (0.018 cd/m^2)
-    Unknown: 0x91 0x0a
+    Maximum luminance (without local dimming): 145 (1156.145 cd/m^2)
+    Minimum luminance (without local dimming): 10 (0.018 cd/m^2)
   Detailed Timing Descriptors:
     DTD 2:  3840x2160   29.980602 Hz  16:9     65.688 kHz    262.750000 MHz (597 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
@@ -273,13 +278,18 @@ Block 4, CTA-861 Extension Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
     Feature Caps: 0x0b
+      Local Dimming Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x60
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 145 (1156.145 cd/m^2)
     Minimum luminance: 10 (0.018 cd/m^2)
-    Unknown: 0x91 0x0a
+    Maximum luminance (without local dimming): 145 (1156.145 cd/m^2)
+    Minimum luminance (without local dimming): 10 (0.018 cd/m^2)
   Detailed Timing Descriptors:
     DTD 5:  3840x2160   29.980602 Hz  16:9     65.688 kHz    262.750000 MHz (597 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P

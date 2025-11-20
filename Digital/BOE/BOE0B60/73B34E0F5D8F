@@ -92,9 +92,6 @@ Block 1, DisplayID Extension Block:
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 74 (248.372 cd/m^2)
-    Minimum luminance: 72 (0.198 cd/m^2)
-    Unknown: 0x4a 0x48
   Checksum: 0xf4
 Checksum: 0x90
 
@@ -130,9 +127,6 @@ Block 3, DisplayID Extension Block:
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 74 (248.372 cd/m^2)
-    Minimum luminance: 72 (0.198 cd/m^2)
-    Unknown: 0x4a 0x48
   Checksum: 0xf4
 Checksum: 0x90
 

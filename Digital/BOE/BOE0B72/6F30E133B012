@@ -96,9 +96,6 @@ Block 1, DisplayID Extension Block:
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 96 (400.000 cd/m^2)
-    Minimum luminance: 73 (0.328 cd/m^2)
-    Unknown: 0x60 0x49
   Adaptive Sync Data Block:
     Descriptor #1:
       Native Panel Range
@@ -149,9 +146,6 @@ Block 3, DisplayID Extension Block:
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 96 (400.000 cd/m^2)
-    Minimum luminance: 73 (0.328 cd/m^2)
-    Unknown: 0x60 0x49
   Adaptive Sync Data Block:
     Descriptor #1:
       Native Panel Range

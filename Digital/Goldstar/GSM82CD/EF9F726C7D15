@@ -260,9 +260,6 @@ Block 2, CTA-861 Extension Block:
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Vendor-Specific Video Data Block (Dolby), OUI 00-D0-46:
     Version: 2 (12 bytes)
     DM Version: 4.x
@@ -454,9 +451,6 @@ Block 6, CTA-861 Extension Block:
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Vendor-Specific Video Data Block (Dolby), OUI 00-D0-46:
     Version: 2 (12 bytes)
     DM Version: 4.x

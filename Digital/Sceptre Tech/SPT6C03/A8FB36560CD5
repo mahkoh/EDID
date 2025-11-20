@@ -136,9 +136,6 @@ Block 1, CTA-861 Extension Block:
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0xed (MCCS)
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
     Version: 1
     Maximum TMDS Character Rate: 600 MHz
@@ -212,9 +209,6 @@ Block 3, CTA-861 Extension Block:
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0xed (MCCS)
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
     Version: 1
     Maximum TMDS Character Rate: 600 MHz

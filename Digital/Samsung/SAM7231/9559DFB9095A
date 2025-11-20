@@ -173,13 +173,16 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
     Feature Caps: 0x0f
+      Global Backlight Control Supported
+      Local Dimming Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0xe9 (MCCS)
     Flags 2.x: 0x00
     Maximum luminance: 115 (603.666 cd/m^2)
     Minimum luminance: 3 (0.001 cd/m^2)
-    Unknown: 0x60 0x0f
+    Maximum luminance (without local dimming): 96 (400.000 cd/m^2)
+    Minimum luminance (without local dimming): 15 (0.014 cd/m^2)
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -303,13 +306,16 @@ Block 3, CTA-861 Extension Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
     Feature Caps: 0x0f
+      Global Backlight Control Supported
+      Local Dimming Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0xe9 (MCCS)
     Flags 2.x: 0x00
     Maximum luminance: 115 (603.666 cd/m^2)
     Minimum luminance: 3 (0.001 cd/m^2)
-    Unknown: 0x60 0x0f
+    Maximum luminance (without local dimming): 96 (400.000 cd/m^2)
+    Minimum luminance (without local dimming): 15 (0.014 cd/m^2)
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range

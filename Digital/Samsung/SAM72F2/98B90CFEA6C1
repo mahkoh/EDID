@@ -143,9 +143,6 @@ Block 1, CTA-861 Extension Block:
     Maximum Refresh Rate: 175 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 96 (400.000 cd/m^2)
-    Minimum luminance: 4 (0.001 cd/m^2)
-    Unknown: 0x4a 0x05
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range

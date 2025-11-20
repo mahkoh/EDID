@@ -90,14 +90,11 @@ Block 1, DisplayID Extension Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
     Feature Caps: 0xc1
-      Replay Supported
+      FreeSync Panel Replay Supported
     Minimum Refresh Rate: 60 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 106 (496.743 cd/m^2)
-    Minimum luminance: 66 (0.333 cd/m^2)
-    Unknown: 0x6a 0x42
   Display Parameters Data Block (0x21):
     Image size: 344.7 mm x 215.4 mm
     Display native pixel format: 2560x1600
@@ -155,14 +152,11 @@ Block 3, DisplayID Extension Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
     Feature Caps: 0xc1
-      Replay Supported
+      FreeSync Panel Replay Supported
     Minimum Refresh Rate: 60 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 106 (496.743 cd/m^2)
-    Minimum luminance: 66 (0.333 cd/m^2)
-    Unknown: 0x6a 0x42
   Display Parameters Data Block (0x21):
     Image size: 344.7 mm x 215.4 mm
     Display native pixel format: 2560x1600

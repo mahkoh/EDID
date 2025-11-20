@@ -142,10 +142,6 @@ Block 2, DisplayID Extension Block:
     Maximum Refresh Rate: 240 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x24
-    Maximum luminance: 146 (1181.461 cd/m^2)
-    Minimum luminance: 16 (0.047 cd/m^2)
-    Maximum luminance (without local dimming): 146 (1181.461 cd/m^2)
-    Minimum luminance (without local dimming): 16 (0.047 cd/m^2)
   Checksum: 0xe2
 Checksum: 0x90
 
@@ -215,10 +211,6 @@ Block 5, DisplayID Extension Block:
     Maximum Refresh Rate: 240 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x24
-    Maximum luminance: 146 (1181.461 cd/m^2)
-    Minimum luminance: 16 (0.047 cd/m^2)
-    Maximum luminance (without local dimming): 146 (1181.461 cd/m^2)
-    Minimum luminance (without local dimming): 16 (0.047 cd/m^2)
   Checksum: 0xe2
 Checksum: 0x90
 
