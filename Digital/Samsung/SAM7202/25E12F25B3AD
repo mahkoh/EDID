@@ -220,10 +220,11 @@ Block 1, CTA-861 Extension Block:
     Peak Luminance Index: 4
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
-    Feature Caps: 0x03
+    Flags 1: 0x03
+      FreeSync Supported
+      FreeSync 2 HDR Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
-    Flags 1.x: 0x00
     Data block is truncated (length = 5)
 Checksum: 0x95  Unused space in Extension Block: 18 bytes
 

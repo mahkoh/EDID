@@ -154,11 +154,11 @@ Block 1, CTA-861 Extension Block:
     CE scan behavior: Always Underscanned
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
-    Feature Caps: 0x01
+    Flags 1: 0x01
+      FreeSync Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 240 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
+    Flags 5: 0x00
   Detailed Timing Descriptors:
     DTD 2:  3440x1440   60.001149 Hz  43:18    88.862 kHz    334.120000 MHz (797 mm x 334 mm)
                  Hfront   48 Hsync  32 Hback  240 Hpol P

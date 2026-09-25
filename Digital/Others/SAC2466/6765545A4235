@@ -149,12 +149,13 @@ Block 1, CTA-861 Extension Block:
     Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
-    Feature Caps: 0x17
+    Flags 1: 0x17
+      FreeSync Supported
+      FreeSync 2 HDR Supported
       Global Backlight Control Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 180 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
+    Flags 5: 0x00
     Maximum luminance: 0 (50.000 cd/m^2)
     Minimum luminance: 0 (0.000 cd/m^2)
     Maximum luminance (minimum backlight): 0 (50.000 cd/m^2)

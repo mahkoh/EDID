@@ -172,20 +172,22 @@ Block 2, DisplayID Extension Block:
   CTA-861 DisplayID Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
-    Feature Caps: 0x5b
+    Flags 1: 0x5b
+      FreeSync Supported
+      FreeSync 2 HDR Supported
       Local Dimming Supported
-      FreeSync Panel Replay Supported
+      Panel Replay/PSR Switch Supported
+      Panel Replay Supported
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 120 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0xa0
+    Flags 5: 0xa0
+      Display is OLED
       ST 2084 (PQ) EOTF Supported
-      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
-      BT.2020 Gamut Supported
     Maximum luminance: 160 (1600.000 cd/m^2)
     Minimum luminance: 1 (0.000 cd/m^2)
     Maximum luminance (without local dimming): 119 (658.302 cd/m^2)
     Minimum luminance (without local dimming): 2 (0.000 cd/m^2)
+    Additional Sink Information Address: 0x410
   Checksum: 0x6b
 Checksum: 0x90
 

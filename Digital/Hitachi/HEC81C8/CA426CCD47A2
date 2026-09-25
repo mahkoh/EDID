@@ -219,10 +219,9 @@ Block 1, CTA-861 Extension Block:
     Peak Luminance Index: 4
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 0
-    Feature Caps: 0x00
+    Flags 1: 0x00
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
-    Flags 1.x: 0x00
 Checksum: 0xf9  Unused space in Extension Block: 2 bytes
 
 ----------------

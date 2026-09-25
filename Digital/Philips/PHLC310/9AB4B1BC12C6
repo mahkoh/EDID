@@ -167,17 +167,18 @@ Block 1, CTA-861 Extension Block:
     Desired content min luminance: 2 (0.000 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
-    Feature Caps: 0x03
+    Flags 1: 0x03
+      FreeSync Supported
+      FreeSync 2 HDR Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 240 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x84
-      ST 2084 (PQ) EOTF Supported
-      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+    Flags 5: 0x84
+      Display is OLED
       Gamma 2.2 EOTF Supported
-      BT.2020 Gamut Supported
     Maximum luminance: 100 (436.203 cd/m^2)
     Minimum luminance: 2 (0.000 cd/m^2)
+    Maximum luminance (without local dimming): 76 (259.368 cd/m^2)
+    Minimum luminance (without local dimming): 2 (0.000 cd/m^2)
   Detailed Timing Descriptors:
     DTD 2:  3840x1080  120.000892 Hz  32:9    133.801 kHz    537.880000 MHz (1197 mm x 339 mm)
                  Hfront   48 Hsync  32 Hback  100 Hpol P

@@ -80,10 +80,10 @@ Block 1, CTA-861 Extension Block:
   Native DTDs: 0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 1
-    Feature Caps: 0x01
+    Flags 1: 0x01
+      FreeSync Supported
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 60 Hz
-    Flags 1.x: 0x00
 Checksum: 0x06  Unused space in Extension Block: 114 bytes
 
 ----------------

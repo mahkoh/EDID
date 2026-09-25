@@ -113,11 +113,12 @@ Block 1, CTA-861 Extension Block:
     Maximum TMDS clock: 330 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
-    Feature Caps: 0x11
+    Flags 1: 0x11
+      FreeSync Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
-    Flags 1.x: 0xed (MCCS)
-    Flags 2.x: 0x00
+    MCCS VCP Code: 0xed
+    Flags 5: 0x00
   YCbCr 4:2:0 Capability Map Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
   Vendor-Specific Video Data Block, OUI 04-00-02:

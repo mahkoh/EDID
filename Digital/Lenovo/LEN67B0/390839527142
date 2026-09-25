@@ -143,16 +143,16 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
-    Feature Caps: 0x0b
+    Flags 1: 0x0b
+      FreeSync Supported
+      FreeSync 2 HDR Supported
       Local Dimming Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x15
-      ST 2084 (PQ) EOTF Supported
-      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+    Flags 5: 0x15
+      sRGB EOTF Supported
       Gamma 2.2 EOTF Supported
-      BT.2020 Gamut Supported
+      PQ-Interim EOTF Supported
     Maximum luminance: 152 (1345.434 cd/m^2)
     Minimum luminance: 23 (0.109 cd/m^2)
     Maximum luminance (without local dimming): 152 (1345.434 cd/m^2)

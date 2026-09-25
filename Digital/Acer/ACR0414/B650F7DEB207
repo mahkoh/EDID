@@ -122,10 +122,10 @@ Block 1, CTA-861 Extension Block:
     SCDC Present
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 1
-    Feature Caps: 0x01
+    Flags 1: 0x01
+      FreeSync Supported
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 144 Hz
-    Flags 1.x: 0x00
   Detailed Timing Descriptors:
     DTD 2:  2560x1440  144.006152 Hz  16:9    222.201 kHz    595.500000 MHz (597 mm x 336 mm)
                  Hfront    8 Hsync  32 Hback   80 Hpol P

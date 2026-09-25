@@ -148,16 +148,18 @@ Block 1, CTA-861 Extension Block:
     Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
-    Feature Caps: 0x03
+    Flags 1: 0x03
+      FreeSync Supported
+      FreeSync 2 HDR Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 360 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0xa0
+    Flags 5: 0xa0
+      Display is OLED
       ST 2084 (PQ) EOTF Supported
-      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
-      BT.2020 Gamut Supported
     Maximum luminance: 139 (1015.241 cd/m^2)
     Minimum luminance: 1 (0.000 cd/m^2)
+    Maximum luminance (without local dimming): 77 (265.047 cd/m^2)
+    Minimum luminance (without local dimming): 1 (0.000 cd/m^2)
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range

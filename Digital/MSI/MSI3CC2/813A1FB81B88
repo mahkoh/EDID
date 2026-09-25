@@ -126,11 +126,11 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
-    Feature Caps: 0x01
+    Flags 1: 0x01
+      FreeSync Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 170 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
+    Flags 5: 0x00
   Detailed Timing Descriptors:
     DTD 2:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (600 mm x 330 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P

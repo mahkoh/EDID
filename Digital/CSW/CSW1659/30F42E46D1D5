@@ -149,11 +149,11 @@ Block 2, DisplayID Extension Block:
   CTA-861 DisplayID Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
-    Feature Caps: 0x01
+    Flags 1: 0x01
+      FreeSync Supported
     Minimum Refresh Rate: 60 Hz
     Maximum Refresh Rate: 240 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
+    Flags 5: 0x00
   Brightness Luminance Range Data Block:
     Minimum SDR Luminance (Full Coverage): 5.000000 cd/m^2
     Maximum Suggested SDR Luminance (Full Coverage): 500.000000 cd/m^2

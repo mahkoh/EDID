@@ -110,10 +110,10 @@ Block 1, CTA-861 Extension Block:
     Source physical address: 1.0.0.0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 1
-    Feature Caps: 0x00
+    Flags 1: 0x00
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
-    Flags 1.x: 0xe6 (MCCS)
+    MCCS VCP Code: 0xe6
   Detailed Timing Descriptors:
     DTD 2:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (520 mm x 313 mm)
                  Hfront  440 Hsync  40 Hback  220 Hpol P

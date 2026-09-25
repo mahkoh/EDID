@@ -107,12 +107,13 @@ Block 1, CTA-861 Extension Block:
     Desired content min luminance: 72 (0.396 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
-    Feature Caps: 0x51
-      FreeSync Panel Replay Supported
+    Flags 1: 0x51
+      FreeSync Supported
+      Panel Replay/PSR Switch Supported
+      Panel Replay Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 300 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
+    Flags 5: 0x00
 Checksum: 0xce  Unused space in Extension Block: 91 bytes
 
 ----------------

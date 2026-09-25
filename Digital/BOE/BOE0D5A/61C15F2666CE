@@ -155,13 +155,15 @@ Block 2, DisplayID Extension Block:
   CTA-861 DisplayID Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
-    Feature Caps: 0x59
+    Flags 1: 0x59
+      FreeSync Supported
       Local Dimming Supported
-      FreeSync Panel Replay Supported
+      Panel Replay/PSR Switch Supported
+      Panel Replay Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 300 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x40
+    Flags 5: 0x40
+      Display is Mini LED
   Display Parameters Data Block (0x21):
     Image size: 345.0 mm x 215.0 mm
     Display native pixel format: 2560x1600

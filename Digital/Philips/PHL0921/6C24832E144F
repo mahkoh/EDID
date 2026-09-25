@@ -119,10 +119,10 @@ Block 1, CTA-861 Extension Block:
     Supports scrambling for <= 340 Mcsc
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 1
-    Feature Caps: 0x01
+    Flags 1: 0x01
+      FreeSync Supported
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 102 Hz
-    Flags 1.x: 0x00
   Detailed Timing Descriptors:
     DTD 3:  2560x1080   59.975801 Hz  64:27    67.173 kHz    230.000000 MHz (797 mm x 334 mm)
                  Hfront  160 Hsync 272 Hback  432 Hpol P

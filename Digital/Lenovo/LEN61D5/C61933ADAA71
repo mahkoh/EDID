@@ -125,11 +125,14 @@ Block 1, CTA-861 Extension Block:
         HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
-    Feature Caps: 0x03
+    Flags 1: 0x03
+      FreeSync Supported
+      FreeSync 2 HDR Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x03
+    Flags 5: 0x03
+      sRGB EOTF Supported
+      BT.709 EOTF Supported
     Maximum luminance: 98 (417.710 cd/m^2)
     Minimum luminance: 52 (0.174 cd/m^2)
   Colorimetry Data Block:

@@ -200,11 +200,12 @@ Block 1, CTA-861 Extension Block:
     Center speaker zone present
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
-    Feature Caps: 0x03
+    Flags 1: 0x03
+      FreeSync Supported
+      FreeSync 2 HDR Supported
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 120 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
+    Flags 5: 0x00
     Maximum luminance: 0 (50.000 cd/m^2)
     Minimum luminance: 0 (0.000 cd/m^2)
 Checksum: 0xac  Unused space in Extension Block: 5 bytes

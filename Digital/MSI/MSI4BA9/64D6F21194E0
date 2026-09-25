@@ -121,10 +121,11 @@ Block 1, CTA-861 Extension Block:
     CE scan behavior: Supports both over- and underscan
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 1
-    Feature Caps: 0x01
+    Flags 1: 0x01
+      FreeSync Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 100 Hz
-    Flags 1.x: 0xed (MCCS)
+    MCCS VCP Code: 0xed
   Detailed Timing Descriptors:
     DTD 2:  1920x1080   85.000344 Hz  16:9     95.115 kHz    197.840000 MHz (527 mm x 296 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P

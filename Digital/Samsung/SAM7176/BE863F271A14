@@ -154,17 +154,15 @@ Block 2, CTA-861 Extension Block:
     Maximum number of bytes in a line of chunks: 6144
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
-    Feature Caps: 0x0f
+    Flags 1: 0x0f
+      FreeSync Supported
+      FreeSync 2 HDR Supported
       Global Backlight Control Supported
       Local Dimming Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x04
-      ST 2084 (PQ) EOTF Supported
-      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+    Flags 5: 0x04
       Gamma 2.2 EOTF Supported
-      BT.2020 Gamut Supported
     Maximum luminance: 97 (408.759 cd/m^2)
     Minimum luminance: 4 (0.001 cd/m^2)
     Maximum luminance (without local dimming): 90 (351.250 cd/m^2)

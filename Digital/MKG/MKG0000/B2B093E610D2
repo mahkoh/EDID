@@ -179,11 +179,12 @@ Block 1, CTA-861 Extension Block:
     Maximum number of bytes in a line of chunks: 13312
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
-    Feature Caps: 0x01
+    Flags 1: 0x01
+      FreeSync Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
-    Flags 1.x: 0xe6 (MCCS)
-    Flags 2.x: 0x00
+    MCCS VCP Code: 0xe6
+    Flags 5: 0x00
   YCbCr 4:2:0 Capability Map Data Block:
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
     VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz

@@ -160,19 +160,20 @@ Block 2, DisplayID Extension Block:
   CTA-861 DisplayID Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
-    Feature Caps: 0x0b
+    Flags 1: 0x0b
+      FreeSync Supported
+      FreeSync 2 HDR Supported
       Local Dimming Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 240 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x60
+    Flags 5: 0x60
+      Display is Mini LED
       ST 2084 (PQ) EOTF Supported
-      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
-      BT.2020 Gamut Supported
     Maximum luminance: 149 (1260.785 cd/m^2)
     Minimum luminance: 16 (0.050 cd/m^2)
     Maximum luminance (without local dimming): 115 (603.666 cd/m^2)
     Minimum luminance (without local dimming): 16 (0.024 cd/m^2)
+    Additional Sink Information Address: 0x410
   Checksum: 0xbc
 Checksum: 0x90
 

@@ -85,10 +85,10 @@ Block 1, CTA-861 Extension Block:
     Source physical address: 2.0.0.0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 1
-    Feature Caps: 0x00
+    Flags 1: 0x00
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
-    Flags 1.x: 0xed (MCCS)
+    MCCS VCP Code: 0xed
   Video Capability Data Block:
     YCbCr quantization: No Data
     RGB quantization: No Data

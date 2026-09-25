@@ -304,11 +304,12 @@ Block 3, CTA-861 Extension Block:
   Native DTDs: 0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
-    Feature Caps: 0x01
+    Flags 1: 0x01
+      FreeSync Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x80
+    Flags 5: 0x80
+      Display is OLED
   Detailed Timing Descriptors:
     DTD 7:  2560x1080  143.855547 Hz  64:27   172.339 kHz    470.830000 MHz
                  Hfront    8 Hsync  32 Hback  132 Hpol P

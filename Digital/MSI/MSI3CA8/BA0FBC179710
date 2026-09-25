@@ -110,10 +110,10 @@ Block 1, CTA-861 Extension Block:
     SCDC Present
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 1
-    Feature Caps: 0x03
+    Flags 1: 0x03
+      FreeSync Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
-    Flags 1.x: 0x00
   Colorimetry Data Block:
     BT2020YCC
     BT2020RGB

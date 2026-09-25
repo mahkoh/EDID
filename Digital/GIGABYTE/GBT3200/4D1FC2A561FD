@@ -109,15 +109,17 @@ Block 1, CTA-861 Extension Block:
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
-    Feature Caps: 0x03
+    Flags 1: 0x03
+      FreeSync Supported
+      FreeSync 2 HDR Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
-    Flags 1.x: 0xec (MCCS)
-    Flags 2.x: 0x0f
-      ST 2084 (PQ) EOTF Supported
-      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+    MCCS VCP Code: 0xec
+    Flags 5: 0x0f
+      sRGB EOTF Supported
+      BT.709 EOTF Supported
       Gamma 2.2 EOTF Supported
-      BT.2020 Gamut Supported
+      Gamma 2.6 EOTF Supported
     Maximum luminance: 100 (436.203 cd/m^2)
     Minimum luminance: 30 (0.060 cd/m^2)
   Colorimetry Data Block:

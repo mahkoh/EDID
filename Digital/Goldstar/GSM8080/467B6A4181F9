@@ -173,10 +173,10 @@ Block 1, CTA-861 Extension Block:
     VIC 218:  4096x2160  100.000000 Hz 256:135  225.000 kHz   1188.000000 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 1
-    Feature Caps: 0x01
+    Flags 1: 0x01
+      FreeSync Supported
     Minimum Refresh Rate: 90 Hz
     Maximum Refresh Rate: 120 Hz
-    Flags 1.x: 0x00
   Detailed Timing Descriptors:
     DTD 3:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (1600 mm x 900 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P

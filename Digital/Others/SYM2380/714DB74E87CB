@@ -118,10 +118,10 @@ Block 1, CTA-861 Extension Block:
     Supports_AI
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 1
-    Feature Caps: 0x00
+    Flags 1: 0x00
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
-    Flags 1.x: 0xed (MCCS)
+    MCCS VCP Code: 0xed
   Detailed Timing Descriptors:
     DTD 3:  1920x1080   75.430303 Hz  16:9     84.859 kHz    186.690000 MHz (527 mm x 296 mm)
                  Hfront   48 Hsync  40 Hback  192 Hpol P

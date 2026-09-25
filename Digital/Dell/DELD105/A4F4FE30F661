@@ -158,10 +158,10 @@ Block 1, CTA-861 Extension Block:
     CE scan behavior: Always Overscanned
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 1
-    Feature Caps: 0x00
+    Flags 1: 0x00
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 60 Hz
-    Flags 1.x: 0xe6 (MCCS)
+    MCCS VCP Code: 0xe6
   YCbCr 4:2:0 Capability Map Data Block:
     Empty Capability Map
   Detailed Timing Descriptors:

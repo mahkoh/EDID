@@ -146,20 +146,20 @@ Block 1, CTA-861 Extension Block:
     Maximum number of bytes in a line of chunks: 22528
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
-    Feature Caps: 0x0b
+    Flags 1: 0x0b
+      FreeSync Supported
+      FreeSync 2 HDR Supported
       Local Dimming Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
-    Flags 1.x: 0xe6 (MCCS)
-    Flags 2.x: 0x20
+    MCCS VCP Code: 0xe6
+    Flags 5: 0x20
       ST 2084 (PQ) EOTF Supported
-      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
-      BT.2020 Gamut Supported
-      Display is Mini LED
     Maximum luminance: 148 (1233.769 cd/m^2)
     Minimum luminance: 21 (0.084 cd/m^2)
     Maximum luminance (without local dimming): 148 (1233.769 cd/m^2)
     Minimum luminance (without local dimming): 21 (0.084 cd/m^2)
+    Additional Sink Information Address: 0x403
   Colorimetry Data Block:
     xvYCC601
     xvYCC709

@@ -131,12 +131,14 @@ Block 1, CTA-861 Extension Block:
     VRRmax: 144 Hz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
-    Feature Caps: 0x09
+    Flags 1: 0x09
+      FreeSync Supported
       Local Dimming Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
-    Flags 1.x: 0xe6 (MCCS)
-    Flags 2.x: 0x07
+    MCCS VCP Code: 0xe6
+    Flags 5: 0x07
+    Additional Sink Information Address: 0x403
   Colorimetry Data Block:
     BT2020YCC
     BT2020RGB

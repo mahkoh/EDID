@@ -138,11 +138,11 @@ Block 2, DisplayID Extension Block:
     Desired content min luminance: 0 (0.000 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
-    Feature Caps: 0x01
+    Flags 1: 0x01
+      FreeSync Supported
     Minimum Refresh Rate: 60 Hz
     Maximum Refresh Rate: 250 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x24
+    Flags 5: 0x24
   Checksum: 0xb0
 Checksum: 0x90
 

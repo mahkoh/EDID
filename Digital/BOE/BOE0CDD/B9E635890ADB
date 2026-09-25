@@ -89,12 +89,13 @@ Block 1, DisplayID Extension Block:
   CTA-861 DisplayID Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
-    Feature Caps: 0x51
-      FreeSync Panel Replay Supported
+    Flags 1: 0x51
+      FreeSync Supported
+      Panel Replay/PSR Switch Supported
+      Panel Replay Supported
     Minimum Refresh Rate: 60 Hz
     Maximum Refresh Rate: 144 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
+    Flags 5: 0x00
   Checksum: 0xf4
 Checksum: 0x90
 

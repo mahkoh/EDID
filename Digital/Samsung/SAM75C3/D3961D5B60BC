@@ -146,16 +146,18 @@ Block 1, CTA-861 Extension Block:
     Maximum number of bytes in a line of chunks: 12288
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 3
-    Feature Caps: 0x07
-      Global Backlight Control Supported
+    Flags 1: 0x07
+      FreeSync Supported
+      FreeSync 2 HDR Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 360 Hz
-    Flags 1.x: 0xe9 (MCCS)
-    Flags 2.x: 0x80
+    MCCS VCP Code: 0xe9
+    Flags 5: 0x80
+      Display is OLED
     Maximum luminance: 96 (400.000 cd/m^2)
     Minimum luminance: 1 (0.000 cd/m^2)
-    Maximum luminance (minimum backlight): 75 (253.810 cd/m^2)
-    Minimum luminance (minimum backlight): 2 (0.000 cd/m^2)
+    Maximum luminance (without local dimming): 75 (253.810 cd/m^2)
+    Minimum luminance (without local dimming): 2 (0.000 cd/m^2)
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range

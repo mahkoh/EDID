@@ -131,12 +131,12 @@ Block 1, CTA-861 Extension Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
-    Feature Caps: 0x09
+    Flags 1: 0x09
+      FreeSync Supported
       Local Dimming Supported
     Minimum Refresh Rate: 55 Hz
     Maximum Refresh Rate: 144 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
+    Flags 5: 0x00
   Colorimetry Data Block:
     BT2020YCC
     BT2020RGB

@@ -105,10 +105,10 @@ Block 1, CTA-861 Extension Block:
     Extended HDMI video details:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 1
-    Feature Caps: 0x00
+    Flags 1: 0x00
     Minimum Refresh Rate: 0 Hz
     Maximum Refresh Rate: 0 Hz
-    Flags 1.x: 0xed (MCCS)
+    MCCS VCP Code: 0xed
   Detailed Timing Descriptors:
     DTD 2:  1720x1440   59.999355 Hz  43:36    89.399 kHz    185.950000 MHz (819 mm x 346 mm)
                  Hfront   48 Hsync  64 Hback  248 Hpol P

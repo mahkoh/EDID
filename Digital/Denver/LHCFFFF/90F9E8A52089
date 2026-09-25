@@ -146,11 +146,11 @@ Block 1, CTA-861 Extension Block:
     Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
     Version: 2
-    Feature Caps: 0x01
+    Flags 1: 0x01
+      FreeSync Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 122 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x04
+    Flags 5: 0x04
   Detailed Timing Descriptors:
     DTD 3:  2560x1440  119.999010 Hz  16:9    178.199 kHz    484.700000 MHz (819 mm x 346 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
