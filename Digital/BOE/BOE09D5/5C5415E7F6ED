@@ -34,7 +34,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6416, 0.3291
     Green: 0.2929, 0.6123
@@ -49,21 +49,8 @@ Block 0, Base EDID:
     DTD 2:  3072x1920   48.000894 Hz  16:10    96.770 kHz    312.760000 MHz (345 mm x 215 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   87 Vpol N
-    Alphanumeric Data String: '6P79W'
+    Alphanumeric Data String: '6P79W.NE16N41'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 03 41 21 1e 00 11 00 00 0b 01 0a 20 20 '....A!........  '
-Checksum: 0xe5
-
-----------------
-
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 e5 d5 09 00 00 00 00 '................'
-  34 1e 01 04 b5 22 16 78 03 53 05 a4 54 4b 9c 25 '4....".x.S..TK.%'
-  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 b7 98 00 a0 c0 80 60 70 30 20 '............`p0 '
-  36 00 59 d7 10 00 00 1a 2c 7a 00 a0 c0 80 60 70 '6.Y.....,z....`p'
-  30 20 36 00 59 d7 10 00 00 1a 00 00 00 fe 00 36 '0 6.Y..........6'
-  50 37 39 57 80 4e 45 31 36 4e 34 31 00 00 00 00 'P79W.NE16N41....'
-  00 03 41 21 1e 00 11 00 00 0b 01 0a 20 20 00 e5 '..A!........  ..'
 Checksum: 0xe5
 
 ----------------
@@ -71,16 +58,14 @@ Checksum: 0xe5
 Warnings:
 
 Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x80 at position 5, can cause problems.
   Missing Display Product Name.
 
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

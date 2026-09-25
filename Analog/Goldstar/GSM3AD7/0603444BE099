@@ -69,6 +69,9 @@ Checksum: 0x3a
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Image size is 930x523 mm, but based on the picture AR it should be 697x523 mm.
+  Detailed Timing Descriptor #2: Image size is 930x520 mm, but based on the picture AR it should be 693x520 mm.
   Detailed Timing Descriptor #2: The use of non-zero borders in a DTD is not recommended.
 
 EDID conformity: PASS

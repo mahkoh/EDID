@@ -67,7 +67,7 @@ Block 0, Base EDID:
                  Hfront   16 Hsync  64 Hback   40 Hpol P
                  Vfront    3 Vsync   5 Vback   42 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 50-146 Hz V, 240-240 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 50-146 Hz V, 240-240 kHz H, max dotclock 600 MHz
     Display Product Name: 'MD27PRO'
   Extension blocks: 1
 Checksum: 0x76
@@ -80,7 +80,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  90:  2560x1080   60.000000 Hz  64:27    66.000 kHz    198.000000 MHz
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
@@ -112,7 +112,8 @@ Block 1, CTA-861 Extension Block:
     SCDC Present
     SCDC Read Request Capable
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.7
+    Version: 1
+    Feature Caps: 0x07
     Minimum Refresh Rate: 50 Hz
     Maximum Refresh Rate: 146 Hz
     Flags 1.x: 0xed (MCCS)
@@ -136,16 +137,24 @@ Checksum: 0x9f  Unused space in Extension Block: 16 bytes
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 90 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #5: Image size is 597x335 mm, but based on the picture AR it should be 297x335 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.250 - 214.559 kHz (Monitor: 240.000 - 240.000 kHz)
+
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
+  Display Range Limits: 'Range Limits Only' is not allowed for EDID < 1.4.
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 31.250 - 214.559 kHz (Monitor: 240.000 - 240.000 kHz)
 
 EDID conformity: FAIL

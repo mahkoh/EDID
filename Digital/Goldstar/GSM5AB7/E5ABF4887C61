@@ -69,24 +69,9 @@ Checksum: 0xcd
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1e 6d b7 5a a7 60 00 00 '.........m.Z.`..'
-  08 20 01 03 80 30 1b 78 ea 31 35 a5 55 4e a1 26 '. ...0.x.15.UN.&'
-  0c 50 54 a5 4b 00 71 4f 81 80 95 00 b3 00 a9 c0 '.PT.K.qO........'
-  81 00 81 c0 90 40 02 3a 80 18 71 38 2d 40 58 2c '.....@.:..q8-@X,'
-  45 00 e0 0e 11 00 00 1e 00 00 00 fd 00 38 4b 1e 'E............8K.'
-  53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'S...      .....L'
-  47 20 49 50 53 20 46 55 4c 4c 48 44 00 00 00 ff 'G IPS FULLHD....'
-  00 32 30 38 50 4d 56 50 30 32 34 37 34 33 00 cd '.208PMVP024743..'
-Checksum: 0xcd
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

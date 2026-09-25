@@ -70,7 +70,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -189,13 +189,20 @@ Checksum: 0x16  Unused space in Extension Block: 6 bytes
 
 ----------------
 
-Failures:
+Warnings:
 
 Block 0, Base EDID:
-  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 70.082 Hz (Monitor: 58.000 - 62.000 Hz)
     Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 136.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
 
 EDID conformity: FAIL

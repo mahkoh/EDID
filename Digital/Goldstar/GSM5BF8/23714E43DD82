@@ -69,7 +69,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 3
+  Native DTDs: 3
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -121,9 +121,11 @@ Checksum: 0xa0  Unused space in Extension Block: 53 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Image size is 673x284 mm, but based on the picture AR it should be 504x284 mm.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 89 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
 EDID:
@@ -135,7 +137,7 @@ Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
 EDID:

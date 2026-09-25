@@ -73,24 +73,16 @@ Checksum: 0xe8
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 43 47 50 19 01 01 01 01 '........CGP.....'
-  25 1f 01 03 80 2c 17 78 2a c9 05 a3 57 4b 9c 25 '%....,.x*...WK.%'
-  12 50 54 af ee 00 45 4a 95 00 81 80 01 01 01 01 '.PT...EJ........'
-  81 4f 71 40 81 40 30 2a 40 c8 60 84 64 30 18 50 '.Oq@.@0*@.`.d0.P'
-  13 00 b8 e6 10 00 00 1e 66 21 50 b0 51 00 1b 30 '........f!P.Q..0'
-  40 70 36 00 b8 e6 10 00 00 1e 00 00 00 fd 00 38 '@p6............8'
-  4b 1f 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 48 44 4d 49 0a 20 20 20 20 20 20 20 20 00 e8 '.HDMI.        ..'
-Checksum: 0xe8
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Image size is 440x230 mm, but based on the picture AR it should be 408x230 mm.
+  Detailed Timing Descriptor #2: Image size is 440x230 mm, but based on the picture AR it should be 407x230 mm.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -83,7 +83,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
@@ -133,7 +133,7 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
     FLc/FRc - Front Left/Right of Center
   Video Capability Data Block:
     YCbCr quantization: No Data
@@ -189,6 +189,8 @@ Block 1, CTA-861 Extension Block:
     VIC 219:  4096x2160  120.000000 Hz 256:135  270.000 kHz   1188.000000 MHz
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
+    Full Frame Peak Luminance Index: 0
+    Peak Luminance Index: 0
   Detailed Timing Descriptors:
     DTD 3:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (1872 mm x 1053 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
@@ -200,7 +202,7 @@ Checksum: 0xf6  Unused space in Extension Block: 9 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
+  Video Data Block: For improved preferred timing interoperability, set 'Native DTDs' to 1.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 

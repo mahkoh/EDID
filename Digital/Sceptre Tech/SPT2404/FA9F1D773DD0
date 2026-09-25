@@ -80,32 +80,19 @@ Checksum: 0x0b
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4e 14 04 24 b0 05 00 00 '........N..$....'
-  09 12 01 03 81 34 20 78 2b b0 a6 a3 56 4a 9c 23 '.....4 x+...VJ.#'
-  11 4f 53 bf ef 80 81 c0 81 40 95 00 b3 00 01 01 '.OS......@......'
-  81 80 a9 40 71 40 28 3c 80 a0 70 b0 23 40 30 20 '...@q@(<..p.#@0 '
-  26 00 06 44 21 00 00 1c 1a 36 80 a0 70 38 1f 40 '&..D!....6..p8.@'
-  30 20 25 00 06 44 21 00 00 18 66 21 50 b0 51 00 '0 %..D!...f!P.Q.'
-  1b 30 70 00 36 10 06 44 21 00 00 00 00 00 00 fc '.0p.6..D!.......'
-  00 53 63 65 70 74 72 65 20 58 32 34 57 47 00 0b '.Sceptre X24WG..'
-Checksum: 0x0b
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x44.
+  Detailed Timing Descriptor #2: Image size is 518x324 mm, but based on the picture AR it should be 518x291 mm.
   Detailed Timing Descriptor #3: DTD is similar but not identical to DMT 0x27.
+  Detailed Timing Descriptor #3: Image size is 518x324 mm, but based on the picture AR it should be 518x292 mm.
 
 Failures:
 
 Block 0, Base EDID:
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

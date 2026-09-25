@@ -59,7 +59,7 @@ Block 1, CTA-861 Extension Block:
   Revision: 3
   Underscans IT Video Formats by default
   Basic audio support
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -109,11 +109,6 @@ Block 1, CTA-861 Extension Block:
 Checksum: 0xf9  Unused space in Extension Block: 15 bytes
 
 ----------------
-
-Warnings:
-
-EDID:
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 

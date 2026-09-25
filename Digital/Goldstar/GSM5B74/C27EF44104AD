@@ -145,87 +145,15 @@ Checksum: 0x90
 
 ----------------
 
-Block 3, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1e 6d 74 5b a3 c2 05 00 '.........mt[....'
-  06 1d 01 04 b5 3c 22 78 80 0f 91 ae 52 43 b0 26 '.....<"x....RC.&'
-  0f 50 54 20 00 00 01 01 01 01 01 01 01 01 01 01 '.PT ............'
-  01 01 01 01 01 01 25 cc 00 50 f0 70 3e 80 08 20 '......%..P.p>.. '
-  18 00 58 54 21 00 00 1a a3 5b 00 50 a0 a0 29 50 '..XT!....[.P..)P'
-  08 20 18 00 58 54 21 00 00 1a 00 00 00 ff 00 39 '. ..XT!........9'
-  30 36 4e 54 46 41 42 33 35 30 37 0a 00 00 00 fc '06NTFAB3507.....'
-  00 4c 47 20 55 6c 74 72 61 46 69 6e 65 0a 02 98 '.LG UltraFine...'
-Checksum: 0x98
-
-----------------
-
-Block 4, DisplayID Extension Block:
-  Version: 1.2
-  Extension Count: 0
-  Display Parameters Data Block (0x01):
-    Image size: 595.0 mm x 335.0 mm
-    Display native pixel format: 5120x2880
-    Feature support flags:
-      Power management (DPM)
-      Separate audio inputs provided
-    Gamma: 2.20
-    Aspect ratio: 1.78
-    Dynamic bpc native: 10
-    Dynamic bpc overall: 10
-  ContainerID Data Block:
-    Container ID: 2a6a1c03-a4bb-4d51-8d14-b1c57fd28c73
-  Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  3840x2160   59.999495 Hz  16:9    133.319 kHz    522.610000 MHz (aspect 16:9, no 3D stereo, preferred)
-               Hfront    8 Hsync  32 Hback   40 Hpol P
-               Vfront    1 Vsync   8 Vback   53 Vpol N
-    DTD:  3200x1800   59.999407 Hz  16:9    111.119 kHz    364.470000 MHz (aspect 16:9, no 3D stereo)
-               Hfront    8 Hsync  32 Hback   40 Hpol P
-               Vfront    1 Vsync   8 Vback   43 Vpol N
-  Checksum: 0x7b
-Checksum: 0x90
-
-----------------
-
-Block 5, DisplayID Extension Block:
-  Version: 1.2
-  Extension Count: 0
-  Tiled Display Topology Data Block (0x12):
-    Capabilities:
-      Behavior if it is the only tile: Image is scaled to fit the entire tiled display
-      Behavior if more than one tile and fewer than total number of tiles: Undefined
-    Tiled display consists of a single physical display enclosure
-    Num horizontal tiles: 2 Num vertical tiles: 1
-    Tile location: 0, 0
-    Tile resolution: 2560x2880
-    Tiled Display Manufacturer/Vendor ID: GSM
-    Tiled Display Product ID Code: 23412
-    Tiled Display Serial Number: ...
-  Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  2560x2880   59.996475 Hz   0:0    177.710 kHz    483.370000 MHz (aspect undefined, no 3D stereo)
-               Hfront    8 Hsync  32 Hback  120 Hpol P
-               Vfront    1 Vsync   8 Vback   73 Vpol N
-  Checksum: 0x12
-Checksum: 0x90
-
-----------------
-
 Failures:
 
 Block 1, DisplayID Extension Block:
-  Expected 0 DisplayID Extension Block, but got 3.
+  Expected 0 DisplayID Extension Block, but got 1.
   ContainerID Data Block: Use of DisplayID v2.0 tag for DisplayID v1.2.
 Block 2, DisplayID Extension Block:
   Product Type should be 0 in extension block.
-Block 3, Base EDID:
-  Unknown Extension Block.
-Block 4, DisplayID Extension Block:
-  Product Type should be 0 in extension block.
-  Display Parameters Data Block (0x01): Duplicate Display Parameters Data Block.
-  ContainerID Data Block: Use of DisplayID v2.0 tag for DisplayID v1.2.
-Block 5, DisplayID Extension Block:
-  Product Type should be 0 in extension block.
 EDID:
-  Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
+  Extension Block 3 started with EDID header, ignoring Extension Blocks >= 3.
   DisplayID: Missing DisplayID Product Identification Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
 
 EDID conformity: FAIL

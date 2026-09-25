@@ -76,32 +76,18 @@ Checksum: 0x2e
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 2d e3 82 04 01 00 00 00 '........-.......'
-  1a 0d 01 03 78 00 00 bc ef 0b 32 9c 5a 4d 8c 26 '....x.....2.ZM.&'
-  20 4e 57 bf ef 00 31 59 45 59 61 59 71 4f 01 01 ' NW...1YEYaYqO..'
-  01 01 01 01 01 01 86 3d 00 c0 51 00 30 40 40 a0 '.......=..Q.0@@.'
-  13 00 6d 24 11 00 00 1e 00 00 00 fd 00 28 56 1e '..m$.........(V.'
-  5d 10 00 0a 20 20 20 20 20 20 00 00 00 ff 00 53 ']...      .....S'
-  58 47 41 38 35 41 5f 30 30 30 30 31 00 00 00 fc 'XGA85A_00001....'
-  00 53 58 47 41 38 35 5f 41 4e 41 4c 4f 47 00 2e '.SXGA85_ANALOG..'
-Checksum: 0x2e
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 365x292mm, but the display size is not specified anywhere.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

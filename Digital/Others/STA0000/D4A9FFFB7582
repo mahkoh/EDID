@@ -51,8 +51,8 @@ Block 0, Base EDID:
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
-  Alphanumeric Data String: One or more trailing spaces.
-  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: NUL byte at position 0.
+  Alphanumeric Data String: No newline, but one or more trailing spaces.
+  Alphanumeric Data String: NUL byte at position 3.
 
 EDID conformity: FAIL

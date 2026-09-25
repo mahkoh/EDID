@@ -49,7 +49,13 @@ Checksum: 0x75
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Basic Display Parameters & Features: Dubious maximum image size (9x15 is smaller than 10x10 cm).
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 55.920 - 55.920 Hz (Monitor: 60.000 - 60.000 Hz)
+    Horizontal Freq: 144.274 - 144.274 kHz (Monitor: 125.000 - 125.000 kHz)
+    Maximum Clock: 320.000 MHz (Monitor: 160.000 MHz)
 
 Failures:
 
@@ -61,10 +67,6 @@ Block 0, Base EDID:
   Display Range Limits: Bytes 12-17 must be 0x20.
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 55.920 - 55.920 Hz (Monitor: 60.000 - 60.000 Hz)
-    Horizontal Freq: 144.274 - 144.274 kHz (Monitor: 125.000 - 125.000 kHz)
-    Maximum Clock: 320.000 MHz (Monitor: 160.000 MHz)
   Base EDID: The DTD max image size is 113x181mm, which is larger than the display size 90.0x150.0mm.
 
 EDID conformity: FAIL

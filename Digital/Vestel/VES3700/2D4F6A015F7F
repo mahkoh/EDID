@@ -81,7 +81,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
@@ -166,8 +166,8 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency
     Supports 10b 12b 444: Not supported
-    Target Min PQ v2: 180 (0.04555910 cd/m^2)
-    Target Max PQ v2: 2640 (385 cd/m^2)
+    Target Min PQ v2: 180 (0.04494425 cd/m^2)
+    Target Max PQ v2: 2640 (371 cd/m^2)
     Unique Rx, Ry: 0.63281250, 0.33203125
     Unique Gx, Gy: 0.30468750, 0.62109375
     Unique Bx, By: 0.15234375, 0.05859375
@@ -182,7 +182,12 @@ Checksum: 0x57  Unused space in Extension Block: 18 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 96 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.062 Hz (Monitor: 48.000 - 62.000 Hz)
+    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 15.000 - 70.000 kHz)
 
 Failures:
 
@@ -193,10 +198,8 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #3: Mismatch of image size 1280x720 mm vs display size 1100x620 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 75.062 Hz (Monitor: 48.000 - 62.000 Hz)
-    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 15.000 - 70.000 kHz)
   Base EDID: The DTD max image size is 1872x1053mm, which is larger than the display size 1100.0x620.0mm.
+  CTA-861: The maximum HDMI TMDS clock is 300000 kHz, but one or more video timings go up to 594000 kHz.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

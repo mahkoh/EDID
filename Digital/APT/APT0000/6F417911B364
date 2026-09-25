@@ -53,7 +53,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6630, 0.3281
     Green: 0.2714, 0.5957
@@ -82,7 +82,7 @@ Block 0, Base EDID:
                  Vfront    4 Vsync   5 Vback   36 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 50-241 Hz V, 255-255 kHz H, max dotclock 700 MHz
+      Monitor ranges (Range Limits Only): 50-241 Hz V, 255-255 kHz H, max dotclock 700 MHz
     Display Product Name: 'PS173SJ'
   Extension blocks: 1
 Checksum: 0x19
@@ -95,7 +95,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 4
+  Native DTDs: 4
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
@@ -157,97 +157,12 @@ Checksum: 0xd8  Unused space in Extension Block: 4 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 06 14 00 00 00 00 00 00 '................'
-  0a 21 01 04 b5 34 1e 78 3b ca 75 a9 54 45 98 22 '.!...4.x;.u.TE."'
-  1f 50 54 a5 4a 00 d1 cf d1 fc 31 7c 45 68 45 7c '.PT.J.....1|EhE|'
-  61 68 61 7c d1 c0 02 3a 80 18 71 38 2d 40 58 2c 'aha|...:..q8-@X,'
-  45 00 0a 25 21 00 00 00 00 00 00 ff 00 0a 20 20 'E..%!.........  '
-  20 20 20 20 20 20 20 20 20 20 00 00 00 fd 00 32 '          .....2'
-  f1 ff ff 46 01 0a 20 20 20 20 20 20 00 00 00 fc '...F..      ....'
-  00 50 53 31 37 33 53 4a 0a 20 20 20 20 20 01 19 '.PS173SJ.     ..'
-Checksum: 0x19
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 4
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
-    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-  Unknown CTA-861 Data Block (tag 0x00, length 0):
-  Video Capability Data Block:
-    YCbCr quantization: Selectable (via AVI YQ)
-    RGB quantization: Selectable (via AVI Q)
-    PT scan behavior: No Data
-    IT scan behavior: IT video formats not supported
-    CE scan behavior: CE video formats not supported
-  Colorimetry Data Block:
-    BT2020YCC
-    BT2020RGB
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  YCbCr 4:2:0 Capability Map Data Block:
-    SVD Index 19 is out of range
-    SVD Index 20 is out of range
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
-    Version: 1
-    Maximum TMDS Character Rate: 600 MHz
-    SCDC Present
-    Supports scrambling for <= 340 Mcsc
-    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      SMPTE ST2084
-    Supported static metadata descriptors:
-    Desired content max luminance: 105 (486.099 cd/m^2)
-    Desired content max frame-average luminance: 105 (486.099 cd/m^2)
-    Desired content min luminance: 79 (0.467 cd/m^2)
-  Detailed Timing Descriptors:
-    DTD 6:  1920x1080  144.001419 Hz  16:9    159.986 kHz    332.770000 MHz (522 mm x 293 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   23 Vpol P
-    DTD 7:  1920x1080  164.997750 Hz  16:9    183.312 kHz    381.290000 MHz (522 mm x 293 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync  10 Vback   18 Vpol P
-    DTD 8:  1920x1080  199.997404 Hz  16:9    222.197 kHz    462.170000 MHz (522 mm x 293 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync  10 Vback   18 Vpol P
-    DTD 9:  1920x1080  239.566745 Hz  16:9    266.159 kHz    553.610000 MHz (522 mm x 293 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync  10 Vback   18 Vpol P
-Checksum: 0xd8  Unused space in Extension Block: 4 bytes
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
 Block 1, CTA-861 Extension Block:
-  Unknown CTA-861 Data Block (tag 0x00, length 0).
-  Video Capability Data Block: IT scan behavior is expected to support underscanned.
-  Video Capability Data Block: 'CE video formats not supported' makes no sense.
-  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-Block 3, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Unknown CTA-861 Data Block (tag 0x00, length 0).
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
@@ -255,36 +170,15 @@ Block 3, CTA-861 Extension Block:
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.250 - 266.158 kHz (Monitor: 255.000 - 255.000 kHz)
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 0, Base EDID:
   Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
-  YCbCr 4:2:0 Capability Map Data Block: Max index 20 > 18 (#SVDs).
+  YCbCr 4:2:0 Capability Map Data Block: Max index 20 > 9 (#SVDs).
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI Forum VSDB did not immediately follow the HDMI VSDB.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 1.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 17.
-  Video Data Block: Duplicate VIC 18.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 31.
-  Video Capability Data Block: Only one instance of this Data Block is allowed.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  YCbCr 4:2:0 Capability Map Data Block: Only one instance of this Data Block is allowed.
-  YCbCr 4:2:0 Capability Map Data Block: Max index 20 > 18 (#SVDs).
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI Forum VSDB did not immediately follow the HDMI VSDB.
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

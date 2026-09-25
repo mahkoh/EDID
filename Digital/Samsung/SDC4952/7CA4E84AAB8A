@@ -52,19 +52,6 @@ Checksum: 0x2e
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 83 52 49 00 00 00 00 '........L.RI....'
-  00 18 01 04 95 22 13 78 0a b9 95 a2 55 4b 9c 26 '.....".x....UK.&'
-  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 d2 37 80 a2 70 38 40 40 30 20 '.......7..p8@@0 '
-  25 00 58 c2 10 00 00 19 00 00 00 0f 00 00 00 00 '%.X.............'
-  00 00 00 00 00 1e 82 10 52 00 00 00 00 fe 00 53 '........R......S'
-  41 4d 53 55 4e 47 0a 20 4c 83 48 4c 00 00 00 fe 'AMSUNG. L.HL....'
-  00 4c 54 4e 31 35 36 48 4c 30 32 4c 30 31 00 2e '.LTN156HL02L01..'
-Checksum: 0x2e
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -74,9 +61,7 @@ Failures:
 
 Block 0, Base EDID:
   Alphanumeric Data String: Non-space after newline.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

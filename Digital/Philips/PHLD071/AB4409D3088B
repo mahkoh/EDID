@@ -76,7 +76,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (native)
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
@@ -125,11 +125,19 @@ Checksum: 0x51  Unused space in Extension Block: 14 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x16.
+  Detailed Timing Descriptor #1: Image size is 477x268 mm, but based on the picture AR it should be 446x268 mm.
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x27.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 19 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #3: Image size is 477x268 mm, but based on the picture AR it should be 402x268 mm.
   Detailed Timing Descriptor #4: DTD is similar but not identical to VIC 16.
+  Detailed Timing Descriptor #6: Image size is 477x268 mm, but based on the picture AR it should be 477x159 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.029 Hz (Monitor: 55.000 - 76.000 Hz)
 
 Failures:
 
@@ -143,8 +151,6 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #6: Mismatch of image size 477x268 mm vs display size 410x230 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 75.029 Hz (Monitor: 55.000 - 76.000 Hz)
   Base EDID: The DTD max image size is 477x268mm, which is larger than the display size 410.0x230.0mm.
   CTA-861: Native progressive timings are a mix of several resolutions.
 

@@ -70,27 +70,18 @@ Checksum: 0xde
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 2a 59 19 32 03 00 00 00 '........*Y.2....'
-  12 13 01 03 68 30 1b 78 2e b1 a5 a1 58 4f 95 26 '....h0.x....XO.&'
-  16 50 54 af ce 00 81 c0 71 40 01 01 01 01 01 01 '.PT.....q@......'
-  01 01 01 01 01 01 66 21 50 a0 51 00 1e 30 48 88 '......f!P.Q..0H.'
-  35 00 ae fe 10 00 00 1e 00 00 00 ff 00 30 30 30 '5............000'
-  30 30 30 30 31 30 30 30 30 0a 00 00 00 fd 00 38 '000010000......8'
-  4b 1e 51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
-  00 4c 43 44 20 4d 4f 4e 49 54 4f 52 0a 20 00 de '.LCD MONITOR. ..'
-Checksum: 0xde
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 430x254 mm, but based on the picture AR it should be 430x242 mm.
+  Display Product Serial Number: ...
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #1: Mismatch of image size 430x254 mm vs display size 480x270 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

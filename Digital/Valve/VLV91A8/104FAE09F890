@@ -73,6 +73,8 @@ Warnings:
 
 Block 1, DisplayID Extension Block:
   CTA-861 DisplayID Data Block: Unexpected revision (3 != 0).
+EDID:
+  No Native Video Resolution was defined.
 
 Failures:
 
@@ -84,7 +86,6 @@ Block 1, DisplayID Extension Block:
   DisplayID Base Block has no product type.
   Audio Data Block: Audio information is present, but bit 6 of Byte 3 of the CTA-861 Extension header indicates no Basic Audio support.
 EDID:
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

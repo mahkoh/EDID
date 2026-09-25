@@ -53,26 +53,11 @@ Checksum: 0x5a
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 16 83 13 c1 00 00 00 00 '................'
-  20 16 01 04 a5 14 0f 78 06 ef 05 a3 54 4c 99 26 ' ......x....TL.&'
-  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 29 50 00 a0 80 00 0d 60 96 05 '......)P.....`..'
-  31 00 c5 94 00 00 00 18 00 00 00 10 00 00 00 00 '1...............'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c '...............L'
-  50 30 39 37 51 58 31 2d 53 50 43 33 00 00 00 fc 'P097QX1-SPC3....'
-  00 43 6f 6c 6f 72 20 4c 43 44 0a 20 20 20 00 5a '.Color LCD.   .Z'
-Checksum: 0x5a
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

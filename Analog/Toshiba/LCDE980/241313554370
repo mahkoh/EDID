@@ -69,26 +69,11 @@ Checksum: 0x2f
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 64 80 e9 55 05 00 00 '........0d..U...'
-  2c 16 01 03 68 28 19 78 2f 57 0e a3 59 49 97 24 ',...h(.x/W..YI.$'
-  14 4f 54 a5 4f 00 81 80 95 00 01 01 01 01 01 01 '.OT.O...........'
-  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
-  36 00 98 ff 10 00 00 1c 00 00 00 ff 00 41 39 36 '6............A96'
-  43 42 42 41 30 30 31 33 36 35 00 00 00 fd 00 38 'CBBA001365.....8'
-  4c 1e 52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.R...      ....'
-  00 4c 43 44 2d 4d 4f 4e 49 54 4f 52 0a 20 00 2f '.LCD-MONITOR. ./'
-Checksum: 0x2f
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

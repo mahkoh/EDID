@@ -74,19 +74,6 @@ Checksum: 0x5c
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4a 8b bf 01 01 00 50 63 '........J.....Pc'
-  0c 14 01 04 b5 22 00 78 3a 35 85 a6 56 48 9a 24 '.....".x:5..VH.$'
-  12 50 54 bf df 00 31 40 81 00 81 80 95 00 d1 c0 '.PT...1@........'
-  01 01 01 01 01 01 d5 09 80 90 20 e0 1d 10 08 60 '.......... ....`'
-  22 00 90 2c 11 08 08 1e 00 00 00 fd 00 38 4b 1e '"..,.........8K.'
-  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 52 'S...      .....R'
-  54 4b 20 46 48 44 0a 20 20 20 20 20 00 00 00 ff 'TK FHD.     ....'
-  00 4c 35 36 30 35 31 37 39 34 33 30 32 0a 00 5c '.L56051794302..\'
-Checksum: 0x5c
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -99,11 +86,9 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 400x300mm, but the display size is not specified anywhere.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

@@ -91,7 +91,7 @@ Checksum: 0xbb
 Block 1, CTA-861 Extension Block:
   Revision: 3
   Underscans IT Video Formats by default
-  Native detailed modes: 0
+  Native DTDs: 0
   Colorimetry Data Block:
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
@@ -150,89 +150,11 @@ Checksum: 0x90
 
 ----------------
 
-Block 3, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 06 10 3a ae c2 96 b5 82 '..........:.....'
-  07 20 01 04 c5 3c 21 78 00 0f 91 ae 52 43 b0 26 '. ...<!x....RC.&'
-  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 00 00 00 10 00 00 00 00 00 00 '................'
-  00 00 00 00 00 00 00 00 00 00 00 10 00 00 00 00 '................'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 10 00 00 '................'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fc '................'
-  00 53 74 75 64 69 6f 44 69 73 70 6c 61 79 02 bb '.StudioDisplay..'
-Checksum: 0xbb
-
-----------------
-
-Block 4, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Native detailed modes: 0
-  Colorimetry Data Block:
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 115 (603.666 cd/m^2)
-    Desired content max frame-average luminance: 115 (603.666 cd/m^2)
-    Desired content min luminance: 0 (0.000 cd/m^2)
-  Detailed Timing Descriptors:
-    DTD 2:  2560x2880   60.000000 Hz   8:9    180.000 kHz    482.400000 MHz
-                 Hfront    8 Hsync  32 Hback   80 Hpol P
-                 Vfront   42 Vsync   8 Vback   70 Vpol N
-Checksum: 0x12  Unused space in Extension Block: 94 bytes
-
-----------------
-
-Block 5, DisplayID Extension Block:
-  Version: 1.2
-  Extension Count: 0
-  ContainerID Data Block:
-    Container ID: 6e023d3b-3dcd-4a35-adb9-3b0acc3510c9
-  Display Parameters Data Block (0x01):
-    Image size: 595.2 mm x 334.8 mm
-    Display native pixel format: 5120x2880
-    Feature support flags:
-      Power management (DPM)
-    Gamma: 2.20
-    Aspect ratio: 1.78
-    Dynamic bpc native: 12
-    Dynamic bpc overall: 12
-  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
-    Type: 4, Version: 1
-    00 00                                           '..'
-  Tiled Display Topology Data Block (0x12):
-    Capabilities:
-      Behavior if it is the only tile: Undefined
-      Behavior if more than one tile and fewer than total number of tiles: Undefined
-    Tiled display consists of a single physical display enclosure
-    Num horizontal tiles: 2 Num vertical tiles: 1
-    Tile location: 1, 0
-    Tile resolution: 2560x2880
-    Tiled Display Manufacturer/Vendor ID: APP
-    Tiled Display Product ID Code: 44603
-    Tiled Display Serial Number: ...
-  Vendor-Specific Data Block (0x7e) (VESA), OUI 3A-02-92:
-    Data Structure Type: DP
-    Default Colorspace and EOTF Handling: Native as specified in the Display Parameters DB
-    Number of Pixels in Hor Pix Cnt Overlapping an Adjacent Panel: 0
-    Multi-SST Operation: Not Supported
-  Vendor-Specific Data Block (0x7e) (Apple), OUI 00-10-FA:
-    05 01 01 00 60 c0 d2 ff 55 00 10 00 10          '....`...U....'
-  Checksum: 0x71
-Checksum: 0x90
-
-----------------
-
 Warnings:
 
 Block 1, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 Block 2, DisplayID Extension Block:
-  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
-Block 4, CTA-861 Extension Block:
-  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-Block 5, DisplayID Extension Block:
   Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
 
 Failures:
@@ -245,25 +167,11 @@ Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-  Expected 0 DisplayID Extension Block, but got 1.
   ContainerID Data Block: Use of DisplayID v2.0 tag for DisplayID v1.2.
-  Vendor-Specific Data Block (0x7e) (VESA), OUI 3A-02-92: Use of DisplayID v2.0 tag for DisplayID v1.2.
-  Vendor-Specific Data Block (0x7e) (Apple), OUI 00-10-FA: Use of DisplayID v2.0 tag for DisplayID v1.2.
-Block 3, Base EDID:
-  Unknown Extension Block.
-Block 4, CTA-861 Extension Block:
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-  Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is not set, but display size is.
-  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 5, DisplayID Extension Block:
-  ContainerID Data Block: Use of DisplayID v2.0 tag for DisplayID v1.2.
-  Display Parameters Data Block (0x01): Duplicate Display Parameters Data Block.
   Vendor-Specific Data Block (0x7e) (VESA), OUI 3A-02-92: Use of DisplayID v2.0 tag for DisplayID v1.2.
   Vendor-Specific Data Block (0x7e) (Apple), OUI 00-10-FA: Use of DisplayID v2.0 tag for DisplayID v1.2.
 EDID:
-  Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
+  Extension Block 3 started with EDID header, ignoring Extension Blocks >= 3.
   DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 

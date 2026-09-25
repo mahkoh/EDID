@@ -79,7 +79,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
     VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
@@ -142,8 +142,8 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency
     Supports 10b 12b 444: Not supported
-    Target Min PQ v2: 180 (0.04555910 cd/m^2)
-    Target Max PQ v2: 2575 (332 cd/m^2)
+    Target Min PQ v2: 180 (0.04494425 cd/m^2)
+    Target Max PQ v2: 2575 (320 cd/m^2)
     Unique Rx, Ry: 0.66796875, 0.31640625
     Unique Gx, Gy: 0.27734375, 0.64843750
     Unique Bx, By: 0.15234375, 0.05468750

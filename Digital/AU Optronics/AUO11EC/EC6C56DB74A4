@@ -48,21 +48,8 @@ Block 0, Base EDID:
     DTD 2:  1366x768    48.021488 Hz 683:384   38.417 kHz     73.300000 MHz (344 mm x 193 mm)
                  Hfront   40 Hsync  32 Hback  470 Hpol P
                  Vfront    3 Vsync   6 Vback   23 Vpol N
-    Alphanumeric Data String: '1K0XP'
+    Alphanumeric Data String: '1K0XP.B156XTT'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 22 96 01 11 00 00 09 01 0a 20 20 '....A"........  '
-Checksum: 0xbf
-
-----------------
-
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 06 af ec 11 00 00 00 00 '................'
-  00 17 01 04 95 22 13 78 02 bb f5 94 55 54 90 27 '.....".x....UT.''
-  23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '#PT.............'
-  01 01 01 01 01 01 a2 1c 56 a0 50 00 20 30 28 20 '........V.P. 0( '
-  36 00 58 c1 10 00 00 1a a2 1c 56 1e 52 00 20 30 '6.X.......V.R. 0'
-  28 20 36 00 58 c1 10 00 00 1a 00 00 00 fe 00 31 '( 6.X..........1'
-  4b 30 58 50 81 42 31 35 36 58 54 54 00 00 00 00 'K0XP.B156XTT....'
-  00 00 41 22 96 01 11 00 00 09 01 0a 20 20 00 bf '..A"........  ..'
 Checksum: 0xbf
 
 ----------------
@@ -70,15 +57,12 @@ Checksum: 0xbf
 Warnings:
 
 Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x81 at position 5, can cause problems.
   Missing Display Product Name.
 
 Failures:
 
-Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

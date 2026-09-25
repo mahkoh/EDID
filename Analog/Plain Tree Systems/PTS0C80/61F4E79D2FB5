@@ -60,4 +60,9 @@ Checksum: 0x21
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 708x398 mm, but based on the picture AR it should be 497x398 mm.
+
 EDID conformity: PASS

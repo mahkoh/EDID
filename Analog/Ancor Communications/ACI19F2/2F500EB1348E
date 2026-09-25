@@ -69,24 +69,9 @@ Checksum: 0x7a
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 69 f2 19 95 19 02 00 '.........i......'
-  2e 16 01 03 08 29 17 78 ea f5 45 a4 55 50 9e 27 '.....).x..E.UP.''
-  0f 50 54 bd ee 00 81 c0 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
-  33 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 4b 18 '3............2K.'
-  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 'S...      .....A'
-  53 55 53 20 56 53 31 39 37 0a 20 20 00 00 00 ff 'SUS VS197.  ....'
-  00 43 42 4c 4d 54 46 31 33 37 36 32 31 0a 00 7a '.CBLMTF137621..z'
-Checksum: 0x7a
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

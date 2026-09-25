@@ -78,24 +78,14 @@ Checksum: 0x07
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 22 64 b7 49 00 00 00 00 '........"d.I....'
-  1a 16 01 03 0a 34 1d 78 ea a3 d0 a4 57 51 a0 25 '.....4.x....WQ.%'
-  10 50 54 bf ef 80 d1 c0 b3 00 a9 40 95 00 90 40 '.PT........@...@'
-  81 80 81 40 71 4f 02 3a 80 18 71 38 2d 40 58 2c '...@qO.:..q8-@X,'
-  45 00 09 25 21 00 00 1e 00 00 00 ff 00 31 32 33 'E..%!........123'
-  34 35 36 37 38 39 30 31 32 33 00 00 00 fd 00 37 '4567890123.....7'
-  4b 18 53 12 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 48 45 32 34 37 44 50 42 0a 20 20 20 20 00 07 '.HE247DPB.    ..'
-Checksum: 0x07
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

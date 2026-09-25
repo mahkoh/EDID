@@ -72,24 +72,9 @@ Checksum: 0x6e
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1e 6d 55 3b bc a3 01 00 '.........mU;....'
-  04 0d 01 03 28 1e 17 78 ea b1 45 a1 58 4f 95 26 '....(..x..E.XO.&'
-  1d 50 54 bf ee 00 31 4f 45 4f 61 4f 01 01 01 01 '.PT...1OEOaO....'
-  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
-  36 00 30 e4 10 00 00 18 00 00 00 fd 00 38 4b 1f '6.0..........8K.'
-  3f 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 46 '?...      .....F'
-  4c 41 54 52 4f 4e 20 4c 31 35 31 30 00 00 00 fc 'LATRON L1510....'
-  00 53 0a 20 20 20 20 20 20 20 20 20 20 20 00 6e '.S.           .n'
-Checksum: 0x6e
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

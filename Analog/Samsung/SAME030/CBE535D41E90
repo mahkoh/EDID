@@ -165,84 +165,23 @@ Checksum: 0x90
 
 ----------------
 
-Block 4, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 2d 30 e0 00 0e 00 01 '........L-0.....'
-  01 22 01 04 00 46 27 ff 02 00 00 00 00 00 00 00 '."...F'.........'
-  00 00 00 25 cf 00 71 4f 81 c0 81 00 81 80 95 00 '...%..qO........'
-  a9 c0 b3 00 d1 c0 53 84 00 10 f5 70 28 80 f0 98 '......S....p(...'
-  35 10 00 00 00 00 00 1c 00 00 00 fc 00 4f 64 79 '5............Ody'
-  73 73 65 79 20 47 38 30 53 44 00 00 00 ff 00 48 'ssey G80SD.....H'
-  31 41 4b 35 30 30 30 30 30 00 00 00 00 00 00 00 '1AK500000.......'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 c4 '................'
-Checksum: 0xc4
+Warnings:
 
-----------------
-
-Block 5, Block Map Extension Block:
-  Block 129: Video Timing Extension Block
-  Block 130: DisplayID Extension Block
-Checksum: 0x90
-
-----------------
-
-Block 6, Video Timing Extension Block:
-  Version: 1
-  Detailed Timing Descriptors:
-    DTD:   720x480    59.709821 Hz   3:2     29.855 kHz     26.750000 MHz
-               Hfront   24 Hsync  64 Hback   88 Hpol N
-               Vfront    3 Vsync  10 Vback    7 Vpol P
-  Coordinated Video Timings:
-    CVT:  2560x1440   49.963890 Hz  16:9     74.146 kHz    256.250000 MHz
-    CVT:  2560x1440   59.960627 Hz  16:9     89.521 kHz    312.250000 MHz (preferred vertical rate)
-  Standard Timings:
-    DMT 0x54:  2048x1152   60.000000 Hz  16:9     72.000 kHz    162.000000 MHz (RB)
-    DMT 0x49:  1920x1440   60.000000 Hz   4:3     90.000 kHz    234.000000 MHz
-    GTF     :  1920x1080  119.999987 Hz  16:9    138.840 kHz    368.759000 MHz
-Checksum: 0x71  Unused space in Extension Block: 95 bytes
-
-----------------
-
-Block 7, DisplayID Extension Block:
-  Version: 1.0
-  Extension Count: 0
-  Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  3840x2160   59.981769 Hz   0:0    134.179 kHz    712.760000 MHz (aspect undefined, no 3D stereo)
-               Hfront  312 Hsync 424 Hback  736 Hpol N
-               Vfront    3 Vsync   5 Vback   69 Vpol P
-    DTD:  2560x1440  119.955157 Hz   0:0    185.331 kHz    661.260000 MHz (aspect undefined, no 3D stereo)
-               Hfront  224 Hsync 280 Hback  504 Hpol N
-               Vfront    3 Vsync   5 Vback   97 Vpol P
-  Checksum: 0xec
-Checksum: 0x90
-
-----------------
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 
 Failures:
 
 Block 0, Base EDID:
-  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
   Display Product Serial Number: ...
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
-Block 1, Block Map Extension Block:
-  Block 4 tag mismatch: expected 0x00, but got 0x00.
-  Block 5 tag mismatch: expected 0xf0, but got 0x00.
-  Block 6 tag mismatch: expected 0x10, but got 0x00.
-  Block 7 tag mismatch: expected 0x70, but got 0x00.
 Block 2, Video Timing Extension Block:
   Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
 Block 3, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 4, Base EDID:
-  Unknown Extension Block.
-Block 5, Block Map Extension Block:
-  Invalid block number 129.
-  Must be used in block 1 and 128.
-Block 6, Video Timing Extension Block:
-  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
 EDID:
-  Base EDID: EDID specified 3 extension block(s), but found 7 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
+  Extension Block 4 started with EDID header, ignoring Extension Blocks >= 4.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

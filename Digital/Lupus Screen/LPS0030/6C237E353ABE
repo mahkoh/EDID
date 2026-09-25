@@ -67,7 +67,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
@@ -110,7 +110,7 @@ Block 1, CTA-861 Extension Block:
       Cinema
       Game
     Extended HDMI video details:
-      Base EDID image size is aspect ratio
+      Base EDID image size indicates aspect ratio
       HDMI VICs:
         HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
         HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
@@ -141,22 +141,21 @@ Checksum: 0x8b  Unused space in Extension Block: 14 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: 'Indicates Aspect Ratio' is used for a small display (<= 255 cm), it is better to fill in the actual size
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
+  Detailed Timing Descriptor #4: Image size is 800x450 mm, but based on the picture AR it should be 400x450 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-
-Failures:
-
-Block 0, Base EDID:
-  Detailed Timing Descriptor #1: Mismatch of image size 698x392 mm vs display size 1540x870 mm.
-  Detailed Timing Descriptor #2: Mismatch of image size 800x450 mm vs display size 1540x870 mm.
-Block 1, CTA-861 Extension Block:
-  Detailed Timing Descriptor #3: Mismatch of image size 800x450 mm vs display size 1540x870 mm.
-  Detailed Timing Descriptor #4: Mismatch of image size 800x450 mm vs display size 1540x870 mm.
-  Detailed Timing Descriptor #5: Mismatch of image size 800x450 mm vs display size 1540x870 mm.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 31.000 - 135.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

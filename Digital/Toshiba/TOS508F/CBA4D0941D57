@@ -53,24 +53,9 @@ Checksum: 0x4e
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 51 f3 8f 50 00 00 0d 00 '........Q..P....'
-  0e 10 01 03 80 22 13 78 ca e2 b5 9e 59 52 99 26 '.....".x....YR.&'
-  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 9e 37 80 b4 70 38 32 40 1e 14 '.......7..p82@..'
-  aa 00 58 c1 10 00 00 18 00 00 00 fd 00 3b 3d 43 '..X..........;=C'
-  45 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 00 49 'E...      .....I'
-  6e 74 65 72 6e 61 6c 20 4c 43 44 0a 00 00 00 fe 'nternal LCD.....'
-  00 54 4f 53 48 49 42 41 0a 20 20 20 20 20 00 4e '.TOSHIBA.     .N'
-Checksum: 0x4e
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

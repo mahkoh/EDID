@@ -54,7 +54,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6591, 0.3271
     Green: 0.2714, 0.5937
@@ -89,7 +89,7 @@ Block 0, Base EDID:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-165 Hz V, 167-167 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 48-165 Hz V, 167-167 kHz H, max dotclock 600 MHz
     Display Product Name: 'LS27AG32x'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -102,7 +102,7 @@ Block 1, CTA-861 Extension Block:
   Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
@@ -117,14 +117,12 @@ Block 1, CTA-861 Extension Block:
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Detailed Timing Descriptors:
     DTD 2:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz (597 mm x 336 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
@@ -139,73 +137,14 @@ Checksum: 0x7b  Unused space in Extension Block: 41 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 2d dc 71 55 37 57 34 '........L-.qU7W4'
-  12 1f 01 04 a5 3c 22 78 2b f8 12 a8 53 45 98 23 '.....<"x+...SE.#'
-  1b 4f 5c bf ef 80 71 4f 81 00 81 c0 81 80 95 00 '.O\...qO........'
-  a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 55 50 21 00 00 1e 00 00 00 fd 00 30 a5 a7 'E.UP!........0..'
-  a7 3c 01 0a 20 20 20 20 20 20 00 00 00 fc 00 4c '.<..      .....L'
-  53 32 37 41 47 33 32 78 0a 20 20 20 00 00 00 ff 'S27AG32x.   ....'
-  00 48 39 4a 52 43 30 30 33 34 38 20 20 20 01 ce '.H9JRC00348   ..'
-Checksum: 0xce
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Native detailed modes: 1
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC  64:  1920x1080  100.000000 Hz  16:9    112.500 kHz    297.000000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
-    Minimum Refresh Rate: 48 Hz
-    Maximum Refresh Rate: 165 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
-  Detailed Timing Descriptors:
-    DTD 5:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz (597 mm x 336 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
-    DTD 6:  1920x1080  164.955448 Hz  16:9    185.575 kHz    384.140000 MHz (597 mm x 336 mm)
-                 Hfront   58 Hsync  32 Hback   60 Hpol P
-                 Vfront   22 Vsync   8 Vback   15 Vpol P
-    DTD 7:  1920x1080  143.981451 Hz  16:9    166.587 kHz    346.500000 MHz (597 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   69 Vpol P
-Checksum: 0x7b  Unused space in Extension Block: 41 bytes
-
-----------------
-
 Warnings:
 
 Block 1, CTA-861 Extension Block:
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-Block 3, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.466 - 185.574 kHz (Monitor: 167.000 - 167.000 kHz)
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
@@ -213,17 +152,7 @@ Block 0, Base EDID:
   Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 63.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 64.
-  Video Data Block: Duplicate VIC 4.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

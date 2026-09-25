@@ -76,32 +76,18 @@ Checksum: 0x11
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0d af 28 22 01 00 01 01 '..........("....'
-  1f 11 01 03 e8 2f 1e 78 2e c5 85 a4 59 49 9a 24 '...../.x....YI.$'
-  12 50 54 bf ef 00 81 80 81 40 71 4f 95 00 95 0f '.PT......@qO....'
-  b3 00 81 c0 8b c0 21 39 90 30 62 1a 27 40 68 b0 '......!9.0b.'@h.'
-  36 00 d9 28 11 00 00 1c 00 00 00 fd 00 38 4c 1e '6..(.........8L.'
-  52 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43 'R...      .....C'
-  4d 43 20 32 32 20 57 0a 20 20 20 20 00 00 00 ff 'MC 22 W.    ....'
-  00 30 0a 20 20 20 20 20 20 20 20 20 20 20 00 11 '.0.           ..'
-Checksum: 0x11
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+  Display Product Serial Number: ...
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x68.
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

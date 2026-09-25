@@ -54,7 +54,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6767, 0.3144
     Green: 0.2763, 0.6796
@@ -88,7 +88,7 @@ Block 0, Base EDID:
     Display Product Serial Number: ...
     Display Product Name: 'G27F'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-144 Hz V, 222-222 kHz H, max dotclock 360 MHz
+      Monitor ranges (Range Limits Only): 48-144 Hz V, 222-222 kHz H, max dotclock 360 MHz
   Extension blocks: 1
 Checksum: 0x71
 
@@ -100,7 +100,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
@@ -125,14 +125,12 @@ Block 1, CTA-861 Extension Block:
     BT2020YCC
     BT2020RGB
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.17
+    Version: 2
+    Feature Caps: 0x11
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Detailed Timing Descriptors:
     DTD 2:  1920x1080  143.998945 Hz  16:9    160.559 kHz    327.540000 MHz (1153 mm x 329 mm)
                  Hfront   48 Hsync  32 Hback   40 Hpol P
@@ -150,113 +148,27 @@ Checksum: 0x65  Unused space in Extension Block: 12 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1c 54 08 27 01 00 00 00 '.........T.'....'
-  1b 1e 01 04 a5 3c 21 78 3b 6c b5 ad 50 46 ae 26 '.....<!x;l..PF.&'
-  0c 50 54 af cf 00 81 80 61 7c 81 bc 95 00 95 3c '.PT.....a|.....<'
-  b3 00 b3 3c 01 01 02 3a 80 18 71 38 2d 40 58 2c '...<...:..q8-@X,'
-  45 00 56 50 21 00 00 1e 00 00 00 ff 00 32 30 32 'E.VP!........202'
-  37 32 42 30 30 33 38 33 34 0a 00 00 00 fc 00 47 '72B003834......G'
-  32 37 46 0a 20 20 20 20 20 20 20 20 00 00 00 fd '27F.        ....'
-  00 30 90 de de 24 01 0a 20 20 20 20 20 20 01 71 '.0...$..      .q'
-Checksum: 0x71
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Video Data Block:
-    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
-    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Colorimetry Data Block:
-    xvYCC709
-    BT2020YCC
-    BT2020RGB
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.17
-    Minimum Refresh Rate: 48 Hz
-    Maximum Refresh Rate: 144 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
-  Detailed Timing Descriptors:
-    DTD 6:  1920x1080  143.998945 Hz  16:9    160.559 kHz    327.540000 MHz (1153 mm x 329 mm)
-                 Hfront   48 Hsync  32 Hback   40 Hpol P
-                 Vfront    3 Vsync   5 Vback   27 Vpol P
-    DTD 7:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (599 mm x 335 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   56 Vpol P
-    DTD 8:  1280x720   144.000000 Hz  16:9    108.000 kHz    178.200000 MHz (599 mm x 335 mm)
-                 Hfront  110 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD 9:  1280x720   120.000000 Hz  16:9     90.000 kHz    148.500000 MHz (599 mm x 335 mm)
-                 Hfront  110 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol P
-Checksum: 0x65  Unused space in Extension Block: 12 bytes
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 63 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-Block 3, CTA-861 Extension Block:
-  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #2: Image size is 1153x329 mm, but based on the picture AR it should be 584x329 mm.
+  Detailed Timing Descriptor #5: DTD is identical to VIC 47, which is not present in the CTA Ext Block.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 160.558 kHz (Monitor: 222.000 - 222.000 kHz)
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #2: Mismatch of image size 1153x329 mm vs display size 600x330 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 63.
-  Video Data Block: Duplicate VIC 1.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 5.
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 17.
-  Video Data Block: Duplicate VIC 18.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 20.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  Detailed Timing Descriptor #6: Mismatch of image size 1153x329 mm vs display size 600x330 mm.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   Base EDID: The DTD max image size is 1153x336mm, which is larger than the display size 600.0x330.0mm.
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
 
 EDID conformity: FAIL

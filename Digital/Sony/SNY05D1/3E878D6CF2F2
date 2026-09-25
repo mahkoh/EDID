@@ -62,7 +62,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
     VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
@@ -121,9 +121,9 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
     BC - Back Center
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
+    BL/BR - Back Left/Right
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 3.1.0.0
     Supports_AI
@@ -152,8 +152,8 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency
     Supports 10b 12b 444: Not supported
-    Target Min PQ v2: 80 (0.00837904 cd/m^2)
-    Target Max PQ v2: 3095 (1082 cd/m^2)
+    Target Min PQ v2: 80 (0.00827830 cd/m^2)
+    Target Max PQ v2: 3095 (1037 cd/m^2)
     Unique Rx, Ry: 0.67187500, 0.31640625
     Unique Gx, Gy: 0.25781250, 0.66406250
     Unique Bx, By: 0.14843750, 0.04687500
@@ -178,17 +178,18 @@ Checksum: 0x4c  Unused space in Extension Block: 31 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
-  Video Data Block: VIC 93 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 93 and the first DTD are not identical. Is this intended?
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 27.000 - 135.000 kHz (Monitor: 30.000 - 135.000 kHz)
   CTA-861: Native progressive resolution of 720x480 is smaller than the max preferred progressive resolution 3840x2160.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 27.000 - 135.000 kHz (Monitor: 30.000 - 135.000 kHz)
 
 EDID conformity: FAIL

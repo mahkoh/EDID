@@ -35,7 +35,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6464, 0.3300
     Green: 0.3095, 0.6171
@@ -57,7 +57,7 @@ Block 0, Base EDID:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-60 Hz V, 120-120 kHz H, max dotclock 400 MHz
+      Monitor ranges (Range Limits Only): 48-60 Hz V, 120-120 kHz H, max dotclock 400 MHz
     Display Product Name: 'Sculptor'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -71,7 +71,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
@@ -113,6 +113,8 @@ Checksum: 0xd7  Unused space in Extension Block: 73 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
@@ -120,13 +122,12 @@ Block 1, CTA-861 Extension Block:
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.468 - 67.500 kHz (Monitor: 120.000 - 120.000 kHz)
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 0, Base EDID:
-  Detailed Timing Descriptor #1: Mismatch of image size 345x194 mm vs display size 300x260 mm.
   Display Product Serial Number: ...
+  Detailed Timing Descriptor #1: Mismatch of image size 345x194 mm vs display size 300x260 mm.
 Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #2: Mismatch of image size 356x200 mm vs display size 300x260 mm.
 EDID:

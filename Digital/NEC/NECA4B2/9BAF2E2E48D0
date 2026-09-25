@@ -69,21 +69,10 @@ Checksum: 0x50
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 38 a3 b2 a4 01 01 01 01 '........8.......'
-  1b 0e 01 03 80 5c 34 78 2a 00 e5 a0 5a 27 ba 25 '.....\4x*...Z'.%'
-  17 42 4e af cf 00 81 80 a9 40 01 01 01 01 01 01 '.BN......@......'
-  01 01 01 01 01 01 2f 0d 50 f0 30 e0 25 10 10 70 '....../.P.0.%..p'
-  68 00 94 06 32 00 00 1e 66 21 50 b0 51 00 1b 30 'h...2...f!P.Q..0'
-  40 70 36 00 99 06 32 00 00 1e 00 00 00 fd 00 32 '@p6...2........2'
-  78 18 5b 10 00 0a 20 20 20 20 20 20 00 00 00 fc 'x.[...      ....'
-  00 50 58 2d 34 32 56 4d 35 2f 56 50 35 0a 00 50 '.PX-42VM5/VP5..P'
-Checksum: 0x50
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 162.000 MHz (Monitor: 160.000 MHz)
@@ -91,9 +80,7 @@ EDID:
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

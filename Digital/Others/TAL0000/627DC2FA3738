@@ -71,28 +71,18 @@ Checksum: 0x7e
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 50 2c 00 00 45 28 00 00 '........P,..E(..'
-  14 12 01 03 80 26 1e 78 2e 0c 95 a2 56 4c 96 25 '.....&.x....VL.%'
-  1a 50 54 bf ef 80 81 80 71 4f 01 01 01 01 01 01 '.PT.....qO......'
-  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
-  13 00 52 0e 11 00 00 1e 00 00 00 ff 00 20 20 20 '..R..........   '
-  20 20 20 20 20 20 20 20 20 20 00 00 00 fd 00 38 '          .....8'
-  4b 1f 51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
-  00 54 46 54 20 4d 4f 4e 49 54 4f 52 0a 20 00 7e '.TFT MONITOR. .~'
-Checksum: 0x7e
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 
 Failures:
 
 Block 0, Base EDID:
+  Display Product Serial Number: ...
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #1: Mismatch of image size 338x270 mm vs display size 380x300 mm.
-  Display Product Serial Number: ...
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

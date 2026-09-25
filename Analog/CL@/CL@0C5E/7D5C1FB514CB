@@ -60,23 +60,11 @@ Checksum: 0x0d
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0d 80 5e 0c 00 00 00 00 '..........^.....'
-  10 1a 01 03 68 79 44 96 2a ee 91 a3 54 4c 99 26 '....hyD.*...TL.&'
-  0f 50 54 00 08 00 81 c0 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
-  36 00 be ab 42 00 00 1e 02 3a 80 18 71 38 2d 40 '6...B....:..q8-@'
-  58 2c 45 00 be ab 42 00 00 1e 66 21 50 b0 51 00 'X,E...B...f!P.Q.'
-  1b 30 40 70 36 00 be ab 42 00 00 1e 00 00 00 fc '.0@p6...B.......'
-  00 43 4d 20 33 33 31 36 0a 20 20 20 20 20 00 0d '.CM 3316.     ..'
-Checksum: 0x0d
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x10.
+  Detailed Timing Descriptor #1: Image size is 1214x683 mm, but based on the picture AR it should be 910x683 mm.
 
 Failures:
 
@@ -84,9 +72,7 @@ Block 0, Base EDID:
   Vendor & Product Identification: Manufacturer name field contains garbage.
   Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

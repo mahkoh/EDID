@@ -59,28 +59,13 @@ Checksum: 0xd8
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 e4 32 00 00 00 00 00 '........0.2.....'
-  00 11 01 03 90 25 17 78 0a 3f 05 9a 59 52 90 27 '.....%.x.?..YR.''
-  20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ' PT.............'
-  01 01 01 01 01 01 60 3b 80 90 70 b0 1c 40 30 20 '......`;..p..@0 '
-  36 00 6f e6 10 00 00 19 60 3b 80 90 70 b0 1c 40 '6.o.....`;..p..@'
-  30 20 36 00 6f e6 10 00 00 19 00 00 00 fe 00 52 '0 6.o..........R'
-  37 38 39 47 80 31 37 31 57 55 31 0a 00 00 00 fe '789G.171WU1.....'
-  00 1e 32 41 49 6c 93 b9 ff 02 01 0a 20 20 00 d8 '..2AIl......  ..'
-Checksum: 0xd8
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

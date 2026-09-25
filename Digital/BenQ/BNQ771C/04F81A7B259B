@@ -75,27 +75,12 @@ Checksum: 0x07
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 d1 1c 77 46 10 00 00 '...........wF...'
-  03 12 01 03 80 34 21 78 ea 5a d5 a7 56 4b 9b 24 '.....4!x.Z..VK.$'
-  13 50 54 bd ef 80 71 4f 81 90 81 80 81 8c a9 40 '.PT...qO.......@'
-  b3 00 95 0f 95 00 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
-  36 00 07 44 21 00 00 1a 00 00 00 ff 00 30 30 30 '6..D!........000'
-  30 30 30 30 30 4e 4c 30 0a 0a 00 00 00 fd 00 38 '00000NL0.......8'
-  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
-  00 42 65 6e 51 20 54 32 34 31 57 0a 0a 0a 00 07 '.BenQ T241W.....'
-Checksum: 0x07
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Display Product Serial Number: ...
   Display Product Name: Non-space after newline.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

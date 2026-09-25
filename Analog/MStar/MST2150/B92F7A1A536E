@@ -47,7 +47,7 @@ Block 0, Base EDID:
   Standard Timings:
     GTF     :   640x480    70.000000 Hz   4:3     35.000 kHz     28.560000 MHz
     GTF     :   800x600    70.000000 Hz   4:3     43.750 kHz     45.500000 MHz
-    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    GTF     :  1024x768    72.000073 Hz   4:3     57.672 kHz     78.434000 MHz
     DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
     DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
     GTF     :  1280x1024   69.999805 Hz   5:4     74.620 kHz    128.943000 MHz
@@ -72,6 +72,8 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x39.
+  Detailed Timing Descriptor #2: Image size is 436x245 mm, but based on the picture AR it should be 392x245 mm.
+  Detailed Timing Descriptor #3: Image size is 436x245 mm, but based on the picture AR it should be 392x245 mm.
 
 Failures:
 
@@ -79,7 +81,7 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 436x245 mm vs display size 480x270 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 436x245 mm vs display size 480x270 mm.
   Detailed Timing Descriptor #3: Mismatch of image size 436x245 mm vs display size 480x270 mm.
-  Display Product Name: Non-printable character.
+  Display Product Name: NUL byte at position 0.
   Missing Display Range Limits Descriptor.
 
 EDID conformity: FAIL

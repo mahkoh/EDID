@@ -52,29 +52,14 @@ Checksum: 0x95
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 36 09 01 10 00 88 88 88 '........6.......'
-  1c 1c 01 03 80 00 00 78 0a 0d c9 a0 57 47 98 27 '.......x....WG.''
-  12 48 4c 00 00 00 d1 c0 01 01 01 01 01 01 01 01 '.HL.............'
-  01 01 01 01 01 01 40 1f 00 c8 50 20 32 30 58 2d '......@...P 20X-'
-  45 00 00 20 53 00 00 1e 00 00 00 10 00 80 10 70 'E.. S..........p'
-  20 20 84 00 80 38 74 00 00 18 00 00 00 fc 00 4d '  ...8t........M'
-  50 49 31 30 37 0a 20 20 20 20 20 20 00 00 00 10 'PI107.      ....'
-  00 14 78 01 ff 1d 00 0a 20 20 20 20 20 20 00 95 '..x.....      ..'
-Checksum: 0x95
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Dummy Descriptor: Dummy block filled with garbage.
   Dummy Descriptor: Dummy block filled with garbage.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 1280x800mm, but the display size is not specified anywhere.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

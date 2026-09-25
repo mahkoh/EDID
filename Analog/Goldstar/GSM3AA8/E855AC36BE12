@@ -52,7 +52,7 @@ Block 0, Base EDID:
     DMT 0x04:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     DMT 0x06:   640x480    75.000000 Hz   4:3     37.500 kHz     31.500000 MHz
     DMT 0x0b:   800x600    75.000000 Hz   4:3     46.875 kHz     49.500000 MHz
-    Unknown :  1024x768    70.000 Hz   4:3
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
     DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
   Detailed Timing Descriptors:
     DTD 1:   640x480    59.952381 Hz   4:3     31.475 kHz     25.180000 MHz (260 mm x 190 mm)
@@ -75,6 +75,7 @@ Warnings:
 
 Block 0, Base EDID:
   EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+  Detailed Timing Descriptor #4: Image size is 260x190 mm, but based on the picture AR it should be 237x190 mm.
 
 Failures:
 

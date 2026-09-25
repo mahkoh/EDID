@@ -69,7 +69,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 2
+  Native DTDs: 2
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
@@ -100,7 +100,8 @@ Block 1, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 360 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -117,16 +118,15 @@ Warnings:
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
-EDID:
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 0, Base EDID:
-  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
   Display Product Serial Number: ...
+  Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.

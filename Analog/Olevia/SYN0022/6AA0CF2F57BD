@@ -63,6 +63,7 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x16.
+  Detailed Timing Descriptor #2: Image size is 710x400 mm, but based on the picture AR it should be 666x400 mm.
 
 Failures:
 

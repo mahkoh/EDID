@@ -77,24 +77,9 @@ Checksum: 0xc6
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 69 e4 27 f7 02 00 00 '.........i.'....'
-  05 1b 01 03 68 3c 22 78 2a 53 a5 a7 56 52 9c 26 '....h<"x*S..VR.&'
-  11 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
-  81 c0 71 4f 01 01 02 3a 80 18 71 38 2d 40 58 2c '..qO...:..q8-@X,'
-  45 00 56 50 21 00 00 1e 00 00 00 ff 00 48 32 4c 'E.VP!........H2L'
-  4d 54 4a 30 30 30 37 35 39 0a 00 00 00 fd 00 32 'MTJ000759......2'
-  4b 18 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 41 53 55 53 20 56 58 32 37 39 0a 20 20 00 c6 '.ASUS VX279.  ..'
-Checksum: 0xc6
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

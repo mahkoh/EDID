@@ -81,19 +81,6 @@ Checksum: 0x67
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 2e cd 10 20 71 b4 32 01 '........... q.2.'
-  1c 13 01 03 0e 34 21 78 ee ee a6 9e 54 4c 99 26 '.....4!x....TL.&'
-  19 4f 54 ff ff 80 e1 0f e1 4f d1 0f d1 4f a9 0f '.OT......O...O..'
-  a9 4f b3 0f c9 0f b0 18 00 20 41 00 20 30 10 60 '.O....... A. 0.`'
-  13 00 2c e6 10 00 00 1e 00 00 00 10 00 00 2a 30 '..,...........*0'
-  30 70 13 00 52 0e 11 00 00 1e 00 00 00 10 00 38 '0p..R..........8'
-  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 10 'L.S...      ....'
-  00 00 20 30 10 60 13 00 2c e6 10 00 00 1e 00 67 '.. 0.`..,......g'
-Checksum: 0x67
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
@@ -104,9 +91,7 @@ Block 0, Base EDID:
   Dummy Descriptor: Dummy block filled with garbage.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

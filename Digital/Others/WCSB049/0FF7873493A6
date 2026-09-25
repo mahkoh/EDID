@@ -73,7 +73,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6396, 0.3300
     Green: 0.2998, 0.5996
@@ -98,7 +98,7 @@ Block 0, Base EDID:
                   Hfront   32 Hsync   8 Hback  120 Hpol P
                   Vfront    8 Vsync   8 Vback   46 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 23-60 Hz V, 144-144 kHz H, max dotclock 630 MHz
+      Monitor ranges (Range Limits Only): 23-60 Hz V, 144-144 kHz H, max dotclock 630 MHz
   Extension blocks: 2
 Checksum: 0x05
 
@@ -110,7 +110,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 2
+  Native DTDs: 2
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
@@ -177,7 +177,7 @@ Block 2, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 2
+  Native DTDs: 2
   Detailed Timing Descriptors:
     DTD  7:  3840x2400   50.000000 Hz  16:10   123.100 kHz    492.400000 MHz (302 mm x 189 mm)
                   Hfront   32 Hsync   8 Hback  120 Hpol P
@@ -201,126 +201,18 @@ Checksum: 0xf6  Unused space in Extension Block: 15 bytes
 
 ----------------
 
-Block 3, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5c 73 49 b0 01 01 01 01 '........\sI.....'
-  1d 23 01 04 b5 22 16 78 3f ee 91 a3 54 4c 99 26 '.#...".x?...TL.&'
-  0f 50 54 21 08 00 d1 c0 a9 c0 81 c0 95 00 d1 00 '.PT!............'
-  01 01 01 01 01 01 d0 e6 00 a0 f0 60 3e 90 20 08 '...........`>. .'
-  88 00 59 d7 10 00 00 1a 00 00 00 fc 00 41 55 31 '..Y..........AU1'
-  36 54 4f 0a 20 20 20 20 20 20 50 d0 00 a0 f0 70 '6TO.      P....p'
-  3e 80 20 08 88 00 59 d7 10 00 00 1a 00 00 00 fd '>. ...Y.........'
-  00 17 3c 90 90 3f 01 0a 20 20 20 20 20 20 02 05 '..<..?..      ..'
-Checksum: 0x05
-
-----------------
-
-Block 4, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 2
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
-    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
-    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-    VIC  60:  1280x720    24.000000 Hz  16:9     18.000 kHz     59.400000 MHz
-    VIC  61:  1280x720    25.000000 Hz  16:9     18.750 kHz     74.250000 MHz
-    VIC  62:  1280x720    30.000000 Hz  16:9     22.500 kHz     74.250000 MHz
-    VIC  76:  1920x1080   60.000000 Hz  64:27    67.500 kHz    148.500000 MHz
-    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
-    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
-    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
-    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
-  Video Capability Data Block:
-    YCbCr quantization: Selectable (via AVI YQ)
-    RGB quantization: Selectable (via AVI Q)
-    PT scan behavior: No Data
-    IT scan behavior: IT video formats not supported
-    CE scan behavior: CE video formats not supported
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Colorimetry Data Block:
-    BT2020YCC
-    BT2020RGB
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      SMPTE ST2084
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 105 (486.099 cd/m^2)
-    Desired content max frame-average luminance: 105 (486.099 cd/m^2)
-    Desired content min luminance: 79 (0.467 cd/m^2)
-  Detailed Timing Descriptors:
-    DTD 13:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (345 mm x 215 mm)
-                  Hfront   32 Hsync   8 Hback  240 Hpol P
-                  Vfront    8 Vsync   8 Vback   29 Vpol N
-    DTD 14:  2560x1440   60.000199 Hz  16:9     88.860 kHz    241.700000 MHz (345 mm x 215 mm)
-                  Hfront   32 Hsync   8 Hback  120 Hpol P
-                  Vfront    8 Vsync   8 Vback   25 Vpol N
-    DTD 15:  2560x1600   59.998690 Hz  16:10    99.598 kHz    274.890000 MHz (345 mm x 215 mm)
-                  Hfront   32 Hsync   8 Hback  160 Hpol P
-                  Vfront    8 Vsync   8 Vback   44 Vpol N
-    DTD 16:  2560x1600   50.000000 Hz  16:10    83.000 kHz    229.080000 MHz (345 mm x 215 mm)
-                  Hfront   32 Hsync   8 Hback  160 Hpol P
-                  Vfront    8 Vsync   8 Vback   44 Vpol N
-Checksum: 0x02  Unused space in Extension Block: 10 bytes
-
-----------------
-
-Block 5, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 2
-  Detailed Timing Descriptors:
-    DTD 17:  3840x2400   50.000000 Hz  16:10   123.100 kHz    492.400000 MHz (302 mm x 189 mm)
-                  Hfront   32 Hsync   8 Hback  120 Hpol P
-                  Vfront    8 Vsync   8 Vback   46 Vpol N
-    DTD 18:  3840x2400   30.000000 Hz  16:10    73.860 kHz    295.440000 MHz (302 mm x 189 mm)
-                  Hfront   32 Hsync   8 Hback  120 Hpol P
-                  Vfront    8 Vsync   8 Vback   46 Vpol N
-    DTD 19:  3840x2400   28.998781 Hz  16:10    71.395 kHz    285.580000 MHz (302 mm x 189 mm)
-                  Hfront   32 Hsync   8 Hback  120 Hpol P
-                  Vfront    8 Vsync   8 Vback   46 Vpol N
-    DTD 20:  3840x2400   25.000000 Hz  16:10    61.550 kHz    246.200000 MHz (302 mm x 189 mm)
-                  Hfront   32 Hsync   8 Hback  120 Hpol P
-                  Vfront    8 Vsync   8 Vback   46 Vpol N
-    DTD 21:  3840x2400   23.999797 Hz  16:10    59.087 kHz    236.350000 MHz (302 mm x 189 mm)
-                  Hfront   32 Hsync   8 Hback  120 Hpol P
-                  Vfront    8 Vsync   8 Vback   46 Vpol N
-    DTD 22:  3840x2400   22.999594 Hz  16:10    56.625 kHz    226.500000 MHz (302 mm x 189 mm)
-                  Hfront   32 Hsync   8 Hback  120 Hpol P
-                  Vfront    8 Vsync   8 Vback   46 Vpol N
-Checksum: 0xf6  Unused space in Extension Block: 15 bytes
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #2: Image size is 345x215 mm, but based on the picture AR it should be 345x194 mm.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 16.
-Block 4, CTA-861 Extension Block:
-  Video Capability Data Block: IT scan behavior is expected to support underscanned.
-  Video Capability Data Block: 'CE video formats not supported' makes no sense.
-  Detailed Timing Descriptor #13: DTD is similar but not identical to VIC 16.
+  Detailed Timing Descriptor #3: Image size is 345x215 mm, but based on the picture AR it should be 345x194 mm.
+  Detailed Timing Descriptor #4: Image size is 345x215 mm, but based on the picture AR it should be 345x194 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 18.000 - 147.720 kHz (Monitor: 144.000 - 144.000 kHz)
@@ -336,39 +228,8 @@ Block 2, CTA-861 Extension Block:
   Detailed Timing Descriptor #10: Mismatch of image size 302x189 mm vs display size 340x220 mm.
   Detailed Timing Descriptor #11: Mismatch of image size 302x189 mm vs display size 340x220 mm.
   Detailed Timing Descriptor #12: Mismatch of image size 302x189 mm vs display size 340x220 mm.
-Block 3, Base EDID:
-  Unknown Extension Block.
-Block 4, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 1.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 32.
-  Video Data Block: Duplicate VIC 33.
-  Video Data Block: Duplicate VIC 34.
-  Video Data Block: Duplicate VIC 60.
-  Video Data Block: Duplicate VIC 61.
-  Video Data Block: Duplicate VIC 62.
-  Video Data Block: Duplicate VIC 76.
-  Video Data Block: Duplicate VIC 93.
-  Video Data Block: Duplicate VIC 94.
-  Video Data Block: Duplicate VIC 95.
-  Video Data Block: Duplicate VIC 96.
-  Video Capability Data Block: Only one instance of this Data Block is allowed.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-Block 5, CTA-861 Extension Block:
-  Detailed Timing Descriptor #17: Mismatch of image size 302x189 mm vs display size 340x220 mm.
-  Detailed Timing Descriptor #18: Mismatch of image size 302x189 mm vs display size 340x220 mm.
-  Detailed Timing Descriptor #19: Mismatch of image size 302x189 mm vs display size 340x220 mm.
-  Detailed Timing Descriptor #20: Mismatch of image size 302x189 mm vs display size 340x220 mm.
-  Detailed Timing Descriptor #21: Mismatch of image size 302x189 mm vs display size 340x220 mm.
-  Detailed Timing Descriptor #22: Mismatch of image size 302x189 mm vs display size 340x220 mm.
 EDID:
-  Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
+  Extension Block 3 started with EDID header, ignoring Extension Blocks >= 3.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

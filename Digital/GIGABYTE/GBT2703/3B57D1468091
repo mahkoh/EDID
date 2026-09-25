@@ -36,7 +36,7 @@ Block 0, Base EDID:
     DPMS levels: Standby Suspend Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6826, 0.3085
     Green: 0.2783, 0.6474
@@ -69,7 +69,7 @@ Block 0, Base EDID:
                  Hfront   88 Hsync  32 Hback  160 Hpol P
                  Vfront    4 Vsync   5 Vback   32 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-165 Hz V, 222-222 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 48-165 Hz V, 222-222 kHz H, max dotclock 600 MHz
     Display Product Name: 'AORUS CV27F'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -82,7 +82,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
@@ -123,15 +123,18 @@ Block 1, CTA-861 Extension Block:
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.3
+    Version: 2
+    Feature Caps: 0x03
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x1f
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      Gamma 2.2 EOTF Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 99 (426.856 cd/m^2)
     Minimum luminance: 41 (0.110 cd/m^2)
-    Maximum luminance (without local dimming): 99 (426.856 cd/m^2)
-    Minimum luminance (without local dimming): 41 (0.110 cd/m^2)
   Colorimetry Data Block:
     BT2020YCC
     BT2020RGB
@@ -159,14 +162,16 @@ Checksum: 0xa7  Unused space in Extension Block: 11 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 192.690 kHz (Monitor: 222.000 - 222.000 kHz)
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 

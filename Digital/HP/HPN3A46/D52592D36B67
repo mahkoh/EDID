@@ -80,7 +80,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   26 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 50-100 Hz V, 30-130 kHz H, max dotclock 270 MHz
+      Monitor ranges (Range Limits Only): 50-100 Hz V, 30-130 kHz H, max dotclock 270 MHz
     Display Product Name: 'HP 724pu'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -93,7 +93,7 @@ Block 1, CTA-861 Extension Block:
   Underscans IT Video Formats by default
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -129,89 +129,17 @@ Checksum: 0xd3  Unused space in Extension Block: 69 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 22 0e 46 3a 00 00 00 00 '........".F:....'
-  1b 22 01 04 a5 34 20 78 3a fb 35 a8 53 49 9e 25 '."...4 x:.5.SI.%'
-  0c 50 54 a5 4a 00 d1 c0 a9 c0 81 00 d1 00 b3 00 '.PT.J...........'
-  95 00 a9 40 81 80 28 3c 80 a0 70 b0 23 40 30 20 '...@..(<..p.#@0 '
-  36 00 06 44 21 00 00 1a 00 00 00 fd 00 32 64 1e '6..D!........2d.'
-  82 1b 01 0a 20 20 20 20 20 20 00 00 00 fc 00 48 '....      .....H'
-  50 20 37 32 34 70 75 0a 20 20 20 20 00 00 00 ff 'P 724pu.    ....'
-  00 43 4e 34 34 32 37 31 5a 57 31 0a 20 20 01 6b '.CN44271ZW1.  .k'
-Checksum: 0x6b
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC  83:  1680x720    60.000000 Hz  64:27    45.000 kHz     99.000000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
-    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-  Colorimetry Data Block:
-    xvYCC601
-    xvYCC709
-    sYCC601
-    opYCC601
-    opRGB
-    Gamut Boundary Description Metadata Profile P0
-  Video Capability Data Block:
-    YCbCr quantization: No Data
-    RGB quantization: Selectable (via AVI Q)
-    PT scan behavior: Always Underscanned
-    IT scan behavior: Always Underscanned
-    CE scan behavior: Always Underscanned
-  Detailed Timing Descriptors:
-    DTD 4:  1920x1200   99.937324 Hz  16:10   125.721 kHz    261.500000 MHz (518 mm x 324 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   6 Vback   49 Vpol N
-    DTD 5:  1920x1200   74.938889 Hz  16:10    93.149 kHz    193.750000 MHz (518 mm x 324 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   6 Vback   34 Vpol N
-Checksum: 0xd3  Unused space in Extension Block: 69 bytes
-
-----------------
-
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
-  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
-Block 3, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
 
 Failures:
 
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 83.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 18.
-  Video Data Block: Duplicate VIC 17.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 1.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  Video Capability Data Block: Only one instance of this Data Block is allowed.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

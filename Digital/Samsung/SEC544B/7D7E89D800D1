@@ -39,7 +39,7 @@ Block 0, Base EDID:
     DTD 2:  1600x900    39.999338 Hz  16:9     54.959 kHz    120.910000 MHz (344 mm x 194 mm)
                  Hfront   48 Hsync  32 Hback  520 Hpol P
                  Vfront    2 Vsync   5 Vback  467 Vpol N
-    Alphanumeric Data String: 'N2GY7'
+    Alphanumeric Data String: 'N2GY7.156KT'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 21 99 00 00 00 00 02 01 0a 20 20 '....A!........  '
 Checksum: 0xcb
 
@@ -48,11 +48,7 @@ Checksum: 0xcb
 Warnings:
 
 Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x80 at position 5, can cause problems.
   Missing Display Product Name.
 
-Failures:
-
-Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
-
-EDID conformity: FAIL
+EDID conformity: PASS

@@ -60,7 +60,7 @@ Checksum: 0x18
 Block 1, CTA-861 Extension Block:
   Revision: 3
   Underscans IT Video Formats by default
-  Native detailed modes: 0
+  Native DTDs: 0
   Vendor-Specific Data Block (Apple), OUI 00-10-FA:
     00 12 76 31 fc 78 fb ff 02 10 88 62 d3          '..v1.x.....b.'
   Vendor-Specific Data Block (Apple), OUI 00-10-FA:
@@ -78,6 +78,9 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  No Native Video Resolution was defined.
+    Hint: set 'Native DTDs' to a non-0 value, or add a Native Video Resolution Data Block.
 
 Failures:
 

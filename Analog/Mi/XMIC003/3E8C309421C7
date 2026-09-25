@@ -74,27 +74,18 @@ Checksum: 0xbb
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 61 a9 03 c0 01 00 00 00 '........a.......'
-  0e 20 01 03 08 35 1d 78 ea 14 15 ac 51 49 a3 25 '. ...5.x....QI.%'
-  10 50 54 bd cf 00 01 01 81 00 01 01 81 80 81 c0 '.PT.............'
-  95 00 a9 c0 b3 00 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 0f 25 21 00 00 1e 00 00 00 ff 00 34 30 36 'E..%!........406'
-  37 39 33 32 56 53 33 35 35 35 00 00 00 fd 00 30 '7932VS3555.....0'
-  3c 36 64 13 00 0a 20 20 20 20 20 20 00 00 00 fc '<6d...      ....'
-  00 52 65 64 6d 69 20 32 33 38 20 4e 46 53 00 bb '.Redmi 238 NFS..'
-Checksum: 0xbb
+Warnings:
 
-----------------
-
-Failures:
-
-Block 1, Base EDID:
-  Unknown Extension Block.
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 59.810 - 75.029 Hz (Monitor: 48.000 - 60.000 Hz)
     Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 54.000 - 100.000 kHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+Failures:
+
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

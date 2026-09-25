@@ -79,26 +79,15 @@ Checksum: 0x86
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 22 64 bb 04 e6 01 00 00 '........"d......'
-  2b 11 01 03 68 29 1a 78 2a f0 44 a4 53 4a 9d 24 '+...h).x*.D.SJ.$'
-  14 4f 57 bf ef 80 61 46 71 4f 81 c0 81 80 90 40 '.OW...aFqO.....@'
-  90 4f 95 00 95 0f 9a 29 a0 d0 51 84 22 30 50 98 '.O.....)..Q."0P.'
-  36 00 98 ff 10 00 00 1c 00 00 00 ff 00 37 34 33 '6............743'
-  48 58 31 42 59 30 30 34 38 36 00 00 00 fd 00 37 'HX1BY00486.....7'
-  4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 41 48 31 39 31 0a 20 20 20 20 20 20 20 00 86 '.AH191.       ..'
-Checksum: 0x86
+Warnings:
 
-----------------
-
-Failures:
-
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 156.000 MHz (Monitor: 140.000 MHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+Failures:
+
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -52,7 +52,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.5781, 0.3613
     Green: 0.3505, 0.5820
@@ -68,7 +68,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   31 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 40-60 Hz V, 67-67 kHz H, max dotclock 140 MHz
+      Monitor ranges (Range Limits Only): 40-60 Hz V, 67-67 kHz H, max dotclock 140 MHz
     Display Product Name: 'MNF601BS1-3'
   Extension blocks: 1
 Checksum: 0xd4
@@ -81,14 +81,12 @@ Block 1, DisplayID Extension Block:
   Display Product Primary Use Case: None of the listed primary use cases; generic display
   CTA-861 DisplayID Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.1
+    Version: 3
+    Feature Caps: 0x01
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 83 (301.833 cd/m^2)
-    Minimum luminance: 255 (3.018 cd/m^2)
-    Unknown: 0x53 0xff
   Colorimetry Data Block:
     sYCC601
   HDR Static Metadata Data Block:
@@ -103,57 +101,7 @@ Block 1, DisplayID Extension Block:
     Descriptor #1:
       Native Panel Range
       Fixed Average V-Total and Adaptive V-Total
-      'Max Single Frame Duration Increase' field value without jitter impact
-      'Max Single Frame Duration Decrease' field value without jitter impact
-      Max Duration Increase: 0.00 ms
-      Max Duration Decrease: 0.00 ms
-      Min Refresh Rate: 40 Hz
-      Max Refresh Rate: 60 Hz
-  Checksum: 0xb8
-Checksum: 0x90
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0e 77 19 15 00 00 00 00 '.........w......'
-  19 22 01 04 a5 22 13 78 03 2c c5 94 5c 59 95 29 '."...".x.,..\Y.)'
-  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 9a 36 80 a0 70 38 28 40 30 20 '.......6..p8(@0 '
-  36 00 58 c1 10 00 00 1a ae 2b 80 a0 70 38 28 40 '6.X......+..p8(@'
-  30 20 36 00 58 c1 10 00 00 1a 00 00 00 fd 00 28 '0 6.X..........('
-  3c 43 43 0e 01 0a 20 20 20 20 20 20 00 00 00 fc '<CC...      ....'
-  00 4d 4e 46 36 30 31 42 53 31 2d 33 0a 20 01 d4 '.MNF601BS1-3. ..'
-Checksum: 0xd4
-
-----------------
-
-Block 3, DisplayID Extension Block:
-  Version: 2.0
-  Extension Count: 0
-  CTA-861 DisplayID Data Block:
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.1
-    Minimum Refresh Rate: 40 Hz
-    Maximum Refresh Rate: 60 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
-    Maximum luminance: 83 (301.833 cd/m^2)
-    Minimum luminance: 255 (3.018 cd/m^2)
-    Unknown: 0x53 0xff
-  Colorimetry Data Block:
-    sYCC601
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 83 (301.833 cd/m^2)
-    Desired content max frame-average luminance: 83 (301.833 cd/m^2)
-    Desired content min luminance: 255 (3.018 cd/m^2)
-  Adaptive Sync Data Block:
-    Descriptor #1:
-      Native Panel Range
-      Fixed Average V-Total and Adaptive V-Total
+      Supports Seamless Transition
       'Max Single Frame Duration Increase' field value without jitter impact
       'Max Single Frame Duration Decrease' field value without jitter impact
       Max Duration Increase: 0.00 ms
@@ -169,27 +117,15 @@ Warnings:
 
 Block 1, DisplayID Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-Block 3, DisplayID Extension Block:
-  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 53.759 - 67.201 kHz (Monitor: 67.000 - 67.000 kHz)
 
 Failures:
 
-Block 1, DisplayID Extension Block:
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, DisplayID Extension Block:
-  Product Type should be 0 in extension block.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   DisplayID: Missing DisplayID Display Parameters Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
   DisplayID: Missing DisplayID Type VII Detailed Timing Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 

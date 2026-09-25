@@ -82,21 +82,10 @@ Checksum: 0x21
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5a 63 36 33 01 01 01 01 '........Zc63....'
-  02 1f 01 03 08 3c 22 78 2e ec f5 a7 53 4f 9f 26 '.....<"x....SO.&'
-  11 50 54 bf ef 80 b3 00 a9 40 a9 c0 95 00 90 40 '.PT......@.....@'
-  81 80 81 40 81 c0 02 3a 80 18 71 38 2d 40 58 2c '...@...:..q8-@X,'
-  45 00 56 50 21 00 00 1e 2a 44 80 a0 70 38 27 40 'E.VP!...*D..p8'@'
-  30 20 35 00 56 50 21 00 00 1a 00 00 00 fd 00 30 '0 5.VP!........0'
-  4b 18 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 56 41 32 37 35 36 20 53 65 72 69 65 73 00 21 '.VA2756 Series.!'
-Checksum: 0x21
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.466 - 83.894 kHz (Monitor: 24.000 - 83.000 kHz)
@@ -107,9 +96,7 @@ Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

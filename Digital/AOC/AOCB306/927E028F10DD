@@ -46,7 +46,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6748, 0.3105
     Green: 0.2783, 0.6474
@@ -83,7 +83,7 @@ Block 0, Base EDID:
     Display Product Serial Number: ...
     Display Product Name: 'U34G3G3R3'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-165 Hz V, 250-250 kHz H, max dotclock 900 MHz
+      Monitor ranges (Range Limits Only): 48-165 Hz V, 250-250 kHz H, max dotclock 900 MHz
   Extension blocks: 2
 Checksum: 0xc9
 
@@ -95,7 +95,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
@@ -122,14 +122,12 @@ Block 1, CTA-861 Extension Block:
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
@@ -183,6 +181,8 @@ Checksum: 0x90
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #4: Image size is 797x334 mm, but based on the picture AR it should be 398x334 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -198,6 +198,5 @@ Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.
 EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
-  DisplayID: Missing DisplayID Product Identification Data Block.
 
 EDID conformity: FAIL

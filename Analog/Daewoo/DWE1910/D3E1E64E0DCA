@@ -63,6 +63,12 @@ Checksum: 0x01
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #2: Image size is 410x256 mm, but based on the picture AR it should be 320x256 mm.
+
 Failures:
 
 Block 0, Base EDID:

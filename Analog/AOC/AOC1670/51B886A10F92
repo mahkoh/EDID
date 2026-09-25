@@ -61,26 +61,11 @@ Checksum: 0x29
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 05 e3 70 16 01 17 00 00 '..........p.....'
-  25 1b 01 03 68 22 13 78 2a a2 95 9e 59 57 99 27 '%...h".x*...YW.''
-  18 50 54 a1 08 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
-  33 00 58 c2 10 00 00 1e 66 21 50 b0 51 00 1b 30 '3.X.....f!P.Q..0'
-  40 70 36 00 58 c2 10 00 00 1e 00 00 00 ff 00 4b '@p6.X..........K'
-  51 55 48 39 58 41 30 30 35 38 38 39 00 00 00 fc 'QUH9XA005889....'
-  00 31 36 37 30 57 0a 20 20 20 20 20 20 20 00 29 '.1670W.       .)'
-Checksum: 0x29
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

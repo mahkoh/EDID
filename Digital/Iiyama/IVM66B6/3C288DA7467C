@@ -98,7 +98,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -132,9 +132,9 @@ Block 1, CTA-861 Extension Block:
         VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (field alternative)
         VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz (side-by-side, quincunx odd/left, even/right)
         VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (side-by-side (full))
-        VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (side-by-side (full))
+        SVD Index 15 is out of range (side-by-side (full))
         VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (L + depth + gfx + gfx-depth)
-        VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (side-by-side (full))
+        SVD Index 15 is out of range (side-by-side (full))
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
     Version: 1
     Maximum TMDS Character Rate: 600 MHz
@@ -149,7 +149,8 @@ Block 1, CTA-861 Extension Block:
     BT2020RGB
     Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 100 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -170,102 +171,10 @@ Checksum: 0x5d  Unused space in Extension Block: 1 byte
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 26 cd b6 66 83 07 00 00 '........&..f....'
-  1c 22 01 03 80 3c 22 78 2e 88 d5 a9 53 50 a2 24 '."...<"x....SP.$'
-  0c 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 c0 '.PT.............'
-  01 01 01 01 01 01 6a 5e 00 a0 a0 a0 29 50 30 20 '......j^....)P0 '
-  35 00 55 50 21 00 00 1e 00 00 00 ff 00 31 32 34 '5.UP!........124'
-  32 38 4a 51 37 30 31 39 32 33 00 00 00 fc 00 50 '28JQ701923.....P'
-  4c 32 37 36 33 51 0a 20 20 20 20 20 00 00 00 fd 'L2763Q.     ....'
-  00 30 64 1e 96 29 00 0a 20 20 20 20 20 20 01 c0 '.0d..)..      ..'
-Checksum: 0xc0
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.0.0.0
-    DC_36bit
-    DC_30bit
-    DC_Y444
-    Maximum TMDS clock: 340 MHz
-    Extended HDMI video details:
-      HDMI VICs:
-         Unknown (HDMI VIC 216)
-         Unknown (HDMI VIC 93)
-         Unknown (HDMI VIC 196)
-      3D VIC indices with specific capabilities:
-        VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (field alternative)
-        VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz (side-by-side, quincunx odd/left, even/right)
-        VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (side-by-side (full))
-        VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (side-by-side (full))
-        VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (L + depth + gfx + gfx-depth)
-        VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (side-by-side (full))
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
-    Version: 1
-    Maximum TMDS Character Rate: 600 MHz
-    SCDC Present
-    Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
-    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
-  Colorimetry Data Block:
-    xvYCC601
-    xvYCC709
-    BT2020cYCC
-    BT2020YCC
-    BT2020RGB
-    Gamut Boundary Description Metadata Profile P0
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
-    Minimum Refresh Rate: 48 Hz
-    Maximum Refresh Rate: 100 Hz
-    Flags 1.x: 0xe6 (MCCS)
-  Detailed Timing Descriptors:
-    DTD 6:  2560x1440  100.000000 Hz  16:9    148.500 kHz    403.920000 MHz (597 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   37 Vpol P
-    DTD 7:  2560x1440   75.000000 Hz  16:9    111.375 kHz    302.940000 MHz (597 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront   25 Vsync   8 Vback   12 Vpol N
-    DTD 8:  1920x1080   85.002909 Hz  16:9     95.543 kHz    198.730000 MHz (597 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   36 Vpol N
-    DTD 9:  1920x1080  100.000858 Hz  16:9    112.101 kHz    233.170000 MHz (597 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   33 Vpol P
-Checksum: 0x5d  Unused space in Extension Block: 1 byte
-
-----------------
-
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-Block 3, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:
@@ -276,29 +185,9 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Unknown HDMI VIC 216.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Unknown HDMI VIC 93.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Unknown HDMI VIC 196.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 5.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 18.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 17.
-  Video Data Block: Duplicate VIC 1.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Unknown HDMI VIC 216.
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Unknown HDMI VIC 93.
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Unknown HDMI VIC 196.
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI 2D VIC indices max index 15 > 10 (#SVDs).
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

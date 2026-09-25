@@ -55,7 +55,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6386, 0.3330
     Green: 0.3251, 0.6230
@@ -92,7 +92,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync  10 Vback   28 Vpol P
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-76 Hz V, 120-120 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 48-76 Hz V, 120-120 kHz H, max dotclock 600 MHz
     Display Product Name: 'VA3456-WQHD'
   Extension blocks: 1
 Checksum: 0x4a
@@ -105,7 +105,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
@@ -132,7 +132,8 @@ Block 1, CTA-861 Extension Block:
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0x00
@@ -170,96 +171,15 @@ Checksum: 0x85  Unused space in Extension Block: 5 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5a 63 3a fc 01 01 01 01 '........Zc:.....'
-  17 21 01 04 b5 50 22 78 3f 96 e5 a3 55 53 9f 25 '.!...P"x?...US.%'
-  0a 50 54 bf ef 80 d1 c0 e1 c0 d1 00 b3 00 a9 40 '.PT............@'
-  a9 c0 81 80 81 00 e7 7c 70 a0 d0 a0 29 50 30 20 '.......|p...)P0 '
-  3a 00 20 4f 31 00 00 1e 00 00 00 ff 00 57 43 4b ':. O1........WCK'
-  32 33 32 33 32 30 36 33 32 0a 00 00 00 fd 00 30 '232320632......0'
-  4c 78 78 3c 01 0a 20 20 20 20 20 20 00 00 00 fc 'Lxx<..      ....'
-  00 56 41 33 34 35 36 2d 57 51 48 44 0a 20 01 4a '.VA3456-WQHD. .J'
-Checksum: 0x4a
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 0
-  Video Data Block:
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
-    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
-    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
-    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
-    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
-    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC  89:  2560x1080   50.000000 Hz  64:27    56.250 kHz    185.625000 MHz
-    VIC  90:  2560x1080   60.000000 Hz  64:27    66.000 kHz    198.000000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
-    Minimum Refresh Rate: 48 Hz
-    Maximum Refresh Rate: 75 Hz
-    Flags 1.x: 0x00
-  Colorimetry Data Block:
-    xvYCC601
-    xvYCC709
-    BT2020cYCC
-    BT2020YCC
-    BT2020RGB
-    Gamut Boundary Description Metadata Profile P0
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      Traditional gamma - HDR luminance range
-      SMPTE ST2084
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 97 (408.759 cd/m^2)
-    Desired content max frame-average luminance: 97 (408.759 cd/m^2)
-    Desired content min luminance: 1 (0.000 cd/m^2)
-  Detailed Timing Descriptors:
-    DTD 6:  3440x1440   75.050314 Hz  43:18   113.026 kHz    438.540000 MHz (800 mm x 335 mm)
-                 Hfront  144 Hsync  96 Hback  200 Hpol P
-                 Vfront   38 Vsync   4 Vback   24 Vpol P
-    DTD 7:  2560x1440   74.931982 Hz  16:9    110.974 kHz    301.850000 MHz (800 mm x 335 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   33 Vpol P
-    DTD 8:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (800 mm x 335 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   33 Vpol N
-    DTD 9:  3440x1440   49.958175 Hz  43:18    74.138 kHz    344.000000 MHz (800 mm x 335 mm)
-                 Hfront  232 Hsync 368 Hback  600 Hpol N
-                 Vfront    3 Vsync  10 Vback   31 Vpol P
-Checksum: 0x85  Unused space in Extension Block: 5 bytes
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
-  Video Data Block: VIC 1 is the preferred timing, overriding the first detailed timings. Is this intended?
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-Block 3, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
+  Detailed Timing Descriptor #3: Image size is 800x335 mm, but based on the picture AR it should be 595x335 mm.
+  Detailed Timing Descriptor #4: Image size is 800x335 mm, but based on the picture AR it should be 595x335 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -271,31 +191,7 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 1.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 5.
-  Video Data Block: Duplicate VIC 6.
-  Video Data Block: Duplicate VIC 7.
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 17.
-  Video Data Block: Duplicate VIC 18.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 20.
-  Video Data Block: Duplicate VIC 21.
-  Video Data Block: Duplicate VIC 22.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 89.
-  Video Data Block: Duplicate VIC 90.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

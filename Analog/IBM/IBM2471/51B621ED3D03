@@ -72,24 +72,14 @@ Checksum: 0xe3
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 24 4d 71 24 01 01 01 01 '........$Mq$....'
-  25 0f 01 03 6e 26 1e 78 ea a0 a5 a3 57 4c 9b 25 '%...n&.x....WL.%'
-  11 50 54 bd ef 80 81 80 81 8a 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
-  13 00 7a 2d 11 00 00 1e 00 00 00 fd 00 37 4c 1e '..z-.........7L.'
-  53 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 36 'S...      .....6'
-  36 2d 31 32 38 34 35 0a 20 20 20 20 00 00 00 fc '6-12845.    ....'
-  00 49 42 4d 20 4c 31 39 30 0a 20 20 20 20 00 e3 '.IBM L190.    ..'
-Checksum: 0xe3
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

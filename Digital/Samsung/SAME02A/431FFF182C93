@@ -88,7 +88,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -111,76 +111,25 @@ Checksum: 0x85  Unused space in Extension Block: 90 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 2d 2a e0 00 00 00 00 '........L-*.....'
-  03 21 01 04 b5 77 22 78 3a ce 65 ad 50 42 a9 26 '.!...w"x:.e.PB.&'
-  0e 50 54 21 08 00 81 c0 81 00 81 80 95 00 a9 c0 '.PT!............'
-  b3 00 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20 '......V^....)P0 '
-  35 00 a9 50 41 00 00 1a 00 00 00 fd 00 32 78 1e '5..PA........2x.'
-  b7 32 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4f '.2..      .....O'
-  64 79 73 73 65 79 20 47 39 35 53 43 00 00 00 ff 'dyssey G95SC....'
-  00 48 31 41 4b 35 30 30 30 30 30 0a 20 20 01 9d '.H1AK500000.  ..'
-Checksum: 0x9d
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Detailed Timing Descriptors:
-    DTD 3:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (1193 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   77 Vpol P
-Checksum: 0x85  Unused space in Extension Block: 90 bytes
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 1193x336 mm, but based on the picture AR it should be 597x336 mm.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-Block 3, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #2: Image size is 1193x336 mm, but based on the picture AR it should be 597x336 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 18.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

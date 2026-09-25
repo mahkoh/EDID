@@ -71,24 +71,9 @@ Checksum: 0x12
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 35 32 20 13 cf 04 00 00 '........52 .....'
-  06 0f 01 03 68 22 1b 78 ea 04 a5 a3 58 4f 95 24 '....h".x....XO.$'
-  19 50 54 bf ef 00 81 80 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
-  13 00 52 0e 11 00 00 1e 00 00 00 ff 00 31 33 32 '..R..........132'
-  30 35 30 32 30 31 32 33 31 0a 00 00 00 fd 00 32 '050201231......2'
-  4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 4d 69 72 6f 20 54 44 35 37 31 0a 20 20 00 12 '.Miro TD571.  ..'
-Checksum: 0x12
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

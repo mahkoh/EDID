@@ -91,7 +91,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6855, 0.3085
     Green: 0.2646, 0.6679
@@ -119,7 +119,7 @@ Block 0, Base EDID:
                  Hfront    8 Hsync  48 Hback   24 Hpol P
                  Vfront   16 Vsync   8 Vback   32 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-144 Hz V, 230-230 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 48-144 Hz V, 230-230 kHz H, max dotclock 600 MHz
     Display Product Name: '27GL850'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -132,7 +132,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -171,160 +171,15 @@ Checksum: 0x1a  Unused space in Extension Block: 47 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 59 96 a8 91 8c 18 25 07 '........Y.....%.'
-  ff 1c 01 03 80 00 00 78 0a 48 97 a1 5b 54 a0 26 '.......x.H..[T.&'
-  13 4a 50 00 00 00 01 01 01 01 01 01 01 01 01 01 '.JP.............'
-  01 01 01 01 01 01 00 00 00 10 00 00 00 00 00 00 '................'
-  00 00 00 00 00 00 00 00 00 00 00 fc 00 49 6e 64 '.............Ind'
-  65 78 20 48 4d 44 0a 20 20 20 00 00 00 10 00 00 'ex HMD.   ......'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10 '................'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 b3 '................'
-Checksum: 0xb3
-
-----------------
-
-Block 3, DisplayID Extension Block:
-  Version: 1.2
-  Extension Count: 0
-  Display Product Type: Extension Section
-  Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  2880x1600   90.002624 Hz   1:1    231.757 kHz    686.000000 MHz (aspect 1:1, no 3D stereo, preferred)
-               Hfront    8 Hsync  32 Hback   40 Hpol N
-               Vfront  965 Vsync   6 Vback    4 Vpol N
-    DTD:  2880x1600   79.998880 Hz   1:1    231.757 kHz    686.000000 MHz (aspect 1:1, no 3D stereo)
-               Hfront    8 Hsync  32 Hback   40 Hpol N
-               Vfront 1287 Vsync   6 Vback    4 Vpol N
-    DTD:  2880x1600  120.019035 Hz   1:1    231.757 kHz    686.000000 MHz (aspect 1:1, no 3D stereo)
-               Hfront    8 Hsync  32 Hback   40 Hpol N
-               Vfront  321 Vsync   6 Vback    4 Vpol N
-    DTD:  2880x1600  144.000235 Hz   1:1    232.128 kHz    687.100000 MHz (aspect 1:1, no 3D stereo)
-               Hfront    8 Hsync  32 Hback   40 Hpol N
-               Vfront    3 Vsync   6 Vback    3 Vpol N
-  CTA-861 DisplayID Data Block:
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48
-      Supported sample sizes (bits): 16
-  Checksum: 0x17
-Checksum: 0x90  Unused space in Extension Block: 31 bytes
-
-----------------
-
-Block 4, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1e 6d 7f 5b 55 d7 03 00 '.........m.[U...'
-  03 1f 01 04 b5 3c 22 78 9f 8c b5 af 4f 43 ab 26 '.....<"x....OC.&'
-  0e 50 54 25 4b 00 71 40 81 80 81 c0 a9 c0 b3 00 '.PT%K.q@........'
-  d1 c0 81 00 d1 cf 28 de 00 50 a0 a0 38 50 08 30 '......(..P..8P.0'
-  08 04 55 50 21 00 00 1a 00 00 00 fd 00 30 90 e6 '..UP!........0..'
-  e6 3c 01 0a 20 20 20 20 20 20 00 00 00 fc 00 32 '.<..      .....2'
-  37 47 4c 38 35 30 0a 20 20 20 20 20 00 00 00 ff '7GL850.     ....'
-  00 31 30 33 4e 54 42 4b 37 44 37 33 33 0a 01 f5 '.103NTBK7D733...'
-Checksum: 0xf5
-
-----------------
-
-Block 5, CTA-861 Extension Block:
-  Revision: 3
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1
-      Supported sample sizes (bits): 24 20 16
-  Colorimetry Data Block:
-    BT2020YCC
-    BT2020RGB
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      SMPTE ST2084
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 96 (400.000 cd/m^2)
-    Desired content max frame-average luminance: 89 (343.724 cd/m^2)
-    Desired content min luminance: 40 (0.098 cd/m^2)
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-  Detailed Timing Descriptors:
-    DTD 5:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   33 Vpol N
-    DTD 6:  2560x1440   99.899659 Hz  16:9    150.848 kHz    398.240000 MHz (analog composite, sync-on-green, 597 mm x 336 mm)
-                 Hfront    8 Hsync  32 Hback   40 Hpol N
-                 Vfront   56 Vsync   8 Vback    6 Vpol N
-    DTD 7:  2560x1440  120.000000 Hz  16:9    183.000 kHz    483.120000 MHz (597 mm x 336 mm)
-                 Hfront    8 Hsync  56 Hback   16 Hpol P
-                 Vfront   63 Vsync   8 Vback   14 Vpol N
-Checksum: 0x1a  Unused space in Extension Block: 47 bytes
-
-----------------
-
-Block 6, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 59 96 a8 91 8c 18 25 07 '........Y.....%.'
-  ff 1c 01 03 80 00 00 78 0a 48 97 a1 5b 54 a0 26 '.......x.H..[T.&'
-  13 4a 50 00 00 00 01 01 01 01 01 01 01 01 01 01 '.JP.............'
-  01 01 01 01 01 01 00 00 00 10 00 00 00 00 00 00 '................'
-  00 00 00 00 00 00 00 00 00 00 00 fc 00 49 6e 64 '.............Ind'
-  65 78 20 48 4d 44 0a 20 20 20 00 00 00 10 00 00 'ex HMD.   ......'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10 '................'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 b3 '................'
-Checksum: 0xb3
-
-----------------
-
-Block 7, DisplayID Extension Block:
-  Version: 1.2
-  Extension Count: 0
-  Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  2880x1600   90.002624 Hz   1:1    231.757 kHz    686.000000 MHz (aspect 1:1, no 3D stereo, preferred)
-               Hfront    8 Hsync  32 Hback   40 Hpol N
-               Vfront  965 Vsync   6 Vback    4 Vpol N
-    DTD:  2880x1600   79.998880 Hz   1:1    231.757 kHz    686.000000 MHz (aspect 1:1, no 3D stereo)
-               Hfront    8 Hsync  32 Hback   40 Hpol N
-               Vfront 1287 Vsync   6 Vback    4 Vpol N
-    DTD:  2880x1600  120.019035 Hz   1:1    231.757 kHz    686.000000 MHz (aspect 1:1, no 3D stereo)
-               Hfront    8 Hsync  32 Hback   40 Hpol N
-               Vfront  321 Vsync   6 Vback    4 Vpol N
-    DTD:  2880x1600  144.000235 Hz   1:1    232.128 kHz    687.100000 MHz (aspect 1:1, no 3D stereo)
-               Hfront    8 Hsync  32 Hback   40 Hpol N
-               Vfront    3 Vsync   6 Vback    3 Vpol N
-  CTA-861 DisplayID Data Block:
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48
-      Supported sample sizes (bits): 16
-  Checksum: 0x17
-Checksum: 0x90  Unused space in Extension Block: 31 bytes
-
-----------------
-
 Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-Block 3, DisplayID Extension Block:
-  CTA-861 DisplayID Data Block: Unexpected revision (3 != 0).
-Block 5, CTA-861 Extension Block:
-  IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-Block 7, DisplayID Extension Block:
-  CTA-861 DisplayID Data Block: Unexpected revision (3 != 0).
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 31.468 - 232.128 kHz (Monitor: 230.000 - 230.000 kHz)
-    Maximum Clock: 687.100 MHz (Monitor: 600.000 MHz)
+    Horizontal Freq: 31.468 - 215.424 kHz (Monitor: 230.000 - 230.000 kHz)
 
 Failures:
 
@@ -332,27 +187,7 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, DisplayID Extension Block:
-  DisplayID Base Block has no product type.
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 4, Base EDID:
-  Unknown Extension Block.
-Block 5, CTA-861 Extension Block:
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 1.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 19.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 6, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 7 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

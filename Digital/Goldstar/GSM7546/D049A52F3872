@@ -53,6 +53,18 @@ Checksum: 0x4f
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Image size is 930x523 mm, but based on the picture AR it should be 871x523 mm.
+EDID:
+  No Native Video Resolution was defined.
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.799 - 70.082 Hz (Monitor: 59.000 - 61.000 Hz)
+    Horizontal Freq: 31.466 - 63.981 kHz (Monitor: 31.000 - 48.000 kHz)
+    Maximum Clock: 108.000 MHz (Monitor: 90.000 MHz)
+
 Failures:
 
 Block 0, Base EDID:
@@ -60,10 +72,6 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 930x523 mm vs display size 640x380 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 930x523 mm vs display size 640x380 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 59.799 - 70.082 Hz (Monitor: 59.000 - 61.000 Hz)
-    Horizontal Freq: 31.466 - 63.981 kHz (Monitor: 31.000 - 48.000 kHz)
-    Maximum Clock: 108.000 MHz (Monitor: 90.000 MHz)
   Base EDID: The DTD max image size is 930x523mm, which is larger than the display size 640.0x380.0mm.
 
 EDID conformity: FAIL

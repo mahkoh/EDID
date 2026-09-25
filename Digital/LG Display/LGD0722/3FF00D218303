@@ -35,7 +35,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6503, 0.3300
     Green: 0.2998, 0.6103
@@ -69,14 +69,12 @@ Block 1, DisplayID Extension Block:
     Seamless Dynamic Video Timing Support: Yes
   CTA-861 DisplayID Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.1
+    Version: 3
+    Feature Caps: 0x01
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 88 (336.359 cd/m^2)
-    Minimum luminance: 87 (0.392 cd/m^2)
-    Unknown: 0x58 0x57
   Checksum: 0xd5
 Checksum: 0x90
 
@@ -96,7 +94,6 @@ Block 0, Base EDID:
 Block 1, DisplayID Extension Block:
   DisplayID Base Block has no product type.
 EDID:
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

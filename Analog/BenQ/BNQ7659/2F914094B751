@@ -63,13 +63,16 @@ Block 0, Base EDID:
                  Vfront   37 Vsync   2 Vback   60 Vpol N
     Display Range Limits:
       Monitor ranges (GTF): 56-75 Hz V, 31-81 kHz H, max dotclock 140 MHz
-    Display Product Name: 'BenQ FP731'
+    Display Product Name: 'BenQ FP731.  '
 Checksum: 0x9f
 
 ----------------
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Image size is 304x228 mm, but based on the picture AR it should be 304x166 mm.
+  Display Product Name: Non-ASCII character 0xa0 at position 10, can cause problems.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 56.250 - 76.000 Hz (Monitor: 56.000 - 75.000 Hz)
@@ -80,6 +83,6 @@ Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 304x228 mm vs display size 340x270 mm.
-  Display Product Name: Non-printable character.
+  Display Product Name: No newline, but one or more trailing spaces.
 
 EDID conformity: FAIL

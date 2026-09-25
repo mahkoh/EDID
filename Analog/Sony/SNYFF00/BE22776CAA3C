@@ -63,29 +63,16 @@ Checksum: 0x59
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4d d9 00 ff 01 01 01 01 '........M.......'
-  14 11 01 03 08 a0 5a 78 0a 0d c9 a0 57 47 98 27 '......Zx....WG.''
-  12 48 4c 21 08 00 61 40 45 40 31 40 01 01 01 01 '.HL!..a@E@1@....'
-  01 01 01 01 01 01 64 19 00 40 41 00 26 30 1d 88 '......d..@A.&0..'
-  36 00 b0 84 43 00 00 18 0e 1f 00 80 51 00 1e 30 '6...C.......Q..0'
-  40 80 37 00 40 84 63 00 00 1c 00 00 00 fd 00 3a '@.7.@.c........:'
-  3e 1e 32 08 00 0a 20 20 20 20 20 20 00 00 00 fc '>.2...      ....'
-  00 53 4f 4e 59 20 54 56 0a 20 20 20 20 20 00 59 '.SONY TV.     .Y'
-Checksum: 0x59
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x10.
+  Detailed Timing Descriptor #2: Image size is 1600x900 mm, but based on the picture AR it should be 1500x900 mm.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

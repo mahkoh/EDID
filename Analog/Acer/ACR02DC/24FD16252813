@@ -78,26 +78,11 @@ Checksum: 0xa7
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 72 dc 02 ef 51 50 23 '.........r...QP#'
-  23 16 01 03 68 33 1d 78 2e d9 45 a2 55 4d a0 27 '#...h3.x..E.UM.''
-  12 50 54 bf ef 80 81 c0 81 40 71 4f 81 80 81 00 '.PT......@qO....'
-  d1 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 fe 1f 11 00 00 1e 00 00 00 fd 00 37 4b 1e 'E............7K.'
-  50 10 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c 'P...      .....L'
-  56 34 45 45 30 30 39 34 32 30 34 0a 00 00 00 fc 'V4EE0094204.....'
-  00 41 63 65 72 20 56 32 33 35 48 4c 0a 20 00 a7 '.Acer V235HL. ..'
-Checksum: 0xa7
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

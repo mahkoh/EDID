@@ -56,10 +56,10 @@ Checksum: 0xb2
 
 ----------------
 
-Failures:
+Warnings:
 
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 29.935 - 70.082 Hz (Monitor: 59.000 - 61.000 Hz)
 
-EDID conformity: FAIL
+EDID conformity: PASS

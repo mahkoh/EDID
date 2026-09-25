@@ -52,7 +52,7 @@ Block 0, Base EDID:
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 30-240 Hz V, 67-255 kHz H, max dotclock 560 MHz
+      Monitor ranges (Range Limits Only): 30-240 Hz V, 67-255 kHz H, max dotclock 560 MHz
     Display Product Name: 'Acer XB272'
   Extension blocks: 1
 Checksum: 0x96
@@ -62,7 +62,7 @@ Checksum: 0x96
 Block 1, CTA-861 Extension Block:
   Revision: 3
   Basic audio support
-  Native detailed modes: 1
+  Native DTDs: 1
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -94,8 +94,16 @@ Checksum: 0x1f  Unused space in Extension Block: 19 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is identical to VIC 16, which is not present in the CTA Ext Block.
+  Detailed Timing Descriptor #1: Image size is 608x354 mm, but based on the picture AR it should be 608x342 mm.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Detailed Timing Descriptor #2: Image size is 608x354 mm, but based on the picture AR it should be 608x342 mm.
+  Detailed Timing Descriptor #3: Image size is 608x354 mm, but based on the picture AR it should be 608x342 mm.
+  Detailed Timing Descriptor #4: Image size is 608x354 mm, but based on the picture AR it should be 608x342 mm.
+  Detailed Timing Descriptor #5: Image size is 608x354 mm, but based on the picture AR it should be 608x342 mm.
+  Detailed Timing Descriptor #6: Image size is 608x354 mm, but based on the picture AR it should be 608x342 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

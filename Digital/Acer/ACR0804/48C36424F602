@@ -80,7 +80,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -104,15 +104,12 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x1f
-    Maximum luminance: 66 (208.855 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Maximum luminance (without local dimming): 0 (50.000 cd/m^2)
-    Minimum luminance (without local dimming): 0 (0.000 cd/m^2)
   Detailed Timing Descriptors:
     DTD 2:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (609 mm x 348 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
@@ -133,16 +130,17 @@ Checksum: 0xf3  Unused space in Extension Block: 10 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #5: Image size is 609x348 mm, but based on the picture AR it should be 556x348 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 158.112 kHz (Monitor: 30.000 - 160.000 kHz)
+    Maximum Clock: 325.080 MHz (Monitor: 300.000 MHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 28.125 - 158.112 kHz (Monitor: 30.000 - 160.000 kHz)
-    Maximum Clock: 325.080 MHz (Monitor: 300.000 MHz)
 
 EDID conformity: FAIL

@@ -79,26 +79,11 @@ Checksum: 0x62
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 41 0c 62 c0 07 17 09 00 '........A.b.....'
-  10 15 01 03 0e 30 1b 78 ee 13 e4 a3 59 55 9a 25 '.....0.x....YU.%'
-  0f 50 54 bf ef 00 71 4f 81 80 81 8a 95 00 a9 40 '.PT...qO.......@'
-  b3 00 81 40 a9 c0 02 3a 80 18 71 38 2d 40 58 2c '...@...:..q8-@X,'
-  45 00 dc 0c 11 00 00 1e 00 00 00 ff 00 44 4c 41 'E............DLA'
-  31 31 31 36 35 39 35 37 31 39 00 00 00 fc 00 50 '1116595719.....P'
-  68 69 6c 69 70 73 20 32 32 31 54 45 00 00 00 fd 'hilips 221TE....'
-  00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 00 62 '.8L.S...      .b'
-Checksum: 0x62
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

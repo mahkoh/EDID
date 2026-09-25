@@ -73,26 +73,15 @@ Checksum: 0x29
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5a 63 00 dd 07 28 00 00 '........Zc...(..'
-  2d 0c 01 03 0e 23 1c 78 2b 37 b5 9c 55 4e 90 26 '-....#.x+7..UN.&'
-  1e 50 54 bf ef 00 81 80 31 00 01 01 01 01 01 01 '.PT.....1.......'
-  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
-  13 00 59 14 11 00 00 1e 00 00 00 ff 00 41 30 37 '..Y..........A07'
-  30 32 34 35 31 30 32 34 37 0a 00 00 00 fd 00 32 '024510247......2'
-  4b 1e 52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.R...      ....'
-  00 56 47 31 37 35 0a 20 20 20 20 20 20 20 00 29 '.VG175.       .)'
-Checksum: 0x29
+Warnings:
 
-----------------
-
-Failures:
-
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 24.900 - 79.976 kHz (Monitor: 30.000 - 82.000 kHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+Failures:
+
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

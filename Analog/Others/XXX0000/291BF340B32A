@@ -58,6 +58,7 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x20.
+  Detailed Timing Descriptor #2: Dubious image size (32x86 mm is smaller than 100x100 mm).
 
 Failures:
 

@@ -72,32 +72,18 @@ Checksum: 0xda
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 d1 ed 78 45 54 00 00 '...........xET..'
-  27 1e 01 04 a5 35 1e 78 26 0e f5 a5 55 50 9e 26 ''....5.x&...UP.&'
-  10 50 54 a5 6b 80 d1 c0 81 c0 81 00 81 80 a9 c0 '.PT.k...........'
-  b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 13 2a 21 00 00 1e 00 00 00 ff 00 54 39 4c 'E..*!........T9L'
-  30 37 37 35 35 30 31 39 0a 20 00 00 00 fd 00 32 '07755019. .....2'
-  4c 1e 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
-  00 42 65 6e 51 20 47 4c 32 34 38 30 0a 20 00 da '.BenQ GL2480. ..'
-Checksum: 0xda
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

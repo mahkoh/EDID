@@ -78,26 +78,15 @@ Checksum: 0x59
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 69 fb 22 b4 2d 00 00 '.........i.".-..'
-  0d 15 01 03 68 30 1b 78 2a e6 15 a6 55 49 99 27 '....h0.x*...UI.''
-  13 50 54 bf ef 00 81 c0 81 00 81 80 95 00 b3 00 '.PT.............'
-  d1 c0 71 4f 95 0f 02 3a 80 18 71 38 2d 40 58 2c '..qO...:..q8-@X,'
-  45 00 db 0b 11 00 00 1e 00 00 00 ff 00 42 34 4c 'E............B4L'
-  4d 54 46 30 31 31 37 30 30 0a 00 00 00 fd 00 32 'MTF011700......2'
-  4b 40 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K@S...      ....'
-  00 41 53 55 53 20 4d 4c 32 32 39 0a 20 20 00 59 '.ASUS ML229.  .Y'
-Checksum: 0x59
+Warnings:
 
-----------------
-
-Failures:
-
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 64.000 - 83.000 kHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+Failures:
+
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

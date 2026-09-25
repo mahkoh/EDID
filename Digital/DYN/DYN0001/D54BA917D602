@@ -80,40 +80,7 @@ Checksum: 0x80
 Block 1, CTA-861 Extension Block:
   Revision: 3
   Basic audio support
-  Native detailed modes: 1
-  Video Data Block:
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.0.0.0
-Checksum: 0x10  Unused space in Extension Block: 108 bytes
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 13 2e 01 00 01 01 01 01 '................'
-  01 14 01 03 81 10 09 78 0a 46 11 a4 56 50 9d 26 '.......x.F..VP.&'
-  10 50 54 21 08 00 d1 c0 81 c0 01 01 01 01 01 01 '.PT!............'
-  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 a0 5a 00 00 00 1e 00 00 00 fd 00 3a 3e 1e 'E..Z.........:>.'
-  53 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 44 'S...      .....D'
-  79 6e 61 53 63 61 6e 20 48 44 4d 49 00 00 00 11 'ynaScan HDMI....'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 80 '................'
-Checksum: 0x80
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Basic audio support
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
@@ -133,15 +100,14 @@ Checksum: 0x10  Unused space in Extension Block: 108 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Basic Display Parameters & Features: Dubious maximum image size (16x9 is smaller than 10x10 cm).
+  Detailed Timing Descriptor #1: Dubious image size (160x90 mm is smaller than 100x100 mm).
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-Block 3, CTA-861 Extension Block:
-  IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-EDID:
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
@@ -149,16 +115,7 @@ Block 0, Base EDID:
   Display Descriptor #4: Unknown Type 0x11.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 1.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 16.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

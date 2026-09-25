@@ -50,19 +50,6 @@ Checksum: 0x06
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 e4 32 03 00 00 00 00 '........0.2.....'
-  00 15 01 03 90 26 16 78 0a f1 95 a3 55 52 a1 26 '.....&.x....UR.&'
-  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 84 3a 80 42 71 38 21 40 40 60 '.......:.Bq8!@@`'
-  36 00 7f d7 10 00 00 19 00 00 00 00 00 00 00 00 '6...............'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c '...............L'
-  47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe 'G Display.  ....'
-  00 4c 50 31 37 33 57 46 31 2d 54 4c 42 34 00 06 '.LP173WF1-TLB4..'
-Checksum: 0x06
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
@@ -70,9 +57,7 @@ Block 0, Base EDID:
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

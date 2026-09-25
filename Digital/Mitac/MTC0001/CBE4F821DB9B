@@ -70,7 +70,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -166,6 +166,15 @@ Checksum: 0x08  Unused space in Extension Block: 16 bytes
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 70.082 Hz (Monitor: 58.000 - 62.000 Hz)
+    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 136.000 kHz)
+
 Failures:
 
 Block 0, Base EDID:
@@ -174,11 +183,9 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 1600x900 mm vs display size 1220x690 mm.
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI Forum VSDB did not immediately follow the HDMI VSDB.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Detailed Timing Descriptor #3: Mismatch of image size 1600x900 mm vs display size 1220x690 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 70.082 Hz (Monitor: 58.000 - 62.000 Hz)
-    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 136.000 kHz)
   Base EDID: The DTD max image size is 1600x900mm, which is larger than the display size 1220.0x690.0mm.
 
 EDID conformity: FAIL

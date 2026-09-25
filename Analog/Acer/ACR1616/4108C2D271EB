@@ -82,7 +82,7 @@ Checksum: 0xa2
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Native detailed modes: 0
+  Native DTDs: 0
   Detailed Timing Descriptors:
     DTD 2:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz
                  Hfront   70 Hsync 143 Hback  213 Hpol P

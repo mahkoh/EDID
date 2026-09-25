@@ -79,7 +79,6 @@ Block 0, Base EDID:
 Block 1, DisplayID Extension Block:
   DisplayID Base Block has no product type.
 EDID:
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

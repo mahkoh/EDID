@@ -84,22 +84,10 @@ Checksum: 0x8c
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 69 a1 24 01 01 01 01 '.........i.$....'
-  0c 12 01 03 0e 37 23 78 ef 49 55 a9 54 37 ad 25 '.....7#x.IU.T7.%'
-  13 50 54 af cf 00 71 4f 81 80 95 00 b3 00 a9 40 '.PT...qO.......@'
-  d1 00 8b c0 81 40 7d 4b 80 a0 72 b0 2d 40 88 c8 '.....@}K..r.-@..'
-  36 00 06 44 21 00 00 1c 00 00 00 fd 00 37 4b 1e '6..D!........7K.'
-  50 14 02 00 20 50 58 02 80 28 00 00 00 ff 00 38 'P... PX..(.....8'
-  33 4c 4d 4d 53 30 32 33 34 37 34 0a 00 00 00 fc '3LMMS023474.....'
-  00 41 53 55 53 20 4d 4b 32 34 31 0a 20 20 00 8c '.ASUS MK241.  ..'
-Checksum: 0x8c
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
 
 Failures:
@@ -107,9 +95,7 @@ Failures:
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #1: Mismatch of image size 518x324 mm vs display size 550x350 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

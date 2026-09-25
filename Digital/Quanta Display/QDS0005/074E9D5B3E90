@@ -35,17 +35,27 @@ Block 0, Base EDID:
                  Hfront   24 Hsync 136 Hback  160 Hpol N
                  Vfront    3 Vsync   6 Vback   29 Vpol N
     Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 04 c0 2e c0 02 11 11 11 76 c0 12 63 00 '...........v..c.'
-    Alphanumeric Data String: 'C4011'
-    Alphanumeric Data String: ''
+    Alphanumeric Data String: 'C4011.'
+    Alphanumeric Data String: '.....pP'
 Checksum: 0x2b
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x02 at position 5, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0xd8 at position 0, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0xc8 at position 1, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0xb8 at position 2, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0xa8 at position 3, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x90 at position 4, can cause problems.
+
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
-  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: NUL byte at position 6.
+  Alphanumeric Data String: NUL byte at position 7.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 

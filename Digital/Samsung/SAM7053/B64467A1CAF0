@@ -45,7 +45,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6943, 0.2929
     Green: 0.2744, 0.6591
@@ -81,7 +81,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync  10 Vback   51 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 60-240 Hz V, 357-357 kHz H, max dotclock 1940 MHz
+      Monitor ranges (Range Limits Only): 60-240 Hz V, 357-357 kHz H, max dotclock 1940 MHz
     Display Product Name: 'LC49G95T'
     Display Product Serial Number: ...
   Extension blocks: 2
@@ -95,7 +95,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
     VIC  90:  2560x1080   60.000000 Hz  64:27    66.000 kHz    198.000000 MHz
@@ -112,11 +112,18 @@ Block 1, CTA-861 Extension Block:
     BT2020YCC
     BT2020RGB
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.15
+    Version: 2
+    Feature Caps: 0x0f
+      Global Backlight Control Supported
+      Local Dimming Supported
     Minimum Refresh Rate: 60 Hz
     Maximum Refresh Rate: 240 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x04
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      Gamma 2.2 EOTF Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 139 (1015.241 cd/m^2)
     Minimum luminance: 18 (0.051 cd/m^2)
     Maximum luminance (without local dimming): 115 (603.666 cd/m^2)
@@ -129,6 +136,8 @@ Block 1, CTA-861 Extension Block:
       Static metadata type 1
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
+    Full Frame Peak Luminance Index: 0
+    Peak Luminance Index: 0
   Detailed Timing Descriptors:
     DTD 2:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (1193 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
@@ -174,8 +183,11 @@ Checksum: 0x90
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #2: Image size is 1193x336 mm, but based on the picture AR it should be 597x336 mm.
+  Detailed Timing Descriptor #3: Image size is 1193x336 mm, but based on the picture AR it should be 796x336 mm.
+  Detailed Timing Descriptor #5: Image size is 1193x336 mm, but based on the picture AR it should be 597x336 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -185,12 +197,10 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
-  Vendor & Product Identification: The year 2245 is more than one year in the future.
+  Vendor & Product Identification: The year is more than one year in the future.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-EDID:
-  DisplayID: Missing DisplayID Product Identification Data Block.
 
 EDID conformity: FAIL

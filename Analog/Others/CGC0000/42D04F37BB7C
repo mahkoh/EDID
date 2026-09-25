@@ -69,35 +69,23 @@ Checksum: 0x2b
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0c e3 00 00 01 01 01 01 '................'
-  35 14 01 03 00 29 17 78 2a c9 05 a3 57 4b 9c 25 '5....).x*...WK.%'
-  12 50 54 a7 4b 00 81 40 81 80 81 00 8b c0 81 cf '.PT.K..@........'
-  01 01 01 01 01 01 34 21 50 b0 51 00 1b 30 40 70 '......4!P.Q..0@p'
-  36 00 52 0e 11 00 00 1e 00 00 00 ff 00 35 30 35 '6.R..........505'
-  33 44 30 30 31 30 30 30 31 0a 00 00 00 fd 00 38 '3D0010001......8'
-  4b 1f 51 09 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
-  00 4c 38 57 0a 6c 71 31 35 36 0a 20 20 20 00 2b '.L8W.lq156.   .+'
-Checksum: 0x2b
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+  Detailed Timing Descriptor #1: Image size is 338x270 mm, but based on the picture AR it should be 338x190 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 135.000 MHz (Monitor: 90.000 MHz)
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 338x270 mm vs display size 410x230 mm.
   Display Product Name: Non-space after newline.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Maximum Clock: 135.000 MHz (Monitor: 90.000 MHz)
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 338x270mm, which is larger than the display size 410.0x230.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

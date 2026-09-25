@@ -65,24 +65,9 @@ Checksum: 0x44
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 72 ac 00 53 15 90 00 '.........r..S...'
-  09 14 01 03 80 34 1d 78 2a ee d1 a5 55 48 9b 26 '.....4.x*...UH.&'
-  12 50 54 b3 0c 00 71 4f 81 80 95 00 81 00 d1 c0 '.PT...qO........'
-  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 09 25 21 00 00 1e 00 00 00 fd 00 38 4b 1e 'E..%!........8K.'
-  53 12 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4c 'S...      .....L'
-  47 34 30 38 30 31 36 34 32 32 30 0a 00 00 00 fc 'G4080164220.....'
-  00 41 43 45 52 20 58 32 34 33 48 51 0a 20 00 44 '.ACER X243HQ. .D'
-Checksum: 0x44
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

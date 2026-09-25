@@ -54,19 +54,6 @@ Checksum: 0xfb
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 e5 25 00 00 00 00 00 '..........%.....'
-  01 9e 01 04 95 1f 11 78 02 b0 90 97 58 54 92 26 '.......x....XT.&'
-  1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 20 1c 56 a0 50 00 15 30 50 20 '...... .V.P..0P '
-  f3 00 35 ad 10 00 00 1a 66 21 56 aa 51 00 1e 30 '..5.....f!V.Q..0'
-  46 8f 33 00 35 ad 10 00 00 1a 00 00 00 fe 00 48 'F.3.5..........H'
-  49 4d 20 41 58 0a 20 20 20 20 20 20 00 00 00 fe 'IM AX.      ....'
-  70 48 42 31 34 30 57 58 31 2d 35 30 31 0a 00 fb 'pHB140WX1-501...'
-Checksum: 0xfb
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -76,11 +63,9 @@ Block 0, Base EDID:
 Failures:
 
 Block 0, Base EDID:
-  Vendor & Product Identification: The year 2148 is more than one year in the future.
+  Vendor & Product Identification: The year is more than one year in the future.
   Display Descriptor #4: Monitor descriptor block has byte 4 nonzero (0x70).
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -93,7 +93,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
@@ -137,8 +137,8 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
+    LS/RS - Left/Right Surround
     BL/BR - Back Left/Right
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.2.0.0
     Supports_AI
@@ -163,120 +163,25 @@ Checksum: 0x8b  Unused space in Extension Block: 54 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 41 2f 00 00 01 01 01 01 '........A/......'
-  00 16 01 03 80 21 16 78 3e 64 35 a5 54 4f 9e 27 '.....!.x>d5.TO.''
-  12 50 54 23 08 00 d1 c0 8b c0 b3 00 95 00 90 40 '.PT#...........@'
-  81 80 81 40 81 c0 02 3a 80 18 71 38 2d 40 58 2c '...@...:..q8-@X,'
-  25 00 4a dc 10 00 00 1e 5d 1f 56 18 51 00 2d 30 '%.J.....].V.Q.-0'
-  58 2c 25 00 4a dc 10 00 00 1e 00 00 00 fd 00 30 'X,%.J..........0'
-  3c 1e 54 0f 00 0a 20 20 20 20 20 20 00 00 00 fc '<.T...      ....'
-  00 56 53 58 2d 53 35 31 30 0a 20 20 20 20 01 bf '.VSX-S510.    ..'
-Checksum: 0xbf
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-    Linear PCM:
-      Max channels: 8
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-    AC-3:
-      Max channels: 6
-      Supported sample rates (kHz): 48 44.1 32
-      Maximum bit rate: 640 kb/s
-    AAC LC:
-      Max channels: 8
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-      Maximum bit rate: 448 kb/s
-    DTS:
-      Max channels: 7
-      Supported sample rates (kHz): 96 88.2 48 44.1
-      Maximum bit rate: 1536 kb/s
-    One Bit Audio:
-      Max channels: 2
-      Supported sample rates (kHz): 176.4 88.2 44.1
-      Audio Format Code dependent value: 0x00
-    Enhanced AC-3 (DD+):
-      Max channels: 8
-      Supported sample rates (kHz): 48 44.1
-    DTS-HD:
-      Max channels: 8
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
-      Audio Format Code dependent value: 0x01
-    MAT (MLP):
-      Max channels: 8
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-      Supports only Dolby TrueHD
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-    LFE1 - Low Frequency Effects 1
-    FC - Front Center
-    BL/BR - Back Left/Right
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.2.0.0
-    Supports_AI
-    DC_36bit
-    DC_30bit
-    Maximum TMDS clock: 300 MHz
-    Supported Content Types:
-      Photo
-      Cinema
-  Video Capability Data Block:
-    YCbCr quantization: Selectable (via AVI YQ)
-    RGB quantization: Selectable (via AVI Q)
-    PT scan behavior: Supports both over- and underscan
-    IT scan behavior: Supports both over- and underscan
-    CE scan behavior: Supports both over- and underscan
-  Colorimetry Data Block:
-  Detailed Timing Descriptors:
-    DTD 4:   640x480    59.971098 Hz   4:3     31.125 kHz     24.900000 MHz (330 mm x 220 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   31 Vpol P
-Checksum: 0x8b  Unused space in Extension Block: 54 bytes
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Detailed Timing Descriptor #1: Image size is 330x220 mm, but based on the picture AR it should be 330x185 mm.
+  Detailed Timing Descriptor #2: Image size is 330x220 mm, but based on the picture AR it should be 330x185 mm.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
-Block 3, CTA-861 Extension Block:
-  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Detailed Timing Descriptor #3: Image size is 330x220 mm, but based on the picture AR it should be 293x220 mm.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 4.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Video Capability Data Block: Only one instance of this Data Block is allowed.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

@@ -60,7 +60,7 @@ Block 0, Base EDID:
     GTF     :  1280x1024   69.999805 Hz   5:4     74.620 kHz    128.943000 MHz
     DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
     DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
-    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    GTF     :  1024x768    72.000073 Hz   4:3     57.672 kHz     78.434000 MHz
   Detailed Timing Descriptors:
     DTD 1:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz (337 mm x 270 mm)
                  Hfront   16 Hsync 144 Hback  248 Hpol P
@@ -73,27 +73,12 @@ Checksum: 0x32
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1d d2 00 00 fe 00 00 00 '................'
-  13 12 01 03 80 22 1b 78 eb 10 36 a7 55 47 a1 24 '.....".x..6.UG.$'
-  0d 4f 54 bf ef 00 81 80 81 8a 81 40 71 4f 61 4c '.OT........@qOaL'
-  01 01 01 01 01 01 bc 34 00 98 51 00 2a 40 10 90 '.......4..Q.*@..'
-  13 00 51 0e 11 00 00 1e 00 00 00 ff 00 30 30 30 '..Q..........000'
-  32 35 34 0a 20 20 20 20 20 20 00 00 00 fd 00 37 '254.      .....7'
-  4b 1e 50 0e ea 20 20 20 20 20 20 20 00 00 00 fc 'K.P..       ....'
-  00 54 53 37 30 32 4b 44 0a 20 20 20 20 20 00 32 '.TS702KD.     .2'
-Checksum: 0x32
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Display Range Limits: Unknown range class (0xea).
   Display Range Limits: Byte 11 is 0x20 instead of 0x0a.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

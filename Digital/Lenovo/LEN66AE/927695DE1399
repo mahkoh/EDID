@@ -79,7 +79,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
@@ -101,7 +101,8 @@ Block 1, CTA-861 Extension Block:
     Source physical address: 1.0.0.0
     Maximum TMDS clock: 175 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0x00
@@ -125,6 +126,9 @@ Checksum: 0x20  Unused space in Extension Block: 16 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #4: Image size is 477x268 mm, but based on the picture AR it should be 402x268 mm.
+  Detailed Timing Descriptor #5: Image size is 477x268 mm, but based on the picture AR it should be 335x268 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

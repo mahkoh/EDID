@@ -52,27 +52,12 @@ Checksum: 0x12
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 e5 48 0d 00 00 00 00 '..........H.....'
-  20 22 01 04 a5 1e 13 78 02 0a 85 95 5d 59 92 29 ' ".....x....]Y.)'
-  1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 61 40 80 04 71 b0 3c 40 30 20 '......a@..q.<@0 '
-  36 00 2e bc 10 00 00 1a 00 00 00 10 20 20 20 20 '6...........    '
-  20 20 20 20 20 20 20 20 20 20 00 00 00 fe 00 42 '          .....B'
-  4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fc 'OE CQ.      ....'
-  00 4e 56 31 34 30 57 55 4d 2d 4e 34 4d 0a 00 12 '.NV140WUM-N4M...'
-Checksum: 0x12
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Display Descriptor #2: Monitor descriptor block has byte 4 nonzero (0x20).
   Dummy Descriptor: Dummy block filled with garbage.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

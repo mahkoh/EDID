@@ -76,7 +76,7 @@ Checksum: 0x98
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Native detailed modes: 2
+  Native DTDs: 2
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
@@ -85,7 +85,7 @@ Block 1, CTA-861 Extension Block:
     SCDC Present
   Vendor-Specific Data Block (Microsoft), OUI CA-12-5C:
     Version: 1
-    Display Product Primary Use Case: 7 (Virtual reality headset)
+    Display Product Primary Use Case: Virtual reality headset
     Container ID: 1bb9d9fc-4c1e-51e5-a934-99ae2a799829
   Detailed Timing Descriptors:
     DTD 3:  2880x1440   90.000180 Hz   2:1    135.270 kHz    400.400000 MHz (60 mm x 50 mm)
@@ -98,53 +98,16 @@ Checksum: 0xe6  Unused space in Extension Block: 51 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 72 ce 7f 46 d7 a9 8e '.........r..F...'
-  0f 1b 01 03 80 06 05 78 1e ee 91 a3 54 4c 99 26 '.......x....TL.&'
-  0f 50 54 00 00 00 00 00 00 00 00 00 00 00 00 00 '.PT.............'
-  00 00 00 00 00 00 68 9c 40 50 b0 a0 3f 50 08 20 '......h.@P..?P. '
-  18 0c 3c 32 00 00 00 18 8c 69 40 74 b0 a0 3f 50 '..<2.....i@t..?P'
-  18 20 18 0c 3c 32 00 00 00 18 00 00 00 fc 00 4d '. ..<2.........M'
-  52 0a 20 20 20 20 20 20 20 20 20 20 00 00 00 fd 'R.          ....'
-  00 3c 5a 1f 87 3c 00 0a 20 20 20 20 20 20 01 98 '.<Z..<..      ..'
-Checksum: 0x98
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Native detailed modes: 2
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.0.0.0
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
-    Version: 1
-    Maximum TMDS Character Rate: 405 MHz
-    SCDC Present
-  Vendor-Specific Data Block (Microsoft), OUI CA-12-5C:
-    Version: 1
-    Display Product Primary Use Case: 7 (Virtual reality headset)
-    Container ID: 1bb9d9fc-4c1e-51e5-a934-99ae2a799829
-  Detailed Timing Descriptors:
-    DTD 5:  2880x1440   90.000180 Hz   2:1    135.270 kHz    400.400000 MHz (60 mm x 50 mm)
-                 Hfront    8 Hsync  32 Hback   40 Hpol N
-                 Vfront   49 Vsync   8 Vback    6 Vpol N
-    DTD 6:  2880x1440   60.004601 Hz   2:1     90.187 kHz    270.200000 MHz (60 mm x 50 mm)
-                 Hfront   24 Hsync  32 Hback   60 Hpol N
-                 Vfront   49 Vsync   8 Vback    6 Vpol N
-Checksum: 0xe6  Unused space in Extension Block: 51 bytes
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Dubious maximum image size (6x5 is smaller than 10x10 cm).
+  Detailed Timing Descriptor #1: Dubious image size (60x50 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (60x50 mm is smaller than 100x100 mm).
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-Block 3, CTA-861 Extension Block:
-  IT Video Formats are overscanned by default, but normally this should be underscanned.
-EDID:
-  CTA-861: Multiple native progressive timings are defined.
+  Detailed Timing Descriptor #3: Dubious image size (60x50 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #4: Dubious image size (60x50 mm is smaller than 100x100 mm).
 
 Failures:
 
@@ -160,14 +123,7 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
-  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

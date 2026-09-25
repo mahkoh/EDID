@@ -75,19 +75,6 @@ Checksum: 0xda
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 ae ae 15 c1 06 00 00 '........0.......'
-  27 19 01 04 6c 2c 19 78 2a fd a5 a2 56 51 9e 27 ''...l,.x*...VQ.''
-  0c 50 54 af ef 00 71 4f 81 80 81 8a 95 00 a9 c0 '.PT...qO........'
-  a9 c0 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50 '......0*@.`.d0.P'
-  13 00 bb f9 10 00 00 1e 00 00 00 ff 00 30 35 38 '.............058'
-  33 32 46 33 39 4e 31 37 32 39 00 00 00 fd 00 32 '32F39N1729.....2'
-  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
-  00 4c 45 4e 20 4c 54 32 30 32 34 77 41 0a 00 da '.LEN LT2024wA...'
-Checksum: 0xda
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -96,10 +83,8 @@ Block 0, Base EDID:
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

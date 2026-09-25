@@ -76,28 +76,20 @@ Checksum: 0x0d
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 41 2f 34 00 01 01 01 01 '........A/4.....'
-  00 0f 01 03 80 6e 3e 78 6a 0b 32 a0 56 3b b3 29 '.....n>xj.2.V;.)'
-  13 48 49 bf ee 80 31 59 45 59 61 59 71 40 81 40 '.HI...1YEYaYq@.@'
-  81 80 90 40 01 01 64 19 00 40 41 00 26 30 18 88 '...@..d..@A.&0..'
-  36 00 3b 6c 32 00 00 18 0e 1f 00 80 51 00 1e 30 '6.;l2.......Q..0'
-  40 80 37 00 4e 6c 42 00 00 1c 00 00 00 fd 00 37 '@.7.NlB........7'
-  3d 18 41 0c 00 0a 20 20 20 20 20 20 00 00 00 fc '=.A...      ....'
-  00 50 44 50 2d 35 30 34 43 4d 58 0a 20 20 00 0d '.PDP-504CMX.  ..'
-Checksum: 0x0d
+Warnings:
 
-----------------
-
-Failures:
-
-Block 1, Base EDID:
-  Unknown Extension Block.
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #2: Image size is 1102x620 mm, but based on the picture AR it should be 1033x620 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 56.250 - 85.061 Hz (Monitor: 55.000 - 61.000 Hz)
     Horizontal Freq: 31.466 - 68.681 kHz (Monitor: 24.000 - 65.000 kHz)
     Maximum Clock: 121.750 MHz (Monitor: 120.000 MHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+Failures:
+
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

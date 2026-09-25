@@ -62,7 +62,7 @@ Block 0, Base EDID:
     DMT 0x2f:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz
     DMT 0x30:  1440x900    74.984427 Hz  16:10    70.635 kHz    136.750000 MHz
     DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
-    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    GTF     :  1024x768    72.000073 Hz   4:3     57.672 kHz     78.434000 MHz
   Detailed Timing Descriptors:
     DTD 1:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz (440 mm x 325 mm)
                  Hfront  104 Hsync 176 Hback  280 Hpol N
@@ -75,21 +75,10 @@ Checksum: 0xb6
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 05 e3 31 19 30 0c 00 00 '..........1.0...'
-  23 12 01 03 68 2c 21 78 2a a9 80 a5 55 48 9b 26 '#...h,!x*...UH.&'
-  12 50 54 bd ef 00 71 4f 81 80 95 00 95 0f b3 00 '.PT...qO........'
-  61 4c 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0 'aL....!9.0b.'@h.'
-  36 00 b8 45 11 00 00 1c 00 00 00 ff 00 4b 33 35 '6..E.........K35'
-  38 38 49 41 30 30 33 31 32 30 00 00 00 fd 00 3c '88IA003120.....<'
-  4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 39 33 31 57 78 0a 20 20 20 20 20 20 20 00 b6 '.931Wx.       ..'
-Checksum: 0xb6
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 440x325 mm, but based on the picture AR it should be 440x275 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 146.250 MHz (Monitor: 140.000 MHz)
@@ -97,9 +86,7 @@ EDID:
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -63,7 +63,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
@@ -115,8 +115,8 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
+    LS/RS - Left/Right Surround
     BL/BR - Back Left/Right
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.5.0.0
     Supports_AI
@@ -146,9 +146,8 @@ Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Audio latency < Video latency (20 ms < 40 ms). This is discouraged for devices without HDMI output.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Interlaced audio latency < Interlaced video latency (30 ms < 60 ms). This is discouraged for devices without HDMI output.
+  Detailed Timing Descriptor #5: Image size is 1200x900 mm, but based on the picture AR it should be 1200x800 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-EDID:
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 

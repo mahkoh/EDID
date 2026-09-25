@@ -53,27 +53,17 @@ Checksum: 0x87
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0d af 57 14 01 00 00 00 '..........W.....'
-  03 14 01 03 80 1f 11 78 0a ba c5 94 57 54 91 27 '.......x....WT.''
-  20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ' PT.............'
-  01 01 01 01 01 01 78 1d 56 c2 50 00 26 30 1f 41 '......x.V.P.&0.A'
-  4c 00 35 ae 10 00 00 18 a5 13 56 c2 50 00 26 30 'L.5.......V.P.&0'
-  1f 41 4c 00 35 ae 10 00 00 18 00 00 00 fe 00 43 '.AL.5..........C'
-  4d 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'MO.         ....'
-  00 4e 31 34 30 42 36 2d 4c 32 34 0a 20 20 00 87 '.N140B6-L24.  ..'
-Checksum: 0x87
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
 Block 0, Base EDID:
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -67,27 +67,17 @@ Checksum: 0x4a
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1e 6d 71 4b 50 48 00 00 '.........mqKPH..'
-  0a 11 01 03 80 2f 1e 78 0a ae c5 a2 57 4a 9c 25 '...../.x....WJ.%'
-  12 50 54 a5 6e 00 81 80 95 00 d1 c0 b3 01 01 01 '.PT.n...........'
-  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
-  36 00 99 e6 10 00 00 1c 1a 36 80 a0 70 38 1f 40 '6........6..p8.@'
-  30 20 35 00 9a e7 10 00 00 1c 00 00 00 fd 00 39 '0 5............9'
-  4b 1f 54 12 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.T...      ....'
-  00 31 39 4c 53 34 44 2d 5a 42 0a 20 20 20 00 4a '.19LS4D-ZB.   .J'
-Checksum: 0x4a
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 409x230 mm, but based on the picture AR it should be 368x230 mm.
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 409x230 mm vs display size 470x300 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 410x231 mm vs display size 470x300 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

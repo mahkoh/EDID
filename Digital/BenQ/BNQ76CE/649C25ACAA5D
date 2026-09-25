@@ -77,16 +77,16 @@ Block 0, Base EDID:
     DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
     DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
   Detailed Timing Descriptors:
-    DTD  1:  1920x1080   59.943434 Hz  16:9     67.436 kHz    148.360000 MHz (480 mm x 270 mm)
-                  Hfront   88 Hsync  44 Hback  148 Hpol P
-                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    DTD  2:  1920x1080i  59.943434 Hz  16:9     33.718 kHz     74.180000 MHz (480 mm x 135 mm)
-                  Hfront   88 Hsync  44 Hback  148 Hpol P
-                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
-                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-    DTD  3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (320 mm x 180 mm)
-                  Hfront  110 Hsync  40 Hback  220 Hpol P
-                  Vfront    5 Vsync   5 Vback   20 Vpol N
+    DTD 1:  1920x1080   59.943434 Hz  16:9     67.436 kHz    148.360000 MHz (480 mm x 270 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 2:  1920x1080i  59.943434 Hz  16:9     33.718 kHz     74.180000 MHz (480 mm x 135 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (320 mm x 180 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol N
     Display Product Name: 'BenQ FP222WH'
   Extension blocks: 1
 Checksum: 0xdb
@@ -98,7 +98,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
@@ -117,77 +117,21 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
   Detailed Timing Descriptors:
-    DTD  4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (320 mm x 180 mm)
-                  Hfront  110 Hsync  40 Hback  220 Hpol P
-                  Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD  5:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (320 mm x 180 mm)
-                  Hfront  440 Hsync  40 Hback  220 Hpol P
-                  Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD  6:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (180 mm x 120 mm)
-                  Hfront   16 Hsync  62 Hback   60 Hpol N
-                  Vfront    9 Vsync   6 Vback   30 Vpol N
-    DTD  7:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (180 mm x 144 mm)
-                  Hfront   12 Hsync  64 Hback   68 Hpol N
-                  Vfront    5 Vsync   5 Vback   39 Vpol N
-    DTD  8:   640x480    59.952381 Hz   4:3     31.475 kHz     25.180000 MHz (160 mm x 120 mm)
-                  Hfront    8 Hsync  96 Hback   40 Hpol N Hborder 8
-                  Vfront    2 Vsync   2 Vback   25 Vpol N Vborder 8
-Checksum: 0xbc  Unused space in Extension Block: 10 bytes
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 d1 ce 76 45 54 01 01 '...........vET..'
-  2a 11 01 03 80 2f 1e 78 ee cf 65 a4 55 49 99 27 '*..../.x..e.UI.''
-  10 50 54 2d cf 00 45 4f 61 4f 81 40 81 80 81 8f '.PT-..EOaO.@....'
-  71 4f 01 01 01 01 f4 39 80 18 71 38 2d 40 58 2c 'qO.....9..q8-@X,'
-  45 00 e0 0e 11 00 00 1e fa 1c 80 18 71 1c 16 20 'E...........q.. '
-  58 2c 25 00 e0 87 10 00 00 9e 01 1d 00 72 51 d0 'X,%..........rQ.'
-  1e 20 6e 28 55 00 40 b4 10 00 00 1a 00 00 00 fc '. n(U.@.........'
-  00 42 65 6e 51 20 46 50 32 32 32 57 48 0a 01 db '.BenQ FP222WH...'
-Checksum: 0xdb
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 0
-  Video Data Block:
-    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 96 88.2 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.0.0.0
-  Detailed Timing Descriptors:
-    DTD  9:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (320 mm x 180 mm)
-                  Hfront  110 Hsync  40 Hback  220 Hpol P
-                  Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD 10:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (320 mm x 180 mm)
-                  Hfront  440 Hsync  40 Hback  220 Hpol P
-                  Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD 11:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (180 mm x 120 mm)
-                  Hfront   16 Hsync  62 Hback   60 Hpol N
-                  Vfront    9 Vsync   6 Vback   30 Vpol N
-    DTD 12:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (180 mm x 144 mm)
-                  Hfront   12 Hsync  64 Hback   68 Hpol N
-                  Vfront    5 Vsync   5 Vback   39 Vpol N
-    DTD 13:   640x480    59.952381 Hz   4:3     31.475 kHz     25.180000 MHz (160 mm x 120 mm)
-                  Hfront    8 Hsync  96 Hback   40 Hpol N Hborder 8
-                  Vfront    2 Vsync   2 Vback   25 Vpol N Vborder 8
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (320 mm x 180 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 5:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (320 mm x 180 mm)
+                 Hfront  440 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 6:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (180 mm x 120 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 7:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (180 mm x 144 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 8:   640x480    59.952381 Hz   4:3     31.475 kHz     25.180000 MHz (160 mm x 120 mm)
+                 Hfront    8 Hsync  96 Hback   40 Hpol N Hborder 8
+                 Vfront    2 Vsync   2 Vback   25 Vpol N Vborder 8
 Checksum: 0xbc  Unused space in Extension Block: 10 bytes
 
 ----------------
@@ -195,14 +139,12 @@ Checksum: 0xbc  Unused space in Extension Block: 10 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Image size is 480x135 mm, but based on the picture AR it should be 240x135 mm.
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 4.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Video Data Block: VIC 20 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 20 and the first DTD are not identical. Is this intended?
   Detailed Timing Descriptor #8: The use of non-zero borders in a DTD is not recommended.
-Block 3, CTA-861 Extension Block:
-  IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Detailed Timing Descriptor #13: The use of non-zero borders in a DTD is not recommended.
 
 Failures:
 
@@ -219,26 +161,8 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #7: Mismatch of image size 180x144 mm vs display size 470x300 mm.
   Detailed Timing Descriptor #8: Mismatch of image size 160x120 mm vs display size 470x300 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 20.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 1.
-  Video Data Block: Duplicate VIC 18.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 5.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Detailed Timing Descriptor #9: Mismatch of image size 320x180 mm vs display size 470x300 mm.
-  Detailed Timing Descriptor #10: Mismatch of image size 320x180 mm vs display size 470x300 mm.
-  Detailed Timing Descriptor #11: Mismatch of image size 180x120 mm vs display size 470x300 mm.
-  Detailed Timing Descriptor #12: Mismatch of image size 180x144 mm vs display size 470x300 mm.
-  Detailed Timing Descriptor #13: Mismatch of image size 160x120 mm vs display size 470x300 mm.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   Base EDID: The DTD max image size is 480x270mm, which is larger than the display size 470.0x300.0mm.
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
 
 EDID conformity: FAIL

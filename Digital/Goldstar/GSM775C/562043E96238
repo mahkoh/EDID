@@ -37,7 +37,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6650, 0.3281
     Green: 0.3046, 0.6201
@@ -67,7 +67,7 @@ Block 0, Base EDID:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 60-165 Hz V, 200-200 kHz H, max dotclock 420 MHz
+      Monitor ranges (Range Limits Only): 60-165 Hz V, 200-200 kHz H, max dotclock 420 MHz
     Display Product Name: 'LG ULTRAGEAR'
   Extension blocks: 1
 Checksum: 0xe9
@@ -79,7 +79,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -105,15 +105,13 @@ Block 1, CTA-861 Extension Block:
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
     VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.5
+    Version: 2
+    Feature Caps: 0x05
+      Global Backlight Control Supported
     Minimum Refresh Rate: 60 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x04
-    Maximum luminance: 82 (295.365 cd/m^2)
-    Minimum luminance: 46 (0.096 cd/m^2)
-    Maximum luminance (without local dimming): 82 (295.365 cd/m^2)
-    Minimum luminance (without local dimming): 46 (0.096 cd/m^2)
   Detailed Timing Descriptors:
     DTD 3:  1920x1080   74.989899 Hz  16:9     84.364 kHz    185.600000 MHz (698 mm x 393 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
@@ -135,6 +133,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 50.000 - 164.866 Hz (Monitor: 60.000 - 165.000 Hz)

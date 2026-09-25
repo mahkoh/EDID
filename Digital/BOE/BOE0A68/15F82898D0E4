@@ -56,29 +56,17 @@ Checksum: 0xa3
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 e5 68 0a 00 00 00 00 '..........h.....'
-  16 1f 01 04 a5 22 0a 78 02 de 50 a3 54 4c 99 26 '.....".x..P.TL.&'
-  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 a8 6b 00 a0 f0 4c 30 40 30 20 '.......k...L0@0 '
-  35 00 58 63 10 00 00 1a e2 31 00 a0 a0 de 30 20 '5.Xc.....1....0 '
-  30 20 35 00 58 63 10 00 00 1a 2e 1d 80 a0 70 26 '0 5.Xc........p&'
-  30 20 30 20 35 00 58 63 10 00 00 1a 00 00 00 fe '0 0 5.Xc........'
-  00 4e 56 31 34 30 58 54 4d 2d 4e 35 32 0a 00 a3 '.NV140XTM-N52...'
-Checksum: 0xa3
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Dubious image size (344x99 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (344x99 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #3: Dubious image size (344x99 mm is smaller than 100x100 mm).
   Missing Display Product Name.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

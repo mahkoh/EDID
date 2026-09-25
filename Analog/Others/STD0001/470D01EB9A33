@@ -58,6 +58,12 @@ Checksum: 0x83
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Dubious image size (16x10 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (16x9 mm is smaller than 100x100 mm).
+
 Failures:
 
 Block 0, Base EDID:

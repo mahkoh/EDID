@@ -95,7 +95,7 @@ Block 1, CTA-861 Extension Block:
   Revision: 3
   Underscans IT Video Formats by default
   Basic audio support
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
@@ -139,77 +139,16 @@ Checksum: 0xf9  Unused space in Extension Block: 20 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 d1 34 7f 45 54 00 00 '..........4.ET..'
-  2a 19 01 03 80 35 1e 78 2e 9d e1 a6 54 54 9f 26 '*....5.x....TT.&'
-  0d 50 54 a5 6b 80 d1 c0 31 7c 45 68 45 7c 61 68 '.PT.k...1|EhE|ah'
-  61 7c 95 3c 31 68 02 3a 80 18 71 38 2d 40 58 2c 'a|.<1h.:..q8-@X,'
-  45 00 13 2a 21 00 00 1e 00 00 00 ff 00 59 41 46 'E..*!........YAF'
-  30 31 32 33 34 53 4c 30 0a 20 00 00 00 fd 00 18 '01234SL0. ......'
-  78 0f 87 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'x.....      ....'
-  00 42 65 6e 51 20 58 4c 32 34 31 31 5a 0a 01 40 '.BenQ XL2411Z..@'
-Checksum: 0x40
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Native detailed modes: 1
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.0.0.0
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Detailed Timing Descriptors:
-    DTD 6:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (531 mm x 298 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
-    DTD 7:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (531 mm x 298 mm)
-                 Hfront  110 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD 8:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (531 mm x 298 mm)
-                 Hfront  110 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD 9:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (531 mm x 298 mm)
-                 Hfront  110 Hsync  40 Hback  220 Hpol N
-                 Vfront    5 Vsync   5 Vback   20 Vpol N
-Checksum: 0xf9  Unused space in Extension Block: 20 bytes
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 4.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-Block 3, CTA-861 Extension Block:
-  Detailed Timing Descriptor #9: DTD is similar but not identical to VIC 4.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
-  CTA-861: Multiple native progressive timings are defined.
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 229.747 MHz (Monitor: 170.000 MHz)
 
 Failures:
 
@@ -220,20 +159,7 @@ Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 1.
   Video Data Block: Duplicate VIC 19.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 32.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Maximum Clock: 229.747 MHz (Monitor: 170.000 MHz)
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

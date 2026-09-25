@@ -71,19 +71,6 @@ Checksum: 0xfe
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0e 11 71 13 38 36 35 44 '..........q.865D'
-  03 0a 01 02 08 1c 15 70 ea fb 82 a1 55 4b 97 24 '.......p....UK.$'
-  11 48 4f bf ee 00 31 59 45 59 01 01 01 01 01 01 '.HO...1YEY......'
-  01 01 01 01 01 01 f9 15 20 f8 30 58 1f 20 20 40 '........ .0X.  @'
-  13 00 0b c8 10 00 00 18 00 00 00 fd 00 32 78 1e '.............2x.'
-  3d 08 00 0a 20 20 20 20 20 20 00 00 00 ff 00 30 '=...      .....0'
-  30 33 42 42 32 33 4e 44 35 36 38 0a 00 00 00 fc '03BB23ND568.....'
-  00 43 4f 4d 50 41 51 20 53 35 31 30 0a 20 00 fe '.COMPAQ S510. ..'
-Checksum: 0xfe
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -94,9 +81,7 @@ Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 267x200 mm vs display size 280x210 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

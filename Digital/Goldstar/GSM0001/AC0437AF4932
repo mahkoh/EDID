@@ -70,7 +70,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
@@ -169,13 +169,24 @@ Checksum: 0x7b  Unused space in Extension Block: 22 bytes
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: DTD is identical to VIC 97, which is not present in the CTA Ext Block.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 93 and the first DTD are not identical. Is this intended?
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 120.000 Hz (Monitor: 58.000 - 121.000 Hz)
+    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 136.000 kHz)
+  CTA-861: DTD pixelclock indicates HDMI 2.x support, VICs indicate HDMI 1.x.
+
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 120.000 Hz (Monitor: 58.000 - 121.000 Hz)
-    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 136.000 kHz)
+  CTA-861: The maximum HDMI TMDS clock is 300000 kHz, but one or more video timings go up to 594000 kHz.
 
 EDID conformity: FAIL

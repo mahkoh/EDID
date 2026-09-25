@@ -71,31 +71,17 @@ Checksum: 0xbc
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1e 6d 74 56 5d 63 02 00 '.........mtV]c..'
-  05 12 01 04 a5 37 22 78 e2 fe 25 a8 53 37 ae 24 '.....7"x..%.S7.$'
-  11 50 54 a5 4b 80 a9 40 81 8f b3 00 81 4f d1 c0 '.PT.K..@.....O..'
-  01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
-  36 00 26 57 21 00 00 1a 48 3f 40 30 62 b0 32 40 '6.&W!...H?@0b.2@'
-  40 c0 13 00 26 57 21 00 00 1e 00 00 00 fd 00 38 '@...&W!........8'
-  4b 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 57 32 36 30 30 0a 20 20 20 20 20 20 20 00 bc '.W2600.       ..'
-Checksum: 0xbc
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Image size is 550x343 mm, but based on the picture AR it should be 457x343 mm.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

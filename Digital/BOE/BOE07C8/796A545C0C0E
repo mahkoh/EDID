@@ -57,7 +57,7 @@ Checksum: 0x5a
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Native detailed modes: 0
+  Native DTDs: 0
   Colorimetry Data Block:
     BT2020RGB
   HDR Static Metadata Data Block:

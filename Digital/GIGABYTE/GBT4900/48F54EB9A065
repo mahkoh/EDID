@@ -90,7 +90,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   33 Vpol P
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-60 Hz V, 30-135 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 48-60 Hz V, 30-135 kHz H, max dotclock 600 MHz
     Display Product Name: 'AORUS CO49DQ'
   Extension blocks: 1
 Checksum: 0xd1
@@ -103,49 +103,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Video Data Block:
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  15:  1440x480    59.940060 Hz  16:9     31.469 kHz     54.000000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
-    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
-    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-Checksum: 0xf3  Unused space in Extension Block: 104 bytes
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1c 54 00 49 01 01 01 01 '.........T.I....'
-  19 21 01 04 b5 78 22 78 fa 61 e5 af 4d 3c ba 25 '.!...x"x.a..M<.%'
-  0c 50 54 bf ef 80 71 4f 81 c0 81 00 81 40 81 80 '.PT...qO.....@..'
-  95 00 a9 c0 b3 00 56 5e 00 a0 a0 a0 29 50 30 20 '......V^....)P0 '
-  35 00 ad 53 41 00 00 1e 00 00 00 ff 00 31 30 31 '5..SA........101'
-  30 31 30 31 0a 20 20 20 20 20 00 00 00 fd 00 30 '0101.     .....0'
-  3c 1e 87 3c 01 0a 20 20 20 20 20 20 00 00 00 fc '<..<..      ....'
-  00 41 4f 52 55 53 20 43 4f 34 39 44 51 0a 01 d1 '.AORUS CO49DQ...'
-Checksum: 0xd1
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
@@ -170,10 +128,12 @@ Checksum: 0xf3  Unused space in Extension Block: 104 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Image size is 1197x339 mm, but based on the picture AR it should be 602x339 mm.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-Block 3, CTA-861 Extension Block:
+  Video Data Block: VIC 3 and the first DTD are not identical. Is this intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
@@ -184,23 +144,8 @@ Failures:
 
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 15.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 94.
-  Video Data Block: Duplicate VIC 95.
-  Video Data Block: Duplicate VIC 97.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

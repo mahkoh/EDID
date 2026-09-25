@@ -77,22 +77,10 @@ Checksum: 0x4e
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 14 6d 00 32 01 01 01 01 '.........m.2....'
-  1a 1d 01 04 a5 3c 21 78 e2 2d 36 a7 54 38 ae 26 '.....<!x.-6.T8.&'
-  0d 4f 54 bf cf 00 81 c0 b3 00 95 00 81 80 a9 c0 '.OT.............'
-  81 00 71 40 8b c0 02 3a 80 18 71 38 2d 40 58 2c '..q@...:..q8-@X,'
-  45 00 54 4f 21 00 00 1a 66 21 56 aa 51 00 1e 30 'E.TO!...f!V.Q..0'
-  46 8f 33 00 99 e6 10 00 00 16 00 00 00 ff 00 31 'F.3............1'
-  32 35 38 30 0a 20 20 20 20 20 20 20 00 00 00 fc '2580.       ....'
-  00 56 47 41 0a 20 20 20 20 20 20 20 20 20 00 4e '.VGA.         .N'
-Checksum: 0x4e
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x51.
@@ -101,9 +89,7 @@ Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 409x230 mm vs display size 600x330 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

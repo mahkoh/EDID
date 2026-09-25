@@ -67,7 +67,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
     VIC 100:  4096x2160   30.000000 Hz 256:135   67.500 kHz    297.000000 MHz
@@ -108,7 +108,7 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
     DC_36bit
@@ -133,8 +133,8 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency + Low-Latency-HDMI
     Supports 10b 12b 444: 10 bit
-    Target Min PQ v2: 180 (0.04555910 cd/m^2)
-    Target Max PQ v2: 2575 (332 cd/m^2)
+    Target Min PQ v2: 180 (0.04494425 cd/m^2)
+    Target Max PQ v2: 2575 (320 cd/m^2)
     Unique Rx, Ry: 0.63671875, 0.34375000
     Unique Gx, Gy: 0.31250000, 0.61328125
     Unique Bx, By: 0.14843750, 0.04296875
@@ -165,6 +165,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 93 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 

@@ -52,7 +52,7 @@ Block 0, Base EDID:
     Display Product Serial Number: ...
     Display Product Name: 'VFV'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
+      Monitor ranges (Range Limits Only): 56-76 Hz V, 30-83 kHz H, max dotclock 170 MHz
   Extension blocks: 1
 Checksum: 0xbe
 
@@ -64,7 +64,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 2
+  Native DTDs: 2
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
   Audio Data Block:
@@ -110,8 +110,6 @@ Block 1, CTA-861 Extension Block:
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 16.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-EDID:
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 

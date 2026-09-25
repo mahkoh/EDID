@@ -37,7 +37,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6542, 0.3330
     Green: 0.3046, 0.6259
@@ -63,7 +63,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Product Name: 'OMEN by HP 32'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-75 Hz V, 115-115 kHz H, max dotclock 300 MHz
+      Monitor ranges (Range Limits Only): 48-75 Hz V, 115-115 kHz H, max dotclock 300 MHz
     Display Product Serial Number: ...
   Extension blocks: 1
 Checksum: 0x11
@@ -75,7 +75,7 @@ Block 1, CTA-861 Extension Block:
   Underscans IT Video Formats by default
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -102,7 +102,10 @@ Checksum: 0x14  Unused space in Extension Block: 59 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

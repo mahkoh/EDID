@@ -72,7 +72,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -140,17 +140,20 @@ Checksum: 0x24  Unused space in Extension Block: 12 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-
-Failures:
-
-Block 1, CTA-861 Extension Block:
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 60.317 Hz (Monitor: 56.000 - 61.000 Hz)
     Horizontal Freq: 28.125 - 135.000 kHz (Monitor: 30.000 - 90.000 kHz)
     Maximum Clock: 594.000 MHz (Monitor: 320.000 MHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

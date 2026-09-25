@@ -79,6 +79,10 @@ Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 60.000 - 75.000 kHz)
+    Maximum Clock: 135.000 MHz (Monitor: 110.000 MHz)
 
 Failures:
 
@@ -86,9 +90,5 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Alphanumeric Data String: Non-space after newline.
   Missing Display Product Name.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 60.000 - 75.000 kHz)
-    Maximum Clock: 135.000 MHz (Monitor: 110.000 MHz)
 
 EDID conformity: FAIL

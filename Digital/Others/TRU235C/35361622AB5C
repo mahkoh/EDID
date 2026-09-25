@@ -52,19 +52,6 @@ Checksum: 0x1d
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 52 55 5c 23 00 00 00 00 '........RU\#....'
-  09 1f 01 04 95 1a 0e 78 02 5e da a1 4f 4b 83 24 '.......x.^..OK.$'
-  25 4b 53 00 00 00 01 01 01 01 01 01 01 01 01 01 '%KS.............'
-  01 01 01 01 01 01 ce 1d 56 e2 50 00 1e 30 30 20 '........V.P..00 '
-  35 00 00 90 10 00 00 1a 00 00 00 00 00 00 00 00 '5...............'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 48 '...............H'
-  4b 43 20 31 38 38 36 2d 41 30 30 20 00 00 00 fe 'KC 1886-A00 ....'
-  00 48 4b 43 20 31 38 38 36 2d 41 30 30 20 00 1d '.HKC 1886-A00 ..'
-Checksum: 0x1d
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -74,11 +61,9 @@ Failures:
 
 Block 0, Base EDID:
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
-  Alphanumeric Data String: One or more trailing spaces.
-  Alphanumeric Data String: One or more trailing spaces.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Alphanumeric Data String: No newline, but one or more trailing spaces.
+  Alphanumeric Data String: No newline, but one or more trailing spaces.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

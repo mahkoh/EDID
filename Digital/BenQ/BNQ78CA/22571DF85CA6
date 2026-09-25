@@ -72,26 +72,16 @@ Checksum: 0x4b
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 d1 ca 78 45 54 00 00 '...........xET..'
-  2e 17 01 03 80 3c 22 78 2e 2f a5 a5 54 50 9e 27 '.....<"x./..TP.''
-  10 50 54 a5 6b 80 d1 c0 61 c0 81 00 81 c0 81 40 '.PT.k...a......@'
-  81 80 a9 c0 b3 00 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 56 50 21 00 00 1e 00 00 00 ff 00 53 42 44 'E.VP!........SBD'
-  30 32 39 36 32 53 4c 30 0a 20 00 00 00 fd 00 32 '02962SL0. .....2'
-  4c 1e 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
-  00 42 65 6e 51 20 47 57 32 37 36 30 48 53 00 4b '.BenQ GW2760HS.K'
-Checksum: 0x4b
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

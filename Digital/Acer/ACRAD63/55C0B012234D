@@ -57,6 +57,11 @@ Checksum: 0x81
 
 ----------------
 
+Warnings:
+
+EDID:
+  No Native Video Resolution was defined.
+
 Failures:
 
 Block 0, Base EDID:

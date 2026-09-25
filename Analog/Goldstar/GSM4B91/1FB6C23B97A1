@@ -70,24 +70,14 @@ Checksum: 0xfa
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1e 6d 91 4b 36 a3 01 00 '.........m.K6...'
-  06 13 01 03 6a 29 17 78 ea 1e 95 a3 55 48 98 27 '....j).x....UH.''
-  15 50 54 a5 6e 00 31 4f 45 4f 61 4f 01 01 01 01 '.PT.n.1OEOaO....'
-  01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70 '......f!P.Q..0@p'
-  36 00 96 e5 10 00 00 1e 0e 1f 00 80 51 00 1e 30 '6...........Q..0'
-  40 80 37 00 96 e5 10 00 00 1c 00 00 00 fd 00 38 '@.7............8'
-  4b 1e 3d 09 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.=...      ....'
-  00 57 31 39 34 31 0a 20 20 20 20 20 20 20 00 fa '.W1941.       ..'
-Checksum: 0xfa
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Image size is 406x229 mm, but based on the picture AR it should be 381x229 mm.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

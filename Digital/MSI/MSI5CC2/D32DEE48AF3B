@@ -71,7 +71,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6875, 0.3076
     Green: 0.2441, 0.7353
@@ -105,7 +105,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   54 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-144 Hz V, 106-320 kHz H, max dotclock 1340 MHz
+      Monitor ranges (Range Limits Only): 48-144 Hz V, 106-320 kHz H, max dotclock 1340 MHz
     Display Product Name: 'MAG274UPF'
   Extension blocks: 2
 Checksum: 0xe6
@@ -117,7 +117,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
     VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
@@ -146,7 +146,8 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.3
+    Version: 1
+    Feature Caps: 0x03
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
@@ -198,113 +199,11 @@ Checksum: 0x90
 
 ----------------
 
-Block 3, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 36 69 c2 5c 00 00 00 00 '........6i.\....'
-  20 21 01 04 b5 3c 21 78 3b 39 65 b0 4e 3e bc 26 ' !...<!x;9e.N>.&'
-  0e 50 54 bf cf 00 d1 c0 71 4f 81 c0 81 40 81 80 '.PT.....qO...@..'
-  95 00 b3 00 01 01 4d d0 00 a0 f0 70 3e 80 30 40 '......M....p>.0@'
-  35 00 58 4a 21 00 00 1a 00 00 00 ff 00 43 43 32 '5.XJ!........CC2'
-  48 34 37 33 38 30 32 36 36 38 00 00 00 fd 08 30 'H473802668.....0'
-  90 6a 41 86 01 0a 20 20 20 20 20 20 00 00 00 fc '.jA...      ....'
-  00 4d 41 47 32 37 34 55 50 46 0a 20 20 20 02 e6 '.MAG274UPF.   ..'
-Checksum: 0xe6
-
-----------------
-
-Block 4, CTA-861 Extension Block:
-  Revision: 3
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Video Data Block:
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
-    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
-    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
-    VIC  47:  1280x720   120.000000 Hz  16:9     90.000 kHz    148.500000 MHz
-    VIC 118:  3840x2160  120.000000 Hz  16:9    270.000 kHz   1188.000000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 96 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Video Capability Data Block:
-    YCbCr quantization: Selectable (via AVI YQ)
-    RGB quantization: Selectable (via AVI Q)
-    PT scan behavior: No Data
-    IT scan behavior: IT video formats not supported
-    CE scan behavior: CE video formats not supported
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.0.0.0
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.3
-    Minimum Refresh Rate: 48 Hz
-    Maximum Refresh Rate: 144 Hz
-    Flags 1.x: 0x00
-  Colorimetry Data Block:
-    BT2020cYCC
-    BT2020YCC
-    BT2020RGB
-    Gamut Boundary Description Metadata Profile P0
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      Traditional gamma - HDR luminance range
-      SMPTE ST2084
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 97 (408.759 cd/m^2)
-    Desired content max frame-average luminance: 90 (351.250 cd/m^2)
-    Desired content min luminance: 23 (0.033 cd/m^2)
-  Detailed Timing Descriptors:
-    DTD 5:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (600 mm x 330 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   33 Vpol N
-    DTD 6:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (600 mm x 330 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   77 Vpol N
-    DTD 7:  1920x1080  120.001904 Hz  16:9    133.322 kHz    277.310000 MHz (600 mm x 330 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   23 Vpol N
-Checksum: 0x10  Unused space in Extension Block: 20 bytes
-
-----------------
-
-Block 5, DisplayID Extension Block:
-  Version: 1.2
-  Extension Count: 0
-  Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  3840x2160  144.000454 Hz  16:9    316.945 kHz   1267.780000 MHz (aspect 16:9, no 3D stereo)
-               Hfront  112 Hsync  32 Hback   16 Hpol P
-               Vfront    8 Vsync  10 Vback   23 Vpol N
-    DTD:  3840x2160  120.004500 Hz  16:9    266.650 kHz   1066.600000 MHz (aspect 16:9, no 3D stereo)
-               Hfront   48 Hsync  64 Hback   48 Hpol P
-               Vfront    3 Vsync   5 Vback   54 Vpol N
-    DTD:  2560x1440  143.973257 Hz   1:1    222.151 kHz    604.250000 MHz (aspect 1:1, no 3D stereo)
-               Hfront   48 Hsync  32 Hback   80 Hpol N
-               Vfront    3 Vsync   2 Vback   98 Vpol N
-  Checksum: 0x0d
-Checksum: 0x90
-
-----------------
-
 Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Video Capability Data Block: IT scan behavior is expected to support underscanned.
-  Video Capability Data Block: 'CE video formats not supported' makes no sense.
-  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-Block 4, CTA-861 Extension Block:
-  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 4 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
@@ -318,30 +217,9 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 3, Base EDID:
-  Unknown Extension Block.
-Block 4, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 63.
-  Video Data Block: Duplicate VIC 96.
-  Video Data Block: Duplicate VIC 97.
-  Video Data Block: Duplicate VIC 47.
-  Video Data Block: Duplicate VIC 118.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 18.
-  Video Data Block: Duplicate VIC 1.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Video Capability Data Block: Only one instance of this Data Block is allowed.
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
 EDID:
-  Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
+  Extension Block 3 started with EDID header, ignoring Extension Blocks >= 3.
   CTA-861: Native progressive timings are a mix of several resolutions.
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

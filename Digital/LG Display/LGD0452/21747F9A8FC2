@@ -49,21 +49,8 @@ Block 0, Base EDID:
     DTD 2:  1920x1080   48.033650 Hz  16:9     53.365 kHz    111.000000 MHz (345 mm x 194 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   23 Vpol N
-    Alphanumeric Data String: 'RG1D2'
+    Alphanumeric Data String: 'RG1D2.156WF5'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 41 31 9e 01 10 00 00 0a 01 0a 20 20 '....A1........  '
-Checksum: 0xc6
-
-----------------
-
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 e4 52 04 00 00 00 00 '........0.R.....'
-  00 18 01 04 95 23 13 78 ea ae 95 a3 57 54 9e 24 '.....#.x....WT.$'
-  0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 2e 36 80 a0 70 38 1f 40 30 20 '.......6..p8.@0 '
-  35 00 59 c2 10 00 00 1a 5c 2b 80 a0 70 38 1f 40 '5.Y.....\+..p8.@'
-  30 20 35 00 59 c2 10 00 00 1a 00 00 00 fe 00 52 '0 5.Y..........R'
-  47 31 44 32 80 31 35 36 57 46 35 0a 00 00 00 00 'G1D2.156WF5.....'
-  00 00 41 31 9e 01 10 00 00 0a 01 0a 20 20 00 c6 '..A1........  ..'
 Checksum: 0xc6
 
 ----------------
@@ -71,15 +58,12 @@ Checksum: 0xc6
 Warnings:
 
 Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x80 at position 5, can cause problems.
   Missing Display Product Name.
 
 Failures:
 
-Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -61,7 +61,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 5
+  Native DTDs: 5
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -97,9 +97,9 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
     BC - Back Center
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
+    BL/BR - Back Left/Right
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.1.0.0
     Supports_AI
@@ -127,8 +127,12 @@ Checksum: 0x42  Unused space in Extension Block: 10 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #3: DTD is identical to VIC 5, which is not present in the CTA Ext Block.
+  Detailed Timing Descriptor #5: Image size is 698x393 mm, but based on the picture AR it should be 589x393 mm.
 
 Failures:
 

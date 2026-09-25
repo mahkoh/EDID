@@ -50,11 +50,10 @@ Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Dubious maximum image size (9x15 is smaller than 10x10 cm).
-
-Failures:
-
+  Detailed Timing Descriptor #1: Dubious image size (94x150 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (94x150 mm is smaller than 100x100 mm).
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 78.829 - 78.829 kHz (Monitor: 31.000 - 70.000 kHz)
 
-EDID conformity: FAIL
+EDID conformity: PASS

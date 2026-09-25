@@ -52,24 +52,9 @@ Checksum: 0x7b
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 06 10 df 9c 00 00 00 00 '................'
-  1a 15 01 04 95 1d 12 78 02 ef 05 97 57 54 92 27 '.......x....WT.''
-  22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '"PT.............'
-  01 01 01 01 01 01 c2 23 a0 d4 50 84 1a 30 40 2a '.......#..P..0@*'
-  36 00 1e b3 10 00 00 18 00 00 00 10 00 00 00 00 '6...............'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c '...............L'
-  50 31 33 33 57 50 31 2d 54 4a 41 36 00 00 00 fc 'P133WP1-TJA6....'
-  00 43 6f 6c 6f 72 20 4c 43 44 0a 20 20 20 00 7b '.Color LCD.   .{'
-Checksum: 0x7b
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

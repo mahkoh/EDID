@@ -60,7 +60,7 @@ Block 0, Base EDID:
                  Vfront    8 Vsync  10 Vback   72 Vpol N
     Display Product Name: 'PHL BDM4065'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 23-80 Hz V, 30-160 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 23-80 Hz V, 30-160 kHz H, max dotclock 600 MHz
   Extension blocks: 1
 Checksum: 0x9e
 

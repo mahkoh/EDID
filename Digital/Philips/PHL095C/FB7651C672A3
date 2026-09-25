@@ -101,57 +101,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC  75:  1920x1080   50.000000 Hz  64:27    56.250 kHz    148.500000 MHz
-    VIC  76:  1920x1080   60.000000 Hz  64:27    67.500 kHz    148.500000 MHz
-    VIC  89:  2560x1080   50.000000 Hz  64:27    56.250 kHz    185.625000 MHz
-    VIC  90:  2560x1080   60.000000 Hz  64:27    66.000 kHz    198.000000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 0.0.0.0
-    Maximum TMDS clock: 300 MHz
-Checksum: 0xf5  Unused space in Extension Block: 91 bytes
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 41 0c 5c 09 43 0a 00 00 '........A.\.C...'
-  05 22 01 03 80 50 21 78 2b 3e c5 ad 4f 47 a3 26 '."...P!x+>..OG.&'
-  12 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 c0 '.PT.............'
-  31 68 45 68 61 68 e7 7c 70 a0 d0 a0 29 50 30 20 '1hEhah.|p...)P0 '
-  3a 00 1d 4e 31 00 00 1a 00 00 00 ff 00 55 4b 30 ':..N1........UK0'
-  32 34 30 35 30 30 32 36 32 37 00 00 00 fc 00 50 '2405002627.....P'
-  48 4c 20 33 34 36 42 31 43 0a 20 20 00 00 00 fd 'HL 346B1C.  ....'
-  00 30 64 1e a0 1e 00 0a 20 20 20 20 20 20 01 6f '.0d.....      .o'
-Checksum: 0x6f
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -185,38 +135,21 @@ Checksum: 0xf5  Unused space in Extension Block: 91 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-Block 3, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 319.750 MHz (Monitor: 300.000 MHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 4.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 18.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 17.
-  Video Data Block: Duplicate VIC 1.
-  Video Data Block: Duplicate VIC 75.
-  Video Data Block: Duplicate VIC 76.
-  Video Data Block: Duplicate VIC 89.
-  Video Data Block: Duplicate VIC 90.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Maximum Clock: 319.750 MHz (Monitor: 300.000 MHz)
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
+  CTA-861: The maximum HDMI TMDS clock is 300000 kHz, but one or more video timings go up to 319750 kHz.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

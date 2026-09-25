@@ -68,7 +68,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
     VIC 100:  4096x2160   30.000000 Hz 256:135   67.500 kHz    297.000000 MHz
@@ -126,8 +126,8 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency + Low-Latency-HDMI
     Supports 10b 12b 444: 10 bit
-    Target Min PQ v2: 180 (0.04555910 cd/m^2)
-    Target Max PQ v2: 2640 (385 cd/m^2)
+    Target Min PQ v2: 180 (0.04494425 cd/m^2)
+    Target Max PQ v2: 2640 (371 cd/m^2)
     Unique Rx, Ry: 0.64843750, 0.32812500
     Unique Gx, Gy: 0.30468750, 0.60546875
     Unique Bx, By: 0.15234375, 0.04687500
@@ -162,6 +162,8 @@ Checksum: 0x0d  Unused space in Extension Block: 40 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.

@@ -97,7 +97,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 5
+  Native DTDs: 5
   Video Data Block:
     VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
     VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
@@ -148,9 +148,9 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
     BC - Back Center
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
+    BL/BR - Back Left/Right
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.4.0.0
     Supports_AI
@@ -177,119 +177,17 @@ Checksum: 0xb4
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 3e 8d 27 00 76 02 00 00 '........>.'.v...'
-  29 1a 01 03 80 00 00 78 0a f2 0d a7 54 51 99 24 ')......x....TQ.$'
-  10 4f 5c 3f cf 80 31 7c 45 7c 61 7c 81 c0 81 fc '.O\?..1|E|a|....'
-  81 00 95 00 a9 40 02 3a 80 18 71 38 2d 40 58 2c '.....@.:..q8-@X,'
-  45 00 00 00 00 00 00 1e 00 00 00 ff 00 51 37 32 'E............Q72'
-  4a 36 34 31 30 36 33 30 0a 20 00 00 00 fc 00 4f 'J6410630. .....O'
-  70 74 6f 6d 61 20 31 30 38 30 50 0a 00 00 00 ff 'ptoma 1080P.....'
-  00 37 32 4a 36 30 38 31 31 31 31 31 31 31 01 41 '.72J6081111111.A'
-Checksum: 0x41
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 5
-  Video Data Block:
-    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
-    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (native)
-    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
-    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
-    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 8
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-    AC-3:
-      Max channels: 6
-      Supported sample rates (kHz): 48 44.1 32
-      Maximum bit rate: 640 kb/s
-    DTS:
-      Max channels: 7
-      Supported sample rates (kHz): 96 88.2 48 44.1 32
-      Maximum bit rate: 1536 kb/s
-    One Bit Audio:
-      Max channels: 6
-      Supported sample rates (kHz): 44.1
-      Audio Format Code dependent value: 0x00
-    Enhanced AC-3 (DD+):
-      Max channels: 8
-      Supported sample rates (kHz): 48 44.1
-      Supports Joint Object Coding
-      Supports Joint Object Coding with ACMOD28
-    MAT (MLP):
-      Max channels: 8
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
-      Supports Dolby TrueHD, object audio PCM and channel-based PCM
-      Hash calculation not required for object audio PCM or channel-based PCM
-    DTS-HD:
-      Max channels: 8
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
-      Supports DTS:X
-      Audio Format Code dependent value: 0x03
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-    LFE1 - Low Frequency Effects 1
-    FC - Front Center
-    BL/BR - Back Left/Right
-    BC - Back Center
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.4.0.0
-    Supports_AI
-    DC_36bit
-    DC_30bit
-    DC_Y444
-    Maximum TMDS clock: 165 MHz
-    Extended HDMI video details:
-      3D present
-  Detailed Timing Descriptors:
-    DTD 6:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-                 Hfront  110 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol N
-    DTD 7:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-                 Hfront  440 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD 8:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-                 Hfront  528 Hsync  44 Hback  148 Hpol P
-                 Vfront    2 Vsync   5 Vback   38 Vpol P
-    DTD 9:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
-                 Hfront   80 Hsync  44 Hback  156 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0xb4
-
-----------------
-
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 6 and the first DTD are not identical. Is this intended?
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 4.
   Detailed Timing Descriptor #4: DTD is similar but not identical to VIC 31.
   Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 16.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-Block 3, CTA-861 Extension Block:
-  Detailed Timing Descriptor #6: DTD is similar but not identical to VIC 4.
-  Detailed Timing Descriptor #8: DTD is similar but not identical to VIC 31.
-  Detailed Timing Descriptor #9: DTD is similar but not identical to VIC 16.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Multiple Display Product Serial Numbers are specified, is that intended?
 
 Failures:
 
@@ -297,27 +195,8 @@ Block 0, Base EDID:
   Missing Display Range Limits Descriptor.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 6.
-  Video Data Block: Duplicate VIC 21.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 17.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 5.
-  Video Data Block: Duplicate VIC 20.
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 32.
-  Video Data Block: Duplicate VIC 33.
-  Video Data Block: Duplicate VIC 34.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

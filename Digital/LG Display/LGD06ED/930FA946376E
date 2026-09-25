@@ -35,7 +35,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6416, 0.3291
     Green: 0.2939, 0.6132
@@ -54,19 +54,6 @@ Checksum: 0xb6
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 e4 ed 06 00 00 00 00 '........0.......'
-  51 1e 01 04 a5 1e 13 78 07 54 95 a4 54 4b 9d 24 'Q......x.T..TK.$'
-  11 4f 55 00 00 00 01 01 01 01 01 01 01 01 01 01 '.OU.............'
-  01 01 01 01 01 01 35 3c 80 a0 70 b0 23 40 30 20 '......5<..p.#@0 '
-  36 00 2e bc 10 00 00 19 00 00 00 00 00 00 00 00 '6...............'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c '...............L'
-  47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe 'G Display.  ....'
-  00 4c 50 31 34 30 57 55 31 2d 53 50 42 32 00 b6 '.LP140WU1-SPB2..'
-Checksum: 0xb6
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -75,13 +62,11 @@ Block 0, Base EDID:
 Failures:
 
 Block 0, Base EDID:
-  Vendor & Product Identification: Invalid week 81 of manufacture.
+  Vendor & Product Identification: Invalid week of manufacture (> 54).
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

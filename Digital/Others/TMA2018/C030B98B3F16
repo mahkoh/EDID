@@ -52,7 +52,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.5800, 0.3349
     Green: 0.3300, 0.5654
@@ -65,7 +65,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront   54 Vsync   6 Vback   12 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 40-60 Hz V, 77-77 kHz H, max dotclock 160 MHz
+      Monitor ranges (Range Limits Only): 40-60 Hz V, 77-77 kHz H, max dotclock 160 MHz
     Alphanumeric Data String: ''
     Alphanumeric Data String: 'TL140VDXS01-0'
   Extension blocks: 1
@@ -81,6 +81,7 @@ Block 1, DisplayID Extension Block:
     Descriptor #1:
       Native Panel Range
       Fixed Average V-Total and Adaptive V-Total
+      Supports Seamless Transition
       'Max Single Frame Duration Increase' field value without jitter impact
       'Max Single Frame Duration Decrease' field value without jitter impact
       Max Duration Increase: 0.00 ms
@@ -89,55 +90,12 @@ Block 1, DisplayID Extension Block:
       Max Refresh Rate: 60 Hz
   CTA-861 DisplayID Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.1
+    Version: 3
+    Feature Caps: 0x01
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
-  Checksum: 0xe6
-Checksum: 0x90
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 51 a1 18 20 00 00 00 00 '........Q.. ....'
-  10 21 01 04 a5 1f 14 78 03 bb d5 94 55 54 90 27 '.!.....x....UT.''
-  21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '!PT.............'
-  01 01 01 01 01 01 03 3e 80 a0 70 b0 48 40 30 20 '.......>..p.H@0 '
-  66 0c 2e bd 10 00 00 1e 00 00 00 fd 00 28 3c 4d 'f............(<M'
-  4d 10 01 0a 20 20 20 20 20 20 00 00 00 fe 00 00 'M...      ......'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fe '................'
-  00 54 4c 31 34 30 56 44 58 53 30 31 2d 30 01 0b '.TL140VDXS01-0..'
-Checksum: 0x0b
-
-----------------
-
-Block 3, DisplayID Extension Block:
-  Version: 2.0
-  Extension Count: 0
-  Adaptive Sync Data Block:
-    Descriptor #1:
-      Native Panel Range
-      Fixed Average V-Total and Adaptive V-Total
-      'Max Single Frame Duration Increase' field value without jitter impact
-      'Max Single Frame Duration Decrease' field value without jitter impact
-      Max Duration Increase: 0.00 ms
-      Max Duration Decrease: 0.00 ms
-      Min Refresh Rate: 40 Hz
-      Max Refresh Rate: 60 Hz
-  CTA-861 DisplayID Data Block:
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.1
-    Minimum Refresh Rate: 40 Hz
-    Maximum Refresh Rate: 60 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Checksum: 0xe6
 Checksum: 0x90
 
@@ -155,18 +113,10 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
-Block 1, DisplayID Extension Block:
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, DisplayID Extension Block:
-  Product Type should be 0 in extension block.
+  Alphanumeric Data String: NUL byte at position 0.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   DisplayID: Missing DisplayID Display Parameters Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
   DisplayID: Missing DisplayID Type VII Detailed Timing Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 

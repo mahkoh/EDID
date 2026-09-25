@@ -58,13 +58,11 @@ Checksum: 0xb5
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x27.
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x17.
-
-Failures:
-
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 59.870 - 70.082 Hz (Monitor: 57.000 - 63.000 Hz)
 
-EDID conformity: FAIL
+EDID conformity: PASS

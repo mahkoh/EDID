@@ -57,16 +57,17 @@ Checksum: 0xdc
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x27.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 75.025 Hz (Monitor: 56.000 - 70.000 Hz)
+    Maximum Clock: 148.500 MHz (Monitor: 130.000 MHz)
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 331x186 mm vs display size 940x530 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 331x186 mm vs display size 940x530 mm.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 59.940 - 75.025 Hz (Monitor: 56.000 - 70.000 Hz)
-    Maximum Clock: 148.500 MHz (Monitor: 130.000 MHz)
 
 EDID conformity: FAIL

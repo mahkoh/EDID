@@ -37,17 +37,21 @@ Block 0, Base EDID:
     DTD 2:  1280x800    59.905804 Hz  16:10    48.883 kHz     66.090000 MHz (331 mm x 207 mm)
                  Hfront   24 Hsync  24 Hback   24 Hpol P
                  Vfront    3 Vsync   6 Vback    7 Vpol N
-    Alphanumeric Data String: 'WU682'
+    Alphanumeric Data String: 'WU682.154WX5'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 24 32 3d 45 68 8b a7 ff 01 01 0a 20 20 '...$2=Eh......  '
 Checksum: 0x32
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x81 at position 5, can cause problems.
+
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
-  Alphanumeric Data String: Non-printable character.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 

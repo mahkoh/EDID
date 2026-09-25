@@ -54,7 +54,7 @@ Block 0, Base EDID:
     Display Product Serial Number: ...
     Display Product Name: 'DELL S2817Q'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 29-75 Hz V, 31-140 kHz H, max dotclock 540 MHz
+      Monitor ranges (Range Limits Only): 29-75 Hz V, 31-140 kHz H, max dotclock 540 MHz
   Extension blocks: 1
 Checksum: 0xee
 

@@ -78,7 +78,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     VIC  57:   720x480   239.760240 Hz  16:9    125.874 kHz    108.000000 MHz
     VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
@@ -125,10 +125,17 @@ Checksum: 0xe2  Unused space in Extension Block: 21 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Video Data Block: VIC 57 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 57 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #3: DTD is identical to VIC 4, which is not present in the CTA Ext Block.
+  Detailed Timing Descriptor #4: DTD is identical to VIC 19, which is not present in the CTA Ext Block.
   Detailed Timing Descriptor #5: The use of non-zero borders in a DTD is not recommended.
+  Detailed Timing Descriptor #6: DTD is identical to VIC 16, which is not present in the CTA Ext Block.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 239.760 Hz (Monitor: 49.000 - 76.000 Hz)
+    Horizontal Freq: 15.734 - 450.000 kHz (Monitor: 15.000 - 85.000 kHz)
+    Maximum Clock: 4752.000 MHz (Monitor: 170.000 MHz)
   CTA-861: Native progressive resolution of 720x480 is smaller than the max preferred progressive resolution 1280x768.
 
 Failures:
@@ -145,10 +152,7 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #6: Mismatch of image size 1920x1080 mm vs display size 800x480 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 239.760 Hz (Monitor: 49.000 - 76.000 Hz)
-    Horizontal Freq: 15.734 - 450.000 kHz (Monitor: 15.000 - 85.000 kHz)
-    Maximum Clock: 4752.000 MHz (Monitor: 170.000 MHz)
   Base EDID: The DTD max image size is 1920x1080mm, which is larger than the display size 800.0x480.0mm.
+  CTA-861: The maximum HDMI TMDS clock is 225000 kHz, but one or more video timings go up to 4752000 kHz.
 
 EDID conformity: FAIL

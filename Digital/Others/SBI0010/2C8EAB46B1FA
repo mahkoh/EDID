@@ -110,59 +110,28 @@ Checksum: 0x5d  Unused space in Extension Block: 51 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 49 10 00 00 00 00 00 '........LI......'
-  14 17 01 03 80 2b 19 78 2a cd fb 9e 58 53 a0 27 '.....+.x*...XS.''
-  0a 47 4a af af 00 71 4f 81 c0 81 00 81 40 81 59 '.GJ...qO.....@.Y'
-  81 80 81 99 90 40 20 1c 50 a0 50 00 16 30 30 20 '.....@ .P.P..00 '
-  25 00 ae fe 10 00 00 1a 00 00 00 fd 00 32 55 1e '%............2U.'
-  4b 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50 'K...      .....P'
-  6f 64 69 75 6d 20 53 50 35 31 38 0a 00 00 00 ff 'odium SP518.....'
-  00 4b 30 31 32 46 57 32 32 41 30 31 32 31 01 65 '.K012FW22A0121.e'
-Checksum: 0x65
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 1
-  Detailed Timing Descriptors:
-    DTD 6:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (430 mm x 254 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
-    DTD 7:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (430 mm x 254 mm)
-                 Hfront  528 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
-    DTD 8:  1600x1200   59.976442 Hz   4:3     74.491 kHz    160.900000 MHz (430 mm x 254 mm)
-                 Hfront  104 Hsync 176 Hback  264 Hpol N Hborder 8
-                 Vfront    1 Vsync   4 Vback   37 Vpol P
-    DTD 9:  1280x720    49.966330 Hz  16:9     37.475 kHz     74.200000 MHz (430 mm x 254 mm)
-                 Hfront  440 Hsync  40 Hback  220 Hpol N
-                 Vfront    5 Vsync   5 Vback   20 Vpol P
-Checksum: 0x5d  Unused space in Extension Block: 51 bytes
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 430x254 mm, but based on the picture AR it should be 430x242 mm.
 Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: DTD is identical to VIC 16, which is not present in the CTA Ext Block.
+  Detailed Timing Descriptor #2: Image size is 430x254 mm, but based on the picture AR it should be 430x241 mm.
+  Detailed Timing Descriptor #3: DTD is identical to VIC 31, which is not present in the CTA Ext Block.
+  Detailed Timing Descriptor #3: Image size is 430x254 mm, but based on the picture AR it should be 430x241 mm.
+  Detailed Timing Descriptor #4: Image size is 430x254 mm, but based on the picture AR it should be 338x254 mm.
   Detailed Timing Descriptor #4: The use of non-zero borders in a DTD is not recommended.
+  Detailed Timing Descriptor #5: Image size is 430x254 mm, but based on the picture AR it should be 430x241 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-Block 3, CTA-861 Extension Block:
-  Detailed Timing Descriptor #8: The use of non-zero borders in a DTD is not recommended.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 91.145 kHz (Monitor: 30.000 - 75.000 kHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 31.466 - 91.145 kHz (Monitor: 30.000 - 75.000 kHz)
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

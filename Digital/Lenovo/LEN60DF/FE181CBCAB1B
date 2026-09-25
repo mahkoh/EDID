@@ -71,26 +71,16 @@ Checksum: 0x50
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 ae df 60 01 01 01 01 '........0..`....'
-  31 1b 01 03 a0 2a 1a 78 22 59 e5 a7 56 52 9c 26 '1....*.x"Y..VR.&'
-  10 50 54 af ef 00 71 4f 81 80 81 8a 81 00 95 0f '.PT...qO........'
-  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
-  36 00 a3 06 11 00 00 1c 00 00 00 ff 00 56 4b 48 '6............VKH'
-  35 36 38 39 33 0a 20 20 20 20 00 00 00 fd 00 32 '56893.    .....2'
-  4b 1e 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 4c 45 4e 20 45 32 30 35 34 41 0a 20 20 00 50 '.LEN E2054A.  .P'
-Checksum: 0x50
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x20.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

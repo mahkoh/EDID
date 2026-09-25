@@ -50,7 +50,7 @@ Block 0, Base EDID:
   Standard Timings:
     Unknown :   640x480    70.000 Hz   4:3
     Unknown :  1024x768    66.000 Hz   4:3
-    Unknown :  1024x768    70.000 Hz   4:3
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
   Detailed Timing Descriptors:
     Display Product Name: 'LCD Monitor 1'
     Display Product Name: '5"'

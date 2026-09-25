@@ -66,8 +66,8 @@ Checksum: 0x6f
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
-  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: NUL byte at position 0.
+  Alphanumeric Data String: One or more trailing spaces before newline.
   Missing Display Range Limits Descriptor.
 
 EDID conformity: FAIL

@@ -63,24 +63,9 @@ Checksum: 0x73
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 2d 21 05 30 32 52 4c '........L-!.02RL'
-  25 13 01 03 0e 2c 19 78 2a b8 11 a6 55 4b 9b 25 '%....,.x*...UK.%'
-  13 50 54 23 08 00 81 00 95 00 81 80 01 01 01 01 '.PT#............'
-  01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50 '......0*@.`.d0.P'
-  13 00 bb f9 10 00 00 1e 00 00 00 fd 00 38 3c 1e '.............8<.'
-  51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53 'Q...      .....S'
-  79 6e 63 4d 61 73 74 65 72 0a 20 20 00 00 00 ff 'yncMaster.  ....'
-  00 48 4c 4a 53 39 30 31 35 33 34 0a 20 20 00 73 '.HLJS901534.  .s'
-Checksum: 0x73
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

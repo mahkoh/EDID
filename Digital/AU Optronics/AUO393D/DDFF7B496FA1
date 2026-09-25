@@ -48,21 +48,8 @@ Block 0, Base EDID:
     DTD 2:  1920x1080   48.005633 Hz  16:9     53.286 kHz    113.180000 MHz (309 mm x 174 mm)
                  Hfront   16 Hsync  16 Hback  172 Hpol P
                  Vfront    3 Vsync   5 Vback   22 Vpol N
-    Alphanumeric Data String: 'YRMG8'
+    Alphanumeric Data String: 'YRMG8.B140HAN'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 81 02 a8 00 11 00 00 0a 01 0a 20 20 '..............  '
-Checksum: 0x91
-
-----------------
-
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 06 af 3d 39 00 00 00 00 '..........=9....'
-  04 1c 01 04 95 1f 11 78 02 8d 15 a1 56 52 9d 28 '.......x....VR.('
-  0a 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 43 37 80 cc 70 38 1e 40 10 10 '......C7..p8.@..'
-  35 00 35 ae 10 00 00 1a 36 2c 80 cc 70 38 1e 40 '5.5.....6,..p8.@'
-  10 10 35 00 35 ae 10 00 00 1a 00 00 00 fe 00 59 '..5.5..........Y'
-  52 4d 47 38 80 42 31 34 30 48 41 4e 00 00 00 00 'RMG8.B140HAN....'
-  00 00 81 02 a8 00 11 00 00 0a 01 0a 20 20 00 91 '............  ..'
 Checksum: 0x91
 
 ----------------
@@ -70,15 +57,12 @@ Checksum: 0x91
 Warnings:
 
 Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x80 at position 5, can cause problems.
   Missing Display Product Name.
 
 Failures:
 
-Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

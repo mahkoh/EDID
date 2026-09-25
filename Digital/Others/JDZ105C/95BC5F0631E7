@@ -54,19 +54,6 @@ Checksum: 0x54
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 28 9a 5c 10 00 00 00 00 '........(.\.....'
-  00 20 01 04 a5 1a 0e 78 0a 60 f5 9d 5d 59 91 25 '. .....x.`..]Y.%'
-  10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 da 1d 56 e2 50 00 20 30 88 1e '........V.P. 0..'
-  8c 00 00 90 10 00 00 18 e2 17 56 e2 50 00 20 30 '..........V.P. 0'
-  88 1e 8c 00 00 90 10 00 00 1a 00 00 00 fe 00 49 '...............I'
-  4e 58 20 31 31 36 0a 20 20 20 20 20 00 00 00 fe 'NX 116.     ....'
-  00 4c 43 4d 31 31 36 4e 58 30 30 38 35 44 00 54 '.LCM116NX0085D.T'
-Checksum: 0x54
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -74,9 +61,7 @@ Block 0, Base EDID:
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

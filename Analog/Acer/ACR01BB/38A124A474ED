@@ -71,24 +71,9 @@ Checksum: 0x67
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 72 bb 01 a4 68 60 10 '.........r...h`.'
-  06 15 01 03 6c 29 17 78 ea ac 25 a5 55 48 9a 27 '....l).x..%.UH.''
-  13 50 54 bf ee 00 81 c0 81 00 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
-  33 00 9a e6 10 00 00 1e 00 00 00 fd 00 38 4b 1f '3............8K.'
-  53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 'S...      .....A'
-  63 65 72 20 47 31 38 35 48 56 0a 20 00 00 00 ff 'cer G185HV. ....'
-  00 4c 50 4c 30 57 30 30 31 34 33 30 34 0a 00 67 '.LPL0W0014304..g'
-Checksum: 0x67
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

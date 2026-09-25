@@ -79,29 +79,15 @@ Checksum: 0x7c
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 ae 62 13 de 1a 00 00 '........0.b.....'
-  02 16 01 03 6c 2f 1e 78 2a 20 e5 a5 57 4f 9e 26 '....l/.x* ..WO.&'
-  0f 50 54 af ef 00 71 4f 81 80 81 8a 81 00 95 00 '.PT...qO........'
-  a9 c0 a9 cf b3 0f 7c 2e 90 a0 60 1a 1e 40 30 20 '......|...`..@0 '
-  36 00 d9 28 11 00 00 1e 30 2a 40 c8 60 84 64 30 '6..(....0*@.`.d0'
-  18 50 13 00 d9 28 11 00 00 1e 00 00 00 fd 00 32 '.P...(.........2'
-  4c 1e 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
-  00 4c 45 4e 20 4c 53 32 32 35 31 77 41 0a 00 7c '.LEN LS2251wA..|'
-Checksum: 0x7c
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x39.
+  Detailed Timing Descriptor #2: Image size is 473x296 mm, but based on the picture AR it should be 473x266 mm.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

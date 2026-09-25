@@ -76,22 +76,15 @@ Checksum: 0x04
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5a 63 28 72 01 01 01 01 '........Zc(r....'
-  15 15 01 03 80 3c 22 78 2a f8 35 a4 56 4f 9d 27 '.....<"x*.5.VO.''
-  11 50 54 bf ef 80 b3 00 a9 40 95 00 90 40 81 80 '.PT......@...@..'
-  81 40 71 4f 01 01 02 3a 80 18 71 38 2d 40 58 2c '.@qO...:..q8-@X,'
-  45 00 55 50 21 00 00 1e 00 00 00 ff 00 53 47 38 'E.UP!........SG8'
-  31 31 32 31 30 30 38 32 35 0a 00 00 00 fd 00 32 '112100825......2'
-  4c 0f 53 13 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
-  00 56 58 32 37 35 33 20 53 45 52 49 45 53 01 04 '.VX2753 SERIES..'
-Checksum: 0x04
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
+  Base EDID: EDID specified 1 extension block(s), but found 0 extension block(s).
 
 EDID conformity: FAIL

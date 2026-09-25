@@ -57,7 +57,7 @@ Block 0, Base EDID:
   Standard Timings:
     GTF     :   640x480    70.000000 Hz   4:3     35.000 kHz     28.560000 MHz
     GTF     :   800x600    70.000000 Hz   4:3     43.750 kHz     45.500000 MHz
-    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    GTF     :  1024x768    72.000073 Hz   4:3     57.672 kHz     78.434000 MHz
     DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
     DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
     GTF     :  1280x1024   69.999805 Hz   5:4     74.620 kHz    128.943000 MHz
@@ -76,23 +76,12 @@ Checksum: 0xa2
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 05 e3 83 21 01 00 00 00 '...........!....'
-  0b 1a 01 03 68 30 1a 78 ea 00 10 a0 57 49 9b 26 '....h0.x....WI.&'
-  10 48 4c ad cf 00 31 4a 45 4a 61 4c 81 c0 81 80 '.HL...1JEJaL....'
-  81 8a 81 8c a9 c0 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 09 25 21 00 00 1e 7c 2e 90 a0 60 1a 1e 40 'E..%!...|...`..@'
-  30 20 36 00 09 25 21 00 00 18 00 00 00 fc 00 50 '0 6..%!........P'
-  32 41 35 38 33 45 0a 20 20 20 20 20 00 00 00 ff '2A583E.     ....'
-  00 35 38 33 45 43 4c 36 33 30 31 38 34 39 00 a2 '.583ECL6301849..'
-Checksum: 0xa2
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x39.
+  Detailed Timing Descriptor #2: Image size is 521x293 mm, but based on the picture AR it should be 468x293 mm.
 
 Failures:
 
@@ -100,10 +89,8 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 521x293 mm vs display size 480x260 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 521x293 mm vs display size 480x260 mm.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 521x293mm, which is larger than the display size 480.0x260.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

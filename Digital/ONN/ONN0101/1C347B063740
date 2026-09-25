@@ -83,7 +83,7 @@ Block 1, CTA-861 Extension Block:
   Underscans IT Video Formats by default
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -128,10 +128,15 @@ Checksum: 0x19  Unused space in Extension Block: 23 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #4: DTD is identical to VIC 5, which is not present in the CTA Ext Block.
+  Detailed Timing Descriptor #6: Image size is 698x393 mm, but based on the picture AR it should be 589x393 mm.
 EDID:
-  CTA-861: Multiple native progressive timings are defined.
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 187.000 MHz (Monitor: 170.000 MHz)
 
 Failures:
 
@@ -147,8 +152,6 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #6: Mismatch of image size 698x393 mm vs display size 470x290 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Maximum Clock: 187.000 MHz (Monitor: 170.000 MHz)
   Base EDID: The DTD max image size is 698x393mm, which is larger than the display size 470.0x290.0mm.
 
 EDID conformity: FAIL

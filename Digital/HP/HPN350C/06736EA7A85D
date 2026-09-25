@@ -45,12 +45,17 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   14 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 50-60 Hz V, 30-80 kHz H, max dotclock 110 MHz
+      Monitor ranges (Range Limits Only): 50-60 Hz V, 30-80 kHz H, max dotclock 110 MHz
     Display Product Name: 'ElitePOS 10'
     Display Product Serial Number: ...
 Checksum: 0xd7
 
 ----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 

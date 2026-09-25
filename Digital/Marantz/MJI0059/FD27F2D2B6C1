@@ -102,7 +102,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -159,9 +159,9 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
     BC - Back Center
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
+    BL/BR - Back Left/Right
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
     Supports_AI
@@ -217,186 +217,26 @@ Checksum: 0x8b  Unused space in Extension Block: 13 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 35 49 59 00 01 01 01 01 '........5IY.....'
-  00 20 01 03 80 00 00 78 0f 72 18 a7 54 4b 9f 25 '. .....x.r..TK.%'
-  0d 48 65 bd ef 80 81 c0 81 00 a9 40 d1 c0 d1 00 '.He........@....'
-  81 3c 81 fc d1 fc 08 e8 00 30 f2 70 5a 80 b0 58 '.<.......0.pZ..X'
-  8a 00 00 00 00 00 00 1e 02 3a 80 18 71 38 2d 40 '.........:..q8-@'
-  58 2c 45 00 c4 8e 21 00 00 1e 00 00 00 fc 00 6d 'X,E...!........m'
-  61 72 61 6e 74 7a 2d 41 56 52 0a 20 00 00 00 fd 'arantz-AVR. ....'
-  00 17 f0 0f 87 3c 00 0a 20 20 20 20 20 20 01 48 '.....<..      .H'
-Checksum: 0x48
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 0
-  Video Data Block:
-    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
-    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
-    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
-    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
-    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
-    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
-    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
-    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
-    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
-    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 8
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-    DTS:
-      Max channels: 6
-      Supported sample rates (kHz): 96 88.2 48 44.1
-      Maximum bit rate: 1536 kb/s
-    AC-3:
-      Max channels: 6
-      Supported sample rates (kHz): 48 44.1 32
-      Maximum bit rate: 640 kb/s
-    DTS-HD:
-      Max channels: 8
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
-      Supports DTS:X
-      Audio Format Code dependent value: 0x03
-    Enhanced AC-3 (DD+):
-      Max channels: 8
-      Supported sample rates (kHz): 48 44.1
-      Supports Joint Object Coding
-      Supports Joint Object Coding with ACMOD28
-    MAT (MLP):
-      Max channels: 8
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
-      Supports Dolby TrueHD, object audio PCM and channel-based PCM
-      Hash calculation not required for object audio PCM or channel-based PCM
-    DTS-HD:
-      Max channels: 8
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1
-      Audio Format Code dependent value: 0x01
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-    LFE1 - Low Frequency Effects 1
-    FC - Front Center
-    BL/BR - Back Left/Right
-    BC - Back Center
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.0.0.0
-    Supports_AI
-    DC_36bit
-    DC_30bit
-    DC_Y444
-    Maximum TMDS clock: 300 MHz
-    Extended HDMI video details:
-      3D present
-      HDMI VICs:
-        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
-        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
-        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
-    Version: 1
-    Maximum TMDS Character Rate: 600 MHz
-    SCDC Present
-    Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
-    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
-  YCbCr 4:2:0 Capability Map Data Block:
-    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
-    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      Traditional gamma - HDR luminance range
-      SMPTE ST2084
-      Hybrid Log-Gamma
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 139 (1015.241 cd/m^2)
-    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
-    Desired content min luminance: 18 (0.051 cd/m^2)
-  Colorimetry Data Block:
-    BT2020YCC
-    BT2020RGB
-  Video Capability Data Block:
-    YCbCr quantization: Selectable (via AVI YQ)
-    RGB quantization: Selectable (via AVI Q)
-    PT scan behavior: Supports both over- and underscan
-    IT scan behavior: Supports both over- and underscan
-    CE scan behavior: Supports both over- and underscan
-  Vendor-Specific Audio Data Block (Dolby), OUI 00-D0-46:
-    Version: 1 (7 bytes)
-    Height speaker zone present
-    Surround speaker zone present
-    Center speaker zone present
-  Detailed Timing Descriptors:
-    DTD 4:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (708 mm x 398 mm)
-                 Hfront  528 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0x8b  Unused space in Extension Block: 13 bytes
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
+  Video Data Block: For improved preferred timing interoperability, set 'Native DTDs' to 1.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
-Block 3, CTA-861 Extension Block:
-  IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 138.839 kHz (Monitor: 15.000 - 135.000 kHz)
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 97.
-  Video Data Block: Duplicate VIC 96.
-  Video Data Block: Duplicate VIC 95.
-  Video Data Block: Duplicate VIC 94.
-  Video Data Block: Duplicate VIC 93.
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 32.
-  Video Data Block: Duplicate VIC 33.
-  Video Data Block: Duplicate VIC 34.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 5.
-  Video Data Block: Duplicate VIC 6.
-  Video Data Block: Duplicate VIC 21.
-  Video Data Block: Duplicate VIC 17.
-  Video Data Block: Duplicate VIC 20.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 63.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
-  YCbCr 4:2:0 Capability Map Data Block: Only one instance of this Data Block is allowed.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  Video Capability Data Block: Only one instance of this Data Block is allowed.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 138.839 kHz (Monitor: 15.000 - 135.000 kHz)
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   Base EDID: The DTD max image size is 708x398mm, but the display size is not specified anywhere.
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
 
 EDID conformity: FAIL

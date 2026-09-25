@@ -79,7 +79,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -125,8 +125,14 @@ Checksum: 0xe7
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 144.001 Hz (Monitor: 56.000 - 144.000 Hz)
+    Horizontal Freq: 31.250 - 225.000 kHz (Monitor: 30.000 - 164.000 kHz)
+    Maximum Clock: 1188.000 MHz (Monitor: 450.000 MHz)
 
 Failures:
 
@@ -136,9 +142,6 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #6: Invalid detailed timing descriptor ordering.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 144.001 Hz (Monitor: 56.000 - 144.000 Hz)
-    Horizontal Freq: 31.250 - 225.000 kHz (Monitor: 30.000 - 164.000 kHz)
-    Maximum Clock: 1188.000 MHz (Monitor: 450.000 MHz)
+  CTA-861: The maximum HDMI TMDS clock is 450000 kHz, but one or more video timings go up to 1188000 kHz.
 
 EDID conformity: FAIL

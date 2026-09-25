@@ -36,7 +36,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4
     First detailed timing does not include the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6396, 0.3300
     Green: 0.2998, 0.5996
@@ -64,7 +64,7 @@ Block 0, Base EDID:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-165 Hz V, 184-184 kHz H, max dotclock 400 MHz
+      Monitor ranges (Range Limits Only): 48-165 Hz V, 184-184 kHz H, max dotclock 400 MHz
     Display Product Serial Number: ...
     Display Product Name: 'Sceptre M27'
   Extension blocks: 1
@@ -78,7 +78,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -119,12 +119,14 @@ Checksum: 0xde  Unused space in Extension Block: 14 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.250 - 181.500 kHz (Monitor: 184.000 - 184.000 kHz)
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 

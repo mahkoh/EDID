@@ -76,32 +76,19 @@ Checksum: 0xc1
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1a 6e 41 00 01 01 01 01 '.........nA.....'
-  1b 20 01 03 81 3a 21 78 ef e2 9f a7 54 4e 9d 26 '. ...:!x....TN.&'
-  0f 4c 55 af cf fc 31 4a a9 40 81 80 d1 c0 81 c0 '.LU...1J.@......'
-  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 28 40 '.......:..q8-@(@'
-  82 08 c0 6c 00 00 00 1e ee 32 40 a0 60 b0 23 40 '...l.....2@.`.#@'
-  30 20 24 00 40 44 21 00 00 00 00 00 00 fd 00 2d '0 $.@D!........-'
-  56 19 50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'V.P...      ....'
-  00 46 53 2d 50 32 36 30 34 44 0a 20 20 20 00 c1 '.FS-P2604D.   ..'
-Checksum: 0xc1
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Detailed Timing Descriptor #2: Image size is 576x324 mm, but based on the picture AR it should be 432x324 mm.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #1: Mismatch of image size 192x108 mm vs display size 580x330 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

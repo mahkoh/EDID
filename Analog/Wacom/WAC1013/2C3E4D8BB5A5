@@ -65,24 +65,9 @@ Checksum: 0xe8
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5c 23 13 10 a9 00 00 00 '........\#......'
-  08 14 01 03 0c 1f 17 78 ea 6b 1e 97 4c 43 94 1d '.......x.k..LC..'
-  13 48 4b b5 6c 00 01 01 01 01 01 01 01 01 01 01 '.HK.l...........'
-  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
-  36 00 37 ea 10 00 00 19 00 00 00 fd 00 32 4b 1e '6.7..........2K.'
-  3c 0a 00 0a 20 20 20 20 20 20 00 00 00 fc 00 44 '<...      .....D'
-  54 49 2d 35 32 30 0a 20 20 20 20 20 00 00 00 ff 'TI-520.     ....'
-  00 30 42 46 50 30 30 31 36 39 0a 20 20 20 00 e8 '.0BFP00169.   ..'
-Checksum: 0xe8
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

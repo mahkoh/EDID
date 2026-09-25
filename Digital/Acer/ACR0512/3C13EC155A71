@@ -67,28 +67,13 @@ Checksum: 0x9f
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 72 12 05 c3 85 20 64 '.........r.... d'
-  2a 1a 01 03 80 30 1b 78 ee 00 51 a5 55 52 a0 28 '*....0.x..Q.UR.('
-  0f 50 54 b3 0c 00 71 4f 81 80 81 c0 81 00 95 00 '.PT...qO........'
-  b3 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 dd 0c 11 00 00 1e 01 00 00 f9 00 38 4c 1f 'E............8L.'
-  4b 12 00 0a d4 0c 11 20 20 20 00 00 00 fc 00 4b 'K......   .....K'
-  32 32 32 48 51 4c 0a 20 20 20 20 20 00 00 00 ff '222HQL.     ....'
-  00 54 35 58 45 45 30 30 35 32 34 32 33 0a 00 9f '.T5XEE0052423...'
-Checksum: 0x9f
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #2: Pixelclock < 10 MHz, assuming invalid data 0x01 0x00.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

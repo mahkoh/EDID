@@ -64,15 +64,23 @@ Checksum: 0xc9
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Image size is 2200x1125 mm, but based on the picture AR it should be 2000x1125 mm.
+  Display Product Serial Number: ...
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 86.958 Hz (Monitor: 56.000 - 75.000 Hz)
+    Maximum Clock: 162.000 MHz (Monitor: 160.000 MHz)
+
 Failures:
 
 Block 0, Base EDID:
   Display Product Serial Number: ...
   Display Product Name: Non-space after newline.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 56.250 - 86.958 Hz (Monitor: 56.000 - 75.000 Hz)
-    Maximum Clock: 162.000 MHz (Monitor: 160.000 MHz)
   Base EDID: The DTD max image size is 2200x1125mm, but the display size is not specified anywhere.
 
 EDID conformity: FAIL

@@ -65,12 +65,10 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x39.
-
-Failures:
-
+  Detailed Timing Descriptor #2: Image size is 474x296 mm, but based on the picture AR it should be 474x267 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 56.250 - 75.029 Hz (Monitor: 58.000 - 86.000 Hz)
     Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 30.000 - 67.000 kHz)
 
-EDID conformity: FAIL
+EDID conformity: PASS

@@ -74,26 +74,11 @@ Checksum: 0x64
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5d f2 47 27 81 38 01 00 '........].G'.8..'
-  09 1d 01 03 80 3c 22 78 2a a1 95 a7 55 52 9f 27 '.....<"x*...UR.''
-  14 50 54 bf ef 80 b3 00 a9 c0 95 00 81 80 71 4f '.PT...........qO'
-  90 40 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.@.....:..q8-@X,'
-  45 00 0f 28 21 00 00 1e 00 00 00 ff 00 4a 54 32 'E..(!........JT2'
-  37 31 39 30 39 30 32 30 33 0a 00 00 00 fd 00 37 '719090203......7'
-  4c 1e 52 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.R...      ....'
-  00 54 65 72 72 61 20 32 37 34 37 57 0a 20 00 64 '.Terra 2747W. .d'
-Checksum: 0x64
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 527x296 mm vs display size 600x340 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

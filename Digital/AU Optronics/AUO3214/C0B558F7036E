@@ -35,18 +35,26 @@ Block 0, Base EDID:
                  Hfront   21 Hsync  32 Hback   75 Hpol N
                  Vfront    4 Vsync   4 Vback    8 Vpol N
     Empty Descriptor
-    Alphanumeric Data String: 'JF298'
-    Alphanumeric Data String: '+:FPp'
+    Alphanumeric Data String: 'JF298.B121EW3'
+    Alphanumeric Data String: '+:FPp.....'
 Checksum: 0x55
 
 ----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x03 at position 5, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x8f at position 5, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0xac at position 6, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0xe2 at position 7, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 8, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 9, can cause problems.
 
 Failures:
 
 Block 0, Base EDID:
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
-  Alphanumeric Data String: Non-printable character.
-  Alphanumeric Data String: Non-printable character.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 

@@ -35,7 +35,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6855, 0.3017
     Green: 0.2734, 0.6562
@@ -74,7 +74,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   37 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-122 Hz V, 190-190 kHz H, max dotclock 650 MHz
+      Monitor ranges (Range Limits Only): 48-122 Hz V, 190-190 kHz H, max dotclock 650 MHz
     Display Product Name: 'V3L6W'
   Extension blocks: 1
 Checksum: 0xe8
@@ -87,7 +87,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
@@ -129,15 +129,12 @@ Block 1, CTA-861 Extension Block:
     BT2020RGB
     Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 122 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x04
-    Maximum luminance: 101 (445.755 cd/m^2)
-    Minimum luminance: 27 (0.050 cd/m^2)
-    Maximum luminance (without local dimming): 96 (400.000 cd/m^2)
-    Minimum luminance (without local dimming): 29 (0.052 cd/m^2)
   Detailed Timing Descriptors:
     DTD 3:  2560x1440  119.999010 Hz  16:9    178.199 kHz    484.700000 MHz (819 mm x 346 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
@@ -158,7 +155,11 @@ Checksum: 0x5e  Unused space in Extension Block: 2 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #3: Image size is 819x346 mm, but based on the picture AR it should be 615x346 mm.
+  Detailed Timing Descriptor #6: Image size is 819x346 mm, but based on the picture AR it should be 413x346 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 30.000 - 120.000 Hz (Monitor: 48.000 - 122.000 Hz)

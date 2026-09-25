@@ -26,7 +26,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6396, 0.3291
     Green: 0.2998, 0.5996
@@ -39,8 +39,8 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol N
                  Vfront    3 Vsync   6 Vback   26 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 30-60 Hz V, 74-74 kHz H, max dotclock 150 MHz
-    Alphanumeric Data String: 'J87XJ'
+      Monitor ranges (Range Limits Only): 30-60 Hz V, 74-74 kHz H, max dotclock 150 MHz
+    Alphanumeric Data String: 'J87XJ.LQ134N1'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 03 32 00 02 00 00 0a 41 0a 20 20 '....A.2.....A.  '
 Checksum: 0xbc
 
@@ -50,6 +50,7 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x44.
+  Alphanumeric Data String: Non-ASCII character 0x80 at position 5, can cause problems.
   Missing Display Product Name.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -60,6 +61,5 @@ Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Alphanumeric Data String: Non-printable character.
 
 EDID conformity: FAIL

@@ -83,7 +83,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
@@ -120,15 +120,21 @@ Block 1, CTA-861 Extension Block:
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.23
+    Version: 2
+    Feature Caps: 0x17
+      Global Backlight Control Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xed (MCCS)
     Flags 2.x: 0x04
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      Gamma 2.2 EOTF Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 98 (417.710 cd/m^2)
     Minimum luminance: 33 (0.070 cd/m^2)
-    Maximum luminance (without local dimming): 95 (391.429 cd/m^2)
-    Minimum luminance (without local dimming): 33 (0.066 cd/m^2)
+    Maximum luminance (minimum backlight): 95 (391.429 cd/m^2)
+    Minimum luminance (minimum backlight): 33 (0.066 cd/m^2)
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
@@ -163,16 +169,18 @@ Checksum: 0x5c  Unused space in Extension Block: 4 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 31 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #4: Image size is 697x392 mm, but based on the picture AR it should be 348x392 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 30.000 - 144.000 Hz (Monitor: 48.000 - 144.000 Hz)
+    Horizontal Freq: 31.250 - 214.559 kHz (Monitor: 71.000 - 214.000 kHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 30.000 - 144.000 Hz (Monitor: 48.000 - 144.000 Hz)
-    Horizontal Freq: 31.250 - 214.559 kHz (Monitor: 71.000 - 214.000 kHz)
 
 EDID conformity: FAIL

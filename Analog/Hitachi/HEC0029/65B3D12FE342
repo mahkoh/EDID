@@ -59,12 +59,14 @@ Checksum: 0x78
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x10.
+  Detailed Timing Descriptor #2: Image size is 708x398 mm, but based on the picture AR it should be 530x398 mm.
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 708x398 mm vs display size 930x520 mm.
-  Display Product Name: One or more trailing spaces.
+  Display Product Name: One or more trailing spaces before newline.
 
 EDID conformity: FAIL

@@ -67,26 +67,16 @@ Checksum: 0xdd
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 2d 89 01 00 00 00 00 '........L-......'
-  02 0f 01 03 68 5d 35 78 0a ee 91 a3 54 4c 99 26 '....h]5x....TL.&'
-  0f 50 54 af ce 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 2f 0d 50 f0 30 e0 25 10 10 70 '....../.P.0.%..p'
-  68 00 a5 14 32 00 00 1e 64 19 00 40 41 00 26 30 'h...2...d..@A.&0'
-  18 88 36 00 a5 14 32 00 00 18 00 00 00 fd 00 38 '..6...2........8'
-  4b 1e 3d 08 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.=...      ....'
-  00 53 41 4d 53 55 4e 47 20 50 44 50 0a 20 00 dd '.SAMSUNG PDP. ..'
-Checksum: 0xdd
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Image size is 933x532 mm, but based on the picture AR it should be 709x532 mm.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

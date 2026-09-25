@@ -36,18 +36,24 @@ Block 0, Base EDID:
                  Vfront    1 Vsync   3 Vback    8 Vpol N
     Empty Descriptor
     Alphanumeric Data String: 'RM247'
-    Alphanumeric Data String: '.>ISt'
+    Alphanumeric Data String: '.>ISt..'
 Checksum: 0x65
 
 ----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x97 at position 5, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0xc6 at position 6, can cause problems.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x10.
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
-  Alphanumeric Data String: Non-printable character.
-  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: NUL byte at position 5.
+  Alphanumeric Data String: 0xff byte at position 7.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 

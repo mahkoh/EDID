@@ -74,27 +74,17 @@ Checksum: 0x22
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 08 59 09 19 e0 6f 00 00 '.........Y...o..'
-  0a 13 01 03 68 29 1a 78 2a ee d5 a5 55 48 9b 26 '....h).x*...UH.&'
-  12 50 54 bf ee 80 71 4f 81 40 81 80 95 00 01 01 '.PT...qO.@......'
-  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
-  36 00 cb 95 21 00 00 1c 00 00 00 ff 00 4a 37 36 '6...!........J76'
-  39 33 4a 41 30 32 38 36 34 30 00 00 00 fd 00 38 '93JA028640.....8'
-  4b 1f 51 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
-  00 4e 53 2d 4c 43 44 31 39 2d 30 39 43 41 00 22 '.NS-LCD19-09CA."'
-Checksum: 0x22
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 715x405 mm, but based on the picture AR it should be 648x405 mm.
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 715x405 mm vs display size 410x260 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 715x405mm, which is larger than the display size 410.0x260.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

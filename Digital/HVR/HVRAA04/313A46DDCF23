@@ -73,13 +73,16 @@ Checksum: 0x90
 
 ----------------
 
+Warnings:
+
+EDID:
+  No Native Video Resolution was defined.
+
 Failures:
 
 Block 0, Base EDID:
   Standard Timings: Missing preferred timing.
 EDID:
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: Missing DisplayID Display Parameters Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
 
 EDID conformity: FAIL

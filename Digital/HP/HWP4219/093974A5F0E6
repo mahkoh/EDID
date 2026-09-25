@@ -53,22 +53,10 @@ Checksum: 0x86
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 22 f0 19 42 01 00 00 00 '........"..B....'
-  10 16 01 03 80 2c 19 78 ee 59 50 a5 55 4e 9d 25 '.....,.x.YP.UN.%'
-  11 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50 '......0*@.`.d0.P'
-  13 00 bb f9 10 00 00 00 00 00 00 fc 00 48 50 20 '.............HP '
-  41 6c 6c 2d 69 6e 2d 4f 6e 65 00 00 00 fc 00 0a 'All-in-One......'
-  20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fc '            ....'
-  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 86 '..            ..'
-Checksum: 0x86
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x53.
 
 Failures:
@@ -78,9 +66,7 @@ Block 0, Base EDID:
   Display Product Name: Empty string.
   Display Product Name: Empty string.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

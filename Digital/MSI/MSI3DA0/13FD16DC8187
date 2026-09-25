@@ -69,7 +69,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  64 Hback   48 Hpol N
                  Vfront    3 Vsync  10 Vback   57 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-100 Hz V, 30-160 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 48-100 Hz V, 30-160 kHz H, max dotclock 600 MHz
     Display Product Name: 'MSI MPG341CQR'
   Extension blocks: 1
 Checksum: 0xeb
@@ -82,7 +82,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -118,7 +118,8 @@ Block 1, CTA-861 Extension Block:
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.3
+    Version: 1
+    Feature Caps: 0x03
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -156,17 +157,25 @@ Checksum: 0xb7  Unused space in Extension Block: 5 bytes
 
 ----------------
 
-Failures:
+Warnings:
 
-Block 0, Base EDID:
-  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
 Block 1, CTA-861 Extension Block:
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+  Video Data Block: VIC 97 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #3: Image size is 797x334 mm, but based on the picture AR it should be 593x334 mm.
+  Detailed Timing Descriptor #5: Image size is 797x334 mm, but based on the picture AR it should be 593x334 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 49.987 - 120.000 Hz (Monitor: 48.000 - 100.000 Hz)
     Horizontal Freq: 28.125 - 182.996 kHz (Monitor: 30.000 - 160.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
+  Display Range Limits: 'Range Limits Only' is not allowed for EDID < 1.4.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

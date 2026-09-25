@@ -49,6 +49,8 @@ Checksum: 0xdd
 Warnings:
 
 Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 518x333 mm, but based on the picture AR it should be 518x291 mm.
+  Detailed Timing Descriptor #2: Image size is 518x333 mm, but based on the picture AR it should be 518x291 mm.
   Missing Display Product Name.
 
 Failures:
@@ -56,7 +58,7 @@ Failures:
 Block 0, Base EDID:
   Vendor & Product Identification: Manufacturer name field contains garbage.
   Alphanumeric Data String: Empty string.
-  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: No newline, but one or more trailing spaces.
 EDID:
   Base EDID: The DTD max image size is 518x333mm, but the display size is not specified anywhere.
 

@@ -95,7 +95,7 @@ Block 1, DisplayID Extension Block:
     Native Maximum Luminance (Full Coverage): 300.000000 cd/m^2
     Native Maximum Luminance (10% Rectangular Coverage): 300.000000 cd/m^2
     Native Minimum Luminance: 4.000000 cd/m^2
-    Native Color Depth: 10 bpc
+    Native Color Depth: 8 bpc
     Display Device Technology: Organic LED
     Native Gamma EOTF: 2.20
   Display Interface Features Data Block:
@@ -104,70 +104,10 @@ Block 1, DisplayID Extension Block:
     DTD:  1920x1200   60.000401 Hz  16:10    74.880 kHz    149.761000 MHz (aspect 16:10, no 3D stereo, preferred)
                Hfront    8 Hsync  32 Hback   40 Hpol N
                Vfront   34 Vsync   8 Vback    6 Vpol N
-  Unknown DisplayID Data Block (0x2e, length 6):
-    00 44 b0 5c b0 5c                               '.D.\.\'
-  CTA-861 DisplayID Data Block:
-  Colorimetry Data Block:
-    sYCC601
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 83 (301.833 cd/m^2)
-    Desired content max frame-average luminance: 83 (301.833 cd/m^2)
-    Desired content min luminance: 3 (0.000 cd/m^2)
-  Checksum: 0x8d
-Checksum: 0x90
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 83 14 42 a1 ff 00 00 '........L..B....'
-  00 23 01 04 a5 22 16 78 02 61 41 ae 51 41 b7 24 '.#...".x.aA.QA.$'
-  0a 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 80 3a 80 50 70 b0 30 40 08 20 '.......:.Pp.0@. '
-  28 08 58 d7 10 00 00 1b 00 00 00 10 00 00 00 00 '(.X.............'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 10 00 00 '................'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 '................'
-  00 00 00 00 0f 96 96 12 20 4f 96 00 00 00 01 06 '........ O......'
-Checksum: 0x06
-
-----------------
-
-Block 3, DisplayID Extension Block:
-  Version: 2.0
-  Extension Count: 0
-  Product Identification Data Block (0x20), OUI BA-41-59:
-    Product Code: 16916
-    Year of Manufacture: 2025
-    Product ID: ATNA60KJ02-0
-  Display Parameters Data Block (0x21):
-    Image size: 344.4 mm x 215.3 mm
-    Display native pixel format: 1920x1200
-    Scan Orientation: Left to Right, Top to Bottom
-    Luminance Information: Minimum guaranteed value
-    Color Information: CIE 1931
-    Audio Speaker Information: integrated
-    Native Color Chromaticity:
-      Primary #1:  (0.680908, 0.318115)
-      Primary #2:  (0.253906, 0.716064)
-      Primary #3:  (0.142090, 0.039062)
-      White Point: (0.312744, 0.329102)
-    Native Maximum Luminance (Full Coverage): 300.000000 cd/m^2
-    Native Maximum Luminance (10% Rectangular Coverage): 300.000000 cd/m^2
-    Native Minimum Luminance: 4.000000 cd/m^2
-    Native Color Depth: 10 bpc
-    Display Device Technology: Organic LED
-    Native Gamma EOTF: 2.20
-  Display Interface Features Data Block:
-    Supported bpc for RGB encoding: 8
-  Video Timing Modes Type 7 - Detailed Timings Data Block:
-    DTD:  1920x1200   60.000401 Hz  16:10    74.880 kHz    149.761000 MHz (aspect 16:10, no 3D stereo, preferred)
-               Hfront    8 Hsync  32 Hback   40 Hpol N
-               Vfront   34 Vsync   8 Vback    6 Vpol N
-  Unknown DisplayID Data Block (0x2e, length 6):
-    00 44 b0 5c b0 5c                               '.D.\.\'
+  Brightness Luminance Range Data Block:
+    Minimum SDR Luminance (Full Coverage): 4.000000 cd/m^2
+    Maximum Suggested SDR Luminance (Full Coverage): 300.000000 cd/m^2
+    Maximum Boost SDR Luminance: 300.000000 cd/m^2
   CTA-861 DisplayID Data Block:
   Colorimetry Data Block:
     sYCC601
@@ -189,25 +129,11 @@ Warnings:
 Block 0, Base EDID:
   Missing Display Product Name.
 Block 1, DisplayID Extension Block:
-  Product Identification Data Block (0x20), OUI BA-41-59: Unknown OUI BA-41-59.
-  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-Block 3, DisplayID Extension Block:
-  Product Identification Data Block (0x20), OUI BA-41-59: Unknown OUI BA-41-59.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
-Block 1, DisplayID Extension Block:
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, DisplayID Extension Block:
-  Product Type should be 0 in extension block.
-  Product Identification Data Block (0x20), OUI BA-41-59: Product Identification Data Block (0x20), OUI BA-41-59 is required to be the first DisplayID Data Block.
-  Display Parameters Data Block (0x21): Duplicate Display Parameters Data Block.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

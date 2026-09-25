@@ -71,7 +71,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6523, 0.3320
     Green: 0.2949, 0.6230
@@ -84,7 +84,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback  107 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 30-120 Hz V, 244-244 kHz H, max dotclock 740 MHz
+      Monitor ranges (Range Limits Only): 30-120 Hz V, 244-244 kHz H, max dotclock 740 MHz
     Alphanumeric Data String: 'BOE NJ'
     Display Product Name: 'NE135A1M-NY1'
   Extension blocks: 2
@@ -115,7 +115,7 @@ Block 1, DisplayID Extension Block:
     Native Maximum Luminance (Full Coverage): 500.000000 cd/m^2
     Native Maximum Luminance (10% Rectangular Coverage): 500.000000 cd/m^2
     Native Minimum Luminance: 0.330078 cd/m^2
-    Native Color Depth: 10 bpc
+    Native Color Depth: 8 bpc
     Display Device Technology: Active Matrix LCD
     Native Gamma EOTF: 2.20
   Video Timing Modes Type 7 - Detailed Timings Data Block:
@@ -130,14 +130,12 @@ Block 1, DisplayID Extension Block:
     Seamless Dynamic Video Timing Support: Yes
   CTA-861 DisplayID Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.1
+    Version: 3
+    Feature Caps: 0x01
     Minimum Refresh Rate: 30 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 106 (496.743 cd/m^2)
-    Minimum luminance: 66 (0.333 cd/m^2)
-    Unknown: 0x6a 0x42
   Checksum: 0x4f
 Checksum: 0x90
 
@@ -153,85 +151,8 @@ Checksum: 0x90
 
 ----------------
 
-Block 3, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 e5 b4 0c 00 00 00 00 '................'
-  34 21 01 04 a5 1d 13 78 07 0a a5 a7 55 4b 9f 25 '4!.....x....UK.%'
-  0c 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 11 91 40 a0 b0 80 74 70 30 20 '........@...tp0 '
-  36 00 1d be 10 00 00 1a 00 00 00 fd 00 1e 78 f4 '6.............x.'
-  f4 4a 01 0a 20 20 20 20 20 20 00 00 00 fe 00 42 '.J..      .....B'
-  4f 45 20 4e 4a 0a 20 20 20 20 20 20 00 00 00 fc 'OE NJ.      ....'
-  00 4e 45 31 33 35 41 31 4d 2d 4e 59 31 0a 02 31 '.NE135A1M-NY1..1'
-Checksum: 0x31
-
-----------------
-
-Block 4, DisplayID Extension Block:
-  Version: 2.0
-  Extension Count: 0
-  Product Identification Data Block (0x20), OUI 9A-0E-00:
-    Product Code: 3252
-    Year of Manufacture: 2023, Week 52
-    Product ID: NE13NY1
-  Display Parameters Data Block (0x21):
-    Image size: 285.0 mm x 190.0 mm
-    Display native pixel format: 2880x1920
-    Scan Orientation: Left to Right, Top to Bottom
-    Luminance Information: Guidance for the Source device
-    Color Information: CIE 1931
-    Audio Speaker Information: not integrated
-    Native Color Chromaticity:
-      Primary #1:  (0.651855, 0.331787)
-      Primary #2:  (0.294922, 0.622803)
-      Primary #3:  (0.145996, 0.048828)
-      White Point: (0.312988, 0.328857)
-    Native Maximum Luminance (Full Coverage): 500.000000 cd/m^2
-    Native Maximum Luminance (10% Rectangular Coverage): 500.000000 cd/m^2
-    Native Minimum Luminance: 0.330078 cd/m^2
-    Native Color Depth: 10 bpc
-    Display Device Technology: Active Matrix LCD
-    Native Gamma EOTF: 2.20
-  Video Timing Modes Type 7 - Detailed Timings Data Block:
-    DTD:  2880x1920  120.000032 Hz   0:0    244.320 kHz    742.733000 MHz (aspect undefined, no 3D stereo, preferred)
-               Hfront   48 Hsync  32 Hback   80 Hpol N
-               Vfront    3 Vsync   6 Vback  107 Vpol N
-  Dynamic Video Timing Range Limits Data Block:
-    Minimum Pixel Clock: 742733 kHz
-    Maximum Pixel Clock: 742733 kHz
-    Minimum Vertical Refresh Rate: 30 Hz
-    Maximum Vertical Refresh Rate: 120 Hz
-    Seamless Dynamic Video Timing Support: Yes
-  CTA-861 DisplayID Data Block:
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.1
-    Minimum Refresh Rate: 30 Hz
-    Maximum Refresh Rate: 120 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
-    Maximum luminance: 106 (496.743 cd/m^2)
-    Minimum luminance: 66 (0.333 cd/m^2)
-    Unknown: 0x6a 0x42
-  Checksum: 0x4f
-Checksum: 0x90
-
-----------------
-
-Block 5, DisplayID Extension Block:
-  Version: 2.0
-  Extension Count: 0
-  Display Interface Features Data Block:
-    Supported bpc for RGB encoding: 8
-  Checksum: 0x36
-Checksum: 0x90
-
-----------------
-
 Warnings:
 
-Block 1, DisplayID Extension Block:
-  Product Identification Data Block (0x20), OUI 9A-0E-00: Unknown OUI 9A-0E-00.
-Block 4, DisplayID Extension Block:
-  Product Identification Data Block (0x20), OUI 9A-0E-00: Unknown OUI 9A-0E-00.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 122.161 - 244.320 kHz (Monitor: 244.000 - 244.000 kHz)
@@ -242,14 +163,8 @@ Failures:
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, DisplayID Extension Block:
-  Expected 0 DisplayID Extension Block, but got 3.
-Block 3, Base EDID:
-  Unknown Extension Block.
-Block 4, DisplayID Extension Block:
-  Product Type should be 0 in extension block.
-  Product Identification Data Block (0x20), OUI 9A-0E-00: Product Identification Data Block (0x20), OUI 9A-0E-00 is required to be the first DisplayID Data Block.
-  Display Parameters Data Block (0x21): Duplicate Display Parameters Data Block.
+  Expected 0 DisplayID Extension Block, but got 1.
 EDID:
-  Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
+  Extension Block 3 started with EDID header, ignoring Extension Blocks >= 3.
 
 EDID conformity: FAIL

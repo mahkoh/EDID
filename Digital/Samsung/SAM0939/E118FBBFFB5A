@@ -73,26 +73,11 @@ Checksum: 0x65
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 2d 39 09 35 33 42 54 '........L-9.53BT'
-  2f 15 01 03 a0 33 1d 78 2a 56 c1 a2 57 52 9f 27 '/....3.x*V..WR.''
-  0b 50 54 bd ef 80 71 4f 81 c0 81 00 81 80 01 01 '.PT...qO........'
-  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 fe 1f 11 00 00 1e 66 21 56 aa 51 00 1e 30 'E.......f!V.Q..0'
-  46 8f 33 00 fe 1f 11 00 00 1e 00 00 00 fd 00 3c 'F.3............<'
-  4b 1e 51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
-  00 54 32 33 42 33 35 30 0a 20 20 20 20 20 00 65 '.T23B350.     .e'
-Checksum: 0x65
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x20.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

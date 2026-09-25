@@ -68,7 +68,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 2
+  Native DTDs: 2
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
@@ -109,7 +109,8 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 82 (295.365 cd/m^2)
     Desired content min luminance: 79 (0.283 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 46 Hz
     Maximum Refresh Rate: 61 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -129,7 +130,11 @@ Checksum: 0x96  Unused space in Extension Block: 21 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
@@ -137,6 +142,7 @@ Block 1, CTA-861 Extension Block:
 Failures:
 
 Block 0, Base EDID:
+  Display Product Serial Number: ...
   Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x22.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.

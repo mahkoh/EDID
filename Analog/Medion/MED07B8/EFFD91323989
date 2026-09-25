@@ -64,6 +64,8 @@ Checksum: 0x8c
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 337x270 mm, but based on the picture AR it should be 337x184 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 29.190 - 79.976 kHz (Monitor: 30.000 - 83.000 kHz)

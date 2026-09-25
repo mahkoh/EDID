@@ -51,11 +51,11 @@ Checksum: 0xf2
 
 ----------------
 
-Failures:
+Warnings:
 
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 59.790 - 70.082 Hz (Monitor: 56.000 - 63.000 Hz)
     Maximum Clock: 85.500 MHz (Monitor: 80.000 MHz)
 
-EDID conformity: FAIL
+EDID conformity: PASS

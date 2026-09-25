@@ -79,7 +79,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 2
+  Native DTDs: 2
   Video Data Block:
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
     VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
@@ -117,7 +117,13 @@ Checksum: 0xec  Unused space in Extension Block: 4 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 2 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #3: Image size is 344x194 mm, but based on the picture AR it should be 291x194 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.029 Hz (Monitor: 60.000 - 75.000 Hz)
+    Maximum Clock: 95.654 MHz (Monitor: 80.000 MHz)
 
 Failures:
 
@@ -133,9 +139,6 @@ Block 1, CTA-861 Extension Block:
   Dummy Descriptor: Dummy block filled with garbage.
   Dummy Descriptor: Dummy block filled with garbage.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 75.029 Hz (Monitor: 60.000 - 75.000 Hz)
-    Maximum Clock: 95.654 MHz (Monitor: 80.000 MHz)
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

@@ -71,26 +71,16 @@ Checksum: 0xdf
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 d1 13 80 45 54 00 00 '............ET..'
-  19 18 01 03 0e 22 1b 78 2e 3d 85 a5 57 49 9b 25 '.....".x.=..WI.%'
-  11 50 54 a5 6b 80 81 c0 81 00 81 40 81 80 01 01 '.PT.k......@....'
-  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
-  13 00 52 0e 11 00 00 1e 00 00 00 ff 00 48 36 45 '..R..........H6E'
-  30 31 31 38 31 53 4c 30 0a 20 00 00 00 fd 00 32 '01181SL0. .....2'
-  4c 1e 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
-  00 42 65 6e 51 20 42 4c 37 30 32 0a 20 20 00 df '.BenQ BL702.  ..'
-Checksum: 0xdf
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -75,19 +75,6 @@ Checksum: 0xec
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 16 09 f2 1c d7 05 00 00 '................'
-  03 10 01 03 0c 1f 17 b9 2e 0c b5 a0 57 49 9b 26 '............WI.&'
-  10 50 54 bf ef 80 81 80 81 40 71 4f 00 00 00 00 '.PT......@qO....'
-  00 00 00 00 00 00 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
-  13 00 52 0e 11 00 00 1e 00 00 00 fe 00 0a 20 20 '..R...........  '
-  20 20 20 20 20 20 20 20 20 20 00 00 00 fd 00 38 '          .....8'
-  4b 1f 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 45 4e 37 34 31 30 65 0a 20 20 20 20 20 00 ec '.EN7410e.     ..'
-Checksum: 0xec
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -104,10 +91,8 @@ Block 0, Base EDID:
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
   Detailed Timing Descriptor #1: Mismatch of image size 338x270 mm vs display size 310x230 mm.
   Alphanumeric Data String: Empty string.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 338x270mm, which is larger than the display size 310.0x230.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

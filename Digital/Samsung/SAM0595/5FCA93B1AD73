@@ -67,7 +67,7 @@ Checksum: 0x21
 Block 1, CTA-861 Extension Block:
   Revision: 3
   Basic audio support
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
     VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
@@ -95,7 +95,9 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Video Data Block: VIC 4 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 4 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #2: DTD is identical to VIC 16, which is not present in the CTA Ext Block.
+  Detailed Timing Descriptor #2: Dubious image size (16x9 mm is smaller than 100x100 mm).
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   CTA-861: Native progressive resolution of 1280x720 is smaller than the max preferred progressive resolution 2048x1152.

@@ -67,21 +67,8 @@ Block 0, Base EDID:
     Display Product Name: 'HDMI'
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 50-75 Hz V, 30-130 kHz H, max dotclock 190 MHz
+      Monitor ranges (Range Limits Only): 50-75 Hz V, 30-130 kHz H, max dotclock 190 MHz
   Extension blocks: 1
-Checksum: 0x44
-
-----------------
-
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 43 47 32 bc 01 01 01 01 '........CG2.....'
-  23 1c 01 03 80 34 1f 78 3e ee 91 a3 54 4c 99 26 '#....4.x>...TL.&'
-  0f 50 54 0f cf 00 d1 c0 b3 00 a9 c0 a9 c0 95 00 '.PT.............'
-  81 80 81 40 81 c0 02 3a 80 18 71 38 2d 40 58 2c '...@...:..q8-@X,'
-  25 00 08 36 21 00 00 1e 00 00 00 fc 00 48 44 4d '%..6!........HDM'
-  49 0a 20 20 20 20 20 20 20 20 00 00 00 ff 00 0a 'I.        ......'
-  20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fd '            ....'
-  00 32 4b 1e 82 13 01 0a 20 20 20 20 20 20 01 44 '.2K.....      .D'
 Checksum: 0x44
 
 ----------------
@@ -89,14 +76,17 @@ Checksum: 0x44
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Detailed Timing Descriptor #1: Image size is 520x310 mm, but based on the picture AR it should be 520x292 mm.
 
 Failures:
 
 Block 0, Base EDID:
   Display Product Serial Number: ...
-  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: 'Range Limits Only' is not allowed for EDID < 1.4.
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
+  Base EDID: EDID specified 1 extension block(s), but found 0 extension block(s).
 
 EDID conformity: FAIL

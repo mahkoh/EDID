@@ -47,6 +47,11 @@ Checksum: 0xb1
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+
 Failures:
 
 Block 0, Base EDID:
@@ -58,7 +63,7 @@ Block 0, Base EDID:
     Vertical Active/Blanking 2560/3920
     Vertical Frontporch/Sync Width 0/2
   Detailed Timing Descriptor #3: Mismatch of image size vs display size: image size is not set, but display size is.
-  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: No newline, but one or more trailing spaces.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 

@@ -64,7 +64,10 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x44.
+  Detailed Timing Descriptor #1: Dubious image size (16x10 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (4x3 mm is smaller than 100x100 mm).
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 16.
+  Detailed Timing Descriptor #3: Dubious image size (16x9 mm is smaller than 100x100 mm).
 
 Failures:
 

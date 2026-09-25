@@ -72,21 +72,11 @@ Checksum: 0xc8
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 12 e5 10 16 50 2d 31 01 '............P-1.'
-  32 13 01 03 6c 23 14 78 ee 5a d5 a7 56 4b 9b 24 '2...l#.x.Z..VK.$'
-  13 50 54 af ce 00 61 40 81 00 61 4f 81 c0 01 01 '.PT...a@..aO....'
-  01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70 '......f!P.Q..0@p'
-  36 00 5c c5 10 00 00 1e 00 00 00 ff 00 30 0a 0a '6.\..........0..'
-  0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 00 00 00 fd 00 38 '...............8'
-  4b 1e 3c 08 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.<...      ....'
-  00 4c 4d 31 36 31 30 57 0a 0a 0a 0a 0a 0a 00 c8 '.LM1610W........'
-Checksum: 0xc8
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Display Product Serial Number: ...
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 85.500 MHz (Monitor: 80.000 MHz)
@@ -95,12 +85,10 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
-  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Display Product Serial Number: ...
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Display Product Name: Non-space after newline.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -66,23 +66,11 @@ Checksum: 0x57
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 63 18 00 00 00 00 00 00 '........c.......'
-  0a 14 01 04 0a 00 00 78 2a 99 aa a3 54 4d 95 24 '.......x*...TM.$'
-  19 51 54 23 08 00 a9 40 8b c0 81 80 81 40 61 40 '.QT#...@.....@a@'
-  45 40 31 40 01 01 34 21 50 b0 51 00 1b 30 40 70 'E@1@..4!P.Q..0@p'
-  63 00 00 00 00 00 00 18 00 00 00 ff 00 30 30 30 'c............000'
-  30 30 30 30 30 30 30 30 30 30 00 00 00 fd 00 32 '0000000000.....2'
-  3c 1f 41 0e 00 0a 20 20 20 20 20 20 00 00 00 fc '<.A...      ....'
-  00 4c 43 44 4d 54 32 33 0a 20 20 20 20 20 00 57 '.LCDMT23.     .W'
-Checksum: 0x57
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+  Display Product Serial Number: ...
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -92,10 +80,8 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

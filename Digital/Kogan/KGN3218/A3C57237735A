@@ -78,7 +78,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 2
+  Native DTDs: 2
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -126,7 +126,8 @@ Block 1, CTA-861 Extension Block:
     xvYCC709
     Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 35 Hz
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -144,9 +145,14 @@ Checksum: 0x7c  Unused space in Extension Block: 25 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 95.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
 EDID:
-  CTA-861: Multiple native progressive timings are defined.
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.062 Hz (Monitor: 30.000 - 76.000 Hz)
+    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 160.000 kHz)
 
 Failures:
 
@@ -157,12 +163,9 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 621x341 mm vs display size 700x390 mm.
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Detailed Timing Descriptor #3: Mismatch of image size 596x335 mm vs display size 700x390 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 596x335 mm vs display size 700x390 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 75.062 Hz (Monitor: 30.000 - 76.000 Hz)
-    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 160.000 kHz)
 
 EDID conformity: FAIL

@@ -79,36 +79,22 @@ Checksum: 0xf3
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 34 a9 af d0 00 00 00 00 '........4.......'
-  00 15 01 03 0e cb 98 78 0a fe 3c a2 5c 5a a0 25 '.......x..<.\Z.%'
-  0e 50 60 3f ff 80 71 4b 81 40 90 40 a9 40 d1 00 '.P`?..qK.@.@.@..'
-  95 00 b3 00 81 c0 9e 20 00 90 51 20 1f 30 48 80 '....... ..Q .0H.'
-  36 00 00 00 00 00 00 18 0e 1f 00 80 51 00 1e 30 '6...........Q..0'
-  40 80 37 00 00 00 00 00 00 18 00 00 00 fd 00 18 '@.7.............'
-  55 0f 5b 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'U.[...      ....'
-  00 46 57 34 33 30 0a 20 20 20 20 20 20 20 00 f3 '.FW430.       ..'
-Checksum: 0xf3
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x1c.
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x17.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 86.958 Hz (Monitor: 24.000 - 85.000 Hz)
+    Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
   Detailed Timing Descriptor #2: Mismatch of image size vs display size: image size is not set, but display size is.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 56.250 - 86.958 Hz (Monitor: 24.000 - 85.000 Hz)
-    Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

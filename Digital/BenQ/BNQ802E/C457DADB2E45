@@ -37,7 +37,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6523, 0.3339
     Green: 0.3066, 0.6367
@@ -68,7 +68,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   54 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 40-60 Hz V, 140-140 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 40-60 Hz V, 140-140 kHz H, max dotclock 600 MHz
     Display Product Name: 'BenQ PD2700U'
   Extension blocks: 1
 Checksum: 0xd3
@@ -81,7 +81,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -111,8 +111,8 @@ Block 1, CTA-861 Extension Block:
       Supported sample rates (kHz): 48 44.1 32
       Supported sample sizes (bits): 24 20 16
   Speaker Allocation Data Block:
-    TpBL/TpBR - Top Back Left/Right
-    BtFC - Bottom Front Center
+    TpBL/TpBR - Top Back Left/Right (Deprecated, use the RCDB)
+    BtFC - Bottom Front Center (Deprecated, use the RCDB)
   Unknown CTA-861 Data Block (tag 0x00, length 5):
     c0 00 e6 06 05                                  '.....'
   Unknown CTA-861 Data Block (tag 0x00, length 1):
@@ -145,9 +145,14 @@ Checksum: 0x00 (should be 0x01)  Unused space in Extension Block: 27 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 97 and the first DTD are not identical. Is this intended?
+  Speaker Allocation Data Block: Specifies deprecated speakers.
   Unknown CTA-861 Data Block (tag 0x00, length 5).
   Unknown CTA-861 Data Block (tag 0x00, length 1).
+  Detailed Timing Descriptor #2: Dubious image size (80x33 mm is smaller than 100x100 mm).
   Detailed Timing Descriptor #2: The use of non-zero borders in a DTD is not recommended.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:

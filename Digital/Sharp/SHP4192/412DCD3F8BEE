@@ -73,24 +73,12 @@ Checksum: 0x7b
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4d 10 92 41 00 00 00 00 '........M..A....'
-  01 14 01 03 80 46 28 78 2a ef bc a3 54 4c 9e 26 '.....F(x*...TL.&'
-  0c 45 47 bf ef 80 a9 40 81 80 90 40 01 01 01 00 '.EG....@...@....'
-  01 01 01 01 01 01 02 3a 80 d0 72 38 2d 40 10 2c '.......:..r8-@.,'
-  45 80 c4 8e 21 00 00 1e 66 21 50 b0 51 00 1b 30 'E...!...f!P.Q..0'
-  40 70 36 00 c4 8e 21 00 00 1e 00 00 00 fd 00 17 '@p6...!.........'
-  4d 0e 54 14 00 0a 20 20 20 20 20 20 00 00 00 fc 'M.T...      ....'
-  00 53 48 41 52 50 20 48 44 4d 49 0a 20 20 01 7b '.SHARP HDMI.  .{'
-Checksum: 0x7b
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
-Block 1, Base EDID:
-  Unknown Extension Block.
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
+  Base EDID: EDID specified 1 extension block(s), but found 0 extension block(s).
 
 EDID conformity: FAIL

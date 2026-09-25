@@ -58,7 +58,7 @@ Block 0, Base EDID:
     DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
     DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
   Standard Timings:
-    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    GTF     :  1024x768    72.000073 Hz   4:3     57.672 kHz     78.434000 MHz
     DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
     GTF     :  1280x1024   69.999805 Hz   5:4     74.620 kHz    128.943000 MHz
     GTF     :  1280x1024   72.000069 Hz   5:4     76.824 kHz    132.752000 MHz
@@ -77,31 +77,17 @@ Checksum: 0xe9
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 05 e3 18 22 f4 19 00 00 '..........."....'
-  2b 12 01 04 68 35 1e 78 2a bd 20 a7 53 46 9e 25 '+...h5.x*. .SF.%'
-  14 50 54 bf ef 00 61 4c 81 80 81 8a 81 8c 95 00 '.PT...aL........'
-  81 40 71 4f 01 01 7c 2e 90 a0 60 1a 1e 40 30 20 '.@qO..|...`..@0 '
-  36 00 0e 28 21 00 00 1a 00 00 00 fd 00 38 4b 18 '6..(!........8K.'
-  50 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 32 'P...      .....2'
-  32 31 38 0a 20 20 20 20 20 20 20 20 00 00 00 ff '218.        ....'
-  00 4d 34 34 38 41 4a 41 30 30 36 36 34 34 00 e9 '.M448AJA006644..'
-Checksum: 0xe9
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 526x296 mm, but based on the picture AR it should be 473x296 mm.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

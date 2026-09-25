@@ -65,7 +65,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-146 Hz V, 240-240 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 48-146 Hz V, 240-240 kHz H, max dotclock 600 MHz
     Display Product Name: 'ED323QUR A  '
   Extension blocks: 1
 Checksum: 0x5a
@@ -78,7 +78,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 3
+  Native DTDs: 3
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
@@ -108,7 +108,8 @@ Block 1, CTA-861 Extension Block:
     SCDC Present
     SCDC Read Request Capable
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 146 Hz
     Flags 1.x: 0xed (MCCS)
@@ -133,20 +134,23 @@ Checksum: 0xc5  Unused space in Extension Block: 20 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Detailed Timing Descriptor #4: DTD is similar but not identical to VIC 16.
   Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 63.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 214.559 kHz (Monitor: 240.000 - 240.000 kHz)
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
-  Display Product Name: One or more trailing spaces.
+  Display Range Limits: 'Range Limits Only' is not allowed for EDID < 1.4.
+  Display Product Name: One or more trailing spaces before newline.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 214.559 kHz (Monitor: 240.000 - 240.000 kHz)
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

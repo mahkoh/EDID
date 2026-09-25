@@ -78,19 +78,6 @@ Checksum: 0xc5
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 15 8f 20 10 67 4c 00 00 '.......... .gL..'
-  0d 13 01 03 6e 21 1b 78 ea 6e a6 a1 54 4c 99 26 '....n!.x.n..TL.&'
-  19 4f 54 bf ef 00 31 4f 45 4f 61 4f 81 80 81 4f '.OT...1OEOaO...O'
-  71 4f 81 8a 81 40 30 2a 00 98 51 00 2a 40 30 70 'qO...@0*..Q.*@0p'
-  13 00 00 00 00 00 00 00 00 00 00 fc 00 45 54 31 '.............ET1'
-  37 31 35 4c 2d 37 43 57 41 0a 00 00 00 fd 00 38 '715L-7CWA......8'
-  4b 1f 51 0d 00 00 00 00 00 00 00 00 00 00 00 fe 'K.Q.............'
-  00 20 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 0a 00 c5 '. ..............'
-Checksum: 0xc5
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -106,11 +93,9 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
   Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
   Display Range Limits: Bytes 12-17 must be 0x20.
-  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces before newline.
   Alphanumeric Data String: Non-space after newline.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

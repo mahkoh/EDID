@@ -36,7 +36,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6582, 0.3349
     Green: 0.3027, 0.6201
@@ -63,7 +63,7 @@ Block 0, Base EDID:
     Display Product Serial Number: ...
     Display Product Name: 'DELL G2422HS'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-165 Hz V, 187-187 kHz H, max dotclock 390 MHz
+      Monitor ranges (Range Limits Only): 48-165 Hz V, 187-187 kHz H, max dotclock 390 MHz
   Extension blocks: 1
 Checksum: 0x74
 
@@ -75,7 +75,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
@@ -96,14 +96,12 @@ Block 1, CTA-861 Extension Block:
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Detailed Timing Descriptors:
     DTD 2:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (527 mm x 296 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
@@ -126,7 +124,6 @@ Block 1, CTA-861 Extension Block:
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.250 - 186.447 kHz (Monitor: 187.000 - 187.000 kHz)
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 

@@ -64,7 +64,7 @@ Block 0, Base EDID:
                  Hfront   64 Hsync 112 Hback  256 Hpol N
                  Vfront    3 Vsync   6 Vback   18 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-75 Hz V, 30-150 kHz H, max dotclock 340 MHz
+      Monitor ranges (Range Limits Only): 48-75 Hz V, 30-150 kHz H, max dotclock 340 MHz
   Extension blocks: 1
 Checksum: 0x60
 
@@ -76,7 +76,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
@@ -101,7 +101,8 @@ Block 1, CTA-861 Extension Block:
     SCDC Present
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.9
+    Version: 1
+    Feature Caps: 0x09
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 63 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -140,9 +141,11 @@ Checksum: 0x29  Unused space in Extension Block: 29 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x27.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
 
 Failures:
@@ -150,7 +153,7 @@ Failures:
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #2: Invalid detailed timing descriptor ordering.
-  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
+  Display Range Limits: 'Range Limits Only' is not allowed for EDID < 1.4.
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Max TMDS rate is > 0 and <= 340 or > 600.
   YCbCr 4:2:0 Capability Map Data Block: Max index 19 > 4 (#SVDs).

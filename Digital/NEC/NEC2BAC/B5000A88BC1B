@@ -83,9 +83,9 @@ Block 0, Base EDID:
     DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
     DMT 0x52:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
   Detailed Timing Descriptors:
-    DTD  1:  2560x1600   29.957685 Hz  16:10    48.621 kHz    132.250000 MHz (641 mm x 401 mm)
-                  Hfront   48 Hsync  32 Hback   80 Hpol P
-                  Vfront    3 Vsync   6 Vback   14 Vpol N
+    DTD 1:  2560x1600   29.957685 Hz  16:10    48.621 kHz    132.250000 MHz (641 mm x 401 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   14 Vpol N
     Display Range Limits:
       Monitor ranges (GTF): 56-76 Hz V, 31-99 kHz H, max dotclock 270 MHz
     Display Product Name: 'EA305WMi'
@@ -101,7 +101,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
@@ -126,118 +126,46 @@ Block 1, CTA-861 Extension Block:
     Supported Content Types:
       Graphics
   Detailed Timing Descriptors:
-    DTD  2:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (641 mm x 401 mm)
-                  Hfront   48 Hsync  32 Hback   80 Hpol P
-                  Vfront    3 Vsync   6 Vback   26 Vpol N
-    DTD  3:  1280x1600   59.915921 Hz   4:5     99.341 kHz    173.250000 MHz (641 mm x 401 mm)
-                  Hfront   96 Hsync 136 Hback  232 Hpol N
-                  Vfront    3 Vsync  10 Vback   45 Vpol P
-    DTD  4:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (641 mm x 401 mm)
-                  Hfront  528 Hsync  44 Hback  148 Hpol P
-                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    DTD  5:  2560x1440   29.935499 Hz  16:9     43.945 kHz    146.250000 MHz (641 mm x 401 mm)
-                  Hfront  120 Hsync 264 Hback  384 Hpol N
-                  Vfront    3 Vsync   5 Vback   20 Vpol P
-    DTD  6:  2560x1600   29.944493 Hz  16:10    48.810 kHz    164.000000 MHz (641 mm x 401 mm)
-                  Hfront  136 Hsync 264 Hback  400 Hpol N
-                  Vfront    3 Vsync   6 Vback   21 Vpol P
-Checksum: 0xd2  Unused space in Extension Block: 8 bytes
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 38 a3 ac 2b 01 01 01 01 '........8..+....'
-  1b 1a 01 03 80 40 28 78 ea 1d f5 ae 4f 35 b3 25 '.....@(x....O5.%'
-  0d 50 54 bf ef 80 81 00 81 80 90 40 81 c0 95 00 '.PT........@....'
-  a9 40 b3 00 d1 c0 a9 33 00 a0 a0 40 17 60 30 20 '.@.....3...@.`0 '
-  36 00 81 91 21 00 00 1a 00 00 00 fd 00 38 4c 1f '6...!........8L.'
-  63 1b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45 'c...      .....E'
-  41 33 30 35 57 4d 69 0a 20 20 20 20 00 00 00 ff 'A305WMi.    ....'
-  00 36 37 31 30 30 31 36 32 4e 42 0a 20 20 01 cd '.67100162NB.  ..'
-Checksum: 0xcd
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.0.0.0
-    DC_36bit
-    DC_30bit
-    DC_Y444
-    Maximum TMDS clock: 300 MHz
-    Supported Content Types:
-      Graphics
-  Detailed Timing Descriptors:
-    DTD  7:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (641 mm x 401 mm)
-                  Hfront   48 Hsync  32 Hback   80 Hpol P
-                  Vfront    3 Vsync   6 Vback   26 Vpol N
-    DTD  8:  1280x1600   59.915921 Hz   4:5     99.341 kHz    173.250000 MHz (641 mm x 401 mm)
-                  Hfront   96 Hsync 136 Hback  232 Hpol N
-                  Vfront    3 Vsync  10 Vback   45 Vpol P
-    DTD  9:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (641 mm x 401 mm)
-                  Hfront  528 Hsync  44 Hback  148 Hpol P
-                  Vfront    4 Vsync   5 Vback   36 Vpol P
-    DTD 10:  2560x1440   29.935499 Hz  16:9     43.945 kHz    146.250000 MHz (641 mm x 401 mm)
-                  Hfront  120 Hsync 264 Hback  384 Hpol N
-                  Vfront    3 Vsync   5 Vback   20 Vpol P
-    DTD 11:  2560x1600   29.944493 Hz  16:10    48.810 kHz    164.000000 MHz (641 mm x 401 mm)
-                  Hfront  136 Hsync 264 Hback  400 Hpol N
-                  Vfront    3 Vsync   6 Vback   21 Vpol P
+    DTD 2:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (641 mm x 401 mm)
+                 Hfront   48 Hsync  32 Hback   80 Hpol P
+                 Vfront    3 Vsync   6 Vback   26 Vpol N
+    DTD 3:  1280x1600   59.915921 Hz   4:5     99.341 kHz    173.250000 MHz (641 mm x 401 mm)
+                 Hfront   96 Hsync 136 Hback  232 Hpol N
+                 Vfront    3 Vsync  10 Vback   45 Vpol P
+    DTD 4:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (641 mm x 401 mm)
+                 Hfront  528 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol P
+    DTD 5:  2560x1440   29.935499 Hz  16:9     43.945 kHz    146.250000 MHz (641 mm x 401 mm)
+                 Hfront  120 Hsync 264 Hback  384 Hpol N
+                 Vfront    3 Vsync   5 Vback   20 Vpol P
+    DTD 6:  2560x1600   29.944493 Hz  16:10    48.810 kHz    164.000000 MHz (641 mm x 401 mm)
+                 Hfront  136 Hsync 264 Hback  400 Hpol N
+                 Vfront    3 Vsync   6 Vback   21 Vpol P
 Checksum: 0xd2  Unused space in Extension Block: 8 bytes
 
 ----------------
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #3: Image size is 641x401 mm, but based on the picture AR it should be 320x401 mm.
+  Detailed Timing Descriptor #4: Image size is 641x401 mm, but based on the picture AR it should be 641x360 mm.
+  Detailed Timing Descriptor #5: Image size is 641x401 mm, but based on the picture AR it should be 641x360 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-Block 3, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 29.935 - 75.062 Hz (Monitor: 56.000 - 76.000 Hz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 1.
-  Video Data Block: Duplicate VIC 18.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 29.935 - 75.062 Hz (Monitor: 56.000 - 76.000 Hz)
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

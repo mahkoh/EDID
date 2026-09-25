@@ -52,7 +52,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6562, 0.3291
     Green: 0.2753, 0.6152
@@ -66,7 +66,7 @@ Block 0, Base EDID:
                  Vfront   10 Vsync   5 Vback 2145 Vpol N
     Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 00 00 00 00 20 '............... '
     Display Range Limits:
-      Monitor ranges (Bare Limits): 60-165 Hz V, 195-195 kHz H, max dotclock 410 MHz
+      Monitor ranges (Range Limits Only): 60-165 Hz V, 195-195 kHz H, max dotclock 410 MHz
     Alphanumeric Data String: 'B173HAN05.5 '
   Extension blocks: 1
 Checksum: 0xe8
@@ -89,55 +89,12 @@ Block 1, DisplayID Extension Block:
     Seamless Dynamic Video Timing Support: Yes
   CTA-861 DisplayID Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.1
+    Version: 3
+    Feature Caps: 0x01
     Minimum Refresh Rate: 60 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 96 (400.000 cd/m^2)
-    Minimum luminance: 80 (0.394 cd/m^2)
-    Unknown: 0x60 0x50
-  Checksum: 0xc6
-Checksum: 0x90
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 06 af a0 9a 00 00 00 00 '................'
-  2b 1f 01 04 a5 26 16 78 03 1a b5 a8 54 46 9d 25 '+....&.x....TF.%'
-  0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 34 9e 80 a0 70 38 70 48 30 20 '......4...p8pH0 '
-  a5 00 7e d7 10 00 00 18 00 00 00 0f 00 00 00 00 '..~.............'
-  00 00 00 00 00 00 00 00 00 20 00 00 00 fd 00 3c '......... .....<'
-  a5 c3 c3 29 01 0a 20 20 20 20 20 20 00 00 00 fe '...)..      ....'
-  00 42 31 37 33 48 41 4e 30 35 2e 35 20 0a 01 e8 '.B173HAN05.5 ...'
-Checksum: 0xe8
-
-----------------
-
-Block 3, DisplayID Extension Block:
-  Version: 2.0
-  Extension Count: 0
-  Video Timing Modes Type 7 - Detailed Timings Data Block:
-    DTD:  1920x1080  165.009778 Hz  16:9    194.712 kHz    405.000000 MHz (aspect 16:9, no 3D stereo, preferred)
-               Hfront   48 Hsync  32 Hback   80 Hpol P
-               Vfront   10 Vsync   5 Vback   85 Vpol N
-  Dynamic Video Timing Range Limits Data Block:
-    Minimum Pixel Clock: 405000 kHz
-    Maximum Pixel Clock: 405000 kHz
-    Minimum Vertical Refresh Rate: 60 Hz
-    Maximum Vertical Refresh Rate: 165 Hz
-    Seamless Dynamic Video Timing Support: Yes
-  CTA-861 DisplayID Data Block:
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.1
-    Minimum Refresh Rate: 60 Hz
-    Maximum Refresh Rate: 165 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
-    Maximum luminance: 96 (400.000 cd/m^2)
-    Minimum luminance: 80 (0.394 cd/m^2)
-    Unknown: 0x60 0x50
   Checksum: 0xc6
 Checksum: 0x90
 
@@ -151,19 +108,11 @@ Block 0, Base EDID:
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces before newline.
 Block 1, DisplayID Extension Block:
-  Expected 0 DisplayID Extension Block, but got 1.
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A: Length is 16 instead of 19.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, DisplayID Extension Block:
-  Product Type should be 0 in extension block.
   Vendor-Specific Data Block (AMD), OUI 00-00-1A: Length is 16 instead of 19.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   DisplayID: Missing DisplayID Display Parameters Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
 
 EDID conformity: FAIL

@@ -63,25 +63,16 @@ Checksum: 0x33
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 19 c9 00 00 00 00 00 00 '................'
-  00 15 01 03 08 00 00 78 0a e0 bd a3 54 48 97 26 '.......x....TH.&'
-  0c 47 4a 21 08 00 95 00 81 80 90 40 b3 00 01 01 '.GJ!.......@....'
-  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 10 09 31 00 00 1e 66 21 50 b0 51 00 1b 30 'E...1...f!P.Q..0'
-  40 70 36 00 10 09 00 00 00 1e 00 00 00 fd 00 39 '@p6............9'
-  3f 1e 44 0f 00 0a 20 20 20 20 20 20 00 00 00 fc '?.D...      ....'
-  00 46 55 4e 41 49 20 54 56 0a 20 20 20 20 00 33 '.FUNAI TV.    .3'
-Checksum: 0x33
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 784x265 mm, but based on the picture AR it should be 471x265 mm.
+  Detailed Timing Descriptor #2: Dubious image size (16x9 mm is smaller than 100x100 mm).
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 784x265mm, but the display size is not specified anywhere.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

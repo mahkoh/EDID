@@ -48,13 +48,16 @@ Checksum: 0x79
 
 ----------------
 
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 70.082 Hz (Monitor: 59.000 - 61.000 Hz)
+
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x20.
   Alphanumeric Data String: Empty string.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 59.940 - 70.082 Hz (Monitor: 59.000 - 61.000 Hz)
 
 EDID conformity: FAIL

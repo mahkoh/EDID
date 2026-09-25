@@ -59,23 +59,12 @@ Checksum: 0xbc
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 19 c9 00 00 00 00 00 00 '................'
-  00 13 01 04 08 00 00 78 0a 53 0d a0 54 46 94 27 '.......x.S..TF.''
-  11 46 47 21 08 00 01 01 01 01 01 01 01 01 01 01 '.FG!............'
-  01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70 '......f!P.Q..0@p'
-  36 00 10 09 00 00 00 1e a9 1a 00 a0 50 00 16 30 '6...........P..0'
-  30 20 37 00 05 03 00 00 00 1e 00 00 00 fd 00 39 '0 7............9'
-  3f 41 45 08 00 0a 20 20 20 20 20 20 00 00 00 fc '?AE...      ....'
-  00 4d 41 47 4e 41 56 4f 58 0a 20 20 20 20 00 bc '.MAGNAVOX.    ..'
-Checksum: 0xbc
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Dubious image size (16x9 mm is smaller than 100x100 mm).
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x16.
+  Detailed Timing Descriptor #2: Dubious image size (5x3 mm is smaller than 100x100 mm).
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -85,11 +74,9 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 16x9mm, but the display size is not specified anywhere.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

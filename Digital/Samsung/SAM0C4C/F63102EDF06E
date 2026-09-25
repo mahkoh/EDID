@@ -82,7 +82,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
     VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
@@ -143,18 +143,19 @@ Checksum: 0x11  Unused space in Extension Block: 3 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Video Data Block: VIC 18 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 18 and the first DTD are not identical. Is this intended?
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 135.000 kHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 18.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 135.000 kHz)
 
 EDID conformity: FAIL

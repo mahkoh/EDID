@@ -74,26 +74,16 @@ Checksum: 0x05
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 69 ae 19 01 01 01 01 '.........i......'
-  17 12 01 03 0e 29 1a 78 2e 68 65 a7 55 4c 9b 24 '.....).x.he.UL.$'
-  10 50 54 2f cf 00 95 00 81 80 81 40 81 00 81 c0 '.PT/.......@....'
-  71 4f 01 01 01 01 20 35 a0 f0 51 84 2a 30 60 98 'qO.... 5..Q.*0`.'
-  36 00 98 ff 10 00 00 1c 00 00 00 ff 00 38 36 4c '6............86L'
-  4d 56 44 30 30 33 32 30 39 0a 00 00 00 fd 00 38 'MVD003209......8'
-  4b 1f 50 10 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.P...      ....'
-  00 41 43 49 20 56 57 31 39 32 0a 20 20 20 00 05 '.ACI VW192.   ..'
-Checksum: 0x05
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

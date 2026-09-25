@@ -60,7 +60,7 @@ Block 0, Base EDID:
     DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
     GTF     :   640x400    70.000000 Hz  16:10    29.190 kHz     23.352000 MHz
     GTF     :   640x360    70.000000 Hz  16:9     26.250 kHz     20.580000 MHz
-    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    GTF     :  1024x768    72.000073 Hz   4:3     57.672 kHz     78.434000 MHz
     GTF     :   296x185    59.995994 Hz  16:10    11.519 kHz      3.594000 MHz
   Detailed Timing Descriptors:
     DTD 1:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz (376 mm x 301 mm)
@@ -74,37 +74,24 @@ Checksum: 0xa6
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 22 64 40 19 fc 02 00 00 '........"d@.....'
-  11 10 01 03 0a 26 1e 78 ea 71 d6 a2 56 49 96 24 '.....&.x.q..VI.$'
-  13 4f 54 af cf 80 81 80 31 0a 31 ca 61 4c 00 00 '.OT.....1.1.aL..'
-  00 00 06 00 00 00 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
-  13 00 78 2d 11 00 00 1e 00 00 00 fd 00 38 4b 1f '..x-.........8K.'
-  51 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 20 'Q...      ..... '
-  20 20 20 20 20 20 20 20 20 20 20 20 00 00 00 fc '            ....'
-  00 48 43 31 39 34 44 0a 20 20 20 20 20 20 00 a6 '.HC194D.      ..'
-Checksum: 0xa6
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Standard Timings: Standard Timing 296x185 has a dubious odd vertical resolution.
+  Display Product Serial Number: ...
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 11.519 - 79.976 kHz (Monitor: 31.000 - 81.000 kHz)
 
 Failures:
 
 Block 0, Base EDID:
+  Display Product Serial Number: ...
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
   Standard Timings: 0 or negative horizontal front porch.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
-  Display Product Serial Number: ...
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 11.519 - 79.976 kHz (Monitor: 31.000 - 81.000 kHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -70,11 +70,12 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x23.
+  Detailed Timing Descriptor #1: Dubious image size (5x4 mm is smaller than 100x100 mm).
 
 Failures:
 
 Block 0, Base EDID:
-  Detailed Timing Descriptor #1: Mismatch of image size 5x4 mm vs display size 370x300 mm.
   Display Product Serial Number: ...
+  Detailed Timing Descriptor #1: Mismatch of image size 5x4 mm vs display size 370x300 mm.
 
 EDID conformity: FAIL

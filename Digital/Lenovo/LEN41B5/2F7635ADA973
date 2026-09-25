@@ -36,7 +36,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.5898, 0.3496
     Green: 0.3300, 0.5546
@@ -49,22 +49,9 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront   10 Vsync   6 Vback   20 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 40-60 Hz V, 75-75 kHz H, max dotclock 160 MHz
+      Monitor ranges (Range Limits Only): 40-60 Hz V, 75-75 kHz H, max dotclock 160 MHz
     Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 d1 0a 3c d1 0a 28 1e 0a 00 0d ae 14 16 '.....<..(.......'
     Alphanumeric Data String: 'N160JCA-EEL'
-Checksum: 0x11
-
-----------------
-
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 ae b5 41 00 00 00 00 '........0..A....'
-  12 1f 01 04 a5 22 16 78 e7 28 65 97 59 54 8e 27 '.....".x.(e.YT.''
-  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 42 3c 80 a0 70 b0 24 40 30 20 '......B<..p.$@0 '
-  a6 00 58 d7 10 00 00 1a 00 00 00 fd 00 28 3c 4b '..X..........(<K'
-  4b 10 01 0a 20 20 20 20 20 20 00 00 00 0f 00 d1 'K...      ......'
-  0a 3c d1 0a 28 1e 0a 00 0d ae 14 16 00 00 00 fe '.<..(...........'
-  00 4e 31 36 30 4a 43 41 2d 45 45 4c 0a 20 00 11 '.N160JCA-EEL. ..'
 Checksum: 0x11
 
 ----------------
@@ -82,9 +69,7 @@ Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

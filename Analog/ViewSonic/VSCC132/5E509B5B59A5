@@ -80,32 +80,18 @@ Checksum: 0x24
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5a 63 32 c1 01 01 01 01 '........Zc2.....'
-  32 1d 01 04 08 3c 22 78 2e 22 35 a3 59 4d 9c 28 '2....<"x."5.YM.('
-  13 50 54 bf ef 80 b3 00 a9 40 a9 c0 95 00 90 40 '.PT......@.....@'
-  81 80 81 40 81 c0 02 3a 80 18 71 38 2d 40 58 2c '...@...:..q8-@X,'
-  45 00 56 50 21 00 00 1e 00 00 00 ff 00 55 4e 52 'E.VP!........UNR'
-  31 39 35 30 36 30 38 31 34 0a 00 00 00 fd 00 32 '195060814......2'
-  4b 18 52 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.R...      ....'
-  00 56 41 32 37 31 39 20 53 65 72 69 65 73 00 24 '.VA2719 Series.$'
-Checksum: 0x24
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

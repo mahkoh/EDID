@@ -61,5 +61,6 @@ Warnings:
 Block 0, Base EDID:
   EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x25.
+  Detailed Timing Descriptor #1: Image size is 352x264 mm, but based on the picture AR it should be 330x264 mm.
 
 EDID conformity: PASS

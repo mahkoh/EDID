@@ -72,7 +72,7 @@ Checksum: 0x76
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Native detailed modes: 2
+  Native DTDs: 2
   Video Data Block:
     VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (native)
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
@@ -103,6 +103,12 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 19 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #3: Image size is 473x296 mm, but based on the picture AR it should be 473x266 mm.
+  Detailed Timing Descriptor #4: Image size is 473x296 mm, but based on the picture AR it should be 473x266 mm.
+  Detailed Timing Descriptor #5: Image size is 473x296 mm, but based on the picture AR it should be 370x296 mm.
+  Detailed Timing Descriptor #6: Image size is 473x296 mm, but based on the picture AR it should be 444x296 mm.
+  Detailed Timing Descriptor #7: Image size is 473x296 mm, but based on the picture AR it should be 394x296 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 

@@ -79,29 +79,20 @@ Checksum: 0x9d
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 22 64 97 23 01 01 01 01 '........"d.#....'
-  14 12 01 03 68 25 17 78 2a c9 05 a3 57 4b 9c 25 '....h%.x*...WK.%'
-  12 50 54 bf ef 80 95 00 81 c0 61 47 81 80 71 4f '.PT.......aG..qO'
-  95 0f 90 40 90 4f 9a 29 a0 d0 51 84 22 30 50 98 '...@.O.)..Q."0P.'
-  36 00 9a 00 11 00 00 1c 00 00 00 fd 00 32 4b 1f '6............2K.'
-  53 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 38 'S...      .....8'
-  32 30 4e 4e 31 45 59 30 31 36 36 37 00 00 00 fc '20NN1EY01667....'
-  00 69 57 31 37 31 41 0a 20 20 20 20 20 20 00 9d '.iW171A.      ..'
-Checksum: 0x9d
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 156.000 MHz (Monitor: 140.000 MHz)
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 410x256 mm vs display size 370x230 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Maximum Clock: 156.000 MHz (Monitor: 140.000 MHz)
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 410x256mm, which is larger than the display size 370.0x230.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

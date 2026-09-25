@@ -111,41 +111,17 @@ Checksum: 0xbe  Unused space in Extension Block: 69 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 72 91 05 f2 2a 00 84 '.........r...*..'
-  28 1c 01 03 80 36 1e 78 2e 90 55 a7 55 53 a0 28 '(....6.x..U.US.('
-  13 50 54 bf ef 80 d1 c0 71 4f 81 80 81 c0 81 00 '.PT.....qO......'
-  95 00 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 20 2f 21 00 00 1e 00 00 00 fd 00 38 78 1e 'E. /!........8x.'
-  8c 21 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4b '.!..      .....K'
-  47 32 35 31 51 0a 20 20 20 20 20 20 00 00 00 ff 'G251Q.      ....'
-  00 54 38 5a 45 45 30 30 34 38 35 33 32 0a 01 b5 '.T8ZEE0048532...'
-Checksum: 0xb5
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 1
-  Detailed Timing Descriptors:
-    DTD 5:  1920x1080   74.972503 Hz  16:9     83.894 kHz    174.500000 MHz (544 mm x 303 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   31 Vpol N
-    DTD 6:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (544 mm x 303 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   56 Vpol N
-    DTD 7:  1920x1080  143.981451 Hz  16:9    166.587 kHz    346.500000 MHz (544 mm x 303 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol N
-                 Vfront    3 Vsync   5 Vback   69 Vpol N
-Checksum: 0xbe  Unused space in Extension Block: 69 bytes
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is identical to VIC 16, which is not present in the CTA Ext Block.
 Block 1, CTA-861 Extension Block:
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-Block 3, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 143.981 Hz (Monitor: 56.000 - 120.000 Hz)
+    Horizontal Freq: 31.466 - 166.586 kHz (Monitor: 30.000 - 140.000 kHz)
+    Maximum Clock: 346.500 MHz (Monitor: 330.000 MHz)
 
 Failures:
 
@@ -153,16 +129,7 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 56.250 - 143.981 Hz (Monitor: 56.000 - 120.000 Hz)
-    Horizontal Freq: 31.466 - 166.586 kHz (Monitor: 30.000 - 140.000 kHz)
-    Maximum Clock: 346.500 MHz (Monitor: 330.000 MHz)
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

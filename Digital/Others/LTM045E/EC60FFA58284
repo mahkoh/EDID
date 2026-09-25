@@ -45,6 +45,13 @@ Checksum: 0x24
 
 ----------------
 
+Warnings:
+
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 80.645 - 80.645 kHz (Monitor: 15.000 - 30.000 kHz)
+    Maximum Clock: 60.000 MHz (Monitor: 30.000 MHz)
+
 Failures:
 
 Block 0, Base EDID:
@@ -53,9 +60,6 @@ Block 0, Base EDID:
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
   Missing Display Product Name.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 80.645 - 80.645 kHz (Monitor: 15.000 - 30.000 kHz)
-    Maximum Clock: 60.000 MHz (Monitor: 30.000 MHz)
   Base EDID: The DTD max image size is 400x1280mm, which is larger than the display size 320.0x320.0mm.
 
 EDID conformity: FAIL

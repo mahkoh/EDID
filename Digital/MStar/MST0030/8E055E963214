@@ -63,7 +63,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 2
+  Native DTDs: 2
   Video Data Block:
     VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
@@ -111,10 +111,18 @@ Checksum: 0x52  Unused space in Extension Block: 23 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 5 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #3: Image size is 708x398 mm, but based on the picture AR it should be 597x398 mm.
+  Detailed Timing Descriptor #4: Image size is 708x398 mm, but based on the picture AR it should be 708x236 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
-  CTA-861: Multiple native progressive timings are defined.
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 61.000 Hz (Monitor: 59.000 - 60.000 Hz)
+    Horizontal Freq: 15.625 - 90.341 kHz (Monitor: 31.000 - 45.000 kHz)
+    Maximum Clock: 281.864 MHz (Monitor: 80.000 MHz)
 
 Failures:
 
@@ -131,9 +139,6 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #6: Mismatch of image size 708x398 mm vs display size 1150x650 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 61.000 Hz (Monitor: 59.000 - 60.000 Hz)
-    Horizontal Freq: 15.625 - 90.341 kHz (Monitor: 31.000 - 45.000 kHz)
-    Maximum Clock: 281.864 MHz (Monitor: 80.000 MHz)
+  CTA-861: The maximum HDMI TMDS clock is 225000 kHz, but one or more video timings go up to 281864 kHz.
 
 EDID conformity: FAIL

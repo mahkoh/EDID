@@ -77,7 +77,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
     VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
@@ -110,15 +110,18 @@ Block 1, CTA-861 Extension Block:
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.3
+    Version: 2
+    Feature Caps: 0x03
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xec (MCCS)
     Flags 2.x: 0x0f
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      Gamma 2.2 EOTF Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 100 (436.203 cd/m^2)
     Minimum luminance: 43 (0.124 cd/m^2)
-    Maximum luminance (without local dimming): 100 (436.203 cd/m^2)
-    Minimum luminance (without local dimming): 43 (0.124 cd/m^2)
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
@@ -159,11 +162,17 @@ Checksum: 0x0f  Unused space in Extension Block: 1 byte
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 2 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 221.970 kHz (Monitor: 30.000 - 243.000 kHz)
 
 Failures:
 
@@ -173,8 +182,6 @@ Block 1, CTA-861 Extension Block:
   YCbCr 4:2:0 Capability Map Data Block: Empty Capability Map.
   Video Capability Data Block: IT video formats are always underscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to overscanned.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 28.125 - 221.970 kHz (Monitor: 30.000 - 243.000 kHz)
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

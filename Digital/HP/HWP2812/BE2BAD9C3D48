@@ -79,7 +79,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -135,9 +135,18 @@ Checksum: 0x96  Unused space in Extension Block: 14 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 4 and the first DTD are not identical. Is this intended?
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Progressive and Interlaced latency values are identical, no need for both.
+  Detailed Timing Descriptor #2: Image size is 473x266 mm, but based on the picture AR it should be 399x266 mm.
+  Detailed Timing Descriptor #3: Image size is 473x266 mm, but based on the picture AR it should be 332x266 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 24.000 - 83.000 kHz)
+    Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
 
 Failures:
 
@@ -146,9 +155,6 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 24.000 - 83.000 kHz)
-    Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

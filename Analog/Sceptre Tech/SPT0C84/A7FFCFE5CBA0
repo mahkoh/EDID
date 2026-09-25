@@ -61,27 +61,12 @@ Checksum: 0x66
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4e 14 84 0c 00 00 00 00 '........N.......'
-  04 16 01 03 08 00 00 78 ea 00 00 00 00 00 00 00 '.......x........'
-  00 00 00 ad 08 00 01 01 01 01 01 01 01 01 01 01 '................'
-  01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70 '......f!P.Q..0@p'
-  36 00 00 00 00 00 00 1e 00 00 00 ff 00 30 35 32 '6............052'
-  31 0a 0a 0a 0a 0a 0a 0a 0a 0a 00 00 00 fd 00 3a '1..............:'
-  4b 1e 55 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.U...      ....'
-  00 45 33 32 30 42 56 2d 48 44 0a 0a 0a 0a 00 66 '.E320BV-HD.....f'
-Checksum: 0x66
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Display Product Serial Number: ...
   Display Product Name: Non-space after newline.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

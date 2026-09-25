@@ -107,7 +107,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 2
+  Native DTDs: 2
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
@@ -146,7 +146,7 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
   YCbCr 4:2:0 Capability Map Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
+    SVD Index 20 is out of range
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
     DC_36bit
@@ -174,14 +174,12 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 105 (486.099 cd/m^2)
     Desired content min luminance: 79 (0.467 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 23 Hz
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0xe6 (MCCS)
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Detailed Timing Descriptors:
     DTD  3:  2560x1440   60.000199 Hz  16:9     88.860 kHz    241.700000 MHz (345 mm x 215 mm)
                   Hfront   32 Hsync   8 Hback  120 Hpol P
@@ -199,7 +197,7 @@ Block 2, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 2
+  Native DTDs: 2
   Detailed Timing Descriptors:
     DTD  5:  3840x2400   50.000000 Hz  16:10   123.100 kHz    492.400000 MHz (302 mm x 189 mm)
                   Hfront   32 Hsync   8 Hback  120 Hpol P
@@ -223,150 +221,18 @@ Checksum: 0xf6  Unused space in Extension Block: 15 bytes
 
 ----------------
 
-Block 3, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5c 73 38 a0 01 01 01 01 '........\s8.....'
-  14 22 01 03 b2 22 16 78 2e ee 91 a3 54 4c 99 26 '."...".x....TL.&'
-  0f 50 54 21 08 00 d1 c0 a9 c0 81 c0 95 00 d1 00 '.PT!............'
-  01 01 01 01 01 01 d0 e6 00 a0 f0 60 3e 90 20 08 '...........`>. .'
-  88 00 59 d7 10 00 00 1a 61 6b 00 c8 a0 40 3c 60 '..Y.....ak...@<`'
-  20 08 88 00 59 d7 10 00 00 1a 00 00 00 fc 00 41 ' ...Y..........A'
-  55 31 36 54 4f 0a 20 20 20 20 20 20 00 00 00 fd 'U16TO.      ....'
-  00 17 3c 37 90 3f 00 0a 20 20 20 20 20 20 02 6d '..<7.?..      .m'
-Checksum: 0x6d
-
-----------------
-
-Block 4, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 2
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
-    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
-    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-    VIC  60:  1280x720    24.000000 Hz  16:9     18.000 kHz     59.400000 MHz
-    VIC  61:  1280x720    25.000000 Hz  16:9     18.750 kHz     74.250000 MHz
-    VIC  62:  1280x720    30.000000 Hz  16:9     22.500 kHz     74.250000 MHz
-    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
-    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
-    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
-    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
-    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
-  Video Capability Data Block:
-    YCbCr quantization: Selectable (via AVI YQ)
-    RGB quantization: Selectable (via AVI Q)
-    PT scan behavior: Always Overscanned
-    IT scan behavior: Always Overscanned
-    CE scan behavior: Always Overscanned
-  Colorimetry Data Block:
-    BT2020YCC
-    BT2020RGB
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  YCbCr 4:2:0 Capability Map Data Block:
-    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.0.0.0
-    DC_36bit
-    DC_30bit
-    DC_Y444
-    Maximum TMDS clock: 630 MHz
-    Extended HDMI video details:
-      HDMI VICs:
-        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
-        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
-        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
-    Version: 1
-    Maximum TMDS Character Rate: 630 MHz
-    SCDC Present
-    Supports scrambling for <= 340 Mcsc
-    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      SMPTE ST2084
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 105 (486.099 cd/m^2)
-    Desired content max frame-average luminance: 105 (486.099 cd/m^2)
-    Desired content min luminance: 79 (0.467 cd/m^2)
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
-    Minimum Refresh Rate: 23 Hz
-    Maximum Refresh Rate: 60 Hz
-    Flags 1.x: 0xe6 (MCCS)
-    Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
-  Detailed Timing Descriptors:
-    DTD 11:  2560x1440   60.000199 Hz  16:9     88.860 kHz    241.700000 MHz (345 mm x 215 mm)
-                  Hfront   32 Hsync   8 Hback  120 Hpol P
-                  Vfront    8 Vsync   8 Vback   25 Vpol N
-    DTD 12:  2560x1600   50.000000 Hz  16:10    83.000 kHz    229.080000 MHz (345 mm x 215 mm)
-                  Hfront   32 Hsync   8 Hback  160 Hpol P
-                  Vfront    8 Vsync   8 Vback   44 Vpol N
-Checksum: 0xaf  Unused space in Extension Block: 3 bytes
-
-----------------
-
-Block 5, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 2
-  Detailed Timing Descriptors:
-    DTD 13:  3840x2400   50.000000 Hz  16:10   123.100 kHz    492.400000 MHz (302 mm x 189 mm)
-                  Hfront   32 Hsync   8 Hback  120 Hpol P
-                  Vfront    8 Vsync   8 Vback   46 Vpol N
-    DTD 14:  3840x2400   30.000000 Hz  16:10    73.860 kHz    295.440000 MHz (302 mm x 189 mm)
-                  Hfront   32 Hsync   8 Hback  120 Hpol P
-                  Vfront    8 Vsync   8 Vback   46 Vpol N
-    DTD 15:  3840x2400   28.998781 Hz  16:10    71.395 kHz    285.580000 MHz (302 mm x 189 mm)
-                  Hfront   32 Hsync   8 Hback  120 Hpol P
-                  Vfront    8 Vsync   8 Vback   46 Vpol N
-    DTD 16:  3840x2400   25.000000 Hz  16:10    61.550 kHz    246.200000 MHz (302 mm x 189 mm)
-                  Hfront   32 Hsync   8 Hback  120 Hpol P
-                  Vfront    8 Vsync   8 Vback   46 Vpol N
-    DTD 17:  3840x2400   23.999797 Hz  16:10    59.087 kHz    236.350000 MHz (302 mm x 189 mm)
-                  Hfront   32 Hsync   8 Hback  120 Hpol P
-                  Vfront    8 Vsync   8 Vback   46 Vpol N
-    DTD 18:  3840x2400   22.999594 Hz  16:10    56.625 kHz    226.500000 MHz (302 mm x 189 mm)
-                  Hfront   32 Hsync   8 Hback  120 Hpol P
-                  Vfront    8 Vsync   8 Vback   46 Vpol N
-Checksum: 0xf6  Unused space in Extension Block: 15 bytes
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
-  YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
-Block 4, CTA-861 Extension Block:
-  Video Capability Data Block: IT scan behavior is expected to support underscanned.
-  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Detailed Timing Descriptor #3: Image size is 345x215 mm, but based on the picture AR it should be 345x194 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 18.000 - 147.720 kHz (Monitor: 55.000 - 144.000 kHz)
 
 Failures:
 
@@ -374,8 +240,10 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x32.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.
+  YCbCr 4:2:0 Capability Map Data Block: Max index 20 > 19 (#SVDs).
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Max TMDS rate is > 0 and <= 340 or > 600.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
 Block 2, CTA-861 Extension Block:
   Detailed Timing Descriptor #5: Mismatch of image size 302x189 mm vs display size 340x220 mm.
   Detailed Timing Descriptor #6: Mismatch of image size 302x189 mm vs display size 340x220 mm.
@@ -383,48 +251,8 @@ Block 2, CTA-861 Extension Block:
   Detailed Timing Descriptor #8: Mismatch of image size 302x189 mm vs display size 340x220 mm.
   Detailed Timing Descriptor #9: Mismatch of image size 302x189 mm vs display size 340x220 mm.
   Detailed Timing Descriptor #10: Mismatch of image size 302x189 mm vs display size 340x220 mm.
-Block 3, Base EDID:
-  Unknown Extension Block.
-Block 4, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 1.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 5.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 32.
-  Video Data Block: Duplicate VIC 33.
-  Video Data Block: Duplicate VIC 34.
-  Video Data Block: Duplicate VIC 60.
-  Video Data Block: Duplicate VIC 61.
-  Video Data Block: Duplicate VIC 62.
-  Video Data Block: Duplicate VIC 93.
-  Video Data Block: Duplicate VIC 94.
-  Video Data Block: Duplicate VIC 95.
-  Video Data Block: Duplicate VIC 96.
-  Video Data Block: Duplicate VIC 97.
-  Video Capability Data Block: Only one instance of this Data Block is allowed.
-  Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  YCbCr 4:2:0 Capability Map Data Block: Only one instance of this Data Block is allowed.
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Max TMDS rate is > 0 and <= 340 or > 600.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-Block 5, CTA-861 Extension Block:
-  Detailed Timing Descriptor #13: Mismatch of image size 302x189 mm vs display size 340x220 mm.
-  Detailed Timing Descriptor #14: Mismatch of image size 302x189 mm vs display size 340x220 mm.
-  Detailed Timing Descriptor #15: Mismatch of image size 302x189 mm vs display size 340x220 mm.
-  Detailed Timing Descriptor #16: Mismatch of image size 302x189 mm vs display size 340x220 mm.
-  Detailed Timing Descriptor #17: Mismatch of image size 302x189 mm vs display size 340x220 mm.
-  Detailed Timing Descriptor #18: Mismatch of image size 302x189 mm vs display size 340x220 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 18.000 - 147.720 kHz (Monitor: 55.000 - 144.000 kHz)
-  Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
+  Extension Block 3 started with EDID header, ignoring Extension Blocks >= 3.
   Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
   CTA-861: Native progressive timings are a mix of several resolutions.
 

@@ -81,24 +81,9 @@ Checksum: 0xc9
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0e 11 21 14 21 42 55 48 '..........!.!BUH'
-  2d 0b 01 03 0e 28 1e 66 eb a8 15 a1 57 49 9d 26 '-....(.f....WI.&'
-  11 47 4b ff ef 80 31 59 45 59 61 59 81 99 a9 59 '.GK...1YEYaY...Y'
-  c2 59 d1 4f e1 54 a6 59 40 30 62 b0 32 40 40 c0 '.Y.O.T.Y@0b.2@@.'
-  13 00 8c 29 11 00 00 1e 00 00 00 fd 00 32 a0 1e '...).........2..'
-  82 27 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43 '.'..      .....C'
-  4f 4d 50 41 51 20 50 31 32 32 30 0a 00 00 00 0d 'OMPAQ P1220.....'
-  00 02 02 4d 03 38 06 0c 0b d5 00 f7 01 ff 00 c9 '...M.8..........'
-Checksum: 0xc9
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

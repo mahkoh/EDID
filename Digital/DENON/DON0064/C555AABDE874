@@ -70,7 +70,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -171,6 +171,15 @@ Checksum: 0x9b  Unused space in Extension Block: 18 bytes
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 120.000 Hz (Monitor: 58.000 - 121.000 Hz)
+    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 136.000 kHz)
+
 Failures:
 
 Block 0, Base EDID:
@@ -179,9 +188,5 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 708x398 mm vs display size 1600x900 mm.
 Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #3: Mismatch of image size 708x398 mm vs display size 1600x900 mm.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 120.000 Hz (Monitor: 58.000 - 121.000 Hz)
-    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 136.000 kHz)
 
 EDID conformity: FAIL

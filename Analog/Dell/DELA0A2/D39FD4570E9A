@@ -53,8 +53,8 @@ Block 0, Base EDID:
 Failures:
 
 Block 0, Base EDID:
-  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
   Display Product Serial Number: ...
+  Detailed Timing Descriptor #1: Mismatch of image size vs display size: image size is not set, but display size is.
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
 
 EDID conformity: FAIL

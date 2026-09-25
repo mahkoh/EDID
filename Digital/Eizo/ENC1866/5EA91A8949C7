@@ -61,26 +61,15 @@ Checksum: 0x06
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 15 c3 66 18 74 ff 35 01 '..........f.t.5.'
-  07 14 01 03 80 41 29 78 ea 80 85 ab 52 32 b2 26 '.....A)x....R2.&'
-  12 50 54 a1 08 00 a9 40 81 80 01 01 01 01 01 01 '.PT....@........'
-  01 01 01 01 01 01 b0 36 00 f0 a2 40 1b 60 70 08 '.......6...@.`p.'
-  36 10 82 91 21 00 00 1c f7 3f 00 a0 a0 40 1c 60 '6...!....?...@.`'
-  30 20 36 00 82 91 21 00 00 1a 00 00 00 fd 00 19 '0 6...!.........'
-  3d 1f 4c 11 00 0a 20 20 20 20 20 20 00 00 00 fc '=.L...      ....'
-  00 4d 58 33 30 30 57 0a 20 20 20 20 20 20 00 06 '.MX300W.      ..'
-Checksum: 0x06
+Warnings:
 
-----------------
-
-Failures:
-
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 25.981 - 70.082 Hz (Monitor: 25.000 - 61.000 Hz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+Failures:
+
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

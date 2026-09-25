@@ -66,7 +66,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
@@ -99,10 +99,14 @@ Checksum: 0x53  Unused space in Extension Block: 48 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Image size is 482x273 mm, but based on the picture AR it should be 409x273 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
-  CTA-861: Multiple native progressive timings are defined.
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.939 - 70.082 Hz (Monitor: 59.000 - 61.000 Hz)
 
 Failures:
 
@@ -110,8 +114,5 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 59.939 - 70.082 Hz (Monitor: 59.000 - 61.000 Hz)
 
 EDID conformity: FAIL

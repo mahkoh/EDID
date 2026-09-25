@@ -38,12 +38,17 @@ Block 0, Base EDID:
                  Hfront   48 Hsync 112 Hback  248 Hpol P
                  Vfront    1 Vsync   3 Vback   38 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 55-60 Hz V, 29-64 kHz H, max dotclock 1080 MHz
+      Monitor ranges (Range Limits Only): 55-60 Hz V, 29-64 kHz H, max dotclock 1080 MHz
     Empty Descriptor
     Empty Descriptor
 Checksum: 0xa1
 
 ----------------
+
+Warnings:
+
+EDID:
+  No Native Video Resolution was defined.
 
 Failures:
 
@@ -51,7 +56,7 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x08.
   Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
   Detailed Timing Descriptor #1: Mismatch of image size 376x301 mm vs display size 340x270 mm.
-  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
+  Display Range Limits: 'Range Limits Only' is not allowed for EDID < 1.4.
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
   Missing Display Product Name.

@@ -68,24 +68,9 @@ Checksum: 0xfd
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0e 11 94 13 70 56 46 9a '............pVF.'
-  0a 0c 01 03 0e 1e 16 62 ea 61 b8 4b 54 45 91 24 '.......b.a.KTE.$'
-  18 51 57 af ee 00 01 01 01 01 01 01 01 01 01 01 '.QW.............'
-  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
-  36 00 30 e4 10 00 00 18 00 00 00 fd 00 38 4b 1f '6.0..........8K.'
-  3d 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43 '=...      .....C'
-  50 51 20 54 46 54 35 30 31 35 0a 20 00 00 00 0d 'PQ TFT5015. ....'
-  00 02 7a 43 cc 40 b1 d1 48 b8 ff 59 04 29 00 fd '..zC.@..H..Y.)..'
-Checksum: 0xfd
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

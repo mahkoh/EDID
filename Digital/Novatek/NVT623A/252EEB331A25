@@ -76,32 +76,20 @@ Checksum: 0xdc
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 3a d4 3a 62 00 00 00 00 '........:.:b....'
-  1c 0e 01 04 a5 26 1e 78 e0 2c 9d a6 58 4a 9a 26 '.....&.x.,..XJ.&'
-  21 52 56 bf ef 80 81 80 81 8a 81 8c 71 4f 45 4a '!RV.........qOEJ'
-  01 01 01 01 01 01 bc 34 00 98 51 00 2a 40 30 70 '.......4..Q.*@0p'
-  13 00 7c 2c 11 00 00 06 d6 09 80 a0 20 5e 63 10 '..|,........ ^c.'
-  10 60 52 08 7c 2c 11 00 00 02 00 00 00 fd 00 32 '.`R.|,.........2'
-  4b 1e 50 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.P...      ....'
-  00 4e 6f 76 61 74 65 6b 20 20 36 32 33 41 00 dc '.Novatek  623A..'
-Checksum: 0xdc
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x24.
+  Detailed Timing Descriptor #2: Image size is 380x300 mm, but based on the picture AR it should be 380x207 mm.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  No Native Video Resolution was defined.
 
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

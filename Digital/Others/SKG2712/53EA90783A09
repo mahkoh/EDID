@@ -73,7 +73,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6611, 0.3271
     Green: 0.2724, 0.5937
@@ -109,7 +109,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
     VIC  47:  1280x720   120.000000 Hz  16:9     90.000 kHz    148.500000 MHz
@@ -128,7 +128,7 @@ Block 1, CTA-861 Extension Block:
     BT2020YCC
     BT2020RGB
     Gamut Boundary Description Metadata Profile P0
-    Reserved Gamut Boundary Description Metadata Profile P1
+    Reserved F41
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -147,7 +147,8 @@ Block 1, CTA-861 Extension Block:
     IT scan behavior: IT video formats not supported
     CE scan behavior: CE video formats not supported
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 180 Hz
     Flags 1.x: 0xed (MCCS)
@@ -184,108 +185,15 @@ Checksum: 0x90
 
 ----------------
 
-Block 3, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4d 67 12 27 01 00 00 00 '........Mg.'....'
-  10 22 01 04 b5 3c 21 78 3f 7c b5 a9 53 45 98 22 '."...<!x?|..SE."'
-  1d 4c 5c 25 4b 00 31 40 01 01 01 01 81 80 01 01 '.L\%K.1@........'
-  01 01 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20 '......V^....)P0 '
-  35 00 55 50 21 00 00 1e 00 00 00 ff 00 30 30 30 '5.UP!........000'
-  30 30 30 30 30 30 30 30 30 30 00 00 00 fd 00 30 '0000000000.....0'
-  b4 46 f3 50 00 0a 20 20 20 20 20 20 00 00 00 fc '.F.P..      ....'
-  00 51 32 37 20 50 52 4f 2d 58 0a 20 20 20 02 68 '.Q27 PRO-X.   .h'
-Checksum: 0x68
-
-----------------
-
-Block 4, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Video Data Block:
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  47:  1280x720   120.000000 Hz  16:9     90.000 kHz    148.500000 MHz
-    VIC  64:  1920x1080  100.000000 Hz  16:9    112.500 kHz    297.000000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Colorimetry Data Block:
-    xvYCC601
-    xvYCC709
-    BT2020cYCC
-    BT2020YCC
-    BT2020RGB
-    Gamut Boundary Description Metadata Profile P0
-    Reserved Gamut Boundary Description Metadata Profile P1
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      Traditional gamma - HDR luminance range
-      SMPTE ST2084
-      Hybrid Log-Gamma
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 96 (400.000 cd/m^2)
-    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
-    Desired content min luminance: 0 (0.000 cd/m^2)
-  Video Capability Data Block:
-    YCbCr quantization: Selectable (via AVI YQ)
-    RGB quantization: Selectable (via AVI Q)
-    PT scan behavior: No Data
-    IT scan behavior: IT video formats not supported
-    CE scan behavior: CE video formats not supported
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
-    Minimum Refresh Rate: 48 Hz
-    Maximum Refresh Rate: 180 Hz
-    Flags 1.x: 0xed (MCCS)
-  Detailed Timing Descriptors:
-    DTD 5:  2560x1440  165.025685 Hz  16:9    240.938 kHz    655.350000 MHz (597 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   12 Vpol P
-    DTD 6:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (597 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   77 Vpol P
-    DTD 7:  1920x1080  179.982369 Hz  16:9    212.019 kHz    441.000000 MHz (597 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   90 Vpol P
-Checksum: 0xe9  Unused space in Extension Block: 34 bytes
-
-----------------
-
-Block 5, DisplayID Extension Block:
-  Version: 1.2
-  Extension Count: 0
-  Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  2560x1440  179.999500 Hz  64:27   264.599 kHz    719.710000 MHz (aspect 64:27, no 3D stereo, preferred)
-               Hfront   48 Hsync  32 Hback   80 Hpol P
-               Vfront    3 Vsync   5 Vback   22 Vpol P
-    DTD:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (aspect 16:9, no 3D stereo)
-               Hfront   48 Hsync  32 Hback   80 Hpol P
-               Vfront    3 Vsync   5 Vback   56 Vpol P
-    DTD:  1920x1080   59.933878 Hz  16:9     66.587 kHz    138.500000 MHz (aspect 16:9, no 3D stereo)
-               Hfront   48 Hsync  32 Hback   80 Hpol P
-               Vfront    3 Vsync   5 Vback   23 Vpol P
-  Checksum: 0xa7
-Checksum: 0x90
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Display Product Serial Number: ...
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 Block 1, CTA-861 Extension Block:
-  Video Capability Data Block: IT scan behavior is expected to support underscanned.
-  Video Capability Data Block: 'CE video formats not supported' makes no sense.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-Block 4, CTA-861 Extension Block:
+  Video Data Block: VIC 4 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
@@ -298,23 +206,10 @@ Failures:
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Reserved bits MD1-MD3 must be 0.
+  Colorimetry Data Block: Reserved bits F41-F43 must be 0.
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 3, Base EDID:
-  Unknown Extension Block.
-Block 4, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 47.
-  Video Data Block: Duplicate VIC 64.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  Colorimetry Data Block: Reserved bits MD1-MD3 must be 0.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-  Video Capability Data Block: Only one instance of this Data Block is allowed.
 EDID:
-  Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
+  Extension Block 3 started with EDID header, ignoring Extension Blocks >= 3.
 
 EDID conformity: FAIL

@@ -76,24 +76,15 @@ Checksum: 0xfd
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 22 64 f3 49 01 01 01 01 '........"d.I....'
-  00 1a 01 03 68 30 1b 78 2a 6b 25 a6 53 4b 9f 26 '....h0.x*k%.SK.&'
-  10 50 54 bf ef 80 b3 00 a9 c0 95 00 90 40 81 80 '.PT..........@..'
-  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 31 32 33 'E............123'
-  34 35 36 37 38 39 30 31 32 33 00 00 00 fd 00 38 '4567890123.....8'
-  4b 1e 52 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.R...      ....'
-  00 48 54 32 32 35 48 50 42 0a 20 20 20 20 00 fd '.HT225HPB.    ..'
-Checksum: 0xfd
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Display Product Serial Number: ...
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

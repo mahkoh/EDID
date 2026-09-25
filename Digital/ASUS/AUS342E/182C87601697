@@ -45,7 +45,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6796, 0.3164
     Green: 0.2607, 0.6806
@@ -79,7 +79,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync  10 Vback   28 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-120 Hz V, 185-185 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 48-120 Hz V, 185-185 kHz H, max dotclock 600 MHz
     Display Product Name: 'PA348CGV'
     Display Product Serial Number: ...
   Extension blocks: 2
@@ -93,7 +93,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  76:  1920x1080   60.000000 Hz  64:27    67.500 kHz    148.500000 MHz
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
@@ -125,11 +125,17 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 98 (417.710 cd/m^2)
     Desired content min luminance: 0 (0.000 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.11
+    Version: 2
+    Feature Caps: 0x0b
+      Local Dimming Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x07
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      Gamma 2.2 EOTF Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 103 (465.490 cd/m^2)
     Minimum luminance: 9 (0.006 cd/m^2)
     Maximum luminance (without local dimming): 103 (465.490 cd/m^2)
@@ -178,10 +184,15 @@ Checksum: 0x90
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 76 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Detailed Timing Descriptor #2: Image size is 800x335 mm, but based on the picture AR it should be 418x335 mm.
+  Detailed Timing Descriptor #5: Image size is 800x335 mm, but based on the picture AR it should be 595x335 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -191,9 +202,7 @@ EDID:
 Failures:
 
 EDID:
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: Missing DisplayID Display Parameters Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

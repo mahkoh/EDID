@@ -84,7 +84,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
@@ -131,7 +131,13 @@ Checksum: 0x7a  Unused space in Extension Block: 19 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: DTD is identical to VIC 16, which is not present in the CTA Ext Block.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 5 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #2: DTD is identical to VIC 16, which is not present in the CTA Ext Block.
+  Detailed Timing Descriptor #5: Image size is 521x293 mm, but based on the picture AR it should be 439x293 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 
 Failures:

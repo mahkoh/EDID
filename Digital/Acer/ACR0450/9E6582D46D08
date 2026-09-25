@@ -52,22 +52,9 @@ Block 0, Base EDID:
                  Vfront    3 Vsync  10 Vback   28 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 30-60 Hz V, 73-88 kHz H, max dotclock 320 MHz
+      Monitor ranges (Range Limits Only): 30-60 Hz V, 73-88 kHz H, max dotclock 320 MHz
     Display Product Name: 'Acer X34A'
   Extension blocks: 1
-Checksum: 0x5b
-
-----------------
-
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 72 50 04 ff ff ff ff '.........rP.....'
-  ff 1a 01 04 a5 50 22 78 06 ee 91 a3 54 4c 99 26 '.....P"x....TL.&'
-  0f 50 54 21 08 00 01 01 01 01 01 01 01 01 01 01 '.PT!............'
-  01 01 01 01 01 01 e7 7c 70 a0 d0 a0 29 50 30 20 '.......|p...)P0 '
-  3a 00 1e 4f 31 00 00 1a 00 00 00 ff 00 23 41 53 ':..O1........#AS'
-  50 5a 37 4e 70 6b 73 67 44 64 00 00 00 fd 00 1e 'PZ7NpksgDd......'
-  3c 49 58 20 01 0a 20 20 20 20 20 20 00 00 00 fc '<IX ..      ....'
-  00 41 63 65 72 20 58 33 34 41 0a 20 20 20 01 5b '.Acer X34A.   .['
 Checksum: 0x5b
 
 ----------------
@@ -80,7 +67,8 @@ EDID:
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
+  Base EDID: EDID specified 1 extension block(s), but found 0 extension block(s).
 
 EDID conformity: FAIL

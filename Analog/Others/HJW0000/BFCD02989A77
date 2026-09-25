@@ -73,11 +73,8 @@ Warnings:
 Block 0, Base EDID:
   Standard Timing Identifications: Standard Timing 1360x765 has a dubious odd vertical resolution.
   Standard Timing Identifications: Standard Timing 1360x765 has a dubious odd vertical resolution.
-
-Failures:
-
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 162.000 MHz (Monitor: 150.000 MHz)
 
-EDID conformity: FAIL
+EDID conformity: PASS

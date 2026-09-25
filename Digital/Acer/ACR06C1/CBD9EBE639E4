@@ -84,7 +84,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
     VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
@@ -123,7 +123,8 @@ Block 1, CTA-861 Extension Block:
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -162,17 +163,19 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 3 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 143.999 Hz (Monitor: 48.000 - 144.000 Hz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
-  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 143.999 Hz (Monitor: 48.000 - 144.000 Hz)
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

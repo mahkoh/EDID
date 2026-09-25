@@ -58,7 +58,7 @@ Block 0, Base EDID:
     DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
   Standard Timings:
     GTF     :   640x400    70.000000 Hz  16:10    29.190 kHz     23.352000 MHz
-    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    GTF     :  1024x768    72.000073 Hz   4:3     57.672 kHz     78.434000 MHz
   Detailed Timing Descriptors:
     DTD 1:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz (410 mm x 230 mm)
                  Hfront   70 Hsync 143 Hback  213 Hpol P
@@ -67,19 +67,6 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-83 kHz H, max dotclock 90 MHz
     Display Product Name: 'TS185'
-Checksum: 0xe4
-
-----------------
-
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 64 85 11 fc 83 0e 00 '........0d......'
-  13 16 01 03 68 29 17 78 2a 7b 45 a2 59 55 9c 25 '....h).x*{E.YU.%'
-  0f 50 54 bf ee 00 31 0a 61 4c 01 01 01 01 01 01 '.PT...1.aL......'
-  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
-  33 00 9a e6 10 00 00 1e 00 00 00 ff 00 43 57 54 '3............CWT'
-  36 32 43 31 39 35 31 32 39 32 00 00 00 fd 00 37 '62C1951292.....7'
-  4b 1e 53 09 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 54 53 31 38 35 0a 20 20 20 20 20 20 20 00 e4 '.TS185.       ..'
 Checksum: 0xe4
 
 ----------------
@@ -93,9 +80,7 @@ EDID:
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

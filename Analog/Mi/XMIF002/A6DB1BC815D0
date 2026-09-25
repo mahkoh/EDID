@@ -74,27 +74,18 @@ Checksum: 0xe8
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 61 a9 02 f0 01 00 00 00 '........a.......'
-  20 21 01 03 08 30 1a 78 ea b6 81 a6 55 53 9f 27 ' !...0.x....US.''
-  12 50 54 bd cf 00 01 01 81 00 01 01 81 80 81 c0 '.PT.............'
-  95 00 a9 c0 b3 00 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 df 04 11 00 00 1e 00 00 00 fd 00 30 3c 36 'E............0<6'
-  64 13 00 0a 20 20 20 20 20 20 00 00 00 ff 00 34 'd...      .....4'
-  38 33 34 33 31 30 30 30 30 35 39 33 00 00 00 fc '834310000593....'
-  00 41 32 32 46 41 42 2d 52 41 47 4c 0a 20 00 e8 '.A22FAB-RAGL. ..'
-Checksum: 0xe8
+Warnings:
 
-----------------
-
-Failures:
-
-Block 1, Base EDID:
-  Unknown Extension Block.
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 59.810 - 75.029 Hz (Monitor: 48.000 - 60.000 Hz)
     Horizontal Freq: 31.466 - 79.976 kHz (Monitor: 54.000 - 100.000 kHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+Failures:
+
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

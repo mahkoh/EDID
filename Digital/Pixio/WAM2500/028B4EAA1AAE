@@ -36,7 +36,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6542, 0.3330
     Green: 0.3242, 0.6250
@@ -69,7 +69,7 @@ Block 0, Base EDID:
                  Hfront   64 Hsync 112 Hback  256 Hpol P
                  Vfront    3 Vsync   6 Vback   18 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-165 Hz V, 225-225 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 48-165 Hz V, 225-225 kHz H, max dotclock 600 MHz
     Display Product Name: '25FHD165TFSGH'
   Extension blocks: 1
 Checksum: 0x43
@@ -82,7 +82,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
@@ -135,12 +135,14 @@ Checksum: 0xdc  Unused space in Extension Block: 38 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 183.644 kHz (Monitor: 225.000 - 225.000 kHz)
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 

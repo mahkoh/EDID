@@ -47,7 +47,7 @@ Block 0, Base EDID:
     DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
     DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
   Standard Timings:
-    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    GTF     :  1024x768    72.000073 Hz   4:3     57.672 kHz     78.434000 MHz
   Detailed Timing Descriptors:
     DTD 1:   640x350    70.100223 Hz  64:35    31.475 kHz     25.180000 MHz (304 mm x 228 mm)
                  Hfront   16 Hsync  96 Hback   48 Hpol P
@@ -59,6 +59,11 @@ Block 0, Base EDID:
 Checksum: 0x98
 
 ----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 304x228 mm, but based on the picture AR it should be 304x166 mm.
 
 Failures:
 

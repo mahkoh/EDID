@@ -35,7 +35,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6376, 0.3251
     Green: 0.2958, 0.5947
@@ -51,21 +51,8 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol N
                  Vfront   23 Vsync   5 Vback 3165 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-165 Hz V, 215-215 kHz H, max dotclock 440 MHz
+      Monitor ranges (Range Limits Only): 48-165 Hz V, 215-215 kHz H, max dotclock 440 MHz
     Alphanumeric Data String: 'LEN160WUXGA  '
-Checksum: 0x87
-
-----------------
-
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 51 b8 02 16 00 00 00 00 '........Q.......'
-  28 1f 01 04 b5 22 15 78 07 5d d5 a3 53 4b 98 24 '(....".x.]..SK.$'
-  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 26 ae 80 a0 70 b0 63 40 30 20 '......&...p.c@0 '
-  36 00 59 d7 10 00 00 18 99 ab 80 a0 70 b0 79 4c '6.Y.........p.yL'
-  30 20 75 04 58 d7 10 00 00 18 00 00 00 fd 00 30 '0 u.X..........0'
-  a5 d7 d7 2c 01 0a 20 20 20 20 20 20 00 00 00 fe '...,..      ....'
-  00 4c 45 4e 31 36 30 57 55 58 47 41 20 20 00 87 '.LEN160WUXGA  ..'
 Checksum: 0x87
 
 ----------------
@@ -83,10 +70,8 @@ Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Alphanumeric Data String: One or more trailing spaces.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Alphanumeric Data String: No newline, but one or more trailing spaces.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

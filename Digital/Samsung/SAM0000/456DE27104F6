@@ -52,23 +52,11 @@ Checksum: 0xd8
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 2d 00 00 00 00 00 00 '........L-......'
-  1e 11 01 03 80 0f 09 78 0a 00 00 00 00 00 00 00 '.......x........'
-  00 00 00 00 00 00 01 01 01 01 01 01 01 01 01 01 '................'
-  01 01 01 01 01 01 92 09 20 18 30 e0 0d 10 00 03 '........ .0.....'
-  01 00 99 5c 00 00 00 1e 00 00 00 fd 00 38 4b 14 '...\.........8K.'
-  28 03 00 0a 20 20 20 20 20 20 00 00 00 10 00 20 '(...      ..... '
-  16 30 00 05 0a 00 5c 99 00 00 00 1c 00 00 00 10 '.0....\.........'
-  00 ff ff ff ff ff ff ff ff ff ff 00 00 1c 00 d8 '................'
-Checksum: 0xd8
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Dubious maximum image size (15x9 is smaller than 10x10 cm).
+  Detailed Timing Descriptor #1: Dubious image size (153x92 mm is smaller than 100x100 mm).
 
 Failures:
 
@@ -82,9 +70,7 @@ Block 0, Base EDID:
   Dummy Descriptor: Dummy block filled with garbage.
   Dummy Descriptor: Dummy block filled with garbage.
   Missing Display Product Name.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

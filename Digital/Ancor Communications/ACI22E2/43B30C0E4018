@@ -77,28 +77,18 @@ Checksum: 0xb1
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 69 e2 22 01 01 01 01 '.........i."....'
-  2c 14 01 03 80 30 1b 78 2e e6 75 a4 56 4f 9e 27 ',....0.x..u.VO.''
-  0f 50 54 bf ef 80 d1 c0 b3 00 a9 40 95 00 90 41 '.PT........@...A'
-  81 80 81 40 71 4f 02 3a 80 18 71 38 2d 40 58 2c '...@qO.:..q8-@X,'
-  45 00 09 25 21 00 00 1e 00 00 00 ff 00 41 42 4c 'E..%!........ABL'
-  4d 49 5a 30 30 30 36 32 32 0a 00 00 00 fd 00 37 'MIZ000622......7'
-  4b 1e 55 13 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.U...      ....'
-  00 41 53 55 53 20 56 57 32 32 38 0a 20 20 00 b1 '.ASUS VW228.  ..'
-Checksum: 0xb1
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #1: Mismatch of image size 521x293 mm vs display size 480x270 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 521x293mm, which is larger than the display size 480.0x270.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

@@ -52,19 +52,6 @@ Checksum: 0x8a
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0d ae d6 14 00 00 00 00 '................'
-  2a 1a 01 04 a5 1f 11 78 02 8e d5 94 57 53 93 27 '*......x....WS.''
-  21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '!PT.............'
-  01 01 01 01 01 01 da 1d 56 e2 50 00 20 30 44 2d '........V.P. 0D-'
-  47 00 35 ad 10 00 00 18 00 00 00 fe 00 4e 31 34 'G.5..........N14'
-  30 42 47 41 2d 45 41 34 0a 20 00 00 00 fe 00 43 '0BGA-EA4. .....C'
-  4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'MN.         ....'
-  00 4e 31 34 30 42 47 41 2d 45 41 34 0a 20 00 8a '.N140BGA-EA4. ..'
-Checksum: 0x8a
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -72,9 +59,7 @@ Block 0, Base EDID:
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

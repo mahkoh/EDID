@@ -71,24 +71,9 @@ Checksum: 0x39
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 69 14 17 56 7f 02 00 '.........i..V...'
-  2e 16 01 03 80 22 1b 78 ea f2 65 a2 57 4e 9e 28 '.....".x..e.WN.('
-  0f 50 54 bf ee 80 81 80 81 8f 71 4f 81 cf 01 01 '.PT.......qO....'
-  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
-  13 00 52 0e 11 00 00 1e 00 00 00 ff 00 43 42 4c '..R..........CBL'
-  4d 54 46 31 36 33 36 37 30 0a 00 00 00 fd 00 37 'MTF163670......7'
-  4b 1e 53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 41 53 55 53 20 56 42 31 37 38 0a 20 20 00 39 '.ASUS VB178.  .9'
-Checksum: 0x39
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

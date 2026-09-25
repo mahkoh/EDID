@@ -62,7 +62,7 @@ Block 1, CTA-861 Extension Block:
   Underscans IT Video Formats by default
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
@@ -118,9 +118,11 @@ Checksum: 0x6f  Unused space in Extension Block: 17 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Video Data Block: VIC 1 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
+  Detailed Timing Descriptor #5: Image size is 597x336 mm, but based on the picture AR it should be 504x336 mm.
+  Detailed Timing Descriptor #6: Image size is 597x336 mm, but based on the picture AR it should be 420x336 mm.
 
 EDID conformity: PASS

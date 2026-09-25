@@ -55,12 +55,17 @@ Checksum: 0xcd
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 70.082 Hz (Monitor: 56.000 - 61.000 Hz)
+
 Failures:
 
 Block 0, Base EDID:
   Display Product Serial Number: ...
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 59.940 - 70.082 Hz (Monitor: 56.000 - 61.000 Hz)
 
 EDID conformity: FAIL

@@ -35,7 +35,7 @@ Block 0, Base EDID:
     DPMS levels: Standby Suspend Off
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.5908, 0.3671
     Green: 0.3496, 0.5722
@@ -48,22 +48,9 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback  200 Hpol N
                  Vfront    3 Vsync   6 Vback   51 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 40-60 Hz V, 68-68 kHz H, max dotclock 150 MHz
+      Monitor ranges (Range Limits Only): 40-60 Hz V, 68-68 kHz H, max dotclock 150 MHz
     Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 d1 09 3c d1 09 28 1e 0a 00 09 e5 63 0a '.....<..(.....c.'
     Alphanumeric Data String: 'NV140FHM-T0C'
-Checksum: 0xa0
-
-----------------
-
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 ae a9 40 00 00 00 00 '........0..@....'
-  01 1f 01 04 a5 1f 11 78 e3 4a 55 97 5e 59 92 29 '.......x.JU.^Y.)'
-  21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '!PT.............'
-  01 01 01 01 01 01 c8 3a 80 18 71 38 3c 40 30 20 '.......:..q8<@0 '
-  36 00 35 ae 10 00 00 18 00 00 00 fd 00 28 3c 44 '6.5..........(<D'
-  44 0f 01 0a 20 20 20 20 20 20 00 00 00 0f 00 d1 'D...      ......'
-  09 3c d1 09 28 1e 0a 00 09 e5 63 0a 00 00 00 fe '.<..(.....c.....'
-  00 4e 56 31 34 30 46 48 4d 2d 54 30 43 0a 00 a0 '.NV140FHM-T0C...'
 Checksum: 0xa0
 
 ----------------
@@ -79,9 +66,7 @@ EDID:
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

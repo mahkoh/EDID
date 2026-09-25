@@ -67,35 +67,26 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 40-76 Hz V, 15-95 kHz H, max dotclock 330 MHz
+      Monitor ranges (Range Limits Only): 40-76 Hz V, 15-95 kHz H, max dotclock 330 MHz
     Display Product Name: 'AXM-2768'
 Checksum: 0xf3
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 07 0d 68 27 01 00 00 00 '..........h'....'
-  29 1c 01 03 80 3c 22 78 2e 61 50 a6 56 50 a0 26 ')....<"x.aP.VP.&'
-  0d 50 54 af eb 80 d1 c0 81 c0 81 00 81 80 a9 c0 '.PT.............'
-  b3 00 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20 '......V^....)P0 '
-  35 00 00 b0 31 00 00 1a 00 00 00 ff 00 4e 41 0a '5...1........NA.'
-  20 20 20 20 20 20 20 20 20 20 00 00 00 fd 00 28 '          .....('
-  4c 0f 5f 21 01 0a 20 20 20 20 20 20 00 00 00 fc 'L._!..      ....'
-  00 41 58 4d 2d 32 37 36 38 0a 20 20 20 20 00 f3 '.AXM-2768.    ..'
-Checksum: 0xf3
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Display Product Serial Number: ...
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #1: Mismatch of image size 768x432 mm vs display size 600x340 mm.
-  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: 'Range Limits Only' is not allowed for EDID < 1.4.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 768x432mm, which is larger than the display size 600.0x340.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

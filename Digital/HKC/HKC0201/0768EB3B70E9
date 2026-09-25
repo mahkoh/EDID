@@ -35,7 +35,7 @@ Block 0, Base EDID:
     DPMS levels: Standby Suspend Off
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.5869, 0.3564
     Green: 0.3515, 0.5712
@@ -48,22 +48,9 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol N
                  Vfront   10 Vsync  12 Vback   28 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-60 Hz V, 67-67 kHz H, max dotclock 140 MHz
+      Monitor ranges (Range Limits Only): 48-60 Hz V, 67-67 kHz H, max dotclock 140 MHz
     Alphanumeric Data String: 'HKC MY    '
     Alphanumeric Data String: 'MB140CS01-4  '
-Checksum: 0xca
-
-----------------
-
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 21 63 01 02 00 00 00 00 '........!c......'
-  00 21 01 04 a5 1f 11 78 e3 51 c0 96 5b 5a 92 28 '.!.....x.Q..[Z.('
-  20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ' PT.............'
-  01 01 01 01 01 01 16 37 80 a0 70 38 32 40 30 20 '.......7..p82@0 '
-  ac 00 35 ae 10 00 00 19 00 00 00 fd 00 30 3c 43 '..5..........0<C'
-  43 0e 01 0a 20 20 20 20 20 20 00 00 00 fe 00 48 'C...      .....H'
-  4b 43 20 4d 59 20 20 20 20 0a 20 20 00 00 00 fe 'KC MY    .  ....'
-  00 4d 42 31 34 30 43 53 30 31 2d 34 20 20 00 ca '.MB140CS01-4  ..'
 Checksum: 0xca
 
 ----------------
@@ -81,11 +68,9 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: One or more trailing spaces.
-  Alphanumeric Data String: One or more trailing spaces.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Alphanumeric Data String: One or more trailing spaces before newline.
+  Alphanumeric Data String: No newline, but one or more trailing spaces.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

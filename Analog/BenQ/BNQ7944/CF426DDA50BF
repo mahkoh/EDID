@@ -73,26 +73,16 @@ Checksum: 0x5d
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 d1 44 79 45 54 00 00 '..........DyET..'
-  26 1a 01 03 0e 3c 22 78 2e 90 30 a7 54 4e 9c 25 '&....<"x..0.TN.%'
-  0f 50 54 a5 6b 80 d1 c0 81 c0 81 00 81 80 a9 c0 '.PT.k...........'
-  b3 00 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 56 50 21 00 00 1e 00 00 00 ff 00 33 39 47 'E.VP!........39G'
-  30 33 34 31 37 53 4c 30 0a 20 00 00 00 fd 00 32 '03417SL0. .....2'
-  4c 1e 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
-  00 42 65 6e 51 20 45 57 32 37 37 35 5a 48 00 5d '.BenQ EW2775ZH.]'
-Checksum: 0x5d
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

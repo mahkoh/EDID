@@ -51,19 +51,6 @@ Checksum: 0xf0
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 26 cf e6 04 00 00 00 00 '........&.......'
-  00 1a 01 02 a5 1c 10 78 0a 12 30 91 56 53 92 28 '.......x..0.VS.('
-  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 4f 36 80 a0 70 38 22 40 32 3c '......O6..p8"@2<'
-  ae 00 14 9c 10 00 00 19 00 00 00 00 00 00 00 00 '................'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 49 '...............I'
-  6e 66 6f 56 69 73 69 6f 6e 0a 20 20 00 00 00 fe 'nfoVision.  ....'
-  00 4d 31 32 35 4e 57 46 34 20 52 31 20 0a 00 f0 '.M125NWF4 R1 ...'
-Checksum: 0xf0
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -74,10 +61,8 @@ Failures:
 Block 0, Base EDID:
   Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x24.
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
-  Alphanumeric Data String: One or more trailing spaces.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Alphanumeric Data String: One or more trailing spaces before newline.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -71,7 +71,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6416, 0.3291
     Green: 0.3037, 0.5957
@@ -84,7 +84,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol N
                  Vfront    3 Vsync  10 Vback  100 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 30-120 Hz V, 244-244 kHz H, max dotclock 740 MHz
+      Monitor ranges (Range Limits Only): 30-120 Hz V, 244-244 kHz H, max dotclock 740 MHz
     Alphanumeric Data String: 'CSOT T3'
     Alphanumeric Data String: 'MND508ZA1-1'
   Extension blocks: 2
@@ -94,7 +94,7 @@ Checksum: 0x03
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Native detailed modes: 0
+  Native DTDs: 0
   Colorimetry Data Block:
     BT2020RGB
   HDR Static Metadata Data Block:
@@ -107,15 +107,18 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 106 (496.743 cd/m^2)
     Desired content min luminance: 36 (0.099 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.3
+    Version: 2
+    Feature Caps: 0x03
     Minimum Refresh Rate: 30 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x04
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      Gamma 2.2 EOTF Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 106 (496.743 cd/m^2)
     Minimum luminance: 36 (0.099 cd/m^2)
-    Maximum luminance (without local dimming): 106 (496.743 cd/m^2)
-    Minimum luminance (without local dimming): 36 (0.099 cd/m^2)
 Checksum: 0x4a  Unused space in Extension Block: 98 bytes
 
 ----------------
@@ -133,66 +136,11 @@ Checksum: 0x90
 
 ----------------
 
-Block 3, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0e 6f 19 13 00 00 00 00 '.........o......'
-  00 21 01 04 b5 1d 13 78 07 5e dc a4 54 4d 98 26 '.!.....x.^..TM.&'
-  10 4f 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.OT.............'
-  01 01 01 01 01 01 da 90 40 a0 b0 80 71 70 30 20 '........@...qp0 '
-  3a 00 1d be 10 00 00 18 00 00 00 fd 00 1e 78 f4 ':.............x.'
-  f4 4a 01 0a 20 20 20 20 20 20 00 00 00 fe 00 43 '.J..      .....C'
-  53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe 'SOT T3.     ....'
-  00 4d 4e 44 35 30 38 5a 41 31 2d 31 0a 20 02 03 '.MND508ZA1-1. ..'
-Checksum: 0x03
-
-----------------
-
-Block 4, CTA-861 Extension Block:
-  Revision: 3
-  Native detailed modes: 0
-  Colorimetry Data Block:
-    BT2020RGB
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      SMPTE ST2084
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 106 (496.743 cd/m^2)
-    Desired content max frame-average luminance: 106 (496.743 cd/m^2)
-    Desired content min luminance: 36 (0.099 cd/m^2)
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.3
-    Minimum Refresh Rate: 30 Hz
-    Maximum Refresh Rate: 120 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x04
-    Maximum luminance: 106 (496.743 cd/m^2)
-    Minimum luminance: 36 (0.099 cd/m^2)
-    Maximum luminance (without local dimming): 106 (496.743 cd/m^2)
-    Minimum luminance (without local dimming): 36 (0.099 cd/m^2)
-Checksum: 0x4a  Unused space in Extension Block: 98 bytes
-
-----------------
-
-Block 5, DisplayID Extension Block:
-  Version: 1.2
-  Extension Count: 0
-  Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  2880x1920  120.000259 Hz   0:0    243.961 kHz    741.640000 MHz (aspect undefined, no 3D stereo)
-               Hfront   48 Hsync  32 Hback   80 Hpol N
-               Vfront    3 Vsync  10 Vback  100 Vpol N
-  Checksum: 0x48
-Checksum: 0x90
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Missing Display Product Name.
 Block 1, CTA-861 Extension Block:
-  IT Video Formats are overscanned by default, but normally this should be underscanned.
-Block 4, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -208,17 +156,8 @@ Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 3, Base EDID:
-  Unknown Extension Block.
-Block 4, CTA-861 Extension Block:
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
+  Extension Block 3 started with EDID header, ignoring Extension Blocks >= 3.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

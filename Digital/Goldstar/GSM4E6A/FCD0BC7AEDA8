@@ -71,26 +71,11 @@ Checksum: 0x58
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1e 6d 6a 4e 97 d8 00 00 '.........mjN....'
-  02 11 01 03 ea 2b 1b 78 ea cf c5 a3 5a 49 a0 25 '.....+.x....ZI.%'
-  12 50 54 a7 6b 80 95 0f 95 00 81 80 81 40 71 4f '.PT.k........@qO'
-  01 01 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20 '......|...`..@0 '
-  36 00 b2 0e 11 00 00 1a 21 39 90 30 62 1a 27 40 '6.......!9.0b.'@'
-  68 b0 36 00 b2 0e 11 00 00 1c 00 00 00 fd 00 38 'h.6............8'
-  4b 1e 53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 4c 32 30 36 57 54 51 0a 20 20 20 20 20 00 58 '.L206WTQ.     .X'
-Checksum: 0x58
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x6a.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

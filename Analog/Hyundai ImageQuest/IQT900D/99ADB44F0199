@@ -68,11 +68,13 @@ Checksum: 0x93
 
 ----------------
 
-Failures:
+Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Image size is 520x320 mm, but based on the picture AR it should be 520x292 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 56.250 - 75.062 Hz (Monitor: 59.000 - 76.000 Hz)
     Maximum Clock: 193.250 MHz (Monitor: 180.000 MHz)
 
-EDID conformity: FAIL
+EDID conformity: PASS

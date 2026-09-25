@@ -72,26 +72,15 @@ Checksum: 0x04
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1e f9 af 06 b4 57 00 00 '.............W..'
-  03 11 01 03 08 25 15 78 2a 5e 95 a7 53 4c 98 24 '.....%.x*^..SL.$'
-  14 50 54 bf ef 00 31 ca 81 80 01 01 01 01 01 01 '.PT...1.........'
-  01 01 01 01 01 01 1a 1d 00 80 51 d0 1c 20 40 80 '..........Q.. @.'
-  35 00 75 d1 10 00 00 1c 00 00 00 fd 00 38 4c 1e '5.u..........8L.'
-  51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 46 'Q...      .....F'
-  50 44 31 37 37 35 57 0a 20 20 20 20 00 00 00 ff 'PD1775W.    ....'
-  00 4d 47 4d 37 31 37 30 50 32 32 34 35 32 00 04 '.MGM7170P22452..'
-Checksum: 0x04
+Warnings:
 
-----------------
-
-Failures:
-
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 26.250 - 79.976 kHz (Monitor: 30.000 - 81.000 kHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+Failures:
+
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

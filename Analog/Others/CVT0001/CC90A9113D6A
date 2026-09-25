@@ -62,19 +62,6 @@ Checksum: 0xfc
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0e d4 01 00 00 00 00 00 '................'
-  0c 14 01 04 08 58 31 78 0a ee 9d a3 54 4c 99 26 '.....X1x....TL.&'
-  0f 4f 54 a1 08 00 95 00 b3 00 01 01 01 01 01 01 '.OT.............'
-  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 70 ea 31 00 00 1e 66 21 50 b0 51 00 1b 30 'E.p.1...f!P.Q..0'
-  40 70 36 00 70 ea 31 00 00 1e 00 00 00 fd 00 3b '@p6.p.1........;'
-  47 1e 50 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 'G.P...      ....'
-  00 4c 43 44 20 54 56 0a 0a 0a 0a 0a 0a 0a 00 fc '.LCD TV.........'
-Checksum: 0xfc
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -83,11 +70,9 @@ Block 0, Base EDID:
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
   Display Product Name: Non-space after newline.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

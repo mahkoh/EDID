@@ -77,6 +77,7 @@ Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+  Detailed Timing Descriptor #1: Image size is 393x294 mm, but based on the picture AR it should be 367x294 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 340.477 MHz (Monitor: 340.000 MHz)

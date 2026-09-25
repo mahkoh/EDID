@@ -52,7 +52,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6796, 0.3154
     Green: 0.2646, 0.6923
@@ -90,6 +90,7 @@ Block 1, DisplayID Extension Block:
     Descriptor #1:
       Native Panel Range
       Fixed Average V-Total and Adaptive V-Total
+      Supports Seamless Transition
       'Max Single Frame Duration Increase' field value without jitter impact
       'Max Single Frame Duration Decrease' field value without jitter impact
       Max Duration Increase: 0.00 ms
@@ -99,6 +100,7 @@ Block 1, DisplayID Extension Block:
     Descriptor #2:
       Native Panel Range
       Fixed Average V-Total and Adaptive V-Total
+      Supports Seamless Transition
       'Max Single Frame Duration Increase' field value without jitter impact
       'Max Single Frame Duration Decrease' field value without jitter impact
       Max Duration Increase: 0.00 ms
@@ -107,14 +109,12 @@ Block 1, DisplayID Extension Block:
       Max Refresh Rate: 60 Hz
   CTA-861 DisplayID Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.1
+    Version: 3
+    Feature Caps: 0x01
     Minimum Refresh Rate: 60 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 106 (496.743 cd/m^2)
-    Minimum luminance: 66 (0.333 cd/m^2)
-    Unknown: 0x6a 0x42
   Display Parameters Data Block (0x21):
     Image size: 344.7 mm x 215.4 mm
     Display native pixel format: 2560x1600
@@ -130,93 +130,14 @@ Block 1, DisplayID Extension Block:
     Native Maximum Luminance (Full Coverage): 500.000000 cd/m^2
     Native Maximum Luminance (10% Rectangular Coverage): 500.000000 cd/m^2
     Native Minimum Luminance: 0.333008 cd/m^2
-    Native Color Depth: 10 bpc
+    Native Color Depth: 8 bpc
     Display Device Technology: Active Matrix LCD
     Display Device Theme Preference: No Preference
     Native Gamma EOTF: 2.20
-  Unknown DisplayID Data Block (0x2e, length 6):
-    40 4e d0 5f d0 5f                               '@N._._'
-  Checksum: 0x55
-Checksum: 0x90
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 e5 79 0d 00 00 00 00 '..........y.....'
-  2a 22 01 04 a5 22 16 78 03 3d 35 ae 50 43 b1 25 '*"...".x.=5.PC.%'
-  0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 34 70 00 a0 a0 40 a0 60 30 20 '......4p...@.`0 '
-  36 00 59 d7 10 00 00 1a 00 00 00 00 00 00 00 00 '6.Y.............'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 42 '...............B'
-  4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fc 'OE CQ.      ....'
-  00 4e 45 31 36 30 51 44 4d 2d 4e 5a 36 0a 01 2a '.NE160QDM-NZ6..*'
-Checksum: 0x2a
-
-----------------
-
-Block 3, DisplayID Extension Block:
-  Version: 2.0
-  Extension Count: 0
-  Video Timing Modes Type 7 - Detailed Timings Data Block:
-    DTD:  2560x1600  165.000000 Hz  16:10   290.400 kHz    789.888000 MHz (aspect 16:10, no 3D stereo, preferred)
-               Hfront   48 Hsync  32 Hback   80 Hpol N
-               Vfront    3 Vsync   6 Vback  151 Vpol N
-  Dynamic Video Timing Range Limits Data Block:
-    Minimum Pixel Clock: 789888 kHz
-    Maximum Pixel Clock: 789888 kHz
-    Minimum Vertical Refresh Rate: 60 Hz
-    Maximum Vertical Refresh Rate: 165 Hz
-    Seamless Dynamic Video Timing Support: Yes
-  Adaptive Sync Data Block:
-    Descriptor #1:
-      Native Panel Range
-      Fixed Average V-Total and Adaptive V-Total
-      'Max Single Frame Duration Increase' field value without jitter impact
-      'Max Single Frame Duration Decrease' field value without jitter impact
-      Max Duration Increase: 0.00 ms
-      Max Duration Decrease: 0.00 ms
-      Min Refresh Rate: 60 Hz
-      Max Refresh Rate: 165 Hz
-    Descriptor #2:
-      Native Panel Range
-      Fixed Average V-Total and Adaptive V-Total
-      'Max Single Frame Duration Increase' field value without jitter impact
-      'Max Single Frame Duration Decrease' field value without jitter impact
-      Max Duration Increase: 0.00 ms
-      Max Duration Decrease: 0.00 ms
-      Min Refresh Rate: 48 Hz
-      Max Refresh Rate: 60 Hz
-  CTA-861 DisplayID Data Block:
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.1
-    Minimum Refresh Rate: 60 Hz
-    Maximum Refresh Rate: 165 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
-    Maximum luminance: 106 (496.743 cd/m^2)
-    Minimum luminance: 66 (0.333 cd/m^2)
-    Unknown: 0x6a 0x42
-  Display Parameters Data Block (0x21):
-    Image size: 344.7 mm x 215.4 mm
-    Display native pixel format: 2560x1600
-    Scan Orientation: Left to Right, Top to Bottom
-    Luminance Information: Guidance for the Source device
-    Color Information: CIE 1931
-    Audio Speaker Information: not integrated
-    Native Color Chromaticity:
-      Primary #1:  (0.679932, 0.314941)
-      Primary #2:  (0.264893, 0.691895)
-      Primary #3:  (0.144775, 0.057861)
-      White Point: (0.312988, 0.328857)
-    Native Maximum Luminance (Full Coverage): 500.000000 cd/m^2
-    Native Maximum Luminance (10% Rectangular Coverage): 500.000000 cd/m^2
-    Native Minimum Luminance: 0.333008 cd/m^2
-    Native Color Depth: 10 bpc
-    Display Device Technology: Active Matrix LCD
-    Display Device Theme Preference: No Preference
-    Native Gamma EOTF: 2.20
-  Unknown DisplayID Data Block (0x2e, length 6):
-    40 4e d0 5f d0 5f                               '@N._._'
+  Brightness Luminance Range Data Block:
+    Minimum SDR Luminance (Full Coverage): 25.000000 cd/m^2
+    Maximum Suggested SDR Luminance (Full Coverage): 500.000000 cd/m^2
+    Maximum Boost SDR Luminance: 500.000000 cd/m^2
   Checksum: 0x55
 Checksum: 0x90
 
@@ -227,16 +148,7 @@ Failures:
 Block 0, Base EDID:
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
   Missing Display Range Limits Descriptor.
-Block 1, DisplayID Extension Block:
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, DisplayID Extension Block:
-  Product Type should be 0 in extension block.
-  Display Parameters Data Block (0x21): Duplicate Display Parameters Data Block.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

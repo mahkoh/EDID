@@ -77,7 +77,7 @@ Block 1, CTA-861 Extension Block:
   Underscans IT Video Formats by default
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
@@ -98,8 +98,8 @@ Checksum: 0x7d  Unused space in Extension Block: 105 bytes
 
 Warnings:
 
-EDID:
-  CTA-861: Multiple native progressive timings are defined.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
 
 Failures:
 

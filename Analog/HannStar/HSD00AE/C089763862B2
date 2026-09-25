@@ -74,26 +74,15 @@ Checksum: 0xd0
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 22 64 ae 00 fe 02 00 00 '........"d......'
-  19 10 01 03 0a 22 1b 78 ea fd 59 a5 53 4a 9d 24 '.....".x..Y.SJ.$'
-  14 4f 56 bf ef 80 81 80 31 0a 31 ca 01 01 01 01 '.OV.....1.1.....'
-  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
-  13 00 52 0e 11 00 00 1e 00 00 00 fd 00 37 4b 1f '..R..........7K.'
-  50 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 30 'P...      .....0'
-  37 36 36 0a 20 20 20 20 20 20 20 20 00 00 00 fc '766.        ....'
-  00 48 61 6e 6e 53 74 61 72 20 43 31 37 34 00 d0 '.HannStar C174..'
-Checksum: 0xd0
+Warnings:
 
-----------------
-
-Failures:
-
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 26.250 - 79.976 kHz (Monitor: 31.000 - 80.000 kHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+Failures:
+
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

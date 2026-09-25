@@ -70,6 +70,7 @@ Checksum: 0xd6
 Warnings:
 
 EDID:
+  No Native Video Resolution was defined.
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 162.000 MHz (Monitor: 160.000 MHz)
     Could be due to a Monitor Range off-by-one rounding issue

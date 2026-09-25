@@ -82,7 +82,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -124,14 +124,19 @@ Checksum: 0x59  Unused space in Extension Block: 25 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #3: Image size is 535x339 mm, but based on the picture AR it should be 535x300 mm.
+  Detailed Timing Descriptor #4: Image size is 535x339 mm, but based on the picture AR it should be 535x300 mm.
+  Detailed Timing Descriptor #5: Image size is 535x339 mm, but based on the picture AR it should be 508x339 mm.
+  Detailed Timing Descriptor #6: Image size is 535x339 mm, but based on the picture AR it should be 423x339 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 93.149 kHz (Monitor: 30.000 - 96.000 kHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 28.125 - 93.149 kHz (Monitor: 30.000 - 96.000 kHz)
 
 EDID conformity: FAIL

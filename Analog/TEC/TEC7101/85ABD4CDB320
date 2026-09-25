@@ -70,22 +70,10 @@ Checksum: 0x77
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 50 a3 01 71 01 00 00 00 '........P..q....'
-  14 15 01 03 08 33 1d 64 ee dc 51 a3 59 48 9e 24 '.....3.d..Q.YH.$'
-  11 50 54 ad ce 00 d1 c0 b3 00 95 00 01 00 01 40 '.PT............@'
-  01 4f 01 4f 01 40 02 3a 80 18 71 38 2d 40 58 2c '.O.O.@.:..q8-@X,'
-  45 00 fd 1e 11 00 00 1e 00 00 00 fd 00 19 4b 0f 'E.............K.'
-  50 0f 00 0a 20 20 20 20 20 20 00 00 00 ff 00 4a 'P...      .....J'
-  30 31 32 30 30 31 35 0a 20 20 20 20 00 00 00 fc '0120015.    ....'
-  00 54 45 43 4f 0a 20 20 20 20 20 20 20 20 00 77 '.TECO.        .w'
-Checksum: 0x77
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
 
 Failures:
@@ -97,9 +85,7 @@ Block 0, Base EDID:
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x014f.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x014f.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0140.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -25,7 +25,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.5761, 0.3457
     Green: 0.3505, 0.5683
@@ -40,7 +40,7 @@ Block 0, Base EDID:
     DTD 2:  1920x1200   48.020722 Hz  16:10    59.354 kHz    124.880000 MHz (301 mm x 188 mm)
                  Hfront   16 Hsync  16 Hback  152 Hpol P
                  Vfront    3 Vsync  14 Vback   19 Vpol N
-    Alphanumeric Data String: '2M5HF'
+    Alphanumeric Data String: '2M5HF.B140UAN'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 22 99 00 10 00 00 0a 01 0a 20 20 '....A"........  '
 Checksum: 0x8e
 
@@ -49,12 +49,12 @@ Checksum: 0x8e
 Warnings:
 
 Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x80 at position 5, can cause problems.
   Missing Display Product Name.
 
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
   Missing Display Range Limits Descriptor.
 
 EDID conformity: FAIL

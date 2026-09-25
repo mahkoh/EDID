@@ -69,24 +69,9 @@ Checksum: 0xa9
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 72 44 05 e1 5a 30 91 '.........rD..Z0.'
-  0d 1d 01 03 68 35 1e 78 2a 0e f5 a5 55 50 9e 26 '....h5.x*...UP.&'
-  10 50 54 b3 0c 00 b3 00 95 00 81 80 81 00 81 c0 '.PT.............'
-  71 4f 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c 'qO.....:..q8-@X,'
-  45 00 13 2b 21 00 00 1e 00 00 00 ff 00 54 37 33 'E..+!........T73'
-  54 54 30 30 31 34 32 30 30 0a 00 00 00 fd 00 30 'TT0014200......0'
-  4b 1e 53 12 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 41 63 65 72 20 4b 47 32 34 30 0a 20 20 00 a9 '.Acer KG240.  ..'
-Checksum: 0xa9
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

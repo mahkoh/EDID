@@ -63,8 +63,11 @@ Checksum: 0xc9
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x39.
+  Detailed Timing Descriptor #1: Image size is 380x290 mm, but based on the picture AR it should be 380x237 mm.
 EDID:
+  No Native Video Resolution was defined.
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 162.000 MHz (Monitor: 160.000 MHz)
     Could be due to a Monitor Range off-by-one rounding issue

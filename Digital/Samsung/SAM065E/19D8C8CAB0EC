@@ -100,7 +100,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
@@ -139,76 +139,18 @@ Checksum: 0x19  Unused space in Extension Block: 43 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 2d 5e 06 00 00 00 00 '........L-^.....'
-  2e 13 01 03 80 10 09 78 0a ee 91 a3 54 4c 99 26 '.......x....TL.&'
-  0f 50 54 bd ef 80 71 4f 81 00 81 40 81 80 95 00 '.PT...qO...@....'
-  95 0f b3 00 a9 40 02 3a 80 18 71 38 2d 40 58 2c '.....@.:..q8-@X,'
-  45 00 a0 5a 00 00 00 1e 66 21 50 b0 51 00 1b 30 'E..Z....f!P.Q..0'
-  40 70 36 00 a0 5a 00 00 00 1e 00 00 00 fd 00 18 '@p6..Z..........'
-  4b 1a 51 17 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
-  00 53 41 4d 53 55 4e 47 0a 20 20 20 20 20 01 34 '.SAMSUNG.     .4'
-Checksum: 0x34
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
-    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Video Capability Data Block:
-    YCbCr quantization: No Data
-    RGB quantization: No Data
-    PT scan behavior: No Data
-    IT scan behavior: Supports both over- and underscan
-    CE scan behavior: Supports both over- and underscan
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.0.0.0
-    Supports_AI
-    Maximum TMDS clock: 225 MHz
-  Detailed Timing Descriptors:
-    DTD 6:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (160 mm x 90 mm)
-                 Hfront  110 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD 7:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (160 mm x 90 mm)
-                 Hfront  110 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD 8:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (160 mm x 90 mm)
-                 Hfront  110 Hsync  40 Hback  220 Hpol N
-                 Vfront    5 Vsync   5 Vback   20 Vpol N
-Checksum: 0x19  Unused space in Extension Block: 43 bytes
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Dubious maximum image size (16x9 is smaller than 10x10 cm).
+  Detailed Timing Descriptor #1: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (160x90 mm is smaller than 100x100 mm).
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #3: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #4: Dubious image size (160x90 mm is smaller than 100x100 mm).
   Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 4.
-Block 3, CTA-861 Extension Block:
-  Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
-  Detailed Timing Descriptor #8: DTD is similar but not identical to VIC 4.
-EDID:
-  CTA-861: Multiple native progressive timings are defined.
+  Detailed Timing Descriptor #5: Dubious image size (160x90 mm is smaller than 100x100 mm).
 
 Failures:
 
@@ -217,17 +159,7 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 4.
   Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 32.
-  Video Data Block: Duplicate VIC 34.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Video Capability Data Block: Only one instance of this Data Block is allowed.
-  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

@@ -82,7 +82,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-101 Hz V, 160-160 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 48-101 Hz V, 160-160 kHz H, max dotclock 600 MHz
     Display Product Name: 'UWQHD-100-C'
   Extension blocks: 1
 Checksum: 0x07
@@ -93,7 +93,7 @@ Block 1, CTA-861 Extension Block:
   Revision: 3
   Underscans IT Video Formats by default
   Basic audio support
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
@@ -123,7 +123,8 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block, OUI 00-00-00:
     01 78 80 00                                     '.x..'
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 0 Hz
     Maximum Refresh Rate: 101 Hz
     Flags 1.x: 0xed (MCCS)
@@ -142,84 +143,22 @@ Checksum: 0x70  Unused space in Extension Block: 14 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 31 03 00 34 00 00 00 00 '........1..4....'
-  14 1d 01 03 80 50 22 78 af ee d5 a3 54 4c 99 23 '.....P"x....TL.#'
-  0f 50 54 a5 4b 00 81 c0 81 80 95 00 a9 c0 b3 00 '.PT.K...........'
-  d1 c0 01 01 01 01 7a 3e 70 a0 d0 a0 29 50 30 20 '......z>p...)P0 '
-  35 00 1b 4e 31 00 00 1a 21 68 70 a0 d0 a0 29 50 '5..N1...!hp...)P'
-  30 20 35 00 1b 4e 31 00 00 1a 00 00 00 fd 00 30 '0 5..N1........0'
-  65 a0 a0 3c 01 0a 20 20 20 20 20 20 00 00 00 fc 'e..<..      ....'
-  00 55 57 51 48 44 2d 31 30 30 2d 43 0a 20 01 07 '.UWQHD-100-C. ..'
-Checksum: 0x07
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Native detailed modes: 1
-  Video Data Block:
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  91:  2560x1080  100.000000 Hz  64:27   125.000 kHz    371.250000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC  90:  2560x1080   60.000000 Hz  64:27    66.000 kHz    198.000000 MHz
-    VIC  91:  2560x1080  100.000000 Hz  64:27   125.000 kHz    371.250000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.0.0.0
-    Maximum TMDS clock: 600 MHz
-    Extended HDMI video details:
-  Vendor-Specific Data Block, OUI 00-00-00:
-    01 78 80 00                                     '.x..'
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
-    Minimum Refresh Rate: 0 Hz
-    Maximum Refresh Rate: 101 Hz
-    Flags 1.x: 0xed (MCCS)
-  Colorimetry Data Block:
-  Detailed Timing Descriptors:
-    DTD 6:  3440x1440   49.996249 Hz  43:18    74.044 kHz    266.560000 MHz (795 mm x 334 mm)
-                 Hfront   88 Hsync  64 Hback    8 Hpol P
-                 Vfront    4 Vsync   5 Vback   32 Vpol P
-    DTD 7:  1720x720    60.000000 Hz  43:18    48.000 kHz     97.920000 MHz (795 mm x 334 mm)
-                 Hfront   48 Hsync  32 Hback  240 Hpol P
-                 Vfront    3 Vsync   5 Vback   72 Vpol P
-    DTD 8:  1720x1440   59.999355 Hz  43:36    89.399 kHz    185.950000 MHz (795 mm x 334 mm)
-                 Hfront   48 Hsync  64 Hback  248 Hpol P
-                 Vfront    3 Vsync   5 Vback   42 Vpol P
-Checksum: 0x70  Unused space in Extension Block: 14 bytes
-
-----------------
-
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Vendor-Specific Data Block, OUI 00-00-00: Unknown OUI 00-00-00.
-Block 3, CTA-861 Extension Block:
-  Vendor-Specific Data Block, OUI 00-00-00: Unknown OUI 00-00-00.
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Vendor-Specific Data Block, OUI 00-00-00: All zeroes OUI.
+  Detailed Timing Descriptor #5: Image size is 795x334 mm, but based on the picture AR it should be 398x334 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 29.998 - 100.000 Hz (Monitor: 48.000 - 101.000 Hz)
+    Horizontal Freq: 31.466 - 125.000 kHz (Monitor: 160.000 - 160.000 kHz)
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
+  Display Range Limits: 'Range Limits Only' is not allowed for EDID < 1.4.
 Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 4.
   Video Data Block: Duplicate VIC 16.
@@ -227,24 +166,8 @@ Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 91.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 1.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 90.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 29.998 - 100.000 Hz (Monitor: 48.000 - 101.000 Hz)
-    Horizontal Freq: 31.466 - 125.000 kHz (Monitor: 160.000 - 160.000 kHz)
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

@@ -85,7 +85,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -140,15 +140,18 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 98 (417.710 cd/m^2)
     Desired content min luminance: 44 (0.124 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.3
+    Version: 2
+    Feature Caps: 0x03
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 146 Hz
     Flags 1.x: 0xe6 (MCCS)
     Flags 2.x: 0x0f
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      Gamma 2.2 EOTF Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 98 (417.710 cd/m^2)
     Minimum luminance: 44 (0.124 cd/m^2)
-    Maximum luminance (without local dimming): 98 (417.710 cd/m^2)
-    Minimum luminance (without local dimming): 44 (0.124 cd/m^2)
   Detailed Timing Descriptors:
     DTD 3:  2560x1440  119.998032 Hz  16:9    182.997 kHz    487.870000 MHz (697 mm x 392 mm)
                  Hfront    8 Hsync  32 Hback   66 Hpol P
@@ -163,6 +166,15 @@ Checksum: 0x9b  Unused space in Extension Block: 2 bytes
 
 ----------------
 
+Warnings:
+
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #5: Image size is 697x392 mm, but based on the picture AR it should be 348x392 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 222.055 kHz (Monitor: 30.000 - 230.000 kHz)
+
 Failures:
 
 Block 0, Base EDID:
@@ -170,8 +182,5 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 28.125 - 222.055 kHz (Monitor: 30.000 - 230.000 kHz)
 
 EDID conformity: FAIL

@@ -63,30 +63,19 @@ Checksum: 0xa5
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 2a 59 50 18 00 00 00 00 '........*YP.....'
-  25 15 01 03 60 29 17 78 ae b1 a5 a1 58 4f 95 26 '%...`).x....XO.&'
-  16 50 54 a1 08 00 31 40 45 40 61 40 81 80 01 01 '.PT...1@E@a@....'
-  01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70 '......f!P.Q..0@p'
-  36 00 c4 fe 10 00 00 1e 00 00 00 ff 00 4e 55 4c '6............NUL'
-  4c 0a 20 20 20 20 20 20 20 20 00 00 00 fd 00 37 'L.        .....7'
-  4b 1e 51 09 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
-  00 41 6e 61 6c 6f 67 0a 20 20 20 20 20 20 00 a5 '.Analog.      ..'
-Checksum: 0xa5
+Warnings:
 
-----------------
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 108.000 MHz (Monitor: 90.000 MHz)
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #1: Mismatch of image size 452x254 mm vs display size 410x230 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Maximum Clock: 108.000 MHz (Monitor: 90.000 MHz)
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 452x254mm, which is larger than the display size 410.0x230.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

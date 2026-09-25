@@ -70,7 +70,7 @@ Block 1, CTA-861 Extension Block:
   Revision: 3
   Underscans IT Video Formats by default
   Basic audio support
-  Native detailed modes: 2
+  Native DTDs: 2
   Video Data Block:
     VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
     VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
@@ -158,9 +158,11 @@ Checksum: 0xbf  Unused space in Extension Block: 25 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
-  Vendor-Specific Data Block, OUI 00-00-00: Unknown OUI 00-00-00.
-  Vendor-Specific Video Data Block, OUI 00-00-00: Unknown OUI 00-00-00.
+  Vendor-Specific Data Block, OUI 00-00-00: All zeroes OUI.
+  Vendor-Specific Video Data Block, OUI 00-00-00: All zeroes OUI.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
@@ -171,7 +173,7 @@ Block 1, CTA-861 Extension Block:
   Video Data Block: Duplicate VIC 95.
   Video Data Block: Duplicate VIC 32.
   Video Data Block: Duplicate VIC 4.
-  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
 EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
 

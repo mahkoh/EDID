@@ -74,7 +74,7 @@ Block 1, CTA-861 Extension Block:
   Revision: 3
   Underscans IT Video Formats by default
   Basic audio support
-  Native detailed modes: 1
+  Native DTDs: 1
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -107,7 +107,13 @@ Checksum: 0xd0  Unused space in Extension Block: 82 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #3: Dubious image size (160x90 mm is smaller than 100x100 mm).
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 29.190 - 67.500 kHz (Monitor: 30.000 - 60.000 kHz)
+    Maximum Clock: 148.500 MHz (Monitor: 90.000 MHz)
 
 Failures:
 
@@ -117,9 +123,6 @@ Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
   Detailed Timing Descriptor #3: Mismatch of image size 160x90 mm vs display size 410x230 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 29.190 - 67.500 kHz (Monitor: 30.000 - 60.000 kHz)
-    Maximum Clock: 148.500 MHz (Monitor: 90.000 MHz)
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

@@ -72,26 +72,16 @@ Checksum: 0x30
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 ae 0c 0a 01 01 01 01 '........0.......'
-  0b 19 01 03 80 2f 1e 78 2e 01 f5 a2 57 52 9f 27 '...../.x....WR.''
-  0a 50 54 bd cf 00 71 4f 81 80 81 8c 95 00 95 0f '.PT...qO........'
-  b3 00 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20 '......|...`..@0 '
-  36 00 da 28 11 00 00 1a 00 00 00 ff 00 56 31 56 '6..(.........V1V'
-  50 4d 37 30 0a 20 20 20 20 20 00 00 00 fd 00 32 'PM70.     .....2'
-  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
-  00 4c 45 4e 20 4c 54 32 32 35 32 70 77 41 00 30 '.LEN LT2252pwA.0'
-Checksum: 0x30
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

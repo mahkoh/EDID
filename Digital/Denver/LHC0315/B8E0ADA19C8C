@@ -55,7 +55,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6767, 0.3144
     Green: 0.2861, 0.6367
@@ -80,14 +80,14 @@ Block 0, Base EDID:
     DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
     DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
   Detailed Timing Descriptors:
-    DTD  1:  2560x1440   60.000887 Hz  16:9     88.861 kHz    243.480000 MHz (697 mm x 392 mm)
-                  Hfront   48 Hsync  32 Hback  100 Hpol P
-                  Vfront    3 Vsync   5 Vback   33 Vpol N
-    DTD  2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (697 mm x 392 mm)
-                  Hfront   88 Hsync  44 Hback  148 Hpol P
-                  Vfront    4 Vsync   5 Vback   36 Vpol N
+    DTD 1:  2560x1440   60.000887 Hz  16:9     88.861 kHz    243.480000 MHz (697 mm x 392 mm)
+                 Hfront   48 Hsync  32 Hback  100 Hpol P
+                 Vfront    3 Vsync   5 Vback   33 Vpol N
+    DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (697 mm x 392 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    4 Vsync   5 Vback   36 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-165 Hz V, 243-243 kHz H, max dotclock 670 MHz
+      Monitor ranges (Range Limits Only): 48-165 Hz V, 243-243 kHz H, max dotclock 670 MHz
     Display Product Name: 'X315 PRO'
   Extension blocks: 1
 Checksum: 0x3c
@@ -100,7 +100,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
@@ -129,7 +129,8 @@ Block 1, CTA-861 Extension Block:
     BT2020RGB
     Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.7
+    Version: 1
+    Feature Caps: 0x07
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
@@ -144,97 +145,18 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 89 (343.724 cd/m^2)
     Desired content min luminance: 32 (0.063 cd/m^2)
   Detailed Timing Descriptors:
-    DTD  3:  2560x1440  119.998520 Hz  16:9    178.798 kHz    486.330000 MHz (697 mm x 392 mm)
-                  Hfront    8 Hsync  64 Hback   88 Hpol P
-                  Vfront    3 Vsync   5 Vback   42 Vpol N
-    DTD  4:  2560x1440  165.001260 Hz  16:9    242.552 kHz    654.890000 MHz (697 mm x 392 mm)
-                  Hfront   16 Hsync  64 Hback   60 Hpol P
-                  Vfront    3 Vsync   5 Vback   22 Vpol N
-    DTD  5:  1280x1440   59.999501 Hz   8:9     92.519 kHz    144.330000 MHz (697 mm x 392 mm)
-                  Hfront   32 Hsync  40 Hback  208 Hpol P
-                  Vfront    5 Vsync   5 Vback   92 Vpol N
-    DTD  6:  2560x1440  143.999800 Hz  16:9    214.560 kHz    575.020000 MHz (697 mm x 392 mm)
-                  Hfront   16 Hsync  64 Hback   40 Hpol P
-                  Vfront    3 Vsync   5 Vback   42 Vpol N
-Checksum: 0x4e  Unused space in Extension Block: 10 bytes
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 31 03 15 03 01 00 00 00 '........1.......'
-  0a 1e 01 04 b5 46 27 78 3f 64 f5 ad 50 49 a3 22 '.....F'x?d..PI."'
-  13 50 54 a5 4b 00 81 c0 81 80 95 00 a9 c0 b3 00 '.PT.K...........'
-  d1 c0 81 40 71 4f 1c 5f 00 b4 a0 a0 29 50 30 20 '...@qO._....)P0 '
-  35 00 b9 88 21 00 00 1a 02 3a 80 18 71 38 2d 40 '5...!....:..q8-@'
-  58 2c 45 00 b9 88 21 00 00 1a 00 00 00 fd 00 30 'X,E...!........0'
-  a5 f3 f3 43 01 0a 20 20 20 20 20 20 00 00 00 fc '...C..      ....'
-  00 58 33 31 35 20 50 52 4f 0a 20 20 20 20 01 3c '.X315 PRO.    .<'
-Checksum: 0x3c
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Video Data Block:
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
-    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Colorimetry Data Block:
-    xvYCC601
-    xvYCC709
-    BT2020cYCC
-    BT2020YCC
-    BT2020RGB
-    Gamut Boundary Description Metadata Profile P0
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.7
-    Minimum Refresh Rate: 48 Hz
-    Maximum Refresh Rate: 165 Hz
-    Flags 1.x: 0x00
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      Traditional gamma - HDR luminance range
-      SMPTE ST2084
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 96 (400.000 cd/m^2)
-    Desired content max frame-average luminance: 89 (343.724 cd/m^2)
-    Desired content min luminance: 32 (0.063 cd/m^2)
-  Detailed Timing Descriptors:
-    DTD  7:  2560x1440  119.998520 Hz  16:9    178.798 kHz    486.330000 MHz (697 mm x 392 mm)
-                  Hfront    8 Hsync  64 Hback   88 Hpol P
-                  Vfront    3 Vsync   5 Vback   42 Vpol N
-    DTD  8:  2560x1440  165.001260 Hz  16:9    242.552 kHz    654.890000 MHz (697 mm x 392 mm)
-                  Hfront   16 Hsync  64 Hback   60 Hpol P
-                  Vfront    3 Vsync   5 Vback   22 Vpol N
-    DTD  9:  1280x1440   59.999501 Hz   8:9     92.519 kHz    144.330000 MHz (697 mm x 392 mm)
-                  Hfront   32 Hsync  40 Hback  208 Hpol P
-                  Vfront    5 Vsync   5 Vback   92 Vpol N
-    DTD 10:  2560x1440  143.999800 Hz  16:9    214.560 kHz    575.020000 MHz (697 mm x 392 mm)
-                  Hfront   16 Hsync  64 Hback   40 Hpol P
-                  Vfront    3 Vsync   5 Vback   42 Vpol N
+    DTD 3:  2560x1440  119.998520 Hz  16:9    178.798 kHz    486.330000 MHz (697 mm x 392 mm)
+                 Hfront    8 Hsync  64 Hback   88 Hpol P
+                 Vfront    3 Vsync   5 Vback   42 Vpol N
+    DTD 4:  2560x1440  165.001260 Hz  16:9    242.552 kHz    654.890000 MHz (697 mm x 392 mm)
+                 Hfront   16 Hsync  64 Hback   60 Hpol P
+                 Vfront    3 Vsync   5 Vback   22 Vpol N
+    DTD 5:  1280x1440   59.999501 Hz   8:9     92.519 kHz    144.330000 MHz (697 mm x 392 mm)
+                 Hfront   32 Hsync  40 Hback  208 Hpol P
+                 Vfront    5 Vsync   5 Vback   92 Vpol N
+    DTD 6:  2560x1440  143.999800 Hz  16:9    214.560 kHz    575.020000 MHz (697 mm x 392 mm)
+                 Hfront   16 Hsync  64 Hback   40 Hpol P
+                 Vfront    3 Vsync   5 Vback   42 Vpol N
 Checksum: 0x4e  Unused space in Extension Block: 10 bytes
 
 ----------------
@@ -242,7 +164,11 @@ Checksum: 0x4e  Unused space in Extension Block: 10 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 16.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #5: Image size is 697x392 mm, but based on the picture AR it should be 348x392 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 242.551 kHz (Monitor: 243.000 - 243.000 kHz)
@@ -253,27 +179,8 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 1.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 5.
-  Video Data Block: Duplicate VIC 17.
-  Video Data Block: Duplicate VIC 18.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 20.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 63.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

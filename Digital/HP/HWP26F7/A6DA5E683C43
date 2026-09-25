@@ -69,28 +69,20 @@ Checksum: 0x49
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 22 f0 f7 26 01 01 01 01 '........"..&....'
-  28 12 01 03 80 36 23 78 ee ce 50 a3 54 4c 99 26 '(....6#x..P.TL.&'
-  0f 50 54 a5 6b 80 81 40 a9 00 a9 40 b3 00 d1 00 '.PT.k..@...@....'
-  01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
-  36 00 22 60 21 00 00 1a 00 00 00 fc 00 48 50 20 '6."`!........HP '
-  4c 50 32 34 37 35 77 0a 20 20 00 00 00 fd 00 30 'LP2475w.  .....0'
-  55 1e 5e 11 00 0a 20 20 20 20 20 20 00 00 00 ff 'U.^...      ....'
-  00 43 5a 43 38 34 30 30 30 4c 56 0a 20 20 00 49 '.CZC84000LV.  .I'
-Checksum: 0x49
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Image size is 546x352 mm, but based on the picture AR it should be 546x341 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

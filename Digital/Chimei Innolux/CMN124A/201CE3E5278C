@@ -34,7 +34,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6396, 0.3300
     Green: 0.2998, 0.5996
@@ -55,19 +55,6 @@ Checksum: 0x4b
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0d ae 4a 12 00 00 00 00 '..........J.....'
-  2b 1e 01 04 a5 1c 10 78 03 ee 95 a3 54 4c 99 26 '+......x....TL.&'
-  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 36 36 80 a0 70 38 20 40 30 20 '......66..p8 @0 '
-  a6 00 14 9b 10 00 00 18 36 36 80 a0 70 38 4c 42 '........66..p8LB'
-  30 20 a6 00 14 9b 10 00 00 18 00 00 00 fe 00 43 '0 .............C'
-  4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'MN.         ....'
-  00 4e 31 32 35 48 43 47 2d 47 51 31 00 20 00 4b '.N125HCG-GQ1. .K'
-Checksum: 0x4b
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -76,11 +63,9 @@ Block 0, Base EDID:
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: NUL byte at position 11.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -55,7 +55,7 @@ Checksum: 0xf6
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Native detailed modes: 0
+  Native DTDs: 0
   Detailed Timing Descriptors:
     DTD 1:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (480 mm x 270 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
@@ -68,6 +68,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Detailed Timing Descriptor #1: DTD is identical to VIC 16, which is not present in the CTA Ext Block.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:

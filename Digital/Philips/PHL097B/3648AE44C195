@@ -68,7 +68,7 @@ Block 0, Base EDID:
     Display Product Serial Number: ...
     Display Product Name: 'PHL 13B1K3300'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 59-61 Hz V, 60-120 kHz H, max dotclock 150 MHz
+      Monitor ranges (Range Limits Only): 59-61 Hz V, 60-120 kHz H, max dotclock 150 MHz
   Extension blocks: 1
 Checksum: 0x3e
 
@@ -80,7 +80,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
   Audio Data Block:
@@ -100,51 +100,11 @@ Checksum: 0x9a  Unused space in Extension Block: 89 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 41 0c 7b 09 89 00 00 00 '........A.{.....'
-  13 21 01 04 a5 1b 14 78 3a 4d 73 a1 57 4a 9c 25 '.!.....x:Ms.WJ.%'
-  15 41 4c 00 00 00 01 01 01 01 01 01 01 01 01 01 '.AL.............'
-  01 01 01 01 01 01 02 3a 40 7c 61 b0 32 40 64 50 '.......:@|a.2@dP'
-  45 00 0e ca 10 00 00 1e 00 00 00 ff 00 41 55 45 'E............AUE'
-  32 33 31 39 30 30 30 31 33 37 00 00 00 fc 00 50 '2319000137.....P'
-  48 4c 20 31 33 42 31 4b 33 33 30 30 00 00 00 fd 'HL 13B1K3300....'
-  00 3b 3d 3c 78 0f 01 0a 20 20 20 20 20 20 01 3e '.;=<x...      .>'
-Checksum: 0x3e
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 2.0.0.0
-  Detailed Timing Descriptors:
-    DTD 3:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (270 mm x 202 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0x9a  Unused space in Extension Block: 89 bytes
-
-----------------
-
 Warnings:
 
 Block 1, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-Block 3, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #2: Image size is 270x202 mm, but based on the picture AR it should be 270x151 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
@@ -154,15 +114,7 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 16.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
-  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

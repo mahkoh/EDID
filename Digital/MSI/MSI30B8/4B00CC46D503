@@ -88,7 +88,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 4
+  Native DTDs: 4
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
@@ -97,7 +97,8 @@ Block 1, CTA-861 Extension Block:
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
     Unknown (VIC 225)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0x00
@@ -125,74 +126,16 @@ Checksum: 0x66  Unused space in Extension Block: 60 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 36 69 b8 30 00 00 00 00 '........6i.0....'
-  04 21 01 04 b5 3c 22 78 3a f6 35 a3 55 4e 9e 27 '.!...<"x:.5.UN.''
-  0d 50 54 a3 08 00 81 c0 81 80 95 00 b3 00 d1 c0 '.PT.............'
-  01 01 01 01 01 01 4d d0 00 a0 f0 70 3e 80 30 20 '......M....p>.0 '
-  35 00 55 50 21 00 00 1a 00 00 00 ff 00 50 42 38 '5.UP!........PB8'
-  48 30 36 35 35 30 30 32 33 37 00 00 00 fd 00 30 'H065500237.....0'
-  3c 8a 8a 3c 00 0a 20 20 20 20 20 20 00 00 00 fc '<..<..      ....'
-  00 4d 53 49 20 4d 44 32 37 31 55 4c 0a 20 01 41 '.MSI MD271UL. .A'
-Checksum: 0x41
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 4
-  Video Data Block:
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
-    Unknown (VIC 225)
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
-    Minimum Refresh Rate: 48 Hz
-    Maximum Refresh Rate: 60 Hz
-    Flags 1.x: 0x00
-  Video Capability Data Block:
-    YCbCr quantization: Selectable (via AVI YQ)
-    RGB quantization: Selectable (via AVI Q)
-    PT scan behavior: Supports both over- and underscan
-    IT scan behavior: Supports both over- and underscan
-    CE scan behavior: Supports both over- and underscan
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Detailed Timing Descriptors:
-    DTD 4:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (597 mm x 336 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol N
-                 Vfront    9 Vsync   6 Vback   30 Vpol N
-    DTD 5:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (597 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   33 Vpol N
-Checksum: 0x66  Unused space in Extension Block: 60 bytes
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 16.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-Block 3, CTA-861 Extension Block:
-  IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
-  Detailed Timing Descriptor #4: DTD is similar but not identical to VIC 16.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -202,23 +145,12 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 Block 1, CTA-861 Extension Block:
+  There are more Native DTDs (4) than DTDs (3).
   Video Data Block: Unknown VIC 225.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 1.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 96.
-  Video Data Block: Unknown VIC 225.
-  Video Data Block: Duplicate VIC 225.
-  Video Capability Data Block: Only one instance of this Data Block is allowed.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

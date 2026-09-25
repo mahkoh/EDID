@@ -54,19 +54,6 @@ Checksum: 0x99
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1d 58 2c 60 00 00 00 00 '.........X,`....'
-  1a 1f 01 04 95 1d 10 78 0a f1 00 94 5c 58 92 29 '.......x....\X.)'
-  21 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '!PT.............'
-  01 01 01 01 01 01 ce 1d 56 e2 50 00 1e 30 30 20 '........V.P..00 '
-  36 00 25 a5 10 00 00 1a df 13 56 e2 50 00 1e 30 '6.%.......V.P..0'
-  30 20 36 00 25 a5 10 00 00 1a 00 00 00 fe 00 47 '0 6.%..........G'
-  31 33 33 45 41 30 36 20 0a 20 20 20 00 00 00 fe '133EA06 .   ....'
-  00 47 31 33 33 45 41 30 36 0a 20 20 20 20 00 99 '.G133EA06.    ..'
-Checksum: 0x99
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -75,10 +62,8 @@ Block 0, Base EDID:
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: One or more trailing spaces.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Alphanumeric Data String: One or more trailing spaces before newline.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

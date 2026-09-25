@@ -36,7 +36,7 @@ Block 0, Base EDID:
     DPMS levels: Standby Suspend Off
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6250, 0.3398
     Green: 0.2802, 0.5947
@@ -76,29 +76,16 @@ Checksum: 0xd0
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4d d9 02 0c 01 01 01 01 '........M.......'
-  01 14 01 04 a5 a0 5a 78 e3 0d c9 a0 57 47 98 27 '......Zx....WG.''
-  12 48 4c a7 cf 80 95 00 81 40 81 80 81 8f 90 40 '.HL......@.....@'
-  a9 40 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70 '.@....f!P.Q..0@p'
-  36 00 40 84 63 00 00 1e 0e 1f 00 80 51 00 1e 30 '6.@.c.......Q..0'
-  40 80 37 00 40 84 63 00 00 1c 00 00 00 fd 00 37 '@.7.@.c........7'
-  4c 1e 51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.Q...      ....'
-  00 53 4f 4e 59 20 54 56 0a 20 20 20 20 20 00 d0 '.SONY TV.     ..'
-Checksum: 0xd0
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #2: Image size is 1600x900 mm, but based on the picture AR it should be 1500x900 mm.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -61,7 +61,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   54 Vpol N
     Display Product Serial Number: ...
     Display Range Limits:
-      Monitor ranges (Bare Limits): 24-120 Hz V, 52-268 kHz H, max dotclock 1060 MHz
+      Monitor ranges (Range Limits Only): 24-120 Hz V, 52-268 kHz H, max dotclock 1060 MHz
     Display Product Name: 'Acer XB273K'
   Extension blocks: 2
 Checksum: 0xbc
@@ -74,7 +74,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -162,7 +162,6 @@ EDID:
 Failures:
 
 EDID:
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: Missing DisplayID Display Parameters Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 

@@ -75,7 +75,7 @@ Block 1, CTA-861 Extension Block:
   Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
@@ -142,9 +142,13 @@ Checksum: 0xac  Unused space in Extension Block: 35 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
-  Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
 EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 30.000 - 160.000 kHz)
   CTA-861: Native progressive resolution of 1920x1080 is smaller than the max preferred progressive resolution 3840x2160.
 
 Failures:
@@ -158,8 +162,5 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #3: Mismatch of image size 880x490 mm vs display size 1150x650 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 500x281 mm vs display size 1150x650 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 30.000 - 160.000 kHz)
 
 EDID conformity: FAIL

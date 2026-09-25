@@ -101,7 +101,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
@@ -142,14 +142,12 @@ Block 1, CTA-861 Extension Block:
     Maximum TMDS Character Rate: 600 MHz
     SCDC Present
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 200 Hz
     Flags 1.x: 0xe0 (MCCS)
     Flags 2.x: 0x00
-    Maximum luminance: 115 (603.666 cd/m^2)
-    Minimum luminance: 34 (0.107 cd/m^2)
-    Unknown: 0x59 0x2c
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -174,125 +172,16 @@ Checksum: 0xad  Unused space in Extension Block: 8 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1c 54 04 24 00 00 00 00 '.........T.$....'
-  0d 23 01 03 80 36 1f 78 ee ee 91 a3 54 4c 99 26 '.#...6.x....TL.&'
-  0f 50 54 bf ef 80 71 4f 81 c0 81 00 81 40 81 80 '.PT...qO.....@..'
-  95 00 a9 c0 b3 00 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 1f 2e 21 00 00 18 00 00 00 fd 00 30 c8 1e 'E...!........0..'
-  de 32 00 0a 20 20 20 20 20 20 00 00 00 fc 00 47 '.2..      .....G'
-  53 32 35 46 32 0a 20 20 20 20 20 20 00 00 00 ff 'S25F2.      ....'
-  00 32 35 31 33 35 42 30 30 30 38 35 32 0a 01 c8 '.25135B000852...'
-Checksum: 0xc8
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  14:  1440x480    59.940060 Hz   4:3     31.469 kHz     54.000000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
-    VIC  64:  1920x1080  100.000000 Hz  16:9    112.500 kHz    297.000000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Video Capability Data Block:
-    YCbCr quantization: Selectable (via AVI YQ)
-    RGB quantization: Selectable (via AVI Q)
-    PT scan behavior: No Data
-    IT scan behavior: Always Underscanned
-    CE scan behavior: Always Underscanned
-  Colorimetry Data Block:
-    xvYCC601
-    xvYCC709
-    BT2020cYCC
-    BT2020YCC
-    BT2020RGB
-    Gamut Boundary Description Metadata Profile P0
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 2.0.0.0
-    DC_36bit
-    DC_30bit
-    DC_Y444
-    Maximum TMDS clock: 340 MHz
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
-    Version: 1
-    Maximum TMDS Character Rate: 600 MHz
-    SCDC Present
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
-    Minimum Refresh Rate: 48 Hz
-    Maximum Refresh Rate: 200 Hz
-    Flags 1.x: 0xe0 (MCCS)
-    Flags 2.x: 0x00
-    Maximum luminance: 115 (603.666 cd/m^2)
-    Minimum luminance: 34 (0.107 cd/m^2)
-    Unknown: 0x59 0x2c
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      Traditional gamma - HDR luminance range
-      SMPTE ST2084
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 88 (336.359 cd/m^2)
-    Desired content max frame-average luminance: 88 (336.359 cd/m^2)
-    Desired content min luminance: 35 (0.063 cd/m^2)
-  Detailed Timing Descriptors:
-    DTD 5:  1920x1080  164.917418 Hz  16:9    192.788 kHz    401.000000 MHz (543 mm x 302 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol N
-                 Vfront    3 Vsync   5 Vback   81 Vpol N
-    DTD 6:  1920x1080  179.998267 Hz  16:9    199.798 kHz    415.580000 MHz (543 mm x 302 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol N
-                 Vfront    3 Vsync   5 Vback   22 Vpol N
-    DTD 7:  1920x1080  200.000000 Hz  16:9    222.000 kHz    461.760000 MHz (543 mm x 302 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol N
-                 Vfront    3 Vsync   5 Vback   22 Vpol N
-Checksum: 0xad  Unused space in Extension Block: 8 bytes
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
-EDID:
-  CTA-861: Multiple native progressive timings are defined.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
 
 Failures:
 
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 14.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 63.
-  Video Data Block: Duplicate VIC 64.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Video Capability Data Block: Only one instance of this Data Block is allowed.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

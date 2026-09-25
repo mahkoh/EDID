@@ -58,7 +58,7 @@ Block 0, Base EDID:
   Standard Timings:
     GTF     :   640x400    70.000000 Hz  16:10    29.190 kHz     23.352000 MHz
     DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
-    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    GTF     :  1024x768    72.000073 Hz   4:3     57.672 kHz     78.434000 MHz
     DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
     DMT 0x55:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
     DMT 0x53:  1600x900    60.000000 Hz  16:9     60.000 kHz    108.000000 MHz (RB)
@@ -70,19 +70,6 @@ Block 0, Base EDID:
     Display Range Limits:
       Monitor ranges (GTF): 55-75 Hz V, 30-81 kHz H, max dotclock 140 MHz
     Display Product Name: '2043'
-Checksum: 0xa5
-
-----------------
-
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 05 e3 43 20 22 04 00 00 '..........C "...'
-  32 14 01 04 a5 2c 19 78 22 5b 85 a3 59 54 9b 27 '2....,.x"[..YT.''
-  0f 50 54 bf ee 00 31 0a 61 40 61 4c 61 4f 81 c0 '.PT...1.a@aLaO..'
-  a9 c0 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50 '......0*@.`.d0.P'
-  13 00 bb f9 10 00 00 1e 00 00 00 ff 00 41 41 56 '.............AAV'
-  41 43 4f 44 30 30 31 30 35 38 00 00 00 fd 00 37 'ACOD001058.....7'
-  4b 1e 51 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
-  00 32 30 34 33 0a 20 20 20 20 20 20 20 20 00 a5 '.2043.        ..'
 Checksum: 0xa5
 
 ----------------
@@ -99,10 +86,8 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

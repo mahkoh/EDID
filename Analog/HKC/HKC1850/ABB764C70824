@@ -69,21 +69,11 @@ Checksum: 0xcb
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 21 63 50 18 01 00 00 00 '........!cP.....'
-  2c 15 01 03 00 29 17 78 2e b1 a5 a1 58 4f 95 26 ',....).x....XO.&'
-  16 50 54 af ce 00 81 c0 81 00 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 34 21 50 b0 51 00 1b 30 40 70 '......4!P.Q..0@p'
-  36 00 30 e4 10 00 00 1a 00 00 00 ff 00 00 0a 20 '6.0............ '
-  20 20 20 20 20 20 20 20 20 20 00 00 00 fd 00 38 '          .....8'
-  4b 1e 51 08 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
-  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 cb '..            ..'
-Checksum: 0xcb
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Image size is 304x228 mm, but based on the picture AR it should be 304x171 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 85.000 MHz (Monitor: 80.000 MHz)
@@ -92,12 +82,10 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
-  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Display Product Serial Number: ...
+  Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Display Product Name: Empty string.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

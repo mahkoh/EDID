@@ -61,22 +61,10 @@ Checksum: 0xed
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 15 c3 43 21 01 01 01 01 '..........C!....'
-  0a 16 01 04 b5 30 1e 78 e2 f5 c1 a8 53 37 ae 25 '.....0.x....S7.%'
-  12 50 54 a1 08 00 81 80 81 40 01 01 01 01 01 01 '.PT......@......'
-  01 01 01 01 01 01 7c 2e 90 a0 60 1a 1e 40 30 20 '......|...`..@0 '
-  36 00 da 29 11 00 00 1a 00 00 00 ff 00 33 35 30 '6..).........350'
-  32 39 30 32 32 0a 20 20 20 20 00 00 00 fd 00 3b '29022.    .....;'
-  3d 1f 41 0c 00 0a 20 20 20 20 20 20 00 00 00 fc '=.A...      ....'
-  00 43 47 32 32 33 57 0a 20 20 20 20 20 20 00 ed '.CG223W.      ..'
-Checksum: 0xed
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -85,10 +73,8 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

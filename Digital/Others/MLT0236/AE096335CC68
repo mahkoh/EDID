@@ -73,7 +73,7 @@ Block 1, CTA-861 Extension Block:
   Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
@@ -103,7 +103,8 @@ Block 1, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 300 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 60 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0x00
@@ -120,19 +121,22 @@ Checksum: 0xa7  Unused space in Extension Block: 47 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 530x280 mm, but based on the picture AR it should be 497x280 mm.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Image size is 530x280 mm, but based on the picture AR it should be 497x280 mm.
+  Detailed Timing Descriptor #3: Image size is 530x280 mm, but based on the picture AR it should be 498x280 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-EDID:
-  CTA-861: Multiple native progressive timings are defined.
-
-Failures:
-
-Block 1, CTA-861 Extension Block:
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 50.000 - 120.000 Hz (Monitor: 60.000 - 120.000 Hz)
     Horizontal Freq: 28.125 - 135.000 kHz (Monitor: 31.000 - 162.000 kHz)
     Maximum Clock: 297.000 MHz (Monitor: 280.000 MHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

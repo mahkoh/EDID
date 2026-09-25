@@ -98,7 +98,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 2
+  Native DTDs: 2
   Video Data Block:
     VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
     VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
@@ -150,80 +150,10 @@ Checksum: 0xc8  Unused space in Extension Block: 13 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 72 11 23 aa 0d 00 00 '.........r.#....'
-  0c 1d 01 03 80 00 00 78 0a f2 0d a7 54 51 99 24 '.......x....TQ.$'
-  10 4f 5c 3f cf 80 a9 40 31 7c 95 00 45 7c 81 c0 '.O\?...@1|..E|..'
-  61 7c 81 00 81 fc 02 3a 80 18 71 38 2d 40 58 2c 'a|.....:..q8-@X,'
-  45 00 00 00 00 00 00 1e 00 00 00 fd 00 18 78 0f 'E.............x.'
-  64 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 41 'd...      .....A'
-  63 65 72 20 48 36 35 31 37 41 42 44 00 00 00 ff 'cer H6517ABD....'
-  00 4a 4e 42 31 31 30 30 31 35 39 30 30 0a 01 53 '.JNB110015900..S'
-Checksum: 0x53
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 2
-  Video Data Block:
-    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
-    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (native)
-    VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
-    VIC  33:  1920x1080   25.000000 Hz  16:9     28.125 kHz     74.250000 MHz
-    VIC  34:  1920x1080   30.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.0.0.0
-    DC_36bit
-    DC_30bit
-    DC_Y444
-    Maximum TMDS clock: 200 MHz
-    Video latency: 14 ms
-    Audio latency: 0 ms
-    Interlaced video latency: 46 ms
-    Interlaced audio latency: 0 ms
-    Extended HDMI video details:
-      3D present
-  Detailed Timing Descriptors:
-    DTD 6:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-                 Hfront  110 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol N
-    DTD 7:  1366x768    59.789541 Hz 683:384   47.712 kHz     85.500000 MHz
-                 Hfront   70 Hsync 143 Hback  213 Hpol P
-                 Vfront    3 Vsync   3 Vback   24 Vpol P
-    DTD 8:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-                 Hfront  528 Hsync  44 Hback  148 Hpol P
-                 Vfront    2 Vsync   5 Vback   38 Vpol P
-    DTD 9:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
-                 Hfront   80 Hsync  44 Hback  156 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0xc8  Unused space in Extension Block: 13 bytes
-
-----------------
-
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 6 and the first DTD are not identical. Is this intended?
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Audio latency < Video latency (0 ms < 14 ms). This is discouraged for devices without HDMI output.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Interlaced audio latency < Interlaced video latency (0 ms < 46 ms). This is discouraged for devices without HDMI output.
   Detailed Timing Descriptor #2: DTD is similar but not identical to VIC 4.
@@ -231,41 +161,13 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 16.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-Block 3, CTA-861 Extension Block:
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Audio latency < Video latency (0 ms < 14 ms). This is discouraged for devices without HDMI output.
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Interlaced audio latency < Interlaced video latency (0 ms < 46 ms). This is discouraged for devices without HDMI output.
-  Detailed Timing Descriptor #6: DTD is similar but not identical to VIC 4.
-  Detailed Timing Descriptor #8: DTD is similar but not identical to VIC 31.
-  Detailed Timing Descriptor #9: DTD is similar but not identical to VIC 16.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 6.
-  Video Data Block: Duplicate VIC 21.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 17.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 5.
-  Video Data Block: Duplicate VIC 20.
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 32.
-  Video Data Block: Duplicate VIC 33.
-  Video Data Block: Duplicate VIC 34.
-  Video Data Block: Duplicate VIC 1.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

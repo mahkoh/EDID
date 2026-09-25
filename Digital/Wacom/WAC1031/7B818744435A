@@ -60,24 +60,9 @@ Checksum: 0x26
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5c 23 31 10 32 35 31 30 '........\#1.2510'
-  29 17 01 03 81 30 1b 78 ea 7c a5 a3 54 4e a0 27 ')....0.x.|..TN.''
-  12 50 54 21 08 00 81 00 81 80 b3 00 01 01 01 01 '.PT!............'
-  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 dc 0c 11 00 00 1e 00 00 00 fd 00 32 4b 1e 'E............2K.'
-  50 0f 00 0a 20 20 20 20 20 20 00 00 00 ff 00 33 'P...      .....3'
-  4a 41 43 30 30 30 31 35 32 0a 20 20 00 00 00 fc 'JAC000152.  ....'
-  00 43 69 6e 74 69 71 20 32 32 48 44 0a 20 00 26 '.Cintiq 22HD. .&'
-Checksum: 0x26
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

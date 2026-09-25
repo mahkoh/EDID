@@ -69,7 +69,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -171,13 +171,15 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency
     Supports 10b 12b 444: Not supported
-    Target Min PQ v2: 180 (0.04555910 cd/m^2)
-    Target Max PQ v2: 2705 (447 cd/m^2)
+    Target Min PQ v2: 180 (0.04494425 cd/m^2)
+    Target Max PQ v2: 2705 (430 cd/m^2)
     Unique Rx, Ry: 0.67187500, 0.31250000
     Unique Gx, Gy: 0.22265625, 0.68359375
     Unique Bx, By: 0.15234375, 0.05468750
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
+    Full Frame Peak Luminance Index: 0
+    Peak Luminance Index: 0
   Vendor-Specific Audio Data Block (Dolby), OUI 00-D0-46:
     Version: 1 (7 bytes)
     Height speaker zone present
@@ -195,13 +197,16 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-
-Failures:
-
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 60.317 Hz (Monitor: 50.000 - 75.000 Hz)
     Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 80.000 kHz)
+
+Failures:
+
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
+EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

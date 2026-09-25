@@ -75,19 +75,6 @@ Checksum: 0xc7
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 ae ad 66 48 34 59 38 '........0..fH4Y8'
-  23 1e 01 04 6c 30 1b 78 2e 5e 15 a7 54 50 9d 27 '#...l0.x.^..TP.''
-  15 50 54 ad cf 00 81 80 81 8a 81 00 95 00 a9 c0 '.PT.............'
-  b3 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 55 37 36 'E............U76'
-  30 38 59 34 48 0a 20 20 20 20 00 00 00 fd 00 32 '08Y4H.    .....2'
-  4b 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 44 32 32 2d 32 30 0a 20 20 20 20 20 20 00 c7 '.D22-20.      ..'
-Checksum: 0xc7
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -97,10 +84,8 @@ Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

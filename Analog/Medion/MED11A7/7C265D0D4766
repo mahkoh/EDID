@@ -55,7 +55,7 @@ Block 0, Base EDID:
     DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
     DMT 0x12:  1024x768    75.028582 Hz   4:3     60.023 kHz     78.750000 MHz
   Standard Timings:
-    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    Unknown :  1024x768    72.000 Hz   4:3
   Detailed Timing Descriptors:
     DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (307 mm x 230 mm)
                  Hfront   24 Hsync 136 Hback  160 Hpol N
@@ -68,31 +68,17 @@ Checksum: 0xb7
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 34 a4 a7 11 00 00 00 00 '........4.......'
-  10 0b 01 01 68 1e 17 8c e8 4e e0 a1 57 4c 99 23 '....h....N..WL.#'
-  19 52 57 bf ee 00 61 4c 01 01 01 01 01 01 01 01 '.RW...aL........'
-  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
-  36 00 33 e6 10 00 00 18 00 00 00 fd 00 38 4c 1f '6.3..........8L.'
-  3d 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4d '=...      .....M'
-  44 39 33 38 33 41 41 20 20 20 20 20 00 00 00 ff 'D9383AA     ....'
-  00 30 0a 20 20 20 20 20 20 20 20 20 20 20 00 b7 '.0.           ..'
-Checksum: 0xb7
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+  Display Product Serial Number: ...
 
 Failures:
 
 Block 0, Base EDID:
-  Display Product Name: One or more trailing spaces.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Product Name: No newline, but one or more trailing spaces.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

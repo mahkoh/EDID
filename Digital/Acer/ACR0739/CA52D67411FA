@@ -55,7 +55,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6806, 0.3095
     Green: 0.2636, 0.6474
@@ -90,7 +90,7 @@ Block 0, Base EDID:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-165 Hz V, 185-185 kHz H, max dotclock 390 MHz
+      Monitor ranges (Range Limits Only): 48-165 Hz V, 185-185 kHz H, max dotclock 390 MHz
     Display Product Serial Number: ...
     Display Product Name: 'XZ322Q'
   Extension blocks: 1
@@ -104,7 +104,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
@@ -173,113 +173,23 @@ Checksum: 0xbc
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 72 39 07 e4 10 90 04 '.........r9.....'
-  31 1e 01 04 b5 46 27 78 3f 5b 21 ae 4f 43 a5 26 '1....F'x?[!.OC.&'
-  0f 50 54 bf ef 00 b3 00 81 80 31 68 81 c0 45 68 '.PT.......1h..Eh'
-  45 7c 61 68 61 7c 02 3a 80 18 71 38 2d 40 58 2c 'E|aha|.:..q8-@X,'
-  45 00 ba 88 21 00 00 1a 00 00 00 fd 00 30 a5 b9 'E...!........0..'
-  b9 27 01 0a 20 20 20 20 20 20 00 00 00 ff 00 31 '.'..      .....1'
-  30 34 39 30 31 30 45 34 33 39 30 30 00 00 00 fc '049010E43900....'
-  00 58 5a 33 32 32 51 0a 20 20 20 20 20 20 01 a7 '.XZ322Q.      ..'
-Checksum: 0xa7
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Video Data Block:
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
-    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
-    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
-    VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
-    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Video Capability Data Block:
-    YCbCr quantization: Selectable (via AVI YQ)
-    RGB quantization: Selectable (via AVI Q)
-    PT scan behavior: No Data
-    IT scan behavior: IT video formats not supported
-    CE scan behavior: CE video formats not supported
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.0.0.0
-  Colorimetry Data Block:
-    xvYCC601
-    xvYCC709
-    BT2020cYCC
-    BT2020YCC
-    BT2020RGB
-    Gamut Boundary Description Metadata Profile P0
-  YCbCr 4:2:0 Capability Map Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      Traditional gamma - HDR luminance range
-      SMPTE ST2084
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 98 (417.710 cd/m^2)
-    Desired content max frame-average luminance: 98 (417.710 cd/m^2)
-    Desired content min luminance: 42 (0.113 cd/m^2)
-  Detailed Timing Descriptors:
-    DTD 6:  1920x1080  100.002546 Hz  16:9    113.303 kHz    235.670000 MHz (698 mm x 392 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   45 Vpol P
-    DTD 7:  1920x1080  120.003194 Hz  16:9    137.284 kHz    285.550000 MHz (698 mm x 392 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   56 Vpol P
-    DTD 8:  1920x1080  144.003262 Hz  16:9    161.284 kHz    335.470000 MHz (698 mm x 492 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   32 Vpol P
-    DTD 9:  1920x1080  165.007948 Hz  16:9    183.654 kHz    382.000000 MHz (698 mm x 492 mm)
-                 Hfront   48 Hsync  64 Hback   48 Hpol P
-                 Vfront    3 Vsync   5 Vback   25 Vpol N
-Checksum: 0xbc
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: 'CE video formats not supported' makes no sense.
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-Block 3, CTA-861 Extension Block:
-  Video Capability Data Block: IT scan behavior is expected to support underscanned.
-  Video Capability Data Block: 'CE video formats not supported' makes no sense.
+  Detailed Timing Descriptor #4: Image size is 698x492 mm, but based on the picture AR it should be 698x392 mm.
+  Detailed Timing Descriptor #5: Image size is 698x492 mm, but based on the picture AR it should be 698x392 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 165.008 Hz (Monitor: 48.000 - 165.000 Hz)
     Horizontal Freq: 28.125 - 183.653 kHz (Monitor: 185.000 - 185.000 kHz)
     Maximum Clock: 594.000 MHz (Monitor: 390.000 MHz)
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
@@ -289,35 +199,8 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
   Detailed Timing Descriptor #4: Mismatch of image size 698x492 mm vs display size 700x390 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 698x492 mm vs display size 700x390 mm.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 1.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 5.
-  Video Data Block: Duplicate VIC 20.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 18.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 17.
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 93.
-  Video Data Block: Duplicate VIC 94.
-  Video Data Block: Duplicate VIC 95.
-  Video Data Block: Duplicate VIC 96.
-  Video Data Block: Duplicate VIC 97.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Video Capability Data Block: Only one instance of this Data Block is allowed.
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  YCbCr 4:2:0 Capability Map Data Block: Only one instance of this Data Block is allowed.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-  Detailed Timing Descriptor #8: Mismatch of image size 698x492 mm vs display size 700x390 mm.
-  Detailed Timing Descriptor #9: Mismatch of image size 698x492 mm vs display size 700x390 mm.
 EDID:
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   Base EDID: The DTD max image size is 698x492mm, which is larger than the display size 700.0x390.0mm.
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
 
 EDID conformity: FAIL

@@ -70,33 +70,24 @@ Checksum: 0x78
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1e 55 48 44 01 00 00 00 '.........UHD....'
-  02 13 01 03 80 a0 5a 78 2a ec 6b a0 56 47 9c 25 '......Zx*.k.VG.%'
-  10 48 4a 27 cf 00 81 40 81 80 81 8f a9 40 01 01 '.HJ'...@.....@..'
-  01 01 01 01 01 01 1b 21 50 a0 51 00 1e 30 d0 88 '.......!P.Q..0..'
-  65 04 a0 5a 00 00 00 1c 0e 1f 00 80 51 00 1e 30 'e..Z........Q..0'
-  c0 80 47 04 a0 5a 00 00 00 1c 00 00 00 fd 00 31 '..G..Z.........1'
-  4c 0f 51 08 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.Q...      ....'
-  00 47 52 55 4e 44 49 47 20 57 58 47 41 0a 01 78 '.GRUNDIG WXGA..x'
-Checksum: 0x78
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Dubious image size (160x90 mm is smaller than 100x100 mm).
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x17.
+  Detailed Timing Descriptor #2: Dubious image size (160x90 mm is smaller than 100x100 mm).
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 162.000 MHz (Monitor: 80.000 MHz)
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 160x90 mm vs display size 1600x900 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 160x90 mm vs display size 1600x900 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Maximum Clock: 162.000 MHz (Monitor: 80.000 MHz)
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
+  Base EDID: EDID specified 1 extension block(s), but found 0 extension block(s).
 
 EDID conformity: FAIL

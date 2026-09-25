@@ -78,26 +78,11 @@ Checksum: 0x20
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 22 70 00 00 00 00 00 00 '........"p......'
-  2d 1e 01 03 08 3c 22 78 ea 0b 75 a6 55 53 9f 28 '-....<"x..u.US.('
-  0e 50 54 bf ef 80 d1 c0 b3 00 a9 40 a9 c0 81 80 '.PT........@....'
-  81 40 81 00 81 c0 1a 36 80 a0 70 38 1f 40 30 20 '.@.....6..p8.@0 '
-  25 00 55 50 21 00 00 1a 00 00 00 ff 00 0a 20 20 '%.UP!.........  '
-  20 20 20 20 20 20 20 20 20 20 00 00 00 fd 00 38 '          .....8'
-  4b 1e 53 12 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 48 43 32 37 30 50 50 42 0a 20 20 20 20 00 20 '.HC270PPB.    . '
-Checksum: 0x20
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Display Product Serial Number: ...
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

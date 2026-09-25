@@ -70,26 +70,16 @@ Checksum: 0xda
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 22 f0 42 28 01 01 01 01 '........".B(....'
-  1c 13 01 03 6e 29 1a 78 ee 37 c5 a4 55 4c 9b 25 '....n).x.7..UL.%'
-  12 50 54 a5 6b 80 95 00 81 80 81 40 01 01 01 01 '.PT.k......@....'
-  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
-  36 00 9a 00 11 00 00 1c 00 00 00 fd 00 32 4c 18 '6............2L.'
-  53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48 'S...      .....H'
-  50 20 4c 45 31 39 30 31 77 0a 20 20 00 00 00 ff 'P LE1901w.  ....'
-  00 33 43 51 39 32 38 33 5a 58 54 0a 20 20 00 da '.3CQ9283ZXT.  ..'
-Checksum: 0xda
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

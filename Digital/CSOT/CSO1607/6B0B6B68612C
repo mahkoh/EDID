@@ -34,7 +34,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6396, 0.3310
     Green: 0.2919, 0.5927
@@ -47,22 +47,9 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol N
                  Vfront    3 Vsync   6 Vback   26 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-60 Hz V, 74-74 kHz H, max dotclock 150 MHz
+      Monitor ranges (Range Limits Only): 48-60 Hz V, 74-74 kHz H, max dotclock 150 MHz
     Alphanumeric Data String: 'CSOT T3'
     Alphanumeric Data String: 'MNG007JA1-2'
-Checksum: 0x02
-
-----------------
-
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0e 6f 07 16 00 00 00 00 '.........o......'
-  00 1f 01 04 a5 22 16 78 03 ff 25 a3 54 4a 97 23 '.....".x..%.TJ.#'
-  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 35 3c 80 a0 70 b0 23 40 30 20 '......5<..p.#@0 '
-  36 00 58 d7 10 00 00 18 00 00 00 fd 00 30 3c 4a '6.X..........0<J'
-  4a 0f 01 0a 20 20 20 20 20 20 00 00 00 fe 00 43 'J...      .....C'
-  53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe 'SOT T3.     ....'
-  00 4d 4e 47 30 30 37 4a 41 31 2d 32 0a 20 00 02 '.MNG007JA1-2. ..'
 Checksum: 0x02
 
 ----------------
@@ -78,9 +65,7 @@ EDID:
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

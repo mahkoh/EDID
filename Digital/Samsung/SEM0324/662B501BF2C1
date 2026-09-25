@@ -85,31 +85,11 @@ Checksum: 0x00
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c ad 24 03 00 00 00 00 '........L.$.....'
-  00 16 01 03 80 34 1d 78 0a 78 f1 a6 55 48 9b 26 '.....4.x.x..UH.&'
-  12 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 10 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 a0 5a 00 00 00 1e 01 1d 00 72 51 d0 1e 20 'E..Z.......rQ.. '
-  6e 28 55 00 a0 5a 00 00 00 1e 00 00 00 fd 00 38 'n(U..Z.........8'
-  4b 1e 51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
-  00 53 41 4d 53 55 4e 47 2d 41 49 4f 0a 20 01 65 '.SAMSUNG-AIO. .e'
-Checksum: 0x65
+Warnings:
 
-----------------
-
-Block 3, Unknown EDID Extension Block 0x00:
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
-Checksum: 0x00
-
-----------------
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (160x90 mm is smaller than 100x100 mm).
 
 Failures:
 
@@ -119,12 +99,7 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 160x90 mm vs display size 520x290 mm.
 Block 1, Base EDID:
   Unknown Extension Block.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

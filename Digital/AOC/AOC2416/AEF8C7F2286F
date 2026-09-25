@@ -100,8 +100,19 @@ Checksum: 0xca  Unused space in Extension Block: 33 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #2: Image size is 518x324 mm, but based on the picture AR it should be 486x324 mm.
+  Detailed Timing Descriptor #3: DTD is identical to VIC 5, which is not present in the CTA Ext Block.
+  Detailed Timing Descriptor #3: Image size is 518x324 mm, but based on the picture AR it should be 518x291 mm.
+  Detailed Timing Descriptor #4: DTD is identical to VIC 4, which is not present in the CTA Ext Block.
+  Detailed Timing Descriptor #4: Image size is 518x324 mm, but based on the picture AR it should be 518x291 mm.
+  Detailed Timing Descriptor #5: DTD is identical to VIC 16, which is not present in the CTA Ext Block.
+  Detailed Timing Descriptor #5: Image size is 518x324 mm, but based on the picture AR it should be 518x291 mm.
+  Detailed Timing Descriptor #6: Image size is 518x324 mm, but based on the picture AR it should be 432x324 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  No Native Video Resolution was defined.
+    Hint: set 'Native DTDs' to a non-0 value, or add a Native Video Resolution Data Block.
 
 Failures:
 

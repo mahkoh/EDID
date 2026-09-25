@@ -99,7 +99,7 @@ Checksum: 0x38
 Block 1, CTA-861 Extension Block:
   Revision: 3
   Basic audio support
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
   Audio Data Block:
@@ -126,57 +126,18 @@ Checksum: 0x10  Unused space in Extension Block: 84 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5a 63 1f b8 01 01 01 01 '........Zc......'
-  34 10 01 03 80 29 1a 78 2e dc 55 a3 59 48 9e 24 '4....).x..U.YH.$'
-  11 50 54 bf ef 80 95 00 95 0f 90 40 90 4f 81 80 '.PT........@.O..'
-  81 40 71 4f 31 0a 9a 29 a0 d0 51 84 22 30 50 98 '.@qO1..)..Q."0P.'
-  36 00 9a 00 11 00 00 1c 00 00 00 ff 00 51 43 58 '6............QCX'
-  30 36 35 32 30 31 34 33 30 0a 00 00 00 fd 00 32 '065201430......2'
-  4b 1e 52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.R...      ....'
-  00 56 58 31 39 33 35 77 6d 2d 33 0a 20 20 01 38 '.VX1935wm-3.  .8'
-Checksum: 0x38
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Basic audio support
-  Native detailed modes: 1
-  Video Data Block:
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.0.0.0
-    Maximum TMDS clock: 300 MHz
-  Video Capability Data Block:
-    YCbCr quantization: No Data
-    RGB quantization: No Data
-    PT scan behavior: No Data
-    IT scan behavior: Supports both over- and underscan
-    CE scan behavior: Supports both over- and underscan
-  Detailed Timing Descriptors:
-    DTD 3:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (621 mm x 341 mm)
-                 Hfront  110 Hsync  40 Hback  220 Hpol P
-                 Vfront    5 Vsync   5 Vback   20 Vpol P
-Checksum: 0x10  Unused space in Extension Block: 84 bytes
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 4 and the first DTD are not identical. Is this intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-Block 3, CTA-861 Extension Block:
-  IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 29.190 - 82.278 kHz (Monitor: 30.000 - 82.000 kHz)
+    Maximum Clock: 156.000 MHz (Monitor: 140.000 MHz)
 
 Failures:
 
@@ -185,20 +146,8 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
   Detailed Timing Descriptor #2: Mismatch of image size 621x341 mm vs display size 410x260 mm.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 4.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Video Capability Data Block: Only one instance of this Data Block is allowed.
-  Video Capability Data Block: Set Selectable RGB Quantization to avoid interop issues.
-  Detailed Timing Descriptor #3: Mismatch of image size 621x341 mm vs display size 410x260 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 29.190 - 82.278 kHz (Monitor: 30.000 - 82.000 kHz)
-    Maximum Clock: 156.000 MHz (Monitor: 140.000 MHz)
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   Base EDID: The DTD max image size is 621x341mm, which is larger than the display size 410.0x260.0mm.
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
 
 EDID conformity: FAIL

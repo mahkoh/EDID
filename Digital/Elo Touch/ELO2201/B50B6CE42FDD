@@ -67,29 +67,16 @@ Checksum: 0x2f
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 15 8f 01 22 26 43 00 00 '..........."&C..'
-  32 1b 01 04 a5 30 1b 78 22 ef e5 a5 55 52 9e 27 '2....0.x"...UR.''
-  0e 50 54 23 08 00 81 c0 81 40 81 80 01 01 01 01 '.PT#.....@......'
-  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 dc 0c 11 00 00 1e 66 21 56 aa 51 00 1e 30 'E.......f!V.Q..0'
-  46 8f 33 00 dc 0c 11 00 00 1e 21 39 90 30 62 1a 'F.3.......!9.0b.'
-  27 40 68 b0 36 00 dc 0c 11 00 00 1c 9a 29 a0 d0 ''@h.6........)..'
-  51 84 22 30 50 98 36 00 dc 0c 11 00 00 1c 00 2f 'Q."0P.6......../'
-Checksum: 0x2f
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Detailed Timing Descriptor #3: Image size is 476x268 mm, but based on the picture AR it should be 428x268 mm.
+  Detailed Timing Descriptor #4: Image size is 476x268 mm, but based on the picture AR it should be 428x268 mm.
   Missing Display Product Name.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

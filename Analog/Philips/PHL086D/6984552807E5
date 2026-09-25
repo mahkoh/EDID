@@ -73,24 +73,9 @@ Checksum: 0x8a
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 41 0c 6d 08 60 3f 00 00 '........A.m.`?..'
-  2f 12 01 03 0e 28 19 78 2a a1 50 a3 57 4c 9d 25 '/....(.x*.P.WL.%'
-  11 50 54 bf ee 80 71 4f 95 00 95 0f 01 01 01 01 '.PT...qO........'
-  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
-  36 00 98 ff 10 00 00 1c 00 00 00 ff 00 41 55 33 '6............AU3'
-  30 38 34 37 30 31 36 32 32 34 00 00 00 fc 00 50 '0847016224.....P'
-  68 69 6c 69 70 73 20 31 39 30 53 57 00 00 00 fd 'hilips 190SW....'
-  00 37 4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 8a '.7L.S...      ..'
-Checksum: 0x8a
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

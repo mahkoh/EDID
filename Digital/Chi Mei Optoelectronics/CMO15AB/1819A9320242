@@ -50,28 +50,13 @@ Checksum: 0x1b
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0d af ab 15 00 00 00 00 '................'
-  1f 14 01 03 80 22 13 78 0a d1 f5 93 5d 59 90 26 '.....".x....]Y.&'
-  1d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 79 1d 56 c2 50 00 26 30 1f 41 '......y.V.P.&0.A'
-  4c 00 58 c2 10 00 00 18 a6 00 00 fe 00 4e 31 35 'L.X..........N15'
-  36 42 47 45 2d 4c 34 31 0a 20 00 00 00 fe 00 43 '6BGE-L41. .....C'
-  4d 4f 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe 'MO.         ....'
-  00 4e 31 35 36 42 47 45 2d 4c 34 31 0a 20 00 1b '.N156BGE-L41. ..'
-Checksum: 0x1b
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #2: Pixelclock < 10 MHz, assuming invalid data 0xa6 0x00.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

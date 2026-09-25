@@ -35,7 +35,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6396, 0.3291
     Green: 0.2998, 0.5996
@@ -51,7 +51,7 @@ Block 0, Base EDID:
                  Hfront   24 Hsync  16 Hback   40 Hpol N
                  Vfront    3 Vsync   5 Vback   23 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 60-300 Hz V, 334-334 kHz H, max dotclock 670 MHz
+      Monitor ranges (Range Limits Only): 60-300 Hz V, 334-334 kHz H, max dotclock 670 MHz
     Display Product Name: 'LQ156M1JW23'
   Extension blocks: 1
 Checksum: 0xb0
@@ -83,7 +83,5 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-EDID:
-  DisplayID: Missing DisplayID Product Identification Data Block.
 
 EDID conformity: FAIL

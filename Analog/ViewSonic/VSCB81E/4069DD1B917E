@@ -79,28 +79,19 @@ Checksum: 0x0d
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5a 63 1e b8 01 01 01 01 '........Zc......'
-  04 11 01 03 0e 29 1a 78 2e dc 55 a3 59 48 9e 24 '.....).x..U.YH.$'
-  11 50 54 bf ef 80 95 00 95 0f 90 40 90 4f 81 80 '.PT........@.O..'
-  81 40 71 4f 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.@qO...)..Q."0P.'
-  36 00 9a 00 11 00 00 1c 00 00 00 ff 00 51 43 58 '6............QCX'
-  30 37 30 34 30 31 35 37 34 0a 00 00 00 fd 00 32 '070401574......2'
-  4b 1e 52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.R...      ....'
-  00 56 58 31 39 33 35 77 6d 2d 33 0a 20 20 00 0d '.VX1935wm-3.  ..'
-Checksum: 0x0d
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 156.000 MHz (Monitor: 140.000 MHz)
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Maximum Clock: 156.000 MHz (Monitor: 140.000 MHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

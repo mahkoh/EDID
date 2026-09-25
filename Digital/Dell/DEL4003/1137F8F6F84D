@@ -70,12 +70,12 @@ Block 0, Base EDID:
     DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
     DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
   Detailed Timing Descriptors:
-    DTD  1:  1280x768    59.870228 Hz   5:3     47.776 kHz     79.500000 MHz (566 mm x 340 mm)
-                  Hfront   64 Hsync 128 Hback  192 Hpol P
-                  Vfront    3 Vsync   7 Vback   20 Vpol N
-    DTD  2:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (531 mm x 398 mm)
-                  Hfront   16 Hsync  62 Hback   60 Hpol N
-                  Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 1:  1280x768    59.870228 Hz   5:3     47.776 kHz     79.500000 MHz (566 mm x 340 mm)
+                 Hfront   64 Hsync 128 Hback  192 Hpol P
+                 Vfront    3 Vsync   7 Vback   20 Vpol N
+    DTD 2:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (531 mm x 398 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
     Display Product Name: 'W2600 LCD TV'
     Display Range Limits:
       Monitor ranges (CVT): 56-75 Hz V, 31-64 kHz H, max dotclock 110 MHz
@@ -92,7 +92,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 6
+  Native DTDs: 6
   Video Data Block:
     VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (native)
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
@@ -104,82 +104,27 @@ Block 1, CTA-861 Extension Block:
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
   Detailed Timing Descriptors:
-    DTD  3:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (708 mm x 398 mm)
-                  Hfront   88 Hsync  44 Hback  148 Hpol P
-                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
-                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-    DTD  4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (708 mm x 398 mm)
-                  Hfront  110 Hsync  40 Hback  220 Hpol P
-                  Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD  5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (708 mm x 398 mm)
-                  Hfront   16 Hsync  62 Hback   60 Hpol N
-                  Vfront    9 Vsync   6 Vback   30 Vpol N
-    DTD  6:  1440x480i   59.940060 Hz   3:1     15.734 kHz     27.000000 MHz (708 mm x 398 mm)
-                  Hfront   38 Hsync 124 Hback  114 Hpol N
-                  Vfront    4 Vsync   3 Vback   15 Vpol N Vfront +0.5 Odd Field
-                  Vfront    4 Vsync   3 Vback   15 Vpol N Vback  +0.5 Even Field
-    DTD  7:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (708 mm x 398 mm)
-                  Hfront   12 Hsync  64 Hback   68 Hpol N
-                  Vfront    5 Vsync   5 Vback   39 Vpol N
-    DTD  8:  1440x576i   50.000000 Hz   5:2     15.625 kHz     27.000000 MHz (708 mm x 398 mm)
-                  Hfront   24 Hsync 126 Hback  138 Hpol N
-                  Vfront    2 Vsync   3 Vback   19 Vpol N Vfront +0.5 Odd Field
-                  Vfront    2 Vsync   3 Vback   19 Vpol N Vback  +0.5 Even Field
-Checksum: 0x9f  Unused space in Extension Block: 3 bytes
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 10 ac 03 40 39 32 33 41 '...........@923A'
-  2f 0e 01 03 80 39 22 78 2e 3e 3d a6 54 46 98 24 '/....9"x.>=.TF.$'
-  11 47 4a a5 4a 00 61 40 81 80 01 01 01 01 01 01 '.GJ.J.a@........'
-  01 01 01 01 01 01 0e 1f 00 80 51 00 1e 30 40 80 '..........Q..0@.'
-  37 00 36 54 21 00 00 1a 8c 0a d0 8a 20 e0 2d 10 '7.6T!....... .-.'
-  10 3e 96 00 13 8e 21 00 00 18 00 00 00 fc 00 57 '.>....!........W'
-  32 36 30 30 20 4c 43 44 20 54 56 0a 00 00 00 fd '2600 LCD TV.....'
-  00 38 4b 1f 40 0b 04 90 00 00 00 00 00 00 01 5c '.8K.@..........\'
-Checksum: 0x5c
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 6
-  Video Data Block:
-    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (native)
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
-    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
-    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Detailed Timing Descriptors:
-    DTD  9:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (708 mm x 398 mm)
-                  Hfront   88 Hsync  44 Hback  148 Hpol P
-                  Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
-                  Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
-    DTD 10:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (708 mm x 398 mm)
-                  Hfront  110 Hsync  40 Hback  220 Hpol P
-                  Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD 11:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (708 mm x 398 mm)
-                  Hfront   16 Hsync  62 Hback   60 Hpol N
-                  Vfront    9 Vsync   6 Vback   30 Vpol N
-    DTD 12:  1440x480i   59.940060 Hz   3:1     15.734 kHz     27.000000 MHz (708 mm x 398 mm)
-                  Hfront   38 Hsync 124 Hback  114 Hpol N
-                  Vfront    4 Vsync   3 Vback   15 Vpol N Vfront +0.5 Odd Field
-                  Vfront    4 Vsync   3 Vback   15 Vpol N Vback  +0.5 Even Field
-    DTD 13:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (708 mm x 398 mm)
-                  Hfront   12 Hsync  64 Hback   68 Hpol N
-                  Vfront    5 Vsync   5 Vback   39 Vpol N
-    DTD 14:  1440x576i   50.000000 Hz   5:2     15.625 kHz     27.000000 MHz (708 mm x 398 mm)
-                  Hfront   24 Hsync 126 Hback  138 Hpol N
-                  Vfront    2 Vsync   3 Vback   19 Vpol N Vfront +0.5 Odd Field
-                  Vfront    2 Vsync   3 Vback   19 Vpol N Vback  +0.5 Even Field
+    DTD 3:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront   88 Hsync  44 Hback  148 Hpol P
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   5 Vback   15 Vpol P Vback  +0.5 Even Field
+    DTD 4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (708 mm x 398 mm)
+                 Hfront  110 Hsync  40 Hback  220 Hpol P
+                 Vfront    5 Vsync   5 Vback   20 Vpol P
+    DTD 5:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   16 Hsync  62 Hback   60 Hpol N
+                 Vfront    9 Vsync   6 Vback   30 Vpol N
+    DTD 6:  1440x480i   59.940060 Hz   3:1     15.734 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   38 Hsync 124 Hback  114 Hpol N
+                 Vfront    4 Vsync   3 Vback   15 Vpol N Vfront +0.5 Odd Field
+                 Vfront    4 Vsync   3 Vback   15 Vpol N Vback  +0.5 Even Field
+    DTD 7:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   12 Hsync  64 Hback   68 Hpol N
+                 Vfront    5 Vsync   5 Vback   39 Vpol N
+    DTD 8:  1440x576i   50.000000 Hz   5:2     15.625 kHz     27.000000 MHz (708 mm x 398 mm)
+                 Hfront   24 Hsync 126 Hback  138 Hpol N
+                 Vfront    2 Vsync   3 Vback   19 Vpol N Vfront +0.5 Odd Field
+                 Vfront    2 Vsync   3 Vback   19 Vpol N Vback  +0.5 Even Field
 Checksum: 0x9f  Unused space in Extension Block: 3 bytes
 
 ----------------
@@ -188,11 +133,19 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x17.
+  Detailed Timing Descriptor #2: Image size is 531x398 mm, but based on the picture AR it should be 531x354 mm.
   Display Range Limits: CVT block does not set preferred refresh rate.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-Block 3, CTA-861 Extension Block:
-  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 5 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #5: Image size is 708x398 mm, but based on the picture AR it should be 597x398 mm.
+  Detailed Timing Descriptor #6: Image size is 708x398 mm, but based on the picture AR it should be 708x236 mm.
+  Detailed Timing Descriptor #7: Image size is 708x398 mm, but based on the picture AR it should be 497x398 mm.
+  Detailed Timing Descriptor #8: Image size is 708x398 mm, but based on the picture AR it should be 708x283 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.029 Hz (Monitor: 56.000 - 75.000 Hz)
+    Horizontal Freq: 15.625 - 63.981 kHz (Monitor: 31.000 - 64.000 kHz)
 
 Failures:
 
@@ -208,31 +161,9 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #7: Mismatch of image size 708x398 mm vs display size 570x340 mm.
   Detailed Timing Descriptor #8: Mismatch of image size 708x398 mm vs display size 570x340 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 5.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 6.
-  Video Data Block: Duplicate VIC 17.
-  Video Data Block: Duplicate VIC 21.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Detailed Timing Descriptor #9: Mismatch of image size 708x398 mm vs display size 570x340 mm.
-  Detailed Timing Descriptor #10: Mismatch of image size 708x398 mm vs display size 570x340 mm.
-  Detailed Timing Descriptor #11: Mismatch of image size 708x398 mm vs display size 570x340 mm.
-  Detailed Timing Descriptor #12: Mismatch of image size 708x398 mm vs display size 570x340 mm.
-  Detailed Timing Descriptor #13: Mismatch of image size 708x398 mm vs display size 570x340 mm.
-  Detailed Timing Descriptor #14: Mismatch of image size 708x398 mm vs display size 570x340 mm.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 75.029 Hz (Monitor: 56.000 - 75.000 Hz)
-    Horizontal Freq: 15.625 - 63.981 kHz (Monitor: 31.000 - 64.000 kHz)
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   Base EDID: The DTD max image size is 708x398mm, which is larger than the display size 570.0x340.0mm.
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
   CTA-861: Native progressive timings are a mix of several resolutions.
   CTA-861: Native interlaced timings are a mix of several resolutions.
 

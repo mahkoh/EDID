@@ -79,31 +79,23 @@ Checksum: 0x60
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0d 09 40 04 00 00 00 00 '..........@.....'
-  1e 17 01 03 0e 58 32 78 aa 9d 81 a3 54 4c 99 26 '.....X2x....TL.&'
-  0f 50 54 25 4f 00 71 40 81 00 81 40 81 80 95 00 '.PT%O.q@...@....'
-  95 0f b3 00 a9 40 48 3f 40 30 62 b0 32 40 40 c0 '.....@H?@0b.2@@.'
-  13 00 a0 5a 00 00 00 1e 02 3a 80 18 71 38 2d 40 '...Z.....:..q8-@'
-  58 2c 45 00 a0 5a 00 00 00 1e 00 00 00 fd 00 32 'X,E..Z.........2'
-  3c 1e 44 0f 02 00 20 20 20 20 20 20 00 00 00 fc '<.D...      ....'
-  00 56 47 41 20 44 49 53 50 4c 41 59 0a 20 00 60 '.VGA DISPLAY. .`'
-Checksum: 0x60
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (160x90 mm is smaller than 100x100 mm).
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.810 - 75.029 Hz (Monitor: 50.000 - 60.000 Hz)
+    Horizontal Freq: 31.468 - 79.976 kHz (Monitor: 30.000 - 68.000 kHz)
+    Maximum Clock: 162.000 MHz (Monitor: 150.000 MHz)
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 160x90 mm vs display size 880x500 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 160x90 mm vs display size 880x500 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 59.810 - 75.029 Hz (Monitor: 50.000 - 60.000 Hz)
-    Horizontal Freq: 31.468 - 79.976 kHz (Monitor: 30.000 - 68.000 kHz)
-    Maximum Clock: 162.000 MHz (Monitor: 150.000 MHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

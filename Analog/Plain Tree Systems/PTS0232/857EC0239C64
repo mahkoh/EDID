@@ -66,19 +66,6 @@ Checksum: 0x2a
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 42 93 32 02 c9 07 02 00 '........B.2.....'
-  1d 0e 01 03 08 1c 15 c6 ea 5c 11 9e 59 47 9b 27 '.........\..YG.''
-  10 48 4f a1 4c 00 31 59 45 59 00 00 01 01 01 01 '.HO.L.1YEY......'
-  01 01 01 01 01 01 4c 1d 00 30 41 00 26 30 18 88 '......L..0A.&0..'
-  36 00 0e c8 10 00 00 00 10 0e 80 c0 20 e0 1d 10 '6........... ...'
-  38 38 13 00 0e c8 10 00 00 18 00 00 00 fd 00 32 '88.............2'
-  78 1e 3a 09 00 0a 20 20 20 20 20 20 00 00 00 ff 'x.:...      ....'
-  00 46 41 54 45 34 37 30 31 33 33 30 36 35 00 2a '.FATE470133065.*'
-Checksum: 0x2a
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
@@ -86,9 +73,7 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 270x200 mm vs display size 280x210 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 270x200 mm vs display size 280x210 mm.
   Missing Display Product Name.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

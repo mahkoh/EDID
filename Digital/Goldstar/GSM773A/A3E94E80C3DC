@@ -79,7 +79,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -119,7 +119,8 @@ Block 1, CTA-861 Extension Block:
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 60 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
@@ -152,23 +153,27 @@ Checksum: 0x3d  Unused space in Extension Block: 2 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-
-Failures:
-
-Block 0, Base EDID:
-  Detailed Timing Descriptor #2: Mismatch of image size 531x298 mm vs display size 800x340 mm.
-Block 1, CTA-861 Extension Block:
-  YCbCr 4:2:0 Capability Map Data Block: Max index 14 > 12 (#SVDs).
-  Display Product Serial Number: ...
-  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 144.001 Hz (Monitor: 60.000 - 144.000 Hz)
     Horizontal Freq: 31.250 - 162.720 kHz (Monitor: 164.000 - 164.000 kHz)
     Maximum Clock: 594.000 MHz (Monitor: 450.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+  Detailed Timing Descriptor #2: Mismatch of image size 531x298 mm vs display size 800x340 mm.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
+  YCbCr 4:2:0 Capability Map Data Block: Max index 14 > 12 (#SVDs).
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

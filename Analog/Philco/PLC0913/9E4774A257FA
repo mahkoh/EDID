@@ -61,24 +61,15 @@ Checksum: 0x12
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 41 83 13 09 01 01 01 01 '........A.......'
-  29 14 01 03 08 a0 5a 78 0a 0d c9 a0 57 47 98 27 ').....Zx....WG.''
-  12 48 4c 21 08 00 81 c0 01 01 01 01 01 01 01 01 '.HL!............'
-  01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70 '......f!P.Q..0@p'
-  36 00 40 84 63 00 00 1e 0e 1f 00 80 51 00 1e 30 '6.@.c.......Q..0'
-  40 80 37 00 40 84 63 00 00 1c 00 00 00 fd 00 39 '@.7.@.c........9'
-  3f 1e 31 09 00 0a 20 20 20 20 20 20 00 00 00 fc '?.1...      ....'
-  00 50 48 49 4c 43 4f 20 54 56 0a 20 20 20 00 12 '.PHILCO TV.   ..'
-Checksum: 0x12
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #2: Image size is 1600x900 mm, but based on the picture AR it should be 1500x900 mm.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

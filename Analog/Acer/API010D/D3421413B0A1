@@ -56,7 +56,7 @@ Block 0, Base EDID:
     DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
   Detailed Timing Descriptors:
     Display Product Serial Number: ...
-    Alphanumeric Data String: '2['
+    Alphanumeric Data String: '2[.F.........'
     Empty Descriptor
     Empty Descriptor
 Checksum: 0x8b
@@ -67,16 +67,26 @@ Warnings:
 
 Block 0, Base EDID:
   EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+  Display Product Serial Number: ...
+  Alphanumeric Data String: Non-ASCII character 0x1e at position 2, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 4, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 5, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 6, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 7, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 8, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 9, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 10, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 11, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 12, can cause problems.
 
 Failures:
 
 Block 0, Base EDID:
-  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
-  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
-  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
-  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
   Display Product Serial Number: ...
-  Alphanumeric Data String: Non-printable character.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
+  Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
 

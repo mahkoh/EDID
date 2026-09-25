@@ -64,7 +64,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 50-75 Hz V, 30-88 kHz H, max dotclock 250 MHz
+      Monitor ranges (Range Limits Only): 50-75 Hz V, 30-88 kHz H, max dotclock 250 MHz
     Display Product Name: 'LEN T27q-20'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -78,7 +78,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
@@ -113,6 +113,7 @@ Checksum: 0xf2  Unused space in Extension Block: 81 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

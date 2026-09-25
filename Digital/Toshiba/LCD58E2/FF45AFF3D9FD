@@ -36,18 +36,26 @@ Block 0, Base EDID:
                  Hfront   16 Hsync  48 Hback  104 Hpol N
                  Vfront    2 Vsync   2 Vback   26 Vpol N
     Empty Descriptor
-    Alphanumeric Data String: 'GF951'
-    Alphanumeric Data String: ''6BJi'
+    Alphanumeric Data String: 'GF951.121EXED'
+    Alphanumeric Data String: ''6BJi.....'
 Checksum: 0xf1
 
 ----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0xa5 at position 5, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x89 at position 5, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0xa9 at position 6, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0xeb at position 7, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 8, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 9, can cause problems.
 
 Failures:
 
 Block 0, Base EDID:
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
-  Alphanumeric Data String: Non-printable character.
-  Alphanumeric Data String: Non-printable character.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 

@@ -78,24 +78,14 @@ Checksum: 0x7c
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 26 cd 01 61 01 01 01 01 '........&..a....'
-  33 13 01 03 68 34 1e 78 2a ee d5 a5 55 48 9b 26 '3...h4.x*...UH.&'
-  12 50 54 bf ef 80 b3 00 a9 40 95 00 81 8f 81 80 '.PT......@......'
-  95 0f 71 4f 01 01 94 43 80 90 72 38 28 40 80 c8 '..qO...C..r8(@..'
-  35 00 09 25 21 00 00 1c 00 00 00 ff 00 31 31 30 '5..%!........110'
-  35 37 39 35 31 30 30 37 32 32 00 00 00 fd 00 37 '5795100722.....7'
-  4c 1d 51 12 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.Q...      ....'
-  00 50 4c 45 32 34 30 37 48 44 53 44 0a 20 00 7c '.PLE2407HDSD. .|'
-Checksum: 0x7c
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

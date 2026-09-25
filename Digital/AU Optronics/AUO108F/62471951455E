@@ -34,7 +34,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6416, 0.3271
     Green: 0.2968, 0.6171
@@ -47,22 +47,9 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   92 Hpol N
                  Vfront    3 Vsync   6 Vback   51 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-60 Hz V, 90-90 kHz H, max dotclock 210 MHz
+      Monitor ranges (Range Limits Only): 48-60 Hz V, 90-90 kHz H, max dotclock 210 MHz
     Alphanumeric Data String: 'G140JAN01.0'
     Alphanumeric Data String: '1H2BBUL6SRZZ'
-Checksum: 0xd3
-
-----------------
-
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 06 af 8f 10 00 00 00 00 '................'
-  00 1e 01 04 a5 1e 14 78 03 70 a5 a4 53 4c 9e 27 '.......x.p..SL.''
-  10 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 08 52 70 ac 80 a0 3c 50 30 20 '.......Rp...<P0 '
-  36 00 28 c5 10 00 00 18 00 00 00 fd 00 30 3c 5a '6.(..........0<Z'
-  5a 15 01 0a 20 20 20 20 20 20 00 00 00 fe 00 47 'Z...      .....G'
-  31 34 30 4a 41 4e 30 31 2e 30 00 00 00 00 00 fe '140JAN01.0......'
-  00 31 48 32 42 42 55 4c 36 53 52 5a 5a 00 00 d3 '.1H2BBUL6SRZZ...'
 Checksum: 0xd3
 
 ----------------
@@ -75,11 +62,9 @@ Block 0, Base EDID:
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
-  Alphanumeric Data String: Non-printable character.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Alphanumeric Data String: NUL byte at position 11.
+  Alphanumeric Data String: NUL byte at position 12.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

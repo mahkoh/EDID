@@ -65,7 +65,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   43 Vpol N
     Empty Descriptor
-    Alphanumeric Data String: 'DH9PW'
+    Alphanumeric Data String: 'DH9PW.134WT1'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 04 04 03 28 00 01 00 00 2b 01 0a 20 20 '......(....+..  '
   Extension blocks: 1
 Checksum: 0xd3
@@ -96,76 +96,7 @@ Block 1, DisplayID Extension Block:
     Native Maximum Luminance (Full Coverage): 400.000000 cd/m^2
     Native Maximum Luminance (10% Rectangular Coverage): 525.000000 cd/m^2
     Native Minimum Luminance: 0.000500 cd/m^2
-    Native Color Depth: 12 bpc
-    Display Device Technology: Organic LED
-    Native Gamma EOTF: 2.20
-  Display Interface Features Data Block:
-    Supported bpc for RGB encoding: 10
-    Supported color space and EOTF standard combination 1: sRGB, BT.2020/SMPTE ST 2084
-  Video Timing Modes Type 7 - Detailed Timings Data Block:
-    DTD:  2880x1800   59.990267 Hz  16:10   111.102 kHz    337.750000 MHz (aspect 16:10, no 3D stereo, preferred)
-               Hfront   48 Hsync  32 Hback   80 Hpol P
-               Vfront    3 Vsync   6 Vback   43 Vpol N
-  Dynamic Video Timing Range Limits Data Block:
-    Minimum Pixel Clock: 337750 kHz
-    Maximum Pixel Clock: 337750 kHz
-    Minimum Vertical Refresh Rate: 60 Hz
-    Maximum Vertical Refresh Rate: 60 Hz
-    Seamless Dynamic Video Timing Support: No
-  CTA-861 DisplayID Data Block:
-  Colorimetry Data Block:
-    BT2020RGB
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      SMPTE ST2084
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 109 (530.095 cd/m^2)
-    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
-    Desired content min luminance: 2 (0.000 cd/m^2)
-  Checksum: 0x31
-Checksum: 0x90
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 e4 78 07 00 00 00 00 '........0.x.....'
-  00 22 01 04 b5 1d 12 78 06 96 65 b0 4f 3c b9 23 '.".....x..e.O<.#'
-  0b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 ef 83 40 a0 b0 08 34 70 30 20 '........@...4p0 '
-  36 00 20 b4 10 00 00 1a 00 00 00 00 00 00 00 00 '6. .............'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 44 '...............D'
-  48 39 50 57 81 31 33 34 57 54 31 0a 00 00 00 00 'H9PW.134WT1.....'
-  00 04 04 03 28 00 01 00 00 2b 01 0a 20 20 01 d3 '....(....+..  ..'
-Checksum: 0xd3
-
-----------------
-
-Block 3, DisplayID Extension Block:
-  Version: 2.0
-  Extension Count: 0
-  Product Identification Data Block (0x20), OUI 3C-E6-24:
-    Product Code: 1912
-    Year of Manufacture: 2024
-    Product ID: 134WT1
-
-  Display Parameters Data Block (0x21):
-    Image size: 288.1 mm x 180.0 mm
-    Display native pixel format: 2880x1800
-    Scan Orientation: Left to Right, Top to Bottom
-    Luminance Information: Guidance for the Source device
-    Color Information: CIE 1931
-    Audio Speaker Information: not integrated
-    Native Color Chromaticity:
-      Primary #1:  (0.688965, 0.310059)
-      Primary #2:  (0.235107, 0.725098)
-      Primary #3:  (0.137939, 0.044922)
-      White Point: (0.312988, 0.329102)
-    Native Maximum Luminance (Full Coverage): 400.000000 cd/m^2
-    Native Maximum Luminance (10% Rectangular Coverage): 525.000000 cd/m^2
-    Native Minimum Luminance: 0.000500 cd/m^2
-    Native Color Depth: 12 bpc
+    Native Color Depth: 10 bpc
     Display Device Technology: Organic LED
     Native Gamma EOTF: 2.20
   Display Interface Features Data Block:
@@ -201,29 +132,15 @@ Checksum: 0x90
 Warnings:
 
 Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x81 at position 5, can cause problems.
   Missing Display Product Name.
-Block 1, DisplayID Extension Block:
-  Product Identification Data Block (0x20), OUI 3C-E6-24: Unknown OUI 3C-E6-24.
-Block 3, DisplayID Extension Block:
-  Product Identification Data Block (0x20), OUI 3C-E6-24: Unknown OUI 3C-E6-24.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
-  Alphanumeric Data String: Non-printable character.
-Block 1, DisplayID Extension Block:
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, DisplayID Extension Block:
-  Product Type should be 0 in extension block.
-  Product Identification Data Block (0x20), OUI 3C-E6-24: Product Identification Data Block (0x20), OUI 3C-E6-24 is required to be the first DisplayID Data Block.
-  Display Parameters Data Block (0x21): Duplicate Display Parameters Data Block.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

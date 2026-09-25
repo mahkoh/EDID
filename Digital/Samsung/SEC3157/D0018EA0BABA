@@ -35,17 +35,25 @@ Block 0, Base EDID:
                  Hfront   12 Hsync  64 Hback   52 Hpol N
                  Vfront    3 Vsync   3 Vback   10 Vpol N
     Manufacturer-Specified Display Descriptor (0x0f): 00 0f 00 00 00 00 00 00 00 00 00 23 87 02 64 00 '...........#..d.'
-    Alphanumeric Data String: 'UD490'
-    Alphanumeric Data String: ''7?Og'
+    Alphanumeric Data String: 'UD490.141W1'
+    Alphanumeric Data String: ''7?Og.....'
 Checksum: 0xe5
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x03 at position 5, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x87 at position 5, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0xaf at position 6, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0xe3 at position 7, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 8, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 9, can cause problems.
+
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
-  Alphanumeric Data String: Non-printable character.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 

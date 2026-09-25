@@ -80,28 +80,19 @@ Checksum: 0x9e
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5a 63 23 03 01 01 01 01 '........Zc#.....'
-  22 13 01 03 0e 2c 19 78 2e ee 95 a3 54 4c 99 26 '"....,.x....TL.&'
-  0f 50 54 bf ef 80 a9 c0 95 00 90 40 81 80 81 40 '.PT........@...@'
-  81 4f 81 00 71 4f 30 2a 40 c8 60 84 64 30 18 50 '.O..qO0*@.`.d0.P'
-  13 00 b8 fa 10 00 00 1e 00 00 00 ff 00 52 41 35 '.............RA5'
-  30 39 33 34 34 30 38 36 39 0a 00 00 00 fd 00 3a '093440869......:'
-  4b 18 52 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.R...      ....'
-  00 56 58 32 30 33 33 57 4d 0a 20 20 20 20 00 9e '.VX2033WM.    ..'
-Checksum: 0x9e
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 56.250 - 75.062 Hz (Monitor: 58.000 - 75.000 Hz)
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 56.250 - 75.062 Hz (Monitor: 58.000 - 75.000 Hz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -101,7 +101,7 @@ Block 2, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -156,11 +156,17 @@ Block 2, CTA-861 Extension Block:
     DSC Max Fixed Rate Link: 3 and 6 Gbps per lane on 3 lanes, 6 Gbps on 4 lanes
     Maximum number of bytes in a line of chunks: 21504
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.11
+    Version: 2
+    Feature Caps: 0x0b
+      Local Dimming Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xe6 (MCCS)
     Flags 2.x: 0x04
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      Gamma 2.2 EOTF Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 115 (603.666 cd/m^2)
     Minimum luminance: 20 (0.037 cd/m^2)
     Maximum luminance (without local dimming): 115 (603.666 cd/m^2)
@@ -235,18 +241,18 @@ Block 2, CTA-861 Extension Block:
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-
-Failures:
-
-Block 2, CTA-861 Extension Block:
-  Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 143.981 Hz (Monitor: 48.000 - 144.000 Hz)
     Maximum Clock: 1250.000 MHz (Monitor: 600.000 MHz)
-  DisplayID: Missing DisplayID Product Identification Data Block.
+
+Failures:
+
+Block 2, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
+  Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.
+EDID:
   DisplayID: Missing DisplayID Display Parameters Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

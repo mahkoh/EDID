@@ -67,23 +67,14 @@ Checksum: 0xc4
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 72 28 0a 22 33 00 00 '.........r(."3..'
-  10 0f 01 03 80 39 22 78 e8 27 96 a5 56 48 9d 24 '.....9"x.'..VH.$'
-  14 49 4e af ee 00 31 59 45 59 61 59 00 00 00 00 '.IN...1YEYaY....'
-  00 00 00 00 00 00 0e 1f 00 80 51 00 1e 30 40 80 '..........Q..0@.'
-  37 00 3a 54 21 00 00 1e 00 00 00 fd 00 32 55 1e '7.:T!........2U.'
-  50 08 00 0a 20 20 20 20 20 20 00 00 00 ff 00 31 'P...      .....1'
-  32 33 34 0a 20 20 20 20 20 20 20 20 00 00 00 fc '234.        ....'
-  00 41 63 65 72 20 41 4c 32 36 37 31 57 0a 00 c4 '.Acer AL2671W...'
-Checksum: 0xc4
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x17.
+EDID:
+  No Native Video Resolution was defined.
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 94.500 MHz (Monitor: 80.000 MHz)
 
 Failures:
 
@@ -94,11 +85,7 @@ Block 0, Base EDID:
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Maximum Clock: 94.500 MHz (Monitor: 80.000 MHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -91,64 +91,20 @@ Checksum: 0x90
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 06 10 3d a0 00 00 00 00 '..........=.....'
-  10 1b 01 04 b5 1d 12 78 02 0f d1 ae 52 43 b0 26 '.......x....RC.&'
-  0d 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 d9 65 00 50 a0 40 2e 60 08 20 '.......e.P.@.`. '
-  08 08 1e b3 10 00 00 1a 00 00 00 fc 00 43 6f 6c '.............Col'
-  6f 72 20 4c 43 44 0a 20 20 20 00 00 00 10 00 00 'or LCD.   ......'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10 '................'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 23 '...............#'
-Checksum: 0x23
-
-----------------
-
-Block 3, DisplayID Extension Block:
-  Version: 1.2
-  Extension Count: 0
-  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
-    Type: 3, Version: 1
-    18 0f 28 17 00 00 00 00 00 00 00 00 00 00 00 00 '..(.............'
-    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 '................'
-    00 00 00 46 4d 58 30 31 37 35 30 33 52 45 50 50 '...FMX017503REPP'
-    43 52 41 58 0a 20 20 20 20 20                   'CRAX.     '
-  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA:
-    Type: 2, Version: 1
-    00 11 00 00 02 90 03 34 04 19 05 50 06 f9 09 3e '.......4...P...>'
-    0c 59 10 9d 16 81 1e a8 29 fe 39 ce 4f f1 6f 09 '.Y......).9.O.o.'
-    9a d8 d8 57                                     '...W'
-  Checksum: 0xd7
-Checksum: 0x90
-
-----------------
-
 Warnings:
 
 Block 1, DisplayID Extension Block:
-  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
-  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
-Block 3, DisplayID Extension Block:
   Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
   Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Expected PNP ID but found OUI.
 
 Failures:
 
 Block 1, DisplayID Extension Block:
-  Expected 0 DisplayID Extension Block, but got 1.
-  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Endian-ness (le) of OUI is different than expected (be).
-  Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Endian-ness (le) of OUI is different than expected (be).
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, DisplayID Extension Block:
-  Product Type should be 0 in extension block.
   Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Endian-ness (le) of OUI is different than expected (be).
   Vendor-Specific Data Block (0x7f) (Apple), OUI 00-10-FA: Endian-ness (le) of OUI is different than expected (be).
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   DisplayID: Missing DisplayID Display Parameters Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
   DisplayID: Missing DisplayID Type I Detailed Timing Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 

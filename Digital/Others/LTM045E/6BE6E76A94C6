@@ -75,44 +75,7 @@ Checksum: 0x47
 Block 1, CTA-861 Extension Block:
   Revision: 3
   Supports YCbCr 4:2:2
-  Native detailed modes: 2
-  Video Data Block:
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 1
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 16
-  Speaker Allocation Data Block:
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.0.0.0
-  Detailed Timing Descriptors:
-    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1e '................'
-    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 18 '................'
-    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 18 '................'
-    Manufacturer-Specified Display Descriptor (0x00): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 18 '................'
-Checksum: 0xe0  Unused space in Extension Block: 29 bytes
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 32 8d 5e 04 aa c8 33 01 '........2.^...3.'
-  24 1b 01 03 95 1f 11 78 ea eb f5 95 59 54 90 27 '$......x....YT.''
-  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 e8 35 38 40 40 80 1c 70 1a 02 '.......58@@..p..'
-  84 00 36 ae 00 00 00 1e 00 00 00 00 00 00 00 00 '..6.............'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c '...............L'
-  6f 6e 74 69 75 6d 0a 20 20 20 20 20 00 00 00 fe 'ontium.     ....'
-  00 4c 54 4d 31 34 34 30 58 37 32 30 0a 20 01 47 '.LTM1440X720. .G'
-Checksum: 0x47
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Supports YCbCr 4:2:2
-  Native detailed modes: 2
+  Native DTDs: 2
   Video Data Block:
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
@@ -135,11 +98,11 @@ Checksum: 0xe0  Unused space in Extension Block: 29 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Dubious image size (54x174 mm is smaller than 100x100 mm).
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-Block 3, CTA-861 Extension Block:
-  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 4 and the first DTD are not identical. Is this intended?
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 
 Failures:
@@ -156,17 +119,8 @@ Block 1, CTA-861 Extension Block:
   Speaker Allocation Data Block: Audio information is present, but bit 6 of Byte 3 of the CTA-861 Extension header indicates no Basic Audio support.
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Audio Data Block: Audio information is present, but bit 6 of Byte 3 of the CTA-861 Extension header indicates no Basic Audio support.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Speaker Allocation Data Block: Audio information is present, but bit 6 of Byte 3 of the CTA-861 Extension header indicates no Basic Audio support.
-  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

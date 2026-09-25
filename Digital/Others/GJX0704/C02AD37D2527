@@ -53,7 +53,7 @@ Failures:
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 344x194 mm vs display size 310x170 mm.
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
-  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: NUL byte at position 10.
 EDID:
   Base EDID: The DTD max image size is 344x194mm, which is larger than the display size 310.0x170.0mm.
 

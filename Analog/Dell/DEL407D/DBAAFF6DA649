@@ -61,10 +61,10 @@ Checksum: 0xa6
 
 ----------------
 
-Failures:
+Warnings:
 
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 193.250 MHz (Monitor: 180.000 MHz)
 
-EDID conformity: FAIL
+EDID conformity: PASS

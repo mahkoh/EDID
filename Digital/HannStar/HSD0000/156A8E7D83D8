@@ -64,6 +64,11 @@ Checksum: 0xd0
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+
 Failures:
 
 Block 0, Base EDID:

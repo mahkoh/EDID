@@ -76,29 +76,15 @@ Checksum: 0x51
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 38 a3 2a 67 01 01 01 01 '........8.*g....'
-  11 14 01 03 80 40 28 78 ea 52 75 ae 4f 33 b1 26 '.....@(x.Ru.O3.&'
-  0e 50 54 bf ef 80 81 00 81 80 90 40 8b c0 95 00 '.PT........@....'
-  a9 40 b3 00 d1 00 b0 68 00 a0 a0 40 2e 60 30 20 '.@.....h...@.`0 '
-  36 00 81 91 21 00 00 1e 00 00 00 fd 00 32 55 1f '6...!........2U.'
-  63 1b 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'c...      .....L'
-  43 44 33 30 39 30 57 51 58 69 0a 20 00 00 00 ff 'CD3090WQXi. ....'
-  00 30 34 33 30 31 31 33 34 55 41 0a 20 20 00 51 '.04301134UA.  .Q'
-Checksum: 0x51
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

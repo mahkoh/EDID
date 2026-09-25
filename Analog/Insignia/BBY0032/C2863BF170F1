@@ -68,22 +68,10 @@ Checksum: 0x18
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 08 59 32 00 00 00 00 00 '.........Y2.....'
-  1a 18 01 04 08 46 27 78 0a 30 bd 9d 59 52 a0 26 '.....F'x.0..YR.&'
-  0d 47 4a a3 08 00 31 40 81 80 81 c0 81 00 81 40 '.GJ...1@.......@'
-  81 0f 95 00 01 01 98 21 50 b0 51 00 1b 30 40 70 '.......!P.Q..0@p'
-  36 00 40 84 63 00 00 1e 40 1f 00 80 51 00 1e 30 '6.@.c...@...Q..0'
-  40 80 37 00 40 84 63 00 00 1c 00 00 00 fd 00 39 '@.7.@.c........9'
-  3f 1e 31 09 00 0a 20 20 20 20 20 20 00 00 00 fc '?.1...      ....'
-  00 4e 53 2d 33 32 44 33 31 32 4e 41 31 35 00 18 '.NS-32D312NA15..'
-Checksum: 0x18
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Image size is 1600x900 mm, but based on the picture AR it should be 1500x900 mm.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -96,11 +84,9 @@ Failures:
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 1600x900 mm vs display size 700x390 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 1600x900 mm vs display size 700x390 mm.
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 1600x900mm, which is larger than the display size 700.0x390.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

@@ -74,7 +74,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC  32:  1920x1080   24.000000 Hz  16:9     27.000 kHz     74.250000 MHz
@@ -139,8 +139,8 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency
     Supports 10b 12b 444: Not supported
-    Target Min PQ v2: 220 (0.07170139 cd/m^2)
-    Target Max PQ v2: 2705 (447 cd/m^2)
+    Target Min PQ v2: 220 (0.07069849 cd/m^2)
+    Target Max PQ v2: 2705 (430 cd/m^2)
     Unique Rx, Ry: 0.66406250, 0.30859375
     Unique Gx, Gy: 0.25390625, 0.64453125
     Unique Bx, By: 0.15234375, 0.04296875
@@ -166,8 +166,6 @@ Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-EDID:
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 

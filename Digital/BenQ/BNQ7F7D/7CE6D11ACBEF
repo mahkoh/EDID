@@ -77,7 +77,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
     VIC  64:  1920x1080  100.000000 Hz  16:9    112.500 kHz    297.000000 MHz
@@ -121,14 +121,12 @@ Block 1, CTA-861 Extension Block:
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.0
+    Version: 2
+    Feature Caps: 0x00
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xe6 (MCCS)
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Colorimetry Data Block:
     xvYCC601
     xvYCC709
@@ -158,7 +156,10 @@ Checksum: 0x2f  Unused space in Extension Block: 14 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 63 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Unknown CTA-861 Data Block (tag 0x00, length 0).
@@ -168,16 +169,12 @@ Block 1, CTA-861 Extension Block:
   Unknown CTA-861 Data Block (tag 0x00, length 0).
   Unknown CTA-861 Data Block (tag 0x00, length 0).
   Unknown CTA-861 Data Block (tag 0x00, length 0).
+  Detailed Timing Descriptor #3: Image size is 544x303 mm, but based on the picture AR it should be 378x303 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-EDID:
-  CTA-861: Multiple native progressive timings are defined.
-
-Failures:
-
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 144.001 Hz (Monitor: 30.000 - 144.000 Hz)
     Horizontal Freq: 27.000 - 160.533 kHz (Monitor: 30.000 - 170.000 kHz)
     Maximum Clock: 594.000 MHz (Monitor: 340.000 MHz)
 
-EDID conformity: FAIL
+EDID conformity: PASS

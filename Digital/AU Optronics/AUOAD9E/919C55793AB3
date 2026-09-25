@@ -52,7 +52,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6601, 0.3300
     Green: 0.2783, 0.6269
@@ -65,8 +65,8 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront   10 Vsync   5 Vback 3345 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 60-360 Hz V, 404-404 kHz H, max dotclock 840 MHz
-    Alphanumeric Data String: '92HGV'
+      Monitor ranges (Range Limits Only): 60-360 Hz V, 404-404 kHz H, max dotclock 840 MHz
+    Alphanumeric Data String: '92HGV.B173HAN'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 0f 9e 00 01 00 00 0f 01 0a 20 20 '....A.........  '
   Extension blocks: 1
 Checksum: 0xaf
@@ -86,34 +86,10 @@ Checksum: 0x90
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 06 af 9e ad 00 00 00 00 '................'
-  23 1f 01 04 a5 26 16 78 03 26 f5 a9 54 47 a0 24 '#....&.x.&..TG.$'
-  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 86 d8 80 a0 70 38 20 4d 30 20 '..........p8 M0 '
-  a5 00 7e d7 10 00 00 1a 00 00 00 fd 0e 3c 69 95 '..~..........<i.'
-  95 54 01 0a 20 20 20 20 20 20 00 00 00 fe 00 39 '.T..      .....9'
-  32 48 47 56 80 42 31 37 33 48 41 4e 00 00 00 00 '2HGV.B173HAN....'
-  00 02 41 0f 9e 00 01 00 00 0f 01 0a 20 20 01 af '..A.........  ..'
-Checksum: 0xaf
-
-----------------
-
-Block 3, DisplayID Extension Block:
-  Version: 1.3
-  Extension Count: 0
-  Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  1920x1080  360.023180 Hz  16:9    403.226 kHz    838.710000 MHz (aspect 16:9, no 3D stereo, preferred)
-               Hfront   48 Hsync  32 Hback   80 Hpol N
-               Vfront   10 Vsync   5 Vback   25 Vpol N
-  Checksum: 0x10
-Checksum: 0x90
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x80 at position 5, can cause problems.
   Missing Display Product Name.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -121,15 +97,9 @@ EDID:
 
 Failures:
 
-Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
 Block 1, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 2, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

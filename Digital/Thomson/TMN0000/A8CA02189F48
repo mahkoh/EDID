@@ -74,7 +74,7 @@ Block 1, CTA-861 Extension Block:
   Underscans IT Video Formats by default
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
@@ -96,7 +96,8 @@ Block 1, CTA-861 Extension Block:
     xvYCC709
     Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -110,10 +111,16 @@ Checksum: 0x88  Unused space in Extension Block: 74 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #2: Image size is 518x324 mm, but based on the picture AR it should be 518x291 mm.
 EDID:
-  CTA-861: Multiple native progressive timings are defined.
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.250 - 83.894 kHz (Monitor: 30.000 - 81.000 kHz)
 
 Failures:
 
@@ -122,8 +129,6 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 31.250 - 83.894 kHz (Monitor: 30.000 - 81.000 kHz)
   Base EDID: The DTD max image size is 531x324mm, which is larger than the display size 520.0x320.0mm.
 
 EDID conformity: FAIL

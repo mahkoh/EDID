@@ -52,7 +52,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6396, 0.3300
     Green: 0.2998, 0.5996
@@ -68,7 +68,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol N
                  Vfront   10 Vsync   6 Vback 1332 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-120 Hz V, 153-153 kHz H, max dotclock 320 MHz
+      Monitor ranges (Range Limits Only): 48-120 Hz V, 153-153 kHz H, max dotclock 320 MHz
     Display Product Name: 'N160JME-GL2'
   Extension blocks: 1
 Checksum: 0xfd
@@ -77,7 +77,7 @@ Checksum: 0xfd
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Native detailed modes: 0
+  Native DTDs: 0
   Colorimetry Data Block:
     BT2020RGB
   HDR Static Metadata Data Block:
@@ -90,54 +90,12 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 83 (301.833 cd/m^2)
     Desired content min luminance: 47 (0.103 cd/m^2)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.1
+    Version: 3
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
-Checksum: 0xfa  Unused space in Extension Block: 93 bytes
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0d ae 27 16 00 00 00 00 '..........'.....'
-  1b 20 01 04 a5 22 16 78 03 ee 95 a3 54 4c 99 26 '. ...".x....TL.&'
-  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 38 7c 80 a0 70 b0 4a 40 30 20 '......8|..p.J@0 '
-  a6 00 58 d7 10 00 00 18 38 7c 80 a0 70 b0 44 45 '..X.....8|..p.DE'
-  30 20 a6 00 58 d7 10 00 00 18 00 00 00 fd 00 30 '0 ..X..........0'
-  78 99 99 20 01 0a 20 20 20 20 20 20 00 00 00 fc 'x.. ..      ....'
-  00 4e 31 36 30 4a 4d 45 2d 47 4c 32 0a 20 01 fd '.N160JME-GL2. ..'
-Checksum: 0xfd
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Native detailed modes: 0
-  Colorimetry Data Block:
-    BT2020RGB
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      SMPTE ST2084
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 83 (301.833 cd/m^2)
-    Desired content max frame-average luminance: 83 (301.833 cd/m^2)
-    Desired content min luminance: 47 (0.103 cd/m^2)
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.1
-    Minimum Refresh Rate: 48 Hz
-    Maximum Refresh Rate: 120 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
 Checksum: 0xfa  Unused space in Extension Block: 93 bytes
 
 ----------------
@@ -147,23 +105,13 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-Block 3, CTA-861 Extension Block:
-  IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

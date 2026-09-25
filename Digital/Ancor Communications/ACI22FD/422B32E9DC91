@@ -74,24 +74,9 @@ Checksum: 0x89
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 69 fd 22 63 01 02 00 '.........i."c...'
-  2e 15 01 03 80 30 1b 78 2a 2a c5 a4 56 4f 9e 28 '.....0.x**..VO.('
-  0f 50 54 b7 ef 00 d1 c0 81 40 81 80 95 00 b3 00 '.PT......@......'
-  71 4f 81 c0 81 00 02 3a 80 18 71 38 2d 40 58 2c 'qO.....:..q8-@X,'
-  45 00 dc 0c 11 00 00 1e 00 00 00 ff 00 42 42 4c 'E............BBL'
-  4d 54 46 31 33 31 34 32 37 0a 00 00 00 fd 00 32 'MTF131427......2'
-  4b 18 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 41 53 55 53 20 56 53 32 32 38 0a 20 20 00 89 '.ASUS VS228.  ..'
-Checksum: 0x89
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

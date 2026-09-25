@@ -56,7 +56,7 @@ Block 0, Base EDID:
     Display Product Serial Number: ...
     Display Product Name: 'DELL U2715H'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 56-86 Hz V, 30-113 kHz H, max dotclock 300 MHz
+      Monitor ranges (Range Limits Only): 56-86 Hz V, 30-113 kHz H, max dotclock 300 MHz
   Extension blocks: 1
 Checksum: 0x60
 

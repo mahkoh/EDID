@@ -64,22 +64,11 @@ Checksum: 0xc9
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 36 83 27 95 01 00 00 00 '........6.'.....'
-  24 15 01 04 a5 73 41 78 02 cf 74 a3 57 4c b0 23 '$....sAx..t.WL.#'
-  09 48 4c a1 08 00 81 80 61 40 45 40 31 40 01 01 '.HL.....a@E@1@..'
-  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 7e 8a 42 00 00 1e 0e 1f 00 80 51 00 1e 30 'E.~.B.......Q..0'
-  40 80 37 00 7e 8a 42 00 00 1c 00 00 00 fd 00 3a '@.7.~.B........:'
-  3e 1e 53 10 00 0a 20 20 20 20 20 20 00 00 00 fc '>.S...      ....'
-  00 54 56 0a 20 20 20 20 20 20 20 20 20 20 00 c9 '.TV.          ..'
-Checksum: 0xc9
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #2: Image size is 1150x650 mm, but based on the picture AR it should be 1083x650 mm.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -88,10 +77,8 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

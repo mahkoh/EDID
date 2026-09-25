@@ -62,24 +62,9 @@ Checksum: 0x3e
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 22 70 19 00 6b 0f 00 00 '........"p..k...'
-  1f 14 01 03 64 36 1e 78 2a 82 15 a4 56 4f 9d 24 '....d6.x*...VO.$'
-  12 50 54 21 08 00 81 80 95 00 b3 00 01 01 01 01 '.PT!............'
-  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 1f 31 21 00 00 1e 00 00 00 ff 00 30 33 31 'E..1!........031'
-  46 58 31 34 59 30 33 39 34 37 00 00 00 fc 00 48 'FX14Y03947.....H'
-  53 47 31 30 37 34 0a 20 20 20 20 20 00 00 00 fd 'SG1074.     ....'
-  00 3b 3d 1f 46 0f 00 0a 20 20 20 20 20 20 00 3e '.;=.F...      .>'
-Checksum: 0x3e
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

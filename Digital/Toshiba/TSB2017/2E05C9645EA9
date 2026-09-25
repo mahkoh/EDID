@@ -75,7 +75,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
@@ -170,15 +170,19 @@ Checksum: 0x5f  Unused space in Extension Block: 1 byte
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
-  Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
+  Video Data Block: For improved preferred timing interoperability, set 'Native DTDs' to 1.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
+  Detailed Timing Descriptor #4: Image size is 1600x1200 mm, but based on the picture AR it should be 1600x1066 mm.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Detailed Timing Descriptor #4: Mismatch of image size 1600x1200 mm vs display size 1600x900 mm.
 EDID:
   Base EDID: The DTD max image size is 1600x1200mm, which is larger than the display size 1600.0x900.0mm.

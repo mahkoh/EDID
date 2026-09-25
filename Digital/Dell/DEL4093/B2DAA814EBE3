@@ -109,54 +109,20 @@ Checksum: 0x90
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 10 ac 93 40 50 34 30 31 '...........@P401'
-  2b 18 01 04 b5 46 27 78 3a 73 e0 a3 53 36 b6 26 '+....F'x:s..S6.&'
-  0d 51 53 a5 4b 00 81 00 b3 00 d1 00 71 4f a9 40 '.QS.K.......qO.@'
-  81 80 d1 c0 01 01 4d 6c 80 a0 70 70 3e 80 30 20 '......Ml..pp>.0 '
-  3a 00 ba 88 21 00 00 1a 00 00 00 ff 00 4b 33 52 ':...!........K3R'
-  39 30 34 41 4e 31 30 34 50 0a 00 00 00 fc 00 44 '904AN104P......D'
-  45 4c 4c 20 55 50 33 32 31 34 51 0a 00 00 00 fd 'ELL UP3214Q.....'
-  00 1d 4b 1f 8c 1e 00 0a 20 20 20 20 20 20 01 d0 '..K.....      ..'
-Checksum: 0xd0
-
-----------------
-
-Block 3, DisplayID Extension Block:
-  Version: 1.2
-  Extension Count: 0
-  Tiled Display Topology Data Block (0x12):
-    Capabilities:
-      Behavior if it is the only tile: Image is scaled to fit the entire tiled display
-      Behavior if more than one tile and fewer than total number of tiles: Undefined
-    Tiled display consists of a single physical display enclosure
-    Num horizontal tiles: 2 Num vertical tiles: 1
-    Tile location: 0, 0
-    Tile resolution: 1920x2160
-    Tiled Display Manufacturer/Vendor ID: DEL
-    Tiled Display Product ID Code: 16531
-    Tiled Display Serial Number: ...
-  Checksum: 0x31
-Checksum: 0x90
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 698x392 mm, but based on the picture AR it should be 348x392 mm.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 Block 1, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 2, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 

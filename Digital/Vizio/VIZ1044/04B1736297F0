@@ -67,7 +67,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 2
+  Native DTDs: 2
   Video Data Block:
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
     VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
@@ -135,7 +135,8 @@ Block 1, CTA-861 Extension Block:
     VRRmin: 40 Hz
     VRRmax: 60 Hz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0x00
@@ -158,20 +159,23 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 2 and the first DTD are not identical. Is this intended?
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: Progressive and Interlaced latency values are identical, no need for both.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Detailed Timing Descriptor #3: DTD is similar but not identical to DMT 0x27.
+  Detailed Timing Descriptor #4: Image size is 391x293 mm, but based on the picture AR it should be 391x260 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 70.082 Hz (Monitor: 50.000 - 75.000 Hz)
+    Horizontal Freq: 15.734 - 67.500 kHz (Monitor: 30.000 - 80.000 kHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   HDMI Forum Sink Capability Data Block: HDMI Forum SCDB did not immediately follow the HDMI VSDB.
-  HDMI Forum Sink Capability Data Block: VRRmax < 100.
+  HDMI Forum Sink Capability Data Block: 0 < VRRmax < 100.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 70.082 Hz (Monitor: 50.000 - 75.000 Hz)
-    Horizontal Freq: 15.734 - 67.500 kHz (Monitor: 30.000 - 80.000 kHz)
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

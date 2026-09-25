@@ -77,26 +77,16 @@ Checksum: 0x31
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5a 63 2c 3a 01 01 01 01 '........Zc,:....'
-  33 17 01 03 80 3c 22 78 2e ee d5 a3 56 50 9f 26 '3....<"x....VP.&'
-  10 50 54 bf ef 80 b3 00 a9 40 95 00 90 40 81 80 '.PT......@...@..'
-  81 40 71 4f 31 0a 02 3a 80 18 71 38 2d 40 58 2c '.@qO1..:..q8-@X,'
-  45 00 55 50 21 00 00 1e 00 00 00 ff 00 54 41 46 'E.UP!........TAF'
-  31 33 35 31 30 30 30 36 39 0a 00 00 00 fd 00 32 '135100069......2'
-  4c 18 53 12 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
-  00 56 58 32 37 37 30 20 53 45 52 49 45 53 00 31 '.VX2770 SERIES.1'
-Checksum: 0x31
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

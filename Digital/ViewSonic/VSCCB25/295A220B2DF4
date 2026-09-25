@@ -77,26 +77,16 @@ Checksum: 0x12
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5a 63 25 cb 01 01 01 01 '........Zc%.....'
-  17 17 01 03 80 30 1b 78 2e 50 f5 a4 58 52 97 28 '.....0.x.P..XR.('
-  13 50 54 bf ef 80 b3 00 a9 40 a9 c0 95 00 90 40 '.PT......@.....@'
-  81 80 81 00 71 4f 02 3a 80 18 71 38 2d 40 58 2c '....qO.:..q8-@X,'
-  45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 52 57 53 'E............RWS'
-  31 33 32 33 36 31 32 32 38 0a 00 00 00 fd 00 32 '132361228......2'
-  4b 18 52 15 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.R...      ....'
-  00 56 58 32 32 35 30 20 53 45 52 49 45 53 00 12 '.VX2250 SERIES..'
-Checksum: 0x12
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

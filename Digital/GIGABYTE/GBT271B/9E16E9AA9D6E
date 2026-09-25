@@ -86,7 +86,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
     VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
@@ -119,14 +119,12 @@ Block 1, CTA-861 Extension Block:
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 170 Hz
     Flags 1.x: 0xec (MCCS)
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   YCbCr 4:2:0 Capability Map Data Block:
     SVD Index 12 is out of range
   Colorimetry Data Block:
@@ -162,9 +160,15 @@ Checksum: 0xa8  Unused space in Extension Block: 4 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 2 and the first DTD are not identical. Is this intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 188.700 kHz (Monitor: 54.000 - 185.000 kHz)
+    Maximum Clock: 594.000 MHz (Monitor: 400.000 MHz)
 
 Failures:
 
@@ -174,9 +178,6 @@ Block 1, CTA-861 Extension Block:
   YCbCr 4:2:0 Capability Map Data Block: Max index 12 > 11 (#SVDs).
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 31.466 - 188.700 kHz (Monitor: 54.000 - 185.000 kHz)
-    Maximum Clock: 594.000 MHz (Monitor: 400.000 MHz)
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

@@ -54,19 +54,6 @@ Checksum: 0x6a
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 21 63 fe 3c 00 00 00 00 '........!c.<....'
-  00 1f 01 04 95 22 13 78 0a 90 f0 94 5b 59 93 28 '.....".x....[Y.('
-  1e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 14 37 80 a0 70 38 32 40 30 20 '.......7..p82@0 '
-  ac 00 58 c2 10 00 00 18 12 2c 80 a0 70 38 32 40 '..X......,..p82@'
-  30 20 ac 00 58 c2 10 00 00 18 00 00 00 fe 00 33 '0 ..X..........3'
-  47 57 32 30 00 31 35 36 43 53 30 31 00 00 00 00 'GW20.156CS01....'
-  00 00 41 21 16 00 10 00 00 09 01 0a 20 20 00 6a '..A!........  .j'
-Checksum: 0x6a
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -75,10 +62,8 @@ Block 0, Base EDID:
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Alphanumeric Data String: NUL byte at position 5.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

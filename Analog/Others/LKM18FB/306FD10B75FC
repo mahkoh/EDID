@@ -64,6 +64,10 @@ Warnings:
 
 Block 0, Base EDID:
   Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.468 - 90.000 kHz (Monitor: 30.000 - 83.000 kHz)
+    Maximum Clock: 234.000 MHz (Monitor: 200.000 MHz)
 
 Failures:
 
@@ -72,9 +76,5 @@ Block 0, Base EDID:
   Standard Timing Identifications: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
   Standard Timing Identifications: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
   Standard Timing Identifications: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 31.468 - 90.000 kHz (Monitor: 30.000 - 83.000 kHz)
-    Maximum Clock: 234.000 MHz (Monitor: 200.000 MHz)
 
 EDID conformity: FAIL

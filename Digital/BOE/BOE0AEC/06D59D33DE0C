@@ -34,7 +34,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6533, 0.3271
     Green: 0.2968, 0.6230
@@ -49,21 +49,8 @@ Block 0, Base EDID:
     DTD 2:  1920x1280   48.000437 Hz   3:2     63.361 kHz    131.790000 MHz (analog composite, sync-on-green, 274 mm x 182 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol N
                  Vfront    3 Vsync   6 Vback   31 Vpol N
-    Alphanumeric Data String: '3P97M'
+    Alphanumeric Data String: '3P97M.NV13F9M'
     Manufacturer-Specified Display Descriptor (0x00): 00 00 00 02 41 23 b2 01 01 00 00 0a 01 0a 20 20 '....A#........  '
-Checksum: 0x36
-
-----------------
-
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 e5 ec 0a 00 00 00 00 '................'
-  2c 1f 01 04 a5 1b 12 78 03 72 e5 a7 53 4c 9f 25 ',......x.r..SL.%'
-  0b 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 5a 40 80 a0 70 00 28 50 30 20 '......Z@..p.(P0 '
-  36 00 12 b6 10 00 00 1a 7b 33 80 a0 70 00 28 50 '6.......{3..p.(P'
-  30 20 36 00 12 b6 10 00 00 00 00 00 00 fe 00 33 '0 6............3'
-  50 39 37 4d 80 4e 56 31 33 46 39 4d 00 00 00 00 'P97M.NV13F9M....'
-  00 02 41 23 b2 01 01 00 00 0a 01 0a 20 20 00 36 '..A#........  .6'
 Checksum: 0x36
 
 ----------------
@@ -71,16 +58,14 @@ Checksum: 0x36
 Warnings:
 
 Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x80 at position 5, can cause problems.
   Missing Display Product Name.
 
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

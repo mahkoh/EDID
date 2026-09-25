@@ -34,7 +34,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.5751, 0.3466
     Green: 0.3515, 0.5781
@@ -50,7 +50,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback  102 Hpol N
                  Vfront   10 Vsync   5 Vback 1823 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 60-144 Hz V, 176-176 kHz H, max dotclock 370 MHz
+      Monitor ranges (Range Limits Only): 60-144 Hz V, 176-176 kHz H, max dotclock 370 MHz
     Alphanumeric Data String: 'B173HAN04.9 '
   Extension blocks: 1
 Checksum: 0x6b
@@ -73,14 +73,12 @@ Block 1, DisplayID Extension Block:
     Seamless Dynamic Video Timing Support: Yes
   CTA-861 DisplayID Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.1
+    Version: 3
+    Feature Caps: 0x01
     Minimum Refresh Rate: 60 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 83 (301.833 cd/m^2)
-    Minimum luminance: 82 (0.312 cd/m^2)
-    Unknown: 0x53 0x52
   Checksum: 0x88
 Checksum: 0x90
 
@@ -98,12 +96,10 @@ EDID:
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces before newline.
 Block 1, DisplayID Extension Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A: Length is 16 instead of 19.
 EDID:
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: Missing DisplayID Display Parameters Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
 
 EDID conformity: FAIL

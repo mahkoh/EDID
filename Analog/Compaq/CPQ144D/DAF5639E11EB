@@ -59,7 +59,7 @@ Block 0, Base EDID:
   Standard Timings:
     GTF     :   640x480    70.000000 Hz   4:3     35.000 kHz     28.560000 MHz
     GTF     :   800x600    70.000000 Hz   4:3     43.750 kHz     45.500000 MHz
-    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    GTF     :  1024x768    72.000073 Hz   4:3     57.672 kHz     78.434000 MHz
   Detailed Timing Descriptors:
     DTD 1:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz (304 mm x 228 mm)
                  Hfront   24 Hsync 136 Hback  160 Hpol N
@@ -72,24 +72,9 @@ Checksum: 0x96
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0e 11 4d 14 37 37 35 52 '..........M.775R'
-  03 0d 01 03 68 1e 17 78 ea 9d 9e 99 58 4c 93 26 '....h..x....XL.&'
-  21 4c 54 bf ee 00 31 4a 45 4a 61 4c 01 01 01 01 '!LT...1JEJaL....'
-  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
-  36 00 30 e4 10 00 00 18 00 00 00 fd 00 38 4b 1e '6.0..........8K.'
-  3f 08 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43 '?...      .....C'
-  4f 4d 50 41 51 20 31 35 30 31 0a 20 00 00 00 ff 'OMPAQ 1501. ....'
-  00 54 48 33 30 33 35 52 35 37 37 0a 20 20 00 96 '.TH3035R577.  ..'
-Checksum: 0x96
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

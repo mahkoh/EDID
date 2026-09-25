@@ -65,24 +65,9 @@ Checksum: 0xb9
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5c 23 19 10 08 03 00 00 '........\#......'
-  03 15 01 03 81 1b 11 78 aa d4 45 96 57 52 89 28 '.......x..E.WR.('
-  25 50 54 a5 ee 00 81 00 01 01 01 01 01 01 01 01 '%PT.............'
-  01 01 01 01 01 01 9e 20 00 90 51 20 1f 30 48 80 '....... ..Q .0H.'
-  36 00 05 a3 10 00 00 1c 00 00 00 fd 00 38 4b 1f '6............8K.'
-  52 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 31 'R...      .....1'
-  41 43 30 30 30 37 37 36 0a 20 20 20 00 00 00 fc 'AC000776.   ....'
-  00 43 69 6e 74 69 71 20 31 32 57 58 0a 20 00 b9 '.Cintiq 12WX. ..'
-Checksum: 0xb9
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

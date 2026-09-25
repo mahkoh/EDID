@@ -73,19 +73,6 @@ Checksum: 0x98
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 36 77 10 02 00 00 00 03 '........6w......'
-  09 18 01 03 68 33 1d 78 2a 68 50 a5 56 4a 98 25 '....h3.x*hP.VJ.%'
-  11 50 54 25 4b 00 81 00 90 00 95 00 a9 c0 a9 40 '.PT%K..........@'
-  b3 00 81 c0 81 0f 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 76 f2 31 00 00 1e 01 1d 00 72 51 d0 1e 20 'E.v.1......rQ.. '
-  6e 28 55 00 76 f2 31 00 00 1e 00 00 00 fd 00 32 'n(U.v.1........2'
-  55 1e 51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'U.Q...      ....'
-  00 56 47 41 20 54 4f 20 48 44 4d 49 0a 20 00 98 '.VGA TO HDMI. ..'
-Checksum: 0x98
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -96,10 +83,8 @@ Failures:
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 886x498 mm vs display size 510x290 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 886x498 mm vs display size 510x290 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 886x498mm, which is larger than the display size 510.0x290.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

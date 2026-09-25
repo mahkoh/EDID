@@ -81,26 +81,11 @@ Checksum: 0x47
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1e 6d 67 4a 54 1e 01 00 '.........mgJT...'
-  25 0e 01 03 0e 24 1b bf e8 9a d9 a1 54 4b 99 24 '%....$......TK.$'
-  12 48 4c ff ff 10 d1 4a e1 40 61 59 81 8f 81 99 '.HL....J.@aY....'
-  a9 4f a9 59 71 4f a7 59 40 30 62 b0 32 40 40 c0 '.O.YqO.Y@0b.2@@.'
-  13 00 5e 06 11 00 00 1e f9 15 20 f8 30 58 1f 20 '..^....... .0X. '
-  20 40 13 00 5e 06 11 00 00 1e 00 00 00 fd 00 32 ' @..^..........2'
-  a0 1e 6f 1f 00 0a 20 20 20 20 20 20 00 00 00 fc '..o...      ....'
-  00 46 39 30 30 50 0a 20 20 20 20 20 20 20 00 47 '.F900P.       .G'
-Checksum: 0x47
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

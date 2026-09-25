@@ -74,7 +74,7 @@ Checksum: 0x9b
 Block 1, CTA-861 Extension Block:
   Revision: 3
   Underscans IT Video Formats by default
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
@@ -90,7 +90,8 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 0 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -114,9 +115,8 @@ Checksum: 0x15  Unused space in Extension Block: 24 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 4.
-EDID:
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 

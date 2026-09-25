@@ -52,24 +52,9 @@ Checksum: 0xec
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 06 10 39 a0 00 00 00 00 '..........9.....'
-  13 1b 01 04 b5 1d 12 78 02 ee 41 a3 54 4c 99 26 '.......x..A.TL.&'
-  0e 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 d9 65 00 50 a0 40 2e 60 08 20 '.......e.P.@.`. '
-  08 08 1e b3 10 00 00 1a 00 00 00 fc 00 43 6f 6c '.............Col'
-  6f 72 20 4c 43 44 0a 20 20 20 00 00 00 10 00 00 'or LCD.   ......'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10 '................'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ec '................'
-Checksum: 0xec
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

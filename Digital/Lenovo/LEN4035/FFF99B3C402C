@@ -53,28 +53,13 @@ Checksum: 0xc3
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 ae 35 40 00 00 00 00 '........0.5@....'
-  00 12 01 03 80 1e 13 78 ea 01 f5 97 57 52 8a 27 '.......x....WR.''
-  23 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '#PT.............'
-  01 01 01 01 01 01 26 1b 00 88 50 20 12 30 34 40 '......&...P .04@'
-  33 00 2f be 10 00 00 19 8b 16 00 68 50 20 22 30 '3./........hP "0'
-  34 40 33 00 2f be 10 00 00 19 00 00 00 0f 00 81 '4@3./...........'
-  0a 32 81 0a 28 16 09 00 4c a3 41 54 00 00 00 fe '.2..(...L.AT....'
-  00 4c 54 4e 31 34 31 41 54 31 32 4c 30 31 00 c3 '.LTN141AT12L01..'
-Checksum: 0xc3
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #2: 0 or negative horizontal back porch.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -73,7 +73,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
@@ -131,7 +131,8 @@ Block 1, CTA-861 Extension Block:
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.0
+    Version: 1
+    Feature Caps: 0x00
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 62 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -165,17 +166,19 @@ Checksum: 0x64  Unused space in Extension Block: 20 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 60.317 Hz (Monitor: 40.000 - 60.000 Hz)
+    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 160.000 kHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 60.317 Hz (Monitor: 40.000 - 60.000 Hz)
-    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 160.000 kHz)
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
 
 EDID conformity: FAIL

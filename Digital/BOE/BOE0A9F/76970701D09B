@@ -34,7 +34,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6445, 0.3242
     Green: 0.2929, 0.6259
@@ -50,7 +50,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback  125 Hpol P
                  Vfront    3 Vsync   6 Vback   76 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 60-120 Hz V, 183-183 kHz H, max dotclock 510 MHz
+      Monitor ranges (Range Limits Only): 60-120 Hz V, 183-183 kHz H, max dotclock 510 MHz
     Manufacturer-Specified Display Descriptor (0x03): 00 03 00 0d 36 ff 0a 3c 96 24 14 31 96 00 00 00 '....6..<.$.1....'
   Extension blocks: 1
 Checksum: 0x0d
@@ -69,14 +69,12 @@ Block 1, DisplayID Extension Block:
     Seamless Dynamic Video Timing Support: Yes
   CTA-861 DisplayID Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.1
+    Version: 3
+    Feature Caps: 0x01
     Minimum Refresh Rate: 60 Hz
     Maximum Refresh Rate: 120 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Checksum: 0x47
 Checksum: 0x90
 
@@ -95,7 +93,6 @@ Failures:
 Block 1, DisplayID Extension Block:
   DisplayID Base Block has no product type.
 EDID:
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

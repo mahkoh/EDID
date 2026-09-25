@@ -52,28 +52,13 @@ Checksum: 0xd8
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0e 14 ab 17 00 00 00 00 '................'
-  28 15 01 03 80 1e 11 78 0a c3 0d 94 57 4f 8c 27 '(......x....WO.''
-  20 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 ' PT.............'
-  01 01 01 01 01 01 78 1e 56 f7 50 00 26 30 3b 27 '......x.V.P.&0;''
-  36 00 35 ad 10 00 00 18 78 1d 56 c2 50 00 26 30 '6.5.....x.V.P.&0'
-  3b 27 36 00 35 ad 10 00 00 18 00 00 00 fe 00 43 ';'6.5..........C'
-  50 54 20 20 20 20 20 20 20 20 20 20 00 00 00 00 'PT          ....'
-  00 43 4c 41 41 31 34 30 57 42 31 31 41 20 00 d8 '.CLAA140WB11A ..'
-Checksum: 0xd8
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: No newline, but one or more trailing spaces.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

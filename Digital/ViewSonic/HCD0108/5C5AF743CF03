@@ -73,7 +73,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
@@ -108,7 +108,8 @@ Block 1, CTA-861 Extension Block:
     SCDC Present
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.9
+    Version: 1
+    Feature Caps: 0x09
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 63 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -145,10 +146,16 @@ Checksum: 0xf9  Unused space in Extension Block: 37 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 30.000 - 70.082 Hz (Monitor: 48.000 - 75.000 Hz)
 
 Failures:
 
@@ -159,8 +166,5 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Max TMDS rate is > 0 and <= 340 or > 600.
   YCbCr 4:2:0 Capability Map Data Block: Max index 19 > 14 (#SVDs).
   Detailed Timing Descriptor #2: Mismatch of image size 239x134 mm vs display size 380x210 mm.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 30.000 - 70.082 Hz (Monitor: 48.000 - 75.000 Hz)
 
 EDID conformity: FAIL

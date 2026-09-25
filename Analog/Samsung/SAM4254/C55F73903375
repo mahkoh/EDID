@@ -79,24 +79,9 @@ Checksum: 0xba
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 2d 54 42 34 32 43 50 '........L-TB42CP'
-  20 0d 01 03 0f 33 20 a2 ea 56 4e 9c 5b 50 95 26 ' ....3 ..VN.[P.&'
-  23 50 59 bf ef 80 a9 4a a9 45 a9 40 81 80 61 59 '#PY....J.E.@..aY'
-  45 59 31 59 31 40 73 4b 80 a0 72 b0 2a 40 80 d0 'EY1Y1@sK..r.*@..'
-  13 00 06 44 21 00 00 1c 00 00 00 fd 00 38 55 1e '...D!........8U.'
-  5d 14 00 0a 20 20 20 20 20 20 00 00 00 fc 00 32 ']...      .....2'
-  34 30 54 2f 32 34 30 4d 50 0a 20 20 00 00 00 ff '40T/240MP.  ....'
-  00 48 34 4b 57 38 30 30 31 39 35 0a 20 20 00 ba '.H4KW800195.  ..'
-Checksum: 0xba
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

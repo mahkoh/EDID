@@ -76,7 +76,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 7
+  Native DTDs: 7
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
@@ -129,10 +129,16 @@ Warnings:
 
 Block 0, Base EDID:
   Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
+  Detailed Timing Descriptor #2: Image size is 735x420 mm, but based on the picture AR it should be 630x420 mm.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
+  Detailed Timing Descriptor #4: Image size is 735x420 mm, but based on the picture AR it should be 525x420 mm.
 EDID:
-  CTA-861: Multiple native interlaced timings are defined.
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 50.000 - 75.029 Hz (Monitor: 48.000 - 62.000 Hz)
+    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 14.000 - 70.000 kHz)
 
 Failures:
 
@@ -148,9 +154,6 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #7: Mismatch of image size 735x420 mm vs display size 700x400 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 50.000 - 75.029 Hz (Monitor: 48.000 - 62.000 Hz)
-    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 14.000 - 70.000 kHz)
   Base EDID: The DTD max image size is 735x420mm, which is larger than the display size 700.0x400.0mm.
   CTA-861: Native progressive timings are a mix of several resolutions.
 

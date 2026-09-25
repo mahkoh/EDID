@@ -79,28 +79,17 @@ Checksum: 0xfe
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5d f2 36 62 c8 1d 00 00 '........].6b....'
-  08 13 01 03 68 34 1d 78 2a c5 c6 a3 57 4a 9c 23 '....h4.x*...WJ.#'
-  12 4f 54 bf ef 80 71 40 71 4f 81 40 b3 00 81 80 '.OT...q@qO.@....'
-  81 c0 a9 40 a9 4f 02 3a 80 18 71 38 2d 40 58 2c '...@.O.:..q8-@X,'
-  45 00 09 25 21 00 00 1e 00 00 00 ff 00 57 4c 30 'E..%!........WL0'
-  30 37 36 32 34 0a 20 20 20 20 00 00 00 fd 00 32 '07624.    .....2'
-  4b 1e 50 16 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.P...      ....'
-  00 54 45 52 52 41 20 36 32 33 36 57 20 20 00 fe '.TERRA 6236W  ..'
-Checksum: 0xfe
+Warnings:
 
-----------------
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 93.750 kHz (Monitor: 30.000 - 80.000 kHz)
 
 Failures:
 
 Block 0, Base EDID:
-  Display Product Name: One or more trailing spaces.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Product Name: No newline, but one or more trailing spaces.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 31.466 - 93.750 kHz (Monitor: 30.000 - 80.000 kHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

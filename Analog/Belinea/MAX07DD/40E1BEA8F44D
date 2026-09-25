@@ -60,7 +60,7 @@ Block 0, Base EDID:
     DMT 0x24:  1280x1024   75.024675 Hz   5:4     79.976 kHz    135.000000 MHz
   Standard Timings:
     DMT 0x3a:  1680x1050   59.954250 Hz  16:10    65.290 kHz    146.250000 MHz
-    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
+    GTF     :  1024x768    72.000073 Hz   4:3     57.672 kHz     78.434000 MHz
     DMT 0x15:  1152x864    75.000000 Hz   4:3     67.500 kHz    108.000000 MHz
     DMT 0x20:  1280x960    60.000000 Hz   4:3     60.000 kHz    108.000000 MHz
     DMT 0x23:  1280x1024   60.019740 Hz   5:4     63.981 kHz    108.000000 MHz
@@ -76,19 +76,6 @@ Checksum: 0x29
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 34 38 dd 07 1a 00 00 00 '........48......'
-  2f 11 01 03 0e 2b 1b 78 2e c9 05 a3 57 4b 9c 25 '/....+.x....WK.%'
-  12 50 54 bf ef 00 b3 00 61 4c 71 4f 81 40 81 80 '.PT.....aLqO.@..'
-  01 01 01 01 01 01 21 39 90 30 62 1a 27 40 68 b0 '......!9.0b.'@h.'
-  36 00 b1 0e 11 00 00 1e 00 00 00 00 00 00 00 00 '6...............'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 fd 00 38 '...............8'
-  4b 1f 53 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 6f 2e 64 69 73 70 31 2e 31 5f 32 30 77 00 29 '.o.disp1.1_20w.)'
-Checksum: 0x29
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -99,9 +86,7 @@ Failures:
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

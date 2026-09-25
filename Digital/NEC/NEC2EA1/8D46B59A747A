@@ -117,47 +117,17 @@ Checksum: 0x22  Unused space in Extension Block: 32 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 38 a3 a1 2e 01 01 01 01 '........8.......'
-  01 1f 01 03 80 35 1e 78 ea 05 65 a7 56 52 9c 27 '.....5.x..e.VR.''
-  0f 50 54 bf ef 80 81 00 81 40 81 80 81 c0 95 00 '.PT......@......'
-  90 40 b3 00 a9 c0 02 3a 80 18 71 38 2d 40 58 2c '.@.....:..q8-@X,'
-  45 00 0f 28 21 00 00 1e 00 00 00 fd 00 32 4c 1f 'E..(!........2L.'
-  53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 45 'S...      .....E'
-  41 32 34 31 46 0a 20 20 20 20 20 20 00 00 00 ff 'A241F.      ....'
-  00 31 31 35 30 30 38 32 33 4e 42 0a 20 20 01 15 '.11500823NB.  ..'
-Checksum: 0x15
+Warnings:
 
-----------------
-
-Block 3, Video Timing Extension Block:
-  Version: 1
-  Detailed Timing Descriptors:
-    DTD:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (527 mm x 296 mm)
-               Hfront  110 Hsync  40 Hback  220 Hpol P
-               Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD:   720x480    59.940060 Hz   3:2     31.469 kHz     27.000000 MHz (527 mm x 296 mm)
-               Hfront   16 Hsync  62 Hback   60 Hpol N
-               Vfront    9 Vsync   6 Vback   30 Vpol N
-    DTD:   720x576    50.000000 Hz   5:4     31.250 kHz     27.000000 MHz (527 mm x 296 mm)
-               Hfront   12 Hsync  64 Hback   68 Hpol N
-               Vfront    5 Vsync   5 Vback   39 Vpol N
-    DTD:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz (527 mm x 296 mm)
-               Hfront  440 Hsync  40 Hback  220 Hpol P
-               Vfront    5 Vsync   5 Vback   20 Vpol P
-    DTD:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (527 mm x 296 mm)
-               Hfront  528 Hsync  44 Hback  148 Hpol P
-               Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0x22  Unused space in Extension Block: 32 bytes
-
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+Block 1, Video Timing Extension Block:
+  Detailed Timing Descriptor #1: Image size is 527x296 mm, but based on the picture AR it should be 444x296 mm.
+  Detailed Timing Descriptor #1: Image size is 527x296 mm, but based on the picture AR it should be 370x296 mm.
 
 Failures:
 
-Block 2, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

@@ -70,26 +70,11 @@ Checksum: 0x07
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 d1 ec 78 01 01 00 00 '...........x....'
-  08 1f 01 03 80 3c 22 78 2e ba 25 a3 56 50 a0 28 '.....<"x..%.VP.('
-  0e 50 54 a5 6b 80 d1 c0 b3 00 a9 c0 81 80 81 00 '.PT.k...........'
-  81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 56 50 21 00 00 1e 00 00 00 ff 00 45 54 33 'E.VP!........ET3'
-  32 4d 30 31 31 32 34 30 34 55 00 00 00 fd 00 32 '2M0112404U.....2'
-  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
-  00 42 65 6e 51 20 47 4c 32 37 38 30 0a 20 00 07 '.BenQ GL2780. ..'
-Checksum: 0x07
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

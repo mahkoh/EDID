@@ -76,27 +76,12 @@ Checksum: 0xf9
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 41 0c 11 c2 7b 0e 00 00 '........A...{...'
-  46 2c 01 03 68 30 1b 78 2a 2f 55 a8 55 50 9d 26 'F,..h0.x*/U.UP.&'
-  10 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
-  81 c0 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 dd 0c 11 00 00 1e 00 00 00 ff 00 5a 41 31 'E............ZA1'
-  33 34 37 30 30 33 37 30 37 0a 00 00 00 fc 00 50 '347003707......P'
-  48 4c 20 32 32 31 56 38 0a 20 20 20 00 00 00 fd 'HL 221V8.   ....'
-  00 30 4b 1e 55 12 00 0a 20 20 20 20 20 20 00 f9 '.0K.U...      ..'
-Checksum: 0xf9
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
-  Vendor & Product Identification: Invalid week 70 of manufacture.
-  Vendor & Product Identification: The year 2034 is more than one year in the future.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Vendor & Product Identification: Invalid week of manufacture (> 54).
+  Vendor & Product Identification: The year is more than one year in the future.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

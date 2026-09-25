@@ -90,7 +90,7 @@ Checksum: 0x53
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     VIC  24:  1440x288    50.080128 Hz  16:9     15.625 kHz     27.000000 MHz
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
@@ -111,55 +111,16 @@ Checksum: 0x12  Unused space in Extension Block: 48 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 72 28 06 75 11 30 91 '.........r(.u.0.'
-  0d 1d 01 03 80 3c 22 78 2a 90 55 a7 55 53 a0 28 '.....<"x*.U.US.('
-  13 50 54 b3 6c 00 71 4f 81 80 81 c0 81 00 95 00 '.PT.l.qO........'
-  b3 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 56 50 21 00 00 1e 00 00 00 ff 00 54 39 44 'E.VP!........T9D'
-  45 45 30 30 39 33 39 30 30 00 00 00 00 fd 00 30 'EE0093900......0'
-  90 1e a0 21 00 0a 20 20 20 20 20 20 00 00 00 fc '...!..      ....'
-  00 45 44 32 37 33 20 41 0a 20 20 20 20 20 01 53 '.ED273 A.     .S'
-Checksum: 0x53
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Native detailed modes: 0
-  Video Data Block:
-    VIC  24:  1440x288    50.080128 Hz  16:9     15.625 kHz     27.000000 MHz
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-  Detailed Timing Descriptors:
-    DTD 6:  1920x1080  143.996336 Hz  16:9    158.108 kHz    325.070000 MHz (598 mm x 336 mm)
-                 Hfront   24 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   10 Vpol P
-    DTD 7:  1280x720    59.855126 Hz  16:9     44.772 kHz     74.500000 MHz (598 mm x 336 mm)
-                 Hfront   64 Hsync 128 Hback  192 Hpol N
-                 Vfront    3 Vsync   5 Vback   20 Vpol P
-    DTD 8:  1920x1080  119.982181 Hz  16:9    137.260 kHz    285.500000 MHz (598 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   56 Vpol P
-    DTD 9:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (598 mm x 336 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0x12  Unused space in Extension Block: 48 bytes
-
-----------------
-
 Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Video Data Block: VIC 24 is the preferred timing, overriding the first detailed timings. Is this intended?
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-Block 3, CTA-861 Extension Block:
-  IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 24 and the first DTD are not identical. Is this intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
-  CTA-861: Multiple native progressive timings are defined.
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 158.107 kHz (Monitor: 30.000 - 160.000 kHz)
 
 Failures:
 
@@ -167,16 +128,7 @@ Block 0, Base EDID:
   Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 24.
-  Video Data Block: Duplicate VIC 16.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 158.107 kHz (Monitor: 30.000 - 160.000 kHz)
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

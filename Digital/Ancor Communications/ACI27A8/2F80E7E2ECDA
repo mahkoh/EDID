@@ -36,7 +36,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6503, 0.3378
     Green: 0.3134, 0.6259
@@ -70,7 +70,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 40-144 Hz V, 222-222 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 40-144 Hz V, 222-222 kHz H, max dotclock 600 MHz
     Display Product Name: 'ASUS MG278'
   Extension blocks: 1
 Checksum: 0x28
@@ -82,7 +82,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
     VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
@@ -128,6 +128,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
+  Video Data Block: VIC 18 and the first DTD are not identical. Is this intended?
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

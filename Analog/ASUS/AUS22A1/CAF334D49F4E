@@ -106,35 +106,11 @@ Checksum: 0x7f  Unused space in Extension Block: 105 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 06 b3 a1 22 2b 02 02 00 '..........."+...'
-  2d 1f 01 03 68 30 1b 78 2a 84 d5 a2 5a 52 a2 26 '-...h0.x*...ZR.&'
-  0d 50 54 bf ef 00 d1 c0 b3 00 95 00 81 80 81 40 '.PT............@'
-  81 c0 71 4f 01 01 02 3a 80 18 71 38 2d 40 58 2c '..qO...:..q8-@X,'
-  45 00 dc 0c 11 00 00 1e 00 00 00 ff 00 4d 42 4c 'E............MBL'
-  4d 54 46 31 33 31 36 32 37 0a 00 00 00 fd 00 30 'MTF131627......0'
-  4b 18 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 41 53 55 53 20 56 50 32 32 38 0a 20 20 01 de '.ASUS VP228.  ..'
-Checksum: 0xde
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 1
-  Detailed Timing Descriptors:
-    DTD 3:  1920x1080   74.985863 Hz  16:9     83.909 kHz    170.000000 MHz (476 mm x 268 mm)
-                 Hfront    8 Hsync  32 Hback   66 Hpol P
-                 Vfront   25 Vsync   8 Vback    6 Vpol N
-Checksum: 0x7f  Unused space in Extension Block: 105 bytes
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is identical to VIC 16, which is not present in the CTA Ext Block.
 Block 1, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-Block 3, CTA-861 Extension Block:
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
@@ -147,12 +123,7 @@ Failures:
 
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

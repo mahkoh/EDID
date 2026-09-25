@@ -108,7 +108,7 @@ Block 2, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
@@ -159,6 +159,8 @@ Block 2, CTA-861 Extension Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
+    Full Frame Peak Luminance Index: 0
+    Peak Luminance Index: 0
   Detailed Timing Descriptors:
     DTD 2:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (1192 mm x 336 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
@@ -186,8 +188,11 @@ Checksum: 0x90
 Warnings:
 
 Block 2, CTA-861 Extension Block:
+  Video Data Block: VIC 97 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #2: Image size is 1192x336 mm, but based on the picture AR it should be 597x336 mm.
+  Detailed Timing Descriptor #3: Image size is 1192x336 mm, but based on the picture AR it should be 802x336 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   CTA-861: Native progressive resolution of 3840x1080 is smaller than the max preferred progressive resolution 3840x2160.
@@ -195,8 +200,6 @@ EDID:
 Failures:
 
 EDID:
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: Missing DisplayID Display Parameters Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
 
 EDID conformity: FAIL

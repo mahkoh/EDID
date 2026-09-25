@@ -36,7 +36,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6591, 0.3271
     Green: 0.2714, 0.5937
@@ -71,7 +71,7 @@ Block 0, Base EDID:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-165 Hz V, 167-167 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 48-165 Hz V, 167-167 kHz H, max dotclock 600 MHz
     Display Product Name: 'LS27AG32x'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -84,7 +84,7 @@ Block 1, CTA-861 Extension Block:
   Underscans IT Video Formats by default
   Basic audio support
   Supports YCbCr 4:4:4
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
@@ -99,14 +99,12 @@ Block 1, CTA-861 Extension Block:
   Speaker Allocation Data Block:
     FL/FR - Front Left/Right
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 165 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Detailed Timing Descriptors:
     DTD 2:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz (597 mm x 336 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
@@ -129,7 +127,6 @@ Block 1, CTA-861 Extension Block:
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.466 - 185.574 kHz (Monitor: 167.000 - 167.000 kHz)
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 

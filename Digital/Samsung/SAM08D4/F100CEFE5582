@@ -78,22 +78,10 @@ Checksum: 0x0c
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 2d d4 08 30 38 31 32 '........L-..0812'
-  20 16 01 03 80 30 1b 78 2a 90 c1 a2 59 55 9c 27 ' ....0.x*...YU.''
-  0e 50 54 bf ef 80 71 4f 81 c0 81 00 81 80 95 00 '.PT...qO........'
-  a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 dd 0c 11 00 00 1e 01 1d 00 72 51 d0 1e 20 'E..........rQ.. '
-  6e 28 55 00 dd 0c 11 00 00 1e 00 00 00 fd 00 32 'n(U............2'
-  4b 1e 51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.Q...      ....'
-  00 53 32 32 42 33 35 30 0a 20 20 20 20 20 01 0c '.S22B350.     ..'
-Checksum: 0x0c
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
+  Base EDID: EDID specified 1 extension block(s), but found 0 extension block(s).
 
 EDID conformity: FAIL

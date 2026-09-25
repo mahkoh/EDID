@@ -54,19 +54,6 @@ Checksum: 0xbb
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 e5 ea 06 00 00 00 00 '................'
-  01 1a 01 04 a5 1f 11 78 02 e7 b0 95 5c 59 94 29 '.......x....\Y.)'
-  22 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '"PT.............'
-  01 01 01 01 01 01 c8 36 80 cc 70 38 14 40 30 20 '.......6..p8.@0 '
-  36 00 35 ad 10 00 00 1a 86 24 80 cc 70 38 14 40 '6.5......$..p8.@'
-  64 64 44 05 35 ad 10 00 00 1a 00 00 00 00 00 00 'ddD.5...........'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 '................'
-  00 0b 43 f4 0a 3c 6e 12 0e 18 73 00 00 00 00 bb '..C..<n...s.....'
-Checksum: 0xbb
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -77,9 +64,7 @@ Failures:
 Block 0, Base EDID:
   Detailed Timing Descriptor #2: 0 or negative vertical back porch.
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

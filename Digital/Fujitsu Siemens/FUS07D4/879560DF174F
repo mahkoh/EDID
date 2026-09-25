@@ -68,19 +68,6 @@ Checksum: 0xb6
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1a b3 d4 07 a9 21 02 00 '.............!..'
-  0a 16 01 03 80 34 20 78 2a ef 95 a3 54 4c 9b 26 '.....4 x*...TL.&'
-  0f 50 54 a5 4b 00 81 80 81 00 81 0f 95 00 95 0f '.PT.K...........'
-  a9 40 b3 00 01 01 28 3c 80 a0 70 b0 23 40 30 20 '.@....(<..p.#@0 '
-  36 00 06 44 21 00 00 1a 00 00 00 fd 00 38 4c 1e '6..D!........8L.'
-  52 10 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42 'R...      .....B'
-  32 34 57 2d 35 20 45 43 4f 0a 20 20 00 00 00 ff '24W-5 ECO.  ....'
-  00 59 56 32 45 31 33 39 36 38 39 0a 20 20 00 b6 '.YV2E139689.  ..'
-Checksum: 0xb6
-
-----------------
-
 Warnings:
 
 EDID:
@@ -90,9 +77,7 @@ EDID:
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -102,32 +102,6 @@ Checksum: 0xff (should be 0x7f)
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 3c ad 00 00 00 00 00 00 '........<.......'
-  2d 16 01 03 08 45 27 00 0a c6 9c 96 4e 42 8d 22 '-....E'.....NB."'
-  10 41 44 3f ef 00 01 01 01 01 01 01 01 01 01 01 '.AD?............'
-  01 01 01 01 01 01 66 21 50 b0 51 00 1b 30 40 70 '......f!P.Q..0@p'
-  36 00 50 00 53 00 00 1e 30 2a 00 98 51 00 2a 40 '6.P.S...0*..Q.*@'
-  30 70 13 00 00 00 54 00 00 1e 0e 1f 00 80 51 00 '0p....T.......Q.'
-  1e 30 40 80 37 00 00 00 53 00 00 1c 00 00 00 fc '.0@.7...S.......'
-  00 32 34 57 5f 4c 43 44 5f 54 56 0a 20 20 01 c1 '.24W_LCD_TV.  ..'
-Checksum: 0xc1
-
-----------------
-
-Block 3, Manufacturer-Specific Extension Block:
-  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff '................'
-  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff '................'
-  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff '................'
-  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff '................'
-  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff '................'
-  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff '................'
-  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff '................'
-  ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff '................'
-Checksum: 0xff (should be 0x7f)
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
@@ -138,14 +112,8 @@ Block 0, Base EDID:
 Block 1, Manufacturer-Specific Extension Block:
   Unknown Extension Block.
   Invalid checksum 0xff (should be 0x7f).
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, Manufacturer-Specific Extension Block:
-  Unknown Extension Block.
-  Invalid checksum 0xff (should be 0x7f).
 EDID:
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   Base EDID: The DTD max image size is 1360x1024mm, which is larger than the display size 690.0x390.0mm.
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
 
 EDID conformity: FAIL

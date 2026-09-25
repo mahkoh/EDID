@@ -100,7 +100,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 4
+  Native DTDs: 4
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
@@ -126,6 +126,8 @@ Block 1, CTA-861 Extension Block:
     Desired content min luminance: 2 (0.001 cd/m^2)
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
+    Full Frame Peak Luminance Index: 0
+    Peak Luminance Index: 0
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
     DC_30bit
@@ -152,85 +154,18 @@ Checksum: 0x3f  Unused space in Extension Block: 6 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 2d ac 71 42 44 47 30 '........L-.qBDG0'
-  27 20 01 03 80 77 22 78 0a c7 25 b1 4b 46 a8 26 '' ...w"x..%.KF.&'
-  0e 50 54 bf ef 80 71 4f 81 00 81 c0 81 80 a9 c0 '.PT...qO........'
-  b3 00 95 00 d1 c0 1a 68 00 a0 f0 38 1f 40 30 20 '.......h...8.@0 '
-  3a 00 a9 50 41 00 00 1a 00 00 00 fd 08 32 f0 1e ':..PA........2..'
-  66 c2 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c 'f...      .....L'
-  53 34 39 41 47 39 35 0a 20 20 20 20 00 00 00 ff 'S49AG95.    ....'
-  00 48 4e 54 54 39 30 30 31 36 33 0a 20 20 01 eb '.HNTT900163.  ..'
-Checksum: 0xeb
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 4
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Colorimetry Data Block:
-    BT2020YCC
-    BT2020RGB
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      SMPTE ST2084
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 139 (1015.241 cd/m^2)
-    Desired content max frame-average luminance: 115 (603.666 cd/m^2)
-    Desired content min luminance: 2 (0.001 cd/m^2)
-  Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
-    Application Version: 1
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.0.0.0
-    DC_30bit
-    DC_Y444
-    Maximum TMDS clock: 300 MHz
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
-    Version: 1
-    Maximum TMDS Character Rate: 600 MHz
-    SCDC Present
-  Detailed Timing Descriptors:
-    DTD 6:  3840x1080  119.973776 Hz  32:9    137.250 kHz    549.000000 MHz (1193 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync  10 Vback   51 Vpol N
-    DTD 7:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (1193 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   33 Vpol N
-    DTD 8:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (1193 mm x 336 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   77 Vpol N
-    DTD 9:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (1193 mm x 336 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0x3f  Unused space in Extension Block: 6 bytes
-
-----------------
-
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #3: Image size is 1193x336 mm, but based on the picture AR it should be 597x336 mm.
+  Detailed Timing Descriptor #4: Image size is 1193x336 mm, but based on the picture AR it should be 597x336 mm.
+  Detailed Timing Descriptor #5: Image size is 1193x336 mm, but based on the picture AR it should be 597x336 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-Block 3, CTA-861 Extension Block:
-  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 182.996 kHz (Monitor: 30.000 - 102.000 kHz)
 
 Failures:
 
@@ -238,22 +173,8 @@ Block 0, Base EDID:
   Display Descriptor #2: Monitor descriptor block has byte 4 nonzero (0x08).
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 63.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 31.466 - 182.996 kHz (Monitor: 30.000 - 102.000 kHz)
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

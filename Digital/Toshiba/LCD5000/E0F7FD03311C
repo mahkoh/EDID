@@ -51,29 +51,15 @@ Checksum: 0x45
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 64 00 50 01 01 01 01 '........0d.P....'
-  2f 10 01 02 80 21 15 78 0a 4f d5 9c 57 4b 8c 27 '/....!.x.O..WK.''
-  1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 47 3b 80 08 71 b0 23 40 64 20 '......G;..q.#@d '
-  26 00 4c d0 10 00 00 18 00 00 00 0f 00 08 28 10 '&.L...........(.'
-  38 01 11 02 11 1e 20 08 12 00 00 00 00 fe 00 54 '8..... ........T'
-  4d 44 49 53 50 4c 41 59 0a 20 20 20 00 00 00 fe 'MDISPLAY.   ....'
-  00 4c 54 44 31 35 34 45 5a 30 43 0a 20 20 00 45 '.LTD154EZ0C.  .E'
-Checksum: 0x45
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -36,7 +36,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6562, 0.3330
     Green: 0.3232, 0.6074
@@ -75,7 +75,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   5 Vback   10 Vpol P
     Display Product Name: '24G1WG4'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-144 Hz V, 160-160 kHz H, max dotclock 330 MHz
+      Monitor ranges (Range Limits Only): 48-144 Hz V, 160-160 kHz H, max dotclock 330 MHz
   Extension blocks: 1
 Checksum: 0x85
 
@@ -87,7 +87,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
@@ -111,7 +111,8 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0x00
@@ -135,11 +136,12 @@ Checksum: 0x2a  Unused space in Extension Block: 15 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #6: Image size is 521x293 mm, but based on the picture AR it should be 468x293 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 28.125 - 158.112 kHz (Monitor: 160.000 - 160.000 kHz)
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 

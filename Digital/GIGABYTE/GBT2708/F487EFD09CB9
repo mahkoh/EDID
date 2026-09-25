@@ -81,7 +81,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
@@ -109,14 +109,12 @@ Block 1, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 340 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.17
+    Version: 2
+    Feature Caps: 0x11
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xe6 (MCCS)
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Detailed Timing Descriptors:
     DTD 2:  1920x1080  143.980263 Hz  16:9    159.818 kHz    325.070000 MHz (599 mm x 335 mm)
                  Hfront   24 Hsync  32 Hback   58 Hpol P
@@ -138,17 +136,18 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 47.
+  Detailed Timing Descriptor #5: Image size is 559x335 mm, but based on the picture AR it should be 559x314 mm.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
-  CTA-861: Multiple native progressive timings are defined.
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 28.125 - 159.818 kHz (Monitor: 30.000 - 160.000 kHz)
+    Maximum Clock: 368.759 MHz (Monitor: 360.000 MHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 28.125 - 159.818 kHz (Monitor: 30.000 - 160.000 kHz)
-    Maximum Clock: 368.759 MHz (Monitor: 360.000 MHz)
+  CTA-861: The maximum HDMI TMDS clock is 340000 kHz, but one or more video timings go up to 368759 kHz.
 
 EDID conformity: FAIL

@@ -75,28 +75,19 @@ Checksum: 0xb5
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c f4 50 19 0a 1a 00 00 '........L.P.....'
-  01 21 01 03 80 2c 17 78 2a 31 86 a8 52 46 97 23 '.!...,.x*1..RF.#'
-  1b 4c 58 bf ef 00 a9 c0 95 00 81 80 81 40 81 c0 '.LX..........@..'
-  81 00 01 01 01 01 2f 26 40 a0 60 84 1a 30 30 20 '....../&@.`..00 '
-  35 00 b8 e6 10 00 00 1e bf 2f 40 a0 60 84 1a 30 '5......../@.`..0'
-  18 50 13 00 ba f9 10 00 00 1a 00 00 00 fd 00 32 '.P.............2'
-  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
-  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 b5 '..            ..'
-Checksum: 0xb5
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #1: Image size is 440x230 mm, but based on the picture AR it should be 408x230 mm.
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 442x249 mm vs display size 440x230 mm.
   Display Product Name: Empty string.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 442x249mm, which is larger than the display size 440.0x230.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

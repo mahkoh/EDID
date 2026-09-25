@@ -74,24 +74,9 @@ Checksum: 0x0e
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 72 2b 03 11 44 00 51 '.........r+..D.Q'
-  0a 19 01 03 68 29 1a 6b 2a 49 a5 a4 57 50 9e 27 '....h).k*I..WP.''
-  0f 50 54 bf ee 80 71 4f 81 c0 81 00 95 00 01 01 '.PT...qO........'
-  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
-  36 00 98 ff 10 00 00 1c 00 00 00 ff 00 4c 58 5a '6............LXZ'
-  41 41 30 30 33 34 32 31 39 0a 00 00 00 fd 00 37 'AA0034219......7'
-  4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
-  00 41 63 65 72 20 56 31 39 36 57 4c 0a 20 00 0e '.Acer V196WL. ..'
-Checksum: 0x0e
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -80,7 +80,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz (native)
     VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
@@ -122,7 +122,15 @@ Checksum: 0x80  Unused space in Extension Block: 12 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 1196x336 mm, but based on the picture AR it should be 398x336 mm.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 4 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #2: Image size is 1196x336 mm, but based on the picture AR it should be 597x336 mm.
+  Detailed Timing Descriptor #3: Image size is 1196x336 mm, but based on the picture AR it should be 398x336 mm.
+  Detailed Timing Descriptor #4: Image size is 1196x336 mm, but based on the picture AR it should be 398x336 mm.
+  Detailed Timing Descriptor #5: Image size is 1196x336 mm, but based on the picture AR it should be 398x336 mm.
+  Detailed Timing Descriptor #6: Image size is 1196x336 mm, but based on the picture AR it should be 420x336 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 

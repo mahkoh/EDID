@@ -91,7 +91,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
@@ -133,73 +133,20 @@ Checksum: 0xd8  Unused space in Extension Block: 22 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 ae a4 60 01 01 01 01 '........0..`....'
-  0a 17 01 03 80 40 28 78 2e 1d f5 ae 4f 35 b3 25 '.....@(x....O5.%'
-  0d 50 54 a1 08 00 81 00 81 80 95 00 a9 c0 b3 00 '.PT.............'
-  d1 c0 81 c0 d1 00 e2 68 00 a0 a0 40 2e 60 30 20 '.......h...@.`0 '
-  36 00 81 91 21 00 00 1a 00 00 00 ff 00 56 31 30 '6...!........V10'
-  30 30 33 35 33 0a 20 20 20 20 00 00 00 fd 00 32 '00353.    .....2'
-  47 1e 64 1e 00 0a 20 20 20 20 20 20 00 00 00 fc 'G.d...      ....'
-  00 4c 45 4e 20 4c 54 33 30 35 33 70 77 41 01 4c '.LEN LT3053pwA.L'
-Checksum: 0x4c
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
-    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
-    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
-    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 1.0.0.0
-    DC_30bit
-  Detailed Timing Descriptors:
-    DTD 6:   640x1600   59.859883 Hz   2:5     99.248 kHz     85.750000 MHz (641 mm x 401 mm)
-                 Hfront   48 Hsync  64 Hback  112 Hpol P
-                 Vfront    3 Vsync  10 Vback   45 Vpol N
-    DTD 7:  1280x1600   59.915921 Hz   4:5     99.341 kHz    173.250000 MHz (641 mm x 401 mm)
-                 Hfront   96 Hsync 136 Hback  232 Hpol N
-                 Vfront    3 Vsync  10 Vback   45 Vpol P
-    DTD 8:  1360x768    60.015162 Hz  85:48    47.712 kHz     85.500000 MHz (641 mm x 401 mm)
-                 Hfront   64 Hsync 112 Hback  256 Hpol P
-                 Vfront    3 Vsync   6 Vback   18 Vpol P
-    DTD 9:  1920x1600   59.934372 Hz   6:5     99.371 kHz    260.750000 MHz (641 mm x 401 mm)
-                 Hfront  144 Hsync 208 Hback  352 Hpol N
-                 Vfront    3 Vsync  10 Vback   45 Vpol P
-Checksum: 0xd8  Unused space in Extension Block: 22 bytes
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
+  Detailed Timing Descriptor #2: Image size is 641x401 mm, but based on the picture AR it should be 160x401 mm.
+  Detailed Timing Descriptor #3: Image size is 641x401 mm, but based on the picture AR it should be 320x401 mm.
+  Detailed Timing Descriptor #4: Image size is 641x401 mm, but based on the picture AR it should be 641x361 mm.
+  Detailed Timing Descriptor #5: Image size is 641x401 mm, but based on the picture AR it should be 481x401 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-Block 3, CTA-861 Extension Block:
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.734 - 99.371 kHz (Monitor: 30.000 - 100.000 kHz)
 
 Failures:
 
@@ -207,29 +154,8 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 1.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 6.
-  Video Data Block: Duplicate VIC 7.
-  Video Data Block: Duplicate VIC 5.
-  Video Data Block: Duplicate VIC 17.
-  Video Data Block: Duplicate VIC 18.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 20.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.734 - 99.371 kHz (Monitor: 30.000 - 100.000 kHz)
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

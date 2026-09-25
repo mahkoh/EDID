@@ -38,7 +38,7 @@ Block 0, Base EDID:
     RGB color display
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6425, 0.3515
     Green: 0.2832, 0.6083
@@ -81,19 +81,6 @@ Checksum: 0x80
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1e d6 07 07 3d 36 bd 00 '............=6..'
-  30 0f 01 04 68 26 15 78 ef 8b c5 a4 5a 48 9b 25 '0...h&.x....ZH.%'
-  1a 50 54 bf ef 80 81 80 d1 c0 61 40 8b c0 95 00 '.PT.......a@....'
-  90 40 b3 00 a9 40 02 3a 80 18 71 38 2d 40 58 2c '.@...@.:..q8-@X,'
-  45 00 c4 8e 21 00 00 1e 00 00 00 fd 00 38 4b 1e 'E...!........8K.'
-  51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 56 'Q...      .....V'
-  47 41 20 20 47 35 36 78 0a 20 20 20 00 00 00 ff 'GA  G56x.   ....'
-  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 80 '..            ..'
-Checksum: 0x80
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -103,13 +90,11 @@ Block 0, Base EDID:
 Failures:
 
 Block 0, Base EDID:
+  Display Product Serial Number: ...
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #1: Mismatch of image size 708x398 mm vs display size 380x210 mm.
-  Display Product Serial Number: ...
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 708x398mm, which is larger than the display size 380.0x210.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

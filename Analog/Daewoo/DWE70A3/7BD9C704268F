@@ -63,13 +63,14 @@ Warnings:
 
 Block 0, Base EDID:
   EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 108.000 MHz (Monitor: 90.000 MHz)
 
 Failures:
 
 Block 0, Base EDID:
-  Alphanumeric Data String: Non-printable character.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Maximum Clock: 108.000 MHz (Monitor: 90.000 MHz)
+  Alphanumeric Data String: NUL byte at position 6.
 
 EDID conformity: FAIL

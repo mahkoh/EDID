@@ -67,19 +67,6 @@ Checksum: 0x88
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 10 ac 02 f0 4c 45 48 31 '............LEH1'
-  33 10 01 03 68 26 1f 78 ee ca f6 a3 57 47 9e 23 '3...h&.x....WG.#'
-  11 4f 54 a5 4b 71 4f 81 80 01 01 01 01 01 01 01 '.OT.KqO.........'
-  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
-  13 00 7c 31 11 00 00 1e 00 00 00 fd 00 38 4c 1e '..|1.........8L.'
-  51 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 50 'Q...      .....P'
-  52 30 39 39 36 43 4e 31 48 45 4c 0a 00 00 00 fc 'R0996CN1HEL.....'
-  00 44 45 4c 4c 20 53 45 31 39 37 46 50 0a 00 88 '.DELL SE197FP...'
-Checksum: 0x88
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -89,9 +76,7 @@ Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

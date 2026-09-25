@@ -61,7 +61,7 @@ Block 0, Base EDID:
     Display Product Serial Number: ...
     Display Product Name: 'Q24P2W1'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-75 Hz V, 30-114 kHz H, max dotclock 300 MHz
+      Monitor ranges (Range Limits Only): 48-75 Hz V, 30-114 kHz H, max dotclock 300 MHz
   Extension blocks: 1
 Checksum: 0xdd
 

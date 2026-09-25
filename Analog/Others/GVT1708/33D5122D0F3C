@@ -63,30 +63,19 @@ Checksum: 0x4d
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1e d4 08 17 aa 4b 7c 02 '.............K|.'
-  11 0e 01 03 68 22 1b 78 2a 0b 32 9c 5a 4d 8c 26 '....h".x*.2.ZM.&'
-  20 4e 57 a1 08 00 81 40 71 4f 81 80 01 01 01 01 ' NW....@qO......'
-  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
-  13 00 52 0e 11 00 00 1e 00 00 00 fc 00 4c 37 43 '..R..........L7C'
-  48 5f 54 41 0a 20 20 20 20 20 00 00 00 fe 00 4d 'H_TA.     .....M'
-  52 54 5f 4d 56 50 49 49 0a 20 20 20 00 00 00 fd 'RT_MVPII.   ....'
-  00 3c 3c 1f 40 0b 0a 20 20 20 20 20 20 20 00 4d '.<<.@..       .M'
-Checksum: 0x4d
+Warnings:
 
-----------------
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 75.000 Hz (Monitor: 60.000 - 60.000 Hz)
+    Horizontal Freq: 31.466 - 67.500 kHz (Monitor: 31.000 - 64.000 kHz)
 
 Failures:
 
 Block 0, Base EDID:
   Display Range Limits: Unknown range class (0x0a).
   Display Range Limits: Byte 11 is 0x20 instead of 0x0a.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 59.940 - 75.000 Hz (Monitor: 60.000 - 60.000 Hz)
-    Horizontal Freq: 31.466 - 67.500 kHz (Monitor: 31.000 - 64.000 kHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -36,7 +36,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6484, 0.3398
     Green: 0.3066, 0.6367
@@ -70,7 +70,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  60 Hback   12 Hpol P
                  Vfront   10 Vsync   2 Vback    8 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-240 Hz V, 255-255 kHz H, max dotclock 660 MHz
+      Monitor ranges (Range Limits Only): 48-240 Hz V, 255-255 kHz H, max dotclock 660 MHz
     Display Product Name: 'VG259QM'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -84,7 +84,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
@@ -146,7 +146,10 @@ Checksum: 0xe3  Unused space in Extension Block: 15 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
@@ -155,6 +158,5 @@ EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 50.000 - 279.857 Hz (Monitor: 48.000 - 240.000 Hz)
     Horizontal Freq: 31.250 - 307.843 kHz (Monitor: 255.000 - 255.000 kHz)
-  CTA-861: Multiple native progressive timings are defined.
 
 EDID conformity: PASS

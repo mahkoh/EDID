@@ -35,7 +35,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6474, 0.3320
     Green: 0.2236, 0.7207
@@ -71,7 +71,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback  100 Hpol P
                  Vfront    3 Vsync   5 Vback   33 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-144 Hz V, 75-225 kHz H, max dotclock 800 MHz
+      Monitor ranges (Range Limits Only): 48-144 Hz V, 75-225 kHz H, max dotclock 800 MHz
     Display Product Name: 'M27-QHD-165'
     Display Product Serial Number: ...
   Extension blocks: 1
@@ -85,7 +85,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
@@ -116,15 +116,21 @@ Block 1, CTA-861 Extension Block:
     BT2020RGB
     Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.23
+    Version: 2
+    Feature Caps: 0x17
+      Global Backlight Control Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xed (MCCS)
     Flags 2.x: 0x04
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      Gamma 2.2 EOTF Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 96 (400.000 cd/m^2)
     Minimum luminance: 16 (0.016 cd/m^2)
-    Maximum luminance (without local dimming): 92 (366.802 cd/m^2)
-    Minimum luminance (without local dimming): 17 (0.016 cd/m^2)
+    Maximum luminance (minimum backlight): 92 (366.802 cd/m^2)
+    Minimum luminance (minimum backlight): 17 (0.016 cd/m^2)
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -154,8 +160,13 @@ Checksum: 0x26  Unused space in Extension Block: 3 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #3: Image size is 597x336 mm, but based on the picture AR it should be 298x336 mm.
   Detailed Timing Descriptor #5: DTD is similar but not identical to VIC 97.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:

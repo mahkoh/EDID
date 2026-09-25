@@ -35,7 +35,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6533, 0.3291
     Green: 0.2978, 0.6054
@@ -56,19 +56,6 @@ Checksum: 0xab
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 e5 98 09 00 00 00 00 '................'
-  22 1e 01 04 b5 22 13 78 07 54 a5 a7 54 4c 9b 26 '"....".x.T..TL.&'
-  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 a9 9d 80 a0 70 38 60 40 30 20 '..........p8`@0 '
-  36 00 58 c2 10 00 00 1a fe 38 80 a0 70 38 59 40 '6.X......8..p8Y@'
-  30 20 36 00 58 c2 10 00 00 1a 00 00 00 fe 00 42 '0 6.X..........B'
-  4f 45 20 43 51 0a 20 20 20 20 20 20 00 00 00 fe 'OE CQ.      ....'
-  00 4e 56 31 35 36 46 48 4d 2d 4e 59 38 0a 00 ab '.NV156FHM-NY8...'
-Checksum: 0xab
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -79,9 +66,7 @@ Failures:
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

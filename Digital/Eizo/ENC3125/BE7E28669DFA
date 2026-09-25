@@ -59,36 +59,23 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync   6 Vback   26 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 23-61 Hz V, 26-89 kHz H, max dotclock 250 MHz
+      Monitor ranges (Range Limits Only): 23-61 Hz V, 26-89 kHz H, max dotclock 250 MHz
     Display Product Name: 'CS2731'
-Checksum: 0x44
-
-----------------
-
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 15 c3 25 31 e2 22 6f 03 '..........%1."o.'
-  1e 22 01 04 b5 3c 22 78 e2 5c b5 af 4f 35 b5 26 '."...<"x.\..O5.&'
-  0c 50 54 a1 08 00 a9 40 81 80 81 40 d1 c0 01 01 '.PT....@...@....'
-  01 01 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20 '......V^....)P0 '
-  35 00 55 50 21 00 00 1a 28 3c 80 a0 70 b0 23 40 '5.UP!...(<..p.#@'
-  30 20 36 00 55 50 21 00 00 1a 00 00 00 fd 00 17 '0 6.UP!.........'
-  3d 1a 59 19 01 0a 20 20 20 20 20 20 00 00 00 fc '=.Y...      ....'
-  00 43 53 32 37 33 31 0a 20 20 20 20 20 20 00 44 '.CS2731.      .D'
 Checksum: 0x44
 
 ----------------
 
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Image size is 597x336 mm, but based on the picture AR it should be 537x336 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 59.940 - 70.082 Hz (Monitor: 23.000 - 61.000 Hz)
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

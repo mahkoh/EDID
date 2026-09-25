@@ -71,26 +71,15 @@ Checksum: 0xac
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1a b3 52 08 36 13 08 00 '..........R.6...'
-  2a 1b 01 03 68 34 20 78 2a 4c a5 a7 55 4d a2 26 '*...h4 x*L..UM.&'
-  10 50 54 a5 4b 00 d1 00 b3 00 95 00 81 80 a9 c0 '.PT.K...........'
-  d1 c0 81 c0 01 01 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
-  36 00 06 44 21 00 00 1a 00 00 00 fd 00 30 4c 1e '6..D!........0L.'
-  52 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42 'R...      .....B'
-  32 34 57 2d 37 20 4c 45 44 0a 20 20 00 00 00 ff '24W-7 LED.  ....'
-  00 59 56 42 58 35 32 39 32 30 36 0a 20 20 00 ac '.YVBX529206.  ..'
-Checksum: 0xac
+Warnings:
 
-----------------
-
-Failures:
-
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+Failures:
+
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

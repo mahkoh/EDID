@@ -71,7 +71,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
@@ -149,8 +149,8 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency
     Supports 10b 12b 444: Not supported
-    Target Min PQ v2: 80 (0.00837904 cd/m^2)
-    Target Max PQ v2: 3030 (934 cd/m^2)
+    Target Min PQ v2: 80 (0.00827830 cd/m^2)
+    Target Max PQ v2: 3030 (896 cd/m^2)
     Unique Rx, Ry: 0.66015625, 0.31640625
     Unique Gx, Gy: 0.27343750, 0.62109375
     Unique Bx, By: 0.14843750, 0.05078125
@@ -169,12 +169,17 @@ Checksum: 0xe3  Unused space in Extension Block: 25 bytes
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 135.000 kHz)
+
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: The chromaticities match sRGB, but sRGB is not signaled.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 135.000 kHz)
 
 EDID conformity: FAIL

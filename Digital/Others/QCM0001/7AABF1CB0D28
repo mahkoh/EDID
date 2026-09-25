@@ -55,22 +55,10 @@ Checksum: 0x54
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 44 6d 01 00 01 00 00 00 '........Dm......'
-  1b 10 01 03 80 07 0f 78 0a 0d c9 a0 57 47 98 27 '.......x....WG.''
-  12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01 '.HL.............'
-  01 01 01 01 01 01 eb 3d 38 98 40 24 f0 90 1e 5c '.......=8.@$...\'
-  84 01 00 00 00 00 00 00 ee 3d 38 14 41 24 00 91 '.........=8.A$..'
-  5c 5c 84 05 00 00 00 00 00 00 eb 3d 38 14 41 24 '\\.........=8.A$'
-  16 97 5c 5c d4 09 00 00 00 00 00 00 00 00 00 fe '..\\............'
-  00 44 4d 32 5f 53 36 45 33 46 41 43 5f 41 00 54 '.DM2_S6E3FAC_A.T'
-Checksum: 0x54
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Basic Display Parameters & Features: Dubious maximum image size (7x15 is smaller than 10x10 cm).
 
 Failures:
@@ -81,9 +69,7 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #3: Mismatch of image size vs display size: image size is not set, but display size is.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

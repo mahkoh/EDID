@@ -79,33 +79,19 @@ Checksum: 0x81
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 2d 59 00 37 31 55 50 '........L-Y.71UP'
-  2e 0e 01 03 0f 20 18 6b 2f bb b9 a3 52 46 98 24 '..... .k/...RF.$'
-  0f 48 4c bd ef 00 31 40 31 59 45 59 61 59 81 99 '.HL...1@1YEYaY..'
-  a9 4f d1 40 e1 40 ea 24 00 60 41 00 28 30 30 60 '.O.@.@.$.`A.(00`'
-  13 00 38 ea 10 00 00 1e 00 00 00 fd 00 32 a0 1e '..8..........2..'
-  60 19 00 0a 20 20 20 20 20 20 00 00 00 fc 00 53 '`...      .....S'
-  79 6e 63 4d 61 73 74 65 72 0a 20 20 00 00 00 ff 'yncMaster.  ....'
-  00 48 53 41 58 42 30 30 39 30 33 0a 20 20 00 81 '.HSAXB00903.  ..'
-Checksum: 0x81
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Maximum Clock: 266.952 MHz (Monitor: 250.000 MHz)
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Maximum Clock: 266.952 MHz (Monitor: 250.000 MHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

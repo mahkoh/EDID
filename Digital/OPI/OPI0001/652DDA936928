@@ -87,51 +87,21 @@ Checksum: 0x90  Unused space in Extension Block: 78 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 3e 09 01 00 88 88 88 00 '........>.......'
-  01 22 01 04 a5 0a 0f 78 08 0d c9 a0 57 47 98 27 '.".....x....WG.''
-  12 48 4c 00 00 00 01 01 01 01 01 01 01 01 01 01 '.HL.............'
-  01 01 01 01 01 01 00 00 00 10 00 00 00 00 00 00 '................'
-  00 00 00 00 00 00 00 00 00 00 00 10 00 00 00 00 '................'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 fd 08 32 '...............2'
-  96 14 2d 46 00 0a 20 20 20 20 20 20 00 00 00 fc '..-F..      ....'
-  00 4f 72 61 6e 67 65 20 50 69 20 4e 65 6f 01 85 '.Orange Pi Neo..'
-Checksum: 0x85
-
-----------------
-
-Block 3, DisplayID Extension Block:
-  Version: 1.2
-  Extension Count: 0
-  Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  1200x1920  120.001576 Hz  16:9    274.924 kHz    395.890000 MHz (aspect 16:9, no 3D stereo, preferred)
-               Hfront  138 Hsync  30 Hback   72 Hpol P
-               Vfront  337 Vsync   4 Vback   30 Vpol P
-    DTD:  1200x1920   60.000788 Hz  16:9    274.924 kHz    395.890000 MHz (aspect 16:9, no 3D stereo, preferred)
-               Hfront  138 Hsync  30 Hback   72 Hpol P
-               Vfront 2628 Vsync   4 Vback   30 Vpol P
-  Checksum: 0xf1
-Checksum: 0x90  Unused space in Extension Block: 78 bytes
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Display Range Limits: GTF support is deprecated in EDID 1.4.
+EDID:
+  No Native Video Resolution was defined.
 
 Failures:
 
 Block 0, Base EDID:
   Standard Timings: Missing preferred timing.
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 Block 1, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 2, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

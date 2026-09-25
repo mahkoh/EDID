@@ -64,30 +64,21 @@ Checksum: 0x39
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 15 85 00 00 0f 00 00 00 '................'
-  1e 1b 01 03 08 34 1d 78 0a 01 c1 a0 57 47 98 27 '.....4.x....WG.''
-  12 4c 4c a1 08 00 31 40 45 40 61 40 01 01 01 01 '.LL...1@E@a@....'
-  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
-  33 00 40 84 63 00 00 1e 40 1f 00 80 51 00 1e 30 '3.@.c...@...Q..0'
-  40 80 37 00 40 84 63 00 00 1c 00 00 00 fd 00 39 '@.7.@.c........9'
-  3f 1e 31 09 00 0a 20 20 20 20 20 20 00 00 00 fc '?.1...      ....'
-  00 45 4c 45 46 57 32 34 38 0a 20 20 20 20 00 39 '.ELEFW248.    .9'
-Checksum: 0x39
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Image size is 1600x900 mm, but based on the picture AR it should be 1500x900 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.790 - 70.082 Hz (Monitor: 57.000 - 63.000 Hz)
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 1600x900 mm vs display size 520x290 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 1600x900 mm vs display size 520x290 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 59.790 - 70.082 Hz (Monitor: 57.000 - 63.000 Hz)
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 1600x900mm, which is larger than the display size 520.0x290.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

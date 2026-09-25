@@ -52,19 +52,6 @@ Checksum: 0xc0
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 e4 f8 05 00 00 00 00 '........0.......'
-  06 1c 01 04 a5 25 17 78 02 45 26 a3 54 4d 9b 28 '.....%.x.E&.TM.('
-  0d 4f 53 00 00 00 01 01 01 01 01 01 01 01 01 01 '.OS.............'
-  01 01 01 01 01 01 ec 68 00 a0 a0 40 2e 60 30 20 '.......h...@.`0 '
-  36 00 6e e5 10 00 00 19 00 00 00 00 00 00 00 00 '6.n.............'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 fe 00 4c '...............L'
-  47 20 44 69 73 70 6c 61 79 0a 20 20 00 00 00 fe 'G Display.  ....'
-  00 4c 50 31 37 30 57 51 31 2d 53 50 41 31 00 c0 '.LP170WQ1-SPA1..'
-Checksum: 0xc0
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -74,9 +61,7 @@ Failures:
 
 Block 0, Base EDID:
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

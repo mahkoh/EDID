@@ -65,9 +65,15 @@ Checksum: 0x0e
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Display Product Serial Number: ...
+
 Failures:
 
 Block 0, Base EDID:
+  Display Product Serial Number: ...
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
@@ -75,6 +81,5 @@ Block 0, Base EDID:
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
-  Display Product Serial Number: ...
 
 EDID conformity: FAIL

@@ -118,41 +118,6 @@ Checksum: 0x6a  Unused space in Extension Block: 32 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 38 a3 48 69 00 00 00 00 '........8.Hi....'
-  0b 1c 01 04 b5 3c 22 78 e2 ef 95 a3 54 35 b5 26 '.....<"x....T5.&'
-  0f 50 54 bf ef 80 81 c0 81 80 90 40 8b c0 95 00 '.PT........@....'
-  a9 c0 a9 40 d1 c0 56 5e 00 a0 a0 a0 29 50 30 20 '...@..V^....)P0 '
-  35 00 54 4f 21 00 00 1a 00 00 00 fd 00 32 55 1f '5.TO!........2U.'
-  a0 19 00 0a 20 20 20 20 20 20 00 00 00 fc 00 50 '....      .....P'
-  41 32 37 32 57 0a 20 20 20 20 20 20 00 00 00 ff 'A272W.      ....'
-  00 38 33 31 32 33 32 36 35 54 57 0a 20 20 01 2e '.83123265TW.  ..'
-Checksum: 0x2e
-
-----------------
-
-Block 3, Video Timing Extension Block:
-  Version: 1
-  Detailed Timing Descriptors:
-    DTD:  1280x1440   59.902281 Hz   8:9     88.715 kHz    127.750000 MHz (298 mm x 335 mm)
-               Hfront   48 Hsync  32 Hback   80 Hpol N
-               Vfront    3 Vsync  10 Vback   28 Vpol P
-    DTD:  1440x1280   59.913629 Hz   9:8     78.906 kHz    126.250000 MHz (335 mm x 298 mm)
-               Hfront   48 Hsync  32 Hback   80 Hpol N
-               Vfront    3 Vsync  10 Vback   24 Vpol P
-    DTD:  1920x1080   59.939394 Hz  16:9     67.432 kHz    148.350000 MHz (596 mm x 335 mm)
-               Hfront   88 Hsync  44 Hback  148 Hpol P
-               Vfront    4 Vsync   5 Vback   36 Vpol P
-    DTD:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz (596 mm x 335 mm)
-               Hfront  528 Hsync  44 Hback  148 Hpol P
-               Vfront    4 Vsync   5 Vback   36 Vpol P
-    DTD:  1920x1200   59.950171 Hz  16:10    74.038 kHz    154.000000 MHz (596 mm x 335 mm)
-               Hfront   48 Hsync  32 Hback   80 Hpol N
-               Vfront    3 Vsync   6 Vback   26 Vpol P
-Checksum: 0x6a  Unused space in Extension Block: 32 bytes
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -160,20 +125,15 @@ Block 0, Base EDID:
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 Block 1, Video Timing Extension Block:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x44.
-Block 3, Video Timing Extension Block:
-  Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x44.
+  Detailed Timing Descriptor #1: Image size is 596x335 mm, but based on the picture AR it should be 536x335 mm.
 
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 Block 1, Video Timing Extension Block:
   Detailed Timing Descriptor #1: Mismatch of image size 335x298 mm vs display size 600x340 mm.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, Video Timing Extension Block:
-  Detailed Timing Descriptor #1: Mismatch of image size 335x298 mm vs display size 600x340 mm.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

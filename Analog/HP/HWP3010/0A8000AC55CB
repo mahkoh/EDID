@@ -63,26 +63,16 @@ Checksum: 0xd1
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 22 f0 10 30 01 01 01 01 '........"..0....'
-  17 17 01 03 68 29 17 78 2e b8 b5 a0 58 55 9f 27 '....h).x....XU.''
-  0c 50 54 a1 08 00 81 c0 81 80 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
-  33 00 9a e6 10 00 00 1e 00 00 00 fd 00 32 4c 18 '3............2L.'
-  53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43 'S...      .....C'
-  6f 6d 70 61 71 20 57 31 39 35 32 61 00 00 00 ff 'ompaq W1952a....'
-  00 36 43 4d 33 32 33 34 35 36 52 0a 20 20 00 d1 '.6CM323456R.  ..'
-Checksum: 0xd1
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

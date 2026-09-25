@@ -77,19 +77,6 @@ Checksum: 0xbb
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 69 f6 27 66 08 00 00 '.........i.'f...'
-  0a 18 01 04 a5 3c 22 78 22 ee d5 a5 55 48 9b 26 '.....<"x"...UH.&'
-  12 50 54 bf ef 00 71 4f 81 c0 81 40 81 80 95 00 '.PT...qO...@....'
-  95 0f b3 00 d1 c0 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 56 50 21 00 00 1e 00 00 00 ff 00 45 33 4c 'E.VP!........E3L'
-  4d 54 46 30 30 32 31 35 30 0a 00 00 00 fd 00 32 'MTF002150......2'
-  55 18 5c 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'U.\...      ....'
-  00 41 53 55 53 20 56 45 32 37 38 0a 20 20 00 bb '.ASUS VE278.  ..'
-Checksum: 0xbb
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -98,10 +85,8 @@ Block 0, Base EDID:
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

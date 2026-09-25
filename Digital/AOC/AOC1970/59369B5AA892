@@ -61,4 +61,9 @@ Checksum: 0x39
 
 ----------------
 
+Warnings:
+
+EDID:
+  No Native Video Resolution was defined.
+
 EDID conformity: PASS

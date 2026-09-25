@@ -55,27 +55,17 @@ Checksum: 0x04
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 05 01 01 00 dc f0 33 01 '..............3.'
-  31 1c 01 03 81 15 0d 78 ae 00 00 00 00 00 00 00 '1......x........'
-  00 00 00 00 00 00 01 01 01 01 01 01 01 01 01 01 '................'
-  01 01 01 01 01 01 2c 1a 00 a0 50 20 26 30 3a 1e '......,...P &0:.'
-  16 04 d8 87 00 00 00 18 00 00 00 fd 00 2d 41 1e '.............-A.'
-  37 08 00 0a 20 20 20 20 20 20 00 00 00 ff 00 31 '7...      .....1'
-  0a 20 20 20 20 20 20 20 20 20 20 20 00 00 00 10 '.           ....'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 '................'
-Checksum: 0x04
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Display Product Serial Number: ...
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Missing Display Product Name.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -71,7 +71,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
     VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
@@ -134,8 +134,8 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
+    LS/RS - Left/Right Surround
     BL/BR - Back Left/Right
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.3.0.0
     Supports_AI
@@ -144,7 +144,7 @@ Block 1, CTA-861 Extension Block:
     DC_Y444
     Maximum TMDS clock: 300 MHz
     Extended HDMI video details:
-      Base EDID image size is aspect ratio
+      Base EDID image size indicates aspect ratio
       HDMI VICs:
         HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
         HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
@@ -171,13 +171,15 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency + Low-Latency-HDMI
     Supports 10b 12b 444: 10 bit
-    Target Min PQ v2: 160 (0.03516709 cd/m^2)
-    Target Max PQ v2: 2575 (332 cd/m^2)
+    Target Min PQ v2: 160 (0.03470167 cd/m^2)
+    Target Max PQ v2: 2575 (320 cd/m^2)
     Unique Rx, Ry: 0.62500000, 0.32812500
     Unique Gx, Gy: 0.29687500, 0.60937500
     Unique Bx, By: 0.15234375, 0.04296875
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
+    Full Frame Peak Luminance Index: 0
+    Peak Luminance Index: 0
   Vendor-Specific Audio Data Block (Dolby), OUI 00-D0-46:
     Version: 1 (7 bytes)
     Height speaker zone present
@@ -192,17 +194,17 @@ Checksum: 0xd3  Unused space in Extension Block: 14 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 93 and the first DTD are not identical. Is this intended?
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: 'Indicates Aspect Ratio' is used for a small display (<= 255 cm), it is better to fill in the actual size
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-EDID:
-  CTA-861: Native progressive resolution of 1920x1080 is smaller than the max preferred progressive resolution 3840x2160.
-
-Failures:
-
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 120.000 Hz (Monitor: 48.000 - 62.000 Hz)
     Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 15.000 - 70.000 kHz)
+  CTA-861: Native progressive resolution of 1920x1080 is smaller than the max preferred progressive resolution 3840x2160.
 
-EDID conformity: FAIL
+EDID conformity: PASS

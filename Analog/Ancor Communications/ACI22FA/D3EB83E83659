@@ -68,4 +68,9 @@ Checksum: 0xba
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+
 EDID conformity: PASS

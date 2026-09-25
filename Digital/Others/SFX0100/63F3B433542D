@@ -66,7 +66,7 @@ Block 0, Base EDID:
                  Hfront  110 Hsync  40 Hback  220 Hpol P
                  Vfront    5 Vsync   5 Vback   20 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-88 Hz V, 30-167 kHz H, max dotclock 230 MHz
+      Monitor ranges (Range Limits Only): 48-88 Hz V, 30-167 kHz H, max dotclock 230 MHz
     Display Product Name: 'HDMI2.0 KVM'
   Extension blocks: 1
 Checksum: 0xd4
@@ -79,7 +79,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 4
+  Native DTDs: 4
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -143,25 +143,33 @@ Checksum: 0xa5  Unused space in Extension Block: 11 bytes
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #6: Image size is 531x398 mm, but based on the picture AR it should be 531x354 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 75.029 Hz (Monitor: 48.000 - 88.000 Hz)
+    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 30.000 - 167.000 kHz)
+
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #1: Mismatch of image size 1872x1053 mm vs display size 590x330 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 708x398 mm vs display size 590x330 mm.
-  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
+  Display Range Limits: 'Range Limits Only' is not allowed for EDID < 1.4.
   Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
   Display Range Limits: Bytes 12-17 must be 0x20.
-  Display Product Name: Non-printable character.
+  Display Product Name: NUL byte at position 11.
 Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #3: Mismatch of image size 1872x1053 mm vs display size 590x330 mm.
   Detailed Timing Descriptor #4: Mismatch of image size 708x398 mm vs display size 590x330 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 708x398 mm vs display size 590x330 mm.
   Detailed Timing Descriptor #6: Mismatch of image size 531x398 mm vs display size 590x330 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 75.029 Hz (Monitor: 48.000 - 88.000 Hz)
-    Horizontal Freq: 15.625 - 79.976 kHz (Monitor: 30.000 - 167.000 kHz)
   Base EDID: The DTD max image size is 1872x1053mm, which is larger than the display size 590.0x330.0mm.
   CTA-861: Native progressive timings are a mix of several resolutions.
 

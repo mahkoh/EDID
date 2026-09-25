@@ -36,7 +36,7 @@ Block 0, Base EDID:
     DPMS levels: Standby Suspend Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6376, 0.3300
     Green: 0.3115, 0.6230
@@ -83,7 +83,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC 102:  4096x2160   60.000000 Hz 256:135  135.000 kHz    594.000000 MHz
     VIC 100:  4096x2160   30.000000 Hz 256:135   67.500 kHz    297.000000 MHz
@@ -138,10 +138,10 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
     BC - Back Center
     FLc/FRc - Front Left/Right of Center
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
+    BL/BR - Back Left/Right
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 2.0.0.0
     Supports_AI
@@ -179,6 +179,7 @@ Block 0, Base EDID:
   Standard Timings: Standard Timing 1368x769 has a dubious odd vertical resolution.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 Block 1, CTA-861 Extension Block:
+  Video Data Block: The first VIC 102 has width or height >= 4096, adding a VFPDB and NVRDB is strongly recommended.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -197,8 +198,9 @@ Block 1, CTA-861 Extension Block:
   Audio Data Block: Unknown Audio Ext Format 0x00.
   Audio Data Block: Bits F25 and F26 must be 0.
   Audio Data Block: Bits F25 and F26 must be 0.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: The HDMI Specification requires EDID 1.3 instead of 1.4.
-  HDMI VIC Codes must have their CTA-861 VIC equivalents in the VSB.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: The DTD max image size is 1032x432mm, but the display size is not specified anywhere.

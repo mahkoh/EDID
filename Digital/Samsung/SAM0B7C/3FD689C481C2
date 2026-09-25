@@ -81,7 +81,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -146,11 +146,16 @@ Warnings:
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Detailed Timing Descriptor #4: The use of non-zero borders in a DTD is not recommended.
+  Detailed Timing Descriptor #5: Image size is 4095x4095 mm, but based on the picture AR it should be 2047x4095 mm.
   Detailed Timing Descriptor #5: The use of non-zero borders in a DTD is not recommended.
+  Detailed Timing Descriptor #6: Image size is 4095x4095 mm, but based on the picture AR it should be 2047x4095 mm.
   Detailed Timing Descriptor #6: The use of non-zero borders in a DTD is not recommended.
+  Detailed Timing Descriptor #7: Image size is 4095x4095 mm, but based on the picture AR it should be 2047x4095 mm.
   Detailed Timing Descriptor #7: The use of non-zero borders in a DTD is not recommended.
 EDID:
-  CTA-861: Multiple native progressive timings are defined.
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 10.418 - 75.062 Hz (Monitor: 24.000 - 75.000 Hz)
+    Maximum Clock: 655.350 MHz (Monitor: 230.000 MHz)
 
 Failures:
 
@@ -163,9 +168,7 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #7: Mismatch of image size 4095x4095 mm vs display size 890x500 mm.
   Invalid checksum 0xff (should be 0x3a).
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 10.418 - 75.062 Hz (Monitor: 24.000 - 75.000 Hz)
-    Maximum Clock: 655.350 MHz (Monitor: 230.000 MHz)
   Base EDID: The DTD max image size is 4095x4095mm, which is larger than the display size 890.0x500.0mm.
+  CTA-861: The maximum HDMI TMDS clock is 225000 kHz, but one or more video timings go up to 655350 kHz.
 
 EDID conformity: FAIL

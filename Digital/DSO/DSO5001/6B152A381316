@@ -36,7 +36,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6816, 0.3154
     Green: 0.2402, 0.7158
@@ -57,23 +57,13 @@ Checksum: 0xdf
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 12 6f 01 50 01 00 00 00 '.........o.P....'
-  01 23 01 04 a5 09 10 78 17 b9 74 ae 50 3d b7 23 '.#.....x..t.P=.#'
-  0b 4f 51 00 00 00 01 01 01 01 01 01 01 01 01 01 '.OQ.............'
-  01 01 01 01 01 01 66 39 38 a0 40 80 37 70 30 20 '......f98.@.7p0 '
-  3a 00 5a a0 00 00 00 1e 00 00 00 fc 00 44 65 63 ':.Z..........Dec'
-  6b 53 69 67 68 74 0a 20 20 20 00 00 00 00 00 00 'kSight.   ......'
-  00 00 00 00 00 00 00 00 00 00 00 00 44 4d 38 a0 '............DM8.'
-  40 80 4a 70 30 20 3a 00 5a a0 00 00 00 1e 00 df '@.Jp0 :.Z.......'
-Checksum: 0xdf
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Basic Display Parameters & Features: Dubious maximum image size (9x16 is smaller than 10x10 cm).
+  Detailed Timing Descriptor #1: Dubious image size (90x160 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (90x160 mm is smaller than 100x100 mm).
 
 Failures:
 
@@ -82,9 +72,7 @@ Block 0, Base EDID:
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
   Detailed Timing Descriptor #2: Invalid detailed timing descriptor ordering.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

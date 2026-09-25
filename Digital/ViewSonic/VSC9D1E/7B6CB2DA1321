@@ -75,21 +75,10 @@ Checksum: 0x04
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5a 63 1e 9d 01 01 01 01 '........Zc......'
-  32 10 01 03 80 29 1a 78 2e d7 a5 a2 59 4a 96 24 '2....).x....YJ.$'
-  14 50 54 bf ef 80 95 00 95 0f 81 80 81 40 71 4f '.PT..........@qO'
-  31 0a 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '1......)..Q."0P.'
-  36 00 9a 00 11 00 00 1c 00 00 00 ff 00 51 43 34 '6............QC4'
-  30 36 35 30 30 36 35 38 38 0a 00 00 00 fd 00 32 '065006588......2'
-  4b 1e 52 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.R...      ....'
-  00 56 47 31 39 33 30 77 6d 0a 20 20 20 20 00 04 '.VG1930wm.    ..'
-Checksum: 0x04
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 29.190 - 79.976 kHz (Monitor: 30.000 - 82.000 kHz)
@@ -99,9 +88,7 @@ Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

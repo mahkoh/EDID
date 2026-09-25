@@ -65,24 +65,9 @@ Checksum: 0x8e
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 52 62 00 02 00 00 00 00 '........Rb......'
-  10 14 01 03 08 29 17 ff 2a 78 45 a2 59 55 9b 25 '.....)..*xE.YU.%'
-  0f 50 54 21 08 00 81 80 81 00 95 00 b3 00 d1 c0 '.PT!............'
-  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 9a e6 10 00 00 3e 66 21 50 b0 51 00 1b 30 'E......>f!P.Q..0'
-  40 70 36 00 9a e6 10 00 00 1e 00 00 00 fc 00 54 '@p6............T'
-  4f 53 48 49 42 41 2d 54 56 0a 20 20 00 00 00 fd 'OSHIBA-TV.  ....'
-  00 3c 4b 1f 44 0f 00 0a 20 20 20 20 20 20 00 8e '.<K.D...      ..'
-Checksum: 0x8e
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

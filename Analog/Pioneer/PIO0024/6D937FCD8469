@@ -74,21 +74,10 @@ Checksum: 0x03
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 41 2f 24 00 01 01 01 01 '........A/$.....'
-  00 0e 01 03 08 00 00 78 ea 1b be a2 55 34 b3 26 '.......x....U4.&'
-  14 4a 52 bf ee 00 31 59 45 59 61 59 01 01 01 01 '.JR...1YEYaY....'
-  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
-  36 00 00 00 00 00 00 18 0e 1f 00 80 51 00 1e 30 '6...........Q..0'
-  40 80 37 00 00 00 00 00 00 1c 00 00 00 fd 00 37 '@.7............7'
-  56 18 46 09 00 0a 20 20 20 20 20 20 00 00 00 fc 'V.F...      ....'
-  00 50 44 50 2d 52 30 34 0a 20 20 20 20 20 00 03 '.PDP-R04.     ..'
-Checksum: 0x03
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 94.500 MHz (Monitor: 90.000 MHz)
@@ -96,9 +85,7 @@ EDID:
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -52,22 +52,10 @@ Checksum: 0x9a
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 62 9b 04 00 00 00 00 '.........b......'
-  14 15 01 03 80 3c 22 78 2a 2e 2d a7 55 4d 9e 26 '.....<"x*.-.UM.&'
-  0c 4e 53 00 00 00 00 44 00 04 00 44 00 84 00 04 '.NS....D...D....'
-  00 04 00 c4 00 c4 56 5e 00 a0 a0 a0 29 50 30 20 '......V^....)P0 '
-  35 00 55 50 21 00 00 1a 00 00 00 fd 00 38 3d 1e '5.UP!........8=.'
-  5b 19 00 0a 20 20 20 20 20 20 00 00 00 fc 00 51 '[...      .....Q'
-  48 44 32 37 30 0a 20 20 20 20 20 20 00 00 00 ff 'HD270.      ....'
-  00 0a 20 20 20 20 20 20 20 20 20 20 20 20 00 9a '..            ..'
-Checksum: 0x9a
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
+  Display Product Serial Number: ...
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0044.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0004.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0044.
@@ -76,10 +64,7 @@ Block 0, Base EDID:
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0004.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x00c4.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x00c4.
-  Display Product Serial Number: ...
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

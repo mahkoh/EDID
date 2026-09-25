@@ -71,35 +71,21 @@ Checksum: 0x56
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 11 38 00 00 bd 19 00 00 '.........8......'
-  21 10 01 03 7e 1e 17 82 eb ab c5 a0 5b 4b 96 24 '!...~.......[K.$'
-  18 50 54 b7 ee 00 3b ca 31 ca 01 01 01 01 01 01 '.PT...;.1.......'
-  01 01 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '......d..@A.&0..'
-  36 00 30 e4 10 00 00 1e 00 00 00 ff 00 30 30 36 '6.0..........006'
-  35 38 39 0a 20 20 20 20 20 20 00 00 00 fd 00 37 '589.      .....7'
-  4b 1e 3c 08 20 20 20 20 20 20 20 20 00 00 00 fc 'K.<.        ....'
-  00 46 31 35 39 42 0a 20 20 20 20 20 20 20 00 56 '.F159B.       .V'
-Checksum: 0x56
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Standard Timings: Standard Timing 720x405 has a dubious odd vertical resolution.
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x10.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 26.250 - 60.022 kHz (Monitor: 30.000 - 60.000 kHz)
 
 Failures:
 
 Block 0, Base EDID:
   Display Range Limits: Unknown range class (0x20).
   Display Range Limits: Byte 11 is 0x20 instead of 0x0a.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 26.250 - 60.022 kHz (Monitor: 30.000 - 60.000 kHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -82,7 +82,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
@@ -129,11 +129,18 @@ Block 1, CTA-861 Extension Block:
     Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
     Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.15
+    Version: 2
+    Feature Caps: 0x0f
+      Global Backlight Control Supported
+      Local Dimming Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 100 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x04
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      Gamma 2.2 EOTF Supported
+      BT.2020 Gamut Supported
     Maximum luminance: 115 (603.666 cd/m^2)
     Minimum luminance: 23 (0.049 cd/m^2)
     Maximum luminance (without local dimming): 90 (351.250 cd/m^2)
@@ -164,19 +171,22 @@ Checksum: 0xaf  Unused space in Extension Block: 12 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-
-Failures:
-
-Block 0, Base EDID:
-  Vendor & Product Identification: The year 2038 is more than one year in the future.
-Block 1, CTA-861 Extension Block:
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 120.000 Hz (Monitor: 48.000 - 100.000 Hz)
     Horizontal Freq: 27.000 - 150.919 kHz (Monitor: 30.000 - 160.000 kHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The year is more than one year in the future.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+EDID:
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

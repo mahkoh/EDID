@@ -37,7 +37,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6250, 0.3398
     Green: 0.2851, 0.6054
@@ -51,21 +51,8 @@ Block 0, Base EDID:
                  Vfront   13 Vsync   3 Vback    4 Vpol N
     Display Product Name: 'JDI_8.9_LCD'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 60-61 Hz V, 97-98 kHz H, max dotclock 280 MHz
+      Monitor ranges (Range Limits Only): 60-61 Hz V, 97-98 kHz H, max dotclock 280 MHz
     Dummy Descriptor:
-Checksum: 0xd6
-
-----------------
-
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 36 7f 03 00 03 00 00 00 '........6.......'
-  00 0c 01 04 90 13 0c ff 2f 00 00 a0 57 49 9b 26 '......../...WI.&'
-  10 48 4f 00 00 00 01 01 01 01 01 01 01 01 01 01 '.HO.............'
-  01 01 01 01 01 01 03 6a 00 e8 a0 40 14 60 78 20 '.......j...@.`x '
-  d3 00 c0 78 00 00 00 1a 00 00 00 fc 00 4a 44 49 '...x.........JDI'
-  5f 38 2e 39 5f 4c 43 44 00 00 00 00 00 fd 00 3c '_8.9_LCD.......<'
-  3d 61 62 1c 01 00 00 00 00 00 00 00 00 00 00 10 '=ab.............'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 d6 '................'
 Checksum: 0xd6
 
 ----------------
@@ -80,12 +67,10 @@ Failures:
 Block 0, Base EDID:
   Vendor & Product Identification: Manufacturer name field contains garbage.
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Product Name: Non-printable character.
+  Display Product Name: NUL byte at position 11.
   Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
   Display Range Limits: Bytes 12-17 must be 0x20.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

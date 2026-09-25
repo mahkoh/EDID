@@ -68,5 +68,6 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
+  Detailed Timing Descriptor #2: Image size is 531x299 mm, but based on the picture AR it should be 478x299 mm.
 
 EDID conformity: PASS

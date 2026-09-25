@@ -58,15 +58,20 @@ Checksum: 0xa4
 
 ----------------
 
+Warnings:
+
+EDID:
+  Base EDID: Multiple Display Product Serial Numbers are specified, is that intended?
+
 Failures:
 
 Block 0, Base EDID:
+  Display Product Serial Number: ...
+  Display Product Serial Number: ...
+  Display Product Serial Number: ...
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #1: Mismatch of image size 344x194 mm vs display size 410x230 mm.
-  Display Product Name: One or more trailing spaces.
-  Display Product Serial Number: ...
-  Display Product Serial Number: ...
-  Display Product Serial Number: ...
+  Display Product Name: No newline, but one or more trailing spaces.
   Missing Display Range Limits Descriptor.
 
 EDID conformity: FAIL

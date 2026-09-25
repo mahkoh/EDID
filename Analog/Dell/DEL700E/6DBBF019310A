@@ -66,27 +66,12 @@ Checksum: 0x90
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 10 ac 0e 70 00 00 00 00 '...........p....'
-  2e 0e 01 03 68 26 1e 78 2e c6 65 a2 59 4c 9d 24 '....h&.x..e.YL.$'
-  12 50 54 a5 4b 00 71 4f 81 80 01 01 01 01 01 01 '.PT.K.qO........'
-  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
-  13 00 52 0e 11 00 00 1e 00 00 00 ff 00 48 36 36 '..R..........H66'
-  35 30 34 42 44 4c 31 5a 59 0a 00 00 00 fc 00 44 '504BDL1ZY......D'
-  65 6c 6c 20 45 31 39 33 46 50 0a 20 00 00 00 fd 'ell E193FP. ....'
-  00 38 4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 90 '.8L.S...      ..'
-Checksum: 0x90
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #1: Mismatch of image size 338x270 mm vs display size 380x300 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

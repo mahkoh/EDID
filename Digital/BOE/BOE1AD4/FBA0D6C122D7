@@ -52,19 +52,6 @@ Checksum: 0xc5
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 e5 d4 1a 00 00 00 00 '................'
-  0f 21 01 04 a5 22 15 78 02 6b 35 a5 56 50 9c 26 '.!...".x.k5.VP.&'
-  0d 50 53 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PS.............'
-  01 01 01 01 01 01 ad 68 00 a0 a0 40 2a 60 30 20 '.......h...@*`0 '
-  36 00 59 d7 10 00 00 1a 00 00 00 00 00 00 00 00 '6.Y.............'
-  00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 42 '...............B'
-  4f 45 20 48 46 0a 20 20 20 20 20 20 00 00 00 fe 'OE HF.      ....'
-  00 4e 56 31 36 30 51 44 4d 2d 4e 36 32 0a 00 c5 '.NV160QDM-N62...'
-Checksum: 0xc5
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -72,9 +59,7 @@ Block 0, Base EDID:
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

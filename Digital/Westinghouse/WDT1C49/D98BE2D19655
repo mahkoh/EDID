@@ -63,22 +63,10 @@ Checksum: 0xed
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5c 94 49 1c 01 01 01 01 '........\.I.....'
-  33 16 01 04 a5 59 32 78 02 01 c1 a0 57 47 98 27 '3....Y2x....WG.''
-  12 4c 4c a1 08 00 31 40 45 40 61 40 81 80 a9 40 '.LL...1@E@a@...@'
-  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  46 00 40 84 63 00 00 1e 00 00 00 ff 00 37 32 34 'F.@.c........724'
-  31 56 32 35 31 30 30 37 36 30 00 00 00 fd 00 39 '1V25100760.....9'
-  4e 1e 50 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 'N.P...      ....'
-  00 43 57 34 30 54 32 52 57 0a 20 20 20 20 00 ed '.CW40T2RW.    ..'
-Checksum: 0xed
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 EDID:
@@ -89,11 +77,9 @@ Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 1600x900 mm vs display size 890x500 mm.
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 1600x900mm, which is larger than the display size 890.0x500.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

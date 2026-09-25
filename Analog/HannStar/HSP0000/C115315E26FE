@@ -78,26 +78,11 @@ Checksum: 0x7a
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 22 70 00 00 00 00 00 00 '........"p......'
-  17 20 01 03 08 30 1a 78 ea 5b 35 aa 53 46 97 23 '. ...0.x.[5.SF.#'
-  1f 4b 59 bf ef 80 d1 c0 b3 00 a9 40 a9 c0 90 40 '.KY........@...@'
-  81 40 81 00 81 c0 1a 36 80 a0 70 38 1f 40 30 20 '.@.....6..p8.@0 '
-  25 00 df 04 11 00 00 1a 00 00 00 ff 00 0a 20 20 '%.............  '
-  20 20 20 20 20 20 20 20 20 20 00 00 00 fd 00 38 '          .....8'
-  4b 1e 53 13 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 48 53 47 31 34 36 30 0a 20 20 20 20 20 00 7a '.HSG1460.     .z'
-Checksum: 0x7a
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Display Product Serial Number: ...
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

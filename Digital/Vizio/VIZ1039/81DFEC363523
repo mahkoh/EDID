@@ -71,7 +71,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
     VIC 100:  4096x2160   30.000000 Hz 256:135   67.500 kHz    297.000000 MHz
@@ -184,31 +184,37 @@ Block 1, CTA-861 Extension Block:
     Backlt Min Luma: 100 cd/m^2
     Interface: Standard + Low-Latency
     Supports 10b 12b 444: Not supported
-    Target Min PQ v2: 140 (0.02637791 cd/m^2)
-    Target Max PQ v2: 2445 (245 cd/m^2)
+    Target Min PQ v2: 140 (0.02603604 cd/m^2)
+    Target Max PQ v2: 2445 (237 cd/m^2)
     Unique Rx, Ry: 0.63281250, 0.32812500
     Unique Gx, Gy: 0.31640625, 0.60937500
     Unique Bx, By: 0.15234375, 0.03906250
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
     Application Version: 1
+    Full Frame Peak Luminance Index: 0
+    Peak Luminance Index: 0
 Checksum: 0x83  Unused space in Extension Block: 4 bytes
 
 ----------------
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 120.000 Hz (Monitor: 23.000 - 76.000 Hz)
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 941x529 mm vs display size 1270x720 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 941x529 mm vs display size 1270x720 mm.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 120.000 Hz (Monitor: 23.000 - 76.000 Hz)
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
 
 EDID conformity: FAIL

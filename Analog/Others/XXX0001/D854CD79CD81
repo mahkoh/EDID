@@ -69,24 +69,14 @@ Checksum: 0x52
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 63 18 01 00 01 00 00 00 '........c.......'
-  32 22 01 03 68 29 17 78 ea d6 a5 a2 59 4a 95 24 '2"..h).x....YJ.$'
-  14 50 54 a9 08 00 81 00 81 40 81 80 81 c0 71 40 '.PT......@....q@'
-  01 01 45 40 01 01 66 21 56 aa 51 00 1e 30 46 8f '..E@..f!V.Q..0F.'
-  33 00 9a e6 10 00 00 1e e6 29 56 aa 51 00 1e 30 '3........)V.Q..0'
-  46 8f 33 00 9a e6 10 00 00 1e 00 00 00 fd 00 1e 'F.3.............'
-  4c 1e 96 0c 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.....      ....'
-  00 56 47 41 0a 20 20 20 20 20 20 20 20 20 00 52 '.VGA.         .R'
-Checksum: 0x52
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

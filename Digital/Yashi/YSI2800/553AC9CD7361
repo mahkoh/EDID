@@ -84,7 +84,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 2
+  Native DTDs: 2
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -123,7 +123,8 @@ Block 1, CTA-861 Extension Block:
     Maximum TMDS Character Rate: 600 MHz
     SCDC Present
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -149,6 +150,7 @@ Checksum: 0xec  Unused space in Extension Block: 13 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
   Unknown CTA-861 Data Block (tag 0x00, length 0).
   Unknown CTA-861 Data Block (tag 0x00, length 0).
@@ -157,6 +159,10 @@ Block 1, CTA-861 Extension Block:
   Unknown CTA-861 Data Block (tag 0x00, length 0).
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 95.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 25.000 - 75.062 Hz (Monitor: 56.000 - 75.000 Hz)
+    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 135.000 kHz)
 
 Failures:
 
@@ -165,9 +171,6 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #4: Mismatch of image size 632x360 mm vs display size 620x350 mm.
   Detailed Timing Descriptor #5: Mismatch of image size 632x360 mm vs display size 620x350 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 25.000 - 75.062 Hz (Monitor: 56.000 - 75.000 Hz)
-    Horizontal Freq: 15.625 - 135.000 kHz (Monitor: 30.000 - 135.000 kHz)
   Base EDID: The DTD max image size is 632x360mm, which is larger than the display size 620.0x350.0mm.
   CTA-861: Native progressive timings are a mix of several resolutions.
 

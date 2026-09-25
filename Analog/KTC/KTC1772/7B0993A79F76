@@ -71,26 +71,15 @@ Checksum: 0xc5
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 2e 83 72 17 ab 00 00 00 '..........r.....'
-  0f 13 01 03 68 29 1a 78 ea f0 65 98 57 51 91 27 '....h).x..e.WQ.''
-  21 50 54 ad ce 00 95 00 81 80 71 4f 01 01 01 01 '!PT.......qO....'
-  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
-  36 00 9a 00 11 00 00 1c 0e 1f 00 80 51 00 1e 30 '6...........Q..0'
-  40 80 37 00 9a 00 11 00 00 1c 00 00 00 fd 00 38 '@.7............8'
-  4b 1f 44 09 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.D...      ....'
-  00 57 37 30 30 36 53 0a 20 20 20 20 20 20 00 c5 '.W7006S.      ..'
-Checksum: 0xc5
+Warnings:
 
-----------------
-
-Failures:
-
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 108.000 MHz (Monitor: 90.000 MHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+Failures:
+
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

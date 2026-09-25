@@ -49,7 +49,7 @@ Failures:
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: 0 or negative horizontal back porch.
   Detailed Timing Descriptor #2: 0 or negative horizontal back porch.
-  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: One or more trailing spaces before newline.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 

@@ -79,31 +79,17 @@ Checksum: 0x1b
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 26 cd 0f 66 01 01 01 01 '........&..f....'
-  02 1b 01 04 68 3c 22 78 2a 2f a5 a5 54 50 9e 27 '....h<"x*/..TP.''
-  10 50 54 bf ef 80 b3 00 a9 40 95 00 81 40 81 80 '.PT......@...@..'
-  95 0f 71 4f d1 c0 02 3a 80 18 71 38 2d 40 58 2c '..qO...:..q8-@X,'
-  45 00 56 50 21 00 00 1e 00 00 00 ff 00 31 31 34 'E.VP!........114'
-  31 31 37 30 32 30 30 30 32 33 00 00 00 fd 00 37 '1170200023.....7'
-  4c 1e 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
-  00 50 4c 32 37 33 35 4d 0a 20 20 20 20 20 00 1b '.PL2735M.     ..'
-Checksum: 0x1b
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

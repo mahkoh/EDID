@@ -69,24 +69,9 @@ Checksum: 0xd3
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 08 59 19 cd fa 50 01 00 '.........Y...P..'
-  2b 11 01 03 68 29 1a 78 2a 8e 60 a5 55 44 99 24 '+...h).x*.`.UD.$'
-  12 49 4b af ce 00 01 01 01 01 01 01 01 01 01 01 '.IK.............'
-  01 01 01 01 01 01 ab 22 a0 a0 50 84 1a 30 30 20 '......."..P..00 '
-  36 00 9a 00 11 00 00 1a 9a 29 a0 d0 51 84 22 30 '6........)..Q."0'
-  50 98 36 00 9a 00 11 00 00 1c 00 00 00 fd 00 38 'P.6............8'
-  4c 1f 3d 0b 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.=...      ....'
-  00 4e 53 2d 4c 43 44 31 39 0a 20 20 20 20 00 d3 '.NS-LCD19.    ..'
-Checksum: 0xd3
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

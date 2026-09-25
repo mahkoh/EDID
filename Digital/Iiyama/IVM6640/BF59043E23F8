@@ -101,7 +101,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -177,118 +177,27 @@ Checksum: 0xf7  Unused space in Extension Block: 5 bytes
 
 ----------------
 
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 26 cd 40 66 01 01 01 01 '........&.@f....'
-  33 1b 01 03 80 3c 21 78 2a d7 f5 ad 51 43 b1 26 '3....<!x*...QC.&'
-  0d 50 54 bf ef 80 e1 c0 d1 00 d1 c0 b3 00 a9 40 '.PT............@'
-  a9 c0 81 80 81 00 08 e8 00 30 f2 70 5a 80 b0 58 '.........0.pZ..X'
-  8a 00 53 4f 21 00 00 1e 00 00 00 ff 00 31 31 35 '..SO!........115'
-  35 32 37 35 31 30 30 30 37 31 00 00 00 fd 00 17 '5275100071......'
-  4c 0f 8a 3c 00 0a 20 20 20 20 20 20 00 00 00 fc 'L..<..      ....'
-  00 50 4c 32 37 37 39 51 51 0a 20 20 20 20 01 4d '.PL2779QQ.    .M'
-Checksum: 0x4d
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 0
-  Video Data Block:
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
-    VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  19:  1280x720    50.000000 Hz  16:9     37.500 kHz     74.250000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC  18:   720x576    50.000000 Hz  16:9     31.250 kHz     27.000000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC  17:   720x576    50.000000 Hz   4:3     31.250 kHz     27.000000 MHz
-    VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
-    VIC  20:  1920x1080i  50.000000 Hz  16:9     28.125 kHz     74.250000 MHz
-    VIC   7:  1440x480i   59.940060 Hz  16:9     15.734 kHz     27.000000 MHz
-    VIC  22:  1440x576i   50.000000 Hz  16:9     15.625 kHz     27.000000 MHz
-    VIC   6:  1440x480i   59.940060 Hz   4:3     15.734 kHz     27.000000 MHz
-    VIC  21:  1440x576i   50.000000 Hz   4:3     15.625 kHz     27.000000 MHz
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
-    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
-    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
-    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 192 176.4 96 88.2 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
-    Source physical address: 2.0.0.0
-    DC_36bit
-    DC_30bit
-    DC_Y444
-    Maximum TMDS clock: 600 MHz
-    Extended HDMI video details:
-      HDMI VICs:
-        HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
-        HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
-        HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8:
-    Version: 1
-    Maximum TMDS Character Rate: 600 MHz
-    SCDC Present
-    SCDC Read Request Capable
-    Supports 12-bits/component Deep Color 4:2:0 Pixel Encoding
-    Supports 10-bits/component Deep Color 4:2:0 Pixel Encoding
-  Video Capability Data Block:
-    YCbCr quantization: Selectable (via AVI YQ)
-    RGB quantization: Selectable (via AVI Q)
-    PT scan behavior: Always Underscanned
-    IT scan behavior: IT video formats not supported
-    CE scan behavior: Always Overscanned
-  YCbCr 4:2:0 Capability Map Data Block:
-    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
-    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
-    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
-    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
-  YCbCr 4:2:0 Video Data Block:
-    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
-    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
-    VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
-    VIC  93:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
-  Detailed Timing Descriptors:
-    DTD 5:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz (595 mm x 335 mm)
-                 Hfront  176 Hsync  88 Hback  296 Hpol P
-                 Vfront    8 Vsync  10 Vback   72 Vpol P
-    DTD 6:  1920x2160   60.000000 Hz   8:9    135.000 kHz    297.000000 MHz (595 mm x 335 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    8 Vsync  10 Vback   72 Vpol P
-    DTD 7:  2560x2880   59.981580 Hz   8:9    177.665 kHz    483.250000 MHz (595 mm x 335 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync  10 Vback   69 Vpol N
-Checksum: 0xf7  Unused space in Extension Block: 5 bytes
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
-  Video Data Block: VIC 16 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
+  Detailed Timing Descriptor #3: Image size is 595x335 mm, but based on the picture AR it should be 297x335 mm.
+  Detailed Timing Descriptor #4: Image size is 595x335 mm, but based on the picture AR it should be 297x335 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
   Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
-Block 3, CTA-861 Extension Block:
-  Video Capability Data Block: IT scan behavior is expected to support underscanned.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-  Add a Colorimetry Data Block with the sRGB colorimetry bit set to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 15.625 - 177.665 kHz (Monitor: 15.000 - 138.000 kHz)
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
   YCbCr 4:2:0 Capability Map Data Block: VIC 97 is also a YCbCr 4:2:0-only VIC.
   YCbCr 4:2:0 Capability Map Data Block: VIC 95 is also a YCbCr 4:2:0-only VIC.
   YCbCr 4:2:0 Capability Map Data Block: VIC 94 is also a YCbCr 4:2:0-only VIC.
@@ -296,50 +205,8 @@ Block 1, CTA-861 Extension Block:
   YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 97 is also a regular VIC.
   YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 95 is also a regular VIC.
   YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 94 is also a regular VIC.
-  YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 93 is also a regular VIC.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 31.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 19.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 18.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 17.
-  Video Data Block: Duplicate VIC 5.
-  Video Data Block: Duplicate VIC 20.
-  Video Data Block: Duplicate VIC 7.
-  Video Data Block: Duplicate VIC 22.
-  Video Data Block: Duplicate VIC 6.
-  Video Data Block: Duplicate VIC 21.
-  Video Data Block: Duplicate VIC 1.
-  Video Data Block: Duplicate VIC 97.
-  Video Data Block: Duplicate VIC 95.
-  Video Data Block: Duplicate VIC 94.
-  Video Data Block: Duplicate VIC 93.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: HDMI VSDB Max TMDS rate is > 340.
-  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: Duplicate HDMI Forum VSDB/SCDB.
-  Video Capability Data Block: Only one instance of this Data Block is allowed.
-  YCbCr 4:2:0 Capability Map Data Block: Only one instance of this Data Block is allowed.
-  YCbCr 4:2:0 Capability Map Data Block: VIC 97 is also a YCbCr 4:2:0-only VIC.
-  YCbCr 4:2:0 Capability Map Data Block: VIC 95 is also a YCbCr 4:2:0-only VIC.
-  YCbCr 4:2:0 Capability Map Data Block: VIC 94 is also a YCbCr 4:2:0-only VIC.
-  YCbCr 4:2:0 Capability Map Data Block: VIC 93 is also a YCbCr 4:2:0-only VIC.
-  YCbCr 4:2:0 Video Data Block: Duplicate YCbCr 4:2:0 VIC 97.
-  YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 97 is also a regular VIC.
-  YCbCr 4:2:0 Video Data Block: Duplicate YCbCr 4:2:0 VIC 95.
-  YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 95 is also a regular VIC.
-  YCbCr 4:2:0 Video Data Block: Duplicate YCbCr 4:2:0 VIC 94.
-  YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 94 is also a regular VIC.
-  YCbCr 4:2:0 Video Data Block: Duplicate YCbCr 4:2:0 VIC 93.
   YCbCr 4:2:0 Video Data Block: YCbCr 4:2:0-only VIC 93 is also a regular VIC.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 15.625 - 177.665 kHz (Monitor: 15.000 - 138.000 kHz)
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  Base EDID: EDID 1.3 requires a Block Map Extension in Block 1 if there are more than 2 blocks in the EDID.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

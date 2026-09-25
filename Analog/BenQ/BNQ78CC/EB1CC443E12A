@@ -68,34 +68,20 @@ Checksum: 0xa9
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 d1 cc 78 45 54 00 00 '...........xET..'
-  18 17 01 03 0e 2b 18 78 2e 28 80 a4 56 50 a1 28 '.....+.x.(..VP.('
-  0f 50 54 a5 6a 80 81 00 81 c0 01 01 01 01 01 01 '.PT.j...........'
-  01 01 01 01 01 01 30 2a 40 c8 60 84 64 30 18 50 '......0*@.`.d0.P'
-  13 00 bb f9 10 00 00 1a 00 00 00 ff 00 4d 36 44 '.............M6D'
-  30 34 34 36 36 53 4c 30 0a 0a 00 00 00 fd 00 32 '04466SL0.......2'
-  4c 1e 53 15 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
-  00 42 65 6e 51 20 47 4c 32 30 32 33 0a 20 00 a9 '.BenQ GL2023. ..'
-Checksum: 0xa9
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x53.
 
 Failures:
 
 Block 0, Base EDID:
+  Display Product Serial Number: ...
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Detailed Timing Descriptor #1: Mismatch of image size 443x249 mm vs display size 430x240 mm.
-  Display Product Serial Number: ...
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 443x249mm, which is larger than the display size 430.0x240.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

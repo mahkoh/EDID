@@ -90,7 +90,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6767, 0.3173
     Green: 0.2812, 0.6562
@@ -113,7 +113,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync  10 Vback   28 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-180 Hz V, 430-430 kHz H, max dotclock 2350 MHz
+      Monitor ranges (Range Limits Only): 48-180 Hz V, 430-430 kHz H, max dotclock 2350 MHz
     Display Product Name: 'Odyssey G75F'
     Display Product Serial Number: ...
   Extension blocks: 3
@@ -127,7 +127,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
@@ -158,16 +158,26 @@ Block 1, CTA-861 Extension Block:
     Desired content max frame-average luminance: 90 (351.250 cd/m^2)
     Desired content min luminance: 0 (0.000 cd/m^2)
   Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
-    Application Version: 89
+    Application Version: 1
+    Full Frame Peak Luminance Index: 2
+    Peak Luminance Index: 5
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.15
+    Version: 3
+    Feature Caps: 0x0f
+      Global Backlight Control Supported
+      Local Dimming Supported
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 180 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x20
+      ST 2084 (PQ) EOTF Supported
+      Linear EOTF (Windows scRGB, 0.0 - 125.0) Supported
+      BT.2020 Gamut Supported
+      Display is Mini LED
     Maximum luminance: 115 (603.666 cd/m^2)
     Minimum luminance: 7 (0.005 cd/m^2)
-    Unknown: 0x5a 0x28
+    Maximum luminance (without local dimming): 90 (351.250 cd/m^2)
+    Minimum luminance (without local dimming): 40 (0.086 cd/m^2)
   Detailed Timing Descriptors:
     DTD 2:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (930 mm x 400 mm)
                  Hfront   48 Hsync  32 Hback   80 Hpol P
@@ -196,8 +206,9 @@ Block 2, DisplayID Extension Block:
     DTD:  3840x2160  179.981603 Hz  16:9    408.558 kHz   1725.750000 MHz (aspect 16:9, no 3D stereo)
                Hfront  160 Hsync  32 Hback  192 Hpol P
                Vfront    3 Vsync  10 Vback   97 Vpol N
-  Unknown DisplayID Data Block (0x2a, length 12):
-    01 ff 13 6f 08 3b 01 6f 0d 9f 05 77             '...o.;.o...w'
+  Video Timing Modes Type 10 - Formula-based Timings Data Block:
+    CVT:  5120x2160   59.984692 Hz  64:27   133.286 kHz    703.750000 MHz (RB, aspect 64:27, no 3D stereo)
+    CVT:  3440x1440  119.990893 Hz  43:18   182.986 kHz    658.750000 MHz (RB, aspect 43:18, no 3D stereo)
   Checksum: 0xcf
 Checksum: 0x90
 
@@ -224,129 +235,16 @@ Checksum: 0x90
 
 ----------------
 
-Block 4, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 2d 6f 79 57 44 30 31 '........L-oyWD01'
-  1f 23 01 04 b5 5d 28 78 3b 50 25 ad 51 48 a8 27 '.#...](x;P%.QH.''
-  09 50 54 21 08 00 01 01 81 c0 81 00 81 80 95 00 '.PT!............'
-  a9 c0 b3 00 d1 c0 e7 7c 70 a0 d0 a0 29 50 30 20 '.......|p...)P0 '
-  3a 00 a2 90 31 00 00 1a 00 00 00 fd 0c 30 b4 af ':...1........0..'
-  af eb 01 0a 20 20 20 20 20 20 00 00 00 fc 00 4f '....      .....O'
-  64 79 73 73 65 79 20 47 37 35 46 0a 00 00 00 ff 'dyssey G75F.....'
-  00 48 4e 54 59 38 30 30 30 37 36 0a 20 20 03 d7 '.HNTY800076.  ..'
-Checksum: 0xd7
-
-----------------
-
-Block 5, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 0
-  Video Data Block:
-    VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
-    VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
-    VIC  63:  1920x1080  120.000000 Hz  16:9    135.000 kHz    297.000000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC 118:  3840x2160  120.000000 Hz  16:9    270.000 kHz   1188.000000 MHz
-    VIC  90:  2560x1080   60.000000 Hz  64:27    66.000 kHz    198.000000 MHz
-    VIC  92:  2560x1080  120.000000 Hz  64:27   150.000 kHz    495.000000 MHz
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  Colorimetry Data Block:
-    BT2020YCC
-    BT2020RGB
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      SMPTE ST2084
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 115 (603.666 cd/m^2)
-    Desired content max frame-average luminance: 90 (351.250 cd/m^2)
-    Desired content min luminance: 0 (0.000 cd/m^2)
-  Vendor-Specific Video Data Block (HDR10+), OUI 90-84-8B:
-    Application Version: 89
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.15
-    Minimum Refresh Rate: 48 Hz
-    Maximum Refresh Rate: 180 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x20
-    Maximum luminance: 115 (603.666 cd/m^2)
-    Minimum luminance: 7 (0.005 cd/m^2)
-    Unknown: 0x5a 0x28
-  Detailed Timing Descriptors:
-    DTD 5:  2560x1440  119.997589 Hz  16:9    182.996 kHz    497.750000 MHz (930 mm x 400 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   77 Vpol N
-    DTD 6:  2560x1440   59.950550 Hz  16:9     88.787 kHz    241.500000 MHz (930 mm x 400 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   33 Vpol N
-    DTD 7:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (930 mm x 400 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
-Checksum: 0xf2  Unused space in Extension Block: 13 bytes
-
-----------------
-
-Block 6, DisplayID Extension Block:
-  Version: 2.0
-  Extension Count: 0
-  Video Timing Modes Type 7 - Detailed Timings Data Block:
-    DTD:  5120x2160  179.985241 Hz  64:27   408.566 kHz   2248.750000 MHz (aspect 64:27, no 3D stereo, preferred)
-               Hfront  160 Hsync  32 Hback  192 Hpol P
-               Vfront    3 Vsync  10 Vback   97 Vpol N
-    DTD:  5120x2160  119.998589 Hz  64:27   274.437 kHz   1510.500000 MHz (aspect 64:27, no 3D stereo)
-               Hfront  160 Hsync  32 Hback  192 Hpol P
-               Vfront    3 Vsync  10 Vback  114 Vpol N
-    DTD:  3840x2160  179.981603 Hz  16:9    408.558 kHz   1725.750000 MHz (aspect 16:9, no 3D stereo)
-               Hfront  160 Hsync  32 Hback  192 Hpol P
-               Vfront    3 Vsync  10 Vback   97 Vpol N
-  Unknown DisplayID Data Block (0x2a, length 12):
-    01 ff 13 6f 08 3b 01 6f 0d 9f 05 77             '...o.;.o...w'
-  Checksum: 0xcf
-Checksum: 0x90
-
-----------------
-
-Block 7, DisplayID Extension Block:
-  Version: 2.0
-  Extension Count: 0
-  Video Timing Modes Type 7 - Detailed Timings Data Block:
-    DTD:  1920x1080  179.917824 Hz  16:9    204.207 kHz    424.750000 MHz (aspect 16:9, no 3D stereo)
-               Hfront   48 Hsync  32 Hback   80 Hpol P
-               Vfront    3 Vsync  10 Vback   42 Vpol N
-    DTD:  2560x1080  179.936512 Hz  64:27   204.228 kHz    555.500000 MHz (aspect 64:27, no 3D stereo)
-               Hfront   48 Hsync  32 Hback   80 Hpol P
-               Vfront    3 Vsync  10 Vback   42 Vpol N
-    DTD:  3440x1440  179.968055 Hz   0:0    272.292 kHz    980.250000 MHz (aspect undefined, no 3D stereo)
-               Hfront   48 Hsync  32 Hback   80 Hpol P
-               Vfront    3 Vsync  10 Vback   60 Vpol N
-    DTD:  2560x1440  179.996404 Hz  16:9    272.335 kHz    740.750000 MHz (aspect 16:9, no 3D stereo)
-               Hfront   48 Hsync  32 Hback   80 Hpol P
-               Vfront    3 Vsync  10 Vback   60 Vpol N
-  Checksum: 0x18
-Checksum: 0x90
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Image size is 930x400 mm, but based on the picture AR it should be 930x389 mm.
 Block 1, CTA-861 Extension Block:
-  Video Data Block: VIC 97 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 97 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-Block 5, CTA-861 Extension Block:
-  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #2: Image size is 930x400 mm, but based on the picture AR it should be 711x400 mm.
+  Detailed Timing Descriptor #3: Image size is 930x400 mm, but based on the picture AR it should be 711x400 mm.
+  Detailed Timing Descriptor #4: Image size is 930x400 mm, but based on the picture AR it should be 711x400 mm.
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
@@ -358,29 +256,9 @@ Failures:
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 Block 2, DisplayID Extension Block:
-  Expected 0 DisplayID Extension Block, but got 3.
-Block 4, Base EDID:
-  Unknown Extension Block.
-Block 5, CTA-861 Extension Block:
-  Video Data Block: Duplicate VIC 97.
-  Video Data Block: Duplicate VIC 95.
-  Video Data Block: Duplicate VIC 16.
-  Video Data Block: Duplicate VIC 63.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 118.
-  Video Data Block: Duplicate VIC 90.
-  Video Data Block: Duplicate VIC 92.
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 6, DisplayID Extension Block:
-  Product Type should be 0 in extension block.
+  Expected 0 DisplayID Extension Block, but got 1.
 EDID:
-  Base EDID: EDID specified 3 extension block(s), but found 7 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
+  Extension Block 4 started with EDID header, ignoring Extension Blocks >= 4.
   DisplayID: Missing DisplayID Display Parameters Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
 
 EDID conformity: FAIL

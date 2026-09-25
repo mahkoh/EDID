@@ -71,24 +71,9 @@ Checksum: 0xbd
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 69 e3 19 66 5b 00 00 '.........i..f[..'
-  16 10 01 03 68 26 1e 78 2a e4 44 a4 5b 4c 9d 24 '....h&.x*.D.[L.$'
-  14 4f 57 bf ef 00 81 80 01 01 01 01 01 01 01 01 '.OW.............'
-  01 01 01 01 01 01 bc 34 00 98 51 00 2a 40 10 90 '.......4..Q.*@..'
-  13 00 78 2d 11 00 00 1e 00 00 00 ff 00 36 35 4c '..x-.........65L'
-  38 30 32 33 33 39 38 0a 20 20 00 00 00 fd 00 37 '8023398.  .....7'
-  4b 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.S...      ....'
-  00 41 53 55 53 20 4d 4d 31 39 53 0a 20 20 00 bd '.ASUS MM19S.  ..'
-Checksum: 0xbd
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

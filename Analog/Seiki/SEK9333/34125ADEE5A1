@@ -61,6 +61,11 @@ Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x51.
+  Detailed Timing Descriptor #2: Image size is 1365x768 mm, but based on the picture AR it should be 1280x768 mm.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.790 - 70.082 Hz (Monitor: 56.000 - 63.000 Hz)
+    Maximum Clock: 108.000 MHz (Monitor: 100.000 MHz)
 
 Failures:
 
@@ -68,9 +73,6 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 1366x768 mm vs display size 410x260 mm.
   Detailed Timing Descriptor #2: Mismatch of image size 1365x768 mm vs display size 410x260 mm.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 59.790 - 70.082 Hz (Monitor: 56.000 - 63.000 Hz)
-    Maximum Clock: 108.000 MHz (Monitor: 100.000 MHz)
   Base EDID: The DTD max image size is 1366x768mm, which is larger than the display size 410.0x260.0mm.
 
 EDID conformity: FAIL

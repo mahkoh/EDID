@@ -77,23 +77,11 @@ Checksum: 0xc5
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 d1 06 77 6d 1b 00 00 '...........wm...'
-  2a 10 01 03 6c 28 19 78 ea c4 f6 a3 57 4a 9c 23 '*...l(.x....WJ.#'
-  11 4f 54 bd ef 80 71 4f 81 80 81 8c 95 0f 81 90 '.OT...qO........'
-  01 01 01 01 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.......)..Q."0P.'
-  43 00 98 ff 10 00 00 1a d5 09 80 a0 20 5e 63 10 'C........... ^c.'
-  10 60 52 08 98 ff 10 00 00 1a 00 00 00 fd 00 38 '.`R............8'
-  4c 1e 53 0e 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
-  00 42 65 6e 51 20 46 50 39 32 57 61 0a 20 00 c5 '.BenQ FP92Wa. ..'
-Checksum: 0xc5
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x2f.
+  Detailed Timing Descriptor #2: Image size is 408x255 mm, but based on the picture AR it should be 408x223 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 141.822 MHz (Monitor: 140.000 MHz)
@@ -101,9 +89,7 @@ EDID:
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -63,24 +63,14 @@ Checksum: 0x90
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4d d9 01 c7 01 01 01 01 '........M.......'
-  01 13 01 03 08 58 31 78 2a ee 9d a3 54 4c 99 26 '.....X1x*...TL.&'
-  0f 4f 54 21 08 00 81 c0 81 80 01 01 01 01 01 01 '.OT!............'
-  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 70 ea 31 00 00 1e 66 21 50 b0 51 00 1b 30 'E.p.1...f!P.Q..0'
-  40 70 36 00 70 ea 31 00 00 1e 00 00 00 fd 00 39 '@p6.p.1........9'
-  3f 1e 50 0f 00 0a 20 20 20 20 20 20 00 00 00 fc '?.P...      ....'
-  00 53 4f 4e 59 20 54 56 0a 20 20 20 20 20 00 90 '.SONY TV.     ..'
-Checksum: 0x90
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

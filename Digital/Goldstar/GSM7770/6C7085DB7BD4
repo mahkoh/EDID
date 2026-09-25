@@ -65,7 +65,7 @@ Block 0, Base EDID:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 40-75 Hz V, 90-90 kHz H, max dotclock 240 MHz
+      Monitor ranges (Range Limits Only): 40-75 Hz V, 90-90 kHz H, max dotclock 240 MHz
     Display Product Name: 'LG ULTRAWIDE'
   Extension blocks: 1
 Checksum: 0x77
@@ -78,7 +78,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -111,7 +111,8 @@ Block 1, CTA-861 Extension Block:
         HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
         HDMI VIC 3:  3840x2160   24.000000 Hz  16:9     54.000 kHz    297.000000 MHz
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 75 Hz
     Flags 1.x: 0x00
@@ -140,19 +141,23 @@ Checksum: 0x8c  Unused space in Extension Block: 33 bytes
 
 Warnings:
 
-Block 1, CTA-861 Extension Block:
-  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-
-Failures:
-
 Block 0, Base EDID:
-  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
+  Detailed Timing Descriptor #2: Image size is 798x334 mm, but based on the picture AR it should be 593x334 mm.
 Block 1, CTA-861 Extension Block:
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
+  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #4: Image size is 798x334 mm, but based on the picture AR it should be 593x334 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 24.000 - 75.029 Hz (Monitor: 40.000 - 75.000 Hz)
     Horizontal Freq: 31.250 - 88.786 kHz (Monitor: 90.000 - 90.000 kHz)
     Maximum Clock: 297.000 MHz (Monitor: 240.000 MHz)
+
+Failures:
+
+Block 0, Base EDID:
+  Display Range Limits: 'Range Limits Only' is not allowed for EDID < 1.4.
+Block 1, CTA-861 Extension Block:
+  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 
 EDID conformity: FAIL

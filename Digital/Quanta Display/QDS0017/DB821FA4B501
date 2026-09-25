@@ -65,7 +65,7 @@ Block 0, Base EDID:
     Horizontal Frontporch/Sync Width 44/112
     Vertical Active/Blanking 1050/16
     Vertical Frontporch/Sync Width 0/3
-  SPWG Descriptor #3: Non-printable character.
+  SPWG Descriptor #3: NUL byte at position 0.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 

@@ -74,7 +74,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 4
+  Native DTDs: 4
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
@@ -99,9 +99,9 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
     BC - Back Center
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
+    BL/BR - Back Left/Right
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -156,7 +156,17 @@ Checksum: 0x3f  Unused space in Extension Block: 25 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Basic Display Parameters & Features: Dubious maximum image size (16x9 is smaller than 10x10 cm).
+  Detailed Timing Descriptor #1: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #2: Dubious image size (160x90 mm is smaller than 100x100 mm).
+Block 1, CTA-861 Extension Block:
+  Detailed Timing Descriptor #3: Dubious image size (160x90 mm is smaller than 100x100 mm).
+  Detailed Timing Descriptor #4: Dubious image size (160x90 mm is smaller than 100x100 mm).
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 24.000 - 70.082 Hz (Monitor: 57.000 - 63.000 Hz)
+    Horizontal Freq: 15.625 - 67.500 kHz (Monitor: 31.000 - 82.000 kHz)
 
 Failures:
 
@@ -165,9 +175,6 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 24.000 - 70.082 Hz (Monitor: 57.000 - 63.000 Hz)
-    Horizontal Freq: 15.625 - 67.500 kHz (Monitor: 31.000 - 82.000 kHz)
   CTA-861: Native progressive timings are a mix of several resolutions.
 
 EDID conformity: FAIL

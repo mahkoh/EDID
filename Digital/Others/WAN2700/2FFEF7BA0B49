@@ -78,7 +78,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
     VIC   5:  1920x1080i  60.000000 Hz  16:9     33.750 kHz     74.250000 MHz
@@ -129,7 +129,8 @@ Block 1, CTA-861 Extension Block:
     BT2020RGB
     Gamut Boundary Description Metadata Profile P0
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 1.1
+    Version: 1
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 100 Hz
     Flags 1.x: 0xe6 (MCCS)
@@ -150,7 +151,11 @@ Checksum: 0x85  Unused space in Extension Block: 10 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 16 and the first DTD are not identical. Is this intended?
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.250 - 146.000 kHz (Monitor: 30.000 - 145.000 kHz)
 
 Failures:
 
@@ -164,8 +169,6 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #4: Mismatch of image size 700x390 mm vs display size 600x330 mm.
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 31.250 - 146.000 kHz (Monitor: 30.000 - 145.000 kHz)
   Base EDID: The DTD max image size is 700x390mm, which is larger than the display size 600.0x330.0mm.
   CTA-861: Native progressive timings are a mix of several resolutions.
 

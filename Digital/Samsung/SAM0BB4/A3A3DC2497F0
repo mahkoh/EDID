@@ -82,7 +82,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz
@@ -154,6 +154,8 @@ Checksum: 0x39  Unused space in Extension Block: 33 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: Set Selectable YCbCr Quantization to avoid interop issues.
 
@@ -169,5 +171,6 @@ Block 1, CTA-861 Extension Block:
   Detailed Timing Descriptor #4: Mismatch of image size 1872x1053 mm vs display size 1110x620 mm.
 EDID:
   Base EDID: The DTD max image size is 1872x1053mm, which is larger than the display size 1110.0x620.0mm.
+  CTA-861: The maximum HDMI TMDS clock is 300000 kHz, but one or more video timings go up to 594000 kHz.
 
 EDID conformity: FAIL

@@ -66,7 +66,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     VIC  95:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
     VIC  94:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
@@ -165,10 +165,13 @@ Checksum: 0x37  Unused space in Extension Block: 12 bytes
 
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
+  Video Data Block: For improved preferred timing interoperability, set 'Native DTDs' to 1.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #4: Image size is 708x398 mm, but based on the picture AR it should be 353x398 mm.
 
 Failures:
 

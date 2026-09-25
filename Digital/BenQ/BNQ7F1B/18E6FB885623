@@ -72,32 +72,18 @@ Checksum: 0x02
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 d1 1b 7f 45 54 00 00 '............ET..'
-  21 1c 01 04 b5 3c 22 78 26 65 c0 b0 4d 34 b8 26 '!....<"x&e..M4.&'
-  0e 50 54 a5 6b 80 d1 c0 81 c0 81 00 81 80 a9 c0 '.PT.k...........'
-  b3 00 01 01 01 01 56 5e 00 a0 a0 a0 29 50 30 20 '......V^....)P0 '
-  35 00 54 4f 21 00 00 1a 00 00 00 ff 00 4a 38 4a '5.TO!........J8J'
-  30 31 35 34 37 53 4c 30 0a 20 00 00 00 fd 00 32 '01547SL0. .....2'
-  4c 1e 59 1e 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.Y...      ....'
-  00 42 65 6e 51 20 50 56 32 37 30 0a 20 20 00 02 '.BenQ PV270.  ..'
-Checksum: 0x02
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

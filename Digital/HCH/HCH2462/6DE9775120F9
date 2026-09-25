@@ -67,22 +67,10 @@ Checksum: 0xc1
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 20 68 62 24 01 01 01 01 '........ hb$....'
-  16 1c 01 04 a1 35 1e 78 3a 8e 05 ad 4f 33 b0 26 '.....5.x:...O3.&'
-  0d 50 54 a5 4e 00 4b 40 45 44 61 44 81 84 01 00 '.PT.N.K@EDaD....'
-  01 00 01 00 01 00 a0 0f 20 00 31 58 1c 20 28 80 '........ .1X. (.'
-  14 00 00 c8 10 00 00 1e 00 00 00 ff 00 48 54 43 '.............HTC'
-  32 30 31 38 30 34 32 36 0a 20 00 00 00 fd 00 31 '20180426. .....1'
-  4c 1a 51 17 00 00 00 00 00 00 00 00 00 00 00 fc 'L.Q.............'
-  00 48 45 54 45 43 48 0a 20 20 20 20 20 20 00 c1 '.HETECH.      ..'
-Checksum: 0xc1
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Display Range Limits: GTF support is deprecated in EDID 1.4.
 
 Failures:
@@ -93,12 +81,10 @@ Block 0, Base EDID:
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0100.
   Detailed Timing Descriptor #1: Mismatch of image size 256x200 mm vs display size 530x300 mm.
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
   Display Range Limits: Byte 11 is 0x00 instead of 0x0a.
   Display Range Limits: Bytes 12-17 must be 0x20.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

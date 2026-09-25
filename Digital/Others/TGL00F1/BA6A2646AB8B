@@ -37,7 +37,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4, YCrCb 4:2:2
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6494, 0.3271
     Green: 0.2675, 0.5976
@@ -71,7 +71,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz (native)
     VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz (native)
@@ -96,10 +96,10 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
     BC - Back Center
     FLc/FRc - Front Left/Right of Center
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
+    BL/BR - Back Left/Right
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.0.0.0
     DC_30bit
@@ -129,9 +129,18 @@ Checksum: 0x6a  Unused space in Extension Block: 2 bytes
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x1c.
   Detailed Timing Descriptor #2: DTD is similar but not identical to DMT 0x3a.
+  Detailed Timing Descriptor #2: Image size is 521x293 mm, but based on the picture AR it should be 468x293 mm.
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 16.
+Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
+  Detailed Timing Descriptor #5: Image size is 340x270 mm, but based on the picture AR it should be 340x191 mm.
+  Detailed Timing Descriptor #6: Image size is 340x270 mm, but based on the picture AR it should be 340x113 mm.
+  Detailed Timing Descriptor #7: Image size is 340x270 mm, but based on the picture AR it should be 340x226 mm.
+  Detailed Timing Descriptor #8: Image size is 340x270 mm, but based on the picture AR it should be 340x68 mm.
 
 Failures:
 

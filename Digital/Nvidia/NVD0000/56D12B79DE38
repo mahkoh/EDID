@@ -66,7 +66,7 @@ Block 0, Base EDID:
                  Vfront    3 Vsync   6 Vback   37 Vpol P
     Detailed mode: 00 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 00 '..................'
     Display Range Limits:
-      Monitor ranges (Bare Limits): 30-70 Hz V, 30-140 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 30-70 Hz V, 30-140 kHz H, max dotclock 600 MHz
     Display Product Name: 'NVIDIA VGX '
   Extension blocks: 1
 Checksum: 0x2e
@@ -77,43 +77,6 @@ Block 1, DisplayID Extension Block:
   Version: 1.2
   Extension Count: 0
   Display Product Type: Standalone display device
-  Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz (aspect 16:9, no 3D stereo)
-               Hfront  176 Hsync  88 Hback  296 Hpol P
-               Vfront    8 Vsync  10 Vback   72 Vpol P
-  Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  4096x2160   60.027622 Hz   1:1    130.800 kHz    552.500000 MHz (aspect 1:1, no 3D stereo)
-               Hfront   32 Hsync  32 Hback   64 Hpol P
-               Vfront    3 Vsync   3 Vback   13 Vpol P
-  Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  5120x2880   59.992864 Hz  16:9    177.699 kHz    938.250000 MHz (aspect 16:9, no 3D stereo)
-               Hfront   48 Hsync  32 Hback   80 Hpol P
-               Vfront    3 Vsync   5 Vback   74 Vpol N
-  Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  7680x4320   59.939938 Hz  16:9    266.313 kHz   2066.590000 MHz (aspect 16:9, no 3D stereo)
-               Hfront    8 Hsync  32 Hback   40 Hpol P
-               Vfront  109 Vsync   8 Vback    6 Vpol N
-  Checksum: 0xac
-Checksum: 0x90  Unused space in Extension Block: 29 bytes
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 3a c4 00 00 00 00 00 00 '........:.......'
-  02 1a 01 04 b5 46 28 64 06 92 b0 a3 54 4c 99 26 '.....F(d....TL.&'
-  0f 50 54 00 00 00 00 00 00 00 00 00 00 00 00 00 '.PT.............'
-  00 00 00 00 00 00 b0 68 00 a0 a0 40 2e 60 30 20 '.......h...@.`0 '
-  36 00 81 90 21 00 00 1e 00 01 01 01 01 01 01 01 '6...!...........'
-  01 01 01 01 01 01 01 01 01 00 00 00 00 fd 00 1e '................'
-  46 1e 8c 3c 01 0a 20 20 20 20 20 20 00 00 00 fc 'F..<..      ....'
-  00 4e 56 49 44 49 41 20 56 47 58 20 0a 20 01 2e '.NVIDIA VGX . ..'
-Checksum: 0x2e
-
-----------------
-
-Block 3, DisplayID Extension Block:
-  Version: 1.2
-  Extension Count: 0
   Video Timing Modes Type 1 - Detailed Timings Data Block:
     DTD:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz (aspect 16:9, no 3D stereo)
                Hfront  176 Hsync  88 Hback  296 Hpol P
@@ -157,18 +120,10 @@ Block 0, Base EDID:
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
   Detailed Timing Descriptor #2: Pixelclock < 10 MHz, assuming invalid data 0x00 0x01.
-  Display Product Name: One or more trailing spaces.
-Block 1, DisplayID Extension Block:
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, DisplayID Extension Block:
-  Product Type should be 0 in extension block.
+  Display Product Name: One or more trailing spaces before newline.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   DisplayID: Missing DisplayID Display Parameters Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

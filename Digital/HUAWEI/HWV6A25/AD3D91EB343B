@@ -67,7 +67,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront    3 Vsync  10 Vback   28 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-144 Hz V, 30-160 kHz H, max dotclock 330 MHz
+      Monitor ranges (Range Limits Only): 48-144 Hz V, 30-160 kHz H, max dotclock 330 MHz
     Display Product Name: 'ZQE-CAA'
   Extension blocks: 1
 Checksum: 0xc8
@@ -80,7 +80,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Video Data Block:
     VIC  31:  1920x1080   50.000000 Hz  16:9     56.250 kHz    148.500000 MHz
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
@@ -112,14 +112,12 @@ Block 1, CTA-861 Extension Block:
   Vendor-Specific Data Block, OUI 00-00-00:
     00 00 00 00                                     '....'
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 2.1
+    Version: 2
+    Feature Caps: 0x01
     Minimum Refresh Rate: 48 Hz
     Maximum Refresh Rate: 144 Hz
     Flags 1.x: 0xe6 (MCCS)
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Colorimetry Data Block:
   YCbCr 4:2:0 Capability Map Data Block:
     Empty Capability Map
@@ -143,15 +141,17 @@ Checksum: 0x61  Unused space in Extension Block: 37 bytes
 Warnings:
 
 Block 1, CTA-861 Extension Block:
+  Video Data Block: VIC 31 and the first DTD are not identical. Is this intended?
   Video Capability Data Block: IT scan behavior is expected to support underscanned.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
-  Vendor-Specific Data Block, OUI 00-00-00: Unknown OUI 00-00-00.
+  Vendor-Specific Data Block, OUI 00-00-00: All zeroes OUI.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Detailed Timing Descriptor #3: Image size is 797x334 mm, but based on the picture AR it should be 593x334 mm.
 
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
+  Display Range Limits: 'Range Limits Only' is not allowed for EDID < 1.4.
 Block 1, CTA-861 Extension Block:
   Video Capability Data Block: IT video formats are always overscanned, but bit 7 of Byte 3 of the CTA-861 Extension header is set to underscanned.
   YCbCr 4:2:0 Capability Map Data Block: Empty Capability Map.

@@ -48,6 +48,6 @@ Failures:
 
 Block 0, Base EDID:
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
-  Display Product Name: One or more trailing spaces.
+  Display Product Name: No newline, but one or more trailing spaces.
 
 EDID conformity: FAIL

@@ -77,35 +77,21 @@ Checksum: 0x65
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 22 64 47 5a 00 00 00 00 '........"dGZ....'
-  25 11 01 03 0a 25 17 78 ea 14 c6 a0 58 53 8e 27 '%....%.x....XS.''
-  25 4f 54 bf ef 80 81 80 81 c0 81 40 71 4f 61 46 '%OT........@qOaF'
-  90 4f 95 0f 01 01 9a 29 a0 d0 51 84 22 30 50 98 '.O.....)..Q."0P.'
-  36 00 98 ff 10 00 00 1e 00 00 00 fd 00 37 4b 18 '6............7K.'
-  47 0e 00 0a 20 20 20 20 20 20 00 00 00 ff 00 37 'G...      .....7'
-  33 37 44 59 33 58 59 30 37 30 34 37 00 00 00 fc '37DY3XY07047....'
-  00 48 61 6e 6e 73 2e 47 20 48 57 31 37 33 00 65 '.Hanns.G HW173.e'
-Checksum: 0x65
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: DTD is similar but not identical to DMT 0x2f.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 31.466 - 82.278 kHz (Monitor: 24.000 - 71.000 kHz)
+    Maximum Clock: 156.000 MHz (Monitor: 140.000 MHz)
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 408x255 mm vs display size 370x230 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 31.466 - 82.278 kHz (Monitor: 24.000 - 71.000 kHz)
-    Maximum Clock: 156.000 MHz (Monitor: 140.000 MHz)
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 408x255mm, which is larger than the display size 370.0x230.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

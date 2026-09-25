@@ -50,7 +50,7 @@ Block 0, Base EDID:
                  Hfront    8 Hsync  32 Hback   40 Hpol P
                  Vfront   55 Vsync   8 Vback    6 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 30-70 Hz V, 30-140 kHz H, max dotclock 600 MHz
+      Monitor ranges (Range Limits Only): 30-70 Hz V, 30-140 kHz H, max dotclock 600 MHz
     Display Product Name: 'NVIDIA VGX '
   Extension blocks: 1
 Checksum: 0x68
@@ -86,6 +86,7 @@ Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the gamma != 2.2.
+  Detailed Timing Descriptor #2: Image size is 621x341 mm, but based on the picture AR it should be 545x341 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 98.529 - 266.313 kHz (Monitor: 30.000 - 140.000 kHz)
@@ -104,11 +105,9 @@ Block 0, Base EDID:
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
   Standard Timings: Use 0x0101 as the invalid Standard Timings code, not 0x0000.
   Detailed Timing Descriptor #2: Mismatch of image size 621x341 mm vs display size 700x400 mm.
-  Display Product Name: One or more trailing spaces.
+  Display Product Name: One or more trailing spaces before newline.
 EDID:
-  DisplayID: Missing DisplayID Product Identification Data Block.
   DisplayID: Missing DisplayID Display Parameters Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

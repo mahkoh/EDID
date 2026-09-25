@@ -69,19 +69,6 @@ Checksum: 0x2b
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 72 7b 04 7a 63 20 70 '.........r{.zc p'
-  02 1b 01 04 a5 35 1e 78 22 0e f5 a5 55 50 9e 26 '.....5.x"...UP.&'
-  10 50 54 b3 0c 00 71 4f 81 80 81 c0 81 00 95 00 '.PT...qO........'
-  b3 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 13 2b 21 00 00 1e 00 00 00 fd 00 37 4c 1e 'E..+!........7L.'
-  53 11 00 0a 20 20 20 20 20 20 00 00 00 ff 00 54 'S...      .....T'
-  34 4d 45 45 30 30 33 34 32 30 31 0a 00 00 00 fc '4MEE0034201.....'
-  00 41 63 65 72 20 43 42 32 34 31 48 0a 20 00 2b '.Acer CB241H. .+'
-Checksum: 0x2b
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -90,10 +77,8 @@ Block 0, Base EDID:
 Failures:
 
 Block 0, Base EDID:
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
-Block 1, Base EDID:
-  Unknown Extension Block.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

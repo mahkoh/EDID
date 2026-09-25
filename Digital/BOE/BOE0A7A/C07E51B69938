@@ -52,19 +52,6 @@ Checksum: 0x1a
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 e5 7a 0a 00 00 00 00 '..........z.....'
-  17 1f 01 04 a5 1f 11 78 02 a1 05 a1 56 4f a0 27 '.......x....VO.''
-  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 2a 36 80 a0 70 38 1f 40 30 20 '......*6..p8.@0 '
-  35 00 35 ae 10 00 00 1a 00 00 00 00 00 00 00 00 '5.5.............'
-  00 00 00 00 00 00 00 00 00 1a 00 00 00 fe 00 42 '...............B'
-  4f 45 20 44 54 0a 20 20 20 20 20 20 00 00 00 fe 'OE DT.      ....'
-  00 51 45 31 34 30 46 48 4d 2d 4e 38 30 0a 00 1a '.QE140FHM-N80...'
-Checksum: 0x1a
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -72,9 +59,7 @@ Block 0, Base EDID:
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

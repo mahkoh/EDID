@@ -51,19 +51,6 @@ Checksum: 0xbf
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 51 ca 60 02 04 00 00 00 '........Q.`.....'
-  14 11 01 03 80 1e 13 78 0a 93 e5 92 57 50 8d 25 '.......x....WP.%'
-  1e 4f 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.OT.............'
-  01 01 01 01 01 01 bc 1b 00 a0 50 20 17 30 30 20 '..........P .00 '
-  36 00 2f be 10 00 00 18 00 00 00 fe 00 54 44 31 '6./..........TD1'
-  34 31 54 48 43 41 31 0a 20 20 00 00 00 fe 00 54 '41THCA1.  .....T'
-  4f 50 50 4f 4c 59 0a 20 20 20 20 20 00 00 00 fe 'OPPOLY.     ....'
-  00 54 44 31 34 31 54 48 43 41 31 0a 20 20 00 bf '.TD141THCA1.  ..'
-Checksum: 0xbf
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -74,9 +61,7 @@ Failures:
 Block 0, Base EDID:
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -55,7 +55,7 @@ Block 0, Base EDID:
     GTF     :  1152x864    60.000000 Hz   4:3     53.700 kHz     81.624000 MHz
     GTF     :  1152x864    70.000000 Hz   4:3     63.000 kHz     96.768000 MHz
     DMT 0x10:  1024x768    60.003840 Hz   4:3     48.363 kHz     65.000000 MHz
-    GTF     :  1024x768    70.000000 Hz   4:3     56.000 kHz     76.160000 MHz
+    DMT 0x11:  1024x768    70.069359 Hz   4:3     56.476 kHz     75.000000 MHz
   Detailed Timing Descriptors:
     DTD 1:  1440x900    59.887445 Hz  16:10    55.935 kHz    106.500000 MHz (410 mm x 256 mm)
                  Hfront   80 Hsync 152 Hback  232 Hpol N
@@ -67,6 +67,12 @@ Block 0, Base EDID:
 Checksum: 0xcd
 
 ----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Display Product Serial Number: ...
 
 Failures:
 

@@ -67,26 +67,11 @@ Checksum: 0x5f
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 10 ac 23 40 54 58 42 47 '..........#@TXBG'
-  17 12 01 03 0e 22 1b 78 ee a6 c5 a2 57 4c 9c 25 '.....".x....WL.%'
-  12 50 54 a5 4b 00 71 4f 81 80 01 01 01 01 01 01 '.PT.K.qO........'
-  01 01 01 01 01 01 30 2a 00 98 51 00 2a 40 30 70 '......0*..Q.*@0p'
-  13 00 52 0e 11 00 00 1e 00 00 00 ff 00 44 35 34 '..R..........D54'
-  38 48 38 36 34 47 42 58 54 0a 00 00 00 fc 00 44 '8H864GBXT......D'
-  45 4c 4c 20 31 37 30 38 46 50 0a 20 00 00 00 fd 'ELL 1708FP. ....'
-  00 38 4c 1e 51 0e 00 0a 20 20 20 20 20 20 00 5f '.8L.Q...      ._'
-Checksum: 0x5f
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

@@ -53,7 +53,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6738, 0.3193
     Green: 0.2695, 0.6767
@@ -66,7 +66,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol N
                  Vfront    3 Vsync   6 Vback  159 Vpol N
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-165 Hz V, 358-358 kHz H, max dotclock 1200 MHz
+      Monitor ranges (Range Limits Only): 48-165 Hz V, 358-358 kHz H, max dotclock 1200 MHz
     Alphanumeric Data String: 'LENOVO'
     Alphanumeric Data String: 'LEN160-3.2K'
   Extension blocks: 1
@@ -78,31 +78,6 @@ Block 1, DisplayID Extension Block:
   Version: 1.2
   Extension Count: 0
   Display Product Type: Extension Section
-  Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  3200x2000  165.001483 Hz  16:10   357.723 kHz   1201.950000 MHz (aspect 16:10, no 3D stereo)
-               Hfront   48 Hsync  32 Hback   80 Hpol N
-               Vfront    3 Vsync   6 Vback  159 Vpol N
-  Checksum: 0x04
-Checksum: 0x90
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 ae a1 8b 03 60 00 00 '........0....`..'
-  00 20 01 04 b5 22 16 78 03 b1 66 ac 51 45 ad 26 '. ...".x..f.QE.&'
-  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 bb aa 80 a0 c0 d0 a8 70 30 20 '.............p0 '
-  36 00 58 d7 10 00 00 18 00 00 00 fd 0c 30 a5 67 '6.X..........0.g'
-  67 78 01 0a 20 20 20 20 20 20 00 00 00 fe 00 4c 'gx..      .....L'
-  45 4e 4f 56 4f 0a 0a 20 20 20 20 20 00 00 00 fe 'ENOVO..     ....'
-  00 4c 45 4e 31 36 30 2d 33 2e 32 4b 0a 20 01 f5 '.LEN160-3.2K. ..'
-Checksum: 0xf5
-
-----------------
-
-Block 3, DisplayID Extension Block:
-  Version: 1.2
-  Extension Count: 0
   Video Timing Modes Type 1 - Detailed Timings Data Block:
     DTD:  3200x2000  165.001483 Hz  16:10   357.723 kHz   1201.950000 MHz (aspect 16:10, no 3D stereo)
                Hfront   48 Hsync  32 Hback   80 Hpol N
@@ -127,12 +102,8 @@ Block 0, Base EDID:
   Alphanumeric Data String: Non-space after newline.
 Block 1, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 2, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

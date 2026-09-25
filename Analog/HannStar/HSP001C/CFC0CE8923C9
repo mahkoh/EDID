@@ -63,26 +63,15 @@ Checksum: 0xd7
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 22 70 1c 00 ba 06 00 00 '........"p......'
-  16 13 01 03 64 3b 25 78 2a af f6 a6 54 4c 9e 23 '....d;%x*...TL.#'
-  10 4f 54 21 08 00 81 80 95 00 b3 00 d1 00 01 01 '.OT!............'
-  01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
-  36 00 51 72 21 00 00 1a 00 00 00 ff 00 39 32 32 '6.Qr!........922'
-  46 4e 32 34 59 30 31 37 32 32 00 00 00 fc 00 48 'FN24Y01722.....H'
-  53 47 31 30 37 35 0a 20 20 20 20 20 00 00 00 fd 'SG1075.     ....'
-  00 3b 3d 1f 4b 10 00 0a 20 20 20 20 20 20 00 d7 '.;=.K...      ..'
-Checksum: 0xd7
+Warnings:
 
-----------------
-
-Failures:
-
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 193.250 MHz (Monitor: 160.000 MHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+Failures:
+
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

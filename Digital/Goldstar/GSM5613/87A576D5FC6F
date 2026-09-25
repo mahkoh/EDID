@@ -73,7 +73,7 @@ Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 930x523 mm vs display size 500x300 mm.
-  Display Range Limits: GTF can't be combined with non-continuous frequencies.
+  Display Range Limits: GTF is supported, but the display does not support continuous frequencies.
   Display Product Name: Empty string.
 EDID:
   Base EDID: The DTD max image size is 930x523mm, which is larger than the display size 500.0x300.0mm.

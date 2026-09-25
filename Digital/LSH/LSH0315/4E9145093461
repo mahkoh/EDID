@@ -72,7 +72,7 @@ Block 0, Base EDID:
     DPMS levels: Off
     Supported color formats: RGB 4:4:4, YCrCb 4:4:4, YCrCb 4:2:2
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6474, 0.3183
     Green: 0.2968, 0.6230
@@ -108,7 +108,7 @@ Block 0, Base EDID:
                  Hfront   88 Hsync  44 Hback  148 Hpol P
                  Vfront    4 Vsync   5 Vback   36 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-300 Hz V, 255-255 kHz H, max dotclock 750 MHz
+      Monitor ranges (Range Limits Only): 48-300 Hz V, 255-255 kHz H, max dotclock 750 MHz
     Display Product Serial Number: ...
     Display Product Name: 'CF25F300L'
   Extension blocks: 2
@@ -122,7 +122,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 1
+  Native DTDs: 1
   Audio Data Block:
     Linear PCM:
       Max channels: 2
@@ -150,15 +150,12 @@ Block 1, CTA-861 Extension Block:
     VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
     VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.129
+    Version: 3
+    Feature Caps: 0x81
     Minimum Refresh Rate: 48 Hz
-    Maximum Refresh Rate: 240 Hz
+    Maximum Refresh Rate: 300 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x04
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Maximum luminance (without local dimming): 0 (50.000 cd/m^2)
-    Minimum luminance (without local dimming): 0 (0.000 cd/m^2)
   Detailed Timing Descriptors:
     DTD 2:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (544 mm x 303 mm)
                  Hfront   88 Hsync  44 Hback  148 Hpol P
@@ -189,129 +186,26 @@ Checksum: 0x90
 
 ----------------
 
-Block 3, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 32 68 15 03 01 00 00 00 '........2h......'
-  29 22 01 04 b5 36 1e 78 3b e2 80 a5 51 4c 9f 25 ')"...6.x;...QL.%'
-  0d 4e 56 bf ef 80 81 80 b3 00 d1 c0 71 40 95 00 '.NV.........q@..'
-  81 40 81 c0 a9 c0 02 3a 80 18 71 38 2d 40 58 2c '.@.....:..q8-@X,'
-  45 00 20 2f 21 00 00 1e 00 00 00 fd 02 30 2d ff 'E. /!........0-.'
-  ff 4b 01 0a 20 20 20 20 20 20 00 00 00 ff 00 30 '.K..      .....0'
-  52 30 30 44 39 51 41 36 42 58 55 35 00 00 00 fc 'R00D9QA6BXU5....'
-  00 43 46 32 35 46 33 30 30 4c 0a 20 20 20 02 92 '.CF25F300L.   ..'
-Checksum: 0x92
-
-----------------
-
-Block 4, CTA-861 Extension Block:
-  Revision: 3
-  Underscans IT Video Formats by default
-  Basic audio support
-  Supports YCbCr 4:4:4
-  Supports YCbCr 4:2:2
-  Native detailed modes: 1
-  Audio Data Block:
-    Linear PCM:
-      Max channels: 2
-      Supported sample rates (kHz): 48 44.1 32
-      Supported sample sizes (bits): 24 20 16
-  Speaker Allocation Data Block:
-    FL/FR - Front Left/Right
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      Traditional gamma - HDR luminance range
-      SMPTE ST2084
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 96 (400.000 cd/m^2)
-    Desired content max frame-average luminance: 80 (282.843 cd/m^2)
-    Desired content min luminance: 6 (0.002 cd/m^2)
-  Colorimetry Data Block:
-    BT2020YCC
-    BT2020RGB
-  Video Data Block:
-    VIC   1:   640x480    59.940476 Hz   4:3     31.469 kHz     25.175000 MHz
-    VIC   2:   720x480    59.940060 Hz   4:3     31.469 kHz     27.000000 MHz
-    VIC   3:   720x480    59.940060 Hz  16:9     31.469 kHz     27.000000 MHz
-    VIC   4:  1280x720    60.000000 Hz  16:9     45.000 kHz     74.250000 MHz
-    VIC  16:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (native)
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.129
-    Minimum Refresh Rate: 48 Hz
-    Maximum Refresh Rate: 240 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x04
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Maximum luminance (without local dimming): 0 (50.000 cd/m^2)
-    Minimum luminance (without local dimming): 0 (0.000 cd/m^2)
-  Detailed Timing Descriptors:
-    DTD 6:  1920x1080   60.000000 Hz  16:9     67.500 kHz    148.500000 MHz (544 mm x 303 mm)
-                 Hfront   88 Hsync  44 Hback  148 Hpol P
-                 Vfront    4 Vsync   5 Vback   36 Vpol P
-    DTD 7:  1920x1080  119.998991 Hz  16:9    137.279 kHz    285.540000 MHz (544 mm x 303 mm)
-                 Hfront   48 Hsync  32 Hback   80 Hpol P
-                 Vfront    3 Vsync   5 Vback   56 Vpol P
-    DTD 8:  1920x1080  165.001702 Hz  16:9    186.452 kHz    387.820000 MHz (544 mm x 303 mm)
-                 Hfront   48 Hsync  44 Hback   68 Hpol P
-                 Vfront    4 Vsync   5 Vback   41 Vpol P
-    DTD 9:  1920x1080  239.997983 Hz  16:9    274.558 kHz    571.080000 MHz (544 mm x 303 mm)
-                 Hfront   44 Hsync  64 Hback   52 Hpol P
-                 Vfront    3 Vsync   5 Vback   56 Vpol P
-Checksum: 0x09  Unused space in Extension Block: 5 bytes
-
-----------------
-
-Block 5, DisplayID Extension Block:
-  Version: 1.2
-  Extension Count: 0
-  Video Timing Modes Type 1 - Detailed Timings Data Block:
-    DTD:  1920x1080  300.000000 Hz  16:9    337.500 kHz    702.000000 MHz (aspect 16:9, no 3D stereo)
-               Hfront   48 Hsync  32 Hback   80 Hpol P
-               Vfront    3 Vsync   5 Vback   37 Vpol N
-  Checksum: 0xac
-Checksum: 0x90
-
-----------------
-
 Warnings:
 
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 Block 1, CTA-861 Extension Block:
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-  Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
-Block 4, CTA-861 Extension Block:
-  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
+  Video Data Block: VIC 1 and the first DTD are not identical. Is this intended?
+  Video Data Block: All VICs are in ascending order, and the first (preferred) VIC <= 4, is that intended?
   Display Product Serial Number is set, so the Serial Number in the Base EDID should be 0.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Horizontal Freq: 31.466 - 337.500 kHz (Monitor: 255.000 - 255.000 kHz)
-  CTA-861: Multiple native progressive timings are defined.
 
 Failures:
 
 Block 1, CTA-861 Extension Block:
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, DisplayID Extension Block:
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 3, Base EDID:
-  Unknown Extension Block.
-Block 4, CTA-861 Extension Block:
-  Speaker Allocation Data Block: Only one instance of this Data Block is allowed.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  Video Data Block: Duplicate VIC 1.
-  Video Data Block: Duplicate VIC 2.
-  Video Data Block: Duplicate VIC 3.
-  Video Data Block: Duplicate VIC 4.
-  Video Data Block: Duplicate VIC 16.
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 5, DisplayID Extension Block:
-  Product Type should be 0 in extension block.
 EDID:
-  Base EDID: EDID specified 2 extension block(s), but found 5 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
+  Extension Block 3 started with EDID header, ignoring Extension Blocks >= 3.
   DisplayID: Missing DisplayID Display Parameters Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

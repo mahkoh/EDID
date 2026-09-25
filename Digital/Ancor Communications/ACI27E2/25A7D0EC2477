@@ -94,6 +94,11 @@ Checksum: 0x98  Unused space in Extension Block: 69 bytes
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: DTD is identical to VIC 16, which is not present in the CTA Ext Block.
+
 Failures:
 
 Block 0, Base EDID:

@@ -67,24 +67,14 @@ Checksum: 0x02
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 2d 4c 02 00 00 00 00 '........L-L.....'
-  11 10 01 03 68 59 32 8c 2a e2 bd a1 5b 4a 98 24 '....hY2.*...[J.$'
-  15 47 4a ad ce 00 01 01 01 01 01 01 01 01 01 01 '.GJ.............'
-  01 01 01 01 01 01 1a 1d 00 80 51 d0 1c 20 40 80 '..........Q.. @.'
-  35 00 75 f2 31 00 00 1c 0e 1f 00 80 51 00 1e 30 '5.u.1.......Q..0'
-  40 80 37 00 75 f2 31 00 00 1c 00 00 00 fd 00 3c '@.7.u.1........<'
-  4b 1e 3d 09 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.=...      ....'
-  00 53 41 4d 53 55 4e 47 20 4c 43 44 0a 20 00 02 '.SAMSUNG LCD. ..'
-Checksum: 0x02
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Detailed Timing Descriptor #2: Image size is 885x498 mm, but based on the picture AR it should be 830x498 mm.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

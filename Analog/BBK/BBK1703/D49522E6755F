@@ -70,28 +70,20 @@ Checksum: 0x4c
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 08 4b 03 17 00 00 00 00 '.........K......'
-  28 0e 01 03 68 23 1d 78 e8 ff ba a1 56 47 98 24 '(...h#.x....VG.$'
-  14 48 4b af cf 00 81 40 01 01 01 01 01 01 01 01 '.HK....@........'
-  01 01 01 01 01 01 30 2a 00 fd 00 3c 55 1f 5b ff '......0*...<U.[.'
-  00 0a 20 20 20 20 20 20 00 00 00 ff 00 32 a0 1e '..      .....2..'
-  57 ff 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42 'W...      .....B'
-  42 4b 20 4c 43 44 31 37 30 33 41 20 20 20 20 20 'BK LCD1703A     '
-  20 20 20 20 20 20 20 20 20 20 20 20 20 20 00 4c '              .L'
-Checksum: 0x4c
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Display Product Serial Number: ...
+  Display Product Serial Number: ...
+  Detailed Timing Descriptor #1: Dubious image size (544x32 mm is smaller than 100x100 mm).
   Detailed Timing Descriptor #1: The use of non-zero borders in a DTD is not recommended.
+  Detailed Timing Descriptor #2: Dubious image size (544x32 mm is smaller than 100x100 mm).
   Detailed Timing Descriptor #2: The use of non-zero borders in a DTD is not recommended.
 
 Failures:
 
 Block 0, Base EDID:
+  Display Product Serial Number: ...
   Basic Display Parameters & Features: EDID 1.3 requires that the first detailed timing is the preferred timing.
   Detailed Timing Descriptor #1: 0 values in the video timing:
     Horizontal Active/Blanking 0/253
@@ -100,8 +92,7 @@ Block 0, Base EDID:
     Vertical Frontporch/Sync Width 32/32
   Detailed Timing Descriptor #1: 0 or negative horizontal back porch.
   Detailed Timing Descriptor #1: Mismatch of image size 544x32 mm vs display size 350x290 mm.
-  Display Product Serial Number: ...
-  Display Product Name: One or more trailing spaces.
+  Display Product Name: No newline, but one or more trailing spaces.
   Detailed Timing Descriptor #2: 0 values in the video timing:
     Horizontal Active/Blanking 544/32
     Horizontal Frontporch/Sync Width 32/544
@@ -112,10 +103,8 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 544x32 mm vs display size 350x290 mm.
   Detailed Timing Descriptor #2: Invalid detailed timing descriptor ordering.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 544x32mm, which is larger than the display size 350.0x290.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

@@ -35,18 +35,27 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   85 Hpol N
                  Vfront    3 Vsync   6 Vback   14 Vpol N
     Empty Descriptor
-    Alphanumeric Data String: 'RP776'
-    Alphanumeric Data String: ''
+    Alphanumeric Data String: 'RP776.141WX1'
+    Alphanumeric Data String: '.-9Eo.....'
 Checksum: 0x9e
 
 ----------------
+
+Warnings:
+
+Block 0, Base EDID:
+  Alphanumeric Data String: Non-ASCII character 0x04 at position 5, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x1d at position 0, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x97 at position 5, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0xb7 at position 6, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0xfb at position 7, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 8, can cause problems.
+  Alphanumeric Data String: Non-ASCII character 0x01 at position 9, can cause problems.
 
 Failures:
 
 Block 0, Base EDID:
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
-  Alphanumeric Data String: Non-printable character.
-  Alphanumeric Data String: Non-printable character.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 

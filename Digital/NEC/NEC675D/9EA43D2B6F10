@@ -76,31 +76,18 @@ Checksum: 0xd8
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 38 a3 5d 67 01 01 01 01 '........8.]g....'
-  26 13 01 03 80 37 22 78 ea 77 65 ae 4f 34 b0 26 '&....7"x.we.O4.&'
-  0d 50 54 bf ef 80 81 c0 81 80 90 40 8b c0 95 00 '.PT........@....'
-  a9 40 b3 00 d1 00 28 3c 80 a0 70 b0 23 40 30 20 '.@....(<..p.#@0 '
-  36 00 26 58 21 00 00 1a 00 00 00 fd 00 32 55 1f '6.&X!........2U.'
-  5c 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 4c '\...      .....L'
-  43 44 32 36 39 30 57 55 58 69 32 0a 00 00 00 ff 'CD2690WUXi2.....'
-  00 39 39 33 30 32 35 39 31 59 41 0a 20 20 00 d8 '.99302591YA.  ..'
-Checksum: 0xd8
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Standard Timings: Standard Timing 1360x765 has a dubious odd vertical resolution.
-
-Failures:
-
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Maximum Clock: 193.250 MHz (Monitor: 170.000 MHz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+Failures:
+
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

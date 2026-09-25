@@ -41,11 +41,16 @@ Checksum: 0xff
 
 ----------------
 
+Warnings:
+
+Block 0, Base EDID:
+  Detailed Timing Descriptor #1: Dubious image size (154x90 mm is smaller than 100x100 mm).
+
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 154x90 mm vs display size 170x100 mm.
-  Alphanumeric Data String: One or more trailing spaces.
+  Alphanumeric Data String: No newline, but one or more trailing spaces.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 

@@ -54,7 +54,7 @@ Block 0, Base EDID:
     Supported color formats: RGB 4:4:4
     Default (sRGB) color space is primary color space
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6396, 0.3300
     Green: 0.2998, 0.5996
@@ -88,59 +88,13 @@ Block 1, DisplayID Extension Block:
     Seamless Dynamic Video Timing Support: Yes
   CTA-861 DisplayID Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.81
+    Version: 3
+    Feature Caps: 0x51
+      FreeSync Panel Replay Supported
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 96 (400.000 cd/m^2)
-    Minimum luminance: 74 (0.337 cd/m^2)
-    Unknown: 0x60 0x4a
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 96 (400.000 cd/m^2)
-    Desired content max frame-average luminance: 96 (400.000 cd/m^2)
-    Desired content min luminance: 40 (0.098 cd/m^2)
-  Checksum: 0x96
-Checksum: 0x90
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 30 e4 a1 07 a1 ff 00 00 '........0.......'
-  00 22 01 04 a5 1e 13 78 07 ee 95 a3 54 4c 99 26 '.".....x....TL.&'
-  0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 60 3f 80 a0 70 b0 64 40 30 20 '......`?..p.d@0 '
-  f6 0c 2e bd 10 00 00 1a 40 2a 80 a0 70 b0 64 40 '........@*..p.d@'
-  30 20 f6 0c 2e bd 10 00 00 1a 00 00 00 00 00 00 '0 ..............'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 '................'
-  00 0c 26 ff 14 3c c8 0e 0d 23 c8 00 00 00 01 f5 '..&..<...#......'
-Checksum: 0xf5
-
-----------------
-
-Block 3, DisplayID Extension Block:
-  Version: 2.0
-  Extension Count: 0
-  Dynamic Video Timing Range Limits Data Block:
-    Minimum Pixel Clock: 162240 kHz
-    Maximum Pixel Clock: 162240 kHz
-    Minimum Vertical Refresh Rate: 40 Hz
-    Maximum Vertical Refresh Rate: 60 Hz
-    Seamless Dynamic Video Timing Support: Yes
-  CTA-861 DisplayID Data Block:
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.81
-    Minimum Refresh Rate: 40 Hz
-    Maximum Refresh Rate: 60 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
-    Maximum luminance: 96 (400.000 cd/m^2)
-    Minimum luminance: 74 (0.337 cd/m^2)
-    Unknown: 0x60 0x4a
   HDR Static Metadata Data Block:
     Electro optical transfer functions:
       Traditional gamma - SDR luminance range
@@ -165,18 +119,9 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
   Missing Display Range Limits Descriptor.
-Block 1, DisplayID Extension Block:
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, DisplayID Extension Block:
-  Product Type should be 0 in extension block.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   DisplayID: Missing DisplayID Display Parameters Data Block.
-  DisplayID: Missing DisplayID Display Interface Features Data Block.
   DisplayID: Missing DisplayID Type VII Detailed Timing Data Block.
   DisplayID: DisplayID expects at least one preferred timing.
 

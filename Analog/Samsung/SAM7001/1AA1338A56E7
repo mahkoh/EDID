@@ -78,26 +78,11 @@ Checksum: 0x23
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 4c 2d 01 70 45 43 57 43 '........L-.pECWC'
-  1e 1f 01 03 0e 46 27 78 2a 1c 02 a8 53 45 96 23 '.....F'x*...SE.#'
-  1b 4d 58 bf ef 80 71 4f 81 c0 81 00 81 80 95 00 '.MX...qO........'
-  a9 c0 b3 00 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 ba 89 21 00 00 1e 00 00 00 fd 00 38 4b 1e 'E...!........8K.'
-  51 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 43 'Q...      .....C'
-  33 32 52 35 30 78 0a 20 20 20 20 20 00 00 00 ff '32R50x.     ....'
-  00 48 34 43 52 37 30 34 31 36 37 59 00 20 00 23 '.H4CR704167Y. .#'
-Checksum: 0x23
-
-----------------
-
 Failures:
 
 Block 0, Base EDID:
   Display Product Serial Number: ...
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

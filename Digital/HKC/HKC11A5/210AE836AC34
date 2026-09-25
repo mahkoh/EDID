@@ -53,7 +53,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.5908, 0.3564
     Green: 0.3525, 0.5761
@@ -87,51 +87,12 @@ Block 1, DisplayID Extension Block:
     Seamless Dynamic Video Timing Support: Yes
   CTA-861 DisplayID Data Block:
   Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.1
+    Version: 3
+    Feature Caps: 0x01
     Minimum Refresh Rate: 40 Hz
     Maximum Refresh Rate: 60 Hz
     Flags 1.x: 0x00
     Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
-  Checksum: 0x0c
-Checksum: 0x90
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 21 63 a5 11 01 01 00 00 '........!c......'
-  00 21 01 04 95 22 13 78 03 56 60 97 5b 5a 93 29 '.!...".x.V`.[Z.)'
-  1f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 98 3b 80 10 71 38 50 40 30 20 '.......;..q8P@0 '
-  36 00 58 c2 10 00 00 19 bb 27 80 10 71 38 50 40 '6.X......'..q8P@'
-  30 20 36 00 58 c2 10 00 00 19 00 00 00 00 00 00 '0 6.X...........'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 '................'
-  00 0c 3d ff 0c 3c 7d 11 13 29 7d 00 00 00 01 1b '..=..<}..)}.....'
-Checksum: 0x1b
-
-----------------
-
-Block 3, DisplayID Extension Block:
-  Version: 2.0
-  Extension Count: 0
-  Dynamic Video Timing Range Limits Data Block:
-    Minimum Pixel Clock: 152561 kHz
-    Maximum Pixel Clock: 152561 kHz
-    Minimum Vertical Refresh Rate: 40 Hz
-    Maximum Vertical Refresh Rate: 60 Hz
-    Seamless Dynamic Video Timing Support: Yes
-  CTA-861 DisplayID Data Block:
-  Vendor-Specific Data Block (AMD), OUI 00-00-1A:
-    Version: 3.1
-    Minimum Refresh Rate: 40 Hz
-    Maximum Refresh Rate: 60 Hz
-    Flags 1.x: 0x00
-    Flags 2.x: 0x00
-    Maximum luminance: 0 (50.000 cd/m^2)
-    Minimum luminance: 0 (0.000 cd/m^2)
-    Unknown: 0x00 0x00
   Checksum: 0x0c
 Checksum: 0x90
 
@@ -149,12 +110,8 @@ Block 0, Base EDID:
   Missing Display Range Limits Descriptor.
 Block 1, DisplayID Extension Block:
   DisplayID Base Block has no product type.
-  Expected 0 DisplayID Extension Block, but got 1.
-Block 2, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
-  DisplayID: Missing DisplayID Product Identification Data Block.
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
   DisplayID: DisplayID expects at least one preferred timing.
 
 EDID conformity: FAIL

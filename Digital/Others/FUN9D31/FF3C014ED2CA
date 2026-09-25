@@ -81,7 +81,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     Unknown (VIC 225)
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -149,7 +149,7 @@ Warnings:
 
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Video Data Block: VIC 96 is the preferred timing, overriding the first detailed timings. Is this intended?
+  Video Data Block: VIC 96 and the first DTD are not identical. Is this intended?
   Detailed Timing Descriptor #3: DTD is similar but not identical to VIC 97.
 
 Failures:

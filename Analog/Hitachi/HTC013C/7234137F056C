@@ -61,23 +61,11 @@ Checksum: 0xd9
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 22 83 3c 01 00 00 00 00 '........".<.....'
-  01 1c 01 03 68 10 09 78 0a dc 51 a8 53 47 97 23 '....h..x..Q.SG.#'
-  1a 4f 58 a1 09 00 81 80 01 01 01 01 01 00 01 01 '.OX.............'
-  01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 7e 8a 42 00 00 1e 0e 1f 00 80 51 00 1e 30 'E.~.B.......Q..0'
-  40 80 37 00 7e 8a 42 00 00 1c 00 00 00 f0 00 3b '@.7.~.B........;'
-  4c 1f 50 0f 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.P...      ....'
-  00 34 30 43 33 31 31 0a 20 20 20 20 20 20 00 d9 '.40C311.      ..'
-Checksum: 0xd9
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Dubious maximum image size (16x9 is smaller than 10x10 cm).
+  Detailed Timing Descriptor #2: Image size is 1150x650 mm, but based on the picture AR it should be 1083x650 mm.
 
 Failures:
 
@@ -87,10 +75,8 @@ Block 0, Base EDID:
   Detailed Timing Descriptor #2: Mismatch of image size 1150x650 mm vs display size 160x90 mm.
   Display Descriptor #3: Unknown Type 0xf0.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 1150x650mm, which is larger than the display size 160.0x90.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

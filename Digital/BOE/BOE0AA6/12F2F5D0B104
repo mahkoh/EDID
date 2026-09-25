@@ -54,19 +54,6 @@ Checksum: 0x2d
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 e5 a6 0a 00 00 00 00 '................'
-  20 1f 01 04 a5 1d 10 78 02 f8 90 9e 59 55 9c 26 ' ......x....YU.&'
-  1a 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 3e 1c 56 a0 50 00 16 30 30 20 '......>.V.P..00 '
-  36 00 25 a5 10 00 00 1a 9e 16 56 a0 50 00 16 30 '6.%.......V.P..0'
-  30 20 36 00 25 a5 10 00 00 1a 00 00 00 00 00 00 '0 6.%...........'
-  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 '................'
-  00 11 43 ff 0f 3c e6 41 46 3a e6 00 00 00 00 2d '..C..<.AF:.....-'
-Checksum: 0x2d
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
@@ -76,9 +63,7 @@ Failures:
 
 Block 0, Base EDID:
   Empty Descriptor: Use Dummy Descriptor instead of all zeroes.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

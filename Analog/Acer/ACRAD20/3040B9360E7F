@@ -75,24 +75,14 @@ Checksum: 0xe3
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 04 72 20 ad 01 00 00 00 '.........r .....'
-  25 0d 01 03 68 1e 17 82 2a f3 e0 9d 58 4a 97 25 '%...h...*...XJ.%'
-  19 50 54 bf ee 00 61 40 61 4f 45 40 45 4f 31 40 '.PT...a@aOE@EO1@'
-  31 4f 01 01 01 01 64 19 00 40 41 00 26 30 18 88 '1O....d..@A.&0..'
-  36 00 30 e4 10 00 00 18 00 00 00 ff 00 33 33 37 '6.0..........337'
-  30 31 30 46 33 50 4b 30 30 0a 00 00 00 fd 00 37 '010F3PK00......7'
-  4b 1e 3f 08 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.?...      ....'
-  00 41 63 65 72 20 41 4c 35 30 37 0a 20 20 00 e3 '.Acer AL507.  ..'
-Checksum: 0xe3
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

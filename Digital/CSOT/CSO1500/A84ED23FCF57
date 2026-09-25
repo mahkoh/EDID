@@ -52,7 +52,7 @@ Block 0, Base EDID:
     Gamma: 2.20
     Supported color formats: RGB 4:4:4
     First detailed timing includes the native pixel format and preferred refresh rate
-    Display is continuous frequency
+    Display supports continuous frequencies
   Color Characteristics:
     Red  : 0.6582, 0.3212
     Green: 0.2070, 0.7109
@@ -74,38 +74,7 @@ Checksum: 0x70
 
 Block 1, CTA-861 Extension Block:
   Revision: 3
-  Native detailed modes: 0
-  Colorimetry Data Block:
-    BT2020RGB
-  HDR Static Metadata Data Block:
-    Electro optical transfer functions:
-      Traditional gamma - SDR luminance range
-      SMPTE ST2084
-    Supported static metadata descriptors:
-      Static metadata type 1
-    Desired content max luminance: 115 (603.666 cd/m^2)
-    Desired content max frame-average luminance: 115 (603.666 cd/m^2)
-    Desired content min luminance: 33 (0.101 cd/m^2)
-Checksum: 0x8b  Unused space in Extension Block: 112 bytes
-
-----------------
-
-Block 2, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 0e 6f 00 15 00 00 00 00 '.........o......'
-  00 1d 01 04 b5 22 13 78 03 90 4d a8 52 35 b6 25 '.....".x..M.R5.%'
-  11 4e 54 00 00 00 01 01 01 01 01 01 01 01 01 01 '.NT.............'
-  01 01 01 01 01 01 40 ce 00 a0 f0 70 28 80 30 20 '......@....p(.0 '
-  35 00 58 c2 10 00 00 18 00 00 00 00 00 00 00 00 '5.X.............'
-  00 00 00 00 00 00 00 00 00 18 00 00 00 fe 00 43 '...............C'
-  53 4f 54 20 54 33 0a 20 20 20 20 20 00 00 00 fe 'SOT T3.     ....'
-  00 4d 4e 46 36 30 31 45 41 31 2d 31 0a 20 01 70 '.MNF601EA1-1. .p'
-Checksum: 0x70
-
-----------------
-
-Block 3, CTA-861 Extension Block:
-  Revision: 3
-  Native detailed modes: 0
+  Native DTDs: 0
   Colorimetry Data Block:
     BT2020RGB
   HDR Static Metadata Data Block:
@@ -128,9 +97,6 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   IT Video Formats are overscanned by default, but normally this should be underscanned.
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
-Block 3, CTA-861 Extension Block:
-  IT Video Formats are overscanned by default, but normally this should be underscanned.
-  Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
 
 Failures:
 
@@ -139,14 +105,7 @@ Block 0, Base EDID:
 Block 1, CTA-861 Extension Block:
   Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
   Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
-Block 2, Base EDID:
-  Unknown Extension Block.
-Block 3, CTA-861 Extension Block:
-  Colorimetry Data Block: Only one instance of this Data Block is allowed.
-  HDR Static Metadata Data Block: Only one instance of this Data Block is allowed.
-  Required 640x480p60 timings are missing in the established timings and the SVD list (VIC 1).
-  Missing VCDB, needed for Set Selectable RGB Quantization to avoid interop issues.
 EDID:
-  Base EDID: EDID specified 1 extension block(s), but found 3 extension block(s).
+  Extension Block 2 started with EDID header, ignoring Extension Blocks >= 2.
 
 EDID conformity: FAIL

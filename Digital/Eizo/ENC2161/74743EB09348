@@ -61,29 +61,20 @@ Checksum: 0x59
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 15 c3 61 21 01 01 01 01 '..........a!....'
-  1e 14 01 03 80 31 20 78 ea f5 c1 a8 53 37 ae 25 '.....1 x....S7.%'
-  12 50 54 a1 08 00 a9 40 81 80 81 40 b3 00 01 01 '.PT....@...@....'
-  01 01 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
-  36 00 07 44 21 00 00 1a 00 00 00 ff 00 32 36 32 '6..D!........262'
-  35 35 30 37 30 0a 20 20 20 20 00 00 00 fd 00 3b '55070.    .....;'
-  3d 1f 4c 11 00 0a 20 20 20 20 20 20 00 00 00 fc '=.L...      ....'
-  00 53 58 32 32 36 32 57 0a 20 20 20 20 20 00 59 '.SX2262W.     .Y'
-Checksum: 0x59
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Vertical Freq: 59.940 - 70.082 Hz (Monitor: 59.000 - 61.000 Hz)
 
 Failures:
 
 Block 0, Base EDID:
   Detailed Timing Descriptor #1: Mismatch of image size 519x324 mm vs display size 490x320 mm.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Vertical Freq: 59.940 - 70.082 Hz (Monitor: 59.000 - 61.000 Hz)
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
   Base EDID: The DTD max image size is 519x324mm, which is larger than the display size 490.0x320.0mm.
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
 
 EDID conformity: FAIL

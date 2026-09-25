@@ -71,7 +71,7 @@ Block 1, CTA-861 Extension Block:
   Basic audio support
   Supports YCbCr 4:4:4
   Supports YCbCr 4:2:2
-  Native detailed modes: 0
+  Native DTDs: 0
   Video Data Block:
     VIC  97:  3840x2160   60.000000 Hz  16:9    135.000 kHz    594.000000 MHz
     VIC  96:  3840x2160   50.000000 Hz  16:9    112.500 kHz    594.000000 MHz
@@ -144,9 +144,9 @@ Block 1, CTA-861 Extension Block:
     FL/FR - Front Left/Right
     LFE1 - Low Frequency Effects 1
     FC - Front Center
-    BL/BR - Back Left/Right
+    LS/RS - Left/Right Surround
     BC - Back Center
-    RLC/RRC - Rear Left/Right of Center (Deprecated)
+    BL/BR - Back Left/Right
   Vendor-Specific Data Block (HDMI), OUI 00-0C-03:
     Source physical address: 1.1.0.0
     Supports_AI
@@ -157,7 +157,7 @@ Block 1, CTA-861 Extension Block:
     Extended HDMI video details:
       3D present
       3D-capable-VIC mask present
-      Base EDID image size is aspect ratio
+      Base EDID image size indicates aspect ratio
       HDMI VICs:
         HDMI VIC 1:  3840x2160   30.000000 Hz  16:9     67.500 kHz    297.000000 MHz
         HDMI VIC 2:  3840x2160   25.000000 Hz  16:9     56.250 kHz    297.000000 MHz
@@ -232,9 +232,11 @@ Checksum: 0x57  Unused space in Extension Block: 1 byte
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Basic Display Parameters & Features: Dubious maximum image size (16x9 is smaller than 10x10 cm).
 Block 1, CTA-861 Extension Block:
-  Video Data Block: For improved preferred timing interoperability, set 'Native detailed modes' to 1.
+  Video Data Block: For improved preferred timing interoperability, set 'Native DTDs' to 1.
+  Vendor-Specific Data Block (HDMI), OUI 00-0C-03: 'Indicates Aspect Ratio' is used for a small display (<= 255 cm), it is better to fill in the actual size
   YCbCr 4:2:0 Capability Map Data Block: Some YCbCr 4:2:0 timings are invalid for HDMI 2.1 (which requires an RGB timings pixel rate >= 590 MHz).
   Colorimetry Data Block: Set the sRGB colorimetry bit to avoid interop issues.
   Video Capability Data Block: S_PT is equal to S_IT and S_CE, so should be set to 0 instead.
@@ -243,9 +245,8 @@ EDID:
 
 Failures:
 
-Block 0, Base EDID:
-  Detailed Timing Descriptor #1: Mismatch of image size 1120x630 mm vs display size 160x90 mm.
-  Detailed Timing Descriptor #2: Mismatch of image size 1120x630 mm vs display size 160x90 mm.
+Block 1, CTA-861 Extension Block:
+  Vendor-Specific Data Block (HDMI Forum), OUI C4-5D-D8: HDMI VIC and related CTA VIC codes are present, but the UHD VIC bit is 0.
 EDID:
   Base EDID: The DTD max image size is 1120x630mm, which is larger than the display size 160.0x90.0mm.
 

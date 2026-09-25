@@ -44,6 +44,8 @@ Warnings:
 
 Block 0, Base EDID:
   EDID Structure Version & Revision: EDID 1.1 is deprecated, do not use.
+EDID:
+  No Native Video Resolution was defined.
 
 Failures:
 

@@ -71,31 +71,17 @@ Checksum: 0x23
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 09 d1 40 78 45 54 00 00 '..........@xET..'
-  08 14 01 03 80 35 1e 78 2e 60 81 a6 56 4a 9c 25 '.....5.x.`..VJ.%'
-  12 50 54 a5 6b 80 71 00 81 c0 81 40 81 80 a9 c0 '.PT.k.q....@....'
-  b3 00 d1 c0 01 01 02 3a 80 18 71 38 2d 40 58 2c '.......:..q8-@X,'
-  45 00 13 2b 21 00 00 1a 00 00 00 ff 00 4c 32 41 'E..+!........L2A'
-  30 34 38 33 34 53 4c 30 0a 20 00 00 00 fd 00 32 '04834SL0. .....2'
-  4c 18 53 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.S...      ....'
-  00 42 65 6e 51 20 47 32 34 32 30 48 44 0a 00 23 '.BenQ G2420HD..#'
-Checksum: 0x23
-
-----------------
-
 Warnings:
 
 Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
   Detailed Timing Descriptor #1: DTD is similar but not identical to VIC 16.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

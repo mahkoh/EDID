@@ -69,29 +69,19 @@ Checksum: 0x77
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1d 85 01 12 01 00 00 00 '................'
-  26 12 01 03 68 19 13 78 ef 57 f1 a4 56 4e 94 24 '&...h..x.W..VN.$'
-  19 50 54 af c0 00 01 01 01 01 01 01 01 01 01 01 '.PT.............'
-  01 01 01 01 01 01 a0 0f 20 00 31 58 1c 20 28 80 '........ .1X. (.'
-  14 00 f6 b9 00 00 00 1e 10 0e 20 e0 30 58 19 20 '.......... .0X. '
-  18 48 12 00 f6 b9 00 00 00 1e d5 09 80 90 20 e0 '.H............ .'
-  1d 10 08 60 22 00 f6 b9 00 00 00 18 00 00 00 fc '...`"...........'
-  20 4c 43 44 20 4d 4f 4e 49 54 4f 52 20 20 00 77 ' LCD MONITOR  .w'
-Checksum: 0x77
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
   Display Descriptor #4: Monitor descriptor block has byte 4 nonzero (0x20).
-  Display Product Name: One or more trailing spaces.
+  Display Product Name: No newline, but one or more trailing spaces.
   Missing Display Range Limits Descriptor.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

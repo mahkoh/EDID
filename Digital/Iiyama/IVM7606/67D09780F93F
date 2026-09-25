@@ -76,24 +76,14 @@ Checksum: 0x53
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 26 cd 06 76 01 01 01 01 '........&..v....'
-  03 1f 01 03 80 46 27 78 2a 0f 25 a8 54 43 96 22 '.....F'x*.%.TC."'
-  1a 50 54 bf ef 80 81 80 95 00 a9 c0 a9 40 b3 00 '.PT..........@..'
-  d1 c0 d1 00 e1 c0 56 5e 00 a0 a0 a0 29 50 30 20 '......V^....)P0 '
-  35 00 ba 89 21 00 00 1a 00 00 00 ff 00 31 31 35 '5...!........115'
-  35 31 31 30 33 33 30 35 34 30 00 00 00 fd 00 37 '5110330540.....7'
-  4c 1e 5a 19 00 0a 20 20 20 20 20 20 00 00 00 fc 'L.Z...      ....'
-  00 50 4c 33 32 37 30 51 0a 20 20 20 20 20 00 53 '.PL3270Q.     .S'
-Checksum: 0x53
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

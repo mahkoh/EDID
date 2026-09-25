@@ -41,7 +41,7 @@ Block 0, Base EDID:
                  Hfront   48 Hsync  32 Hback   80 Hpol P
                  Vfront   23 Vsync   5 Vback   52 Vpol P
     Display Range Limits:
-      Monitor ranges (Bare Limits): 48-90 Hz V, 188-188 kHz H, max dotclock 630 MHz
+      Monitor ranges (Range Limits Only): 48-90 Hz V, 188-188 kHz H, max dotclock 630 MHz
     Display Product Name: 'TL156MDMP01-0'
 Checksum: 0x29
 
@@ -51,16 +51,16 @@ Warnings:
 
 Block 0, Base EDID:
   EDID Structure Version & Revision: EDID 1.2 is deprecated, do not use.
+EDID:
+  Base EDID: Some timings are out of range of the Monitor Ranges:
+    Horizontal Freq: 124.800 - 187.200 kHz (Monitor: 188.000 - 188.000 kHz)
+    Maximum Clock: 631.800 MHz (Monitor: 630.000 MHz)
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x24.
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-  Display Range Limits: 'Bare Limits' is not allowed for EDID < 1.4.
-EDID:
-  Base EDID: Some timings are out of range of the Monitor Ranges:
-    Horizontal Freq: 124.800 - 187.200 kHz (Monitor: 188.000 - 188.000 kHz)
-    Maximum Clock: 631.800 MHz (Monitor: 630.000 MHz)
+  Display Range Limits: 'Range Limits Only' is not allowed for EDID < 1.4.
 
 EDID conformity: FAIL

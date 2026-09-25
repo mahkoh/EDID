@@ -80,26 +80,16 @@ Checksum: 0xaf
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 5a 63 22 22 01 01 01 01 '........Zc""....'
-  17 13 01 03 18 34 1d 78 2e ee d5 a5 55 48 9b 26 '.....4.x....UH.&'
-  12 50 54 bf ef 80 d1 c0 b3 00 a9 40 95 00 90 40 '.PT........@...@'
-  81 80 81 40 71 4f 02 3a 80 18 71 38 2d 40 58 2c '...@qO.:..q8-@X,'
-  45 00 09 25 21 00 00 1e 00 00 00 ff 00 52 33 56 'E..%!........R3V'
-  30 39 32 33 30 30 33 38 32 0a 00 00 00 fd 00 32 '092300382......2'
-  4b 16 52 11 00 0a 20 20 20 20 20 20 00 00 00 fc 'K.R...      ....'
-  00 56 41 32 34 31 33 77 6d 0a 20 20 20 20 00 af '.VA2413wm.    ..'
-Checksum: 0xaf
+Warnings:
 
-----------------
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
 
 Failures:
 
 Block 0, Base EDID:
   Basic Display Parameters & Features: sRGB is signaled, but the chromaticities do not match.
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

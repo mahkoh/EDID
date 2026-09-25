@@ -67,24 +67,9 @@ Checksum: 0x8a
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 1a b3 12 08 98 60 01 00 '.............`..'
-  0e 17 01 03 80 34 20 78 2a 01 f5 a2 57 52 9f 27 '.....4 x*...WR.''
-  0a 50 54 a5 4b 00 a9 40 b3 00 95 00 81 80 a9 c0 '.PT.K..@........'
-  d1 c0 01 01 01 01 28 3c 80 a0 70 b0 23 40 30 20 '......(<..p.#@0 '
-  36 00 06 44 21 00 00 1a 00 00 00 fd 00 38 4c 1e '6..D!........8L.'
-  52 11 00 0a 20 20 20 20 20 20 00 00 00 fc 00 42 'R...      .....B'
-  32 34 57 2d 36 20 4c 45 44 0a 20 20 00 00 00 ff '24W-6 LED.  ....'
-  00 59 56 35 4b 30 39 30 32 36 34 0a 20 20 00 8a '.YV5K090264.  ..'
-Checksum: 0x8a
-
-----------------
-
 Failures:
 
-Block 1, Base EDID:
-  Unknown Extension Block.
 EDID:
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL

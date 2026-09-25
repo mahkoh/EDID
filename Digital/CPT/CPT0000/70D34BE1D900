@@ -48,7 +48,7 @@ Block 0, Base EDID:
   Basic Display Parameters & Features: Digital Video Interface Standard set to reserved value 0x14.
   Detailed Timing Descriptor #1: Mismatch of image size 309x174 mm vs display size 290x160 mm.
   Alphanumeric Data String: Empty string.
-  Alphanumeric Data String: Non-printable character.
+  Alphanumeric Data String: NUL byte at position 3.
   Missing Display Product Name.
   Missing Display Range Limits Descriptor.
 EDID:

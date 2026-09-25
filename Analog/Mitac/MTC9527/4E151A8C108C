@@ -65,26 +65,18 @@ Checksum: 0x5a
 
 ----------------
 
-Block 1, Unknown EDID Extension Block 0x00:
-  00 ff ff ff ff ff ff 00 36 83 27 95 01 00 00 00 '........6.'.....'
-  2e 18 01 03 68 73 41 78 0a cf 74 a3 57 4c b0 23 '....hsAx..t.WL.#'
-  09 48 4c a1 08 00 81 80 61 40 45 40 31 40 01 01 '.HL.....a@E@1@..'
-  01 01 01 01 01 01 66 21 56 aa 51 00 1e 30 46 8f '......f!V.Q..0F.'
-  33 00 7e 8a 42 00 00 1e 0e 1f 00 80 51 00 1e 30 '3.~.B.......Q..0'
-  40 80 37 00 7e 8a 42 00 00 1c 00 00 00 fd 00 3a '@.7.~.B........:'
-  3e 1e 53 10 00 0a 20 20 20 20 20 20 00 00 00 fc '>.S...      ....'
-  00 4d 79 73 74 65 72 79 20 54 56 0a 20 20 00 5a '.Mystery TV.  .Z'
-Checksum: 0x5a
+Warnings:
 
-----------------
-
-Failures:
-
-Block 1, Base EDID:
-  Unknown Extension Block.
+Block 0, Base EDID:
+  Vendor & Product Identification: The serial number is one of the known dummy values, it should probably be set to 0.
+  Detailed Timing Descriptor #2: Image size is 1150x650 mm, but based on the picture AR it should be 1083x650 mm.
 EDID:
   Base EDID: Some timings are out of range of the Monitor Ranges:
     Vertical Freq: 59.790 - 70.082 Hz (Monitor: 58.000 - 62.000 Hz)
-  Base EDID: EDID specified 0 extension block(s), but found 1 extension block(s).
+
+Failures:
+
+EDID:
+  Extension Block 1 started with EDID header, ignoring Extension Blocks >= 1.
 
 EDID conformity: FAIL
